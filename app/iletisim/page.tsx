@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "İletişim",
@@ -12,6 +13,15 @@ export const metadata: Metadata = {
 export default function IletisimPage() {
   return (
     <main className="mx-auto w-full max-w-2xl flex-1 px-4 py-10 sm:px-6 sm:py-14">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          name: "İletişim",
+          url: "https://freetoolsy.vercel.app/iletisim",
+          inLanguage: "tr",
+        }}
+      />
       <nav aria-label="Sayfa yolu" className="flex flex-wrap items-center gap-1.5 text-sm text-muted">
         <Link href="/" className="transition-colors hover:text-text">
           Ana sayfa

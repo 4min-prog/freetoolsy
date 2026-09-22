@@ -14,6 +14,7 @@ import KdvHesaplayici from "@/components/tools/KdvHesaplayici";
 import YuzdeHesaplayici from "@/components/tools/YuzdeHesaplayici";
 import YasHesaplayici from "@/components/tools/YasHesaplayici";
 import AdSlot from "@/components/AdSlot";
+import ToolJsonLd from "@/components/ToolJsonLd";
 
 const toolComponents: Record<string, React.ComponentType> = {
   "karakter-sayaci": KarakterSayaci,
@@ -56,6 +57,7 @@ export default function AraclarPage({ params }: { params: { slug: string } }) {
 
   return (
     <main className="mx-auto w-full max-w-2xl flex-1 px-4 py-10 sm:px-6 sm:py-14">
+      <ToolJsonLd slug={tool.slug} />
       <nav aria-label="Sayfa yolu" className="flex flex-wrap items-center gap-1.5 text-sm text-muted">
         <Link href="/" className="transition-colors hover:text-text">
           Ana sayfa

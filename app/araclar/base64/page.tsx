@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ToolJsonLd from "@/components/ToolJsonLd";
 import AdSlot from "@/components/AdSlot";
 import Base64Encoder from "@/components/tools/Base64Encoder";
 
@@ -13,7 +14,8 @@ export const metadata: Metadata = {
 export default function Base64Page() {
   return (
     <main className="mx-auto w-full max-w-2xl flex-1 px-4 py-10 sm:px-6 sm:py-14">
-      <nav aria-label="Sayfa yolu" className="flex flex-wrap items-center gap-1.5 text-sm text-muted">
+      <ToolJsonLd slug="base64" />
+<nav aria-label="Sayfa yolu" className="flex flex-wrap items-center gap-1.5 text-sm text-muted">
         <Link href="/" className="transition-colors hover:text-text">
           Ana sayfa
         </Link>

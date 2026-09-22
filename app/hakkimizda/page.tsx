@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Hakkımızda",
@@ -11,6 +12,26 @@ export const metadata: Metadata = {
 export default function HakkimizdaPage() {
   return (
     <main className="mx-auto w-full max-w-2xl flex-1 px-4 py-10 sm:px-6 sm:py-14">
+      <JsonLd
+        data={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "FreetoolsY",
+            url: "https://freetoolsy.vercel.app/",
+            description:
+              "Metin, güvenlik, geliştirici ve hesaplama kategorilerinde ücretsiz online araçlar.",
+            email: "destek@freetoolsy.com",
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            name: "Hakkımızda",
+            url: "https://freetoolsy.vercel.app/hakkimizda",
+            inLanguage: "tr",
+          },
+        ]}
+      />
       <nav aria-label="Sayfa yolu" className="flex flex-wrap items-center gap-1.5 text-sm text-muted">
         <Link href="/" className="transition-colors hover:text-text">
           Ana sayfa
