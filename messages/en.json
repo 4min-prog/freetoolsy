@@ -53,6 +53,9 @@
     "toLight": "Switch to light mode",
     "toDark": "Switch to dark mode"
   },
+  "AdSlot": {
+    "advertisement": "Advertisement"
+  },
   "ToolExplorer": {
     "searchLabel": "Search tools",
     "searchPlaceholder": "Search tools… e.g. password, JSON, VAT",
@@ -378,6 +381,7 @@
           "h": "Your data stays yours",
           "pre": "All of our tools run in your browser. Text, passwords and numbers you type are never sent to a server, saved or shared with a third party. The site only processes the standard technical data needed for analytics and advertising services. See our",
           "link": "Privacy Policy",
+          "route": "/gizlilik-politikasi",
           "post": "for details."
         },
         {
@@ -388,6 +392,7 @@
           "h": "Our roadmap",
           "pre": "We keep adding tools and improving existing ones. Your suggestions guide us — if you have an idea, write to us via our",
           "link": "contact page",
+          "route": "/iletisim",
           "post": "."
         }
       ],

@@ -72,7 +72,7 @@ export async function generateMetadata({
   params: { locale: string; slug: string };
 }): Promise<Metadata> {
   const tool = getTool(params.slug);
-  if (!tool) return { title: "Not found" };
+  if (!tool) notFound();
   const locale = params.locale as Locale;
   setRequestLocale(locale);
   const t = await getTranslations(`ToolMeta.${tool.slug}`);

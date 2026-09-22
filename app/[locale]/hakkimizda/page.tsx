@@ -15,6 +15,10 @@ export async function generateMetadata({
     description: tAbout("desc"),
     alternates: {
       canonical: params.locale === "en" ? "/hakkimizda" : `/${params.locale}/hakkimizda`,
+      languages: {
+        en: "https://freetoolsy.vercel.app/hakkimizda",
+        tr: "https://freetoolsy.vercel.app/tr/hakkimizda",
+      },
     },
   };
 }
@@ -24,6 +28,7 @@ interface AboutSection {
   p?: string;
   pre?: string;
   link?: string;
+  route?: string;
   post?: string;
 }
 
@@ -92,7 +97,7 @@ export default async function HakkimizdaPage({
               <p className="mt-2">
                 {section.pre}{" "}
                 <Link
-                  href={section.link === "Privacy Policy" ? "/gizlilik-politikasi" : "/iletisim"}
+                  href={section.route ?? "/iletisim"}
                   className="font-medium text-accent transition-opacity hover:opacity-80"
                 >
                   {section.link}

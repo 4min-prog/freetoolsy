@@ -40,6 +40,10 @@
   --success: #6ee7b7;
 }
 
+html {
+  background-color: var(--bg);
+}
+
 body {
   background-color: var(--bg);
   color: var(--text);

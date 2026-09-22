@@ -1,4 +1,11 @@
-export default function AdSlot({ slot = "bottom" }: { slot?: "top" | "bottom" }) {
+import { getTranslations } from "next-intl/server";
+
+export default async function AdSlot({
+  slot = "bottom",
+}: {
+  slot?: "top" | "bottom";
+}) {
+  const t = await getTranslations("AdSlot");
   const adsEnabled =
     process.env.NEXT_PUBLIC_ADS_ENABLED === "true" &&
     Boolean(process.env.NEXT_PUBLIC_ADS_CLIENT);
@@ -17,7 +24,7 @@ export default function AdSlot({ slot = "bottom" }: { slot?: "top" | "bottom" })
           style={{ minHeight: "90px" }}
           className="flex w-full items-center justify-center rounded border border-dashed border-gray-700 bg-gray-100/5 text-sm text-gray-500"
         >
-          Advertisement
+          {t("advertisement")}
         </div>
       </div>
     );

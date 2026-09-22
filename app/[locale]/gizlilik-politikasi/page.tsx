@@ -28,6 +28,10 @@ export async function generateMetadata({
         params.locale === "en"
           ? "/gizlilik-politikasi"
           : `/${params.locale}/gizlilik-politikasi`,
+      languages: {
+        en: "https://freetoolsy.vercel.app/gizlilik-politikasi",
+        tr: "https://freetoolsy.vercel.app/tr/gizlilik-politikasi",
+      },
     },
   };
 }

@@ -16,6 +16,10 @@ export async function generateMetadata({
     description: t("description"),
     alternates: {
       canonical: params.locale === "en" ? "/" : `/${params.locale}`,
+      languages: {
+        en: "https://freetoolsy.vercel.app/",
+        tr: "https://freetoolsy.vercel.app/tr",
+      },
     },
   };
 }
@@ -49,7 +53,7 @@ export default async function Home({ params }: { params: { locale: string } }) {
             offers: {
               "@type": "Offer",
               price: "0",
-              priceCurrency: "USD",
+              priceCurrency: params.locale === "tr" ? "TRY" : "USD",
             },
           },
           {

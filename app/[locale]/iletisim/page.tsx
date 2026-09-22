@@ -16,6 +16,10 @@ export async function generateMetadata({
     description: tContact("desc"),
     alternates: {
       canonical: params.locale === "en" ? "/iletisim" : `/${params.locale}/iletisim`,
+      languages: {
+        en: "https://freetoolsy.vercel.app/iletisim",
+        tr: "https://freetoolsy.vercel.app/tr/iletisim",
+      },
     },
   };
 }
