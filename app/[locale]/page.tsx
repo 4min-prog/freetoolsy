@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import ToolExplorer from "@/components/ToolExplorer";
+import PopularTools from "@/components/PopularTools";
 import JsonLd from "@/components/JsonLd";
 import { categories, tools } from "@/data/tools";
 
@@ -78,6 +79,8 @@ export default async function Home({ params }: { params: { locale: string } }) {
           {t("heroSubtitle", { tools: tools.length, cats: categories.length })}
         </p>
       </section>
+
+      <PopularTools />
 
       <ToolExplorer />
     </main>

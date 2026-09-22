@@ -10,6 +10,7 @@
     "description": "21 free online tools in 4 categories. Character counter, password generator, JSON formatter, VAT calculator and more. No signup, no install.",
     "heroTitle": "Free Online Tools — Fast, Simple, in English",
     "heroSubtitle": "{tools} free tools in {cats} categories: Text, Security, Developer and Calculation. No signup, no install; every calculation happens in your browser and your data never leaves it.",
+    "popularTitle": "Popular:",
     "jsonldSiteDesc": "Free online tools for text, security, developer and calculation. No signup, no install.",
     "jsonldAppDesc": "Character counter, password generator, JSON formatter, VAT calculator and more.",
     "faq": [
@@ -33,8 +34,7 @@
   "Header": {
     "categories": "Categories",
     "searchLabel": "Search tools",
-    "allTools": "All tools",
-    "popular": "Popular"
+    "allTools": "All tools"
   },
   "LocaleSwitcher": {
     "switchToTurkish": "Switch to Turkish",
