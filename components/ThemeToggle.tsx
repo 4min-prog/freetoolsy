@@ -9,8 +9,18 @@ export default function ThemeToggle() {
   const t = useTranslations("ThemeToggle");
 
   useEffect(() => {
+    let initial: boolean;
+    try {
+      initial =
+        localStorage.theme !== undefined
+          ? localStorage.theme === "dark"
+          : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    } catch {
+      initial = false;
+    }
+    document.documentElement.classList.toggle("dark", initial);
     setMounted(true);
-    setDark(document.documentElement.classList.contains("dark"));
+    setDark(initial);
   }, []);
 
   function toggle() {
@@ -19,6 +29,7 @@ export default function ThemeToggle() {
     document.documentElement.classList.toggle("dark", next);
     try {
       localStorage.theme = next ? "dark" : "light";
+      setMounted(true);
     } catch {
       // localStorage unavailable
     }

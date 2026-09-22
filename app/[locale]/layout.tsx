@@ -63,7 +63,7 @@ export async function generateMetadata({
   };
 }
 
-const themeScript = `try{var t=localStorage.theme;if(t==="dark"||(!("theme" in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches)){document.documentElement.classList.add("dark")}}catch(e){}`;
+const themeScript = `try{var t=localStorage.theme;var d=t==="dark"||(!("theme" in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches);if(d){document.documentElement.classList.add("dark")}else{document.documentElement.classList.remove("dark")}}catch(e){}`;
 
 export default async function RootLayout({
   children,
