@@ -13,6 +13,13 @@ import BmiHesaplayici from "@/components/tools/BmiHesaplayici";
 import KdvHesaplayici from "@/components/tools/KdvHesaplayici";
 import YuzdeHesaplayici from "@/components/tools/YuzdeHesaplayici";
 import YasHesaplayici from "@/components/tools/YasHesaplayici";
+import QrKodOlusturucu from "@/components/tools/QrKodOlusturucu";
+import ShaHashUretici from "@/components/tools/ShaHashUretici";
+import TarihFarki from "@/components/tools/TarihFarki";
+import RenkDonusturucu from "@/components/tools/RenkDonusturucu";
+import UuidUretici from "@/components/tools/UuidUretici";
+import BirimDonusturucu from "@/components/tools/BirimDonusturucu";
+import ParolaGucTesti from "@/components/tools/ParolaGucTesti";
 import AdSlot from "@/components/AdSlot";
 import ToolJsonLd from "@/components/ToolJsonLd";
 
@@ -28,6 +35,13 @@ const toolComponents: Record<string, React.ComponentType> = {
   "kdv-hesaplayici": KdvHesaplayici,
   "yuzde-hesaplayici": YuzdeHesaplayici,
   "yas-hesaplayici": YasHesaplayici,
+  "qr-kod-olusturucu": QrKodOlusturucu,
+  "sha-hash-uretici": ShaHashUretici,
+  "tarih-farki": TarihFarki,
+  "renk-donusturucu": RenkDonusturucu,
+  "uuid-uretici": UuidUretici,
+  "birim-donusturucu": BirimDonusturucu,
+  "parola-guc-testi": ParolaGucTesti,
 };
 
 export function generateStaticParams() {

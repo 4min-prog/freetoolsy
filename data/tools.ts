@@ -90,6 +90,55 @@ export const tools: Tool[] = [
     description:
       "Doğum tarihinize göre yıl, ay, gün, saat, dakika ve saniye cinsinden yaşınızı canlı gösterir.",
   },
+  {
+    slug: "qr-kod-olusturucu",
+    name: "QR Kod Oluşturucu",
+    category: "Geliştirici",
+    description:
+      "Metni veya bir bağlantıyı tarayıcınızda anında QR koda dönüştürür; PNG olarak indirin.",
+  },
+  {
+    slug: "sha-hash-uretici",
+    name: "SHA Hash Üretici",
+    category: "Güvenlik",
+    description:
+      "Metnin SHA-1, SHA-256 veya SHA-512 özetini tarayıcınızda hesaplar; tek tıkla kopyalayın.",
+  },
+  {
+    slug: "tarih-farki",
+    name: "Tarih Farkı",
+    category: "Hesaplama",
+    description:
+      "İki tarih arasındaki yıl, ay, gün, saat ve hafta farkını anında hesaplar.",
+  },
+  {
+    slug: "renk-donusturucu",
+    name: "Renk Dönüştürücü",
+    category: "Geliştirici",
+    description:
+      "HEX, RGB ve HSL değerleri arasında anında dönüşüm yapar; önizleme ve kopyalama sunar.",
+  },
+  {
+    slug: "uuid-uretici",
+    name: "UUID Üretici",
+    category: "Geliştirici",
+    description:
+      "Tek tıkla rastgele UUID v4 (GUID) üretir; birden çok kimliği toplu kopyalayın.",
+  },
+  {
+    slug: "birim-donusturucu",
+    name: "Birim Dönüştürücü",
+    category: "Hesaplama",
+    description:
+      "Uzunluk, ağırlık, hacim, alan ve sıcaklık birimleri arasında hızlı dönüşüm yapar.",
+  },
+  {
+    slug: "parola-guc-testi",
+    name: "Parola Güç Testi",
+    category: "Güvenlik",
+    description:
+      "Parolanızın ne kadar güçlü olduğunu tahmini entropiyle ölçer ve iyileştirme önerileri sunar.",
+  },
 ];
 
 export function getTool(slug: string): Tool | undefined {

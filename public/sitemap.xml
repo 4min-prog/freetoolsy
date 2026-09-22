@@ -50,6 +50,34 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://freetoolsy.vercel.app/araclar/qr-kod-olusturucu</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://freetoolsy.vercel.app/araclar/sha-hash-uretici</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://freetoolsy.vercel.app/araclar/tarih-farki</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://freetoolsy.vercel.app/araclar/renk-donusturucu</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://freetoolsy.vercel.app/araclar/uuid-uretici</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://freetoolsy.vercel.app/araclar/birim-donusturucu</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://freetoolsy.vercel.app/araclar/parola-guc-testi</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://freetoolsy.vercel.app/gizlilik-politikasi</loc>
     <priority>0.3</priority>
   </url>
