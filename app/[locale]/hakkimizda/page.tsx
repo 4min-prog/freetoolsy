@@ -57,7 +57,7 @@ export default async function HakkimizdaPage({
             name: "FreetoolsY",
             url: "https://freetoolsy.vercel.app/",
             description: tAbout("jsonDesc"),
-            email: "destek@freetoolsy.com",
+            email: "support@freetoolsy.com",
           },
           {
             "@context": "https://schema.org",

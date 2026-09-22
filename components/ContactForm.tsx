@@ -18,8 +18,8 @@ export default function ContactForm() {
       return;
     }
     const subject = encodeURIComponent(t("subject"));
-    const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
-    window.location.href = `mailto:destek@freetoolsy.com?subject=${subject}&body=${body}`;
+    const body = encodeURIComponent(`${message}\n\nâ€” ${name} (${email})`);
+    window.location.href = `mailto:support@freetoolsy.com?subject=${subject}&body=${body}`;
     setError(null);
     setSent(true);
   }
@@ -91,10 +91,10 @@ export default function ContactForm() {
         <p className="mt-4 rounded-lg border border-border bg-bg px-3.5 py-2.5 text-sm text-muted">
           {t("sent")}{" "}
           <a
-            href="mailto:destek@freetoolsy.com"
+            href="mailto:support@freetoolsy.com"
             className="font-medium text-accent transition-opacity hover:opacity-80"
           >
-            destek@freetoolsy.com
+            support@freetoolsy.com
           </a>
         </p>
       )}

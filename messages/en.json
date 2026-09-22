@@ -1,14 +1,14 @@
 {
   "Layout": {
-    "defaultTitle": "FreetoolsY — Free Online Tools",
-    "titleTemplate": "%s · FreetoolsY",
-    "description": "Free online tools for text, security, developer and calculation. No signup, no install — everything runs in your browser.",
-    "ogTitle": "FreetoolsY — Free Online Tools"
+    "defaultTitle": "FreetoolsY â€” Free Online Tools",
+    "titleTemplate": "%s آ· FreetoolsY",
+    "description": "Free online tools for text, security, developer and calculation. No signup, no install â€” everything runs in your browser.",
+    "ogTitle": "FreetoolsY â€” Free Online Tools"
   },
   "Home": {
-    "title": "Free Online Tools — Fast, Simple, in English",
+    "title": "Free Online Tools â€” Fast, Simple, in English",
     "description": "44 free online tools in 4 categories. Character counter, password generator, JSON formatter, VAT calculator and more. No signup, no install.",
-    "heroTitle": "Free Online Tools — Fast, Simple, in English",
+    "heroTitle": "Free Online Tools â€” Fast, Simple, in English",
     "heroSubtitle": "{tools} free tools in {cats} categories: Text, Security, Developer and Calculation. No signup, no install; every calculation happens in your browser and your data never leaves it.",
     "popularTitle": "Popular:",
     "jsonldSiteDesc": "Free online tools for text, security, developer and calculation. No signup, no install.",
@@ -24,7 +24,7 @@
       },
       {
         "q": "Which devices are supported?",
-        "a": "Any device with a web browser — desktop, tablet or phone."
+        "a": "Any device with a web browser â€” desktop, tablet or phone."
       }
     ]
   },
@@ -48,9 +48,9 @@
     "privacy": "Privacy Policy",
     "contact": "Contact",
     "partner": "Partner",
-    "linkly": "Shorten links with → LinklyhHub",
+    "linkly": "Shorten links with â†’ LinklyhHub",
     "tools": "Tools",
-    "rights": "© 2026 FreetoolsY. All rights reserved."
+    "rights": "آ© 2026 FreetoolsY. All rights reserved."
   },
   "ThemeToggle": {
     "toLight": "Switch to light mode",
@@ -61,7 +61,7 @@
   },
   "ToolExplorer": {
     "searchLabel": "Search tools",
-    "searchPlaceholder": "Search tools… e.g. password, JSON, VAT",
+    "searchPlaceholder": "Search toolsâ€¦ e.g. password, JSON, VAT",
     "results": "Results",
     "toolCount": "{count} tools",
     "noResults": "No tools matched \"{query}\". Try a different keyword.",
@@ -77,309 +77,309 @@
     "karakter-sayaci": {
       "name": "Character Counter",
       "desc": "Counts characters, characters without spaces, lines and paragraphs in your text instantly.",
-      "title": "Character Counter — Free Online Tool",
+      "title": "Character Counter â€” Free Online Tool",
       "pageDesc": "Count characters with and without spaces, words, lines and paragraphs instantly. Free and private; your text never leaves your browser.",
-      "intro": "Count characters with and without spaces, plus words, lines, sentences and paragraphs — all updated instantly."
+      "intro": "Count characters with and without spaces, plus words, lines, sentences and paragraphs â€” all updated instantly."
     },
     "kelime-sayaci": {
       "name": "Word Counter",
       "desc": "Counts words, sentences and characters; estimates reading time and highlights your most-used words.",
-      "title": "Word Counter — Free Online Tool",
+      "title": "Word Counter â€” Free Online Tool",
       "pageDesc": "Count words, characters, sentences and paragraphs; estimate reading time and find repeated words. Free, private, runs fully in your browser.",
       "intro": "Word, character, sentence and paragraph statistics, an estimated reading time and your most repeated words."
     },
     "harf-donusturucu": {
       "name": "Case Converter",
       "desc": "Converts text to uppercase, lowercase or title case and flips letter case with one click.",
-      "title": "Case Converter — Free Online Tool",
+      "title": "Case Converter â€” Free Online Tool",
       "pageDesc": "Convert text to uppercase, lowercase or title case and invert letter case in one click. Full Turkish character support; nothing is uploaded.",
       "intro": "Make your text uppercase, lowercase, title case or flipped in one click and copy it instantly."
     },
     "sifre-uretici": {
       "name": "Password Generator",
       "desc": "Generates strong random passwords in your browser with your choice of length and character types.",
-      "title": "Password Generator — Free Online Tool",
+      "title": "Password Generator â€” Free Online Tool",
       "pageDesc": "Generate strong, random passwords with your own length and character type choices. Cryptographically secure, never leaves your browser.",
       "intro": "Generate strong, random passwords with your preferred length and character types."
     },
     "json-formatter": {
       "name": "JSON Formatter",
       "desc": "Formats, validates and prettifies JSON code; reports syntax errors with line numbers.",
-      "title": "JSON Formatter — Free Online Tool",
+      "title": "JSON Formatter â€” Free Online Tool",
       "pageDesc": "Format, validate and minify JSON instantly with syntax highlighting and line numbers. Fully client-side and private.",
-      "intro": "Format your JSON, validate its syntax and show errors — all with clean highlighting."
+      "intro": "Format your JSON, validate its syntax and show errors â€” all with clean highlighting."
     },
     "base64": {
       "name": "Base64 Encoder/Decoder",
       "desc": "Converts text to Base64 or decodes Base64 data back to its original content.",
-      "title": "Base64 Encoder/Decoder — Free Online Tool",
+      "title": "Base64 Encoder/Decoder â€” Free Online Tool",
       "pageDesc": "Encode text to Base64 or decode Base64 back to the original content. Unicode and Turkish character safe; runs entirely in your browser.",
       "intro": "Encode text as Base64 or decode Base64 data back to its original value."
     },
     "url-encoder": {
       "name": "URL Encoder/Decoder",
       "desc": "Encodes text into URL-safe form or decodes encoded URL parameters into readable form.",
-      "title": "URL Encoder/Decoder — Free Online Tool",
+      "title": "URL Encoder/Decoder â€” Free Online Tool",
       "pageDesc": "Encode text into URL-safe notation or decode percent encoded URL parameters. UTF-8 and Turkish character friendly; fully client-side.",
       "intro": "Encode special characters for URLs or decode encoded parameters back to readable text."
     },
     "bmi-hesaplayici": {
       "name": "BMI Calculator",
       "desc": "Calculates your body mass index from height and weight and interprets the result clearly.",
-      "title": "BMI Calculator — Free Online Tool",
+      "title": "BMI Calculator â€” Free Online Tool",
       "pageDesc": "Calculate your body mass index from height and weight, see your category and compare ranges on a scale. Free and fully client-side.",
       "intro": "Calculate your body mass index from your height and weight and read a clear interpretation."
     },
     "kdv-hesaplayici": {
       "name": "VAT Calculator",
       "desc": "Calculates tax amount and total price instantly for your amount and VAT rate.",
-      "title": "VAT Calculator — Free Online Tool",
+      "title": "VAT Calculator â€” Free Online Tool",
       "pageDesc": "Compute VAT amount, net price and total price instantly for rates like 1%, 8%, 10%, 18% and 20%. Runs entirely in your browser.",
       "intro": "Choose an amount and VAT rate to see the tax amount and the total price at once."
     },
     "yuzde-hesaplayici": {
       "name": "Percentage Calculator",
       "desc": "Computes the percentage of a number, the percentage change and a share of a whole on one screen.",
-      "title": "Percentage Calculator — Free Online Tool",
+      "title": "Percentage Calculator â€” Free Online Tool",
       "pageDesc": "Calculate a percentage of a number, a percentage change and a part of a whole on a single screen. Free and privacy friendly.",
-      "intro": "Percentage of a number, percentage change and a part of a whole — all on one screen."
+      "intro": "Percentage of a number, percentage change and a part of a whole â€” all on one screen."
     },
     "yas-hesaplayici": {
       "name": "Age Calculator",
       "desc": "Shows your age in years, months, days, hours, minutes and seconds live from your birth date.",
-      "title": "Age Calculator — Free Online Tool",
+      "title": "Age Calculator â€” Free Online Tool",
       "pageDesc": "Calculate your exact age in years, months, days, hours, minutes and seconds with a live counter. Free and fully client-side.",
       "intro": "See your precise age in years, months, days, hours, minutes and seconds with a live counter."
     },
     "qr-kod-olusturucu": {
       "name": "QR Code Generator",
       "desc": "Turns text or a link into a QR code instantly in your browser; download it as PNG.",
-      "title": "QR Code Generator — Free Online Tool",
+      "title": "QR Code Generator â€” Free Online Tool",
       "pageDesc": "Create a QR code from any text or link instantly and download it as a high-resolution PNG. Free and private; content never leaves your browser.",
       "intro": "Turn any text or link into a scannable QR code and download it as a PNG."
     },
     "sha-hash-uretici": {
       "name": "SHA Hash Generator",
       "desc": "Computes the SHA-1, SHA-256 or SHA-512 digest of your text in the browser; copy it with one click.",
-      "title": "SHA Hash Generator — Free Online Tool",
+      "title": "SHA Hash Generator â€” Free Online Tool",
       "pageDesc": "Compute the SHA-1, SHA-256 or SHA-512 digest of any text in your browser. Private by design; your input never leaves your device.",
       "intro": "Compute a SHA-1, SHA-256 or SHA-512 digest of your text and copy it instantly."
     },
     "tarih-farki": {
       "name": "Date Difference",
       "desc": "Calculates the difference between two dates in years, months, days, hours and weeks instantly.",
-      "title": "Date Difference Calculator — Free Online Tool",
+      "title": "Date Difference Calculator â€” Free Online Tool",
       "pageDesc": "Find the difference between two dates in years, months, days, hours, minutes and weeks. Free, accurate and fully client-side.",
       "intro": "Pick two dates and see the difference in years, months, days, hours and weeks."
     },
     "renk-donusturucu": {
       "name": "Color Converter",
       "desc": "Converts between HEX, RGB and HSL instantly with a live preview and one-click copying.",
-      "title": "Color Converter (HEX, RGB, HSL) — Free Tool",
+      "title": "Color Converter (HEX, RGB, HSL) â€” Free Tool",
       "pageDesc": "Convert between HEX, RGB and HSL color values instantly, preview the result and copy the format you need. Free and private.",
       "intro": "Convert between HEX, RGB and HSL values, preview the color and copy the format you need."
     },
     "uuid-uretici": {
       "name": "UUID Generator",
       "desc": "Generates random UUID v4 (GUID) identifiers in one click; copy several at once.",
-      "title": "UUID Generator (GUID) — Free Online Tool",
+      "title": "UUID Generator (GUID) â€” Free Online Tool",
       "pageDesc": "Generate random UUID v4 identifiers in one click and copy several at once. Cryptographically random and completely client-side.",
       "intro": "Generate random UUID v4 (GUID) identifiers and copy several values at once."
     },
     "birim-donusturucu": {
       "name": "Unit Converter",
       "desc": "Converts between length, weight, volume, area and temperature units quickly.",
-      "title": "Unit Converter — Free Online Tool",
+      "title": "Unit Converter â€” Free Online Tool",
       "pageDesc": "Convert between length, weight, volume, area and temperature units with instant results. Free, accurate and fully client-side.",
       "intro": "Convert between length, weight, volume, area and temperature units instantly."
     },
     "parola-guc-testi": {
       "name": "Password Strength Checker",
       "desc": "Measures how strong your password is with an entropy estimate and suggests improvements.",
-      "title": "Password Strength Test — Free Online Tool",
+      "title": "Password Strength Test â€” Free Online Tool",
       "pageDesc": "Check how strong your password really is with an entropy estimate and a checklist of missing character types. 100% client-side and private.",
       "intro": "Measure how strong your password is, see missing character types and estimated entropy."
     },
     "sayi-donusturucu": {
       "name": "Number Base Converter",
       "desc": "Converts numbers between binary, octal, decimal and hexadecimal instantly in your browser.",
-      "title": "Number Base Converter — Free Online Tool",
+      "title": "Number Base Converter â€” Free Online Tool",
       "pageDesc": "Convert numbers between binary, octal, decimal and hexadecimal with exact precision. Big-number safe, free and fully client-side.",
       "intro": "Type a number, choose its base, and see binary, octal, decimal and hexadecimal side by side."
     },
     "regex-testi": {
       "name": "Regex Tester",
       "desc": "Tests a regular expression against your text live and highlights every match.",
-      "title": "Regex Tester — Free Online Tool",
+      "title": "Regex Tester â€” Free Online Tool",
       "pageDesc": "Test regular expressions against any text with live highlighting and a match counter. Supports the g, i, m, s and u flags; 100% client-side.",
       "intro": "Write a pattern, pick flags, and see every match highlighted as you type."
     },
     "bosluk-temizleyici": {
       "name": "Whitespace Cleaner",
       "desc": "Trims lines, collapses repeated spaces and removes blank lines from your text.",
-      "title": "Whitespace Cleaner — Free Online Tool",
+      "title": "Whitespace Cleaner â€” Free Online Tool",
       "pageDesc": "Trim lines, collapse multiple spaces, remove empty lines or strip all whitespace from any text in one click. Free and private.",
       "intro": "Clean trailing spaces, extra gaps and blank lines from any text in one click."
     },
     "md5-hash": {
       "name": "MD5 Hash Generator",
       "desc": "Computes the MD5 hex digest of your text instantly and copies it in one click.",
-      "title": "MD5 Hash Generator — Free Online Tool",
+      "title": "MD5 Hash Generator â€” Free Online Tool",
       "pageDesc": "Generate the MD5 hash of any text instantly as a 32-character hex digest. Runs in your browser; your data never leaves it.",
       "intro": "Type or paste your text and get its lowercase 32-character MD5 hex digest in seconds."
     },
     "jwt-cozucu": {
       "name": "JWT Decoder",
       "desc": "Decodes a JWT into its header, payload and signature, shown as readable JSON.",
-      "title": "JWT Decoder — Free Online Tool",
+      "title": "JWT Decoder â€” Free Online Tool",
       "pageDesc": "Decode a JWT token into its header, payload and signature as readable JSON. Fully client-side; your token never leaves your browser.",
       "intro": "Paste a JWT token and view its base64url-decoded header, payload and signature instantly."
     },
     "json-csv-donusturucu": {
-      "name": "JSON ↔ CSV Converter",
+      "name": "JSON â†” CSV Converter",
       "desc": "Converts JSON to CSV and CSV to JSON with correct quoting in both directions.",
-      "title": "JSON ↔ CSV Converter — Free Online Tool",
+      "title": "JSON â†” CSV Converter â€” Free Online Tool",
       "pageDesc": "Convert JSON to CSV or CSV to JSON instantly with correct quoting for commas, quotes and newlines. Runs in your browser; data never leaves it.",
       "intro": "Choose a direction, paste your data and convert JSON to CSV or CSV to JSON in seconds."
     },
     "unix-timestamp-cevirici": {
       "name": "Unix Timestamp Converter",
       "desc": "Converts Unix timestamps to readable dates and dates back to Unix timestamps.",
-      "title": "Unix Timestamp Converter — Free Online Tool",
+      "title": "Unix Timestamp Converter â€” Free Online Tool",
       "pageDesc": "Convert a Unix timestamp to a readable date and time, or a date back to an epoch timestamp. Free, instant and fully client-side.",
       "intro": "Convert a Unix timestamp to a locale date or a selected date back to its epoch value."
     },
     "tekrar-satir-temizleyici": {
       "name": "Duplicate Line Remover",
       "desc": "Removes duplicate lines and keeps only the first occurrence of each line.",
-      "title": "Duplicate Line Remover — Free Online Tool",
+      "title": "Duplicate Line Remover â€” Free Online Tool",
       "pageDesc": "Remove duplicate lines from any list instantly, keeping them in first-seen order. Free, private and fully client-side.",
       "intro": "Paste a list and remove duplicate lines while keeping the original order of first occurrences."
     },
     "ai-token-hesaplayici": {
       "name": "AI Token Calculator",
       "desc": "Estimates the token count of your text for AI and LLM context limits.",
-      "title": "AI Token Calculator — Free Online Tool",
+      "title": "AI Token Calculator â€” Free Online Tool",
       "pageDesc": "Estimate the token count of any text for ChatGPT, Claude and other LLM limits, plus characters, words and lines. Runs in your browser; data never leaves it.",
       "intro": "Paste your text to see an estimated token count together with character, word and line stats."
     },
     "lorem-ipsum-uretici": {
       "name": "Lorem Ipsum Generator",
       "desc": "Generates placeholder Lorem Ipsum text in the number of paragraphs and sentences you request.",
-      "title": "Lorem Ipsum Generator — Free Online Tool",
+      "title": "Lorem Ipsum Generator â€” Free Online Tool",
       "pageDesc": "Generate free Lorem Ipsum placeholder text with your choice of paragraph and sentence counts. Private by design; the text is produced entirely in your browser.",
       "intro": "Generate Lorem Ipsum placeholder text with your choice of paragraphs and sentences per paragraph."
     },
     "bahsis-hesaplayici": {
       "name": "Tip Calculator",
       "desc": "Calculates tip amount, total bill and per-person share instantly for any bill and tip percentage.",
-      "title": "Tip Calculator — Free Online Tool",
+      "title": "Tip Calculator â€” Free Online Tool",
       "pageDesc": "Calculate tip amount, total bill and per-person share for tip percentages of 5% to 25%. Free and fully client-side; your amounts never leave your browser.",
       "intro": "Enter your bill, pick a tip percentage and see the tip, total and per-person share at once."
     },
     "indirim-hesaplayici": {
       "name": "Discount Calculator",
       "desc": "Computes discount amount, final price and savings percentage from original price and discount rate.",
-      "title": "Discount Calculator — Free Online Tool",
+      "title": "Discount Calculator â€” Free Online Tool",
       "pageDesc": "Calculate the discount amount, final price and saved percentage for any original price and discount rate. Free, accurate and runs entirely in your browser.",
       "intro": "Enter an original price and discount percent to see the discount amount and the final price instantly."
     },
     "ortalama-hesaplayici": {
       "name": "Average Calculator",
       "desc": "Finds the average, sum, count, minimum and maximum of a list of numbers instantly.",
-      "title": "Average Calculator — Free Online Tool",
+      "title": "Average Calculator â€” Free Online Tool",
       "pageDesc": "Compute the average, sum, count, minimum and maximum of any list of numbers in seconds. Free and fully client-side; your numbers are never sent or stored.",
       "intro": "Paste or type a list of numbers and see their average, sum, count, minimum and maximum."
     },
     "kopek-yasi-hesaplayici": {
       "name": "Dog Age Calculator",
       "desc": "Estimates a dog's age in human years using its age and breed size.",
-      "title": "Dog Age Calculator — Free Online Tool",
+      "title": "Dog Age Calculator â€” Free Online Tool",
       "pageDesc": "Convert your dog's age to human years with a size-aware formula for small, medium and large breeds. Free and private; everything runs in your browser.",
       "intro": "Enter your dog's age and size to see the approximate equivalent age in human years."
     },
     "subnet-hesaplayici": {
       "name": "Subnet Calculator",
       "desc": "Calculates network, broadcast, netmask and host counts for an IPv4 subnet.",
-      "title": "Subnet Calculator — Free Online Tool",
+      "title": "Subnet Calculator â€” Free Online Tool",
       "pageDesc": "Calculate the network address, broadcast, netmask and usable host count for any IPv4 subnet /0 to /32. Free and fully client-side; addresses never leave your browser.",
       "intro": "Enter an IPv4 address and prefix to get the network, broadcast, netmask and host counts."
     },
     "px-rem-donusturucu": {
       "name": "PX to REM Converter",
       "desc": "Converts pixels to rem and rem to pixels live with a base font size you choose.",
-      "title": "PX to REM Converter — Free Online Tool",
+      "title": "PX to REM Converter â€” Free Online Tool",
       "pageDesc": "Convert pixels to rem and rem to pixels with a custom base font size, updated live as you type. Free and fully client-side; nothing is sent or stored.",
       "intro": "Convert between pixels and rem instantly using a base font size, defaulting to 16 px."
     },
     "xml-formatter": {
       "name": "XML Formatter",
       "desc": "Formats and minifies XML code in your browser with one click.",
-      "title": "XML Formatter — Free Online Tool",
+      "title": "XML Formatter â€” Free Online Tool",
       "pageDesc": "Format and minify XML code instantly and check it for validity. Free and private; your XML never leaves your browser.",
       "intro": "Paste XML, press Format to indent it or Minify to compress it, and copy the result instantly."
     },
     "css-minifier": {
       "name": "CSS Minifier",
       "desc": "Minifies CSS code by stripping comments and redundant whitespace to shrink file size.",
-      "title": "CSS Minifier — Free Online Tool",
+      "title": "CSS Minifier â€” Free Online Tool",
       "pageDesc": "Minify CSS by removing comments and collapsing whitespace, and compare size before and after. Free and private; everything runs in your browser.",
       "intro": "Shrink your CSS by removing comments and extra whitespace, then copy the smaller output instantly."
     },
     "html-minifier": {
       "name": "HTML Minifier",
       "desc": "Minifies HTML by removing comments and collapsing whitespace between tags while preserving its content.",
-      "title": "HTML Minifier — Free Online Tool",
+      "title": "HTML Minifier â€” Free Online Tool",
       "pageDesc": "Minify HTML by removing comments and collapsing whitespace between tags, while text content and special tags stay intact. Free and fully client-side.",
       "intro": "Compress your HTML by cleaning comments and blank space without touching the page content."
     },
     "wcag-kontrast": {
       "name": "WCAG Contrast Checker",
       "desc": "Checks the contrast ratio between two colors against all WCAG AA and AAA requirements.",
-      "title": "WCAG Contrast Checker — Free Online Tool",
+      "title": "WCAG Contrast Checker â€” Free Online Tool",
       "pageDesc": "Compare any two colors against every WCAG contrast requirement for normal and large text, from AA to AAA. Free and private; colors never leave your browser.",
       "intro": "Pick a text and background color to see the contrast ratio and which WCAG levels it passes."
     },
     "renk-paleti-uretici": {
       "name": "Color Palette Generator",
       "desc": "Creates analogous or monochrome color palettes from a base color and copies any HEX at a click.",
-      "title": "Color Palette Generator — Free Online Tool",
+      "title": "Color Palette Generator â€” Free Online Tool",
       "pageDesc": "Generate harmonious analogous or monochrome palettes from any base color in three sizes, and copy each HEX value instantly. Free and private.",
       "intro": "Pick a base color to build an analogous or monochrome palette and copy any HEX swatch with one click."
     },
     "box-shadow-uretici": {
       "name": "Box Shadow Generator",
       "desc": "Builds box-shadow CSS with sliders for offset, blur, spread and opacity, and a live preview.",
-      "title": "Box Shadow Generator — Free Online Tool",
+      "title": "Box Shadow Generator â€” Free Online Tool",
       "pageDesc": "Create box-shadow CSS visually with offset, blur, spread, opacity and color controls and a live preview. Free and private; CSS is generated in your browser.",
       "intro": "Adjust offset, blur, spread, opacity and color to see the shadow live and copy the CSS."
     },
     "metin-siralayici": {
       "name": "Line Sorter",
       "desc": "Sorts the lines of your text by alphabet, length, numeric value or shuffled order.",
-      "title": "Line Sorter — Free Online Tool",
+      "title": "Line Sorter â€” Free Online Tool",
       "pageDesc": "Alphabetize, sort by length or numeric value, or shuffle the lines of any text in one click. Free and private; everything runs in your browser.",
-      "intro": "Paste your lines, pick a mode and get them sorted A→Z, Z→A, by length, numerically or shuffled."
+      "intro": "Paste your lines, pick a mode and get them sorted Aâ†’Z, Zâ†’A, by length, numerically or shuffled."
     },
     "liste-karistirici": {
       "name": "List Randomizer",
       "desc": "Shuffles a list of items or draws one random item from it in your browser.",
-      "title": "List Randomizer — Free Online Tool",
+      "title": "List Randomizer â€” Free Online Tool",
       "pageDesc": "Shuffle any list with a fair randomizer or draw a single random winner from it. Free and private; your list never leaves your browser.",
-      "intro": "Shuffle your list or pick one random item from it — the result is yours to copy."
+      "intro": "Shuffle your list or pick one random item from it â€” the result is yours to copy."
     },
     "yaml-json-donusturucu": {
-      "name": "YAML ↔ JSON Converter",
+      "name": "YAML â†” JSON Converter",
       "desc": "Converts YAML data to JSON and JSON back to YAML in both directions.",
-      "title": "YAML ↔ JSON Converter — Free Online Tool",
+      "title": "YAML â†” JSON Converter â€” Free Online Tool",
       "pageDesc": "Convert configuration data between YAML and JSON in either direction, with clear error messages. Free and private; your data never leaves your browser.",
       "intro": "Switch between YAML and JSON for your configuration data and copy the converted output."
     },
     "md5-dosya-checksum": {
       "name": "MD5 File Checksum",
       "desc": "Computes the MD5 checksum of a file entirely in your browser without uploading it.",
-      "title": "MD5 File Checksum — Free Online Tool",
-      "pageDesc": "Compute the MD5 digest of any file right in your browser to verify integrity. Private by design — the file is never uploaded anywhere.",
+      "title": "MD5 File Checksum â€” Free Online Tool",
+      "pageDesc": "Compute the MD5 digest of any file right in your browser to verify integrity. Private by design â€” the file is never uploaded anywhere.",
       "intro": "Pick a file to compute its MD5 checksum locally and copy the digest with one click."
     }
   },
@@ -393,7 +393,7 @@
         "h": "Where do character limits matter?",
         "list": [
           "Social media: A Twitter/X post is 280 characters; an Instagram bio allows 150.",
-          "SEO meta description: Google generally shows meta descriptions of 150–160 characters.",
+          "SEO meta description: Google generally shows meta descriptions of 150â€“160 characters.",
           "SMS: One SMS accepts 160 characters; check how many your message uses.",
           "Assignments and essays: Verify word or line limits before submission.",
           "Form fields: Confirm you stay within allowed input lengths instantly."
@@ -411,7 +411,7 @@
         "h": "FAQ",
         "list": [
           "What does \"without spaces\" mean? The character count that ignores spaces.",
-          "Does it work on mobile? Yes — it runs in any browser on any device.",
+          "Does it work on mobile? Yes â€” it runs in any browser on any device.",
           "Is my text saved? No; everything happens on your device."
         ]
       }
@@ -459,7 +459,7 @@
       },
       {
         "h": "Does it support Turkish characters?",
-        "p": "Yes. Turkish letters are handled specially: ç, ğ, ı, i, ö, ş, ü correctly become Ç, Ğ, I, İ, Ö, Ş, Ü. This keeps results consistent for Turkish content."
+        "p": "Yes. Turkish letters are handled specially: أ§, ؤں, ؤ±, i, أ¶, إں, أ¼ correctly become أ‡, ؤ‍, I, ؤ°, أ–, إ‍, أœ. This keeps results consistent for Turkish content."
       },
       {
         "h": "When is it used?",
@@ -482,7 +482,7 @@
       },
       {
         "h": "How is password strength measured?",
-        "p": "The strength indicator uses an entropy calculation that combines length with the size of the character pool. The longer and more diverse a password, the more combinations it contains and the more resistant it is to brute-force attacks. Start with at least 12–16 characters and all four character types."
+        "p": "The strength indicator uses an entropy calculation that combines length with the size of the character pool. The longer and more diverse a password, the more combinations it contains and the more resistant it is to brute-force attacks. Start with at least 12â€“16 characters and all four character types."
       },
       {
         "h": "Why is this generator safe?",
@@ -513,7 +513,7 @@
       },
       {
         "h": "How does error checking work?",
-        "p": "Pasting invalid JSON shows a red error message. The browser's parser reports the approximate location and cause — a missing comma, a wrong quote or an extra brace — so you find the problem in large data sets within seconds."
+        "p": "Pasting invalid JSON shows a red error message. The browser's parser reports the approximate location and cause â€” a missing comma, a wrong quote or an extra brace â€” so you find the problem in large data sets within seconds."
       },
       {
         "h": "When is it used?",
@@ -538,7 +538,7 @@
         "h": "Where is Base64 used?",
         "list": [
           "Email attachments: the MIME standard transports attachments as Base64.",
-          "Data URIs: images and small files can be embedded in HTML as data:image/png;base64,…",
+          "Data URIs: images and small files can be embedded in HTML as data:image/png;base64,â€¦",
           "API authentication: Basic Auth encodes username and password in Base64.",
           "JSON payloads: non-text fields are stored as Base64."
         ]
@@ -549,7 +549,7 @@
       },
       {
         "h": "Is Base64 encryption?",
-        "p": "No. Base64 is an encoding, not encryption — it does not hide data, it only makes it portable. Never rely on Base64 alone to protect passwords or private information; use real encryption for sensitive data."
+        "p": "No. Base64 is an encoding, not encryption â€” it does not hide data, it only makes it portable. Never rely on Base64 alone to protect passwords or private information; use real encryption for sensitive data."
       },
       {
         "h": "Is my data safe?",
@@ -572,11 +572,11 @@
       },
       {
         "h": "How are Turkish characters handled?",
-        "p": "The tool encodes text as UTF-8, so ç, ğ, ı, ö, ş, ü and emojis become percent sequences like %C3%BC without corruption, and decoding restores full Turkish letters. Space-to-plus differences are handled automatically."
+        "p": "The tool encodes text as UTF-8, so أ§, ؤں, ؤ±, أ¶, إں, أ¼ and emojis become percent sequences like %C3%BC without corruption, and decoding restores full Turkish letters. Space-to-plus differences are handled automatically."
       },
       {
         "h": "What encoding does it use?",
-        "p": "It uses encodeURIComponent, the recommended comprehensive encoding for parameter values. Every character except A–Z, a–z, 0–9 and a few marks becomes percent notation, so browsers and servers always read your parameters identically."
+        "p": "It uses encodeURIComponent, the recommended comprehensive encoding for parameter values. Every character except Aâ€“Z, aâ€“z, 0â€“9 and a few marks becomes percent notation, so browsers and servers always read your parameters identically."
       },
       {
         "h": "Is my data safe?",
@@ -590,7 +590,7 @@
       },
       {
         "h": "How is BMI calculated?",
-        "p": "BMI is weight (kg) divided by height in meters squared. A 70 kg person of 1.75 m has a BMI of about 22.9, which is a normal range. According to the WHO, below 18.5 is underweight, 18.5–25 normal, 25–30 overweight and above 30 obese."
+        "p": "BMI is weight (kg) divided by height in meters squared. A 70 kg person of 1.75 m has a BMI of about 22.9, which is a normal range. According to the WHO, below 18.5 is underweight, 18.5â€“25 normal, 25â€“30 overweight and above 30 obese."
       },
       {
         "h": "Color scale and table",
@@ -628,7 +628,7 @@
       },
       {
         "h": "Is the result accurate?",
-        "p": "Yes. Results follow the standard formulas of tax legislation to the kuruş and are shown in Turkish decimal format. The result recalculates live as you type, for every rate and type combination."
+        "p": "Yes. Results follow the standard formulas of tax legislation to the kuruإں and are shown in Turkish decimal format. The result recalculates live as you type, for every rate and type combination."
       }
     ],
     "yuzde-hesaplayici": [
@@ -700,7 +700,7 @@
         "h": "FAQ",
         "list": [
           "How do I scan a QR code? Point your phone camera at it.",
-          "Does the code expire? No — generated codes are permanent.",
+          "Does the code expire? No â€” generated codes are permanent.",
           "Can I print the downloaded PNG? Yes, it prints well at high resolution."
         ]
       }
@@ -721,8 +721,8 @@
       {
         "h": "FAQ",
         "list": [
-          "Can I reverse a hash to the original text? No — SHA is one-way.",
-          "Does the same text give different hashes? No — SHA is deterministic.",
+          "Can I reverse a hash to the original text? No â€” SHA is one-way.",
+          "Does the same text give different hashes? No â€” SHA is deterministic.",
           "Which algorithm should I pick? SHA-256 is sufficient and secure for most cases."
         ]
       }
@@ -730,7 +730,7 @@
     "tarih-farki": [
       {
         "h": "What is a Date Difference calculator?",
-        "p": "A Date Difference calculator splits the duration between two dates into years, months and days, and also shows the total in days, weeks, hours and minutes. It saves time for birthdays, contract deadlines, tenure and project timelines — whichever date comes first, the absolute difference is shown."
+        "p": "A Date Difference calculator splits the duration between two dates into years, months and days, and also shows the total in days, weeks, hours and minutes. It saves time for birthdays, contract deadlines, tenure and project timelines â€” whichever date comes first, the absolute difference is shown."
       },
       {
         "h": "How should you read the result?",
@@ -743,9 +743,9 @@
       {
         "h": "FAQ",
         "list": [
-          "Does date order matter? No — the absolute difference is shown.",
-          "Can the start date be today? Yes — fields default to today.",
-          "Are total hours realistic? Yes — exact days multiplied by 24."
+          "Does date order matter? No â€” the absolute difference is shown.",
+          "Can the start date be today? Yes â€” fields default to today.",
+          "Are total hours realistic? Yes â€” exact days multiplied by 24."
         ]
       }
     ],
@@ -757,8 +757,8 @@
       {
         "h": "When is each format used?",
         "list": [
-          "HEX: the standard in web design — #RRGGBB six-digit hex notation.",
-          "RGB: three numbers 0–255 used by screens and graphics software; the basis of contrast math.",
+          "HEX: the standard in web design â€” #RRGGBB six-digit hex notation.",
+          "RGB: three numbers 0â€“255 used by screens and graphics software; the basis of contrast math.",
           "HSL: hue, saturation and lightness make adjustments like \"lighter\" or \"darker\" natural."
         ]
       },
@@ -769,9 +769,9 @@
       {
         "h": "FAQ",
         "list": [
-          "Do I need the # prefix for HEX? Either works — both 6-digit forms are accepted.",
+          "Do I need the # prefix for HEX? Either works â€” both 6-digit forms are accepted.",
           "Which field updates the color? The last valid input applies; invalid entries keep the current color.",
-          "Are the HSL percentages required? Yes — saturation and lightness need the % sign."
+          "Are the HSL percentages required? Yes â€” saturation and lightness need the % sign."
         ]
       }
     ],
@@ -796,7 +796,7 @@
       {
         "h": "FAQ",
         "list": [
-          "Are UUID and GUID the same? Yes — GUID is Microsoft's name for a UUID.",
+          "Are UUID and GUID the same? Yes â€” GUID is Microsoft's name for a UUID.",
           "Can identifiers be changed? Every click produces fresh random values; generated lists are yours once copied.",
           "How many values can I generate? As many as you like in a single batch."
         ]
@@ -805,7 +805,7 @@
     "birim-donusturucu": [
       {
         "h": "What is a Unit Converter?",
-        "p": "A Unit Converter moves measurements between units for length, weight, volume, area and temperature. From centimeters to inches, kilograms to pounds, Celsius to Fahrenheit — hundreds of everyday conversions on one screen, useful for recipes, math homework, engineering and shopping."
+        "p": "A Unit Converter moves measurements between units for length, weight, volume, area and temperature. From centimeters to inches, kilograms to pounds, Celsius to Fahrenheit â€” hundreds of everyday conversions on one screen, useful for recipes, math homework, engineering and shopping."
       },
       {
         "h": "Which conversions are supported?",
@@ -825,7 +825,7 @@
         "h": "FAQ",
         "list": [
           "What decimal separator can I use? Both comma and dot are accepted (e.g. 1,5 or 1.5).",
-          "Are results rounded? Values are rounded to six digits — accurate enough for everyday measurement.",
+          "Are results rounded? Values are rounded to six digits â€” accurate enough for everyday measurement.",
           "Can more units be added? The five most common categories are supported; categories can be extended on request."
         ]
       }
@@ -847,7 +847,7 @@
         "h": "FAQ",
         "list": [
           "What length is enough? Aim for at least 12 characters; 16+ is safer.",
-          "Do you check the common-password list online? No — the list is embedded on your device.",
+          "Do you check the common-password list online? No â€” the list is embedded on your device.",
           "What is the best password? A unique, long, unpredictable password stored in a password manager."
         ]
       }
@@ -855,7 +855,7 @@
     "sayi-donusturucu": [
       {
         "h": "What is a Number Base Converter?",
-        "p": "A Number Base Converter translates numbers between the four counting systems used in programming: binary (base 2), octal (base 8), decimal (base 10) and hexadecimal (base 16). Type a value, choose which base it is written in, and the tool shows all four representations at once — handy for color values, permission masks, memory addresses and bit-level work."
+        "p": "A Number Base Converter translates numbers between the four counting systems used in programming: binary (base 2), octal (base 8), decimal (base 10) and hexadecimal (base 16). Type a value, choose which base it is written in, and the tool shows all four representations at once â€” handy for color values, permission masks, memory addresses and bit-level work."
       },
       {
         "h": "Why do large numbers stay exact?",
@@ -865,9 +865,9 @@
         "h": "When is each base used?",
         "list": [
           "Binary (0, 1): bits, masks and bitwise operations in low-level programming.",
-          "Octal (0–7): classic Unix file permission masks used with chmod.",
+          "Octal (0â€“7): classic Unix file permission masks used with chmod.",
           "Decimal: ordinary everyday numbers.",
-          "Hexadecimal (0–9, A–F): CSS colors such as #FF8800, memory addresses and byte values."
+          "Hexadecimal (0â€“9, Aâ€“F): CSS colors such as #FF8800, memory addresses and byte values."
         ]
       },
       {
@@ -883,11 +883,11 @@
       {
         "h": "Which flags are supported?",
         "list": [
-          "g — global: find all matches instead of just the first.",
-          "i — ignore case: a matches both a and A.",
-          "m — multiline: ^ and $ match line starts and ends.",
-          "s — dot-all: . also matches newline characters.",
-          "u — unicode: enables unicode-aware escapes such as \\p{...}."
+          "g â€” global: find all matches instead of just the first.",
+          "i â€” ignore case: a matches both a and A.",
+          "m â€” multiline: ^ and $ match line starts and ends.",
+          "s â€” dot-all: . also matches newline characters.",
+          "u â€” unicode: enables unicode-aware escapes such as \\p{...}."
         ]
       },
       {
@@ -902,7 +902,7 @@
     "bosluk-temizleyici": [
       {
         "h": "What is a Whitespace Cleaner?",
-        "p": "A Whitespace Cleaner normalizes spaces and line breaks in your text. Trim every line, collapse runs of spaces into one, drop empty lines or remove all whitespace — four cleaning modes on one screen that you can combine freely."
+        "p": "A Whitespace Cleaner normalizes spaces and line breaks in your text. Trim every line, collapse runs of spaces into one, drop empty lines or remove all whitespace â€” four cleaning modes on one screen that you can combine freely."
       },
       {
         "h": "Which cleanings are available?",
@@ -960,12 +960,12 @@
       },
       {
         "h": "Is my data safe?",
-        "p": "Yes. Decoding happens entirely in your browser; the token is never sent to any server. Note that decoding does not verify the signature — a JWT is readable by everyone who receives it."
+        "p": "Yes. Decoding happens entirely in your browser; the token is never sent to any server. Note that decoding does not verify the signature â€” a JWT is readable by everyone who receives it."
       }
     ],
     "json-csv-donusturucu": [
       {
-        "h": "What does the JSON ↔ CSV Converter do?",
+        "h": "What does the JSON â†” CSV Converter do?",
         "p": "It converts a JSON array of objects (or a single object) into a CSV file with a header row, and converts CSV data back into a JSON array of objects. Fields containing commas, quotes or newlines are correctly quoted per RFC-4180 rules."
       },
       {
@@ -989,8 +989,8 @@
       {
         "h": "How do conversions work?",
         "list": [
-          "Timestamp → date: enter e.g. 1893456000 and get the locale date and time (2030-01-01 00:00:00 UTC).",
-          "Date → timestamp: pick a date and time and get the exact epoch seconds; the value is treated as your local time.",
+          "Timestamp â†’ date: enter e.g. 1893456000 and get the locale date and time (2030-01-01 00:00:00 UTC).",
+          "Date â†’ timestamp: pick a date and time and get the exact epoch seconds; the value is treated as your local time.",
           "Both results update instantly with your local timezone settings."
         ]
       },
@@ -1061,15 +1061,15 @@
       },
       {
         "h": "How is the per-person share calculated?",
-        "p": "The tool adds the bill and the tip, then divides by the number of people. A ₺400 bill with a 15% tip (₺60) split between 4 people comes to ₺115 per person; dividing the ₺460 total between 3 people gives ₺153.33 each."
+        "p": "The tool adds the bill and the tip, then divides by the number of people. A â‚؛400 bill with a 15% tip (â‚؛60) split between 4 people comes to â‚؛115 per person; dividing the â‚؛460 total between 3 people gives â‚؛153.33 each."
       },
       {
         "h": "Which tip percentages are available?",
         "list": [
-          "5% — a minimum gesture for basic service.",
-          "10% — common in casual or buffet service.",
-          "15% — the standard tip in many countries.",
-          "20% and 25% — for great service or larger groups."
+          "5% â€” a minimum gesture for basic service.",
+          "10% â€” common in casual or buffet service.",
+          "15% â€” the standard tip in many countries.",
+          "20% and 25% â€” for great service or larger groups."
         ]
       }
     ],
@@ -1080,7 +1080,7 @@
       },
       {
         "h": "How does the calculation work?",
-        "p": "The discount amount is the original price multiplied by the discount percentage; the final price is the original price minus that amount. An item priced at ₺250 with a 20% discount saves you ₺50, so you pay ₺200, and the \"You save\" value shows the 20% rate."
+        "p": "The discount amount is the original price multiplied by the discount percentage; the final price is the original price minus that amount. An item priced at â‚؛250 with a 20% discount saves you â‚؛50, so you pay â‚؛200, and the \"You save\" value shows the 20% rate."
       },
       {
         "h": "Who can use it?",
@@ -1094,7 +1094,7 @@
     "ortalama-hesaplayici": [
       {
         "h": "What is an Average Calculator?",
-        "p": "An Average Calculator reads the numbers you enter and computes five statistics at once — average, sum, count, minimum and maximum. Numbers can be separated by commas, spaces or new lines, and both comma and dot decimals are accepted."
+        "p": "An Average Calculator reads the numbers you enter and computes five statistics at once â€” average, sum, count, minimum and maximum. Numbers can be separated by commas, spaces or new lines, and both comma and dot decimals are accepted."
       },
       {
         "h": "A quick example",
@@ -1117,7 +1117,7 @@
       },
       {
         "h": "How is the age estimated?",
-        "p": "The common formula counts the first year as about 15 human years, the second year as another 9, and then adds 4 to 5 human years per year depending on size. A 3-year-old medium dog therefore equals ≈15 + 9 + 4 = 28 human years."
+        "p": "The common formula counts the first year as about 15 human years, the second year as another 9, and then adds 4 to 5 human years per year depending on size. A 3-year-old medium dog therefore equals â‰ˆ15 + 9 + 4 = 28 human years."
       },
       {
         "h": "Is my data safe?",
@@ -1234,8 +1234,8 @@
       {
         "h": "Analogous vs monochrome",
         "list": [
-          "Analogous: colors sitting next to each other on the color wheel — often used together in natural, calm designs.",
-          "Monochrome: tints and shades of one hue — safe for professional and minimal layouts."
+          "Analogous: colors sitting next to each other on the color wheel â€” often used together in natural, calm designs.",
+          "Monochrome: tints and shades of one hue â€” safe for professional and minimal layouts."
         ]
       },
       {
@@ -1265,12 +1265,12 @@
     "metin-siralayici": [
       {
         "h": "What is a Line Sorter?",
-        "p": "A Line Sorter takes the lines of any text — lists, CSV rows, names, URLs — and reorders them by the rule you choose. Sort alphabetically, by length or by numeric value, or shuffle the order entirely; the output is copied with one click."
+        "p": "A Line Sorter takes the lines of any text â€” lists, CSV rows, names, URLs â€” and reorders them by the rule you choose. Sort alphabetically, by length or by numeric value, or shuffle the order entirely; the output is copied with one click."
       },
       {
         "h": "Which sorting modes are available?",
         "list": [
-          "A→Z / Z→A: alphabetical order with a Turkish-locale aware comparison.",
+          "Aâ†’Z / Zâ†’A: alphabetical order with a Turkish-locale aware comparison.",
           "Length: shortest lines first, useful for choosing short usernames or titles.",
           "Numeric: compares parsed numbers when lines contain values like 2, 10, 200.",
           "Shuffle: random order, for drawing turns or mixing a sequence."
@@ -1288,7 +1288,7 @@
       },
       {
         "h": "How is the shuffle random?",
-        "p": "The tool uses the Fisher-Yates algorithm with a cryptographic-quality random source, so every possible order has the same probability. The result is fair — ideal for drawing raffles, assigning turns or randomizing test data."
+        "p": "The tool uses the Fisher-Yates algorithm with a cryptographic-quality random source, so every possible order has the same probability. The result is fair â€” ideal for drawing raffles, assigning turns or randomizing test data."
       },
       {
         "h": "Is my data safe?",
@@ -1297,8 +1297,8 @@
     ],
     "yaml-json-donusturucu": [
       {
-        "h": "What is a YAML ↔ JSON Converter?",
-        "p": "A YAML ↔ JSON Converter translates configuration data between the YAML text format and strict JSON syntax in both directions. Use it when porting config files, mocking APIs or switching between tools that expect one format or the other. Conversion runs with a small built-in YAML parser, so no data leaves your browser."
+        "h": "What is a YAML â†” JSON Converter?",
+        "p": "A YAML â†” JSON Converter translates configuration data between the YAML text format and strict JSON syntax in both directions. Use it when porting config files, mocking APIs or switching between tools that expect one format or the other. Conversion runs with a small built-in YAML parser, so no data leaves your browser."
       },
       {
         "h": "When is it useful?",
@@ -1367,7 +1367,7 @@
         },
         {
           "h": "Our roadmap",
-          "pre": "We keep adding tools and improving existing ones. Your suggestions guide us — if you have an idea, write to us via our",
+          "pre": "We keep adding tools and improving existing ones. Your suggestions guide us â€” if you have an idea, write to us via our",
           "link": "contact page",
           "route": "/iletisim",
           "post": "."
@@ -1381,7 +1381,7 @@
       "title": "Contact",
       "desc": "Get in touch with FreetoolsY: write to us with your questions, suggestions and feedback.",
       "h1": "Contact",
-      "p1": "Use the form below for questions, suggestions or feedback. It forwards your message to destek@freetoolsy.com through your email app."
+      "p1": "Use the form below for questions, suggestions or feedback. It forwards your message to support@freetoolsy.com through your email app."
     },
     "gizlilik": {
       "navLabel": "Privacy Policy",
@@ -1444,7 +1444,7 @@
   "comp": {
     "karakterSayaci": {
       "label": "Enter your text",
-      "placeholder": "Type or paste here…",
+      "placeholder": "Type or paste hereâ€¦",
       "chars": "Characters",
       "noSpace": "Chars (no spaces)",
       "words": "Words",
@@ -1454,7 +1454,7 @@
     },
     "kelimeSayaci": {
       "label": "Enter your text",
-      "placeholder": "Type or paste here…",
+      "placeholder": "Type or paste hereâ€¦",
       "words": "Words",
       "chars": "Characters",
       "sentences": "Sentences",
@@ -1465,7 +1465,7 @@
     },
     "harfDonusturucu": {
       "label": "Enter your text",
-      "placeholder": "Type or paste here…",
+      "placeholder": "Type or paste hereâ€¦",
       "upper": "UPPERCASE",
       "lower": "lowercase",
       "title": "Title Case",
@@ -1477,10 +1477,10 @@
       "length": "Length",
       "charTypes": "Character types",
       "genCount": "Number of passwords",
-      "optionLower": "Lowercase (a–z)",
-      "optionUpper": "Uppercase (A–Z)",
-      "optionDigits": "Digits (0–9)",
-      "optionSymbols": "Symbols (!@#…)",
+      "optionLower": "Lowercase (aâ€“z)",
+      "optionUpper": "Uppercase (Aâ€“Z)",
+      "optionDigits": "Digits (0â€“9)",
+      "optionSymbols": "Symbols (!@#â€¦)",
       "passwordSingular": "{count} password",
       "passwordMany": "{count} passwords",
       "generate": "Generate new password",
@@ -1508,32 +1508,32 @@
       "clear": "Clear",
       "emptyError": "Enter JSON data first.",
       "invalidError": "Invalid JSON.",
-      "placeholderOutput": "Result will appear here…"
+      "placeholderOutput": "Result will appear hereâ€¦"
     },
     "base64": {
       "input": "Input",
-      "placeholderInput": "Text or Base64 data…",
+      "placeholderInput": "Text or Base64 dataâ€¦",
       "encode": "Encode",
       "decode": "Decode",
       "emptyError": "Enter Base64 data first.",
       "invalidError": "Invalid Base64 data.",
       "output": "Output",
-      "placeholderOutput": "Result will appear here…",
+      "placeholderOutput": "Result will appear hereâ€¦",
       "copy": "Copy",
       "copied": "Copied"
     },
     "url": {
       "input": "Input",
-      "placeholderInput": "https://example.com/path?q=value…",
+      "placeholderInput": "https://example.com/path?q=valueâ€¦",
       "encode": "Encode",
       "decode": "Decode",
       "emptyError": "Enter encoded URL data first.",
       "invalidError": "Invalid URL encoding.",
       "output": "Output",
-      "placeholderOutput": "Result will appear here…",
+      "placeholderOutput": "Result will appear hereâ€¦",
       "copy": "Copy",
       "copied": "Copied",
-      "linklyNote": "For short, clean URLs try LinklyhHub →"
+      "linklyNote": "For short, clean URLs try LinklyhHub â†’"
     },
     "kdv": {
       "amount": "Amount",
@@ -1645,7 +1645,7 @@
       "copy": "Copy",
       "copied": "Copied",
       "shadesTitle": "Shades & tints (click to apply)",
-      "copyNote": "Click a tile to set it as your color. All conversions run instantly in your browser — nothing is sent to a server."
+      "copyNote": "Click a tile to set it as your color. All conversions run instantly in your browser â€” nothing is sent to a server."
     },
     "uuid": {
       "tabAria": "UUID tool",
@@ -1692,8 +1692,8 @@
       "unit-yd": "yd",
       "unit-ft": "ft",
       "unit-in": "in",
-      "unit-c": "°C",
-      "unit-f": "°F",
+      "unit-c": "آ°C",
+      "unit-f": "آ°F",
       "unit-k": "K",
       "unit-kg": "kg",
       "unit-g": "g",
@@ -1717,7 +1717,7 @@
       "to": "To",
       "swap": "Swap units",
       "equal": "equals",
-      "invalid": "—",
+      "invalid": "â€”",
       "note": "Conversions happen instantly in your browser. Temperature uses exact formulas; all other units use standard conversion factors with up to 4 decimal places."
     },
     "passwordStrength": {
@@ -1747,10 +1747,10 @@
       "email": "Email",
       "emailPlaceholder": "name@example.com",
       "message": "Your message",
-      "messagePlaceholder": "Write your question or feedback here…",
+      "messagePlaceholder": "Write your question or feedback hereâ€¦",
       "fillError": "Please fill in all fields.",
       "submit": "Send",
-      "note": "The form opens your email app with the message addressed to destek@freetoolsy.com. Your data is not stored on this site.",
+      "note": "The form opens your email app with the message addressed to support@freetoolsy.com. Your data is not stored on this site.",
       "subject": "FreetoolsY contact",
       "sent": "Your message is ready; your email app opened. Thank you! You can also reach us at"
     },
@@ -1777,10 +1777,10 @@
       "flagS": "dot matches newlines",
       "flagU": "unicode",
       "textLabel": "Test text",
-      "textPlaceholder": "Paste or type the text to test here…",
+      "textPlaceholder": "Paste or type the text to test hereâ€¦",
       "matchCountOne": "{count} match",
       "matchCountMany": "{count} matches",
-      "noMatches": "No matches — try a different pattern, flags or text.",
+      "noMatches": "No matches â€” try a different pattern, flags or text.",
       "error": "Invalid regular expression: {message}",
       "note": "Testing runs entirely in your browser as you type."
     },
@@ -1799,7 +1799,7 @@
     },
     "md5Hash": {
       "label": "Enter text",
-      "placeholder": "Type or paste here…",
+      "placeholder": "Type or paste hereâ€¦",
       "hashLabel": "MD5 Digest",
       "copy": "Copy",
       "copied": "Copied!",
@@ -1807,7 +1807,7 @@
     },
     "jwt": {
       "label": "JWT Token",
-      "placeholder": "eyJhbGciOi…",
+      "placeholder": "eyJhbGciOiâ€¦",
       "decode": "Decode",
       "headerLabel": "Header",
       "payloadLabel": "Payload",
@@ -1815,8 +1815,8 @@
       "invalid": "Please enter a valid JWT. A token must have 3 parts."
     },
     "jsonCsv": {
-      "modeJsonToCsv": "JSON → CSV",
-      "modeCsvToJson": "CSV → JSON",
+      "modeJsonToCsv": "JSON â†’ CSV",
+      "modeCsvToJson": "CSV â†’ JSON",
       "inputLabel": "Input",
       "outputLabel": "Output",
       "convert": "Convert",
@@ -1826,17 +1826,17 @@
       "invalidCsv": "First row must contain column headers"
     },
     "timestamp": {
-      "tsToDateLabel": "Unix timestamp → Date",
+      "tsToDateLabel": "Unix timestamp â†’ Date",
       "tsToDatePlaceholder": "e.g. 1893456000",
       "convertToDate": "To date",
-      "dateToTsLabel": "Date → Unix timestamp",
+      "dateToTsLabel": "Date â†’ Unix timestamp",
       "dateToTsPlaceholder": "Pick date and time",
       "convertToTs": "To timestamp",
       "invalidTs": "Enter a valid number"
     },
     "tekrarSatir": {
       "label": "Enter your text",
-      "placeholder": "Paste a line list…",
+      "placeholder": "Paste a line listâ€¦",
       "outputLabel": "Unique lines",
       "remove": "Remove duplicates",
       "kept": "{kept} of {total} lines kept",
@@ -1845,7 +1845,7 @@
     },
     "aiToken": {
       "label": "Enter your text",
-      "placeholder": "Paste the text to analyze…",
+      "placeholder": "Paste the text to analyzeâ€¦",
       "tokens": "Estimated Tokens",
       "chars": "Characters",
       "words": "Words",
@@ -1861,7 +1861,7 @@
       "copied": "Copied!"
     },
     "bahsis": {
-      "billLabel": "Bill amount (₺)",
+      "billLabel": "Bill amount (â‚؛)",
       "tipLabel": "Tip percent",
       "splitLabel": "Split between",
       "tipAmount": "Tip amount",
@@ -1869,7 +1869,7 @@
       "perPerson": "Per person"
     },
     "indirim": {
-      "originalLabel": "Original price (₺)",
+      "originalLabel": "Original price (â‚؛)",
       "discountLabel": "Discount percent (%)",
       "discountAmount": "Discount amount",
       "finalLabel": "Final price",
@@ -1891,8 +1891,8 @@
       "small": "Small",
       "medium": "Medium",
       "large": "Large",
-      "humanAge": "Equivalent human age: ≈{age}",
-      "note": "Common formula: first year ≈15, second +9, then +4–5 per year depending on size."
+      "humanAge": "Equivalent human age: â‰ˆ{age}",
+      "note": "Common formula: first year â‰ˆ15, second +9, then +4â€“5 per year depending on size."
     },
     "subnet": {
       "ipLabel": "IP address",
@@ -1909,12 +1909,12 @@
       "baseLabel": "Base font size (px)",
       "pxLabel": "Pixels (px)",
       "remLabel": "REM",
-      "remToPxLabel": "REM → Pixels",
-      "pxToRemLabel": "Pixels → REM"
+      "remToPxLabel": "REM â†’ Pixels",
+      "pxToRemLabel": "Pixels â†’ REM"
     },
     "xmlFormatter": {
       "label": "XML input",
-      "placeholder": "Paste XML…",
+      "placeholder": "Paste XMLâ€¦",
       "format": "Format",
       "minify": "Minify",
       "outputLabel": "Output",
@@ -1924,7 +1924,7 @@
     },
     "cssMinifier": {
       "label": "CSS input",
-      "placeholder": "Paste CSS…",
+      "placeholder": "Paste CSSâ€¦",
       "minify": "Minify",
       "outputLabel": "Output",
       "copy": "Copy",
@@ -1935,7 +1935,7 @@
     },
     "htmlMinifier": {
       "label": "HTML input",
-      "placeholder": "Paste HTML…",
+      "placeholder": "Paste HTMLâ€¦",
       "minify": "Minify",
       "outputLabel": "Output",
       "copy": "Copy",
@@ -1976,9 +1976,9 @@
     },
     "metinSiralayici": {
       "label": "Your lines",
-      "placeholder": "Paste lines…",
-      "sortAz": "A→Z",
-      "sortZa": "Z→A",
+      "placeholder": "Paste linesâ€¦",
+      "sortAz": "Aâ†’Z",
+      "sortZa": "Zâ†’A",
       "byLength": "By length",
       "numeric": "Numeric",
       "shuffle": "Shuffle",
@@ -1988,7 +1988,7 @@
     },
     "listeKaristirici": {
       "label": "List",
-      "placeholder": "One item per line…",
+      "placeholder": "One item per lineâ€¦",
       "shuffle": "Shuffle",
       "draw": "Pick one",
       "resultLabel": "Result",
@@ -1997,8 +1997,8 @@
       "copied": "Copied!"
     },
     "yamlJson": {
-      "modeYamlToJson": "YAML → JSON",
-      "modeJsonToYaml": "JSON → YAML",
+      "modeYamlToJson": "YAML â†’ JSON",
+      "modeJsonToYaml": "JSON â†’ YAML",
       "inputLabel": "Input",
       "outputLabel": "Output",
       "convert": "Convert",
@@ -2012,7 +2012,7 @@
       "fileName": "File",
       "size": "Size",
       "digest": "MD5 Checksum",
-      "hashing": "Hashing…",
+      "hashing": "Hashingâ€¦",
       "copy": "Copy",
       "copied": "Copied!",
       "tip": "The result is computed entirely in your browser; the file is never sent anywhere."
