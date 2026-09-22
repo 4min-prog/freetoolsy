@@ -15,7 +15,7 @@ export default function LocaleSwitcher() {
       href={pathname}
       locale={other}
       aria-label={other === "tr" ? t("switchToTurkish") : t("switchToEnglish")}
-      className="grid h-9 w-9 place-items-center rounded-lg border border-border bg-surface text-xs font-semibold uppercase text-muted transition-colors hover:border-strong hover:text-text"
+      className="grid h-11 w-11 place-items-center rounded-lg border border-border bg-surface text-xs font-semibold uppercase text-muted transition-colors hover:border-strong hover:text-text"
     >
       {other}
     </Link>

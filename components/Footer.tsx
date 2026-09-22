@@ -1,8 +1,12 @@
 import { Link } from "@/i18n/navigation";
-import { getTranslations } from "next-intl/server";
+import { getMessages, getTranslations } from "next-intl/server";
+import { tools } from "@/data/tools";
 
 export default async function Footer() {
   const t = await getTranslations("Footer");
+  const messages = await getMessages();
+  const meta = (messages as { ToolMeta?: Record<string, { name?: string }> })
+    .ToolMeta;
 
   return (
     <footer className="mt-auto border-t border-border">
@@ -73,6 +77,21 @@ export default async function Footer() {
             </ul>
           </div>
         </nav>
+      </div>
+      <div className="mx-auto w-full max-w-5xl border-t border-border px-4 pb-10 pt-8 sm:px-6">
+        <p className="text-sm font-semibold text-text">{t("tools")}</p>
+        <ul className="mt-4 grid grid-cols-2 gap-x-6 gap-y-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+          {tools.map((tool) => (
+            <li key={tool.slug}>
+              <Link
+                href={`/araclar/${tool.slug}`}
+                className="inline-block text-sm text-muted transition-colors hover:text-text"
+              >
+                {meta?.[tool.slug]?.name ?? tool.slug}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
       <div className="border-t border-border">
         <p className="mx-auto w-full max-w-5xl px-4 py-4 text-xs text-muted sm:px-6">

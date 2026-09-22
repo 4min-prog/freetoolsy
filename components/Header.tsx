@@ -92,8 +92,17 @@ export default function Header() {
             {open && (
               <div
                 role="menu"
-                className="absolute right-0 mt-1.5 w-52 rounded-xl border border-border bg-surface p-1.5 shadow-card-hover"
+                className="absolute right-0 mt-1.5 w-56 rounded-xl border border-border bg-surface p-1.5 shadow-card-hover"
               >
+                <Link
+                  href="/"
+                  role="menuitem"
+                  onClick={() => setOpen(false)}
+                  className="flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm font-medium text-text transition-colors hover:bg-surface-2"
+                >
+                  {t("allTools")}
+                </Link>
+                <div role="separator" className="my-1.5 border-t border-border" />
                 {categories.map((category) => (
                   <Link
                     key={category.id}
@@ -114,7 +123,7 @@ export default function Header() {
             type="button"
             onClick={focusSearch}
             aria-label={t("searchLabel")}
-            className="rounded-md p-2 text-muted transition-colors hover:text-text"
+            className="rounded-md p-2.5 text-muted transition-colors hover:text-text"
           >
             <svg
               viewBox="0 0 24 24"

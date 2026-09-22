@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import { useMessages, useTranslations } from "next-intl";
 import ToolCard from "@/components/ToolCard";
 import CategoryIcon from "@/components/CategoryIcon";
+import { useRouter } from "@/i18n/navigation";
 import { categories, getToolsByCategory, tools } from "@/data/tools";
 
 interface ToolMetaNs {
@@ -18,6 +19,7 @@ export default function ToolExplorer() {
   const meta = messages.ToolMeta as Record<string, ToolMetaNs> | undefined;
   const [query, setQuery] = useState("");
   const searchRef = useRef<HTMLInputElement>(null);
+  const router = useRouter();
 
   const normalized = query.toLocaleLowerCase().trim();
 
@@ -32,6 +34,25 @@ export default function ToolExplorer() {
           .includes(normalized);
       })
     : null;
+
+  function handleSearchKeyDown(event: React.KeyboardEvent<HTMLInputElement>) {
+    if (event.key !== "Enter") return;
+    const q = event.currentTarget.value.toLocaleLowerCase().trim();
+    if (!q) return;
+    const match = tools.find((tool) => {
+      const toolMeta = meta ? meta[tool.slug] : undefined;
+      const name = toolMeta ? toolMeta.name ?? "" : tool.slug;
+      const desc = toolMeta ? toolMeta.desc ?? "" : "";
+      return [name, desc, tool.slug, tool.category]
+        .join(" ")
+        .toLocaleLowerCase()
+        .includes(q);
+    });
+    if (match) {
+      event.preventDefault();
+      router.push(`/araclar/${match.slug}`);
+    }
+  }
 
   function goToCategory(id: string) {
     setQuery("");
@@ -68,6 +89,7 @@ export default function ToolExplorer() {
             type="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
+            onKeyDown={handleSearchKeyDown}
             placeholder={t("searchPlaceholder")}
             className="w-full rounded-xl border border-border bg-surface py-3 pl-10 pr-4 text-sm text-text placeholder:text-faint shadow-card transition-colors focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
           />

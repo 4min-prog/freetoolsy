@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getTranslations, getMessages, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { categories, getTool, tools } from "@/data/tools";
 import { routing, type Locale } from "@/i18n/routing";
@@ -29,6 +29,7 @@ import AdSlot from "@/components/AdSlot";
 import JsonLd from "@/components/JsonLd";
 import ToolJsonLd from "@/components/ToolJsonLd";
 import ToolSeoContent from "@/components/ToolSeoContent";
+import ToolIcon from "@/components/ToolIcon";
 
 const toolComponents: Record<string, React.ComponentType> = {
   "karakter-sayaci": KarakterSayaci,
@@ -103,6 +104,12 @@ export default async function AraclarPage({
   const tc = await getTranslations("Categories");
   const tPage = await getTranslations("ToolPage");
   const tInfo = await getTranslations("Info");
+  const messages = await getMessages();
+  const meta = (messages as { ToolMeta?: Record<string, { name?: string }> })
+    .ToolMeta;
+  const otherTools = tools
+    .filter((item) => item.slug !== tool.slug && item.category === tool.category)
+    .slice(0, 6);
 
   const ToolComponent = toolComponents[tool.slug];
   if (!ToolComponent) notFound();
@@ -164,6 +171,9 @@ export default async function AraclarPage({
       </nav>
 
       <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2">
+        <span className="grid h-11 w-11 shrink-0 place-items-center rounded-lg bg-accent/10 text-accent">
+          <ToolIcon id={tool.slug} className="h-6 w-6" />
+        </span>
         <h1 className="text-2xl font-semibold tracking-tight text-text sm:text-3xl">
           {t("name")}
         </h1>
@@ -184,6 +194,38 @@ export default async function AraclarPage({
       <AdSlot slot="bottom" />
 
       <ToolSeoContent slug={tool.slug} />
+
+      {otherTools.length > 0 && (
+        <section
+          aria-label={tPage("otherTitle")}
+          className="mt-12 rounded-xl border border-border bg-surface p-6 shadow-card"
+        >
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <h2 className="text-base font-semibold tracking-tight text-text">
+              {tPage("otherTitle")}
+            </h2>
+            <Link
+              href="/"
+              className="text-sm font-medium text-accent transition-opacity hover:opacity-80"
+            >
+              {tPage("otherAll")}
+            </Link>
+          </div>
+          <ul className="mt-4 flex flex-wrap gap-2">
+            {otherTools.map((item) => (
+              <li key={item.slug}>
+                <Link
+                  href={`/araclar/${item.slug}`}
+                  className="inline-flex items-center gap-2 rounded-full border border-border bg-bg px-3 py-1.5 text-sm text-muted transition-colors hover:border-accent hover:text-accent"
+                >
+                  <ToolIcon id={item.slug} className="h-3.5 w-3.5" />
+                  {meta?.[item.slug]?.name ?? item.slug}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <p className="mt-10 text-center text-sm text-muted">
         {tPage("linklyPre")}{" "}

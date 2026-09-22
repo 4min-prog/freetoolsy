@@ -169,3 +169,12 @@ export function getTool(slug: string): Tool | undefined {
 export function getToolsByCategory(category: string): Tool[] {
   return tools.filter((tool) => tool.category === category);
 }
+
+export const popularTools: string[] = [
+  "karakter-sayaci",
+  "json-formatter",
+  "sifre-uretici",
+  "kdv-hesaplayici",
+  "qr-kod-olusturucu",
+  "base64",
+];
