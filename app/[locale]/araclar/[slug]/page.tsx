@@ -25,6 +25,29 @@ import ParolaGucTesti from "@/components/tools/ParolaGucTesti";
 import SayiDonusturucu from "@/components/tools/SayiDonusturucu";
 import RegexTesti from "@/components/tools/RegexTesti";
 import BoslukTemizleyici from "@/components/tools/BoslukTemizleyici";
+import Md5Hash from "@/components/tools/Md5Hash";
+import JwtDecoder from "@/components/tools/JwtDecoder";
+import JsonCsv from "@/components/tools/JsonCsv";
+import TimestampConverter from "@/components/tools/TimestampConverter";
+import TekrarSatirTemizleyici from "@/components/tools/TekrarSatirTemizleyici";
+import AiTokenHesaplayici from "@/components/tools/AiTokenHesaplayici";
+import LoremIpsumUretici from "@/components/tools/LoremIpsumUretici";
+import BahsisHesaplayici from "@/components/tools/BahsisHesaplayici";
+import IndirimHesaplayici from "@/components/tools/IndirimHesaplayici";
+import OrtalamaHesaplayici from "@/components/tools/OrtalamaHesaplayici";
+import KopekYasiHesaplayici from "@/components/tools/KopekYasiHesaplayici";
+import SubnetHesaplayici from "@/components/tools/SubnetHesaplayici";
+import PxRemDonusturucu from "@/components/tools/PxRemDonusturucu";
+import XmlFormatter from "@/components/tools/XmlFormatter";
+import CssMinifier from "@/components/tools/CssMinifier";
+import HtmlMinifier from "@/components/tools/HtmlMinifier";
+import WcagKontrast from "@/components/tools/WcagKontrast";
+import RenkPaletiUretici from "@/components/tools/RenkPaletiUretici";
+import BoxShadowUretici from "@/components/tools/BoxShadowUretici";
+import MetinSiralayici from "@/components/tools/MetinSiralayici";
+import ListeKaristirici from "@/components/tools/ListeKaristirici";
+import YamlJson from "@/components/tools/YamlJson";
+import Md5DosyaChecksum from "@/components/tools/Md5DosyaChecksum";
 import AdSlot from "@/components/AdSlot";
 import JsonLd from "@/components/JsonLd";
 import ToolJsonLd from "@/components/ToolJsonLd";
@@ -53,6 +76,29 @@ const toolComponents: Record<string, React.ComponentType> = {
   "sayi-donusturucu": SayiDonusturucu,
   "regex-testi": RegexTesti,
   "bosluk-temizleyici": BoslukTemizleyici,
+  "md5-hash": Md5Hash,
+  "jwt-cozucu": JwtDecoder,
+  "json-csv-donusturucu": JsonCsv,
+  "unix-timestamp-cevirici": TimestampConverter,
+  "tekrar-satir-temizleyici": TekrarSatirTemizleyici,
+  "ai-token-hesaplayici": AiTokenHesaplayici,
+  "lorem-ipsum-uretici": LoremIpsumUretici,
+  "bahsis-hesaplayici": BahsisHesaplayici,
+  "indirim-hesaplayici": IndirimHesaplayici,
+  "ortalama-hesaplayici": OrtalamaHesaplayici,
+  "kopek-yasi-hesaplayici": KopekYasiHesaplayici,
+  "subnet-hesaplayici": SubnetHesaplayici,
+  "px-rem-donusturucu": PxRemDonusturucu,
+  "xml-formatter": XmlFormatter,
+  "css-minifier": CssMinifier,
+  "html-minifier": HtmlMinifier,
+  "wcag-kontrast": WcagKontrast,
+  "renk-paleti-uretici": RenkPaletiUretici,
+  "box-shadow-uretici": BoxShadowUretici,
+  "metin-siralayici": MetinSiralayici,
+  "liste-karistirici": ListeKaristirici,
+  "yaml-json-donusturucu": YamlJson,
+  "md5-dosya-checksum": Md5DosyaChecksum,
 };
 
 const siteUrl = "https://freetoolsy.vercel.app";

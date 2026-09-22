@@ -7,7 +7,7 @@
   },
   "Home": {
     "title": "Ücretsiz Online Araçlar — Hızlı, Basit",
-    "description": "4 kategoride 21 ücretsiz online araç. Karakter sayacı, parola üretici, JSON biçimlendirici, KDV hesaplama ve daha fazlası. Kayıt yok, kurulum yok.",
+    "description": "4 kategoride 44 ücretsiz online araç. Karakter sayacı, parola üretici, JSON biçimlendirici, KDV hesaplama ve daha fazlası. Kayıt yok, kurulum yok.",
     "heroTitle": "Ücretsiz Online Araçlar — Hızlı, Basit",
     "heroSubtitle": "Kategoriler: {cats}, araçlar: {tools}. Metin, Güvenlik, Geliştirici ve Hesaplama. Kayıt yok, kurulum yok; her hesaplama tarayıcınızda yapılır ve verileriniz asla tarayıcınızdan çıkmaz.",
     "popularTitle": "Popüler:",
@@ -220,6 +220,167 @@
       "title": "Boşluk Temizleyici — Ücretsiz Çevrimiçi Araç",
       "pageDesc": "Metni kırpın, birden fazla boşluğu birleştirin, boş satırları kaldırın veya tek tıkla tüm boşlukları temizleyin. Ücretsiz ve gizli.",
       "intro": "Herhangi bir metindeki sondaki boşlukları, fazla boşlukları ve boş satırları tek tıkla temizleyin."
+    },
+    "md5-hash": {
+      "name": "MD5 Hash",
+      "desc": "Metninizin MD5 hex özetini anında hesaplar ve tek tıkla kopyalar.",
+      "title": "MD5 Hash — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Metninizin MD5 özetini 32 haneli hex olarak anında oluşturun. Tarayıcınızda çalışır; veri gönderilmez, tamamen gizli.",
+      "intro": "Metninizi yazın veya yapıştırın; küçük harfli 32 haneli MD5 hex özetini saniyeler içinde alın."
+    },
+    "jwt-cozucu": {
+      "name": "JWT Çözücü",
+      "desc": "Bir JWT'yi header, payload ve imza olarak çözer ve okunabilir JSON biçiminde gösterir.",
+      "title": "JWT Çözücü — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Bir JWT token'ini header, payload ve imza bölümlerine ayırın ve okunabilir JSON olarak görün. Tamamen tarayıcı tarafında; token'iniz tarayıcınızdan çıkmaz.",
+      "intro": "Bir JWT token yapıştırın; base64url ile çözülmüş header, payload ve imzayı anında görün."
+    },
+    "json-csv-donusturucu": {
+      "name": "JSON ↔ CSV Dönüştürücü",
+      "desc": "JSON'u CSV'ye, CSV'yi JSON'a çevirir; iki yönde de doğru tırnaklama yapar.",
+      "title": "JSON ↔ CSV Dönüştürücü — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "JSON'u CSV'ye veya CSV'yi JSON'a anında dönüştürün; virgül, tırnak ve yeni satır içeren alanlar doğru işlenir. Tarayıcınızda çalışır; veri gönderilmez.",
+      "intro": "Bir yön seçin, verilerinizi yapıştırın ve saniyeler içinde JSON ↔ CSV dönüşümü yapın."
+    },
+    "unix-timestamp-cevirici": {
+      "name": "Unix Zaman Damgası Çevirici",
+      "desc": "Unix zaman damgalarını okunabilir tarihlere, tarihleri de Unix zaman damgasına çevirir.",
+      "title": "Unix Zaman Damgası Çevirici — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Bir Unix zaman damgasını okunabilir tarih ve saate ya da bir tarihi epoch zaman damgasına çevirin. Ücretsiz, anında ve tamamen tarayıcı tarafında.",
+      "intro": "Bir Unix zaman damgasını yerel tarihe ya da seçtiğiniz bir tarihi epoch değerine çevirin."
+    },
+    "tekrar-satir-temizleyici": {
+      "name": "Tekrar Satır Temizleyici",
+      "desc": "Tekrarlanan satırları kaldırır ve her satırın yalnızca ilk geçtiği haliyle kalmasını sağlar.",
+      "title": "Tekrar Satır Temizleyici — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Listelerdeki tekrar eden satırları ilk görülme sırasını koruyarak anında kaldırın. Ücretsiz, gizli ve tamamen tarayıcı tarafında.",
+      "intro": "Bir liste yapıştırın ve tekrar eden satırları, ilk geçtikleri sırayı koruyarak temizleyin."
+    },
+    "ai-token-hesaplayici": {
+      "name": "AI Token Hesaplayıcı",
+      "desc": "Metninizin AI ve LLM bağlam sınırları için tahmini token sayısını hesaplar.",
+      "title": "AI Token Hesaplayıcı — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "ChatGPT, Claude ve diğer LLM sınırları için metninizin tahmini token sayısını; karakter, kelime ve satır sayısıyla birlikte hesaplayın. Tarayıcınızda çalışır; veri gönderilmez.",
+      "intro": "Metninizi yapıştırın; karakter, kelime ve satır istatistikleriyle birlikte tahmini token sayısını görün."
+    },
+    "lorem-ipsum-uretici": {
+      "name": "Lorem Ipsum Üretici",
+      "desc": "İstediğiniz paragraf ve cümle sayısında yer tutucu Lorem Ipsum metni üretir.",
+      "title": "Lorem Ipsum Üretici — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Paragraf ve cümle sayısı seçiminizle ücretsiz Lorem Ipsum yer tutucu metni üretin. Tasarım gereği gizli; metin tamamen tarayıcınızda oluşturulur.",
+      "intro": "Paragraf sayısı ve paragraf başına cümle seçiminizle Lorem Ipsum yer tutucu metni üretin."
+    },
+    "bahsis-hesaplayici": {
+      "name": "Bahşiş Hesaplayıcı",
+      "desc": "Herhangi bir hesap ve bahşiş oranı için bahşiş tutarını, toplam tutarı ve kişi başı payı anında hesaplar.",
+      "title": "Bahşiş Hesaplayıcı — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "%5 ile %25 arası bahşiş oranları için bahşiş tutarını, toplamı ve kişi başı payı hesaplayın. Ücretsiz ve tamamen tarayıcı tarafında; tutarlarınız tarayıcınızdan asla çıkmaz.",
+      "intro": "Hesabınızı girin, bir bahşiş oranı seçin ve bahşişi, toplamı ve kişi başı payı tek seferde görün."
+    },
+    "indirim-hesaplayici": {
+      "name": "İndirim Hesaplayıcı",
+      "desc": "Orijinal fiyat ve indirim oranından indirim tutarını, indirimli fiyatı ve tasarruf yüzdesini hesaplar.",
+      "title": "İndirim Hesaplayıcı — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Herhangi bir orijinal fiyat ve indirim oranı için indirim tutarını, indirimli fiyatı ve kazanılan yüzdeyi hesaplayın. Ücretsiz, doğru ve tamamen tarayıcınızda çalışır.",
+      "intro": "Orijinal fiyat ve indirim yüzdesi girin; indirim tutarını ve indirimli fiyatı anında görün."
+    },
+    "ortalama-hesaplayici": {
+      "name": "Ortalama Hesaplayıcı",
+      "desc": "Bir sayı listesinin ortalama, toplam, adet, minimum ve maksimumunu anında bulur.",
+      "title": "Ortalama Hesaplayıcı — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Herhangi bir sayı listesinin ortalama, toplam, adet, minimum ve maksimum değerlerini saniyeler içinde hesaplayın. Ücretsiz ve tamamen tarayıcı tarafında; sayılarınız hiçbir zaman gönderilmez veya saklanmaz.",
+      "intro": "Bir sayı listesi yapıştırın veya yazın ve ortalama, toplam, adet, minimum ve maksimum değerlerini görün."
+    },
+    "kopek-yasi-hesaplayici": {
+      "name": "Köpek Yaşı Hesaplayıcı",
+      "desc": "Köpeğin yaşını ve cins boyutunu kullanarak insan yaşı karşılığını tahmin eder.",
+      "title": "Köpek Yaşı Hesaplayıcı — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Köpeğinizin yaşını, küçük, orta ve büyük ırklar için boyuta duyarlı bir formülle insan yaşına çevirin. Ücretsiz ve gizli; her şey tarayıcınızda çalışır.",
+      "intro": "Köpeğinizin yaşını ve boyutunu girin; yaklaşık insan yaşı karşılığını görün."
+    },
+    "subnet-hesaplayici": {
+      "name": "Subnet Hesaplayıcı",
+      "desc": "Bir IPv4 alt ağının ağ adresini, broadcast'ini, maskesini ve ana bilgisayar sayılarını hesaplar.",
+      "title": "Subnet Hesaplayıcı — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "/0 ile /32 arasındaki herhangi bir IPv4 alt ağı için ağ adresini, broadcast'i, maskeyi ve kullanılabilir ana bilgisayar sayısını hesaplayın. Ücretsiz ve tamamen tarayıcı tarafında; adresler tarayıcınızdan asla çıkmaz.",
+      "intro": "Bir IPv4 adresi ve prefix girin; ağ adresini, broadcast'i, maskeyi ve ana bilgisayar sayılarını alın."
+    },
+    "px-rem-donusturucu": {
+      "name": "PX REM Dönüştürücü",
+      "desc": "Seçtiğiniz temel yazı boyutuyla pikselleri rem'e ve rem'i piksellere canlı olarak çevirir.",
+      "title": "PX REM Dönüştürücü — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Özel bir temel yazı boyutuyla pikselleri rem'e ve rem'i piksellere, yazarken canlı olarak çevirin. Ücretsiz ve tamamen tarayıcı tarafında; hiçbir şey gönderilmez veya saklanmaz.",
+      "intro": "Temel bir yazı boyutu (varsayılan 16 px) kullanarak piksel ve rem arasında anında dönüşüm yapın."
+    },
+    "xml-formatter": {
+      "name": "XML Biçimlendirici",
+      "desc": "XML kodunu tarayıcınızda tek tıkla biçimlendirir ve küçültür.",
+      "title": "XML Biçimlendirici — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "XML kodunu anında biçimlendirin, küçültün ve geçerliliğini kontrol edin. Ücretsiz ve gizli; XML'iniz tarayıcınızdan asla çıkmaz.",
+      "intro": "XML'inizi yapıştırın, Düzenle ile girintileyin veya Küçült ile sıkıştırın ve sonucu anında kopyalayın."
+    },
+    "css-minifier": {
+      "name": "CSS Küçültücü",
+      "desc": "Yorumları ve gereksiz boşlukları kaldırarak CSS kodunu küçültür ve dosya boyutunu azaltır.",
+      "title": "CSS Küçültücü — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Yorumları kaldırıp boşlukları sadeleştirerek CSS'i küçültün ve önce/sonra boyutlarını karşılaştırın. Ücretsiz ve gizli; her şey tarayıcınızda çalışır.",
+      "intro": "Yorumları ve fazla boşlukları kaldırarak CSS'inizi küçültün ve daha küçük çıktıyı anında kopyalayın."
+    },
+    "html-minifier": {
+      "name": "HTML Küçültücü",
+      "desc": "Yorumları kaldırıp etiketler arasındaki boşlukları sadeleştirerek HTML'i küçültür, içeriği korur.",
+      "title": "HTML Küçültücü — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Yorumları kaldırıp etiketler arası boşlukları sadeleştirerek HTML'i küçültün; metin içeriği ve özel etiketler aynen korunur. Ücretsiz ve tamamen tarayıcı tarafında.",
+      "intro": "Sayfa içeriğine dokunmadan yorumları ve boşlukları temizleyerek HTML'inizi sıkıştırın."
+    },
+    "wcag-kontrast": {
+      "name": "WCAG Kontrast Denetleyici",
+      "desc": "İki renk arasındaki kontrast oranını tüm WCAG AA ve AAA gerekliliklerine karşı denetler.",
+      "title": "WCAG Kontrast Denetleyici — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Herhangi iki rengi normal ve büyük metin için tüm WCAG kontrast gereklilikleriyle (AA'dan AAA'ya) karşılaştırın. Ücretsiz ve gizli; renkler tarayıcınızdan asla çıkmaz.",
+      "intro": "Bir metin ve arka plan rengi seçin; kontrast oranını ve hangi WCAG seviyelerini geçtiğini görün."
+    },
+    "renk-paleti-uretici": {
+      "name": "Renk Paleti Üretici",
+      "desc": "Bir ana renkten analog veya tek renk tonlarında paletler oluşturur ve HEX değerlerini tek tıkla kopyalar.",
+      "title": "Renk Paleti Üretici — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Herhangi bir ana renkten üç farklı boyutta uyumlu analog veya tek renk tonu paletleri üretin ve her HEX değerini anında kopyalayın. Ücretsiz ve gizli.",
+      "intro": "Bir ana renk seçerek analog veya tek renk tonu paleti oluşturun ve her HEX rengini tek tıkla kopyalayın."
+    },
+    "box-shadow-uretici": {
+      "name": "Box Shadow Üretici",
+      "desc": "Kayma, bulanıklık, yayılma ve opaklık için kaydırıcılarla, canlı önizlemeli box-shadow CSS'i üretir.",
+      "title": "Box Shadow Üretici — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Kayma, bulanıklık, yayılma, opaklık ve renk kontrolleriyle canlı önizlemeli box-shadow CSS'i oluşturun. Ücretsiz ve gizli; CSS tarayıcınızda üretilir.",
+      "intro": "Kayma, bulanıklık, yayılma, opaklık ve rengi ayarlayıp gölgeyi canlı görün ve CSS'i kopyalayın."
+    },
+    "metin-siralayici": {
+      "name": "Metin Sıralayıcı",
+      "desc": "Metninizin satırlarını alfabetik, uzunluğa veya sayısal değere göre sıralar ya da karıştırır.",
+      "title": "Metin Sıralayıcı — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Herhangi bir metnin satırlarını tek tıkla alfabetik sıraya, uzunluğa veya sayısal değere göre dizin veya karıştırın. Ücretsiz ve gizli; her şey tarayıcınızda çalışır.",
+      "intro": "Satırlarınızı yapıştırın, bir mod seçin ve A→Z, Z→A, uzunluğa, sayısal olarak veya karışık şekilde sıralayın."
+    },
+    "liste-karistirici": {
+      "name": "Liste Karıştırıcı",
+      "desc": "Bir listenin öğelerini tarayıcınızda adilce karıştırır veya içinden tek bir rastgele öğe çeker.",
+      "title": "Liste Karıştırıcı — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Herhangi bir listeyi adil bir rastgeleleştiriciyle karıştırın veya içinden tek bir rastgele öğe çekin. Ücretsiz ve gizli; listeniz tarayıcınızdan asla çıkmaz.",
+      "intro": "Listenizi karıştırın veya içinden tek bir rastgele öğe çekin — sonuç size ait."
+    },
+    "yaml-json-donusturucu": {
+      "name": "YAML ↔ JSON Dönüştürücü",
+      "desc": "YAML verisini JSON'a ve JSON'u geri YAML'a her iki yönde dönüştürür.",
+      "title": "YAML ↔ JSON Dönüştürücü — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Yapılandırma verilerini iki yönde de YAML ve JSON arasında, net hata mesajlarıyla dönüştürün. Ücretsiz ve gizli; verileriniz tarayıcınızdan asla çıkmaz.",
+      "intro": "Yapılandırma verileriniz için YAML ve JSON arasında geçiş yapın ve dönüştürülen çıktıyı kopyalayın."
+    },
+    "md5-dosya-checksum": {
+      "name": "MD5 Dosya Checksum",
+      "desc": "Bir dosyanın MD5 checksum'unu yüklemeden, tamamen tarayıcınızda hesaplar.",
+      "title": "MD5 Dosya Checksum — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Bütünlüğü doğrulamak için herhangi bir dosyanın MD5 özetini doğrudan tarayıcınızda hesaplayın. Tasarım gereği gizli — dosya hiçbir yere yüklenmez.",
+      "intro": "MD5 checksum'unu yerel olarak hesaplamak için bir dosya seçin ve özeti tek tıkla kopyalayın."
     }
   },
   "ToolContent": {
@@ -765,6 +926,410 @@
         "h": "Verilerim güvende mi?",
         "p": "Evet. Tüm temizlik tarayıcınızda gerçekleşir; metniniz hiçbir zaman gönderilmez veya saklanmaz. Ücretsiz, kayıt yok ve tamamen istemci tarafında."
       }
+    ],
+    "md5-hash": [
+      {
+        "h": "MD5 özeti nedir?",
+        "p": "MD5, her uzunluktaki metni sabit 32 haneli bir onaltılık özete dönüştüren bir özetleme işlevidir. Aynı girdi her zaman aynı özeti üretir ve değişen tek bir karakter özeti tamamen değiştirir."
+      },
+      {
+        "h": "MD5 nerelerde kullanılır?",
+        "list": [
+          "Dosya bütünlüğü: İndirme siteleri, dosyanın bozulmadığını doğrulamanız için MD5 özetini yayınlar.",
+          "Sağlama toplamı: Betikler ve paket yöneticileri, verinin doğru aktarıldığını doğrulamak için MD5 değerlerini karşılaştırır.",
+          "Eski sistemler: Daha eski veritabanları ve API'ler kimlik belirleme ve yineleme temizliği için hâlâ MD5 kullanır."
+        ]
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Özet tamamen tarayıcınızda hesaplanır; metniniz hiçbir zaman gönderilmez veya saklanmaz. MD5, sağlama toplamı için hızlı ve pratiktir; ancak şifre saklamak için önerilmez."
+      }
+    ],
+    "jwt-cozucu": [
+      {
+        "h": "JWT nedir?",
+        "p": "JWT (JSON Web Token), oturum açma ve API erişimi gibi kimlik doğrulama ve yetkilendirme akışlarında iki taraf arasında talepleri taşıyan kompakt, URL güvenli bir tokendir. Noktalarla ayrılmış, base64url ile kodlanmış üç bölümden oluşur."
+      },
+      {
+        "h": "JWT'nin içinde ne var?",
+        "list": [
+          "Header: token türü ve imzalama algoritması, örn. alg: HS256.",
+          "Payload: talepler, örn. sub, exp ve diğer özel veriler.",
+          "İmza: token'in kurcalanmadığını doğrular."
+        ]
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Çözme işlemi tamamen tarayıcınızda gerçekleşir; token hiçbir sunucuya gönderilmez. Unutmayın: çözmek imzayı doğrulamaz — bir JWT onu alan herkes tarafından okunabilir."
+      }
+    ],
+    "json-csv-donusturucu": [
+      {
+        "h": "JSON ↔ CSV Dönüştürücü ne yapar?",
+        "p": "JSON nesne dizisini (veya tek bir nesneyi) başlık satırlı bir CSV dosyasına, CSV verisini de JSON nesne dizisine geri dönüştürür. Virgül, tırnak veya yeni satır içeren alanlar RFC-4180 kurallarına uygun şekilde tırnaklanır."
+      },
+      {
+        "h": "Ne zaman işe yarar?",
+        "list": [
+          "Veritabanları, elektronik tablolar ve API'ler arasında veri taşımak için.",
+          "Excel veya Google E-Tablolar için API yanıtlarından CSV dışa aktarmaları hazırlamak için.",
+          "Yapılandırma dosyaları ve betikler için elektronik tablo verilerini JSON'a çevirmek için."
+        ]
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Tüm dönüştürme tarayıcınızda gerçekleşir; verileriniz hiçbir zaman yüklenmez veya saklanmaz. Özel listeler, raporlar ve yapılandırma verileri için gönül rahatlığıyla kullanın."
+      }
+    ],
+    "unix-timestamp-cevirici": [
+      {
+        "h": "Unix zaman damgası nedir?",
+        "p": "Unix zaman damgası, 1 Ocak 1970 00:00:00 UTC'den bu yana geçen saniye sayısıdır. Sistemler zamanı bu sayılarla saklar çünkü kompakttır ve saat diliminden bağımsızdır; örneğin 1893456000, 2030-01-01 00:00:00 UTC'ye eşittir."
+      },
+      {
+        "h": "Dönüşümler nasıl çalışır?",
+        "list": [
+          "Zaman damgası → tarih: örn. 1893456000 girin ve yerel tarih ve saati alın (2030-01-01 00:00:00 UTC).",
+          "Tarih → zaman damgası: bir tarih ve saat seçin ve tam epoch saniyesini alın; değer yerel saatiniz olarak kabul edilir.",
+          "İki sonuç da yerel saat dilimi ayarlarınızla anında güncellenir."
+        ]
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Tüm dönüştürme tarayıcınızda çalışır; hiçbir değer gönderilmez veya saklanmaz. Kayıt ve kurulum gerekmez."
+      }
+    ],
+    "tekrar-satir-temizleyici": [
+      {
+        "h": "Tekrar Satır Temizleyici nedir?",
+        "p": "Metninizi satır satır tarar, tekrarlanan satırları kaldırır ve orijinal sırayı koruyarak her satırın yalnızca ilk geçtiği haliyle bırakır. Toplamda kaç satırın korunduğunu anında görürsünüz."
+      },
+      {
+        "h": "Ne zaman işe yarar?",
+        "list": [
+          "E-posta listelerini, üyelik veritabanlarını ve tekrarlanan iletişim satırlarını temizlemek için.",
+          "Yüklemeden önce içe aktarılan ürün veya envanter listelerindeki yinelemeleri kaldırmak için.",
+          "SEO ve bağlantı çalışmaları için benzersiz anahtar kelime veya URL listeleri hazırlamak için."
+        ]
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. İşlem tamamen tarayıcınızda çalışır; listeniz hiçbir zaman yüklenmez veya saklanmaz. Özel verilerinizi gönül rahatlığıyla yapıştırın."
+      }
+    ],
+    "ai-token-hesaplayici": [
+      {
+        "h": "AI Token Hesaplayıcı nedir?",
+        "p": "Metninizin bir AI/LLM bağlam penceresinde kullanacağı tahmini token sayısını; karakter, kelime ve satır sayaçlarıyla birlikte hesaplar. Model sınırları token cinsinden belirtilir; tahmininizi bilmek prompt, bağlam ve maliyet planlamanıza yardımcı olur."
+      },
+      {
+        "h": "Token'lar nasıl tahmin edilir?",
+        "list": [
+          "İngilizce metin, token başına ortalama 4 karakterdir.",
+          "Türkçe, token başına yaklaşık 2,5 karakterdir (araç bu oranı kullanır).",
+          "CJK karakterleri (Çince, Japonca, Korece) karakter başına ortalama 1 tokendır."
+        ]
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Sayma tamamen tarayıcınızda çalışır; metniniz hiçbir sunucuya veya API'ye gönderilmez. Token kullanımını planlarken prompt'larınızı ve hassas taslaklarınızı gizli tutun."
+      }
+    ],
+    "lorem-ipsum-uretici": [
+      {
+        "h": "Lorem Ipsum Nedir?",
+        "p": "Lorem Ipsum, Romalı devlet adamı Cicero'nun bir eserinden türetilen ve 1960'lardan beri matbaa ve dizgi sektöründe yaygınlaşan yer tutucu Latin metnidir. Kelimeler gerçek bir anlam taşımadığı için tasarımcılar yerleşimi içerikten etkilenmeden değerlendirebilir."
+      },
+      {
+        "h": "Nerede kullanışlıdır?",
+        "list": [
+          "Tarafsız dolgu metnine ihtiyaç duyan maketler ve web tasarımları.",
+          "Baskı ve web projeleri için yazı tipi ve dizgi örnekleri.",
+          "Son metin yazılmadan önce esnek yerleşimleri test etmek.",
+          "Gerçek metinden önce müşterilere şablon sunmak."
+        ]
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Metin tamamen tarayıcınızda üretilir; girdileriniz ve üretilen paragraflar hiçbir zaman gönderilmez veya saklanmaz. Kayıt yok, kurulum yok, tamamen ücretsiz."
+      }
+    ],
+    "bahsis-hesaplayici": [
+      {
+        "h": "Bahşiş Hesaplayıcı Nedir?",
+        "p": "Bahşiş Hesaplayıcı, hesaptaki bahşişi, ödenecek toplamı ve tutar eşit paylaşıldığında kişi başına düşen payı hesaplar. Hesap tutarını girin, %5 ile %25 arasında bir bahşiş oranı seçin ve kişi sayısını belirleyin; bahşiş tutarı, toplam ve kişi başı pay anında güncellenir."
+      },
+      {
+        "h": "Kişi başı pay nasıl hesaplanır?",
+        "p": "Araç, hesabı ve bahşişi toplar ve sonucu kişi sayısına böler. 400 ₺'lik bir hesapta %15 bahşiş (60 ₺) 4 kişiye paylaştırılırsa kişi başı 115 ₺ olur; 460 ₺'lik toplam 3 kişiye bölünürse kişi başı 153,33 ₺ düşer."
+      },
+      {
+        "h": "Hangi bahşiş oranları mevcuttur?",
+        "list": [
+          "%5 — temel hizmet için minimum jest.",
+          "%10 — sade veya açık büfe serviste yaygın.",
+          "%15 — birçok ülkede standart bahşiş oranı.",
+          "%20 ve %25 — iyi servis veya büyük gruplar için."
+        ]
+      }
+    ],
+    "indirim-hesaplayici": [
+      {
+        "h": "İndirim Hesaplayıcı Nedir?",
+        "p": "İndirim Hesaplayıcı, orijinal fiyattan bir indirim yüzdesi düşer ve indirim tutarını, indirimli fiyatı ve kazanılan yüzdeyi rapor eder. Fırsatları karşılaştırırken, indirim fiyatları hazırlarken veya etiketteki indirimin gerçekten iyi olup olmadığını kontrol ederken kullanışlıdır."
+      },
+      {
+        "h": "Hesaplama nasıl çalışır?",
+        "p": "İndirim tutarı, orijinal fiyatın indirim oranıyla çarpımıdır; indirimli fiyat, orijinal fiyattan bu tutarın çıkarılmasıyla bulunur. 250 ₺ fiyatlı bir üründe %20 indirim size 50 ₺ kazandırır; böylece 200 ₺ ödersiniz ve Tasarruf değeri %20 oranını gösterir."
+      },
+      {
+        "h": "Kimler kullanabilir?",
+        "list": [
+          "Satın almadan önce indirimleri ve indirimli fiyatları karşılaştıran alışverişçiler.",
+          "İndirim etiketleri ve kampanyalar hazırlayan mağaza sahipleri.",
+          "Yüzde ve indirim matematiği çalışan öğrenciler."
+        ]
+      }
+    ],
+    "ortalama-hesaplayici": [
+      {
+        "h": "Ortalama Hesaplayıcı Nedir?",
+        "p": "Ortalama Hesaplayıcı, girdiğiniz sayıları okur ve tek seferde beş istatistik hesaplar — ortalama, toplam, adet, minimum ve maksimum. Sayılar virgül, boşluk veya satır sonu ile ayrılabilir; hem virgül hem nokta ondalık biçimi kabul edilir."
+      },
+      {
+        "h": "Kısa bir örnek",
+        "p": "10, 20 ve 30 sayıları için ortalama 20, toplam 60, adet 3, minimum 10 ve maksimum 30 olur. Başka bir örnek olarak 4,5 ve 5,5'in ortalaması 5'tir. Sonuçlar Hesapla'ya bastığınız anda görünür."
+      },
+      {
+        "h": "Nerede kullanılır?",
+        "list": [
+          "Notlar: sınav veya ödev puanlarının ortalaması.",
+          "Ticaret: ortalama sipariş değeri veya günlük gelir.",
+          "Spor: maç veya sezon genelindeki ortalama skorlar.",
+          "Kişisel takip: ortalama harcama, mesafe veya süre."
+        ]
+      }
+    ],
+    "kopek-yasi-hesaplayici": [
+      {
+        "h": "Köpek Yaşı Hesaplayıcı Nedir?",
+        "p": "Köpek Yaşı Hesaplayıcı, köpeğinizin yaşını yıl cinsinden, boyutu da dikkate alan modern bir formülle yaklaşık insan yaşına çevirir. Küçük, orta ve büyük ırklar farklı hızlarda yaşlanır; bu yüzden araç tahminden önce doğru boyutu seçmenizi sağlar."
+      },
+      {
+        "h": "Yaş nasıl tahmin edilir?",
+        "p": "Yaygın formül ilk yılı yaklaşık 15 insan yılı, ikinci yılı ek 9 yıl sayar ve sonrasında boyuta göre yılda 4 ila 5 insan yılı ekler. Bu nedenle 3 yaşındaki orta boy bir köpek ≈15 + 9 + 4 = 28 insan yaşına karşılık gelir."
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Tahmin tamamen tarayıcınızda hesaplanır; girdiğiniz yaş ve boyut hiçbir zaman gönderilmez veya saklanmaz. Ücretsiz, kayıt yok ve tamamen istemci tarafında."
+      }
+    ],
+    "subnet-hesaplayici": [
+      {
+        "h": "Subnet Hesaplayıcı Nedir?",
+        "p": "Subnet Hesaplayıcı, bir IPv4 adresi ve prefix uzunluğunu alır ve bu alt ağ için ağ adresini, broadcast adresini, alt ağ maskesini, toplam ana bilgisayar sayısını ve kullanılabilir ana bilgisayar sayısını hesaplar. IP aralıkları, VLAN'lar, bulut hizmetlerindeki alt ağlar ve konteyner ağları planlanırken kullanılır."
+      },
+      {
+        "h": "Çalışılmış bir örnek",
+        "p": "192.168.1.0/24 için ağ adresi 192.168.1.0, broadcast 192.168.1.255, alt ağ maskesi 255.255.255.0, toplam ana bilgisayar sayısı 256 ve kullanılabilir ana bilgisayar 254'tür."
+      },
+      {
+        "h": "Kullanılabilir ana bilgisayarlar neden toplamdan azdır?",
+        "p": "Ağ adresi ve broadcast adresi her zaman ayrılır ve bir cihaza atanamaz. Bu nedenle /24 alt ağı 256 adres içerir ancak 254 kullanılabilir ana bilgisayar sunar."
+      }
+    ],
+    "px-rem-donusturucu": [
+      {
+        "h": "PX REM Dönüştürücü Nedir?",
+        "p": "PX REM Dönüştürücü, piksel değerlerini ayarladığınız temel yazı boyutunu kullanarak rem birimlerine ve geri çevirir. Rem birimleri kök yazı boyutuna göre ölçeklendiğinden, kullanıcı tarayıcı yazı tipi ayarlarını değiştirdiğinde metin ve boşluklar sorunsuz uyum sağlar."
+      },
+      {
+        "h": "Rem değerleri piksellerle nasıl ilişkilidir?",
+        "p": "1 rem, girdiğiniz temel yazı boyutuna eşittir: pikseli tabana bölmek rem verir, rem'i tabanla çarpmak piksel verir. 16 px tabanda 32 px, 2 rem olur; 1,5 rem ise 24 px olur."
+      },
+      {
+        "h": "Temel değer neden varsayılan olarak 16 px'dir?",
+        "p": "Başlıca tarayıcılar varsayılan kök yazı boyutunu 16 px kullanır; bu yüzden çoğu proje buradan başlar. Bazı tasarım sistemleri 14 px veya 10 px gibi farklı tabanlar benimsediği için değeri değiştirebilirsiniz."
+      }
+    ],
+    "xml-formatter": [
+      {
+        "h": "XML Biçimlendirici Nedir?",
+        "p": "XML Biçimlendirici, ham XML'i temiz, girintili bir ağaca dönüştürür; böylece etiketler ve iç içe geçme yapısı kolayca okunur. Küçült modu tam tersini yapar: aktarım veya saklama için etiketler arasındaki boşluklar temizlenerek kod sıkıştırılır. Hatalı XML sessizce başarısız olmak yerine net bir hata mesajıyla bildirilir."
+      },
+      {
+        "h": "Nerede işinize yarar?",
+        "list": [
+          "Web servisleri: API istek ve yanıt gövdelerini okumak için.",
+          "Yapılandırma dosyaları: uygulama ve derleme yapılandırmasını XML'de temizlemek için.",
+          "Paylaşım: küçültülmüş XML'i meslektaşlarınız için okunabilir biçime getirmek.",
+          "Hata ayıklama: eşleşmeyen etiketleri ve bozuk iç içe yapıları bir bakışta görmek."
+        ]
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Biçimlendirme, doğrulama ve küçültme tamamen tarayıcınızda yapılır; XML'iniz hiçbir sunucuya gönderilmez. Hassas değerler içeren yapılandırmalar bile güvenle işlenebilir."
+      }
+    ],
+    "css-minifier": [
+      {
+        "h": "CSS Küçültücü Nedir?",
+        "p": "CSS Küçültücü, tarayıcının kesinlikle ihtiyaç duymadığı her şeyi kaldırır: yorumlar ve seçiciler, küme parantezleri ile noktalı virgüllerin çevresindeki boşluklar. Sonuç, aynı görünümü veren daha küçük bir dosyadır; bu da daha hızlı yüklenme demektir. Önce ve sonra boyutlarını karşılaştırarak ne kadar kazandığınızı tam olarak görürsünüz."
+      },
+      {
+        "h": "Küçültme neleri kaldırır?",
+        "list": [
+          "Yorumlar: Her /* */ bloğu temizlenir.",
+          "Boşluklar: Sözdizimi işaretleri arasındaki boşluk, sekme ve satır sonları sadeleştirilir.",
+          "Gereksiz son noktalı virgüller ve kurallar içindeki fazla boşluklar."
+        ]
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Küçültme tamamen tarayıcınızda gerçekleşir; CSS'iniz hiçbir zaman gönderilmez veya saklanmaz. Kayıt veya kurulum gerekmez."
+      }
+    ],
+    "html-minifier": [
+      {
+        "h": "HTML Küçültücü Nedir?",
+        "p": "HTML Küçültücü, yorumları kaldırıp etiketler arasındaki boşlukları sadeleştirerek sayfa kaynağını sıkıştırır. Metin içeriği, nitelikler ve tırnak kullanımı korunduğu için görüntülenen sayfa birebir aynı kalırken dosya küçülür ve daha hızlı iletilir."
+      },
+      {
+        "h": "Neler aynen korunur?",
+        "list": [
+          "Etiketler arasındaki metin içeriği ve tırnaklar dahil nitelik değerleri.",
+          "Ön biçimli bölgeler: <pre> ve <textarea> içeriği birebir korunur.",
+          "Kod blokları: <script> ve <style> içerikleri aynen bırakılır."
+        ]
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Tüm temizleme tarayıcınızda yapılır; HTML'iniz hiçbir yere yüklenmez. Özel şablonlar, e-posta kaynakları ve hazırlanmakta olan işaretlemeler için güvenlidir."
+      }
+    ],
+    "wcag-kontrast": [
+      {
+        "h": "WCAG kontrastı nedir?",
+        "p": "WCAG yönergeleri, metnin arka planına karşı ne kadar kontrasta sahip olması gerektiğini, iki rengin bağıl parlaklığını karşılaştıran bir oranla tanımlar. Bu araç kontrast oranını canlı olarak hesaplar ve renk çiftinizin hangi WCAG başarı kriterlerini geçtiğini veya kaçırdığını tam olarak gösterir."
+      },
+      {
+        "h": "Gerekli oranlar nelerdir?",
+        "list": [
+          "AA Normal metin: en az 4.5:1.",
+          "AA Büyük metin: en az 3:1.",
+          "AAA Normal metin: en az 7:1.",
+          "AAA Büyük metin: en az 4.5:1."
+        ]
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Oran tarayıcınızda yerel olarak hesaplanır; renkleriniz cihazınızdan asla çıkmaz. Kayıt veya kurulum gerekmez."
+      }
+    ],
+    "renk-paleti-uretici": [
+      {
+        "h": "Renk Paleti Üretici Nedir?",
+        "p": "Renk Paleti Üretici, tek bir ana renkten uyumlu biçimde ilişkili bir renk kümesi üretir. Analog paletler renk çarkında tonu adım adım ilerletir; tek renk tonu paletleri ise aynı tonun parlaklığını değiştirir. 5, 7 veya 9 renk seçin ve herhangi bir renk karesine tıklayarak HEX değerini kopyalayın."
+      },
+      {
+        "h": "Analog ve tek renk tonları",
+        "list": [
+          "Analog: Renk çarkında yan yana duran renkler — doğal ve sakin tasarımlarda birlikte kullanılır.",
+          "Tek renk tonları: Bir tonun açık ve koyu varyasyonları — profesyonel ve sade düzenler için güvenlidir."
+        ]
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Paletler tamamen tarayıcınızda üretilir; ana renginiz hiçbir yere gönderilmez. Her şey cihazınızda kalır."
+      }
+    ],
+    "box-shadow-uretici": [
+      {
+        "h": "Box Shadow Üretici Nedir?",
+        "p": "Box Shadow Üretici, basit kaydırıcılarla bir öğenin altındaki gölge için CSS oluşturur. Yatay ve dikey kaymayı, bulanıklık yarıçapını, yayılmayı, opaklığı ve rengi kontrol edersiniz; önizleme kutusu tasarladığınız stili canlı olarak gösterir."
+      },
+      {
+        "h": "Değerler ne anlama gelir?",
+        "list": [
+          "Yatay/Dikey kayma: Gölgenin sağa ve aşağı ne kadar kaydığını gösterir (negatif değerler sola ve yukarı taşır).",
+          "Bulanıklık: Gölge kenarının ne kadar yumuşak veya keskin olduğunu belirler.",
+          "Yayılma: Gölgenin kutu boyutunun ne kadar dışına taştığını gösterir.",
+          "Opaklık ve renk: Gölgenin şeffaflığını ve rengini belirler."
+        ]
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. CSS tarayıcınızda üretilir; ayarlarınız hiçbir zaman gönderilmez veya saklanmaz. Sonucu kopyalayıp doğrudan stiller dosyanıza yapıştırın."
+      }
+    ],
+    "metin-siralayici": [
+      {
+        "h": "Metin Sıralayıcı Nedir?",
+        "p": "Metin Sıralayıcı, herhangi bir metnin satırlarını — listeler, CSV satırları, isimler, URL'ler — seçtiğiniz kurala göre yeniden düzenler. Alfabetik, uzunluğa veya sayısal değere göre sıralayın ya da sırayı tamamen karıştırın; çıktı tek tıkla kopyalanır."
+      },
+      {
+        "h": "Hangi sıralama modları vardır?",
+        "list": [
+          "A→Z / Z→A: Türkçe yerel ayara duyarlı karşılaştırmayla alfabetik sıralama.",
+          "Uzunluk: Önce en kısa satırlar; kısa kullanıcı adı veya başlık seçerken kullanışlı.",
+          "Sayısal: Satırlar 2, 10, 200 gibi değerler içerdiğinde ayrıştırılan sayıları karşılaştırır.",
+          "Karıştır: Sıra çekmek veya bir diziyi karıştırmak için rastgele sıralama."
+        ]
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Sıralama tamamen tarayıcınızda çalışır; metniniz hiçbir zaman gönderilmez veya saklanmaz. Kayıt yok, tamamen ücretsiz."
+      }
+    ],
+    "liste-karistirici": [
+      {
+        "h": "Liste Karıştırıcı Nedir?",
+        "p": "Liste Karıştırıcı, her dizilişin eşit olasılıklı olduğu biçimde listedeki öğeleri karıştırır veya listeden tek bir rastgele öğe çeker. Satır başına bir öğe yapıştırın; tüm listeyi yeniden düzenlemek için Karıştır'ı, tek bir öğe çekmek için Çek'i seçin."
+      },
+      {
+        "h": "Karıştırma ne kadar rastgele?",
+        "p": "Araç, kriptografik kalitede bir rastgele kaynakla Fisher-Yates algoritmasını kullanır; böylece her olası diziliş aynı olasılığa sahip olur. Sonuç adildir — çekiliş yapmak, sıra atamak veya test verilerini rastgeleleştirmek için idealdir."
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Her şey tarayıcınızda gerçekleşir; listeniz hiçbir yere gönderilmez. Tamamen istemci tarafında çalışır."
+      }
+    ],
+    "yaml-json-donusturucu": [
+      {
+        "h": "YAML ↔ JSON Dönüştürücü Nedir?",
+        "p": "YAML ↔ JSON Dönüştürücü, yapılandırma verilerini YAML metin biçimi ile sıkı JSON sözdizimi arasında her iki yönde çevirir. Yapılandırma dosyalarını taşırken, API sahtelemesi yaparken veya biçimlerden birini bekleyen araçlar arasında geçiş yaparken kullanın. Dönüştürme küçük, yerleşik bir YAML ayrıştırıcısıyla çalışır; verileriniz tarayıcıdan çıkmaz."
+      },
+      {
+        "h": "Ne zaman kullanışlıdır?",
+        "list": [
+          "Yapılandırma dosyaları: .yml ayarlarını JSON tabanlı araçlara ve CI işlem hatlarına taşımak için.",
+          "Doğrulama: Elle yazılan YAML girintisini veya JSON virgüllerini kontrol etmek için.",
+          "Dokümantasyon: Örnekleri iki biçim arasında dönüştürmek için."
+        ]
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Ayrıştırma ve dönüştürme tamamen tarayıcınızda gerçekleşir; verileriniz hiçbir zaman gönderilmez veya saklanmaz. Gizli bilgi içeren yapılandırmalar güvenle dönüştürülebilir."
+      }
+    ],
+    "md5-dosya-checksum": [
+      {
+        "h": "MD5 dosya checksum'u nedir?",
+        "p": "MD5 checksum'u, bir dosyanın her baytından hesaplanan 32 karakterlik bir parmak izidir. Küçücük bir değişiklik bile tamamen farklı bir özet üretir; bu nedenle checksum'ları karşılaştırmak, bir dosyanın tam olarak olması gereken şey olduğunu doğrulamanın hızlı bir yoludur."
+      },
+      {
+        "h": "Checksum ne için kullanılır?",
+        "list": [
+          "İndirmeleri doğrulamak: Yazılım satıcısının yayınladığı özeti aldığınız dosyayla karşılaştırmak.",
+          "Bozulmayı fark etmek: Bir kopyanın hatasız aktarıldığını doğrulamak.",
+          "Tekilleştirme: Aynı dosyaları özetlerine göre fark etmek."
+        ]
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Özet, cihazınızdaki dosya baytlarından tamamen tarayıcınızda hesaplanır; dosya hiçbir sunucuya yüklenmez ve sayfayı kapattığınızda sonuçlar kaybolur."
+      }
     ]
   },
   "ToolPage": {
@@ -1231,6 +1796,226 @@
       "copy": "Kopyala",
       "copied": "Kopyalandı",
       "note": "Temizleme yalnızca tarayıcınızda yapılır; metniniz hiçbir yere gönderilmez."
+    },
+    "md5Hash": {
+      "label": "Metni girin",
+      "placeholder": "Buraya yazın veya yapıştırın…",
+      "hashLabel": "MD5 Özeti",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "empty": "Özet oluşturmak için metin girin"
+    },
+    "jwt": {
+      "label": "JWT Token",
+      "placeholder": "eyJhbGciOi…",
+      "decode": "Çöz",
+      "headerLabel": "Header",
+      "payloadLabel": "Payload",
+      "signatureLabel": "İmza",
+      "invalid": "Geçerli bir JWT girmediniz. Token 3 bölümden oluşmalıdır."
+    },
+    "jsonCsv": {
+      "modeJsonToCsv": "JSON → CSV",
+      "modeCsvToJson": "CSV → JSON",
+      "inputLabel": "Giriş",
+      "outputLabel": "Çıktı",
+      "convert": "Dönüştür",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "invalidJson": "Geçersiz JSON",
+      "invalidCsv": "İlk satır sütun başlıklarını içermeli"
+    },
+    "timestamp": {
+      "tsToDateLabel": "Unix zaman damgası → Tarih",
+      "tsToDatePlaceholder": "örn. 1893456000",
+      "convertToDate": "Tarihe çevir",
+      "dateToTsLabel": "Tarih → Unix zaman damgası",
+      "dateToTsPlaceholder": "Tarih ve saat seçin",
+      "convertToTs": "Zaman damgasına çevir",
+      "invalidTs": "Geçerli bir sayı girin"
+    },
+    "tekrarSatir": {
+      "label": "Metninizi girin",
+      "placeholder": "Satırlı liste yapıştırın…",
+      "outputLabel": "Tekrarsız satırlar",
+      "remove": "Tekrarları kaldır",
+      "kept": "{kept} / {total} satır korundu",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!"
+    },
+    "aiToken": {
+      "label": "Metninizi girin",
+      "placeholder": "Analiz edilecek metni yapıştırın…",
+      "tokens": "Tahmini Token",
+      "chars": "Karakter",
+      "words": "Kelime",
+      "lines": "Satır",
+      "note": "Tahminidir; Türkçe için karakter/2,5 oranı kullanılır."
+    },
+    "loremIpsum": {
+      "parasLabel": "Paragraf sayısı",
+      "sentencesLabel": "Paragraf başına cümle",
+      "generate": "Üret",
+      "outputLabel": "Çıktı",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!"
+    },
+    "bahsis": {
+      "billLabel": "Hesap tutarı (₺)",
+      "tipLabel": "Bahşiş oranı",
+      "splitLabel": "Kişi sayısı",
+      "tipAmount": "Bahşiş tutarı",
+      "totalLabel": "Toplam",
+      "perPerson": "Kişi başı"
+    },
+    "indirim": {
+      "originalLabel": "Orijinal fiyat (₺)",
+      "discountLabel": "İndirim oranı (%)",
+      "discountAmount": "İndirim tutarı",
+      "finalLabel": "İndirimli fiyat",
+      "savedLabel": "Tasarruf"
+    },
+    "ortalama": {
+      "label": "Sayılarınızı girin",
+      "placeholder": "10, 20, 30 veya her satıra bir sayı",
+      "calculate": "Hesapla",
+      "avg": "Ortalama",
+      "sum": "Toplam",
+      "count": "Adet",
+      "min": "Minimum",
+      "max": "Maksimum"
+    },
+    "kopekYasi": {
+      "dogAgeLabel": "Köpeğin yaşı (yıl)",
+      "sizeLabel": "Boyut",
+      "small": "Küçük",
+      "medium": "Orta",
+      "large": "Büyük",
+      "humanAge": "İnsan yaşı karşılığı: ≈{age}",
+      "note": "Yaygın formül: ilk yıl ≈15, ikinci yıl +9, sonrası boyuta göre +4–5."
+    },
+    "subnet": {
+      "ipLabel": "IP adresi",
+      "prefixLabel": "Prefix",
+      "calculate": "Hesapla",
+      "network": "Ağ adresi",
+      "broadcast": "Broadcast",
+      "mask": "Alt ağ maskesi",
+      "hosts": "Toplam ana bilgisayar",
+      "usable": "Kullanılabilir",
+      "invalid": "Geçerli bir IPv4 + prefix girin"
+    },
+    "pxRem": {
+      "baseLabel": "Temel yazı boyutu (px)",
+      "pxLabel": "Piksel (px)",
+      "remLabel": "REM",
+      "remToPxLabel": "REM → Piksel",
+      "pxToRemLabel": "Piksel → REM"
+    },
+    "xmlFormatter": {
+      "label": "XML girişi",
+      "placeholder": "XML kodunu yapıştırın…",
+      "format": "Düzenle",
+      "minify": "Küçült",
+      "outputLabel": "Çıktı",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "invalid": "Geçersiz XML: {message}"
+    },
+    "cssMinifier": {
+      "label": "CSS girişi",
+      "placeholder": "CSS kodunu yapıştırın…",
+      "minify": "Küçült",
+      "outputLabel": "Çıktı",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "before": "Önce",
+      "after": "Sonra",
+      "sameHint": "Küçültmek için CSS girin"
+    },
+    "htmlMinifier": {
+      "label": "HTML girişi",
+      "placeholder": "HTML kodunu yapıştırın…",
+      "minify": "Küçült",
+      "outputLabel": "Çıktı",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "before": "Önce",
+      "after": "Sonra",
+      "sameHint": "Küçültmek için HTML girin"
+    },
+    "wcagKontrast": {
+      "fgLabel": "Metin rengi",
+      "bgLabel": "Arka plan rengi",
+      "ratio": "Kontrast oranı",
+      "aaNormal": "AA Normal",
+      "aaLarge": "AA Büyük",
+      "aaaNormal": "AAA Normal",
+      "aaaLarge": "AAA Büyük",
+      "pass": "GEÇER",
+      "fail": "GEÇMEZ"
+    },
+    "renkPaleti": {
+      "baseLabel": "Ana renk",
+      "countLabel": "Renk sayısı",
+      "analogous": "Analog renkler",
+      "monochrome": "Tek renk tonları",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!"
+    },
+    "boxShadow": {
+      "offsetX": "Yatay kayma (X)",
+      "offsetY": "Dikey kayma (Y)",
+      "blur": "Bulanıklık",
+      "spread": "Yayılma",
+      "color": "Renk",
+      "opacity": "Opaklık",
+      "outputLabel": "CSS",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!"
+    },
+    "metinSiralayici": {
+      "label": "Satırlarınız",
+      "placeholder": "Satırları yapıştırın…",
+      "sortAz": "A→Z",
+      "sortZa": "Z→A",
+      "byLength": "Uzunluk",
+      "numeric": "Sayısal",
+      "shuffle": "Karıştır",
+      "outputLabel": "Sonuç",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!"
+    },
+    "listeKaristirici": {
+      "label": "Liste",
+      "placeholder": "Her satıra bir öğe yazın…",
+      "shuffle": "Karıştır",
+      "draw": "Çek",
+      "resultLabel": "Sonuç",
+      "invalid": "En az 2 öğe girin",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!"
+    },
+    "yamlJson": {
+      "modeYamlToJson": "YAML → JSON",
+      "modeJsonToYaml": "JSON → YAML",
+      "inputLabel": "Giriş",
+      "outputLabel": "Çıktı",
+      "convert": "Dönüştür",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "invalidYaml": "Geçersiz YAML: {message}",
+      "invalidJson": "Geçersiz JSON: {message}"
+    },
+    "md5Dosya": {
+      "label": "Dosya seç",
+      "fileName": "Dosya",
+      "size": "Boyut",
+      "digest": "MD5 Checksum",
+      "hashing": "Hesaplanıyor…",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "tip": "Sonuç tamamen tarayıcınızda hesaplanır; dosya hiçbir yere gönderilmez."
     }
   }
 }

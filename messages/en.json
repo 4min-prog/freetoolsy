@@ -7,7 +7,7 @@
   },
   "Home": {
     "title": "Free Online Tools — Fast, Simple, in English",
-    "description": "21 free online tools in 4 categories. Character counter, password generator, JSON formatter, VAT calculator and more. No signup, no install.",
+    "description": "44 free online tools in 4 categories. Character counter, password generator, JSON formatter, VAT calculator and more. No signup, no install.",
     "heroTitle": "Free Online Tools — Fast, Simple, in English",
     "heroSubtitle": "{tools} free tools in {cats} categories: Text, Security, Developer and Calculation. No signup, no install; every calculation happens in your browser and your data never leaves it.",
     "popularTitle": "Popular:",
@@ -220,144 +220,1116 @@
       "title": "Whitespace Cleaner — Free Online Tool",
       "pageDesc": "Trim lines, collapse multiple spaces, remove empty lines or strip all whitespace from any text in one click. Free and private.",
       "intro": "Clean trailing spaces, extra gaps and blank lines from any text in one click."
+    },
+    "md5-hash": {
+      "name": "MD5 Hash Generator",
+      "desc": "Computes the MD5 hex digest of your text instantly and copies it in one click.",
+      "title": "MD5 Hash Generator — Free Online Tool",
+      "pageDesc": "Generate the MD5 hash of any text instantly as a 32-character hex digest. Runs in your browser; your data never leaves it.",
+      "intro": "Type or paste your text and get its lowercase 32-character MD5 hex digest in seconds."
+    },
+    "jwt-cozucu": {
+      "name": "JWT Decoder",
+      "desc": "Decodes a JWT into its header, payload and signature, shown as readable JSON.",
+      "title": "JWT Decoder — Free Online Tool",
+      "pageDesc": "Decode a JWT token into its header, payload and signature as readable JSON. Fully client-side; your token never leaves your browser.",
+      "intro": "Paste a JWT token and view its base64url-decoded header, payload and signature instantly."
+    },
+    "json-csv-donusturucu": {
+      "name": "JSON ↔ CSV Converter",
+      "desc": "Converts JSON to CSV and CSV to JSON with correct quoting in both directions.",
+      "title": "JSON ↔ CSV Converter — Free Online Tool",
+      "pageDesc": "Convert JSON to CSV or CSV to JSON instantly with correct quoting for commas, quotes and newlines. Runs in your browser; data never leaves it.",
+      "intro": "Choose a direction, paste your data and convert JSON to CSV or CSV to JSON in seconds."
+    },
+    "unix-timestamp-cevirici": {
+      "name": "Unix Timestamp Converter",
+      "desc": "Converts Unix timestamps to readable dates and dates back to Unix timestamps.",
+      "title": "Unix Timestamp Converter — Free Online Tool",
+      "pageDesc": "Convert a Unix timestamp to a readable date and time, or a date back to an epoch timestamp. Free, instant and fully client-side.",
+      "intro": "Convert a Unix timestamp to a locale date or a selected date back to its epoch value."
+    },
+    "tekrar-satir-temizleyici": {
+      "name": "Duplicate Line Remover",
+      "desc": "Removes duplicate lines and keeps only the first occurrence of each line.",
+      "title": "Duplicate Line Remover — Free Online Tool",
+      "pageDesc": "Remove duplicate lines from any list instantly, keeping them in first-seen order. Free, private and fully client-side.",
+      "intro": "Paste a list and remove duplicate lines while keeping the original order of first occurrences."
+    },
+    "ai-token-hesaplayici": {
+      "name": "AI Token Calculator",
+      "desc": "Estimates the token count of your text for AI and LLM context limits.",
+      "title": "AI Token Calculator — Free Online Tool",
+      "pageDesc": "Estimate the token count of any text for ChatGPT, Claude and other LLM limits, plus characters, words and lines. Runs in your browser; data never leaves it.",
+      "intro": "Paste your text to see an estimated token count together with character, word and line stats."
+    },
+    "lorem-ipsum-uretici": {
+      "name": "Lorem Ipsum Generator",
+      "desc": "Generates placeholder Lorem Ipsum text in the number of paragraphs and sentences you request.",
+      "title": "Lorem Ipsum Generator — Free Online Tool",
+      "pageDesc": "Generate free Lorem Ipsum placeholder text with your choice of paragraph and sentence counts. Private by design; the text is produced entirely in your browser.",
+      "intro": "Generate Lorem Ipsum placeholder text with your choice of paragraphs and sentences per paragraph."
+    },
+    "bahsis-hesaplayici": {
+      "name": "Tip Calculator",
+      "desc": "Calculates tip amount, total bill and per-person share instantly for any bill and tip percentage.",
+      "title": "Tip Calculator — Free Online Tool",
+      "pageDesc": "Calculate tip amount, total bill and per-person share for tip percentages of 5% to 25%. Free and fully client-side; your amounts never leave your browser.",
+      "intro": "Enter your bill, pick a tip percentage and see the tip, total and per-person share at once."
+    },
+    "indirim-hesaplayici": {
+      "name": "Discount Calculator",
+      "desc": "Computes discount amount, final price and savings percentage from original price and discount rate.",
+      "title": "Discount Calculator — Free Online Tool",
+      "pageDesc": "Calculate the discount amount, final price and saved percentage for any original price and discount rate. Free, accurate and runs entirely in your browser.",
+      "intro": "Enter an original price and discount percent to see the discount amount and the final price instantly."
+    },
+    "ortalama-hesaplayici": {
+      "name": "Average Calculator",
+      "desc": "Finds the average, sum, count, minimum and maximum of a list of numbers instantly.",
+      "title": "Average Calculator — Free Online Tool",
+      "pageDesc": "Compute the average, sum, count, minimum and maximum of any list of numbers in seconds. Free and fully client-side; your numbers are never sent or stored.",
+      "intro": "Paste or type a list of numbers and see their average, sum, count, minimum and maximum."
+    },
+    "kopek-yasi-hesaplayici": {
+      "name": "Dog Age Calculator",
+      "desc": "Estimates a dog's age in human years using its age and breed size.",
+      "title": "Dog Age Calculator — Free Online Tool",
+      "pageDesc": "Convert your dog's age to human years with a size-aware formula for small, medium and large breeds. Free and private; everything runs in your browser.",
+      "intro": "Enter your dog's age and size to see the approximate equivalent age in human years."
+    },
+    "subnet-hesaplayici": {
+      "name": "Subnet Calculator",
+      "desc": "Calculates network, broadcast, netmask and host counts for an IPv4 subnet.",
+      "title": "Subnet Calculator — Free Online Tool",
+      "pageDesc": "Calculate the network address, broadcast, netmask and usable host count for any IPv4 subnet /0 to /32. Free and fully client-side; addresses never leave your browser.",
+      "intro": "Enter an IPv4 address and prefix to get the network, broadcast, netmask and host counts."
+    },
+    "px-rem-donusturucu": {
+      "name": "PX to REM Converter",
+      "desc": "Converts pixels to rem and rem to pixels live with a base font size you choose.",
+      "title": "PX to REM Converter — Free Online Tool",
+      "pageDesc": "Convert pixels to rem and rem to pixels with a custom base font size, updated live as you type. Free and fully client-side; nothing is sent or stored.",
+      "intro": "Convert between pixels and rem instantly using a base font size, defaulting to 16 px."
+    },
+    "xml-formatter": {
+      "name": "XML Formatter",
+      "desc": "Formats and minifies XML code in your browser with one click.",
+      "title": "XML Formatter — Free Online Tool",
+      "pageDesc": "Format and minify XML code instantly and check it for validity. Free and private; your XML never leaves your browser.",
+      "intro": "Paste XML, press Format to indent it or Minify to compress it, and copy the result instantly."
+    },
+    "css-minifier": {
+      "name": "CSS Minifier",
+      "desc": "Minifies CSS code by stripping comments and redundant whitespace to shrink file size.",
+      "title": "CSS Minifier — Free Online Tool",
+      "pageDesc": "Minify CSS by removing comments and collapsing whitespace, and compare size before and after. Free and private; everything runs in your browser.",
+      "intro": "Shrink your CSS by removing comments and extra whitespace, then copy the smaller output instantly."
+    },
+    "html-minifier": {
+      "name": "HTML Minifier",
+      "desc": "Minifies HTML by removing comments and collapsing whitespace between tags while preserving its content.",
+      "title": "HTML Minifier — Free Online Tool",
+      "pageDesc": "Minify HTML by removing comments and collapsing whitespace between tags, while text content and special tags stay intact. Free and fully client-side.",
+      "intro": "Compress your HTML by cleaning comments and blank space without touching the page content."
+    },
+    "wcag-kontrast": {
+      "name": "WCAG Contrast Checker",
+      "desc": "Checks the contrast ratio between two colors against all WCAG AA and AAA requirements.",
+      "title": "WCAG Contrast Checker — Free Online Tool",
+      "pageDesc": "Compare any two colors against every WCAG contrast requirement for normal and large text, from AA to AAA. Free and private; colors never leave your browser.",
+      "intro": "Pick a text and background color to see the contrast ratio and which WCAG levels it passes."
+    },
+    "renk-paleti-uretici": {
+      "name": "Color Palette Generator",
+      "desc": "Creates analogous or monochrome color palettes from a base color and copies any HEX at a click.",
+      "title": "Color Palette Generator — Free Online Tool",
+      "pageDesc": "Generate harmonious analogous or monochrome palettes from any base color in three sizes, and copy each HEX value instantly. Free and private.",
+      "intro": "Pick a base color to build an analogous or monochrome palette and copy any HEX swatch with one click."
+    },
+    "box-shadow-uretici": {
+      "name": "Box Shadow Generator",
+      "desc": "Builds box-shadow CSS with sliders for offset, blur, spread and opacity, and a live preview.",
+      "title": "Box Shadow Generator — Free Online Tool",
+      "pageDesc": "Create box-shadow CSS visually with offset, blur, spread, opacity and color controls and a live preview. Free and private; CSS is generated in your browser.",
+      "intro": "Adjust offset, blur, spread, opacity and color to see the shadow live and copy the CSS."
+    },
+    "metin-siralayici": {
+      "name": "Line Sorter",
+      "desc": "Sorts the lines of your text by alphabet, length, numeric value or shuffled order.",
+      "title": "Line Sorter — Free Online Tool",
+      "pageDesc": "Alphabetize, sort by length or numeric value, or shuffle the lines of any text in one click. Free and private; everything runs in your browser.",
+      "intro": "Paste your lines, pick a mode and get them sorted A→Z, Z→A, by length, numerically or shuffled."
+    },
+    "liste-karistirici": {
+      "name": "List Randomizer",
+      "desc": "Shuffles a list of items or draws one random item from it in your browser.",
+      "title": "List Randomizer — Free Online Tool",
+      "pageDesc": "Shuffle any list with a fair randomizer or draw a single random winner from it. Free and private; your list never leaves your browser.",
+      "intro": "Shuffle your list or pick one random item from it — the result is yours to copy."
+    },
+    "yaml-json-donusturucu": {
+      "name": "YAML ↔ JSON Converter",
+      "desc": "Converts YAML data to JSON and JSON back to YAML in both directions.",
+      "title": "YAML ↔ JSON Converter — Free Online Tool",
+      "pageDesc": "Convert configuration data between YAML and JSON in either direction, with clear error messages. Free and private; your data never leaves your browser.",
+      "intro": "Switch between YAML and JSON for your configuration data and copy the converted output."
+    },
+    "md5-dosya-checksum": {
+      "name": "MD5 File Checksum",
+      "desc": "Computes the MD5 checksum of a file entirely in your browser without uploading it.",
+      "title": "MD5 File Checksum — Free Online Tool",
+      "pageDesc": "Compute the MD5 digest of any file right in your browser to verify integrity. Private by design — the file is never uploaded anywhere.",
+      "intro": "Pick a file to compute its MD5 checksum locally and copy the digest with one click."
     }
   },
   "ToolContent": {
     "karakter-sayaci": [
-      { "h": "What is a Character Counter?", "p": "A Character Counter counts the characters in your pasted or typed text with and without spaces, as well as words, lines, sentences and paragraphs. It is ideal for posts with length limits, SEO meta descriptions, SMS texts, school assignments and limited form fields. Copy, paste and see everything in seconds." },
-      { "h": "Where do character limits matter?", "list": ["Social media: A Twitter/X post is 280 characters; an Instagram bio allows 150.", "SEO meta description: Google generally shows meta descriptions of 150–160 characters.", "SMS: One SMS accepts 160 characters; check how many your message uses.", "Assignments and essays: Verify word or line limits before submission.", "Form fields: Confirm you stay within allowed input lengths instantly."] },
-      { "h": "Spaces count or not?", "p": "The count with spaces includes every character including spaces and tabs. The count without spaces ignores them and is useful when exact letter and digit length matters. The difference between the two tells you how many spaces your text contains." },
-      { "h": "Is my data safe?", "p": "Yes. Everything runs in your browser; your text is never sent, uploaded or stored. You can safely check code snippets, private notes and sensitive text without signing up or paying." },
-      { "h": "FAQ", "list": ["What does \"without spaces\" mean? The character count that ignores spaces.", "Does it work on mobile? Yes — it runs in any browser on any device.", "Is my text saved? No; everything happens on your device."] }
+      {
+        "h": "What is a Character Counter?",
+        "p": "A Character Counter counts the characters in your pasted or typed text with and without spaces, as well as words, lines, sentences and paragraphs. It is ideal for posts with length limits, SEO meta descriptions, SMS texts, school assignments and limited form fields. Copy, paste and see everything in seconds."
+      },
+      {
+        "h": "Where do character limits matter?",
+        "list": [
+          "Social media: A Twitter/X post is 280 characters; an Instagram bio allows 150.",
+          "SEO meta description: Google generally shows meta descriptions of 150–160 characters.",
+          "SMS: One SMS accepts 160 characters; check how many your message uses.",
+          "Assignments and essays: Verify word or line limits before submission.",
+          "Form fields: Confirm you stay within allowed input lengths instantly."
+        ]
+      },
+      {
+        "h": "Spaces count or not?",
+        "p": "The count with spaces includes every character including spaces and tabs. The count without spaces ignores them and is useful when exact letter and digit length matters. The difference between the two tells you how many spaces your text contains."
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. Everything runs in your browser; your text is never sent, uploaded or stored. You can safely check code snippets, private notes and sensitive text without signing up or paying."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "What does \"without spaces\" mean? The character count that ignores spaces.",
+          "Does it work on mobile? Yes — it runs in any browser on any device.",
+          "Is my text saved? No; everything happens on your device."
+        ]
+      }
     ],
     "kelime-sayaci": [
-      { "h": "What is a Word Counter?", "p": "A Word Counter instantly calculates the number of words, characters, sentences and paragraphs in your text. It also estimates how long your text takes to read and lists your most-used words, so you can size a blog post, essay or resume and spot repetitions on one screen." },
-      { "h": "How is reading time estimated?", "p": "The tool assumes an average adult reads about 200 words per minute and rounds the result. Bloggers and editors use this value to tell audiences how long a post takes to read." },
-      { "h": "Why are repeated words useful?", "p": "The most-used words list shows which phrases dominate your text. It helps avoid overusing a keyword in SEO copy and is practical for checking word variety in academic writing." },
-      { "h": "Who can use it?", "list": ["Students: quick checks against word limits in essays and theses.", "Bloggers: measuring post length and reading time.", "SEO specialists: monitoring content density and keyword repetition.", "Translators: comparing the ratio of translated to original text."] },
-      { "h": "Is my data safe?", "p": "Yes. All calculations run in your browser; your text is never sent to or stored on a server. No signup and completely free." }
+      {
+        "h": "What is a Word Counter?",
+        "p": "A Word Counter instantly calculates the number of words, characters, sentences and paragraphs in your text. It also estimates how long your text takes to read and lists your most-used words, so you can size a blog post, essay or resume and spot repetitions on one screen."
+      },
+      {
+        "h": "How is reading time estimated?",
+        "p": "The tool assumes an average adult reads about 200 words per minute and rounds the result. Bloggers and editors use this value to tell audiences how long a post takes to read."
+      },
+      {
+        "h": "Why are repeated words useful?",
+        "p": "The most-used words list shows which phrases dominate your text. It helps avoid overusing a keyword in SEO copy and is practical for checking word variety in academic writing."
+      },
+      {
+        "h": "Who can use it?",
+        "list": [
+          "Students: quick checks against word limits in essays and theses.",
+          "Bloggers: measuring post length and reading time.",
+          "SEO specialists: monitoring content density and keyword repetition.",
+          "Translators: comparing the ratio of translated to original text."
+        ]
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. All calculations run in your browser; your text is never sent to or stored on a server. No signup and completely free."
+      }
     ],
     "harf-donusturucu": [
-      { "h": "What is a Case Converter?", "p": "A Case Converter changes the letter case of your text in seconds. Paste your text, choose the conversion you want and copy the result in one click. Headlines, resume bullets and social posts can be reformatted instantly." },
-      { "h": "Which conversions are available?", "list": ["Uppercase: makes every letter uppercase for emphasis and headings.", "Lowercase: makes every letter lowercase and restores normal form.", "Title Case: capitalizes the first letter of every word for article and blog titles.", "Invert: flips uppercase/lowercase, perfect for text mistyped with Caps Lock on."] },
-      { "h": "Does it support Turkish characters?", "p": "Yes. Turkish letters are handled specially: ç, ğ, ı, i, ö, ş, ü correctly become Ç, Ğ, I, İ, Ö, Ş, Ü. This keeps results consistent for Turkish content." },
-      { "h": "When is it used?", "list": ["Fixing text accidentally typed with Caps Lock on.", "Formatting headings, subtitles and resume titles quickly.", "Emphasizing quotes or slogans in uppercase.", "Standardizing case-sensitive fields like file names and form inputs."] },
-      { "h": "Is my data safe?", "p": "Yes. Conversion happens entirely in your browser; your text is never sent or stored. No signup, no install and completely free." }
+      {
+        "h": "What is a Case Converter?",
+        "p": "A Case Converter changes the letter case of your text in seconds. Paste your text, choose the conversion you want and copy the result in one click. Headlines, resume bullets and social posts can be reformatted instantly."
+      },
+      {
+        "h": "Which conversions are available?",
+        "list": [
+          "Uppercase: makes every letter uppercase for emphasis and headings.",
+          "Lowercase: makes every letter lowercase and restores normal form.",
+          "Title Case: capitalizes the first letter of every word for article and blog titles.",
+          "Invert: flips uppercase/lowercase, perfect for text mistyped with Caps Lock on."
+        ]
+      },
+      {
+        "h": "Does it support Turkish characters?",
+        "p": "Yes. Turkish letters are handled specially: ç, ğ, ı, i, ö, ş, ü correctly become Ç, Ğ, I, İ, Ö, Ş, Ü. This keeps results consistent for Turkish content."
+      },
+      {
+        "h": "When is it used?",
+        "list": [
+          "Fixing text accidentally typed with Caps Lock on.",
+          "Formatting headings, subtitles and resume titles quickly.",
+          "Emphasizing quotes or slogans in uppercase.",
+          "Standardizing case-sensitive fields like file names and form inputs."
+        ]
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. Conversion happens entirely in your browser; your text is never sent or stored. No signup, no install and completely free."
+      }
     ],
     "sifre-uretici": [
-      { "h": "What is a Password Generator?", "p": "A Password Generator creates strong, hard-to-guess passwords based on the length and character types you choose. Slide the length between 8 and 64 characters and tick any combination of uppercase, lowercase, digits and symbols. Every generated password shows its strength as weak, medium, strong or very strong, and you can generate up to 5 at once." },
-      { "h": "How is password strength measured?", "p": "The strength indicator uses an entropy calculation that combines length with the size of the character pool. The longer and more diverse a password, the more combinations it contains and the more resistant it is to brute-force attacks. Start with at least 12–16 characters and all four character types." },
-      { "h": "Why is this generator safe?", "p": "Passwords are generated entirely in your browser and never sent anywhere. Instead of the weak Math.random, the tool uses the browser's cryptographically secure generator (crypto.getRandomValues). Generated passwords are never stored or transmitted." },
-      { "h": "Strong password tips", "list": ["Use a different password for every account; never reuse.", "Avoid birth dates, names and keyboard-pattern sequences.", "Store passwords in a password manager or another secure place.", "Always enable two-factor authentication (2FA) when offered."] },
-      { "h": "Free and mobile friendly", "p": "No signup or download is needed; it works in any browser on phone, tablet or desktop. One click is enough to get a strong password whenever you need one." }
+      {
+        "h": "What is a Password Generator?",
+        "p": "A Password Generator creates strong, hard-to-guess passwords based on the length and character types you choose. Slide the length between 8 and 64 characters and tick any combination of uppercase, lowercase, digits and symbols. Every generated password shows its strength as weak, medium, strong or very strong, and you can generate up to 5 at once."
+      },
+      {
+        "h": "How is password strength measured?",
+        "p": "The strength indicator uses an entropy calculation that combines length with the size of the character pool. The longer and more diverse a password, the more combinations it contains and the more resistant it is to brute-force attacks. Start with at least 12–16 characters and all four character types."
+      },
+      {
+        "h": "Why is this generator safe?",
+        "p": "Passwords are generated entirely in your browser and never sent anywhere. Instead of the weak Math.random, the tool uses the browser's cryptographically secure generator (crypto.getRandomValues). Generated passwords are never stored or transmitted."
+      },
+      {
+        "h": "Strong password tips",
+        "list": [
+          "Use a different password for every account; never reuse.",
+          "Avoid birth dates, names and keyboard-pattern sequences.",
+          "Store passwords in a password manager or another secure place.",
+          "Always enable two-factor authentication (2FA) when offered."
+        ]
+      },
+      {
+        "h": "Free and mobile friendly",
+        "p": "No signup or download is needed; it works in any browser on phone, tablet or desktop. One click is enough to get a strong password whenever you need one."
+      }
     ],
     "json-formatter": [
-      { "h": "What is a JSON Formatter?", "p": "A JSON Formatter converts raw JSON into formatted, readable output. Paste your JSON on the left, click Format, and get indented, color-coded, line-numbered output on the right. The Minify option compresses JSON to a single line to reduce size." },
-      { "h": "Why is formatting important?", "p": "API responses often arrive as unreadable one-line data. When objects nest inside objects and arrays inside arrays, it is hard to tell which field belongs to which structure. Formatting separates levels with indentation and visually distinguishes keys from values, so you can quickly spot errors or missing fields." },
-      { "h": "How does error checking work?", "p": "Pasting invalid JSON shows a red error message. The browser's parser reports the approximate location and cause — a missing comma, a wrong quote or an extra brace — so you find the problem in large data sets within seconds." },
-      { "h": "When is it used?", "list": ["Making API responses readable while inspecting and testing.", "Validating syntax when editing config files like package.json.", "Minifying JSON to shrink transport and cache size.", "Generating and checking sample data while writing scripts."] },
-      { "h": "Is my data safe?", "p": "Yes. Parsing and formatting happen entirely in your browser; your JSON is never sent or stored. Even configs containing API keys can be formatted safely." }
+      {
+        "h": "What is a JSON Formatter?",
+        "p": "A JSON Formatter converts raw JSON into formatted, readable output. Paste your JSON on the left, click Format, and get indented, color-coded, line-numbered output on the right. The Minify option compresses JSON to a single line to reduce size."
+      },
+      {
+        "h": "Why is formatting important?",
+        "p": "API responses often arrive as unreadable one-line data. When objects nest inside objects and arrays inside arrays, it is hard to tell which field belongs to which structure. Formatting separates levels with indentation and visually distinguishes keys from values, so you can quickly spot errors or missing fields."
+      },
+      {
+        "h": "How does error checking work?",
+        "p": "Pasting invalid JSON shows a red error message. The browser's parser reports the approximate location and cause — a missing comma, a wrong quote or an extra brace — so you find the problem in large data sets within seconds."
+      },
+      {
+        "h": "When is it used?",
+        "list": [
+          "Making API responses readable while inspecting and testing.",
+          "Validating syntax when editing config files like package.json.",
+          "Minifying JSON to shrink transport and cache size.",
+          "Generating and checking sample data while writing scripts."
+        ]
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. Parsing and formatting happen entirely in your browser; your JSON is never sent or stored. Even configs containing API keys can be formatted safely."
+      }
     ],
     "base64": [
-      { "h": "What is a Base64 Encoder/Decoder?", "p": "A Base64 Encoder/Decoder converts binary data into printable ASCII characters and back again. Type your text and press Encode to get a Base64 string; paste Base64 data and press Decode to recover the original content." },
-      { "h": "Where is Base64 used?", "list": ["Email attachments: the MIME standard transports attachments as Base64.", "Data URIs: images and small files can be embedded in HTML as data:image/png;base64,…", "API authentication: Basic Auth encodes username and password in Base64.", "JSON payloads: non-text fields are stored as Base64."] },
-      { "h": "Does it handle Turkish and Unicode?", "p": "Yes. The tool encodes your text as UTF-8 first, then converts to Base64. Turkish characters, emojis and other alphabets survive without corruption, and because Base64 is pure ASCII it travels reliably across platforms." },
-      { "h": "Is Base64 encryption?", "p": "No. Base64 is an encoding, not encryption — it does not hide data, it only makes it portable. Never rely on Base64 alone to protect passwords or private information; use real encryption for sensitive data." },
-      { "h": "Is my data safe?", "p": "Yes. Both operations run in your browser; your data is never sent or stored. No signup and completely free." }
+      {
+        "h": "What is a Base64 Encoder/Decoder?",
+        "p": "A Base64 Encoder/Decoder converts binary data into printable ASCII characters and back again. Type your text and press Encode to get a Base64 string; paste Base64 data and press Decode to recover the original content."
+      },
+      {
+        "h": "Where is Base64 used?",
+        "list": [
+          "Email attachments: the MIME standard transports attachments as Base64.",
+          "Data URIs: images and small files can be embedded in HTML as data:image/png;base64,…",
+          "API authentication: Basic Auth encodes username and password in Base64.",
+          "JSON payloads: non-text fields are stored as Base64."
+        ]
+      },
+      {
+        "h": "Does it handle Turkish and Unicode?",
+        "p": "Yes. The tool encodes your text as UTF-8 first, then converts to Base64. Turkish characters, emojis and other alphabets survive without corruption, and because Base64 is pure ASCII it travels reliably across platforms."
+      },
+      {
+        "h": "Is Base64 encryption?",
+        "p": "No. Base64 is an encoding, not encryption — it does not hide data, it only makes it portable. Never rely on Base64 alone to protect passwords or private information; use real encryption for sensitive data."
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. Both operations run in your browser; your data is never sent or stored. No signup and completely free."
+      }
     ],
     "url-encoder": [
-      { "h": "What is a URL Encoder/Decoder?", "p": "A URL Encoder/Decoder converts characters that are unsafe or change meaning in URLs into a safe form, and reverses the conversion. Encoding replaces spaces, Turkish letters, quotes and special marks with percent notation (%20, %C3%A7); decoding turns them back into readable text." },
-      { "h": "When is URL encoding needed?", "list": ["Search parameters: adding search phrases with spaces or Turkish characters to a query string.", "Form data: safely placing user text into GET requests.", "Sharing links: preventing & and + from being misinterpreted inside URLs.", "Code snippets: passing JSON, HTML or script content as a URL parameter."] },
-      { "h": "How are Turkish characters handled?", "p": "The tool encodes text as UTF-8, so ç, ğ, ı, ö, ş, ü and emojis become percent sequences like %C3%BC without corruption, and decoding restores full Turkish letters. Space-to-plus differences are handled automatically." },
-      { "h": "What encoding does it use?", "p": "It uses encodeURIComponent, the recommended comprehensive encoding for parameter values. Every character except A–Z, a–z, 0–9 and a few marks becomes percent notation, so browsers and servers always read your parameters identically." },
-      { "h": "Is my data safe?", "p": "Yes. Encoding and decoding happen entirely in your browser; inputs are never sent or stored. No signup, no install and completely free." }
+      {
+        "h": "What is a URL Encoder/Decoder?",
+        "p": "A URL Encoder/Decoder converts characters that are unsafe or change meaning in URLs into a safe form, and reverses the conversion. Encoding replaces spaces, Turkish letters, quotes and special marks with percent notation (%20, %C3%A7); decoding turns them back into readable text."
+      },
+      {
+        "h": "When is URL encoding needed?",
+        "list": [
+          "Search parameters: adding search phrases with spaces or Turkish characters to a query string.",
+          "Form data: safely placing user text into GET requests.",
+          "Sharing links: preventing & and + from being misinterpreted inside URLs.",
+          "Code snippets: passing JSON, HTML or script content as a URL parameter."
+        ]
+      },
+      {
+        "h": "How are Turkish characters handled?",
+        "p": "The tool encodes text as UTF-8, so ç, ğ, ı, ö, ş, ü and emojis become percent sequences like %C3%BC without corruption, and decoding restores full Turkish letters. Space-to-plus differences are handled automatically."
+      },
+      {
+        "h": "What encoding does it use?",
+        "p": "It uses encodeURIComponent, the recommended comprehensive encoding for parameter values. Every character except A–Z, a–z, 0–9 and a few marks becomes percent notation, so browsers and servers always read your parameters identically."
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. Encoding and decoding happen entirely in your browser; inputs are never sent or stored. No signup, no install and completely free."
+      }
     ],
     "bmi-hesaplayici": [
-      { "h": "What is a BMI Calculator?", "p": "A BMI Calculator computes your body mass index from your height and weight. Enter height in centimeters and weight in kilograms, press Calculate, and the tool divides weight by the square of height in meters, then classifies the result as underweight, normal, overweight or obese." },
-      { "h": "How is BMI calculated?", "p": "BMI is weight (kg) divided by height in meters squared. A 70 kg person of 1.75 m has a BMI of about 22.9, which is a normal range. According to the WHO, below 18.5 is underweight, 18.5–25 normal, 25–30 overweight and above 30 obese." },
-      { "h": "Color scale and table", "p": "Your result is marked on a colored bar that runs from underweight to obese, so you see your category at a glance. The scale table below lists all ranges and categories in detail, highlighting your current one automatically." },
-      { "h": "How reliable is BMI?", "p": "BMI is a practical population indicator but not a medical diagnostic tool. It can mislead in muscular individuals, older adults, children and during pregnancy. Use results for information only and consult a physician for any health concerns." },
-      { "h": "Is my data safe?", "p": "Yes. All calculations run in your browser; your height and weight are never sent or stored. No signup, no install and completely free." }
+      {
+        "h": "What is a BMI Calculator?",
+        "p": "A BMI Calculator computes your body mass index from your height and weight. Enter height in centimeters and weight in kilograms, press Calculate, and the tool divides weight by the square of height in meters, then classifies the result as underweight, normal, overweight or obese."
+      },
+      {
+        "h": "How is BMI calculated?",
+        "p": "BMI is weight (kg) divided by height in meters squared. A 70 kg person of 1.75 m has a BMI of about 22.9, which is a normal range. According to the WHO, below 18.5 is underweight, 18.5–25 normal, 25–30 overweight and above 30 obese."
+      },
+      {
+        "h": "Color scale and table",
+        "p": "Your result is marked on a colored bar that runs from underweight to obese, so you see your category at a glance. The scale table below lists all ranges and categories in detail, highlighting your current one automatically."
+      },
+      {
+        "h": "How reliable is BMI?",
+        "p": "BMI is a practical population indicator but not a medical diagnostic tool. It can mislead in muscular individuals, older adults, children and during pregnancy. Use results for information only and consult a physician for any health concerns."
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. All calculations run in your browser; your height and weight are never sent or stored. No signup, no install and completely free."
+      }
     ],
     "kdv-hesaplayici": [
-      { "h": "What is a VAT Calculator?", "p": "A VAT Calculator computes the value-added tax on an amount and the total price including tax. Enter the product or service price, choose a rate, and see the result. Supported rates are 1%, 8%, 10%, 18% and 20%, and you can mark whether your amount already includes tax." },
-      { "h": "VAT inclusive vs exclusive", "p": "With \"VAT exclusive\" the entered amount is the net price and the tool adds the tax to find the total. With \"VAT inclusive\" the amount already includes tax and the tool separates the tax to show the net (base) amount and the VAT amount. This helps you get the right figures for invoices and quotes fast." },
-      { "h": "Which rates are used?", "list": ["1%: reduced-rate products such as basic foods and bread.", "8% and 10%: intermediate rates for many services, books and food.", "18% and 20%: standard rates for most goods and services."] },
-      { "h": "Who benefits?", "p": "Small businesses preparing price lists, accountants verifying invoice amounts, consumers wondering about the VAT on a label and students practicing commerce math. Since everything runs in your browser, amounts never leave your device." },
-      { "h": "Is the result accurate?", "p": "Yes. Results follow the standard formulas of tax legislation to the kuruş and are shown in Turkish decimal format. The result recalculates live as you type, for every rate and type combination." }
+      {
+        "h": "What is a VAT Calculator?",
+        "p": "A VAT Calculator computes the value-added tax on an amount and the total price including tax. Enter the product or service price, choose a rate, and see the result. Supported rates are 1%, 8%, 10%, 18% and 20%, and you can mark whether your amount already includes tax."
+      },
+      {
+        "h": "VAT inclusive vs exclusive",
+        "p": "With \"VAT exclusive\" the entered amount is the net price and the tool adds the tax to find the total. With \"VAT inclusive\" the amount already includes tax and the tool separates the tax to show the net (base) amount and the VAT amount. This helps you get the right figures for invoices and quotes fast."
+      },
+      {
+        "h": "Which rates are used?",
+        "list": [
+          "1%: reduced-rate products such as basic foods and bread.",
+          "8% and 10%: intermediate rates for many services, books and food.",
+          "18% and 20%: standard rates for most goods and services."
+        ]
+      },
+      {
+        "h": "Who benefits?",
+        "p": "Small businesses preparing price lists, accountants verifying invoice amounts, consumers wondering about the VAT on a label and students practicing commerce math. Since everything runs in your browser, amounts never leave your device."
+      },
+      {
+        "h": "Is the result accurate?",
+        "p": "Yes. Results follow the standard formulas of tax legislation to the kuruş and are shown in Turkish decimal format. The result recalculates live as you type, for every rate and type combination."
+      }
     ],
     "yuzde-hesaplayici": [
-      { "h": "What is a Percentage Calculator?", "p": "A Percentage Calculator solves the three most common percentage operations on one screen. Switch tabs to compute a percentage of a number, the percentage change between two values, or a part of a whole as a ratio. All results update instantly as you type." },
-      { "h": "Which operations are included?", "list": ["Percentage of a number: enter a number and a rate; e.g. 20% of 100 is 20.", "Percentage change: enter start and end values; e.g. going from 80 to 100 is a 25% increase.", "Percentage of a whole: see what share a part represents; e.g. 20 is 20% of 100."] },
-      { "h": "Where is it used?", "p": "Shopping to calculate discounts and price increases, education to read exam pass rates and surveys, business to track sales and profit changes, and daily budgeting to plan allocations. Decimal values are supported." },
-      { "h": "About the tool", "p": "Calculations run entirely in your browser; your inputs are never sent or stored, no signup or install is needed. In Change mode, increases and decreases are color coded so you interpret the result correctly at a glance." }
+      {
+        "h": "What is a Percentage Calculator?",
+        "p": "A Percentage Calculator solves the three most common percentage operations on one screen. Switch tabs to compute a percentage of a number, the percentage change between two values, or a part of a whole as a ratio. All results update instantly as you type."
+      },
+      {
+        "h": "Which operations are included?",
+        "list": [
+          "Percentage of a number: enter a number and a rate; e.g. 20% of 100 is 20.",
+          "Percentage change: enter start and end values; e.g. going from 80 to 100 is a 25% increase.",
+          "Percentage of a whole: see what share a part represents; e.g. 20 is 20% of 100."
+        ]
+      },
+      {
+        "h": "Where is it used?",
+        "p": "Shopping to calculate discounts and price increases, education to read exam pass rates and surveys, business to track sales and profit changes, and daily budgeting to plan allocations. Decimal values are supported."
+      },
+      {
+        "h": "About the tool",
+        "p": "Calculations run entirely in your browser; your inputs are never sent or stored, no signup or install is needed. In Change mode, increases and decreases are color coded so you interpret the result correctly at a glance."
+      }
     ],
     "yas-hesaplayici": [
-      { "h": "What is an Age Calculator?", "p": "An Age Calculator computes your age from your birth date with second-level precision. Pick your birth date and a live counter starts showing how many years, months, days, hours, minutes and seconds old you are, updating every second." },
-      { "h": "Why count age in seconds?", "p": "People usually state their age in years, but even two people born the same year can differ by months. This tool shows hours, minutes and seconds in addition to years, months and days, and the counter ticks every second to keep your age live." },
-      { "h": "Next birthday information", "p": "The tool also counts how many days remain until your next birthday, so you can plan celebrations and special dates without missing them." },
-      { "h": "Who benefits?", "list": ["People who need to prove their exact age in years, months and days for official procedures.", "Anyone checking exact birth dates for insurance, pension or age-limit calculations.", "Everyone who enjoys seeing their age tick second by second."] },
-      { "h": "Is my data safe?", "p": "Yes. Calculations run entirely in your browser; your birth date is never sent or stored. No signup, no install and completely free." }
+      {
+        "h": "What is an Age Calculator?",
+        "p": "An Age Calculator computes your age from your birth date with second-level precision. Pick your birth date and a live counter starts showing how many years, months, days, hours, minutes and seconds old you are, updating every second."
+      },
+      {
+        "h": "Why count age in seconds?",
+        "p": "People usually state their age in years, but even two people born the same year can differ by months. This tool shows hours, minutes and seconds in addition to years, months and days, and the counter ticks every second to keep your age live."
+      },
+      {
+        "h": "Next birthday information",
+        "p": "The tool also counts how many days remain until your next birthday, so you can plan celebrations and special dates without missing them."
+      },
+      {
+        "h": "Who benefits?",
+        "list": [
+          "People who need to prove their exact age in years, months and days for official procedures.",
+          "Anyone checking exact birth dates for insurance, pension or age-limit calculations.",
+          "Everyone who enjoys seeing their age tick second by second."
+        ]
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. Calculations run entirely in your browser; your birth date is never sent or stored. No signup, no install and completely free."
+      }
     ],
     "qr-kod-olusturucu": [
-      { "h": "What is a QR Code Generator?", "p": "A QR Code Generator turns text or a web address into a scannable QR code. Phone camera apps read the code and open its content right away, so long links are shared without typing. It is widely used for restaurant menus, business cards, Wi-Fi access, tickets and product packaging." },
-      { "h": "What should you keep in mind?", "list": ["The encoded text is capped at 500 characters; use a short-URL service for long links.", "Printed codes can break when small; keep them at least 2 cm wide with high contrast.", "Keep dark modules on a light background; inverted colors confuse some scanners."] },
-      { "h": "Is my data safe?", "p": "Yes. The code is generated entirely in your browser; your text is never sent or stored. You can safely turn personal links, notes and business information into codes." },
-      { "h": "FAQ", "list": ["How do I scan a QR code? Point your phone camera at it.", "Does the code expire? No — generated codes are permanent.", "Can I print the downloaded PNG? Yes, it prints well at high resolution."] }
+      {
+        "h": "What is a QR Code Generator?",
+        "p": "A QR Code Generator turns text or a web address into a scannable QR code. Phone camera apps read the code and open its content right away, so long links are shared without typing. It is widely used for restaurant menus, business cards, Wi-Fi access, tickets and product packaging."
+      },
+      {
+        "h": "What should you keep in mind?",
+        "list": [
+          "The encoded text is capped at 500 characters; use a short-URL service for long links.",
+          "Printed codes can break when small; keep them at least 2 cm wide with high contrast.",
+          "Keep dark modules on a light background; inverted colors confuse some scanners."
+        ]
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. The code is generated entirely in your browser; your text is never sent or stored. You can safely turn personal links, notes and business information into codes."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "How do I scan a QR code? Point your phone camera at it.",
+          "Does the code expire? No — generated codes are permanent.",
+          "Can I print the downloaded PNG? Yes, it prints well at high resolution."
+        ]
+      }
     ],
     "sha-hash-uretici": [
-      { "h": "What is a SHA hash?", "p": "SHA (Secure Hash Algorithm) is a one-way cryptographic function that turns data of any length into a fixed-length digest. If one word changes the digest changes completely; the same input always gives the same output. This makes it essential for verifying file downloads, storing password hashes and validating signatures." },
-      { "h": "SHA-1, SHA-256 or SHA-512?", "p": "SHA-1 produces a 160-bit digest and has been considered insecure against collisions since 2005; use it only for legacy compatibility. SHA-256 gives a 32-byte (64 hex character) digest and SHA-512 a 64-byte (128 hex character) one. SHA-256 is the standard for new projects; choose SHA-512 when maximum strength matters." },
-      { "h": "Is my data safe?", "p": "Yes. Hashing runs in your browser's crypto library entirely on your device; your text is never sent anywhere. Private keys, passwords and sensitive data can be hashed safely here." },
-      { "h": "FAQ", "list": ["Can I reverse a hash to the original text? No — SHA is one-way.", "Does the same text give different hashes? No — SHA is deterministic.", "Which algorithm should I pick? SHA-256 is sufficient and secure for most cases."] }
+      {
+        "h": "What is a SHA hash?",
+        "p": "SHA (Secure Hash Algorithm) is a one-way cryptographic function that turns data of any length into a fixed-length digest. If one word changes the digest changes completely; the same input always gives the same output. This makes it essential for verifying file downloads, storing password hashes and validating signatures."
+      },
+      {
+        "h": "SHA-1, SHA-256 or SHA-512?",
+        "p": "SHA-1 produces a 160-bit digest and has been considered insecure against collisions since 2005; use it only for legacy compatibility. SHA-256 gives a 32-byte (64 hex character) digest and SHA-512 a 64-byte (128 hex character) one. SHA-256 is the standard for new projects; choose SHA-512 when maximum strength matters."
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. Hashing runs in your browser's crypto library entirely on your device; your text is never sent anywhere. Private keys, passwords and sensitive data can be hashed safely here."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Can I reverse a hash to the original text? No — SHA is one-way.",
+          "Does the same text give different hashes? No — SHA is deterministic.",
+          "Which algorithm should I pick? SHA-256 is sufficient and secure for most cases."
+        ]
+      }
     ],
     "tarih-farki": [
-      { "h": "What is a Date Difference calculator?", "p": "A Date Difference calculator splits the duration between two dates into years, months and days, and also shows the total in days, weeks, hours and minutes. It saves time for birthdays, contract deadlines, tenure and project timelines — whichever date comes first, the absolute difference is shown." },
-      { "h": "How should you read the result?", "p": "The years/months/days conversion is based on calendar averages (365.2425 days per year) and gives a satisfying \"how long\" perspective. Total days and hours are exact and should be the basis for calculations that need precision, like contract periods." },
-      { "h": "Is my data safe?", "p": "Yes. The calculation happens entirely in your browser; your dates are never sent or stored. No signup, no install and completely free." },
-      { "h": "FAQ", "list": ["Does date order matter? No — the absolute difference is shown.", "Can the start date be today? Yes — fields default to today.", "Are total hours realistic? Yes — exact days multiplied by 24."] }
+      {
+        "h": "What is a Date Difference calculator?",
+        "p": "A Date Difference calculator splits the duration between two dates into years, months and days, and also shows the total in days, weeks, hours and minutes. It saves time for birthdays, contract deadlines, tenure and project timelines — whichever date comes first, the absolute difference is shown."
+      },
+      {
+        "h": "How should you read the result?",
+        "p": "The years/months/days conversion is based on calendar averages (365.2425 days per year) and gives a satisfying \"how long\" perspective. Total days and hours are exact and should be the basis for calculations that need precision, like contract periods."
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. The calculation happens entirely in your browser; your dates are never sent or stored. No signup, no install and completely free."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Does date order matter? No — the absolute difference is shown.",
+          "Can the start date be today? Yes — fields default to today.",
+          "Are total hours realistic? Yes — exact days multiplied by 24."
+        ]
+      }
     ],
     "renk-donusturucu": [
-      { "h": "What is a Color Converter?", "p": "A Color Converter instantly converts between HEX, RGB and HSL notations. Web developers constantly need to align colors across designs, mobile interfaces and graphics programs. This tool also previews the color and lets you copy any format with one click." },
-      { "h": "When is each format used?", "list": ["HEX: the standard in web design — #RRGGBB six-digit hex notation.", "RGB: three numbers 0–255 used by screens and graphics software; the basis of contrast math.", "HSL: hue, saturation and lightness make adjustments like \"lighter\" or \"darker\" natural."] },
-      { "h": "Is my data safe?", "p": "Yes. All conversions run in your browser; your color is never sent anywhere. Fast access without fees, memberships or ad filters." },
-      { "h": "FAQ", "list": ["Do I need the # prefix for HEX? Either works — both 6-digit forms are accepted.", "Which field updates the color? The last valid input applies; invalid entries keep the current color.", "Are the HSL percentages required? Yes — saturation and lightness need the % sign."] }
+      {
+        "h": "What is a Color Converter?",
+        "p": "A Color Converter instantly converts between HEX, RGB and HSL notations. Web developers constantly need to align colors across designs, mobile interfaces and graphics programs. This tool also previews the color and lets you copy any format with one click."
+      },
+      {
+        "h": "When is each format used?",
+        "list": [
+          "HEX: the standard in web design — #RRGGBB six-digit hex notation.",
+          "RGB: three numbers 0–255 used by screens and graphics software; the basis of contrast math.",
+          "HSL: hue, saturation and lightness make adjustments like \"lighter\" or \"darker\" natural."
+        ]
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. All conversions run in your browser; your color is never sent anywhere. Fast access without fees, memberships or ad filters."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Do I need the # prefix for HEX? Either works — both 6-digit forms are accepted.",
+          "Which field updates the color? The last valid input applies; invalid entries keep the current color.",
+          "Are the HSL percentages required? Yes — saturation and lightness need the % sign."
+        ]
+      }
     ],
     "uuid-uretici": [
-      { "h": "What is a UUID?", "p": "A UUID (universally unique identifier) is a standard 128-bit identifier written in 36 characters, e.g. 123e4567-e89b-12d3-a456-426614174000. Version 4 is produced randomly, making collisions practically impossible across distributed systems, databases and APIs." },
-      { "h": "When should you use it?", "list": ["Database primary keys and record identifiers.", "API trace, session and transaction numbers.", "Test data, form fields and temporary file names.", "Apps where many servers create records at the same time."] },
-      { "h": "Is my data safe?", "p": "Yes. Values are generated on your device using the browser's cryptographic random source; nothing is sent anywhere. The identifiers are entirely yours." },
-      { "h": "FAQ", "list": ["Are UUID and GUID the same? Yes — GUID is Microsoft's name for a UUID.", "Can identifiers be changed? Every click produces fresh random values; generated lists are yours once copied.", "How many values can I generate? As many as you like in a single batch."] }
+      {
+        "h": "What is a UUID?",
+        "p": "A UUID (universally unique identifier) is a standard 128-bit identifier written in 36 characters, e.g. 123e4567-e89b-12d3-a456-426614174000. Version 4 is produced randomly, making collisions practically impossible across distributed systems, databases and APIs."
+      },
+      {
+        "h": "When should you use it?",
+        "list": [
+          "Database primary keys and record identifiers.",
+          "API trace, session and transaction numbers.",
+          "Test data, form fields and temporary file names.",
+          "Apps where many servers create records at the same time."
+        ]
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. Values are generated on your device using the browser's cryptographic random source; nothing is sent anywhere. The identifiers are entirely yours."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Are UUID and GUID the same? Yes — GUID is Microsoft's name for a UUID.",
+          "Can identifiers be changed? Every click produces fresh random values; generated lists are yours once copied.",
+          "How many values can I generate? As many as you like in a single batch."
+        ]
+      }
     ],
     "birim-donusturucu": [
-      { "h": "What is a Unit Converter?", "p": "A Unit Converter moves measurements between units for length, weight, volume, area and temperature. From centimeters to inches, kilograms to pounds, Celsius to Fahrenheit — hundreds of everyday conversions on one screen, useful for recipes, math homework, engineering and shopping." },
-      { "h": "Which conversions are supported?", "list": ["Length: millimeter, centimeter, meter, kilometer, inch, foot, yard, mile.", "Weight: milligram, gram, kilogram, ton, ounce, pound.", "Volume: milliliter, centiliter, deciliter, liter, cubic meter, US gallon.", "Area: square millimeter/centimeter/meter, hectare, square kilometer, acre.", "Temperature: Celsius, Fahrenheit, Kelvin."] },
-      { "h": "Is my data safe?", "p": "Yes. All conversions run in your browser; your values are never sent or stored. Free and account free." },
-      { "h": "FAQ", "list": ["What decimal separator can I use? Both comma and dot are accepted (e.g. 1,5 or 1.5).", "Are results rounded? Values are rounded to six digits — accurate enough for everyday measurement.", "Can more units be added? The five most common categories are supported; categories can be extended on request."] }
+      {
+        "h": "What is a Unit Converter?",
+        "p": "A Unit Converter moves measurements between units for length, weight, volume, area and temperature. From centimeters to inches, kilograms to pounds, Celsius to Fahrenheit — hundreds of everyday conversions on one screen, useful for recipes, math homework, engineering and shopping."
+      },
+      {
+        "h": "Which conversions are supported?",
+        "list": [
+          "Length: millimeter, centimeter, meter, kilometer, inch, foot, yard, mile.",
+          "Weight: milligram, gram, kilogram, ton, ounce, pound.",
+          "Volume: milliliter, centiliter, deciliter, liter, cubic meter, US gallon.",
+          "Area: square millimeter/centimeter/meter, hectare, square kilometer, acre.",
+          "Temperature: Celsius, Fahrenheit, Kelvin."
+        ]
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. All conversions run in your browser; your values are never sent or stored. Free and account free."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "What decimal separator can I use? Both comma and dot are accepted (e.g. 1,5 or 1.5).",
+          "Are results rounded? Values are rounded to six digits — accurate enough for everyday measurement.",
+          "Can more units be added? The five most common categories are supported; categories can be extended on request."
+        ]
+      }
     ],
     "parola-guc-testi": [
-      { "h": "What is a Password Strength Checker?", "p": "A Password Strength Checker evaluates how resistant your password is to attack using an estimated entropy score. Length, character diversity and similarity to common passwords are checked, with the result shown from very weak to very strong and each missing requirement flagged." },
-      { "h": "What is entropy and why does it matter?", "p": "Entropy measures a password's unpredictability in bits. Every extra character and new character type multiplies the combinations a brute-force attack must try. An 8-character lower-case-only password is weak; the same length with digits and symbols is far stronger. This tool uses the same measure as our password generator." },
-      { "h": "Is my data safe?", "p": "Yes. The test runs entirely in your browser; your password is never sent, stored or logged. Test even your real passwords with confidence." },
-      { "h": "FAQ", "list": ["What length is enough? Aim for at least 12 characters; 16+ is safer.", "Do you check the common-password list online? No — the list is embedded on your device.", "What is the best password? A unique, long, unpredictable password stored in a password manager."] }
+      {
+        "h": "What is a Password Strength Checker?",
+        "p": "A Password Strength Checker evaluates how resistant your password is to attack using an estimated entropy score. Length, character diversity and similarity to common passwords are checked, with the result shown from very weak to very strong and each missing requirement flagged."
+      },
+      {
+        "h": "What is entropy and why does it matter?",
+        "p": "Entropy measures a password's unpredictability in bits. Every extra character and new character type multiplies the combinations a brute-force attack must try. An 8-character lower-case-only password is weak; the same length with digits and symbols is far stronger. This tool uses the same measure as our password generator."
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. The test runs entirely in your browser; your password is never sent, stored or logged. Test even your real passwords with confidence."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "What length is enough? Aim for at least 12 characters; 16+ is safer.",
+          "Do you check the common-password list online? No — the list is embedded on your device.",
+          "What is the best password? A unique, long, unpredictable password stored in a password manager."
+        ]
+      }
     ],
     "sayi-donusturucu": [
-      { "h": "What is a Number Base Converter?", "p": "A Number Base Converter translates numbers between the four counting systems used in programming: binary (base 2), octal (base 8), decimal (base 10) and hexadecimal (base 16). Type a value, choose which base it is written in, and the tool shows all four representations at once — handy for color values, permission masks, memory addresses and bit-level work." },
-      { "h": "Why do large numbers stay exact?", "p": "The converter uses your browser's arbitrary-precision number type instead of floating-point math. Even values far beyond JavaScript's normal safe range convert digit-for-digit accurately and never round." },
-      { "h": "When is each base used?", "list": ["Binary (0, 1): bits, masks and bitwise operations in low-level programming.", "Octal (0–7): classic Unix file permission masks used with chmod.", "Decimal: ordinary everyday numbers.", "Hexadecimal (0–9, A–F): CSS colors such as #FF8800, memory addresses and byte values."] },
-      { "h": "Is my data safe?", "p": "Yes. All conversions run in your browser; the number you type is never sent or stored. Free, no signup and no install." }
+      {
+        "h": "What is a Number Base Converter?",
+        "p": "A Number Base Converter translates numbers between the four counting systems used in programming: binary (base 2), octal (base 8), decimal (base 10) and hexadecimal (base 16). Type a value, choose which base it is written in, and the tool shows all four representations at once — handy for color values, permission masks, memory addresses and bit-level work."
+      },
+      {
+        "h": "Why do large numbers stay exact?",
+        "p": "The converter uses your browser's arbitrary-precision number type instead of floating-point math. Even values far beyond JavaScript's normal safe range convert digit-for-digit accurately and never round."
+      },
+      {
+        "h": "When is each base used?",
+        "list": [
+          "Binary (0, 1): bits, masks and bitwise operations in low-level programming.",
+          "Octal (0–7): classic Unix file permission masks used with chmod.",
+          "Decimal: ordinary everyday numbers.",
+          "Hexadecimal (0–9, A–F): CSS colors such as #FF8800, memory addresses and byte values."
+        ]
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. All conversions run in your browser; the number you type is never sent or stored. Free, no signup and no install."
+      }
     ],
     "regex-testi": [
-      { "h": "What is a Regex Tester?", "p": "A Regex Tester applies a regular expression to your text and shows the result live while you type. Matched pieces are highlighted, a match counter updates on every keystroke, and invalid patterns explain their error instead of failing silently." },
-      { "h": "Which flags are supported?", "list": ["g — global: find all matches instead of just the first.", "i — ignore case: a matches both a and A.", "m — multiline: ^ and $ match line starts and ends.", "s — dot-all: . also matches newline characters.", "u — unicode: enables unicode-aware escapes such as \\p{...}."] },
-      { "h": "How do I anchor my pattern?", "p": "Use ^ to anchor to the start of the text and $ to the end. Without anchors a pattern matches anywhere in the text. Add \\b word boundaries for whole-word matching and use parentheses to capture groups you want to reuse." },
-      { "h": "Is my data safe?", "p": "Yes. Matching runs entirely on your device; your pattern and test text never leave the browser. Log lines, tokens or code samples can be tested here safely." }
+      {
+        "h": "What is a Regex Tester?",
+        "p": "A Regex Tester applies a regular expression to your text and shows the result live while you type. Matched pieces are highlighted, a match counter updates on every keystroke, and invalid patterns explain their error instead of failing silently."
+      },
+      {
+        "h": "Which flags are supported?",
+        "list": [
+          "g — global: find all matches instead of just the first.",
+          "i — ignore case: a matches both a and A.",
+          "m — multiline: ^ and $ match line starts and ends.",
+          "s — dot-all: . also matches newline characters.",
+          "u — unicode: enables unicode-aware escapes such as \\p{...}."
+        ]
+      },
+      {
+        "h": "How do I anchor my pattern?",
+        "p": "Use ^ to anchor to the start of the text and $ to the end. Without anchors a pattern matches anywhere in the text. Add \\b word boundaries for whole-word matching and use parentheses to capture groups you want to reuse."
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. Matching runs entirely on your device; your pattern and test text never leave the browser. Log lines, tokens or code samples can be tested here safely."
+      }
     ],
     "bosluk-temizleyici": [
-      { "h": "What is a Whitespace Cleaner?", "p": "A Whitespace Cleaner normalizes spaces and line breaks in your text. Trim every line, collapse runs of spaces into one, drop empty lines or remove all whitespace — four cleaning modes on one screen that you can combine freely." },
-      { "h": "Which cleanings are available?", "list": ["Trim lines: removes leading and trailing spaces from each line.", "Collapse multiple spaces: turns repeated spaces or tabs into a single space.", "Remove empty lines: deletes blank lines and closes gaps between paragraphs.", "Remove all whitespace: strips every space, tab and newline from the text."] },
-      { "h": "When is it useful?", "list": ["Cleaning text pasted from PDFs and emails that came with ragged spacing.", "Normalizing configuration and CSV columns before reuse.", "Compressing copy before conversion or measurement.", "Preparing clean text for translation and word-count checks."] },
-      { "h": "Is my data safe?", "p": "Yes. All cleaning happens in your browser; your text is never sent or stored. Free, no signup and completely client-side." }
+      {
+        "h": "What is a Whitespace Cleaner?",
+        "p": "A Whitespace Cleaner normalizes spaces and line breaks in your text. Trim every line, collapse runs of spaces into one, drop empty lines or remove all whitespace — four cleaning modes on one screen that you can combine freely."
+      },
+      {
+        "h": "Which cleanings are available?",
+        "list": [
+          "Trim lines: removes leading and trailing spaces from each line.",
+          "Collapse multiple spaces: turns repeated spaces or tabs into a single space.",
+          "Remove empty lines: deletes blank lines and closes gaps between paragraphs.",
+          "Remove all whitespace: strips every space, tab and newline from the text."
+        ]
+      },
+      {
+        "h": "When is it useful?",
+        "list": [
+          "Cleaning text pasted from PDFs and emails that came with ragged spacing.",
+          "Normalizing configuration and CSV columns before reuse.",
+          "Compressing copy before conversion or measurement.",
+          "Preparing clean text for translation and word-count checks."
+        ]
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. All cleaning happens in your browser; your text is never sent or stored. Free, no signup and completely client-side."
+      }
+    ],
+    "md5-hash": [
+      {
+        "h": "What is an MD5 hash?",
+        "p": "MD5 is a cryptographic hash function that turns text of any length into a fixed 32-character hexadecimal digest. The same input always produces the same digest, and a single changed character changes it completely."
+      },
+      {
+        "h": "Where is MD5 used?",
+        "list": [
+          "File integrity: download sites publish the MD5 digest so you can verify a file was not corrupted.",
+          "Checksums: scripts and package managers compare MD5 values to confirm data transferred correctly.",
+          "Legacy systems: older databases and APIs still reference MD5 for identification and deduplication."
+        ]
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. The digest is computed entirely in your browser; your text is never sent or stored. MD5 is fast and practical for checksums, though it is not recommended for storing passwords."
+      }
+    ],
+    "jwt-cozucu": [
+      {
+        "h": "What is a JWT?",
+        "p": "A JWT (JSON Web Token) is a compact, URL-safe token that carries claims between two parties, used in authentication and authorization flows such as login sessions and API access. It consists of three base64url-encoded parts separated by dots."
+      },
+      {
+        "h": "What is inside a JWT?",
+        "list": [
+          "Header: the token type and signing algorithm, e.g. alg: HS256.",
+          "Payload: the claims, e.g. sub, exp and other custom data.",
+          "Signature: verifies the token was not tampered with."
+        ]
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. Decoding happens entirely in your browser; the token is never sent to any server. Note that decoding does not verify the signature — a JWT is readable by everyone who receives it."
+      }
+    ],
+    "json-csv-donusturucu": [
+      {
+        "h": "What does the JSON ↔ CSV Converter do?",
+        "p": "It converts a JSON array of objects (or a single object) into a CSV file with a header row, and converts CSV data back into a JSON array of objects. Fields containing commas, quotes or newlines are correctly quoted per RFC-4180 rules."
+      },
+      {
+        "h": "When is it useful?",
+        "list": [
+          "Migrating data between databases, spreadsheets and APIs.",
+          "Preparing CSV exports from API responses for Excel or Google Sheets.",
+          "Converting spreadsheet data into JSON for configuration files and scripts."
+        ]
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. All conversion happens in your browser; your data is never uploaded or stored. Use it for private lists, reports and configuration data without worry."
+      }
+    ],
+    "unix-timestamp-cevirici": [
+      {
+        "h": "What is a Unix timestamp?",
+        "p": "A Unix timestamp is the number of seconds that have elapsed since 1 January 1970 00:00:00 UTC. Systems store times as these numbers because they are compact and timezone-independent; 1893456000, for example, equals 2030-01-01 00:00:00 UTC."
+      },
+      {
+        "h": "How do conversions work?",
+        "list": [
+          "Timestamp → date: enter e.g. 1893456000 and get the locale date and time (2030-01-01 00:00:00 UTC).",
+          "Date → timestamp: pick a date and time and get the exact epoch seconds; the value is treated as your local time.",
+          "Both results update instantly with your local timezone settings."
+        ]
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. All conversion runs in your browser; no value is ever sent or stored. No signup and no install needed."
+      }
+    ],
+    "tekrar-satir-temizleyici": [
+      {
+        "h": "What is a Duplicate Line Remover?",
+        "p": "It scans your text line by line, removes repeated lines and keeps only the first occurrence of each one, preserving the original order. You instantly see how many lines were kept out of the total."
+      },
+      {
+        "h": "Where is it useful?",
+        "list": [
+          "Cleaning email lists, membership databases and repeated contact rows.",
+          "Deduplicating imported product or inventory listings before upload.",
+          "Preparing unique keyword or URL lists for SEO and link building."
+        ]
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. The process runs entirely in your browser; your list is never uploaded or stored. Paste anything private with confidence."
+      }
+    ],
+    "ai-token-hesaplayici": [
+      {
+        "h": "What is an AI Token Calculator?",
+        "p": "It estimates the number of tokens your text will consume in an AI/LLM context window, alongside character, word and line counts. Model limits are quoted in tokens, so knowing your estimate helps you plan prompts, context and costs."
+      },
+      {
+        "h": "How are tokens estimated?",
+        "list": [
+          "English text averages about 4 characters per token.",
+          "Turkish averages around 2.5 characters per token (the tool uses this ratio).",
+          "CJK characters (Chinese, Japanese, Korean) average about 1 token per character."
+        ]
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. Counting runs entirely in your browser; your text is never sent to any server or API. Keep your prompts and sensitive drafts private while you plan token usage."
+      }
+    ],
+    "lorem-ipsum-uretici": [
+      {
+        "h": "What is Lorem Ipsum?",
+        "p": "Lorem Ipsum is placeholder Latin text traced back to a work by the Roman statesman Cicero, popularized in the printing and typesetting industry since the 1960s. Because the words carry no real meaning, designers can judge a layout without being distracted by content."
+      },
+      {
+        "h": "Where is it useful?",
+        "list": [
+          "Mockups and website designs that need neutral filler text.",
+          "Font and typesetting samples for print and web projects.",
+          "Testing responsive layouts before the final copy is written.",
+          "Presenting templates to clients ahead of the real text."
+        ]
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. The text is generated entirely in your browser; your inputs and the generated paragraphs are never sent or stored. No signup, no install and completely free."
+      }
+    ],
+    "bahsis-hesaplayici": [
+      {
+        "h": "What is a Tip Calculator?",
+        "p": "A Tip Calculator works out the tip on a bill, the total to pay and the share for each person when the bill is split evenly. Enter the bill amount, choose a tip percentage from 5% to 25% and set the number of people; the tip amount, total and per-person share update immediately."
+      },
+      {
+        "h": "How is the per-person share calculated?",
+        "p": "The tool adds the bill and the tip, then divides by the number of people. A ₺400 bill with a 15% tip (₺60) split between 4 people comes to ₺115 per person; dividing the ₺460 total between 3 people gives ₺153.33 each."
+      },
+      {
+        "h": "Which tip percentages are available?",
+        "list": [
+          "5% — a minimum gesture for basic service.",
+          "10% — common in casual or buffet service.",
+          "15% — the standard tip in many countries.",
+          "20% and 25% — for great service or larger groups."
+        ]
+      }
+    ],
+    "indirim-hesaplayici": [
+      {
+        "h": "What is a Discount Calculator?",
+        "p": "A Discount Calculator subtracts a discount percentage from an original price and reports the discount amount, the final price and the percentage that was saved. It is handy when comparing deals, preparing sales prices or checking whether a labeled discount really is a good deal."
+      },
+      {
+        "h": "How does the calculation work?",
+        "p": "The discount amount is the original price multiplied by the discount percentage; the final price is the original price minus that amount. An item priced at ₺250 with a 20% discount saves you ₺50, so you pay ₺200, and the \"You save\" value shows the 20% rate."
+      },
+      {
+        "h": "Who can use it?",
+        "list": [
+          "Shoppers comparing discounts and final prices before buying.",
+          "Shop owners preparing sale labels and promotions.",
+          "Students practicing percentage and discount math."
+        ]
+      }
+    ],
+    "ortalama-hesaplayici": [
+      {
+        "h": "What is an Average Calculator?",
+        "p": "An Average Calculator reads the numbers you enter and computes five statistics at once — average, sum, count, minimum and maximum. Numbers can be separated by commas, spaces or new lines, and both comma and dot decimals are accepted."
+      },
+      {
+        "h": "A quick example",
+        "p": "For the numbers 10, 20 and 30, the average is 20, the sum is 60, the count is 3, the minimum is 10 and the maximum is 30. As another example, the average of 4.5 and 5.5 is 5. Results appear as soon as you press Calculate."
+      },
+      {
+        "h": "Where is it used?",
+        "list": [
+          "Grades: the average of exam or assignment scores.",
+          "Business: average order value or daily revenue.",
+          "Sports: average scores across games or seasons.",
+          "Personal tracking: average spending, distance or time."
+        ]
+      }
+    ],
+    "kopek-yasi-hesaplayici": [
+      {
+        "h": "What is a Dog Age Calculator?",
+        "p": "A Dog Age Calculator converts your dog's age in years into an approximate human age using a modern, size-aware formula. Small, medium and large breeds age at different rates, so the tool lets you pick the right size before estimating."
+      },
+      {
+        "h": "How is the age estimated?",
+        "p": "The common formula counts the first year as about 15 human years, the second year as another 9, and then adds 4 to 5 human years per year depending on size. A 3-year-old medium dog therefore equals ≈15 + 9 + 4 = 28 human years."
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. The estimate is calculated entirely in your browser; the age and size you enter are never sent or stored. Free, no signup and completely client-side."
+      }
+    ],
+    "subnet-hesaplayici": [
+      {
+        "h": "What is a Subnet Calculator?",
+        "p": "A Subnet Calculator takes an IPv4 address and a prefix length and computes the network address, broadcast address, netmask, total number of hosts and usable hosts for that subnet. It is used when planning IP ranges, VLANs, subnets in cloud services and container networks."
+      },
+      {
+        "h": "A worked example",
+        "p": "For 192.168.1.0/24 the network address is 192.168.1.0, the broadcast is 192.168.1.255, the netmask is 255.255.255.0, the total number of hosts is 256 and the usable hosts are 254."
+      },
+      {
+        "h": "Why are usable hosts fewer than total hosts?",
+        "p": "The network address and the broadcast address are always reserved and cannot be assigned to a device. A /24 subnet therefore holds 256 addresses but offers 254 usable hosts."
+      }
+    ],
+    "px-rem-donusturucu": [
+      {
+        "h": "What is a PX to REM converter?",
+        "p": "A PX to REM converter translates pixel values into rem units and back, using the base font size you set. Because rem units scale relative to the root font size, text and spacing adjust smoothly when a user changes the browser's font settings."
+      },
+      {
+        "h": "How do rem values relate to pixels?",
+        "p": "1 rem equals the base font size: dividing pixels by the base gives rem, and multiplying rem by the base gives pixels. With a base of 16 px, 32 px becomes 2 rem and 1.5 rem becomes 24 px."
+      },
+      {
+        "h": "Why is 16 px the default base?",
+        "p": "Major browsers use a default root font size of 16 px, which is why most projects start there. You can change it because some design systems adopt other bases such as 14 px or 10 px."
+      }
+    ],
+    "xml-formatter": [
+      {
+        "h": "What is an XML Formatter?",
+        "p": "An XML Formatter takes raw XML and turns it into a clean, indented tree so tags and their nesting are easy to read. The Minify mode does the opposite: it strips whitespace between tags to compress the code for transfer or storage. Malformed XML is reported with a clear error instead of failing silently."
+      },
+      {
+        "h": "Where is it useful?",
+        "list": [
+          "Web services: reading API request and response payloads.",
+          "Config files: cleaning up application and build configuration in XML.",
+          "Sharing: reformatting minified XML into readable form for colleagues.",
+          "Debugging: spotting mismatched tags and broken nesting at a glance."
+        ]
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. Formatting, validation and minifying all happen locally in your browser; your XML is never sent to any server, so even configuration with sensitive values can be handled safely."
+      }
+    ],
+    "css-minifier": [
+      {
+        "h": "What is a CSS Minifier?",
+        "p": "A CSS Minifier removes everything a browser does not strictly need: comments and the whitespace around selectors, braces and semicolons. The result is the same stylesheet in a smaller file, which means faster loads. Comparing the before and after sizes shows exactly how much you saved."
+      },
+      {
+        "h": "What does minifying remove?",
+        "list": [
+          "Comments: every /* */ block is removed.",
+          "Whitespace: spaces, tabs and newlines between syntax tokens are collapsed.",
+          "Unneeded last semicolons and redundant spaces inside rules."
+        ]
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. Minifying happens entirely in your browser; your CSS is never sent or stored. No signup or install is needed."
+      }
+    ],
+    "html-minifier": [
+      {
+        "h": "What is an HTML Minifier?",
+        "p": "An HTML Minifier compresses page source by removing comments and collapsing the whitespace between tags. Because text content, attributes and their quoting are preserved, the rendered page stays visually identical while the file shrinks for faster delivery."
+      },
+      {
+        "h": "What is left untouched?",
+        "list": [
+          "Text content between tags and inside attributes, including quotes.",
+          "Preformatted regions: <pre> and <textarea> keep their exact content.",
+          "Code blocks: <script> and <style> contents are left intact."
+        ]
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. All cleaning happens in your browser; your HTML is never uploaded anywhere. It is safe for private templates, email source and in-progress markup."
+      }
+    ],
+    "wcag-kontrast": [
+      {
+        "h": "What is WCAG contrast?",
+        "p": "The WCAG guidelines define how much contrast text must have against its background to stay readable, as a ratio that compares the relative luminance of the two colors. This tool computes the contrast ratio live and shows exactly which WCAG success criteria your color pair passes or fails."
+      },
+      {
+        "h": "What are the required ratios?",
+        "list": [
+          "AA Normal text: at least 4.5:1.",
+          "AA Large text: at least 3:1.",
+          "AAA Normal text: at least 7:1.",
+          "AAA Large text: at least 4.5:1."
+        ]
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. The ratio is computed locally in your browser; your colors never leave your device. No signup or install is required."
+      }
+    ],
+    "renk-paleti-uretici": [
+      {
+        "h": "What is a Color Palette Generator?",
+        "p": "A Color Palette Generator produces a set of harmoniously related colors from one base color. Analogous palettes step the hue around the color wheel, while monochrome palettes vary the lightness of the same hue. Choose 5, 7 or 9 colors and click any swatch to copy its HEX value."
+      },
+      {
+        "h": "Analogous vs monochrome",
+        "list": [
+          "Analogous: colors sitting next to each other on the color wheel — often used together in natural, calm designs.",
+          "Monochrome: tints and shades of one hue — safe for professional and minimal layouts."
+        ]
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. Palettes are generated entirely in your browser; your base color is never sent anywhere. Everything stays on your device."
+      }
+    ],
+    "box-shadow-uretici": [
+      {
+        "h": "What is a Box Shadow Generator?",
+        "p": "A Box Shadow Generator builds the CSS for a shadow under an element using simple sliders. You control the horizontal and vertical offset, blur radius, spread, opacity and color, and a preview box updates live with the exact style you are designing."
+      },
+      {
+        "h": "What do the values mean?",
+        "list": [
+          "Offset X/Y: how far the shadow shifts right and down (negative values move it left and up).",
+          "Blur: how soft or sharp the shadow's edge is.",
+          "Spread: how much the shadow grows beyond the box size.",
+          "Opacity and color: the shadow's transparency and tint."
+        ]
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. The CSS is generated in your browser; your settings are never sent or saved. Copy the result and paste it straight into your stylesheet."
+      }
+    ],
+    "metin-siralayici": [
+      {
+        "h": "What is a Line Sorter?",
+        "p": "A Line Sorter takes the lines of any text — lists, CSV rows, names, URLs — and reorders them by the rule you choose. Sort alphabetically, by length or by numeric value, or shuffle the order entirely; the output is copied with one click."
+      },
+      {
+        "h": "Which sorting modes are available?",
+        "list": [
+          "A→Z / Z→A: alphabetical order with a Turkish-locale aware comparison.",
+          "Length: shortest lines first, useful for choosing short usernames or titles.",
+          "Numeric: compares parsed numbers when lines contain values like 2, 10, 200.",
+          "Shuffle: random order, for drawing turns or mixing a sequence."
+        ]
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. Sorting runs entirely in your browser; your text is never sent or stored. No signup and completely free."
+      }
+    ],
+    "liste-karistirici": [
+      {
+        "h": "What is a List Randomizer?",
+        "p": "A List Randomizer mixes the items of a list so that every order is equally likely, or picks a single random item from it. Paste one item per line and choose Shuffle to reorder the whole list or Pick one to draw a single winner."
+      },
+      {
+        "h": "How is the shuffle random?",
+        "p": "The tool uses the Fisher-Yates algorithm with a cryptographic-quality random source, so every possible order has the same probability. The result is fair — ideal for drawing raffles, assigning turns or randomizing test data."
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. Everything happens in your browser; your list is never sent anywhere. Runs fully client-side."
+      }
+    ],
+    "yaml-json-donusturucu": [
+      {
+        "h": "What is a YAML ↔ JSON Converter?",
+        "p": "A YAML ↔ JSON Converter translates configuration data between the YAML text format and strict JSON syntax in both directions. Use it when porting config files, mocking APIs or switching between tools that expect one format or the other. Conversion runs with a small built-in YAML parser, so no data leaves your browser."
+      },
+      {
+        "h": "When is it useful?",
+        "list": [
+          "Config files: migrating .yml settings into JSON-based tools and CI pipelines.",
+          "Validation: checking hand-written YAML indentation or JSON commas.",
+          "Documentation: converting examples between the two formats."
+        ]
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. Parsing and conversion happen entirely in your browser; your data is never sent or stored. Configurations with secrets can be converted safely."
+      }
+    ],
+    "md5-dosya-checksum": [
+      {
+        "h": "What is an MD5 file checksum?",
+        "p": "An MD5 checksum is a 32-character fingerprint computed from every byte of a file. Even a tiny change produces a completely different digest, so comparing checksums is a quick way to confirm a file is exactly what it is supposed to be."
+      },
+      {
+        "h": "What is a checksum used for?",
+        "list": [
+          "Verifying downloads: comparing the digest published by a software vendor with the file you received.",
+          "Detecting corruption: confirming a copy was transferred without errors.",
+          "Deduplication: spotting identical files by their digest."
+        ]
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. The digest is computed entirely in your browser from the file bytes on your device; the file is never uploaded to any server, and the results are gone when you close the page."
+      }
     ]
   },
   "ToolPage": {
@@ -418,15 +1390,49 @@
       "h1": "Privacy Policy",
       "updated": "Last updated: September 22, 2026",
       "sections": [
-        { "h": "1. General Information", "p": "FreetoolsY (\"we\", \"the site\") offers free online tools at https://freetoolsy.vercel.app. This policy explains what information is collected while you use the site and how it is used. By using the site you accept this policy." },
-        { "h": "2. Data Collected", "p": "Most of our tools run in your browser; the text, numbers or data you enter are not sent to or stored on our servers. The site may process certain technical data (IP address, browser type, visited pages, device information) for standard web analytics and advertising services." },
-        { "h": "3. Cookies", "p": "The site uses cookies to remember preferences (such as theme choice) and to measure service quality. You can allow or block cookies from your browser settings at any time; blocking them does not stop most tools from working." },
-        { "h": "4. Third-Party Ads", "p": "This site may use third-party ad providers such as Google AdSense for revenue. Google may use cookies (including DART cookies) to personalize ad delivery. See the", "link": "Google advertising page", "url": "https://policies.google.com/technologies/partner-sites", "post": " for details on Google's data usage. Users can opt out of personalized ads in", "post2": "Google Ad Settings", "url2": "https://adssettings.google.com" },
-        { "h": "5. Analytics", "p": "The site may use analytics services such as Google Analytics to understand visitor statistics. These services use cookies to analyze site usage; collected information is processed anonymously." },
-        { "h": "6. Data Security", "p": "The site takes reasonable measures to protect personal data. However, no method of transmission over the internet is 100% secure, so absolute security cannot be guaranteed." },
-        { "h": "7. Your Rights", "p": "Under KVKK and GDPR you have the right to access, correct, delete or object to the processing of your data. You can reach us through the contact section for any request." },
-        { "h": "8. Changes", "p": "This policy may be updated from time to time due to legal requirements or service changes. Updates are published on this page, with notice on the site for significant changes." },
-        { "h": "9. Contact", "pre": "For questions about this policy, use our", "link": "contact page", "post": "." }
+        {
+          "h": "1. General Information",
+          "p": "FreetoolsY (\"we\", \"the site\") offers free online tools at https://freetoolsy.vercel.app. This policy explains what information is collected while you use the site and how it is used. By using the site you accept this policy."
+        },
+        {
+          "h": "2. Data Collected",
+          "p": "Most of our tools run in your browser; the text, numbers or data you enter are not sent to or stored on our servers. The site may process certain technical data (IP address, browser type, visited pages, device information) for standard web analytics and advertising services."
+        },
+        {
+          "h": "3. Cookies",
+          "p": "The site uses cookies to remember preferences (such as theme choice) and to measure service quality. You can allow or block cookies from your browser settings at any time; blocking them does not stop most tools from working."
+        },
+        {
+          "h": "4. Third-Party Ads",
+          "p": "This site may use third-party ad providers such as Google AdSense for revenue. Google may use cookies (including DART cookies) to personalize ad delivery. See the",
+          "link": "Google advertising page",
+          "url": "https://policies.google.com/technologies/partner-sites",
+          "post": " for details on Google's data usage. Users can opt out of personalized ads in",
+          "post2": "Google Ad Settings",
+          "url2": "https://adssettings.google.com"
+        },
+        {
+          "h": "5. Analytics",
+          "p": "The site may use analytics services such as Google Analytics to understand visitor statistics. These services use cookies to analyze site usage; collected information is processed anonymously."
+        },
+        {
+          "h": "6. Data Security",
+          "p": "The site takes reasonable measures to protect personal data. However, no method of transmission over the internet is 100% secure, so absolute security cannot be guaranteed."
+        },
+        {
+          "h": "7. Your Rights",
+          "p": "Under KVKK and GDPR you have the right to access, correct, delete or object to the processing of your data. You can reach us through the contact section for any request."
+        },
+        {
+          "h": "8. Changes",
+          "p": "This policy may be updated from time to time due to legal requirements or service changes. Updates are published on this page, with notice on the site for significant changes."
+        },
+        {
+          "h": "9. Contact",
+          "pre": "For questions about this policy, use our",
+          "link": "contact page",
+          "post": "."
+        }
       ]
     }
   },
@@ -790,6 +1796,226 @@
       "copy": "Copy",
       "copied": "Copied",
       "note": "Cleaning happens only in your browser; your text is never sent anywhere."
+    },
+    "md5Hash": {
+      "label": "Enter text",
+      "placeholder": "Type or paste here…",
+      "hashLabel": "MD5 Digest",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "empty": "Enter text to generate the digest"
+    },
+    "jwt": {
+      "label": "JWT Token",
+      "placeholder": "eyJhbGciOi…",
+      "decode": "Decode",
+      "headerLabel": "Header",
+      "payloadLabel": "Payload",
+      "signatureLabel": "Signature",
+      "invalid": "Please enter a valid JWT. A token must have 3 parts."
+    },
+    "jsonCsv": {
+      "modeJsonToCsv": "JSON → CSV",
+      "modeCsvToJson": "CSV → JSON",
+      "inputLabel": "Input",
+      "outputLabel": "Output",
+      "convert": "Convert",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "invalidJson": "Invalid JSON",
+      "invalidCsv": "First row must contain column headers"
+    },
+    "timestamp": {
+      "tsToDateLabel": "Unix timestamp → Date",
+      "tsToDatePlaceholder": "e.g. 1893456000",
+      "convertToDate": "To date",
+      "dateToTsLabel": "Date → Unix timestamp",
+      "dateToTsPlaceholder": "Pick date and time",
+      "convertToTs": "To timestamp",
+      "invalidTs": "Enter a valid number"
+    },
+    "tekrarSatir": {
+      "label": "Enter your text",
+      "placeholder": "Paste a line list…",
+      "outputLabel": "Unique lines",
+      "remove": "Remove duplicates",
+      "kept": "{kept} of {total} lines kept",
+      "copy": "Copy",
+      "copied": "Copied!"
+    },
+    "aiToken": {
+      "label": "Enter your text",
+      "placeholder": "Paste the text to analyze…",
+      "tokens": "Estimated Tokens",
+      "chars": "Characters",
+      "words": "Words",
+      "lines": "Lines",
+      "note": "Approximation; it uses ~2.5 chars per token for Turkish."
+    },
+    "loremIpsum": {
+      "parasLabel": "Paragraphs",
+      "sentencesLabel": "Sentences per paragraph",
+      "generate": "Generate",
+      "outputLabel": "Output",
+      "copy": "Copy",
+      "copied": "Copied!"
+    },
+    "bahsis": {
+      "billLabel": "Bill amount (₺)",
+      "tipLabel": "Tip percent",
+      "splitLabel": "Split between",
+      "tipAmount": "Tip amount",
+      "totalLabel": "Total",
+      "perPerson": "Per person"
+    },
+    "indirim": {
+      "originalLabel": "Original price (₺)",
+      "discountLabel": "Discount percent (%)",
+      "discountAmount": "Discount amount",
+      "finalLabel": "Final price",
+      "savedLabel": "You save"
+    },
+    "ortalama": {
+      "label": "Enter your numbers",
+      "placeholder": "10, 20, 30 or one number per line",
+      "calculate": "Calculate",
+      "avg": "Average",
+      "sum": "Sum",
+      "count": "Count",
+      "min": "Min",
+      "max": "Max"
+    },
+    "kopekYasi": {
+      "dogAgeLabel": "Dog age (years)",
+      "sizeLabel": "Size",
+      "small": "Small",
+      "medium": "Medium",
+      "large": "Large",
+      "humanAge": "Equivalent human age: ≈{age}",
+      "note": "Common formula: first year ≈15, second +9, then +4–5 per year depending on size."
+    },
+    "subnet": {
+      "ipLabel": "IP address",
+      "prefixLabel": "Prefix",
+      "calculate": "Calculate",
+      "network": "Network",
+      "broadcast": "Broadcast",
+      "mask": "Netmask",
+      "hosts": "Total hosts",
+      "usable": "Usable",
+      "invalid": "Enter a valid IPv4 + prefix"
+    },
+    "pxRem": {
+      "baseLabel": "Base font size (px)",
+      "pxLabel": "Pixels (px)",
+      "remLabel": "REM",
+      "remToPxLabel": "REM → Pixels",
+      "pxToRemLabel": "Pixels → REM"
+    },
+    "xmlFormatter": {
+      "label": "XML input",
+      "placeholder": "Paste XML…",
+      "format": "Format",
+      "minify": "Minify",
+      "outputLabel": "Output",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "invalid": "Invalid XML: {message}"
+    },
+    "cssMinifier": {
+      "label": "CSS input",
+      "placeholder": "Paste CSS…",
+      "minify": "Minify",
+      "outputLabel": "Output",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "before": "Before",
+      "after": "After",
+      "sameHint": "Enter CSS to minify"
+    },
+    "htmlMinifier": {
+      "label": "HTML input",
+      "placeholder": "Paste HTML…",
+      "minify": "Minify",
+      "outputLabel": "Output",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "before": "Before",
+      "after": "After",
+      "sameHint": "Enter HTML to minify"
+    },
+    "wcagKontrast": {
+      "fgLabel": "Text color",
+      "bgLabel": "Background color",
+      "ratio": "Contrast ratio",
+      "aaNormal": "AA Normal",
+      "aaLarge": "AA Large",
+      "aaaNormal": "AAA Normal",
+      "aaaLarge": "AAA Large",
+      "pass": "PASS",
+      "fail": "FAIL"
+    },
+    "renkPaleti": {
+      "baseLabel": "Base color",
+      "countLabel": "Colors",
+      "analogous": "Analogous",
+      "monochrome": "Monochrome",
+      "copy": "Copy",
+      "copied": "Copied!"
+    },
+    "boxShadow": {
+      "offsetX": "Offset X",
+      "offsetY": "Offset Y",
+      "blur": "Blur",
+      "spread": "Spread",
+      "color": "Color",
+      "opacity": "Opacity",
+      "outputLabel": "CSS",
+      "copy": "Copy",
+      "copied": "Copied!"
+    },
+    "metinSiralayici": {
+      "label": "Your lines",
+      "placeholder": "Paste lines…",
+      "sortAz": "A→Z",
+      "sortZa": "Z→A",
+      "byLength": "By length",
+      "numeric": "Numeric",
+      "shuffle": "Shuffle",
+      "outputLabel": "Result",
+      "copy": "Copy",
+      "copied": "Copied!"
+    },
+    "listeKaristirici": {
+      "label": "List",
+      "placeholder": "One item per line…",
+      "shuffle": "Shuffle",
+      "draw": "Pick one",
+      "resultLabel": "Result",
+      "invalid": "Enter at least 2 items",
+      "copy": "Copy",
+      "copied": "Copied!"
+    },
+    "yamlJson": {
+      "modeYamlToJson": "YAML → JSON",
+      "modeJsonToYaml": "JSON → YAML",
+      "inputLabel": "Input",
+      "outputLabel": "Output",
+      "convert": "Convert",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "invalidYaml": "Invalid YAML: {message}",
+      "invalidJson": "Invalid JSON: {message}"
+    },
+    "md5Dosya": {
+      "label": "Pick a file",
+      "fileName": "File",
+      "size": "Size",
+      "digest": "MD5 Checksum",
+      "hashing": "Hashing…",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "tip": "The result is computed entirely in your browser; the file is never sent anywhere."
     }
   }
 }
