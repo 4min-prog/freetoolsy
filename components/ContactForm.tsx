@@ -18,7 +18,7 @@ export default function ContactForm() {
       return;
     }
     const subject = encodeURIComponent(t("subject"));
-    const body = encodeURIComponent(`${message}\n\nâ€” ${name} (${email})`);
+    const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
     window.location.href = `mailto:support@freetoolsy.com?subject=${subject}&body=${body}`;
     setError(null);
     setSent(true);
