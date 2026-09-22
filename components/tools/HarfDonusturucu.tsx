@@ -1,49 +1,13 @@
 "use client";
 
 import { useState } from "react";
-
-const TRANSFORMS = [
-  {
-    key: "upper",
-    label: "BÜYÜK HARF",
-    apply: (value: string) => value.toLocaleUpperCase("tr-TR"),
-  },
-  {
-    key: "lower",
-    label: "küçük harf",
-    apply: (value: string) => value.toLocaleLowerCase("tr-TR"),
-  },
-  {
-    key: "title",
-    label: "İlk Harf Büyük",
-    apply: (value: string) =>
-      value
-        .split(/(\s+)/)
-        .map((part) =>
-          /^\s+$/.test(part) || part === ""
-            ? part
-            : part.charAt(0).toLocaleUpperCase("tr-TR") +
-              part.slice(1).toLocaleLowerCase("tr-TR")
-        )
-        .join(""),
-  },
-  {
-    key: "invert",
-    label: "tERSİNE ÇEVİR",
-    apply: (value: string) =>
-      Array.from(value)
-        .map((char) =>
-          char === char.toLocaleLowerCase("tr-TR")
-            ? char.toLocaleUpperCase("tr-TR")
-            : char.toLocaleLowerCase("tr-TR")
-        )
-        .join(""),
-  },
-] as const;
+import { useLocale, useTranslations } from "next-intl";
 
 export default function HarfDonusturucu() {
   const [text, setText] = useState("");
   const [copied, setCopied] = useState(false);
+  const t = useTranslations("comp.harfDonusturucu");
+  const locale = useLocale();
 
   async function copy() {
     try {
@@ -55,25 +19,64 @@ export default function HarfDonusturucu() {
     }
   }
 
+  const transforms: { key: string; label: string; apply: (value: string) => string }[] = [
+    {
+      key: "upper",
+      label: t("upper"),
+      apply: (value: string) => value.toLocaleUpperCase(locale),
+    },
+    {
+      key: "lower",
+      label: t("lower"),
+      apply: (value: string) => value.toLocaleLowerCase(locale),
+    },
+    {
+      key: "title",
+      label: t("title"),
+      apply: (value: string) =>
+        value
+          .split(/(\s+)/)
+          .map((part) =>
+            /^\s+$/.test(part) || part === ""
+              ? part
+              : part.charAt(0).toLocaleUpperCase(locale) +
+                part.slice(1).toLocaleLowerCase(locale)
+          )
+          .join(""),
+    },
+    {
+      key: "invert",
+      label: t("invert"),
+      apply: (value: string) =>
+        Array.from(value)
+          .map((char) =>
+            char === char.toLocaleLowerCase(locale)
+              ? char.toLocaleUpperCase(locale)
+              : char.toLocaleLowerCase(locale)
+          )
+          .join(""),
+    },
+  ];
+
   return (
     <div>
       <label
         htmlFor="harf-metin"
         className="block text-sm font-medium text-text"
       >
-        Metninizi girin
+        {t("label")}
       </label>
       <textarea
         id="harf-metin"
         value={text}
         onChange={(event) => setText(event.target.value)}
         rows={8}
-        placeholder="Buraya yazın veya yapıştırın…"
+        placeholder={t("placeholder")}
         className="mt-2 w-full resize-y rounded-lg border border-border bg-bg px-3.5 py-3 text-sm leading-relaxed text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
 
       <div className="mt-4 flex flex-wrap gap-2">
-        {TRANSFORMS.map((transform) => (
+        {transforms.map((transform) => (
           <button
             key={transform.key}
             type="button"
@@ -92,7 +95,7 @@ export default function HarfDonusturucu() {
         disabled={!text}
         className="mt-4 w-full rounded-lg border border-border bg-surface px-4 py-2.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-40"
       >
-        {copied ? "Kopyalandı" : "Kopyala"}
+        {copied ? t("copied") : t("copy")}
       </button>
     </div>
   );

@@ -1,25 +1,37 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
+import { useRef, useState } from "react";
+import { useMessages, useTranslations } from "next-intl";
 import ToolCard from "@/components/ToolCard";
 import CategoryIcon from "@/components/CategoryIcon";
 import { categories, getToolsByCategory, tools } from "@/data/tools";
 
+interface ToolMetaNs {
+  name?: string;
+  desc?: string;
+}
+
 export default function ToolExplorer() {
+  const t = useTranslations("ToolExplorer");
+  const tc = useTranslations("Categories");
+  const messages = useMessages();
+  const meta = messages.ToolMeta as Record<string, ToolMetaNs> | undefined;
   const [query, setQuery] = useState("");
   const searchRef = useRef<HTMLInputElement>(null);
 
-  const normalized = query.toLocaleLowerCase("tr-TR").trim();
+  const normalized = query.toLocaleLowerCase().trim();
 
-  const filtered = useMemo(() => {
-    if (!normalized) return null;
-    return tools.filter((tool) =>
-      [tool.name, tool.slug, tool.category, tool.description]
-        .join(" ")
-        .toLocaleLowerCase("tr-TR")
-        .includes(normalized)
-    );
-  }, [normalized]);
+  const filtered = normalized
+    ? tools.filter((tool) => {
+        const toolMeta = meta ? meta[tool.slug] : undefined;
+        const name = toolMeta ? toolMeta.name ?? "" : tool.slug;
+        const desc = toolMeta ? toolMeta.desc ?? "" : "";
+        return [name, desc, tool.slug, tool.category]
+          .join(" ")
+          .toLocaleLowerCase()
+          .includes(normalized);
+      })
+    : null;
 
   function goToCategory(id: string) {
     setQuery("");
@@ -34,7 +46,7 @@ export default function ToolExplorer() {
     <div className="pb-20">
       <div className="mx-auto w-full max-w-xl">
         <label htmlFor="arac-ara" className="sr-only">
-          Araç ara
+          {t("searchLabel")}
         </label>
         <div className="relative">
           <svg
@@ -56,7 +68,7 @@ export default function ToolExplorer() {
             type="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Araç ara… örn. şifre, JSON, KDV"
+            placeholder={t("searchPlaceholder")}
             className="w-full rounded-xl border border-border bg-surface py-3 pl-10 pr-4 text-sm text-text placeholder:text-faint shadow-card transition-colors focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
           />
         </div>
@@ -66,9 +78,11 @@ export default function ToolExplorer() {
         <section className="mt-10" aria-live="polite">
           <div className="flex items-baseline justify-between gap-4 border-b border-border pb-3">
             <h2 className="text-lg font-semibold tracking-tight text-text">
-              Sonuçlar
+              {t("results")}
             </h2>
-            <span className="text-sm text-muted">{filtered.length} araç</span>
+            <span className="text-sm text-muted">
+              {t("toolCount", { count: filtered.length })}
+            </span>
           </div>
           {filtered.length > 0 ? (
             <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -77,16 +91,13 @@ export default function ToolExplorer() {
               ))}
             </div>
           ) : (
-            <p className="mt-8 text-sm text-muted">
-              &quot;{query}&quot; için eşleşen araç bulunamadı. Farklı bir
-              anahtar kelime deneyin.
-            </p>
+            <p className="mt-8 text-sm text-muted">{t("noResults", { query })}</p>
           )}
         </section>
       ) : (
         <div className="mt-12 space-y-14">
           {categories.map((category) => {
-            const categoryTools = getToolsByCategory(category.name);
+            const categoryTools = getToolsByCategory(category.id);
             if (categoryTools.length === 0) return null;
             return (
               <section key={category.id} id={category.id} className="scroll-mt-20">
@@ -98,11 +109,11 @@ export default function ToolExplorer() {
                   <span className="flex items-center gap-2.5">
                     <CategoryIcon id={category.id} className="h-5 w-5 text-accent" />
                     <span className="text-lg font-semibold tracking-tight text-text">
-                      {category.name}
+                      {tc(category.id)}
                     </span>
                   </span>
                   <span className="text-sm text-muted">
-                    {categoryTools.length} araç
+                    {t("categoryToolsCount", { count: categoryTools.length })}
                   </span>
                 </button>
                 <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

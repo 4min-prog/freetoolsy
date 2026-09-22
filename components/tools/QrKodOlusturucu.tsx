@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import QRCode from "react-qr-code";
 
 const LETTERS: string[] = "abcdefghijklmnopqrstuvwxyz".split("");
@@ -22,6 +23,7 @@ function randomString(length: number): string {
 export default function QrKodOlusturucu() {
   const [text, setText] = useState(randomString(8));
   const [copied, setCopied] = useState(false);
+  const t = useTranslations("comp.qr");
 
   function downloadPng() {
     const svg = document.querySelector("#qr-svg-wrap svg");
@@ -69,7 +71,7 @@ export default function QrKodOlusturucu() {
         htmlFor="qr-metin"
         className="block text-sm font-medium text-text"
       >
-        Metin veya bağlantı
+        {t("label")}
       </label>
       <textarea
         id="qr-metin"
@@ -77,11 +79,11 @@ export default function QrKodOlusturucu() {
         onChange={(event) => setText(event.target.value)}
         maxLength={500}
         rows={4}
-        placeholder="Örneğin: https://freetoolsy.vercel.app"
+        placeholder={t("placeholder")}
         className="mt-2 w-full resize-y rounded-lg border border-border bg-bg px-3.5 py-3 text-sm leading-relaxed text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
       <p className="mt-1.5 text-right text-xs tabular-nums text-faint">
-        {text.length}/500
+        {t("charCount", { count: text.length })}
       </p>
 
       <div
@@ -91,9 +93,7 @@ export default function QrKodOlusturucu() {
         {hasText ? (
           <QRCode value={text} size={240} level="M" style={{ maxWidth: 240, width: "100%", height: "auto" }} />
         ) : (
-          <p className="py-14 text-sm text-muted">
-            Boş QR kodu oluşturulamaz. Yukarıya bir şey yazın.
-          </p>
+          <p className="py-14 text-sm text-muted">{t("emptyMsg")}</p>
         )}
       </div>
 
@@ -104,7 +104,7 @@ export default function QrKodOlusturucu() {
           disabled={!hasText}
           className="flex-1 rounded-lg bg-accent px-4 py-2.5 text-sm font-medium text-on-accent transition-opacity hover:opacity-90 disabled:opacity-50"
         >
-          PNG olarak indir
+          {t("download")}
         </button>
         <button
           type="button"
@@ -112,14 +112,11 @@ export default function QrKodOlusturucu() {
           disabled={!hasText}
           className="flex-1 rounded-lg border border-border bg-surface px-4 py-2.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
         >
-          {copied ? "Kopyalandı" : "Metni kopyala"}
+          {copied ? t("copied") : t("copyText")}
         </button>
       </div>
 
-      <p className="mt-3 text-xs leading-relaxed text-muted">
-        QR kod tamamen tarayıcınızda üretilir; içerik hiçbir sunucuya
-        gönderilmez.
-      </p>
+      <p className="mt-3 text-xs leading-relaxed text-muted">{t("note")}</p>
     </div>
   );
 }

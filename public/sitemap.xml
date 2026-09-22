@@ -1,92 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://freetoolsy.vercel.app/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.vercel.app/" />
   </url>
   <url>
     <loc>https://freetoolsy.vercel.app/araclar/karakter-sayaci</loc>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/karakter-sayaci" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/karakter-sayaci" />
   </url>
   <url>
     <loc>https://freetoolsy.vercel.app/araclar/kelime-sayaci</loc>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/kelime-sayaci" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/kelime-sayaci" />
   </url>
   <url>
     <loc>https://freetoolsy.vercel.app/araclar/harf-donusturucu</loc>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/harf-donusturucu" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/harf-donusturucu" />
   </url>
   <url>
     <loc>https://freetoolsy.vercel.app/araclar/json-formatter</loc>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/json-formatter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/json-formatter" />
   </url>
   <url>
     <loc>https://freetoolsy.vercel.app/araclar/base64</loc>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/base64" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/base64" />
   </url>
   <url>
     <loc>https://freetoolsy.vercel.app/araclar/url-encoder</loc>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/url-encoder" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/url-encoder" />
   </url>
   <url>
     <loc>https://freetoolsy.vercel.app/araclar/sifre-uretici</loc>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/sifre-uretici" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/sifre-uretici" />
   </url>
   <url>
     <loc>https://freetoolsy.vercel.app/araclar/bmi-hesaplayici</loc>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/bmi-hesaplayici" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/bmi-hesaplayici" />
   </url>
   <url>
     <loc>https://freetoolsy.vercel.app/araclar/kdv-hesaplayici</loc>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/kdv-hesaplayici" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/kdv-hesaplayici" />
   </url>
   <url>
     <loc>https://freetoolsy.vercel.app/araclar/yuzde-hesaplayici</loc>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/yuzde-hesaplayici" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/yuzde-hesaplayici" />
   </url>
   <url>
     <loc>https://freetoolsy.vercel.app/araclar/yas-hesaplayici</loc>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/yas-hesaplayici" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/yas-hesaplayici" />
   </url>
   <url>
     <loc>https://freetoolsy.vercel.app/araclar/qr-kod-olusturucu</loc>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/qr-kod-olusturucu" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/qr-kod-olusturucu" />
   </url>
   <url>
     <loc>https://freetoolsy.vercel.app/araclar/sha-hash-uretici</loc>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/sha-hash-uretici" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/sha-hash-uretici" />
   </url>
   <url>
     <loc>https://freetoolsy.vercel.app/araclar/tarih-farki</loc>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/tarih-farki" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/tarih-farki" />
   </url>
   <url>
     <loc>https://freetoolsy.vercel.app/araclar/renk-donusturucu</loc>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/renk-donusturucu" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/renk-donusturucu" />
   </url>
   <url>
     <loc>https://freetoolsy.vercel.app/araclar/uuid-uretici</loc>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/uuid-uretici" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/uuid-uretici" />
   </url>
   <url>
     <loc>https://freetoolsy.vercel.app/araclar/birim-donusturucu</loc>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/birim-donusturucu" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/birim-donusturucu" />
   </url>
   <url>
     <loc>https://freetoolsy.vercel.app/araclar/parola-guc-testi</loc>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/parola-guc-testi" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/parola-guc-testi" />
   </url>
   <url>
     <loc>https://freetoolsy.vercel.app/gizlilik-politikasi</loc>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/gizlilik-politikasi" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/gizlilik-politikasi" />
   </url>
   <url>
     <loc>https://freetoolsy.vercel.app/hakkimizda</loc>
     <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/hakkimizda" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/hakkimizda" />
   </url>
   <url>
     <loc>https://freetoolsy.vercel.app/iletisim</loc>
     <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/iletisim" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/iletisim" />
   </url>
 </urlset>

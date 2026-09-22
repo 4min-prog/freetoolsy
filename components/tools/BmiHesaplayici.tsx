@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 function parseNumber(value: string): number {
   const normalized = value.trim().replace(",", ".");
@@ -10,54 +11,53 @@ function parseNumber(value: string): number {
 
 const CATEGORIES = [
   {
+    key: "low",
     min: 0,
     max: 18.5,
-    label: "Düşük kilo",
-    note: "Vücut kitle indeksiniz normalin altında.",
     chip: "bg-[#93C5FD]",
   },
   {
+    key: "normal",
     min: 18.5,
     max: 25,
-    label: "Normal kilo",
-    note: "Vücut kitle indeksiniz sağlıklı aralıkta.",
     chip: "bg-[#6EE7B7]",
   },
   {
+    key: "overweight",
     min: 25,
     max: 30,
-    label: "Fazla kilo",
-    note: "Vücut kitle indeksiniz normalin üzerinde.",
     chip: "bg-[#FCD34D]",
   },
   {
+    key: "obese",
     min: 30,
     max: Infinity,
-    label: "Obezite",
-    note: "Vücut kitle indeksiniz obezite aralığında.",
     chip: "bg-[#FCA5A5]",
   },
 ];
+
+type Category = (typeof CATEGORIES)[number];
 
 const SCALE_MAX = 40;
 
 export default function BmiHesaplayici() {
   const [height, setHeight] = useState("");
   const [weight, setWeight] = useState("");
-  const [result, setResult] = useState<{ bmi: number; category: (typeof CATEGORIES)[number] } | null>(null);
+  const [result, setResult] = useState<{ bmi: number; category: Category } | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const t = useTranslations("comp.bmi");
 
   function calculate() {
     const h = parseNumber(height);
     const w = parseNumber(weight);
     if (!Number.isFinite(h) || !Number.isFinite(w)) {
       setResult(null);
-      setError("Lütfen boy ve kilo değerlerini girin.");
+      setError(t("emptyError"));
       return;
     }
     if (h < 50 || h > 250 || w < 10 || w > 400) {
       setResult(null);
-      setError("Değerler mantıklı aralıkta değil. Boy 50-250 cm, kilo 10-400 kg olmalı.");
+      setError(t("rangeError"));
       return;
     }
     const meters = h / 100;
@@ -76,7 +76,7 @@ export default function BmiHesaplayici() {
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
           <label htmlFor="bmi-boy" className="block text-sm font-medium text-text">
-            Boy (cm)
+            {t("height")}
           </label>
           <input
             id="bmi-boy"
@@ -84,13 +84,13 @@ export default function BmiHesaplayici() {
             inputMode="decimal"
             value={height}
             onChange={(event) => setHeight(event.target.value)}
-            placeholder="örn. 175"
+            placeholder="e.g. 175"
             className="mt-2 w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-sm text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
           />
         </div>
         <div>
           <label htmlFor="bmi-kilo" className="block text-sm font-medium text-text">
-            Kilo (kg)
+            {t("weight")}
           </label>
           <input
             id="bmi-kilo"
@@ -98,7 +98,7 @@ export default function BmiHesaplayici() {
             inputMode="decimal"
             value={weight}
             onChange={(event) => setWeight(event.target.value)}
-            placeholder="örn. 70"
+            placeholder="e.g. 70"
             className="mt-2 w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-sm text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
           />
         </div>
@@ -109,13 +109,10 @@ export default function BmiHesaplayici() {
         onClick={calculate}
         className="mt-4 w-full rounded-lg bg-accent px-4 py-2.5 text-sm font-medium text-on-accent transition-opacity hover:opacity-90"
       >
-        Hesapla
+        {t("calculate")}
       </button>
 
-      <p className="mt-3 text-xs leading-relaxed text-muted">
-        Virgül veya nokta kullanabilirsiniz. Değerler yalnızca bu tarayıcıda
-        işlenir.
-      </p>
+      <p className="mt-3 text-xs leading-relaxed text-muted">{t("commaNote")}</p>
 
       {error && (
         <p
@@ -132,13 +129,13 @@ export default function BmiHesaplayici() {
             <span className="text-4xl font-semibold tabular-nums tracking-tight text-text">
               {result.bmi.toFixed(1)}
             </span>
-            <span className="text-sm font-medium text-accent">{result.category.label}</span>
+            <span className="text-sm font-medium text-accent">{t(result.category.key)}</span>
           </div>
 
           <div
             className="relative mt-5 h-2 overflow-hidden rounded-full"
             role="img"
-            aria-label={`BMI ${result.bmi.toFixed(1)}, ${result.category.label}`}
+            aria-label={`BMI ${result.bmi.toFixed(1)}, ${t(result.category.key)}`}
           >
             <div className="absolute inset-0 flex">
               <span className="h-full bg-[#93C5FD]" style={{ width: `${(18.5 / SCALE_MAX) * 100}%` }} />
@@ -153,46 +150,41 @@ export default function BmiHesaplayici() {
           </div>
           <div className="mt-1.5 flex justify-between text-[11px] text-muted">
             <span>15</span>
-            <span>18,5</span>
+            <span>18.5</span>
             <span>25</span>
             <span>30</span>
             <span>40</span>
           </div>
 
-          <p className="mt-4 text-sm leading-relaxed text-muted">{result.category.note}</p>
-          <p className="mt-2 text-xs leading-relaxed text-faint">
-            BMI bir tıbbi tanı aracı değildir; yaş, kas kütlesi ve diğer
-            faktörleri dikkate almaz.
-          </p>
+          <p className="mt-4 text-sm leading-relaxed text-muted">{t(`${result.category.key}Note`)}</p>
+          <p className="mt-2 text-xs leading-relaxed text-faint">{t("notMedical")}</p>
         </div>
       ) : (
         <div className="mt-5 rounded-lg border border-dashed border-border bg-bg px-5 py-6 text-center">
-          <p className="text-sm text-muted">
-            Sonucu görmek için boy ve kilonuzu girip Hesapla&apos;ya basın.
-          </p>
+          <p className="text-sm text-muted">{t("emptyState")}</p>
         </div>
       )}
 
       <div className="mt-6">
-        <p className="text-sm font-medium text-text">BMI skalası</p>
+        <p className="text-sm font-medium text-text">{t("scaleLabel")}</p>
         <table className="mt-2 w-full overflow-hidden rounded-lg border border-border text-left text-sm">
           <thead>
             <tr className="bg-surface-2 text-xs text-muted">
-              <th className="px-3 py-2 font-medium">Aralık</th>
-              <th className="px-3 py-2 font-medium">Kategori</th>
+              <th className="px-3 py-2 font-medium">{t("scaleRange")}</th>
+              <th className="px-3 py-2 font-medium">{t("scaleCategory")}</th>
             </tr>
           </thead>
           <tbody>
             {CATEGORIES.map((category) => (
               <tr
-                key={category.label}
+                key={category.key}
                 className={`border-t border-border ${
-                  result?.category.label === category.label ? "bg-accent/10" : "bg-surface"
+                  result?.category.key === category.key ? "bg-accent/10" : "bg-surface"
                 }`}
               >
                 <td className="px-3 py-2 tabular-nums text-muted">
                   {category.min === 0
-                    ? "< 18,5"
+                    ? "< 18.5"
                     : category.max === Infinity
                     ? "≥ 30"
                     : `${category.min} - ${category.max}`}
@@ -200,16 +192,14 @@ export default function BmiHesaplayici() {
                 <td className="px-3 py-2 text-text">
                   <span className="flex items-center gap-2">
                     <span className={`h-2.5 w-2.5 shrink-0 rounded-full ${category.chip}`} />
-                    {category.label}
+                    {t(category.key)}
                   </span>
                 </td>
               </tr>
             ))}
           </tbody>
         </table>
-        <p className="mt-2 text-xs leading-relaxed text-faint">
-          18,5 altı düşük kilo, 30 üzeri obezite olarak sınıflandırılır (DSÖ).
-        </p>
+        <p className="mt-2 text-xs leading-relaxed text-faint">{t("scaleNote")}</p>
       </div>
     </div>
   );

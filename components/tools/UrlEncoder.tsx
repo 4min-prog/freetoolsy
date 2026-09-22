@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 function encodeUrl(text: string): string {
   return encodeURIComponent(text);
@@ -15,6 +16,7 @@ export default function UrlEncoder() {
   const [output, setOutput] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
+  const t = useTranslations("comp.url");
 
   function encode() {
     setError(null);
@@ -24,7 +26,7 @@ export default function UrlEncoder() {
   function decode() {
     const trimmed = input.trim();
     if (!trimmed) {
-      setError("Önce kodlanmış URL verisi girin.");
+      setError(t("emptyError"));
       setOutput("");
       return;
     }
@@ -32,7 +34,7 @@ export default function UrlEncoder() {
       setError(null);
       setOutput(decodeUrl(trimmed));
     } catch {
-      setError("Geçersiz URL kodlaması.");
+      setError(t("invalidError"));
       setOutput("");
     }
   }
@@ -53,7 +55,7 @@ export default function UrlEncoder() {
         htmlFor="url-girdi"
         className="block text-sm font-medium text-text"
       >
-        Girdi
+        {t("input")}
       </label>
       <textarea
         id="url-girdi"
@@ -61,7 +63,7 @@ export default function UrlEncoder() {
         onChange={(event) => setInput(event.target.value)}
         rows={5}
         spellCheck={false}
-        placeholder="https://ornek.com/path?q=değer&kategori=metin%20işleme…"
+        placeholder={t("placeholderInput")}
         className="mt-2 w-full resize-y rounded-lg border border-border bg-bg px-3.5 py-3 font-mono text-sm leading-relaxed text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
 
@@ -72,7 +74,7 @@ export default function UrlEncoder() {
           disabled={!input}
           className="rounded-lg bg-accent px-4 py-2 text-sm font-medium text-on-accent transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-40"
         >
-          Encode
+          {t("encode")}
         </button>
         <button
           type="button"
@@ -80,7 +82,7 @@ export default function UrlEncoder() {
           disabled={!input}
           className="rounded-lg border border-border bg-surface px-4 py-2 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-40"
         >
-          Decode
+          {t("decode")}
         </button>
       </div>
 
@@ -99,7 +101,7 @@ export default function UrlEncoder() {
             htmlFor="url-cikti"
             className="text-sm font-medium text-text"
           >
-            Çıktı
+            {t("output")}
           </label>
           <button
             type="button"
@@ -107,7 +109,7 @@ export default function UrlEncoder() {
             disabled={!output}
             className="rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-40"
           >
-            {copied ? "Kopyalandı" : "Kopyala"}
+            {copied ? t("copied") : t("copy")}
           </button>
         </div>
         <textarea
@@ -116,20 +118,20 @@ export default function UrlEncoder() {
           value={output}
           rows={5}
           spellCheck={false}
-          placeholder="Sonuç burada görünecek…"
+          placeholder={t("placeholderOutput")}
           className="mt-2 w-full resize-y rounded-lg border border-border bg-bg px-3.5 py-3 font-mono text-sm leading-relaxed text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
         />
       </div>
 
       <p className="mt-5 rounded-lg border border-border bg-bg px-3.5 py-2.5 text-xs text-muted">
-        Kısa ve temiz URL&apos;ler için LinklyhHub&apos;ı dene →{" "}
+        {t("linklyNote")}{" "}
         <a
-          href="https://linkly.hub"
+          href="https://linklyhub.com"
           target="_blank"
           rel="noopener noreferrer"
           className="font-medium text-accent transition-opacity hover:opacity-80"
         >
-          linkly.hub
+          linklyhub.com
         </a>
       </p>
     </div>

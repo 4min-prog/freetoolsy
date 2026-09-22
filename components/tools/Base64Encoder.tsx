@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 function encodeBase64(text: string): string {
   const bytes = new TextEncoder().encode(text);
@@ -20,6 +21,7 @@ export default function Base64Encoder() {
   const [output, setOutput] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
+  const t = useTranslations("comp.base64");
 
   function encode() {
     setError(null);
@@ -29,7 +31,7 @@ export default function Base64Encoder() {
   function decode() {
     const trimmed = input.trim();
     if (!trimmed) {
-      setError("Önce Base64 verisi girin.");
+      setError(t("emptyError"));
       setOutput("");
       return;
     }
@@ -37,7 +39,7 @@ export default function Base64Encoder() {
       setError(null);
       setOutput(decodeBase64(trimmed));
     } catch {
-      setError("Geçersiz Base64 verisi.");
+      setError(t("invalidError"));
       setOutput("");
     }
   }
@@ -58,7 +60,7 @@ export default function Base64Encoder() {
         htmlFor="base64-girdi"
         className="block text-sm font-medium text-text"
       >
-        Girdi
+        {t("input")}
       </label>
       <textarea
         id="base64-girdi"
@@ -66,7 +68,7 @@ export default function Base64Encoder() {
         onChange={(event) => setInput(event.target.value)}
         rows={6}
         spellCheck={false}
-        placeholder="Metin veya Base64 verisi…"
+        placeholder={t("placeholderInput")}
         className="mt-2 w-full resize-y rounded-lg border border-border bg-bg px-3.5 py-3 font-mono text-sm leading-relaxed text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
 
@@ -77,7 +79,7 @@ export default function Base64Encoder() {
           disabled={!input}
           className="rounded-lg bg-accent px-4 py-2 text-sm font-medium text-on-accent transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-40"
         >
-          Encode
+          {t("encode")}
         </button>
         <button
           type="button"
@@ -85,7 +87,7 @@ export default function Base64Encoder() {
           disabled={!input}
           className="rounded-lg border border-border bg-surface px-4 py-2 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-40"
         >
-          Decode
+          {t("decode")}
         </button>
       </div>
 
@@ -104,7 +106,7 @@ export default function Base64Encoder() {
             htmlFor="base64-cikti"
             className="text-sm font-medium text-text"
           >
-            Çıktı
+            {t("output")}
           </label>
           <button
             type="button"
@@ -112,7 +114,7 @@ export default function Base64Encoder() {
             disabled={!output}
             className="rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-40"
           >
-            {copied ? "Kopyalandı" : "Kopyala"}
+            {copied ? t("copied") : t("copy")}
           </button>
         </div>
         <textarea
@@ -121,7 +123,7 @@ export default function Base64Encoder() {
           value={output}
           rows={6}
           spellCheck={false}
-          placeholder="Sonuç burada görünecek…"
+          placeholder={t("placeholderOutput")}
           className="mt-2 w-full resize-y rounded-lg border border-border bg-bg px-3.5 py-3 font-mono text-sm leading-relaxed text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
         />
       </div>

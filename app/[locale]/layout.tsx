@@ -1,0 +1,109 @@
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
+import { notFound } from "next/navigation";
+import Script from "next/script";
+import { routing, type Locale } from "@/i18n/routing";
+import "../globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
+const inter = Inter({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const siteUrl = "https://freetoolsy.vercel.app";
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  if (!routing.locales.includes(params.locale as Locale)) {
+    notFound();
+  }
+  const t = await getTranslations("Layout");
+  const asLocale = params.locale as Locale;
+  const canonicalPath = asLocale === "en" ? "/" : `/${asLocale}`;
+  return {
+    metadataBase: new URL(siteUrl),
+    title: {
+      default: t("defaultTitle"),
+      template: t("titleTemplate"),
+    },
+    description: t("description"),
+    applicationName: "FreetoolsY",
+    alternates: {
+      canonical: canonicalPath,
+      languages: {
+        en: `${siteUrl}/`,
+        tr: `${siteUrl}/tr`,
+      },
+    },
+    openGraph: {
+      siteName: "FreetoolsY",
+      type: "website",
+      locale: asLocale === "tr" ? "tr_TR" : "en_US",
+      url: `${siteUrl}${canonicalPath}`,
+      title: t("ogTitle"),
+      description: t("description"),
+    },
+    twitter: {
+      card: "summary",
+      title: t("ogTitle"),
+      description: t("description"),
+    },
+  };
+}
+
+const themeScript = `try{var t=localStorage.theme;if(t==="dark"||(!("theme" in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches)){document.documentElement.classList.add("dark")}}catch(e){}`;
+
+export default async function RootLayout({
+  children,
+  params,
+}: Readonly<{
+  children: React.ReactNode;
+  params: { locale: string };
+}>) {
+  if (!routing.locales.includes(params.locale as Locale)) {
+    notFound();
+  }
+  const locale = params.locale as Locale;
+  setRequestLocale(locale);
+  const messages = await getMessages();
+
+  return (
+    <html lang={locale} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8880626756482815"
+          crossOrigin="anonymous"
+        />
+      </head>
+      <body className={`${inter.variable} flex min-h-screen flex-col antialiased`}>
+        <NextIntlClientProvider messages={messages}>
+          <Header />
+          {children}
+          <Footer />
+        </NextIntlClientProvider>
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-6J6JB9SHKZ"
+        />
+        <Script id="google-analytics-config" strategy="afterInteractive">
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-6J6JB9SHKZ");`}
+        </Script>
+      </body>
+    </html>
+  );
+}

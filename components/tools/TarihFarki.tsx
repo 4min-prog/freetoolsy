@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useLocale, useTranslations } from "next-intl";
 
 const DAY_MS = 86400000;
 
@@ -14,6 +15,8 @@ function todayInput(): string {
 export default function TarihFarki() {
   const [start, setStart] = useState(todayInput());
   const [end, setEnd] = useState(todayInput());
+  const t = useTranslations("comp.dateDiff");
+  const locale = useLocale();
 
   const result = useMemo(() => {
     const a = new Date(`${start}T00:00:00`);
@@ -41,11 +44,14 @@ export default function TarihFarki() {
 
   const rows = result
     ? [
-        { label: "Toplam gün", value: result.totalDays },
-        { label: "Toplam hafta", value: result.weeks },
-        { label: "Toplam ay (ortalama)", value: Math.floor(result.totalDays / 30.4368) },
-        { label: "Toplam saat", value: result.hours },
-        { label: "Toplam dakika", value: result.minutes },
+        { key: "totalDays", value: result.totalDays },
+        { key: "weeks", value: result.weeks },
+        {
+          key: "monthsAvg",
+          value: Math.floor(result.totalDays / 30.4368),
+        },
+        { key: "hours", value: result.hours },
+        { key: "minutes", value: result.minutes },
       ]
     : [];
 
@@ -54,7 +60,7 @@ export default function TarihFarki() {
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
           <label htmlFor="tarih-baslangic" className="block text-sm font-medium text-text">
-            Başlangıç tarihi
+            {t("start")}
           </label>
           <input
             id="tarih-baslangic"
@@ -66,7 +72,7 @@ export default function TarihFarki() {
         </div>
         <div>
           <label htmlFor="tarih-bitis" className="block text-sm font-medium text-text">
-            Bitiş tarihi
+            {t("end")}
           </label>
           <input
             id="tarih-bitis"
@@ -81,17 +87,21 @@ export default function TarihFarki() {
       {result ? (
         <div className="mt-5 rounded-lg border border-border bg-bg p-5">
           <p className="text-sm font-medium text-text">
-            Aradaki fark:{" "}
+            {t("difference")}{" "}
             <span className="font-semibold tabular-nums text-accent">
-              {result.years} yıl, {result.months} ay, {result.days} gün
+              {t("ymd", {
+                years: result.years,
+                months: result.months,
+                days: result.days,
+              })}
             </span>
           </p>
           <dl className="mt-4 grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-3">
             {rows.map((row) => (
-              <div key={row.label} className="bg-surface px-4 py-3">
-                <dt className="text-xs text-muted">{row.label}</dt>
+              <div key={row.key} className="bg-surface px-4 py-3">
+                <dt className="text-xs text-muted">{t(row.key)}</dt>
                 <dd className="mt-0.5 text-xl font-semibold tabular-nums tracking-tight text-text">
-                  {row.value.toLocaleString("tr-TR")}
+                  {row.value.toLocaleString(locale)}
                 </dd>
               </div>
             ))}
@@ -99,15 +109,11 @@ export default function TarihFarki() {
         </div>
       ) : (
         <p role="alert" className="mt-4 rounded-lg border border-danger-border bg-danger-bg px-3.5 py-2.5 text-sm text-danger">
-          Lütfen geçerli iki tarih seçin.
+          {t("invalid")}
         </p>
       )}
 
-      <p className="mt-3 text-xs leading-relaxed text-muted">
-        Hangi tarih önce olursa olsun farkın mutlak değeri gösterilir.
-        Yıl/ay/gün dönüşümü takvim ortalamalarına dayanır; gün bazlı
-        hesaplamalar kesindir.
-      </p>
+      <p className="mt-3 text-xs leading-relaxed text-muted">{t("note")}</p>
     </div>
   );
 }

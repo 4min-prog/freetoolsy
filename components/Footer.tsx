@@ -1,6 +1,9 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { getTranslations } from "next-intl/server";
 
-export default function Footer() {
+export default async function Footer() {
+  const t = await getTranslations("Footer");
+
   return (
     <footer className="mt-auto border-t border-border">
       <div className="mx-auto grid w-full max-w-5xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-[1fr_auto] md:items-start md:justify-between">
@@ -17,24 +20,23 @@ export default function Footer() {
             </span>
           </Link>
           <p className="max-w-[42ch] text-sm leading-relaxed text-muted">
-            Ücretsiz online araçlar: Metin, güvenlik, geliştirici ve hesaplama.
-            Üyelik gerekmez; verileriniz tarayıcınızdan çıkmaz.
+            {t("desc")}
           </p>
         </div>
 
         <nav
-          aria-label="Alt bilgi linkleri"
+          aria-label={t("navLabel")}
           className="flex flex-wrap gap-x-10 gap-y-6 md:gap-x-16"
         >
           <div>
-            <p className="text-sm font-semibold text-text">Kurumsal</p>
+            <p className="text-sm font-semibold text-text">{t("corporate")}</p>
             <ul className="mt-3 space-y-2">
               <li>
                 <Link
                   href="/hakkimizda"
                   className="text-sm text-muted transition-colors hover:text-text"
                 >
-                  Hakkımızda
+                  {t("about")}
                 </Link>
               </li>
               <li>
@@ -42,7 +44,7 @@ export default function Footer() {
                   href="/gizlilik-politikasi"
                   className="text-sm text-muted transition-colors hover:text-text"
                 >
-                  Gizlilik Politikası
+                  {t("privacy")}
                 </Link>
               </li>
               <li>
@@ -50,22 +52,22 @@ export default function Footer() {
                   href="/iletisim"
                   className="text-sm text-muted transition-colors hover:text-text"
                 >
-                  İletişim
+                  {t("contact")}
                 </Link>
               </li>
             </ul>
           </div>
           <div>
-            <p className="text-sm font-semibold text-text">Partner</p>
+            <p className="text-sm font-semibold text-text">{t("partner")}</p>
             <ul className="mt-3 space-y-2">
               <li>
                 <a
-                  href="https://linkly.hub"
+                  href="https://linklyhub.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-muted transition-colors hover:text-text"
                 >
-                  Link kısaltma için → LinklyhHub
+                  {t("linkly")}
                 </a>
               </li>
             </ul>
@@ -74,7 +76,7 @@ export default function Footer() {
       </div>
       <div className="border-t border-border">
         <p className="mx-auto w-full max-w-5xl px-4 py-4 text-xs text-muted sm:px-6">
-          © 2026 FreetoolsY. Tüm hakları saklıdır.
+          {t("rights")}
         </p>
       </div>
     </footer>

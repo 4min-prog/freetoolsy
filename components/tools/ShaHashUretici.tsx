@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 
 const ALGORITHMS = ["SHA-1", "SHA-256", "SHA-512"];
 
@@ -9,6 +10,7 @@ export default function ShaHashUretici() {
   const [algo, setAlgo] = useState<string>("SHA-256");
   const [digest, setDigest] = useState("");
   const [copied, setCopied] = useState(false);
+  const t = useTranslations("comp.sha");
 
   useEffect(() => {
     let cancelled = false;
@@ -45,14 +47,14 @@ export default function ShaHashUretici() {
         htmlFor="sha-metin"
         className="block text-sm font-medium text-text"
       >
-        Metninizi girin
+        {t("label")}
       </label>
       <textarea
         id="sha-metin"
         value={text}
         onChange={(event) => setText(event.target.value)}
         rows={5}
-        placeholder="Özeti hesaplanacak metin buraya yazılır"
+        placeholder={t("placeholder")}
         className="mt-2 w-full resize-y rounded-lg border border-border bg-bg px-3.5 py-3 text-sm leading-relaxed text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
 
@@ -60,7 +62,7 @@ export default function ShaHashUretici() {
         htmlFor="sha-algoritma"
         className="mt-5 block text-sm font-medium text-text"
       >
-        Algoritma
+        {t("algorithm")}
       </label>
       <select
         id="sha-algoritma"
@@ -86,16 +88,12 @@ export default function ShaHashUretici() {
             disabled={!digest}
             className="shrink-0 rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
           >
-            {copied ? "Kopyalandı" : "Kopyala"}
+            {copied ? t("copied") : t("copy")}
           </button>
         </div>
       </div>
 
-      <p className="mt-3 text-xs leading-relaxed text-muted">
-        Metniniz hesaplama sırasında tarayıcınızdan çıkmaz. SHA özetleri tek
-        yönlüdür; okuyup özgün metni geri üretemezsiniz. SHA-1 günümüzde
-        güvenli kabul edilmez ve yalnızca uyumluluk amaçlıdır.
-      </p>
+      <p className="mt-3 text-xs leading-relaxed text-muted">{t("note")}</p>
     </div>
   );
 }

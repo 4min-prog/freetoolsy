@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { useTranslations } from "next-intl";
 
 const SETS = {
   lower: "abcdefghijklmnopqrstuvwxyz",
@@ -11,11 +12,11 @@ const SETS = {
 
 type SetKey = keyof typeof SETS;
 
-const OPTIONS: { key: SetKey; label: string }[] = [
-  { key: "lower", label: "Küçük harf (a–z)" },
-  { key: "upper", label: "Büyük harf (A–Z)" },
-  { key: "digits", label: "Rakam (0–9)" },
-  { key: "symbols", label: "Sembol (!@#…)" },
+const OPTIONS: { key: SetKey }[] = [
+  { key: "lower" },
+  { key: "upper" },
+  { key: "digits" },
+  { key: "symbols" },
 ];
 
 const COUNTS = [1, 5];
@@ -45,17 +46,14 @@ function generate(length: number, active: SetKey[]): string {
   return chars.slice(0, length).join("");
 }
 
-function strengthLabel(length: number, enabled: SetKey[]): {
-  label: string;
-  className: string;
-} | null {
+function strengthKey(length: number, enabled: SetKey[]): string | null {
   const poolSize = enabled.reduce((sum, key) => sum + SETS[key].length, 0);
   if (enabled.length === 0 || poolSize === 0) return null;
   const bits = length * Math.log2(poolSize);
-  if (bits < 45) return { label: "Zayıf", className: "text-danger" };
-  if (bits < 70) return { label: "Orta", className: "text-warning" };
-  if (bits < 100) return { label: "Güçlü", className: "text-success" };
-  return { label: "Çok güçlü", className: "text-success" };
+  if (bits < 45) return "weak";
+  if (bits < 70) return "medium";
+  if (bits < 100) return "strong";
+  return "veryStrong";
 }
 
 export default function SifreUretici() {
@@ -64,6 +62,14 @@ export default function SifreUretici() {
   const [count, setCount] = useState<number>(1);
   const [passwords, setPasswords] = useState<string[]>([]);
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
+  const t = useTranslations("comp.sifreUretici");
+  const optionLabel = useTranslations("comp.sifreUretici");
+  const strengthClass: Record<string, string> = {
+    weak: "text-danger",
+    medium: "text-warning",
+    strong: "text-success",
+    veryStrong: "text-success",
+  };
 
   const regenerate = useCallback(() => {
     const next: string[] = [];
@@ -76,10 +82,7 @@ export default function SifreUretici() {
     regenerate();
   }, [regenerate]);
 
-  const strength = useMemo(
-    () => strengthLabel(length, enabled),
-    [length, enabled]
-  );
+  const strength = useMemo(() => strengthKey(length, enabled), [length, enabled]);
 
   async function copyPassword(password: string, index: number) {
     try {
@@ -105,7 +108,7 @@ export default function SifreUretici() {
   return (
     <div>
       <label htmlFor="sifre-uzunluk" className="flex items-baseline justify-between text-sm font-medium text-text">
-        Uzunluk
+        {t("length")}
         <span className="text-sm font-semibold tabular-nums text-accent">{length}</span>
       </label>
       <input
@@ -119,7 +122,7 @@ export default function SifreUretici() {
       />
 
       <fieldset className="mt-5">
-        <legend className="text-sm font-medium text-text">Karakter türleri</legend>
+        <legend className="text-sm font-medium text-text">{t("charTypes")}</legend>
         <div className="mt-2.5 grid gap-2 sm:grid-cols-2">
           {OPTIONS.map((option) => (
             <label
@@ -132,7 +135,7 @@ export default function SifreUretici() {
                 onChange={() => toggleSet(option.key)}
                 className="h-4 w-4 rounded accent-accent"
               />
-              {option.label}
+              {optionLabel(`option${option.key.charAt(0).toUpperCase()}${option.key.slice(1)}`)}
             </label>
           ))}
         </div>
@@ -142,7 +145,7 @@ export default function SifreUretici() {
         htmlFor="sifre-adet"
         className="mt-5 block text-sm font-medium text-text"
       >
-        Üretilecek şifre sayısı
+        {t("genCount")}
       </label>
       <select
         id="sifre-adet"
@@ -152,7 +155,9 @@ export default function SifreUretici() {
       >
         {COUNTS.map((option) => (
           <option key={option} value={option}>
-            {option} şifre
+            {option === 1
+              ? t("passwordSingular", { count: option })
+              : t("passwordMany", { count: option })}
           </option>
         ))}
       </select>
@@ -161,7 +166,7 @@ export default function SifreUretici() {
         <div className="mt-6 rounded-lg border border-border bg-bg p-4">
           <div className="flex items-start justify-between gap-3">
             <p className="min-w-0 break-all font-mono text-base leading-relaxed text-text sm:text-lg">
-              {noError ? passwords[0] : "En az bir karakter türü seçin"}
+              {noError ? passwords[0] : t("selectType")}
             </p>
             <button
               type="button"
@@ -169,12 +174,12 @@ export default function SifreUretici() {
               disabled={!noError}
               className="shrink-0 rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
             >
-              {copiedIndex === 0 ? "Kopyalandı" : "Kopyala"}
+              {copiedIndex === 0 ? t("copied") : t("copy")}
             </button>
           </div>
           {strength && noError && (
-            <p className={`mt-2 text-xs font-medium ${strength.className}`}>
-              Güç: {strength.label}
+            <p className={`mt-2 text-xs font-medium ${strengthClass[strength]}`}>
+              {t("strength", { label: t(strength) })}
             </p>
           )}
         </div>
@@ -192,8 +197,8 @@ export default function SifreUretici() {
                 </span>
                 <span className="flex shrink-0 items-center gap-2">
                   {strength && noError && (
-                    <span className={`text-xs font-medium ${strength.className}`}>
-                      {strength.label}
+                    <span className={`text-xs font-medium ${strengthClass[strength]}`}>
+                      {t(strength)}
                     </span>
                   )}
                   <button
@@ -202,7 +207,7 @@ export default function SifreUretici() {
                     disabled={!password}
                     className="rounded-lg border border-border bg-surface px-2.5 py-1 text-xs font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
                   >
-                    {copiedIndex === index ? "Kopyalandı" : "Kopyala"}
+                    {copiedIndex === index ? t("copied") : t("copy")}
                   </button>
                 </span>
               </li>
@@ -216,7 +221,7 @@ export default function SifreUretici() {
         onClick={regenerate}
         className="mt-4 w-full rounded-lg bg-accent px-4 py-2.5 text-sm font-medium text-on-accent transition-opacity hover:opacity-90"
       >
-        {count > 1 ? `Yeni ${count} şifre üret` : "Yeni şifre üret"}
+        {count > 1 ? t("generateMany", { count }) : t("generate")}
       </button>
     </div>
   );

@@ -1,9 +1,10 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { Link, useRouter } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 import ThemeToggle from "./ThemeToggle";
+import LocaleSwitcher from "./LocaleSwitcher";
 import CategoryIcon from "./CategoryIcon";
 import { categories } from "@/data/tools";
 
@@ -11,6 +12,8 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
+  const t = useTranslations("Header");
+  const tc = useTranslations("Categories");
 
   useEffect(() => {
     function onPointerDown(event: PointerEvent) {
@@ -70,7 +73,7 @@ export default function Header() {
               aria-haspopup="true"
               className="flex items-center gap-1.5 rounded-md px-2 py-1.5 text-sm text-muted transition-colors hover:text-text"
             >
-              Kategoriler
+              {t("categories")}
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -100,7 +103,7 @@ export default function Header() {
                     className="flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm text-muted transition-colors hover:bg-surface-2 hover:text-text"
                   >
                     <CategoryIcon id={category.id} className="h-4 w-4 text-accent" />
-                    {category.name}
+                    {tc(category.id)}
                   </Link>
                 ))}
               </div>
@@ -110,7 +113,7 @@ export default function Header() {
           <button
             type="button"
             onClick={focusSearch}
-            aria-label="Araç ara"
+            aria-label={t("searchLabel")}
             className="rounded-md p-2 text-muted transition-colors hover:text-text"
           >
             <svg
@@ -128,6 +131,7 @@ export default function Header() {
             </svg>
           </button>
 
+          <LocaleSwitcher />
           <ThemeToggle />
         </nav>
       </div>

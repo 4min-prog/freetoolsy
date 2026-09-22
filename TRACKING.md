@@ -3,19 +3,18 @@
 This file tracks where the project stands. Whenever a working session ends, update the **Status** section at the top.
 
 ## Status
-**Last session:** 7 new tools (v1.3.0) (Sep 22, 2026)
-- Site live at `https://freetoolsy.vercel.app` (domain `freetoolsy.com` not purchased yet).
-- Real IDs in place: GA4 `G-6J6JB9SHKZ`, AdSense `ca-pub-8880626756482815` (no placeholders).
-- AdSense snippet is a **raw `<script>` in `<head>`** of `app/layout.tsx` — required for verification, `next/script` does NOT emit a real `<script>` tag in App Router HTML. GA4 stays as `next/script` (`afterInteractive`).
-- AdSense site verification passed; status: "being prepared", review requested (~1-2 weeks wait — do not re-submit). Real `<ins class="adsbygoogle">` units go into `components/AdSlot.tsx` after approval.
-- GA4 setup complete; data collection within ~48h. CMP consent message live for EEA/UK/CH (3-option template recommended).
-- Home page redesigned (SEO hero, live search `#arac-ara`, category sections, "Kullan" buttons, category dropdown, LinklyhHub footer link).
-- **18 tools now** (was 11): added QR Kod Oluşturucu (`react-qr-code` dep), SHA Hash Üretici (Web Crypto), Tarih Farkı, Renk Dönüştürücü, UUID Üretici (`crypto.randomUUID` + fallback), Birim Dönüştürücü, Parola Güç Testi. Every new tool has a dedicated SEO page (own H1, meta, AdSlot top/bottom, ToolJsonLd, ~300-word copy + FAQ, linkly.hub link).
-- JSON-LD: home (WebSite + SoftwareApplication + FAQPage), all 18 tool pages (SoftwareApplication, url `https://freetoolsy.vercel.app/araclar/{slug}`), `/hakkimizda` (Organization + AboutPage), `/iletisim` (ContactPage). Validated in Google Rich Results Test — one valid item (SoftwareApplication), no critical issues.
-- All URLs (sitemap.xml now 22 URLs, robots.txt, `metadataBase`, canonical/OG, JSON-LD, privacy page text) point to `https://freetoolsy.vercel.app`.
-- `npm run build` passes (26 static pages), lint clean.
-- Next up: more tools, real ad units after AdSense approval, buy `freetoolsy.com` domain.
-- No technical debt.
+**Last session:** i18n migration to next-intl — English-first (Sep 22, 2026)
+- **next-intl migration complete (English-first):** `/` = English (default, `localePrefix: "as-needed"`), `/tr` = Turkish. All pages/components/18 tools localized through `messages/en.json` + `messages/tr.json`.
+- Priority decision: the whole site is finished in **English** first; `tr.json` is currently a **placeholder copy of en.json**. Real Turkish translation is the LAST step.
+- New routing setup: `i18n/routing.ts` (`defineRouting`, locales `["en","tr"]`, default `en`), `i18n/navigation.ts` (`createNavigation` → `Link`, `usePathname`, `useRouter`), `middleware.ts`, `i18n/request.ts` (dynamic JSON import). `next.config.mjs` uses `createNextIntlPlugin()`.
+- **18 dedicated tool pages deleted** — consolidated into one localized page `app/[locale]/araclar/[slug]/page.tsx` (SSG 2 locales × 18 slugs). Info pages (`/hakkimizda`, `/iletisim`, `/gizlilik-politikasi`), `not-found`, Header/Footer/ToolCard/ToolExplorer/ThemeToggle/ToolJsonLd/ContactForm all localized. New components: `LocaleSwitcher`, `ToolSeoContent` (renders SEO blocks from `messages.ToolContent`).
+- `public/sitemap.xml` now bilingual with `xhtml:link` hreflang alternates (en + tr for all 21 URLs).
+- LinklyhHub links updated to **`https://linklyhub.com`** everywhere (was `linkly.hub`).
+- AdSense raw `<script>` kept in `<head>`, GA4 `next/script`, theme FOUC script preserved in the new `app/[locale]/layout.tsx`.
+- JSON-LD localized per-locale (SoftwareApplication URL/currency depends on locale).
+- `npm run build` passes (48 static pages: /en/** and /tr/**, middleware listed), lint clean.
+- ES5-aware constraints still apply: no `\p{L}`/`u` regex, no `for..of`, no spread on strings, no `flatMap`.
+- Next up: real Turkish translation of `tr.json`, real ad units after AdSense approval, buy `freetoolsy.com`.
 
 ## Done
 - [x] Next.js 14 App Router + TypeScript + Tailwind scaffold
@@ -25,9 +24,11 @@ This file tracks where the project stands. Whenever a working session ends, upda
 - [x] Home page: SEO hero + live-search tool explorer grouped by category with icons and counts
 - [x] `app/araclar/[slug]/page.tsx`: SSG, generateMetadata, 404, breadcrumb
 - [x] 18 working tools (client components): char/word counter, case converter, JSON formatter, Base64, URL encoder, password generator, BMI, KDV, percentage, age, QR code, SHA hash, date diff, color converter, UUID, unit converter, password strength
-- [x] Dedicated SEO pages for every tool (own H1, meta, ad slot, SEO copy, linkly.hub link)
+- [x] SEO pages for every tool via the consolidated `app/[locale]/araclar/[slug]/page.tsx` (own H1, meta, ad slot, localized SEO copy, linklyhub.com link)
 - [x] JSON-LD structured data (WebSite, SoftwareApplication per tool, FAQ, Organization, ContactPage) — Rich Results validated
-- [x] `app/not-found.tsx` (Turkish)
+- [x] `app/not-found.tsx` (localized)
+- [x] Bilingual sitemap (`xhtml:link` hreflang en/tr)
+- [x] i18n: next-intl v3, `i18n/routing.ts` + `i18n/navigation.ts`, `/` = en, `/tr` = tr (tr.json placeholder pending real translation)
 - [x] Deployed to Vercel, custom domain pending
 - [x] `react-qr-code` dependency (QR tool)
 
@@ -40,10 +41,10 @@ This file tracks where the project stands. Whenever a working session ends, upda
 
 ## Adding a new tool (standard workflow)
 1. `data/tools.ts` — add an entry to `tools` (`slug` lowercase, hyphenated)
-2. `components/tools/Xxx.tsx` — write a `"use client"` component
-3. `app/araclar/[slug]/page.tsx` — import it and add to the `toolComponents` map
-4. (Required for every tool) add a dedicated `app/araclar/<slug>/page.tsx` with own H1, meta, `<AdSlot slot="top" />` above the tool and `<AdSlot slot="bottom" />` below it, ~300-word SEO copy and linkly.hub link. Static segments override the `[slug]` route.
-5. Verify with `npm run build`
+2. `components/tools/Xxx.tsx` — write a `"use client"` component (labels via `useTranslations("comp.*")`)
+3. `app/[locale]/araclar/[slug]/page.tsx` — import it and add to the `toolComponents` map + register in `generateStaticParams`
+4. `messages/en.json` — add `ToolMeta.<slug>` (name/desc), `ToolPage` page title/desc/h1 copy and `ToolContent.<slug>` SEO blocks (keep `messages/tr.json` in sync with identical placeholder keys)
+5. Verify with `npm run build && npm run lint`
 
 ## Install / commands
 ```bash

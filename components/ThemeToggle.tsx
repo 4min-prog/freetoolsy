@@ -1,10 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function ThemeToggle() {
   const [dark, setDark] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const t = useTranslations("ThemeToggle");
 
   useEffect(() => {
     setMounted(true);
@@ -18,7 +20,7 @@ export default function ThemeToggle() {
     try {
       localStorage.theme = next ? "dark" : "light";
     } catch {
-      // localStorage kullanılamıyorsa sessizce geç
+      // localStorage unavailable
     }
   }
 
@@ -26,7 +28,7 @@ export default function ThemeToggle() {
     <button
       type="button"
       onClick={toggle}
-      aria-label={mounted && dark ? "Aydınlık moda geç" : "Karanlık moda geç"}
+      aria-label={mounted && dark ? t("toLight") : t("toDark")}
       className="grid h-9 w-9 place-items-center rounded-lg border border-border bg-surface text-muted transition-colors hover:border-strong hover:text-text"
     >
       {mounted && dark ? (

@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import type { ReactNode } from "react";
+import { useLocale, useTranslations } from "next-intl";
 
 function parseNumber(value: string): number {
   const normalized = value.trim().replace(",", ".");
@@ -9,14 +10,10 @@ function parseNumber(value: string): number {
   return Number(normalized);
 }
 
-const formatter = new Intl.NumberFormat("tr-TR", {
-  maximumFractionDigits: 2,
-});
-
 const MODES = [
-  { id: "percent", label: "Sayının yüzdesi" },
-  { id: "change", label: "Yüzde değişimi" },
-  { id: "part", label: "Bütünün yüzdesi" },
+  { id: "percent" },
+  { id: "change" },
+  { id: "part" },
 ] as const;
 
 type ModeId = (typeof MODES)[number]["id"];
@@ -54,6 +51,16 @@ export default function YuzdeHesaplayici() {
   const [end, setEnd] = useState("");
   const [part, setPart] = useState("");
   const [whole, setWhole] = useState("");
+  const t = useTranslations("comp.yuzde");
+  const locale = useLocale();
+
+  const formatter = useMemo(
+    () =>
+      new Intl.NumberFormat(locale, {
+        maximumFractionDigits: 2,
+      }),
+    [locale]
+  );
 
   const result = useMemo((): { title: string; body: ReactNode } | null => {
     if (mode === "percent") {
@@ -62,10 +69,10 @@ export default function YuzdeHesaplayici() {
       if (!Number.isFinite(v) || !Number.isFinite(p)) return null;
       const calculated = (v * p) / 100;
       return {
-        title: "Sonuç",
+        title: t("result"),
         body: (
           <>
-            {formatter.format(v)} sayısının %{formatter.format(p)}&apos;i:
+            {t("percentSentence", { number: formatter.format(v), percent: formatter.format(p) })}
             <span className="mt-1 block text-2xl font-semibold tabular-nums tracking-tight text-text">
               {formatter.format(calculated)}
             </span>
@@ -80,16 +87,16 @@ export default function YuzdeHesaplayici() {
       if (!Number.isFinite(s) || !Number.isFinite(e)) return null;
       if (s === 0) {
         return {
-          title: "Bilgi",
-          body: "Başlangıç değeri sıfır olamaz.",
+          title: t("info"),
+          body: <>{t("zeroStart")}</>,
         };
       }
       const change = ((e - s) / Math.abs(s)) * 100;
       return {
-        title: "Değişim",
+        title: t("change"),
         body: (
           <>
-            {formatter.format(s)} değerinden {formatter.format(e)} değerine geçiş:
+            {t("changeSentence", { start: formatter.format(s), end: formatter.format(e) })}
             <span
               className={`mt-1 block text-2xl font-semibold tabular-nums tracking-tight ${
                 change >= 0 ? "text-success" : "text-danger"
@@ -98,7 +105,7 @@ export default function YuzdeHesaplayici() {
               %{formatter.format(change)}
             </span>
             <span className="mt-1 block text-sm text-muted">
-              {change >= 0 ? "artış" : "azalış"} gösterir.
+              {change >= 0 ? t("increase") : t("decrease")}
             </span>
           </>
         ),
@@ -110,29 +117,29 @@ export default function YuzdeHesaplayici() {
     if (!Number.isFinite(p) || !Number.isFinite(w)) return null;
     if (w === 0) {
       return {
-        title: "Bilgi",
-        body: "Bütün değeri sıfır olamaz.",
+        title: t("info"),
+        body: <>{t("zeroWhole")}</>,
       };
     }
     const calculated = (p / w) * 100;
     return {
-      title: "Sonuç",
+      title: t("result"),
       body: (
         <>
-          {formatter.format(p)} değeri, {formatter.format(w)} sayısının
+          {t("partSentence", { part: formatter.format(p), whole: formatter.format(w) })}
           <span className="mt-1 block text-2xl font-semibold tabular-nums tracking-tight text-text">
             %{formatter.format(calculated)}
           </span>
         </>
       ),
     };
-  }, [mode, value, percent, start, end, part, whole]);
+  }, [mode, value, percent, start, end, part, whole, t, formatter]);
 
   return (
     <div>
       <div
         role="tablist"
-        aria-label="Hesaplama modu"
+        aria-label={t("tabAria")}
         className="flex flex-wrap gap-1 rounded-lg border border-border bg-surface-2 p-1"
       >
         {MODES.map((option) => (
@@ -148,7 +155,7 @@ export default function YuzdeHesaplayici() {
                 : "text-muted hover:text-text"
             }`}
           >
-            {option.label}
+            {t(`mode${option.id.charAt(0).toUpperCase()}${option.id.slice(1)}`)}
           </button>
         ))}
       </div>
@@ -156,20 +163,20 @@ export default function YuzdeHesaplayici() {
       <div className="mt-5 grid gap-4 sm:grid-cols-2">
         {mode === "percent" && (
           <>
-            <Input id="yuzde-sayi" label="Sayı" value={value} onChange={setValue} placeholder="örn. 100" />
-            <Input id="yuzde-oran" label="Yüzde (%)" value={percent} onChange={setPercent} placeholder="örn. 20" />
+            <Input id="yuzde-sayi" label={t("number")} value={value} onChange={setValue} placeholder={t("ph")} />
+            <Input id="yuzde-oran" label={t("percent")} value={percent} onChange={setPercent} placeholder="e.g. 20" />
           </>
         )}
         {mode === "change" && (
           <>
-            <Input id="yuzde-baslangic" label="Başlangıç değeri" value={start} onChange={setStart} placeholder="örn. 80" />
-            <Input id="yuzde-son" label="Son değer" value={end} onChange={setEnd} placeholder="örn. 100" />
+            <Input id="yuzde-baslangic" label={t("start")} value={start} onChange={setStart} placeholder={t("ph")} />
+            <Input id="yuzde-son" label={t("end")} value={end} onChange={setEnd} placeholder={t("ph")} />
           </>
         )}
         {mode === "part" && (
           <>
-            <Input id="yuzde-parca" label="Parça değeri" value={part} onChange={setPart} placeholder="örn. 20" />
-            <Input id="yuzde-butun" label="Bütün değer" value={whole} onChange={setWhole} placeholder="örn. 100" />
+            <Input id="yuzde-parca" label={t("part")} value={part} onChange={setPart} placeholder={t("ph")} />
+            <Input id="yuzde-butun" label={t("whole")} value={whole} onChange={setWhole} placeholder={t("ph")} />
           </>
         )}
       </div>
@@ -185,7 +192,7 @@ export default function YuzdeHesaplayici() {
         </div>
       ) : (
         <div className="mt-5 rounded-lg border border-dashed border-border bg-bg px-5 py-6 text-center">
-          <p className="text-sm text-muted">Değerleri girince sonuç anında görünür.</p>
+          <p className="text-sm text-muted">{t("liveNote")}</p>
         </div>
       )}
     </div>

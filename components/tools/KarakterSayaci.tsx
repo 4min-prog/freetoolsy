@@ -1,9 +1,11 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function KarakterSayaci() {
   const [text, setText] = useState("");
+  const t = useTranslations("comp.karakterSayaci");
 
   const stats = useMemo(() => {
     const trimmed = text.trim();
@@ -16,12 +18,12 @@ export default function KarakterSayaci() {
       : 0;
     const paragraphs = trimmed ? trimmed.split(/\n\s*\n/).length : 0;
     return [
-      { label: "Karakter", value: chars },
-      { label: "Boşluksuz karakter", value: charsNoSpace },
-      { label: "Kelime", value: words },
-      { label: "Satır", value: lines },
-      { label: "Cümle", value: sentences },
-      { label: "Paragraf", value: paragraphs },
+      { key: "chars", value: chars },
+      { key: "noSpace", value: charsNoSpace },
+      { key: "words", value: words },
+      { key: "lines", value: lines },
+      { key: "sentences", value: sentences },
+      { key: "paragraphs", value: paragraphs },
     ];
   }, [text]);
 
@@ -31,21 +33,21 @@ export default function KarakterSayaci() {
         htmlFor="karakter-metin"
         className="block text-sm font-medium text-text"
       >
-        Metninizi girin
+        {t("label")}
       </label>
       <textarea
         id="karakter-metin"
         value={text}
         onChange={(event) => setText(event.target.value)}
         rows={8}
-        placeholder="Buraya yazın veya yapıştırın…"
+        placeholder={t("placeholder")}
         className="mt-2 w-full resize-y rounded-lg border border-border bg-bg px-3.5 py-3 text-sm leading-relaxed text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
 
       <dl className="mt-5 grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-3">
         {stats.map((stat) => (
-          <div key={stat.label} className="bg-surface px-4 py-3">
-            <dt className="text-xs text-muted">{stat.label}</dt>
+          <div key={stat.key} className="bg-surface px-4 py-3">
+            <dt className="text-xs text-muted">{t(stat.key)}</dt>
             <dd className="mt-0.5 text-xl font-semibold tabular-nums tracking-tight text-text">
               {stat.value}
             </dd>

@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import type { ReactNode } from "react";
+import { useTranslations } from "next-intl";
 
 function parseBirthDate(value: string): Date | null {
   if (!value) return null;
@@ -72,6 +73,7 @@ function Stat(props: { label: string; value: string | number; pulse?: boolean })
 export default function YasHesaplayici() {
   const [birthValue, setBirthValue] = useState("");
   const [now, setNow] = useState(() => new Date());
+  const t = useTranslations("comp.yas");
 
   const birth = useMemo(() => parseBirthDate(birthValue), [birthValue]);
 
@@ -89,11 +91,11 @@ export default function YasHesaplayici() {
   const birthdayInfo = useMemo(() => {
     if (!birth) return null;
     if (birth.getTime() > now.getTime()) {
-      return { days: null, label: "Doğum tarihi ileri bir tarih olamaz." };
+      return { days: null, future: true };
     }
     const next = nextBirthday(birth, now);
     const days = Math.ceil((next.getTime() - now.getTime()) / DAY_MS);
-    return { days, label: null };
+    return { days, future: false };
   }, [birth, now]);
 
   const output: ReactNode[] = [];
@@ -101,24 +103,19 @@ export default function YasHesaplayici() {
   if (components && birthdayInfo && birth) {
     output.push(
       <div key="stats" className="grid grid-cols-3 gap-2 sm:grid-cols-6">
-        <Stat label="Yıl" value={components.years} />
-        <Stat label="Ay" value={components.months} />
-        <Stat label="Gün" value={components.days} />
-        <Stat label="Saat" value={components.hours} />
-        <Stat label="Dakika" value={components.minutes} />
-        <Stat label="Saniye" value={components.seconds} pulse />
+        <Stat label={t("year")} value={components.years} />
+        <Stat label={t("month")} value={components.months} />
+        <Stat label={t("day")} value={components.days} />
+        <Stat label={t("hour")} value={components.hours} />
+        <Stat label={t("minute")} value={components.minutes} />
+        <Stat label={t("second")} value={components.seconds} pulse />
       </div>
     );
 
     if (birthdayInfo.days !== null) {
-      const ageThisYear = now.getFullYear() - birth.getFullYear();
       output.push(
         <p key="birthday" className="mt-5 text-sm leading-relaxed text-muted">
-          {ageThisYear}. yaşınıza{" "}
-          <span className="font-semibold tabular-nums text-accent">
-            {birthdayInfo.days}
-          </span>{" "}
-          gün kaldı.
+          {t("daysLeft", { days: birthdayInfo.days })}
         </p>
       );
     }
@@ -127,7 +124,7 @@ export default function YasHesaplayici() {
   return (
     <div>
       <label htmlFor="yas-dogum" className="block text-sm font-medium text-text">
-        Doğum tarihi
+        {t("label")}
       </label>
       <input
         id="yas-dogum"
@@ -138,17 +135,22 @@ export default function YasHesaplayici() {
         className="mt-2 w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-sm text-text focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
 
-      <p className="mt-3 text-xs leading-relaxed text-muted">
-        Tarih seçtiğinizde sayaç canlı olarak her saniye güncellenir.
-      </p>
+      <p className="mt-3 text-xs leading-relaxed text-muted">{t("note")}</p>
+
+      {birthdayInfo && birthdayInfo.future ? (
+        <p
+          role="alert"
+          className="mt-4 rounded-lg border border-danger-border bg-danger-bg px-3.5 py-2.5 text-sm text-danger"
+        >
+          {t("futureError")}
+        </p>
+      ) : null}
 
       {output.length > 0 ? (
         <div className="mt-5">{output}</div>
       ) : (
         <div className="mt-5 rounded-lg border border-dashed border-border bg-bg px-5 py-6 text-center">
-          <p className="text-sm text-muted">
-            Yaşınızı görmek için doğum tarihinizi seçin.
-          </p>
+          <p className="text-sm text-muted">{t("emptyState")}</p>
         </div>
       )}
     </div>

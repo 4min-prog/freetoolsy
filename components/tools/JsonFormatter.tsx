@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useTranslations } from "next-intl";
 
 type Indent = "2" | "4" | "tab";
 
@@ -39,6 +40,7 @@ export default function JsonFormatter() {
   const [error, setError] = useState<string | null>(null);
   const [indent, setIndent] = useState<Indent>("2");
   const [copied, setCopied] = useState(false);
+  const t = useTranslations("comp.jsonFormatter");
 
   const lines = useMemo(
     () => (rawOutput ? rawOutput.split("\n") : []),
@@ -48,7 +50,7 @@ export default function JsonFormatter() {
   function parse(): unknown {
     const trimmed = input.trim();
     if (!trimmed) {
-      setError("Önce JSON verisi girin.");
+      setError(t("emptyError"));
       setRawOutput("");
       return undefined;
     }
@@ -58,7 +60,7 @@ export default function JsonFormatter() {
       return parsed;
     } catch (err) {
       setRawOutput("");
-      setError(err instanceof Error ? err.message : "Geçersiz JSON.");
+      setError(err instanceof Error ? err.message : t("invalidError"));
       return undefined;
     }
   }
@@ -97,11 +99,11 @@ export default function JsonFormatter() {
     <div>
       <div className="flex flex-wrap items-end justify-between gap-3">
         <label htmlFor="json-girdi" className="block text-sm font-medium text-text">
-          Ham JSON
+          {t("raw")}
         </label>
         <div className="flex items-center gap-2">
           <label htmlFor="json-indent" className="text-xs text-muted">
-            Girinti
+            {t("indent")}
           </label>
           <select
             id="json-indent"
@@ -109,9 +111,9 @@ export default function JsonFormatter() {
             onChange={(event) => setIndent(event.target.value as Indent)}
             className="rounded-lg border border-border bg-bg px-2 py-1.5 text-xs text-text focus:border-accent focus:outline-none"
           >
-            <option value="2">2 boşluk</option>
-            <option value="4">4 boşluk</option>
-            <option value="tab">Sekme</option>
+            <option value="2">{t("spaces2")}</option>
+            <option value="4">{t("spaces4")}</option>
+            <option value="tab">{t("tab")}</option>
           </select>
         </div>
       </div>
@@ -124,7 +126,7 @@ export default function JsonFormatter() {
             onChange={(event) => setInput(event.target.value)}
             rows={12}
             spellCheck={false}
-            placeholder={'{"ad": "FreetoolsY", "ucretsiz": true}'}
+            placeholder={'{"name": "FreetoolsY", "free": true}'}
             className="w-full resize-y rounded-lg border border-border bg-bg px-3.5 py-3 font-mono text-sm leading-relaxed text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
           />
           <div className="mt-3 flex flex-wrap gap-2">
@@ -133,21 +135,21 @@ export default function JsonFormatter() {
               onClick={format}
               className="rounded-lg bg-accent px-4 py-2 text-sm font-medium text-on-accent transition-opacity hover:opacity-90"
             >
-              Formatla
+              {t("format")}
             </button>
             <button
               type="button"
               onClick={minify}
               className="rounded-lg border border-border bg-surface px-4 py-2 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text"
             >
-              Sıkıştır
+              {t("minify")}
             </button>
           </div>
         </div>
 
         <div className="flex min-w-0 flex-col">
           <div className="flex items-center justify-between gap-2">
-            <p className="text-sm font-medium text-text">Formatlanmış JSON</p>
+            <p className="text-sm font-medium text-text">{t("formatted")}</p>
             <div className="flex gap-2">
               <button
                 type="button"
@@ -155,7 +157,7 @@ export default function JsonFormatter() {
                 disabled={!rawOutput}
                 className="rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-40"
               >
-                {copied ? "Kopyalandı" : "Kopyala"}
+                {copied ? t("copied") : t("copy")}
               </button>
               <button
                 type="button"
@@ -163,7 +165,7 @@ export default function JsonFormatter() {
                 disabled={!input && !rawOutput && !error}
                 className="rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-40"
               >
-                Temizle
+                {t("clear")}
               </button>
             </div>
           </div>
@@ -174,7 +176,7 @@ export default function JsonFormatter() {
           >
             {lines.length === 0 ? (
               <p className="px-3.5 py-3 text-faint">
-                {error ? "" : "Sonuç burada görünecek…"}
+                {error ? "" : t("placeholderOutput")}
               </p>
             ) : (
               <table className="w-full border-collapse">

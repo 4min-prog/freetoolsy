@@ -1,0 +1,703 @@
+{
+  "Layout": {
+    "defaultTitle": "FreetoolsY — Free Online Tools",
+    "titleTemplate": "%s · FreetoolsY",
+    "description": "Free online tools for text, security, developer and calculation. No signup, no install — everything runs in your browser.",
+    "ogTitle": "FreetoolsY — Free Online Tools"
+  },
+  "Home": {
+    "title": "Free Online Tools — Fast, Simple, in English",
+    "description": "18 free online tools in 4 categories. Character counter, password generator, JSON formatter, VAT calculator and more. No signup, no install.",
+    "heroTitle": "Free Online Tools — Fast, Simple, in English",
+    "heroSubtitle": "{tools} free tools in {cats} categories: Text, Security, Developer and Calculation. No signup, no install; every calculation happens in your browser and your data never leaves it.",
+    "jsonldSiteDesc": "Free online tools for text, security, developer and calculation. No signup, no install.",
+    "jsonldAppDesc": "Character counter, password generator, JSON formatter, VAT calculator and more.",
+    "faq": [
+      {
+        "q": "Is FreetoolsY free?",
+        "a": "Yes. All tools are free; no signup, install or payment is required."
+      },
+      {
+        "q": "Is my data saved?",
+        "a": "No. Tools run in your browser; your text or numbers are never sent to a server."
+      },
+      {
+        "q": "Which devices are supported?",
+        "a": "Any device with a web browser — desktop, tablet or phone."
+      }
+    ]
+  },
+  "Common": {
+    "use": "Use"
+  },
+  "Header": {
+    "categories": "Categories",
+    "searchLabel": "Search tools"
+  },
+  "LocaleSwitcher": {
+    "switchToTurkish": "Switch to Turkish",
+    "switchToEnglish": "Switch to English"
+  },
+  "Footer": {
+    "desc": "Free online tools: text, security, developer and calculation. No signup required; your data never leaves your browser.",
+    "navLabel": "Footer links",
+    "corporate": "Company",
+    "about": "About",
+    "privacy": "Privacy Policy",
+    "contact": "Contact",
+    "partner": "Partner",
+    "linkly": "Shorten links with → LinklyhHub",
+    "rights": "© 2026 FreetoolsY. All rights reserved."
+  },
+  "ThemeToggle": {
+    "toLight": "Switch to light mode",
+    "toDark": "Switch to dark mode"
+  },
+  "ToolExplorer": {
+    "searchLabel": "Search tools",
+    "searchPlaceholder": "Search tools… e.g. password, JSON, VAT",
+    "results": "Results",
+    "toolCount": "{count} tools",
+    "noResults": "No tools matched \"{query}\". Try a different keyword.",
+    "categoryToolsCount": "{count} tools"
+  },
+  "Categories": {
+    "metin": "Text",
+    "guvenlik": "Security",
+    "gelistirici": "Developer",
+    "hesaplama": "Calculation"
+  },
+  "ToolMeta": {
+    "karakter-sayaci": {
+      "name": "Character Counter",
+      "desc": "Counts characters, characters without spaces, lines and paragraphs in your text instantly.",
+      "title": "Character Counter — Free Online Tool",
+      "pageDesc": "Count characters with and without spaces, words, lines and paragraphs instantly. Free and private; your text never leaves your browser.",
+      "intro": "Count characters with and without spaces, plus words, lines, sentences and paragraphs — all updated instantly."
+    },
+    "kelime-sayaci": {
+      "name": "Word Counter",
+      "desc": "Counts words, sentences and characters; estimates reading time and highlights your most-used words.",
+      "title": "Word Counter — Free Online Tool",
+      "pageDesc": "Count words, characters, sentences and paragraphs; estimate reading time and find repeated words. Free, private, runs fully in your browser.",
+      "intro": "Word, character, sentence and paragraph statistics, an estimated reading time and your most repeated words."
+    },
+    "harf-donusturucu": {
+      "name": "Case Converter",
+      "desc": "Converts text to uppercase, lowercase or title case and flips letter case with one click.",
+      "title": "Case Converter — Free Online Tool",
+      "pageDesc": "Convert text to uppercase, lowercase or title case and invert letter case in one click. Full Turkish character support; nothing is uploaded.",
+      "intro": "Make your text uppercase, lowercase, title case or flipped in one click and copy it instantly."
+    },
+    "sifre-uretici": {
+      "name": "Password Generator",
+      "desc": "Generates strong random passwords in your browser with your choice of length and character types.",
+      "title": "Password Generator — Free Online Tool",
+      "pageDesc": "Generate strong, random passwords with your own length and character type choices. Cryptographically secure, never leaves your browser.",
+      "intro": "Generate strong, random passwords with your preferred length and character types."
+    },
+    "json-formatter": {
+      "name": "JSON Formatter",
+      "desc": "Formats, validates and prettifies JSON code; reports syntax errors with line numbers.",
+      "title": "JSON Formatter — Free Online Tool",
+      "pageDesc": "Format, validate and minify JSON instantly with syntax highlighting and line numbers. Fully client-side and private.",
+      "intro": "Format your JSON, validate its syntax and show errors — all with clean highlighting."
+    },
+    "base64": {
+      "name": "Base64 Encoder/Decoder",
+      "desc": "Converts text to Base64 or decodes Base64 data back to its original content.",
+      "title": "Base64 Encoder/Decoder — Free Online Tool",
+      "pageDesc": "Encode text to Base64 or decode Base64 back to the original content. Unicode and Turkish character safe; runs entirely in your browser.",
+      "intro": "Encode text as Base64 or decode Base64 data back to its original value."
+    },
+    "url-encoder": {
+      "name": "URL Encoder/Decoder",
+      "desc": "Encodes text into URL-safe form or decodes encoded URL parameters into readable form.",
+      "title": "URL Encoder/Decoder — Free Online Tool",
+      "pageDesc": "Encode text into URL-safe notation or decode percent encoded URL parameters. UTF-8 and Turkish character friendly; fully client-side.",
+      "intro": "Encode special characters for URLs or decode encoded parameters back to readable text."
+    },
+    "bmi-hesaplayici": {
+      "name": "BMI Calculator",
+      "desc": "Calculates your body mass index from height and weight and interprets the result clearly.",
+      "title": "BMI Calculator — Free Online Tool",
+      "pageDesc": "Calculate your body mass index from height and weight, see your category and compare ranges on a scale. Free and fully client-side.",
+      "intro": "Calculate your body mass index from your height and weight and read a clear interpretation."
+    },
+    "kdv-hesaplayici": {
+      "name": "VAT Calculator",
+      "desc": "Calculates tax amount and total price instantly for your amount and VAT rate.",
+      "title": "VAT Calculator — Free Online Tool",
+      "pageDesc": "Compute VAT amount, net price and total price instantly for rates like 1%, 8%, 10%, 18% and 20%. Runs entirely in your browser.",
+      "intro": "Choose an amount and VAT rate to see the tax amount and the total price at once."
+    },
+    "yuzde-hesaplayici": {
+      "name": "Percentage Calculator",
+      "desc": "Computes the percentage of a number, the percentage change and a share of a whole on one screen.",
+      "title": "Percentage Calculator — Free Online Tool",
+      "pageDesc": "Calculate a percentage of a number, a percentage change and a part of a whole on a single screen. Free and privacy friendly.",
+      "intro": "Percentage of a number, percentage change and a part of a whole — all on one screen."
+    },
+    "yas-hesaplayici": {
+      "name": "Age Calculator",
+      "desc": "Shows your age in years, months, days, hours, minutes and seconds live from your birth date.",
+      "title": "Age Calculator — Free Online Tool",
+      "pageDesc": "Calculate your exact age in years, months, days, hours, minutes and seconds with a live counter. Free and fully client-side.",
+      "intro": "See your precise age in years, months, days, hours, minutes and seconds with a live counter."
+    },
+    "qr-kod-olusturucu": {
+      "name": "QR Code Generator",
+      "desc": "Turns text or a link into a QR code instantly in your browser; download it as PNG.",
+      "title": "QR Code Generator — Free Online Tool",
+      "pageDesc": "Create a QR code from any text or link instantly and download it as a high-resolution PNG. Free and private; content never leaves your browser.",
+      "intro": "Turn any text or link into a scannable QR code and download it as a PNG."
+    },
+    "sha-hash-uretici": {
+      "name": "SHA Hash Generator",
+      "desc": "Computes the SHA-1, SHA-256 or SHA-512 digest of your text in the browser; copy it with one click.",
+      "title": "SHA Hash Generator — Free Online Tool",
+      "pageDesc": "Compute the SHA-1, SHA-256 or SHA-512 digest of any text in your browser. Private by design; your input never leaves your device.",
+      "intro": "Compute a SHA-1, SHA-256 or SHA-512 digest of your text and copy it instantly."
+    },
+    "tarih-farki": {
+      "name": "Date Difference",
+      "desc": "Calculates the difference between two dates in years, months, days, hours and weeks instantly.",
+      "title": "Date Difference Calculator — Free Online Tool",
+      "pageDesc": "Find the difference between two dates in years, months, days, hours, minutes and weeks. Free, accurate and fully client-side.",
+      "intro": "Pick two dates and see the difference in years, months, days, hours and weeks."
+    },
+    "renk-donusturucu": {
+      "name": "Color Converter",
+      "desc": "Converts between HEX, RGB and HSL instantly with a live preview and one-click copying.",
+      "title": "Color Converter (HEX, RGB, HSL) — Free Tool",
+      "pageDesc": "Convert between HEX, RGB and HSL color values instantly, preview the result and copy the format you need. Free and private.",
+      "intro": "Convert between HEX, RGB and HSL values, preview the color and copy the format you need."
+    },
+    "uuid-uretici": {
+      "name": "UUID Generator",
+      "desc": "Generates random UUID v4 (GUID) identifiers in one click; copy several at once.",
+      "title": "UUID Generator (GUID) — Free Online Tool",
+      "pageDesc": "Generate random UUID v4 identifiers in one click and copy several at once. Cryptographically random and completely client-side.",
+      "intro": "Generate random UUID v4 (GUID) identifiers and copy several values at once."
+    },
+    "birim-donusturucu": {
+      "name": "Unit Converter",
+      "desc": "Converts between length, weight, volume, area and temperature units quickly.",
+      "title": "Unit Converter — Free Online Tool",
+      "pageDesc": "Convert between length, weight, volume, area and temperature units with instant results. Free, accurate and fully client-side.",
+      "intro": "Convert between length, weight, volume, area and temperature units instantly."
+    },
+    "parola-guc-testi": {
+      "name": "Password Strength Checker",
+      "desc": "Measures how strong your password is with an entropy estimate and suggests improvements.",
+      "title": "Password Strength Test — Free Online Tool",
+      "pageDesc": "Check how strong your password really is with an entropy estimate and a checklist of missing character types. 100% client-side and private.",
+      "intro": "Measure how strong your password is, see missing character types and estimated entropy."
+    }
+  },
+  "ToolContent": {
+    "karakter-sayaci": [
+      { "h": "What is a Character Counter?", "p": "A Character Counter counts the characters in your pasted or typed text with and without spaces, as well as words, lines, sentences and paragraphs. It is ideal for posts with length limits, SEO meta descriptions, SMS texts, school assignments and limited form fields. Copy, paste and see everything in seconds." },
+      { "h": "Where do character limits matter?", "list": ["Social media: A Twitter/X post is 280 characters; an Instagram bio allows 150.", "SEO meta description: Google generally shows meta descriptions of 150–160 characters.", "SMS: One SMS accepts 160 characters; check how many your message uses.", "Assignments and essays: Verify word or line limits before submission.", "Form fields: Confirm you stay within allowed input lengths instantly."] },
+      { "h": "Spaces count or not?", "p": "The count with spaces includes every character including spaces and tabs. The count without spaces ignores them and is useful when exact letter and digit length matters. The difference between the two tells you how many spaces your text contains." },
+      { "h": "Is my data safe?", "p": "Yes. Everything runs in your browser; your text is never sent, uploaded or stored. You can safely check code snippets, private notes and sensitive text without signing up or paying." },
+      { "h": "FAQ", "list": ["What does \"without spaces\" mean? The character count that ignores spaces.", "Does it work on mobile? Yes — it runs in any browser on any device.", "Is my text saved? No; everything happens on your device."] }
+    ],
+    "kelime-sayaci": [
+      { "h": "What is a Word Counter?", "p": "A Word Counter instantly calculates the number of words, characters, sentences and paragraphs in your text. It also estimates how long your text takes to read and lists your most-used words, so you can size a blog post, essay or resume and spot repetitions on one screen." },
+      { "h": "How is reading time estimated?", "p": "The tool assumes an average adult reads about 200 words per minute and rounds the result. Bloggers and editors use this value to tell audiences how long a post takes to read." },
+      { "h": "Why are repeated words useful?", "p": "The most-used words list shows which phrases dominate your text. It helps avoid overusing a keyword in SEO copy and is practical for checking word variety in academic writing." },
+      { "h": "Who can use it?", "list": ["Students: quick checks against word limits in essays and theses.", "Bloggers: measuring post length and reading time.", "SEO specialists: monitoring content density and keyword repetition.", "Translators: comparing the ratio of translated to original text."] },
+      { "h": "Is my data safe?", "p": "Yes. All calculations run in your browser; your text is never sent to or stored on a server. No signup and completely free." }
+    ],
+    "harf-donusturucu": [
+      { "h": "What is a Case Converter?", "p": "A Case Converter changes the letter case of your text in seconds. Paste your text, choose the conversion you want and copy the result in one click. Headlines, resume bullets and social posts can be reformatted instantly." },
+      { "h": "Which conversions are available?", "list": ["Uppercase: makes every letter uppercase for emphasis and headings.", "Lowercase: makes every letter lowercase and restores normal form.", "Title Case: capitalizes the first letter of every word for article and blog titles.", "Invert: flips uppercase/lowercase, perfect for text mistyped with Caps Lock on."] },
+      { "h": "Does it support Turkish characters?", "p": "Yes. Turkish letters are handled specially: ç, ğ, ı, i, ö, ş, ü correctly become Ç, Ğ, I, İ, Ö, Ş, Ü. This keeps results consistent for Turkish content." },
+      { "h": "When is it used?", "list": ["Fixing text accidentally typed with Caps Lock on.", "Formatting headings, subtitles and resume titles quickly.", "Emphasizing quotes or slogans in uppercase.", "Standardizing case-sensitive fields like file names and form inputs."] },
+      { "h": "Is my data safe?", "p": "Yes. Conversion happens entirely in your browser; your text is never sent or stored. No signup, no install and completely free." }
+    ],
+    "sifre-uretici": [
+      { "h": "What is a Password Generator?", "p": "A Password Generator creates strong, hard-to-guess passwords based on the length and character types you choose. Slide the length between 8 and 64 characters and tick any combination of uppercase, lowercase, digits and symbols. Every generated password shows its strength as weak, medium, strong or very strong, and you can generate up to 5 at once." },
+      { "h": "How is password strength measured?", "p": "The strength indicator uses an entropy calculation that combines length with the size of the character pool. The longer and more diverse a password, the more combinations it contains and the more resistant it is to brute-force attacks. Start with at least 12–16 characters and all four character types." },
+      { "h": "Why is this generator safe?", "p": "Passwords are generated entirely in your browser and never sent anywhere. Instead of the weak Math.random, the tool uses the browser's cryptographically secure generator (crypto.getRandomValues). Generated passwords are never stored or transmitted." },
+      { "h": "Strong password tips", "list": ["Use a different password for every account; never reuse.", "Avoid birth dates, names and keyboard-pattern sequences.", "Store passwords in a password manager or another secure place.", "Always enable two-factor authentication (2FA) when offered."] },
+      { "h": "Free and mobile friendly", "p": "No signup or download is needed; it works in any browser on phone, tablet or desktop. One click is enough to get a strong password whenever you need one." }
+    ],
+    "json-formatter": [
+      { "h": "What is a JSON Formatter?", "p": "A JSON Formatter converts raw JSON into formatted, readable output. Paste your JSON on the left, click Format, and get indented, color-coded, line-numbered output on the right. The Minify option compresses JSON to a single line to reduce size." },
+      { "h": "Why is formatting important?", "p": "API responses often arrive as unreadable one-line data. When objects nest inside objects and arrays inside arrays, it is hard to tell which field belongs to which structure. Formatting separates levels with indentation and visually distinguishes keys from values, so you can quickly spot errors or missing fields." },
+      { "h": "How does error checking work?", "p": "Pasting invalid JSON shows a red error message. The browser's parser reports the approximate location and cause — a missing comma, a wrong quote or an extra brace — so you find the problem in large data sets within seconds." },
+      { "h": "When is it used?", "list": ["Making API responses readable while inspecting and testing.", "Validating syntax when editing config files like package.json.", "Minifying JSON to shrink transport and cache size.", "Generating and checking sample data while writing scripts."] },
+      { "h": "Is my data safe?", "p": "Yes. Parsing and formatting happen entirely in your browser; your JSON is never sent or stored. Even configs containing API keys can be formatted safely." }
+    ],
+    "base64": [
+      { "h": "What is a Base64 Encoder/Decoder?", "p": "A Base64 Encoder/Decoder converts binary data into printable ASCII characters and back again. Type your text and press Encode to get a Base64 string; paste Base64 data and press Decode to recover the original content." },
+      { "h": "Where is Base64 used?", "list": ["Email attachments: the MIME standard transports attachments as Base64.", "Data URIs: images and small files can be embedded in HTML as data:image/png;base64,…", "API authentication: Basic Auth encodes username and password in Base64.", "JSON payloads: non-text fields are stored as Base64."] },
+      { "h": "Does it handle Turkish and Unicode?", "p": "Yes. The tool encodes your text as UTF-8 first, then converts to Base64. Turkish characters, emojis and other alphabets survive without corruption, and because Base64 is pure ASCII it travels reliably across platforms." },
+      { "h": "Is Base64 encryption?", "p": "No. Base64 is an encoding, not encryption — it does not hide data, it only makes it portable. Never rely on Base64 alone to protect passwords or private information; use real encryption for sensitive data." },
+      { "h": "Is my data safe?", "p": "Yes. Both operations run in your browser; your data is never sent or stored. No signup and completely free." }
+    ],
+    "url-encoder": [
+      { "h": "What is a URL Encoder/Decoder?", "p": "A URL Encoder/Decoder converts characters that are unsafe or change meaning in URLs into a safe form, and reverses the conversion. Encoding replaces spaces, Turkish letters, quotes and special marks with percent notation (%20, %C3%A7); decoding turns them back into readable text." },
+      { "h": "When is URL encoding needed?", "list": ["Search parameters: adding search phrases with spaces or Turkish characters to a query string.", "Form data: safely placing user text into GET requests.", "Sharing links: preventing & and + from being misinterpreted inside URLs.", "Code snippets: passing JSON, HTML or script content as a URL parameter."] },
+      { "h": "How are Turkish characters handled?", "p": "The tool encodes text as UTF-8, so ç, ğ, ı, ö, ş, ü and emojis become percent sequences like %C3%BC without corruption, and decoding restores full Turkish letters. Space-to-plus differences are handled automatically." },
+      { "h": "What encoding does it use?", "p": "It uses encodeURIComponent, the recommended comprehensive encoding for parameter values. Every character except A–Z, a–z, 0–9 and a few marks becomes percent notation, so browsers and servers always read your parameters identically." },
+      { "h": "Is my data safe?", "p": "Yes. Encoding and decoding happen entirely in your browser; inputs are never sent or stored. No signup, no install and completely free." }
+    ],
+    "bmi-hesaplayici": [
+      { "h": "What is a BMI Calculator?", "p": "A BMI Calculator computes your body mass index from your height and weight. Enter height in centimeters and weight in kilograms, press Calculate, and the tool divides weight by the square of height in meters, then classifies the result as underweight, normal, overweight or obese." },
+      { "h": "How is BMI calculated?", "p": "BMI is weight (kg) divided by height in meters squared. A 70 kg person of 1.75 m has a BMI of about 22.9, which is a normal range. According to the WHO, below 18.5 is underweight, 18.5–25 normal, 25–30 overweight and above 30 obese." },
+      { "h": "Color scale and table", "p": "Your result is marked on a colored bar that runs from underweight to obese, so you see your category at a glance. The scale table below lists all ranges and categories in detail, highlighting your current one automatically." },
+      { "h": "How reliable is BMI?", "p": "BMI is a practical population indicator but not a medical diagnostic tool. It can mislead in muscular individuals, older adults, children and during pregnancy. Use results for information only and consult a physician for any health concerns." },
+      { "h": "Is my data safe?", "p": "Yes. All calculations run in your browser; your height and weight are never sent or stored. No signup, no install and completely free." }
+    ],
+    "kdv-hesaplayici": [
+      { "h": "What is a VAT Calculator?", "p": "A VAT Calculator computes the value-added tax on an amount and the total price including tax. Enter the product or service price, choose a rate, and see the result. Supported rates are 1%, 8%, 10%, 18% and 20%, and you can mark whether your amount already includes tax." },
+      { "h": "VAT inclusive vs exclusive", "p": "With \"VAT exclusive\" the entered amount is the net price and the tool adds the tax to find the total. With \"VAT inclusive\" the amount already includes tax and the tool separates the tax to show the net (base) amount and the VAT amount. This helps you get the right figures for invoices and quotes fast." },
+      { "h": "Which rates are used?", "list": ["1%: reduced-rate products such as basic foods and bread.", "8% and 10%: intermediate rates for many services, books and food.", "18% and 20%: standard rates for most goods and services."] },
+      { "h": "Who benefits?", "p": "Small businesses preparing price lists, accountants verifying invoice amounts, consumers wondering about the VAT on a label and students practicing commerce math. Since everything runs in your browser, amounts never leave your device." },
+      { "h": "Is the result accurate?", "p": "Yes. Results follow the standard formulas of tax legislation to the kuruş and are shown in Turkish decimal format. The result recalculates live as you type, for every rate and type combination." }
+    ],
+    "yuzde-hesaplayici": [
+      { "h": "What is a Percentage Calculator?", "p": "A Percentage Calculator solves the three most common percentage operations on one screen. Switch tabs to compute a percentage of a number, the percentage change between two values, or a part of a whole as a ratio. All results update instantly as you type." },
+      { "h": "Which operations are included?", "list": ["Percentage of a number: enter a number and a rate; e.g. 20% of 100 is 20.", "Percentage change: enter start and end values; e.g. going from 80 to 100 is a 25% increase.", "Percentage of a whole: see what share a part represents; e.g. 20 is 20% of 100."] },
+      { "h": "Where is it used?", "p": "Shopping to calculate discounts and price increases, education to read exam pass rates and surveys, business to track sales and profit changes, and daily budgeting to plan allocations. Decimal values are supported." },
+      { "h": "About the tool", "p": "Calculations run entirely in your browser; your inputs are never sent or stored, no signup or install is needed. In Change mode, increases and decreases are color coded so you interpret the result correctly at a glance." }
+    ],
+    "yas-hesaplayici": [
+      { "h": "What is an Age Calculator?", "p": "An Age Calculator computes your age from your birth date with second-level precision. Pick your birth date and a live counter starts showing how many years, months, days, hours, minutes and seconds old you are, updating every second." },
+      { "h": "Why count age in seconds?", "p": "People usually state their age in years, but even two people born the same year can differ by months. This tool shows hours, minutes and seconds in addition to years, months and days, and the counter ticks every second to keep your age live." },
+      { "h": "Next birthday information", "p": "The tool also counts how many days remain until your next birthday, so you can plan celebrations and special dates without missing them." },
+      { "h": "Who benefits?", "list": ["People who need to prove their exact age in years, months and days for official procedures.", "Anyone checking exact birth dates for insurance, pension or age-limit calculations.", "Everyone who enjoys seeing their age tick second by second."] },
+      { "h": "Is my data safe?", "p": "Yes. Calculations run entirely in your browser; your birth date is never sent or stored. No signup, no install and completely free." }
+    ],
+    "qr-kod-olusturucu": [
+      { "h": "What is a QR Code Generator?", "p": "A QR Code Generator turns text or a web address into a scannable QR code. Phone camera apps read the code and open its content right away, so long links are shared without typing. It is widely used for restaurant menus, business cards, Wi-Fi access, tickets and product packaging." },
+      { "h": "What should you keep in mind?", "list": ["The encoded text is capped at 500 characters; use a short-URL service for long links.", "Printed codes can break when small; keep them at least 2 cm wide with high contrast.", "Keep dark modules on a light background; inverted colors confuse some scanners."] },
+      { "h": "Is my data safe?", "p": "Yes. The code is generated entirely in your browser; your text is never sent or stored. You can safely turn personal links, notes and business information into codes." },
+      { "h": "FAQ", "list": ["How do I scan a QR code? Point your phone camera at it.", "Does the code expire? No — generated codes are permanent.", "Can I print the downloaded PNG? Yes, it prints well at high resolution."] }
+    ],
+    "sha-hash-uretici": [
+      { "h": "What is a SHA hash?", "p": "SHA (Secure Hash Algorithm) is a one-way cryptographic function that turns data of any length into a fixed-length digest. If one word changes the digest changes completely; the same input always gives the same output. This makes it essential for verifying file downloads, storing password hashes and validating signatures." },
+      { "h": "SHA-1, SHA-256 or SHA-512?", "p": "SHA-1 produces a 160-bit digest and has been considered insecure against collisions since 2005; use it only for legacy compatibility. SHA-256 gives a 32-byte (64 hex character) digest and SHA-512 a 64-byte (128 hex character) one. SHA-256 is the standard for new projects; choose SHA-512 when maximum strength matters." },
+      { "h": "Is my data safe?", "p": "Yes. Hashing runs in your browser's crypto library entirely on your device; your text is never sent anywhere. Private keys, passwords and sensitive data can be hashed safely here." },
+      { "h": "FAQ", "list": ["Can I reverse a hash to the original text? No — SHA is one-way.", "Does the same text give different hashes? No — SHA is deterministic.", "Which algorithm should I pick? SHA-256 is sufficient and secure for most cases."] }
+    ],
+    "tarih-farki": [
+      { "h": "What is a Date Difference calculator?", "p": "A Date Difference calculator splits the duration between two dates into years, months and days, and also shows the total in days, weeks, hours and minutes. It saves time for birthdays, contract deadlines, tenure and project timelines — whichever date comes first, the absolute difference is shown." },
+      { "h": "How should you read the result?", "p": "The years/months/days conversion is based on calendar averages (365.2425 days per year) and gives a satisfying \"how long\" perspective. Total days and hours are exact and should be the basis for calculations that need precision, like contract periods." },
+      { "h": "Is my data safe?", "p": "Yes. The calculation happens entirely in your browser; your dates are never sent or stored. No signup, no install and completely free." },
+      { "h": "FAQ", "list": ["Does date order matter? No — the absolute difference is shown.", "Can the start date be today? Yes — fields default to today.", "Are total hours realistic? Yes — exact days multiplied by 24."] }
+    ],
+    "renk-donusturucu": [
+      { "h": "What is a Color Converter?", "p": "A Color Converter instantly converts between HEX, RGB and HSL notations. Web developers constantly need to align colors across designs, mobile interfaces and graphics programs. This tool also previews the color and lets you copy any format with one click." },
+      { "h": "When is each format used?", "list": ["HEX: the standard in web design — #RRGGBB six-digit hex notation.", "RGB: three numbers 0–255 used by screens and graphics software; the basis of contrast math.", "HSL: hue, saturation and lightness make adjustments like \"lighter\" or \"darker\" natural."] },
+      { "h": "Is my data safe?", "p": "Yes. All conversions run in your browser; your color is never sent anywhere. Fast access without fees, memberships or ad filters." },
+      { "h": "FAQ", "list": ["Do I need the # prefix for HEX? Either works — both 6-digit forms are accepted.", "Which field updates the color? The last valid input applies; invalid entries keep the current color.", "Are the HSL percentages required? Yes — saturation and lightness need the % sign."] }
+    ],
+    "uuid-uretici": [
+      { "h": "What is a UUID?", "p": "A UUID (universally unique identifier) is a standard 128-bit identifier written in 36 characters, e.g. 123e4567-e89b-12d3-a456-426614174000. Version 4 is produced randomly, making collisions practically impossible across distributed systems, databases and APIs." },
+      { "h": "When should you use it?", "list": ["Database primary keys and record identifiers.", "API trace, session and transaction numbers.", "Test data, form fields and temporary file names.", "Apps where many servers create records at the same time."] },
+      { "h": "Is my data safe?", "p": "Yes. Values are generated on your device using the browser's cryptographic random source; nothing is sent anywhere. The identifiers are entirely yours." },
+      { "h": "FAQ", "list": ["Are UUID and GUID the same? Yes — GUID is Microsoft's name for a UUID.", "Can identifiers be changed? Every click produces fresh random values; generated lists are yours once copied.", "How many values can I generate? As many as you like in a single batch."] }
+    ],
+    "birim-donusturucu": [
+      { "h": "What is a Unit Converter?", "p": "A Unit Converter moves measurements between units for length, weight, volume, area and temperature. From centimeters to inches, kilograms to pounds, Celsius to Fahrenheit — hundreds of everyday conversions on one screen, useful for recipes, math homework, engineering and shopping." },
+      { "h": "Which conversions are supported?", "list": ["Length: millimeter, centimeter, meter, kilometer, inch, foot, yard, mile.", "Weight: milligram, gram, kilogram, ton, ounce, pound.", "Volume: milliliter, centiliter, deciliter, liter, cubic meter, US gallon.", "Area: square millimeter/centimeter/meter, hectare, square kilometer, acre.", "Temperature: Celsius, Fahrenheit, Kelvin."] },
+      { "h": "Is my data safe?", "p": "Yes. All conversions run in your browser; your values are never sent or stored. Free and account free." },
+      { "h": "FAQ", "list": ["What decimal separator can I use? Both comma and dot are accepted (e.g. 1,5 or 1.5).", "Are results rounded? Values are rounded to six digits — accurate enough for everyday measurement.", "Can more units be added? The five most common categories are supported; categories can be extended on request."] }
+    ],
+    "parola-guc-testi": [
+      { "h": "What is a Password Strength Checker?", "p": "A Password Strength Checker evaluates how resistant your password is to attack using an estimated entropy score. Length, character diversity and similarity to common passwords are checked, with the result shown from very weak to very strong and each missing requirement flagged." },
+      { "h": "What is entropy and why does it matter?", "p": "Entropy measures a password's unpredictability in bits. Every extra character and new character type multiplies the combinations a brute-force attack must try. An 8-character lower-case-only password is weak; the same length with digits and symbols is far stronger. This tool uses the same measure as our password generator." },
+      { "h": "Is my data safe?", "p": "Yes. The test runs entirely in your browser; your password is never sent, stored or logged. Test even your real passwords with confidence." },
+      { "h": "FAQ", "list": ["What length is enough? Aim for at least 12 characters; 16+ is safer.", "Do you check the common-password list online? No — the list is embedded on your device.", "What is the best password? A unique, long, unpredictable password stored in a password manager."] }
+    ]
+  },
+  "ToolPage": {
+    "linklyPre": "Want to share what you created? Try",
+    "linklyPost": "for a short, clean link.",
+    "breadcrumbAria": "Breadcrumb",
+    "home": "Home",
+    "viewAll": "{count} tools"
+  },
+  "Info": {
+    "breadcrumbHome": "Home",
+    "hakkimizda": {
+      "navLabel": "About",
+      "title": "About",
+      "desc": "About FreetoolsY: we build free, ad-supported, privacy-first online tools that make everyday work faster.",
+      "h1": "About",
+      "p1": "FreetoolsY is a collection of simple, fast and free online tools that speed up everyday tasks. You never need to install heavy programs or send your data to unknown servers.",
+      "sections": [
+        {
+          "h": "Why FreetoolsY?",
+          "p": "The web is full of similar tools, but most require signup, collect data or clutter the interface with ads. Our priority is plain tools that take no time to learn and no extra setup. Each tool is designed to do one thing well: count text, generate passwords, format JSON."
+        },
+        {
+          "h": "Your data stays yours",
+          "pre": "All of our tools run in your browser. Text, passwords and numbers you type are never sent to a server, saved or shared with a third party. The site only processes the standard technical data needed for analytics and advertising services. See our",
+          "link": "Privacy Policy",
+          "post": "for details."
+        },
+        {
+          "h": "How do we stay free?",
+          "p": "The site is funded by advertising to keep the tools free. Ads appear in dedicated spaces below the tools, placed so they never interrupt usage."
+        },
+        {
+          "h": "Our roadmap",
+          "pre": "We keep adding tools and improving existing ones. Your suggestions guide us — if you have an idea, write to us via our",
+          "link": "contact page",
+          "post": "."
+        }
+      ],
+      "jsonDesc": "Free online tools across text, security, developer and calculation categories.",
+      "footerNote": ""
+    },
+    "iletisim": {
+      "navLabel": "Contact",
+      "title": "Contact",
+      "desc": "Get in touch with FreetoolsY: write to us with your questions, suggestions and feedback.",
+      "h1": "Contact",
+      "p1": "Use the form below for questions, suggestions or feedback. It forwards your message to destek@freetoolsy.com through your email app."
+    },
+    "gizlilik": {
+      "navLabel": "Privacy Policy",
+      "title": "Privacy Policy",
+      "desc": "FreetoolsY privacy policy: which data is collected, cookies, third-party ads and your rights.",
+      "h1": "Privacy Policy",
+      "updated": "Last updated: September 22, 2026",
+      "sections": [
+        { "h": "1. General Information", "p": "FreetoolsY (\"we\", \"the site\") offers free online tools at https://freetoolsy.vercel.app. This policy explains what information is collected while you use the site and how it is used. By using the site you accept this policy." },
+        { "h": "2. Data Collected", "p": "Most of our tools run in your browser; the text, numbers or data you enter are not sent to or stored on our servers. The site may process certain technical data (IP address, browser type, visited pages, device information) for standard web analytics and advertising services." },
+        { "h": "3. Cookies", "p": "The site uses cookies to remember preferences (such as theme choice) and to measure service quality. You can allow or block cookies from your browser settings at any time; blocking them does not stop most tools from working." },
+        { "h": "4. Third-Party Ads", "p": "This site may use third-party ad providers such as Google AdSense for revenue. Google may use cookies (including DART cookies) to personalize ad delivery. See the", "link": "Google advertising page", "url": "https://policies.google.com/technologies/partner-sites", "post": " for details on Google's data usage. Users can opt out of personalized ads in", "post2": "Google Ad Settings", "url2": "https://adssettings.google.com" },
+        { "h": "5. Analytics", "p": "The site may use analytics services such as Google Analytics to understand visitor statistics. These services use cookies to analyze site usage; collected information is processed anonymously." },
+        { "h": "6. Data Security", "p": "The site takes reasonable measures to protect personal data. However, no method of transmission over the internet is 100% secure, so absolute security cannot be guaranteed." },
+        { "h": "7. Your Rights", "p": "Under KVKK and GDPR you have the right to access, correct, delete or object to the processing of your data. You can reach us through the contact section for any request." },
+        { "h": "8. Changes", "p": "This policy may be updated from time to time due to legal requirements or service changes. Updates are published on this page, with notice on the site for significant changes." },
+        { "h": "9. Contact", "pre": "For questions about this policy, use our", "link": "contact page", "post": "." }
+      ]
+    }
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "body": "The tool you are looking for does not exist or the address was mistyped.",
+    "cta": "Back to home"
+  },
+  "comp": {
+    "karakterSayaci": {
+      "label": "Enter your text",
+      "placeholder": "Type or paste here…",
+      "chars": "Characters",
+      "noSpace": "Chars (no spaces)",
+      "words": "Words",
+      "lines": "Lines",
+      "sentences": "Sentences",
+      "paragraphs": "Paragraphs"
+    },
+    "kelimeSayaci": {
+      "label": "Enter your text",
+      "placeholder": "Type or paste here…",
+      "words": "Words",
+      "chars": "Characters",
+      "sentences": "Sentences",
+      "paragraphs": "Paragraphs",
+      "readingTime": "Est. reading time",
+      "readingMinutes": "{minutes} min",
+      "topWords": "Most used words"
+    },
+    "harfDonusturucu": {
+      "label": "Enter your text",
+      "placeholder": "Type or paste here…",
+      "upper": "UPPERCASE",
+      "lower": "lowercase",
+      "title": "Title Case",
+      "invert": "iNVERT cASE",
+      "copy": "Copy",
+      "copied": "Copied"
+    },
+    "sifreUretici": {
+      "length": "Length",
+      "charTypes": "Character types",
+      "genCount": "Number of passwords",
+      "optionLower": "Lowercase (a–z)",
+      "optionUpper": "Uppercase (A–Z)",
+      "optionDigits": "Digits (0–9)",
+      "optionSymbols": "Symbols (!@#…)",
+      "passwordSingular": "{count} password",
+      "passwordMany": "{count} passwords",
+      "generate": "Generate new password",
+      "generateMany": "Generate {count} passwords",
+      "copy": "Copy",
+      "copied": "Copied",
+      "strength": "Strength: {label}",
+      "selectType": "Select at least one character type",
+      "weak": "Weak",
+      "medium": "Medium",
+      "strong": "Strong",
+      "veryStrong": "Very strong"
+    },
+    "jsonFormatter": {
+      "raw": "Raw JSON",
+      "indent": "Indent",
+      "spaces2": "2 spaces",
+      "spaces4": "4 spaces",
+      "tab": "Tab",
+      "format": "Format",
+      "minify": "Minify",
+      "formatted": "Formatted JSON",
+      "copy": "Copy",
+      "copied": "Copied",
+      "clear": "Clear",
+      "emptyError": "Enter JSON data first.",
+      "invalidError": "Invalid JSON.",
+      "placeholderOutput": "Result will appear here…"
+    },
+    "base64": {
+      "input": "Input",
+      "placeholderInput": "Text or Base64 data…",
+      "encode": "Encode",
+      "decode": "Decode",
+      "emptyError": "Enter Base64 data first.",
+      "invalidError": "Invalid Base64 data.",
+      "output": "Output",
+      "placeholderOutput": "Result will appear here…",
+      "copy": "Copy",
+      "copied": "Copied"
+    },
+    "url": {
+      "input": "Input",
+      "placeholderInput": "https://example.com/path?q=value…",
+      "encode": "Encode",
+      "decode": "Decode",
+      "emptyError": "Enter encoded URL data first.",
+      "invalidError": "Invalid URL encoding.",
+      "output": "Output",
+      "placeholderOutput": "Result will appear here…",
+      "copy": "Copy",
+      "copied": "Copied",
+      "linklyNote": "For short, clean URLs try LinklyhHub →"
+    },
+    "kdv": {
+      "amount": "Amount",
+      "amountPlaceholder": "e.g. 2500",
+      "rate": "VAT rate",
+      "amountType": "Amount type",
+      "exclusive": "VAT exclusive",
+      "inclusive": "VAT inclusive",
+      "liveNote": "The result updates instantly as you change the amount.",
+      "base": "Amount (VAT excluded)",
+      "vat": "VAT amount",
+      "total": "Total (VAT included)",
+      "emptyState": "Enter an amount to see the result."
+    },
+    "yuzde": {
+      "tabAria": "Calculation mode",
+      "modePercent": "Percentage of a number",
+      "modeChange": "Percentage change",
+      "modePart": "Percentage of a whole",
+      "number": "Number",
+      "percent": "Percentage (%)",
+      "start": "Start value",
+      "end": "End value",
+      "part": "Part value",
+      "whole": "Whole value",
+      "ph": "e.g. 100",
+      "result": "Result",
+      "info": "Info",
+      "change": "Change",
+      "percentSentence": "{number} number, {percent}% of it:",
+      "zeroStart": "Start value cannot be zero.",
+      "zeroWhole": "Whole value cannot be zero.",
+      "changeSentence": "Change from {start} to {end}:",
+      "increase": "shows an increase.",
+      "decrease": "shows a decrease.",
+      "partSentence": "{part} is this share of {whole}:",
+      "liveNote": "Results appear instantly once you type your values."
+    },
+    "yas": {
+      "label": "Birth date",
+      "note": "Once you pick a date, the counter updates live every second.",
+      "year": "Year",
+      "month": "Month",
+      "day": "Day",
+      "hour": "Hour",
+      "minute": "Minute",
+      "second": "Second",
+      "futureError": "Birth date cannot be in the future.",
+      "daysLeft": "Your next birthday is in {days} days.",
+      "emptyState": "Pick your birth date to see your age."
+    },
+    "bmi": {
+      "height": "Height (cm)",
+      "weight": "Weight (kg)",
+      "calculate": "Calculate",
+      "commaNote": "You can use a comma or a dot. Values are only processed in this browser.",
+      "emptyError": "Enter your height and weight.",
+      "rangeError": "Values are out of range. Height must be 50-250 cm, weight 10-400 kg.",
+      "low": "Underweight",
+      "normal": "Normal weight",
+      "overweight": "Overweight",
+      "obese": "Obesity",
+      "lowNote": "Your body mass index is below normal.",
+      "normalNote": "Your body mass index is in a healthy range.",
+      "overweightNote": "Your body mass index is above normal.",
+      "obeseNote": "Your body mass index is in the obesity range.",
+      "emptyState": "Enter your height and weight and press Calculate to see the result.",
+      "notMedical": "BMI is not a medical diagnostic tool; it ignores age, muscle mass and other factors.",
+      "scaleLabel": "BMI scale",
+      "scaleRange": "Range",
+      "scaleCategory": "Category",
+      "scaleNote": "Below 18.5 is underweight and above 30 is obese (WHO)."
+    },
+    "qr": {
+      "label": "Text or link",
+      "placeholder": "e.g. https://freetoolsy.vercel.app",
+      "emptyMsg": "An empty QR code cannot be created. Type something above.",
+      "download": "Download as PNG",
+      "copyText": "Copy text",
+      "copied": "Copied",
+      "note": "The QR code is generated entirely in your browser; the content is never sent to a server.",
+      "charCount": "{count}/500"
+    },
+    "sha": {
+      "label": "Enter your text",
+      "placeholder": "Text to digest goes here",
+      "algorithm": "Algorithm",
+      "copy": "Copy",
+      "copied": "Copied",
+      "note": "Your text never leaves your browser during hashing. SHA digests are one-way: you cannot read them back into the original text. SHA-1 is no longer considered secure and is provided only for compatibility."
+    },
+    "dateDiff": {
+      "start": "Start date",
+      "end": "End date",
+      "difference": "Difference:",
+      "ymd": "{years} years, {months} months, {days} days",
+      "totalDays": "Total days",
+      "weeks": "Total weeks",
+      "monthsAvg": "Months (avg)",
+      "hours": "Total hours",
+      "minutes": "Total minutes",
+      "invalid": "Please pick two valid dates.",
+      "note": "Whichever date comes first, the absolute difference is shown. Years/months/days conversion uses calendar averages; day-based totals are exact."
+    },
+    "renk": {
+      "pickerAria": "Pick a color",
+      "hexLabel": "HEX code",
+      "invalid": "Invalid HEX code. Use #RRGGBB or #RGB.",
+      "copy": "Copy",
+      "copied": "Copied",
+      "shadesTitle": "Shades & tints (click to apply)",
+      "copyNote": "Click a tile to set it as your color. All conversions run instantly in your browser — nothing is sent to a server."
+    },
+    "uuid": {
+      "tabAria": "UUID tool",
+      "tabGenerate": "Generate",
+      "tabFormat": "Format",
+      "count": "How many?",
+      "generate": "Generate new UUIDs",
+      "inputLabel": "Paste UUIDs to format",
+      "inputPlaceholder": "e.g. ba3f2f96-7c62-4d22-9a5e-8a21a4ef90d1",
+      "format": "Format to uppercase",
+      "copyAll": "Copy all",
+      "copy": "Copy",
+      "copied": "Copied",
+      "note": "UUID v4 values are generated with your browser's cryptographic random source. Every value is considered globally unique; the chance of a duplicate is practically zero.",
+      "formatNote": "Formatting converts lowercase hexadecimal digits to uppercase. Only valid UUID values are accepted.",
+      "emptyError": "Enter at least one UUID to format.",
+      "invalidError": "Line contains an invalid UUID. Paste valid UUIDs separated by spaces or commas."
+    },
+    "birim": {
+      "tabAria": "Unit converter",
+      "tab-speed": "Speed",
+      "tab-length": "Length",
+      "tab-temp": "Temperature",
+      "tab-weight": "Weight",
+      "tab-data": "Data storage",
+      "tab-food": "Food & Cooking",
+      "tab-volume": "Volume",
+      "pre-speed-label": "Speed converter",
+      "pre-length-label": "Length converter",
+      "pre-temp-label": "Temperature converter",
+      "pre-weight-label": "Weight converter",
+      "pre-data-label": "Data storage converter",
+      "pre-volume-label": "Volume converter",
+      "unit-kph": "km/h",
+      "unit-mph": "mph",
+      "unit-knot": "knot",
+      "unit-mps": "m/s",
+      "unit-fts": "ft/s",
+      "unit-km": "km",
+      "unit-m": "m",
+      "unit-cm": "cm",
+      "unit-mm": "mm",
+      "unit-mi": "mi",
+      "unit-yd": "yd",
+      "unit-ft": "ft",
+      "unit-in": "in",
+      "unit-c": "°C",
+      "unit-f": "°F",
+      "unit-k": "K",
+      "unit-kg": "kg",
+      "unit-g": "g",
+      "unit-mg": "mg",
+      "unit-lb": "lb",
+      "unit-oz": "oz",
+      "unit-st": "st",
+      "unit-t": "t",
+      "unit-b": "B",
+      "unit-kb": "KB",
+      "unit-mb": "MB",
+      "unit-gb": "GB",
+      "unit-tb": "TB",
+      "unit-cup": "cup",
+      "unit-ml": "ml",
+      "unit-floz": "fl oz",
+      "unit-tbsp": "tbsp",
+      "unit-tsp": "tsp",
+      "value": "Value",
+      "from": "From",
+      "to": "To",
+      "swap": "Swap units",
+      "equal": "equals",
+      "invalid": "—",
+      "note": "Conversions happen instantly in your browser. Temperature uses exact formulas; all other units use standard conversion factors with up to 4 decimal places."
+    },
+    "passwordStrength": {
+      "label": "Enter your password",
+      "placeholder": "Password to test",
+      "show": "Show",
+      "hide": "Hide",
+      "strength": "Strength: {label}",
+      "empty": "Empty",
+      "veryWeak": "Very weak",
+      "weak": "Weak",
+      "medium": "Medium",
+      "strong": "Strong",
+      "veryStrong": "Very strong",
+      "bits": "~{bits} bits of entropy",
+      "commonWarning": "This exactly matches one of the most common passwords. Change it immediately; it can be cracked in seconds by brute force.",
+      "checkLength": "At least 8 characters",
+      "checkLower": "Contains lowercase",
+      "checkUpper": "Contains uppercase",
+      "checkDigit": "Contains a digit",
+      "checkSymbol": "Contains a symbol",
+      "note": "Your password is tested only in this browser; it is never sent or saved. The entropy estimate is an upper bound based on character diversity; real strength depends on predictability."
+    },
+    "contactForm": {
+      "name": "Your name",
+      "namePlaceholder": "Your full name",
+      "email": "Email",
+      "emailPlaceholder": "name@example.com",
+      "message": "Your message",
+      "messagePlaceholder": "Write your question or feedback here…",
+      "fillError": "Please fill in all fields.",
+      "submit": "Send",
+      "note": "The form opens your email app with the message addressed to destek@freetoolsy.com. Your data is not stored on this site.",
+      "subject": "FreetoolsY contact",
+      "sent": "Your message is ready; your email app opened. Thank you! You can also reach us at"
+    }
+  }
+}
