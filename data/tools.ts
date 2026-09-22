@@ -178,10 +178,3 @@ export const popularTools: string[] = [
   "qr-kod-olusturucu",
   "base64",
 ];
-
-export const categoryPopularTool: Record<string, string> = {
-  metin: "karakter-sayaci",
-  guvenlik: "sifre-uretici",
-  gelistirici: "json-formatter",
-  hesaplama: "kdv-hesaplayici",
-};
