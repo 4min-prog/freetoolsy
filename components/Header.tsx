@@ -73,15 +73,15 @@ export default function Header() {
         </Link>
 
         <nav className="ml-auto flex items-center gap-1">
-          <div className="relative">
+          <div className="relative md:hidden">
             <button
               type="button"
-              onClick={() => toggleMenu("all")}
-              aria-expanded={openMenu === "all"}
+              onClick={() => toggleMenu("mobile-cats")}
+              aria-expanded={openMenu === "mobile-cats"}
               aria-haspopup="true"
               className="flex items-center gap-1.5 rounded-md px-2 py-1.5 text-sm text-muted transition-colors hover:text-text"
             >
-              {t("allTools")}
+              {t("categories")}
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -91,13 +91,13 @@ export default function Header() {
                 strokeLinejoin="round"
                 aria-hidden="true"
                 className={`h-3.5 w-3.5 transition-transform duration-200 ${
-                  openMenu === "all" ? "rotate-180" : ""
+                  openMenu === "mobile-cats" ? "rotate-180" : ""
                 }`}
               >
                 <path d="M6 9l6 6 6-6" />
               </svg>
             </button>
-            {openMenu === "all" && (
+            {openMenu === "mobile-cats" && (
               <div
                 role="menu"
                 className="absolute right-0 mt-1.5 w-60 rounded-xl border border-border bg-surface p-1.5 shadow-card-hover"
