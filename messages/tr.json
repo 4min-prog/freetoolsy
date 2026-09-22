@@ -1,679 +1,1120 @@
 {
   "Layout": {
-    "defaultTitle": "FreetoolsY — Free Online Tools",
+    "defaultTitle": "FreetoolsY — Ücretsiz Online Araçlar",
     "titleTemplate": "%s · FreetoolsY",
-    "description": "Free online tools for text, security, developer and calculation. No signup, no install — everything runs in your browser.",
-    "ogTitle": "FreetoolsY — Free Online Tools"
+    "description": "Metin, güvenlik, geliştirici ve hesaplama için ücretsiz online araçlar. Kayıt yok, kurulum yok — her şey tarayıcınızda çalışır.",
+    "ogTitle": "FreetoolsY — Ücretsiz Online Araçlar"
   },
   "Home": {
-    "title": "Free Online Tools — Fast, Simple, in English",
-    "description": "21 free online tools in 4 categories. Character counter, password generator, JSON formatter, VAT calculator and more. No signup, no install.",
-    "heroTitle": "Free Online Tools — Fast, Simple, in English",
-    "heroSubtitle": "{tools} free tools in {cats} categories: Text, Security, Developer and Calculation. No signup, no install; every calculation happens in your browser and your data never leaves it.",
-    "popularTitle": "Popular:",
-    "jsonldSiteDesc": "Free online tools for text, security, developer and calculation. No signup, no install.",
-    "jsonldAppDesc": "Character counter, password generator, JSON formatter, VAT calculator and more.",
+    "title": "Ücretsiz Online Araçlar — Hızlı, Basit",
+    "description": "4 kategoride 21 ücretsiz online araç. Karakter sayacı, parola üretici, JSON biçimlendirici, KDV hesaplama ve daha fazlası. Kayıt yok, kurulum yok.",
+    "heroTitle": "Ücretsiz Online Araçlar — Hızlı, Basit",
+    "heroSubtitle": "Kategoriler: {cats}, araçlar: {tools}. Metin, Güvenlik, Geliştirici ve Hesaplama. Kayıt yok, kurulum yok; her hesaplama tarayıcınızda yapılır ve verileriniz asla tarayıcınızdan çıkmaz.",
+    "popularTitle": "Popüler:",
+    "jsonldSiteDesc": "Metin, güvenlik, geliştirici ve hesaplama için ücretsiz online araçlar. Kayıt yok, kurulum yok.",
+    "jsonldAppDesc": "Karakter sayacı, parola üretici, JSON biçimlendirici, KDV hesaplama ve daha fazlası.",
     "faq": [
       {
-        "q": "Is FreetoolsY free?",
-        "a": "Yes. All tools are free; no signup, install or payment is required."
+        "q": "FreetoolsY ücretsiz mi?",
+        "a": "Evet. Tüm araçlar ücretsizdir; kayıt, kurulum veya ödeme gerekmez."
       },
       {
-        "q": "Is my data saved?",
-        "a": "No. Tools run in your browser; your text or numbers are never sent to a server."
+        "q": "Verilerim kaydediliyor mu?",
+        "a": "Hayır. Araçlar tarayıcınızda çalışır; metinleriniz veya sayılarınız asla bir sunucuya gönderilmez."
       },
       {
-        "q": "Which devices are supported?",
-        "a": "Any device with a web browser — desktop, tablet or phone."
+        "q": "Hangi cihazlar destekleniyor?",
+        "a": "Web tarayıcısı olan her cihaz — masaüstü, tablet veya telefon."
       }
     ]
   },
   "Common": {
-    "use": "Use"
+    "use": "Kullan"
   },
   "Header": {
-    "categories": "Categories",
-    "searchLabel": "Search tools",
-    "allTools": "All tools"
+    "categories": "Kategoriler",
+    "searchLabel": "Araçlarda ara",
+    "allTools": "Tüm Araçlar"
   },
   "LocaleSwitcher": {
-    "switchToTurkish": "Switch to Turkish",
-    "switchToEnglish": "Switch to English"
+    "switchToTurkish": "Türkçeye geç",
+    "switchToEnglish": "İngilizceye geç"
   },
   "Footer": {
-    "desc": "Free online tools: text, security, developer and calculation. No signup required; your data never leaves your browser.",
-    "navLabel": "Footer links",
-    "corporate": "Company",
-    "about": "About",
-    "privacy": "Privacy Policy",
-    "contact": "Contact",
-    "partner": "Partner",
-    "linkly": "Shorten links with → LinklyhHub",
-    "tools": "Tools",
-    "rights": "© 2026 FreetoolsY. All rights reserved."
+    "desc": "Ücretsiz online araçlar: metin, güvenlik, geliştirici ve hesaplama. Kayıt gerekmez; verileriniz asla tarayıcınızdan çıkmaz.",
+    "navLabel": "Alt bilgi bağlantıları",
+    "corporate": "Kurumsal",
+    "about": "Hakkımızda",
+    "privacy": "Gizlilik Politikası",
+    "contact": "İletişim",
+    "partner": "İş Ortaklığı",
+    "linkly": "Linkleri kısaltın → LinklyhHub",
+    "tools": "Araçlar",
+    "rights": "© 2026 FreetoolsY. Tüm hakları saklıdır."
   },
   "ThemeToggle": {
-    "toLight": "Switch to light mode",
-    "toDark": "Switch to dark mode"
+    "toLight": "Açık moda geç",
+    "toDark": "Koyu moda geç"
   },
   "AdSlot": {
-    "advertisement": "Advertisement"
+    "advertisement": "Reklam"
   },
   "ToolExplorer": {
-    "searchLabel": "Search tools",
-    "searchPlaceholder": "Search tools… e.g. password, JSON, VAT",
-    "results": "Results",
-    "toolCount": "{count} tools",
-    "noResults": "No tools matched \"{query}\". Try a different keyword.",
-    "categoryToolsCount": "{count} tools"
+    "searchLabel": "Araç ara",
+    "searchPlaceholder": "Araçlarda ara… örn. şifre, JSON, KDV",
+    "results": "Sonuçlar",
+    "toolCount": "{count} araç",
+    "noResults": "Aranan kriterle \"{query}\" eşleşen araç bulunamadı. Farklı bir anahtar kelime deneyin.",
+    "categoryToolsCount": "{count} araç"
   },
   "Categories": {
-    "metin": "Text",
-    "guvenlik": "Security",
-    "gelistirici": "Developer",
-    "hesaplama": "Calculation"
+    "metin": "Metin",
+    "guvenlik": "Güvenlik",
+    "gelistirici": "Geliştirici",
+    "hesaplama": "Hesaplama"
   },
   "ToolMeta": {
     "karakter-sayaci": {
-      "name": "Character Counter",
-      "desc": "Counts characters, characters without spaces, lines and paragraphs in your text instantly.",
-      "title": "Character Counter — Free Online Tool",
-      "pageDesc": "Count characters with and without spaces, words, lines and paragraphs instantly. Free and private; your text never leaves your browser.",
-      "intro": "Count characters with and without spaces, plus words, lines, sentences and paragraphs — all updated instantly."
+      "name": "Karakter Sayacı",
+      "desc": "Metninizdeki karakterleri, boşluksuz karakterleri, satırları ve paragrafları anında sayar.",
+      "title": "Karakter Sayacı — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Karakterleri boşluklu ve boşluksuz, kelimeleri, satırları ve paragrafları anında sayın. Ücretsiz ve gizli; metniniz asla tarayıcınızdan çıkmaz.",
+      "intro": "Boşluklu ve boşluksuz karakterleri, kelimeleri, satırları, cümleleri ve paragrafları sayın — hepsi anında güncellenir."
     },
     "kelime-sayaci": {
-      "name": "Word Counter",
-      "desc": "Counts words, sentences and characters; estimates reading time and highlights your most-used words.",
-      "title": "Word Counter — Free Online Tool",
-      "pageDesc": "Count words, characters, sentences and paragraphs; estimate reading time and find repeated words. Free, private, runs fully in your browser.",
-      "intro": "Word, character, sentence and paragraph statistics, an estimated reading time and your most repeated words."
+      "name": "Kelime Sayacı",
+      "desc": "Kelime, cümle ve karakterleri sayar; okuma süresini tahmin eder ve en çok kullandığınız kelimeleri vurgular.",
+      "title": "Kelime Sayacı — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Kelime, karakter, cümle ve paragraf sayın; okuma süresini tahmin edin ve tekrarlanan kelimeleri bulun. Ücretsiz, gizli ve tamamen tarayıcınızda çalışır.",
+      "intro": "Kelime, karakter, cümle ve paragraf istatistikleri, tahmini okuma süresi ve en çok tekrarladığınız kelimeler."
     },
     "harf-donusturucu": {
-      "name": "Case Converter",
-      "desc": "Converts text to uppercase, lowercase or title case and flips letter case with one click.",
-      "title": "Case Converter — Free Online Tool",
-      "pageDesc": "Convert text to uppercase, lowercase or title case and invert letter case in one click. Full Turkish character support; nothing is uploaded.",
-      "intro": "Make your text uppercase, lowercase, title case or flipped in one click and copy it instantly."
+      "name": "Harf Dönüştürücü",
+      "desc": "Metni tek tıkla büyük harfe, küçük harfe veya başlık biçimine çevirir ve harf durumunu tersine çevirir.",
+      "title": "Harf Dönüştürücü — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Metni tek tıkla büyük harfe, küçük harfe veya başlık biçimine çevirin ve harf durumunu tersine çevirin. Tam Türkçe karakter desteği; hiçbir şey yüklenmez.",
+      "intro": "Metninizi tek tıkla büyük harfe, küçük harfe, başlık biçimine çevirin veya ters çevirin ve anında kopyalayın."
     },
     "sifre-uretici": {
-      "name": "Password Generator",
-      "desc": "Generates strong random passwords in your browser with your choice of length and character types.",
-      "title": "Password Generator — Free Online Tool",
-      "pageDesc": "Generate strong, random passwords with your own length and character type choices. Cryptographically secure, never leaves your browser.",
-      "intro": "Generate strong, random passwords with your preferred length and character types."
+      "name": "Şifre Oluşturucu",
+      "desc": "Tarayıcınızda, seçtiğiniz uzunluk ve karakter türleriyle güçlü rastgele şifreler oluşturur.",
+      "title": "Şifre Oluşturucu — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Kendi uzunluk ve karakter türü seçimlerinizle güçlü, rastgele şifreler oluşturun. Kriptografik olarak güvenli; tarayıcınızı asla terk etmez.",
+      "intro": "Tercih ettiğiniz uzunluk ve karakter türleriyle güçlü, rastgele şifreler oluşturun."
     },
     "json-formatter": {
-      "name": "JSON Formatter",
-      "desc": "Formats, validates and prettifies JSON code; reports syntax errors with line numbers.",
-      "title": "JSON Formatter — Free Online Tool",
-      "pageDesc": "Format, validate and minify JSON instantly with syntax highlighting and line numbers. Fully client-side and private.",
-      "intro": "Format your JSON, validate its syntax and show errors — all with clean highlighting."
+      "name": "JSON Biçimlendirici",
+      "desc": "JSON kodunu biçimlendirir, doğrular ve süsler; sözdizimi hatalarını satır numaralarıyla bildirir.",
+      "title": "JSON Biçimlendirici — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Sözdizimi vurgulama ve satır numaralarıyla JSON'u anında biçimlendirin, doğrulayın ve küçültün. Tamamen tarayıcı tarafında ve gizli.",
+      "intro": "JSON'unuzu biçimlendirin, sözdizimini doğrulayın ve hataları gösterin — hepsi temiz bir vurgulamayla."
     },
     "base64": {
-      "name": "Base64 Encoder/Decoder",
-      "desc": "Converts text to Base64 or decodes Base64 data back to its original content.",
-      "title": "Base64 Encoder/Decoder — Free Online Tool",
-      "pageDesc": "Encode text to Base64 or decode Base64 back to the original content. Unicode and Turkish character safe; runs entirely in your browser.",
-      "intro": "Encode text as Base64 or decode Base64 data back to its original value."
+      "name": "Base64 Kodlayıcı/Çözücü",
+      "desc": "Metni Base64'e dönüştürür veya Base64 verisini orijinal içeriğine geri çözer.",
+      "title": "Base64 Kodlayıcı/Çözücü — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Metni Base64'e kodlayın veya Base64'ü orijinal içeriğine geri çözün. Unicode ve Türkçe karakter için güvenli; tamamen tarayıcınızda çalışır.",
+      "intro": "Metni Base64 olarak kodlayın veya Base64 verisini orijinal değerine geri çözün."
     },
     "url-encoder": {
-      "name": "URL Encoder/Decoder",
-      "desc": "Encodes text into URL-safe form or decodes encoded URL parameters into readable form.",
-      "title": "URL Encoder/Decoder — Free Online Tool",
-      "pageDesc": "Encode text into URL-safe notation or decode percent encoded URL parameters. UTF-8 and Turkish character friendly; fully client-side.",
-      "intro": "Encode special characters for URLs or decode encoded parameters back to readable text."
+      "name": "URL Kodlayıcı/Çözücü",
+      "desc": "Metni URL için güvenli biçime kodlar veya kodlanmış URL parametrelerini okunabilir biçime çözer.",
+      "title": "URL Kodlayıcı/Çözücü — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Metni URL için güvenli gösterime kodlayın veya yüzde kodlu URL parametrelerini çözün. UTF-8 ve Türkçe karakter dostu; tamamen tarayıcı tarafında.",
+      "intro": "URL'ler için özel karakterleri kodlayın veya kodlanmış parametreleri okunabilir metne geri çözün."
     },
     "bmi-hesaplayici": {
-      "name": "BMI Calculator",
-      "desc": "Calculates your body mass index from height and weight and interprets the result clearly.",
-      "title": "BMI Calculator — Free Online Tool",
-      "pageDesc": "Calculate your body mass index from height and weight, see your category and compare ranges on a scale. Free and fully client-side.",
-      "intro": "Calculate your body mass index from your height and weight and read a clear interpretation."
+      "name": "BMI Hesaplayıcı",
+      "desc": "Boy ve kilodan vücut kitle endeksinizi hesaplar ve sonucu net bir şekilde yorumlar.",
+      "title": "BMI Hesaplayıcı — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Vücut kitle endeksinizi boy ve kilonuzdan hesaplayın, kategorinizi görün ve aralıkları bir ölçekte karşılaştırın. Ücretsiz ve tamamen tarayıcı tarafında.",
+      "intro": "Vücut kitle endeksinizi boy ve kilonuzdan hesaplayın ve net bir yorum okuyun."
     },
     "kdv-hesaplayici": {
-      "name": "VAT Calculator",
-      "desc": "Calculates tax amount and total price instantly for your amount and VAT rate.",
-      "title": "VAT Calculator — Free Online Tool",
-      "pageDesc": "Compute VAT amount, net price and total price instantly for rates like 1%, 8%, 10%, 18% and 20%. Runs entirely in your browser.",
-      "intro": "Choose an amount and VAT rate to see the tax amount and the total price at once."
+      "name": "KDV Hesaplayıcı",
+      "desc": "Tutarınız ve KDV oranınız için vergi tutarını ve toplam fiyatı anında hesaplar.",
+      "title": "KDV Hesaplayıcı — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "%1, %8, %10, %18 ve %20 gibi oranlar için KDV tutarını, net fiyatı ve toplam fiyatı anında hesaplayın. Tamamen tarayıcınızda çalışır.",
+      "intro": "Vergi tutarını ve toplam fiyatı tek seferde görmek için bir tutar ve KDV oranı seçin."
     },
     "yuzde-hesaplayici": {
-      "name": "Percentage Calculator",
-      "desc": "Computes the percentage of a number, the percentage change and a share of a whole on one screen.",
-      "title": "Percentage Calculator — Free Online Tool",
-      "pageDesc": "Calculate a percentage of a number, a percentage change and a part of a whole on a single screen. Free and privacy friendly.",
-      "intro": "Percentage of a number, percentage change and a part of a whole — all on one screen."
+      "name": "Yüzde Hesaplayıcı",
+      "desc": "Bir sayının yüzdesini, yüzde değişimini ve bir bütünün payını tek ekranda hesaplar.",
+      "title": "Yüzde Hesaplayıcı — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Tek ekranda bir sayının yüzdesini, yüzde değişimini ve bir bütünün parçasını hesaplayın. Ücretsiz ve gizlilik dostu.",
+      "intro": "Bir sayının yüzdesi, yüzde değişimi ve bir bütünün parçası — hepsi tek ekranda."
     },
     "yas-hesaplayici": {
-      "name": "Age Calculator",
-      "desc": "Shows your age in years, months, days, hours, minutes and seconds live from your birth date.",
-      "title": "Age Calculator — Free Online Tool",
-      "pageDesc": "Calculate your exact age in years, months, days, hours, minutes and seconds with a live counter. Free and fully client-side.",
-      "intro": "See your precise age in years, months, days, hours, minutes and seconds with a live counter."
+      "name": "Yaş Hesaplayıcı",
+      "desc": "Doğum tarihinizden itibaren yaşınızı yıl, ay, gün, saat, dakika ve saniye olarak canlı gösterir.",
+      "title": "Yaş Hesaplayıcı — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Canlı bir sayaçla tam yaşınızı yıl, ay, gün, saat, dakika ve saniye olarak hesaplayın. Ücretsiz ve tamamen tarayıcı tarafında.",
+      "intro": "Canlı bir sayaçla yaşınızı yıl, ay, gün, saat, dakika ve saniye olarak tam olarak görün."
     },
     "qr-kod-olusturucu": {
-      "name": "QR Code Generator",
-      "desc": "Turns text or a link into a QR code instantly in your browser; download it as PNG.",
-      "title": "QR Code Generator — Free Online Tool",
-      "pageDesc": "Create a QR code from any text or link instantly and download it as a high-resolution PNG. Free and private; content never leaves your browser.",
-      "intro": "Turn any text or link into a scannable QR code and download it as a PNG."
+      "name": "QR Kod Oluşturucu",
+      "desc": "Metni veya bir bağlantıyı tarayıcınızda anında QR koda dönüştürür; PNG olarak indirin.",
+      "title": "QR Kod Oluşturucu — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Herhangi bir metin veya bağlantıdan anında QR kod oluşturun ve yüksek çözünürlüklü PNG olarak indirin. Ücretsiz ve gizli; içerik tarayıcınızı asla terk etmez.",
+      "intro": "Herhangi bir metni veya bağlantıyı taranabilir bir QR koda dönüştürün ve PNG olarak indirin."
     },
     "sha-hash-uretici": {
-      "name": "SHA Hash Generator",
-      "desc": "Computes the SHA-1, SHA-256 or SHA-512 digest of your text in the browser; copy it with one click.",
-      "title": "SHA Hash Generator — Free Online Tool",
-      "pageDesc": "Compute the SHA-1, SHA-256 or SHA-512 digest of any text in your browser. Private by design; your input never leaves your device.",
-      "intro": "Compute a SHA-1, SHA-256 or SHA-512 digest of your text and copy it instantly."
+      "name": "SHA Hash Üretici",
+      "desc": "Metninizin SHA-1, SHA-256 veya SHA-512 özetini tarayıcıda hesaplar; tek tıkla kopyalayın.",
+      "title": "SHA Hash Üretici — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Herhangi bir metnin SHA-1, SHA-256 veya SHA-512 özetini tarayıcınızda hesaplayın. Tasarım gereği gizli; girdiniz cihazınızı asla terk etmez.",
+      "intro": "Metninizin SHA-1, SHA-256 veya SHA-512 özetini hesaplayın ve anında kopyalayın."
     },
     "tarih-farki": {
-      "name": "Date Difference",
-      "desc": "Calculates the difference between two dates in years, months, days, hours and weeks instantly.",
-      "title": "Date Difference Calculator — Free Online Tool",
-      "pageDesc": "Find the difference between two dates in years, months, days, hours, minutes and weeks. Free, accurate and fully client-side.",
-      "intro": "Pick two dates and see the difference in years, months, days, hours and weeks."
+      "name": "Tarih Farkı Hesaplayıcı",
+      "desc": "İki tarih arasındaki farkı yıl, ay, gün, saat ve hafta olarak anında hesaplar.",
+      "title": "Tarih Farkı Hesaplayıcı — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "İki tarih arasındaki farkı yıl, ay, gün, saat, dakika ve hafta olarak bulun. Ücretsiz, doğru ve tamamen tarayıcı tarafında.",
+      "intro": "İki tarih seçin ve farkı yıl, ay, gün, saat ve hafta olarak görün."
     },
     "renk-donusturucu": {
-      "name": "Color Converter",
-      "desc": "Converts between HEX, RGB and HSL instantly with a live preview and one-click copying.",
-      "title": "Color Converter (HEX, RGB, HSL) — Free Tool",
-      "pageDesc": "Convert between HEX, RGB and HSL color values instantly, preview the result and copy the format you need. Free and private.",
-      "intro": "Convert between HEX, RGB and HSL values, preview the color and copy the format you need."
+      "name": "Renk Dönüştürücü",
+      "desc": "Canlı önizleme ve tek tıkla kopyalama ile HEX, RGB ve HSL arasında anında dönüştürür.",
+      "title": "Renk Dönüştürücü (HEX, RGB, HSL) — Ücretsiz Araç",
+      "pageDesc": "HEX, RGB ve HSL renk değerleri arasında anında dönüştürün, sonucu önizleyin ve ihtiyacınız olan biçimi kopyalayın. Ücretsiz ve gizli.",
+      "intro": "HEX, RGB ve HSL değerleri arasında dönüştürün, rengi önizleyin ve ihtiyacınız olan biçimi kopyalayın."
     },
     "uuid-uretici": {
-      "name": "UUID Generator",
-      "desc": "Generates random UUID v4 (GUID) identifiers in one click; copy several at once.",
-      "title": "UUID Generator (GUID) — Free Online Tool",
-      "pageDesc": "Generate random UUID v4 identifiers in one click and copy several at once. Cryptographically random and completely client-side.",
-      "intro": "Generate random UUID v4 (GUID) identifiers and copy several values at once."
+      "name": "UUID Üretici",
+      "desc": "Tek tıkla rastgele UUID v4 (GUID) tanımlayıcıları üretir; birkaç tanesini birden kopyalayın.",
+      "title": "UUID Üretici (GUID) — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Tek tıkla rastgele UUID v4 tanımlayıcıları üretin ve birkaç tanesini birden kopyalayın. Kriptografik olarak rastgele ve tamamen tarayıcı tarafında.",
+      "intro": "Rastgele UUID v4 (GUID) tanımlayıcıları üretin ve birkaç değeri aynı anda kopyalayın."
     },
     "birim-donusturucu": {
-      "name": "Unit Converter",
-      "desc": "Converts between length, weight, volume, area and temperature units quickly.",
-      "title": "Unit Converter — Free Online Tool",
-      "pageDesc": "Convert between length, weight, volume, area and temperature units with instant results. Free, accurate and fully client-side.",
-      "intro": "Convert between length, weight, volume, area and temperature units instantly."
+      "name": "Birim Dönüştürücü",
+      "desc": "Uzunluk, ağırlık, hacim, alan ve sıcaklık birimleri arasında hızlıca dönüştürür.",
+      "title": "Birim Dönüştürücü — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Anında sonuçlarla uzunluk, ağırlık, hacim, alan ve sıcaklık birimleri arasında dönüştürün. Ücretsiz, doğru ve tamamen tarayıcı tarafında.",
+      "intro": "Uzunluk, ağırlık, hacim, alan ve sıcaklık birimleri arasında anında dönüştürün."
     },
     "parola-guc-testi": {
-      "name": "Password Strength Checker",
-      "desc": "Measures how strong your password is with an entropy estimate and suggests improvements.",
-      "title": "Password Strength Test — Free Online Tool",
-      "pageDesc": "Check how strong your password really is with an entropy estimate and a checklist of missing character types. 100% client-side and private.",
-      "intro": "Measure how strong your password is, see missing character types and estimated entropy."
+      "name": "Şifre Gücü Testi",
+      "desc": "Şifrenizin ne kadar güçlü olduğunu bir entropi tahminiyle ölçer ve iyileştirme önerileri sunar.",
+      "title": "Şifre Gücü Testi — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Şifrenizin gerçekte ne kadar güçlü olduğunu bir entropi tahmini ve eksik karakter türleri listesiyle kontrol edin. %100 tarayıcı tarafında ve gizli.",
+      "intro": "Şifrenizin ne kadar güçlü olduğunu ölçün, eksik karakter türlerini ve tahmini entropiyi görün."
     },
     "sayi-donusturucu": {
-      "name": "Number Base Converter",
-      "desc": "Converts numbers between binary, octal, decimal and hexadecimal instantly in your browser.",
-      "title": "Number Base Converter — Free Online Tool",
-      "pageDesc": "Convert numbers between binary, octal, decimal and hexadecimal with exact precision. Big-number safe, free and fully client-side.",
-      "intro": "Type a number, choose its base, and see binary, octal, decimal and hexadecimal side by side."
+      "name": "Sayı Tabanı Dönüştürücü",
+      "desc": "Sayıları ikili, sekizli, onlu ve onaltılı sistemler arasında tarayıcınızda anında dönüştürür.",
+      "title": "Sayı Tabanı Dönüştürücü — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Sayıları tam hassasiyetle ikili, sekizli, onlu ve onaltılı sistemler arasında dönüştürün. Büyük sayılar için güvenli, ücretsiz ve tamamen tarayıcı tarafında.",
+      "intro": "Bir sayı yazın, tabanını seçin ve ikili, sekizli, onlu ve onaltılı karşılıklarını yan yana görün."
     },
     "regex-testi": {
-      "name": "Regex Tester",
-      "desc": "Tests a regular expression against your text live and highlights every match.",
-      "title": "Regex Tester — Free Online Tool",
-      "pageDesc": "Test regular expressions against any text with live highlighting and a match counter. Supports the g, i, m, s and u flags; 100% client-side.",
-      "intro": "Write a pattern, pick flags, and see every match highlighted as you type."
+      "name": "Regex Testi",
+      "desc": "Metninizdeki düzenli ifadeyi canlı olarak test eder ve her eşleşmeyi vurgular.",
+      "title": "Regex Testi — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Canlı vurgulama ve eşleşme sayacıyla metinlerde düzenli ifadeleri test edin. g, i, m, s ve u bayraklarını destekler; %100 tarayıcı tarafında.",
+      "intro": "Bir kalıp yazın, bayrakları seçin ve yazdıkça her eşleşmenin vurgulandığını görün."
     },
     "bosluk-temizleyici": {
-      "name": "Whitespace Cleaner",
-      "desc": "Trims lines, collapses repeated spaces and removes blank lines from your text.",
-      "title": "Whitespace Cleaner — Free Online Tool",
-      "pageDesc": "Trim lines, collapse multiple spaces, remove empty lines or strip all whitespace from any text in one click. Free and private.",
-      "intro": "Clean trailing spaces, extra gaps and blank lines from any text in one click."
+      "name": "Boşluk Temizleyici",
+      "desc": "Satırları kırpar, tekrarlanan boşlukları birleştirir ve metninizdeki boş satırları kaldırır.",
+      "title": "Boşluk Temizleyici — Ücretsiz Çevrimiçi Araç",
+      "pageDesc": "Metni kırpın, birden fazla boşluğu birleştirin, boş satırları kaldırın veya tek tıkla tüm boşlukları temizleyin. Ücretsiz ve gizli.",
+      "intro": "Herhangi bir metindeki sondaki boşlukları, fazla boşlukları ve boş satırları tek tıkla temizleyin."
     }
   },
   "ToolContent": {
     "karakter-sayaci": [
-      { "h": "What is a Character Counter?", "p": "A Character Counter counts the characters in your pasted or typed text with and without spaces, as well as words, lines, sentences and paragraphs. It is ideal for posts with length limits, SEO meta descriptions, SMS texts, school assignments and limited form fields. Copy, paste and see everything in seconds." },
-      { "h": "Where do character limits matter?", "list": ["Social media: A Twitter/X post is 280 characters; an Instagram bio allows 150.", "SEO meta description: Google generally shows meta descriptions of 150–160 characters.", "SMS: One SMS accepts 160 characters; check how many your message uses.", "Assignments and essays: Verify word or line limits before submission.", "Form fields: Confirm you stay within allowed input lengths instantly."] },
-      { "h": "Spaces count or not?", "p": "The count with spaces includes every character including spaces and tabs. The count without spaces ignores them and is useful when exact letter and digit length matters. The difference between the two tells you how many spaces your text contains." },
-      { "h": "Is my data safe?", "p": "Yes. Everything runs in your browser; your text is never sent, uploaded or stored. You can safely check code snippets, private notes and sensitive text without signing up or paying." },
-      { "h": "FAQ", "list": ["What does \"without spaces\" mean? The character count that ignores spaces.", "Does it work on mobile? Yes — it runs in any browser on any device.", "Is my text saved? No; everything happens on your device."] }
+      {
+        "h": "Karakter Sayacı Nedir?",
+        "p": "Karakter Sayacı, yapıştırdığınız veya yazdığınız metindeki karakterleri boşluklu ve boşluksuz olarak sayar; ayrıca kelime, satır, cümle ve paragraf sayılarını da verir. Uzunluk sınırlı gönderiler, SEO meta açıklamaları, SMS metinleri, ödevler ve karakter sınırı olan form alanları için idealdir. Yapıştırın, birkaç saniyede her şeyi görün."
+      },
+      {
+        "h": "Karakter sınırları nerede önemlidir?",
+        "list": [
+          "Sosyal medya: Twitter/X gönderisi 280 karakterdir; Instagram biyografisi 150 karakter izin verir.",
+          "SEO meta açıklaması: Google genellikle 150–160 karakterlik meta açıklamalarını gösterir.",
+          "SMS: Tek SMS 160 karakter kabul eder; mesajınızın kaç karakter kullandığını kontrol edin.",
+          "Ödev ve kompozisyonlar: Teslim etmeden önce kelime veya satır sınırlarını kontrol edin.",
+          "Form alanları: İzin verilen giriş uzunluklarında kalıp kalmadığınızı anında görün."
+        ]
+      },
+      {
+        "h": "Boşluklar sayılır mı?",
+        "p": "Boşluklu sayım, sekmeler ve boşluklar dahil her karakteri içerir. Boşluksuz sayım onları yok sayar ve tam harf/rakam uzunluğunun önemli olduğu durumlarda kullanışlıdır. İki sayı arasındaki fark, metninizde kaç boşluk olduğunu gösterir."
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Her şey tarayıcınızda çalışır; metniniz hiçbir zaman gönderilmez, yüklenmez veya saklanmaz. Kayıt olmadan ve ödeme yapmadan kod parçacıkları, özel notlar ve hassas metinleri güvenle kontrol edebilirsiniz."
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "\"Boşluksuz\" ne demektir? Boşlukları yok sayan karakter sayımı.",
+          "Mobilde çalışır mı? Evet — her cihazdaki her tarayıcıda çalışır.",
+          "Metnim kaydediliyor mu? Hayır; her şey cihazınızda gerçekleşir."
+        ]
+      }
     ],
     "kelime-sayaci": [
-      { "h": "What is a Word Counter?", "p": "A Word Counter instantly calculates the number of words, characters, sentences and paragraphs in your text. It also estimates how long your text takes to read and lists your most-used words, so you can size a blog post, essay or resume and spot repetitions on one screen." },
-      { "h": "How is reading time estimated?", "p": "The tool assumes an average adult reads about 200 words per minute and rounds the result. Bloggers and editors use this value to tell audiences how long a post takes to read." },
-      { "h": "Why are repeated words useful?", "p": "The most-used words list shows which phrases dominate your text. It helps avoid overusing a keyword in SEO copy and is practical for checking word variety in academic writing." },
-      { "h": "Who can use it?", "list": ["Students: quick checks against word limits in essays and theses.", "Bloggers: measuring post length and reading time.", "SEO specialists: monitoring content density and keyword repetition.", "Translators: comparing the ratio of translated to original text."] },
-      { "h": "Is my data safe?", "p": "Yes. All calculations run in your browser; your text is never sent to or stored on a server. No signup and completely free." }
+      {
+        "h": "Kelime Sayacı Nedir?",
+        "p": "Kelime Sayacı, metninizdeki kelime, karakter, cümle ve paragraf sayısını anında hesaplar. Ayrıca metninizi okumak için gereken süreyi tahmin eder ve en çok kullandığınız kelimeleri listeler; böylece blog yazısı, makale veya özgeçmişinizin uzunluğunu tek ekranda ölçer, tekrarları fark edersiniz."
+      },
+      {
+        "h": "Okuma süresi nasıl tahmin edilir?",
+        "p": "Araç, ortalama bir yetişkinin dakikada yaklaşık 200 kelime okuduğunu varsayar ve sonucu yuvarlar. Blog yazarları ve editörler bu değeri, okuyuculara bir yazının ne kadar sürede okunacağını bildirmek için kullanır."
+      },
+      {
+        "h": "Tekrarlayan kelimeler neden işe yarar?",
+        "p": "En çok kullanılan kelimeler listesi, metninizde hangi ifadelerin baskın olduğunu gösterir. SEO metninde bir anahtar kelimenin aşırı kullanılmasını önlemeye yardımcı olur ve akademik yazılarda kelime çeşitliliğini kontrol etmek için pratiktir."
+      },
+      {
+        "h": "Kimler kullanabilir?",
+        "list": [
+          "Öğrenciler: Makale ve tezlerde kelime sınırlarını hızlıca kontrol etmek için.",
+          "Blog yazarları: Yazı uzunluğunu ve okuma süresini ölçmek için.",
+          "SEO uzmanları: İçerik yoğunluğunu ve anahtar kelime tekrarını izlemek için.",
+          "Çevirmenler: Çeviri ile özgün metin oranını karşılaştırmak için."
+        ]
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Tüm hesaplamalar tarayıcınızda çalışır; metniniz hiçbir zaman sunucuya gönderilmez veya saklanmaz. Kayıt yok, tamamen ücretsiz."
+      }
     ],
     "harf-donusturucu": [
-      { "h": "What is a Case Converter?", "p": "A Case Converter changes the letter case of your text in seconds. Paste your text, choose the conversion you want and copy the result in one click. Headlines, resume bullets and social posts can be reformatted instantly." },
-      { "h": "Which conversions are available?", "list": ["Uppercase: makes every letter uppercase for emphasis and headings.", "Lowercase: makes every letter lowercase and restores normal form.", "Title Case: capitalizes the first letter of every word for article and blog titles.", "Invert: flips uppercase/lowercase, perfect for text mistyped with Caps Lock on."] },
-      { "h": "Does it support Turkish characters?", "p": "Yes. Turkish letters are handled specially: ç, ğ, ı, i, ö, ş, ü correctly become Ç, Ğ, I, İ, Ö, Ş, Ü. This keeps results consistent for Turkish content." },
-      { "h": "When is it used?", "list": ["Fixing text accidentally typed with Caps Lock on.", "Formatting headings, subtitles and resume titles quickly.", "Emphasizing quotes or slogans in uppercase.", "Standardizing case-sensitive fields like file names and form inputs."] },
-      { "h": "Is my data safe?", "p": "Yes. Conversion happens entirely in your browser; your text is never sent or stored. No signup, no install and completely free." }
+      {
+        "h": "Büyük/Küçük Harf Dönüştürücü Nedir?",
+        "p": "Büyük/Küçük Harf Dönüştürücü, metninizin harf biçimini saniyeler içinde değiştirir. Metninizi yapıştırın, istediğiniz dönüşümü seçin ve sonucu tek tıkla kopyalayın. Başlıklar, özgeçmiş maddeleri ve sosyal medya paylaşımları anında yeniden biçimlenebilir."
+      },
+      {
+        "h": "Hangi dönüşümler mevcuttur?",
+        "list": [
+          "Büyük harf: Vurgu ve başlıklar için her harfi büyük yapar.",
+          "Küçük harf: Her harfi küçük yapar ve normal biçimini geri yükler.",
+          "Başlık biçimi (Title Case): Makale ve blog başlıkları için her kelimenin ilk harfini büyük yapar.",
+          "Ters çevir: Büyük/küçük harfleri yer değiştirir; Caps Lock açıkken yanlış yazılmış metinler için idealdir."
+        ]
+      },
+      {
+        "h": "Türkçe karakterler desteklenir mi?",
+        "p": "Evet. Türkçe harfler özel olarak ele alınır: ç, ğ, ı, i, ö, ş, ü doğru şekilde Ç, Ğ, I, İ, Ö, Ş, Ü olur. Böylece Türkçe içeriklerde sonuçlar tutarlı kalır."
+      },
+      {
+        "h": "Ne zaman kullanılır?",
+        "list": [
+          "Caps Lock açıkken yanlışlıkla yazılmış metinleri düzeltmek için.",
+          "Başlıklar, alt başlıklar ve özgeçmiş başlıklarını hızlıca biçimlendirmek için.",
+          "Alıntıları veya sloganları büyük harfle vurgulamak için.",
+          "Dosya adları ve form girişleri gibi büyük/küçük harfe duyarlı alanları standartlaştırmak için."
+        ]
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Dönüştürme tamamen tarayıcınızda gerçekleşir; metniniz hiçbir zaman gönderilmez veya saklanmaz. Kayıt yok, kurulum yok, tamamen ücretsiz."
+      }
     ],
     "sifre-uretici": [
-      { "h": "What is a Password Generator?", "p": "A Password Generator creates strong, hard-to-guess passwords based on the length and character types you choose. Slide the length between 8 and 64 characters and tick any combination of uppercase, lowercase, digits and symbols. Every generated password shows its strength as weak, medium, strong or very strong, and you can generate up to 5 at once." },
-      { "h": "How is password strength measured?", "p": "The strength indicator uses an entropy calculation that combines length with the size of the character pool. The longer and more diverse a password, the more combinations it contains and the more resistant it is to brute-force attacks. Start with at least 12–16 characters and all four character types." },
-      { "h": "Why is this generator safe?", "p": "Passwords are generated entirely in your browser and never sent anywhere. Instead of the weak Math.random, the tool uses the browser's cryptographically secure generator (crypto.getRandomValues). Generated passwords are never stored or transmitted." },
-      { "h": "Strong password tips", "list": ["Use a different password for every account; never reuse.", "Avoid birth dates, names and keyboard-pattern sequences.", "Store passwords in a password manager or another secure place.", "Always enable two-factor authentication (2FA) when offered."] },
-      { "h": "Free and mobile friendly", "p": "No signup or download is needed; it works in any browser on phone, tablet or desktop. One click is enough to get a strong password whenever you need one." }
+      {
+        "h": "Şifre Üretici Nedir?",
+        "p": "Şifre Üretici, seçtiğiniz uzunluk ve karakter türlerine dayalı olarak güçlü, tahmin edilmesi zor şifreler oluşturur. Uzunluğu 8 ile 64 karakter arasında kaydırın ve büyük harf, küçük harf, rakam ve sembollerden dilediğiniz kombinasyonu işaretleyin. Üretilen her şifrenin gücü zayıf, orta, güçlü veya çok güçlü olarak gösterilir ve aynı anda 5 adede kadar şifre üretebilirsiniz."
+      },
+      {
+        "h": "Şifre gücü nasıl ölçülür?",
+        "p": "Güç göstergesi, uzunluk ile karakter havuzunun büyüklüğünü birleştiren bir entropi hesaplaması kullanır. Şifre ne kadar uzun ve çeşitli olursa, içindeki kombinasyon o kadar artar ve kaba kuvvet saldırılarına karşı o kadar dirençli olur. En az 12–16 karakter ve dört karakter türünün tamamıyla başlayın."
+      },
+      {
+        "h": "Bu üretici neden güvenlidir?",
+        "p": "Şifreler tamamen tarayıcınızda üretilir ve hiçbir yere gönderilmez. Zayıf Math.random yerine araç, tarayıcının kriptografik olarak güvenli üreticisini (crypto.getRandomValues) kullanır. Üretilen şifreler hiçbir zaman saklanmaz veya iletilmez."
+      },
+      {
+        "h": "Güçlü şifre ipuçları",
+        "list": [
+          "Her hesap için farklı bir şifre kullanın; asla yeniden kullanmayın.",
+          "Doğum tarihleri, isimler ve klavye deseni dizilerinden kaçının.",
+          "Şifreleri bir şifre yöneticisinde veya başka güvenli bir yerde saklayın.",
+          "Sunulduğunda her zaman iki faktörlü doğrulamayı (2FA) etkinleştirin."
+        ]
+      },
+      {
+        "h": "Ücretsiz ve mobil uyumlu",
+        "p": "Kayıt veya indirme gerekmez; telefon, tablet veya masaüstündeki her tarayıcıda çalışır. Güçlü bir şifreye ihtiyacınız olduğunda tek tıklama yeterlidir."
+      }
     ],
     "json-formatter": [
-      { "h": "What is a JSON Formatter?", "p": "A JSON Formatter converts raw JSON into formatted, readable output. Paste your JSON on the left, click Format, and get indented, color-coded, line-numbered output on the right. The Minify option compresses JSON to a single line to reduce size." },
-      { "h": "Why is formatting important?", "p": "API responses often arrive as unreadable one-line data. When objects nest inside objects and arrays inside arrays, it is hard to tell which field belongs to which structure. Formatting separates levels with indentation and visually distinguishes keys from values, so you can quickly spot errors or missing fields." },
-      { "h": "How does error checking work?", "p": "Pasting invalid JSON shows a red error message. The browser's parser reports the approximate location and cause — a missing comma, a wrong quote or an extra brace — so you find the problem in large data sets within seconds." },
-      { "h": "When is it used?", "list": ["Making API responses readable while inspecting and testing.", "Validating syntax when editing config files like package.json.", "Minifying JSON to shrink transport and cache size.", "Generating and checking sample data while writing scripts."] },
-      { "h": "Is my data safe?", "p": "Yes. Parsing and formatting happen entirely in your browser; your JSON is never sent or stored. Even configs containing API keys can be formatted safely." }
+      {
+        "h": "JSON Biçimlendirici Nedir?",
+        "p": "JSON Biçimlendirici, ham JSON'u biçimli, okunabilir bir çıktıya dönüştürür. JSON'unuzu sol tarafta yapıştırın, Biçimlendir'e tıklayın; sağ tarafta girintili, renk kodlu ve satır numaralı bir çıktı alın. Küçült seçeneği, boyutu azaltmak için JSON'u tek satıra sıkıştırır."
+      },
+      {
+        "h": "Biçimlendirme neden önemlidir?",
+        "p": "API yanıtları çoğu zaman okunması zor tek satırlık veriler olarak gelir. Nesneler nesnelerin içine, diziler dizilerin içine yerleştiğinde hangi alanın hangi yapıya ait olduğunu söylemek zordur. Biçimlendirme seviyeleri girintiyle ayırır ve anahtarları değerlerden görsel olarak ayırır; böylece hataları veya eksik alanları hızlıca fark edersiniz."
+      },
+      {
+        "h": "Hata denetimi nasıl çalışır?",
+        "p": "Geçersiz JSON yapıştırdığınızda kırmızı bir hata mesajı görünür. Tarayıcının ayrıştırıcısı yaklaşık konumu ve nedenini bildirir — eksik bir virgül, yanlış bir tırnak veya fazladan bir küme parantezi — böylece büyük veri setlerinde sorunu saniyeler içinde bulursunuz."
+      },
+      {
+        "h": "Ne zaman kullanılır?",
+        "list": [
+          "API yanıtlarını incelerken ve test ederken okunabilir hale getirmek için.",
+          "package.json gibi yapılandırma dosyalarını düzenlerken sözdizimini doğrulamak için.",
+          "Aktarım ve önbellek boyutunu küçültmek için JSON'u küçültmek için.",
+          "Betik yazarken örnek veri oluşturmak ve kontrol etmek için."
+        ]
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Ayrıştırma ve biçimlendirme tamamen tarayıcınızda gerçekleşir; JSON'unuz hiçbir zaman gönderilmez veya saklanmaz. API anahtarları içeren yapılandırma dosyaları bile güvenle biçimlendirilebilir."
+      }
     ],
     "base64": [
-      { "h": "What is a Base64 Encoder/Decoder?", "p": "A Base64 Encoder/Decoder converts binary data into printable ASCII characters and back again. Type your text and press Encode to get a Base64 string; paste Base64 data and press Decode to recover the original content." },
-      { "h": "Where is Base64 used?", "list": ["Email attachments: the MIME standard transports attachments as Base64.", "Data URIs: images and small files can be embedded in HTML as data:image/png;base64,…", "API authentication: Basic Auth encodes username and password in Base64.", "JSON payloads: non-text fields are stored as Base64."] },
-      { "h": "Does it handle Turkish and Unicode?", "p": "Yes. The tool encodes your text as UTF-8 first, then converts to Base64. Turkish characters, emojis and other alphabets survive without corruption, and because Base64 is pure ASCII it travels reliably across platforms." },
-      { "h": "Is Base64 encryption?", "p": "No. Base64 is an encoding, not encryption — it does not hide data, it only makes it portable. Never rely on Base64 alone to protect passwords or private information; use real encryption for sensitive data." },
-      { "h": "Is my data safe?", "p": "Yes. Both operations run in your browser; your data is never sent or stored. No signup and completely free." }
+      {
+        "h": "Base64 Kodlayıcı/Çözücü Nedir?",
+        "p": "Base64 Kodlayıcı/Çözücü, ikili veriyi yazdırılabilir ASCII karakterlerine ve geriye dönüştürür. Metninizi yazın ve Kodla'ya basın, Base64 dizesi alın; Base64 verisini yapıştırın ve Çöz'e basın, özgün içeriği geri kazanın."
+      },
+      {
+        "h": "Base64 nerede kullanılır?",
+        "list": [
+          "E-posta ekleri: MIME standardi ekleri Base64 olarak iletir.",
+          "Data URI'leri: Görseller ve küçük dosyalar HTML'e data:image/png;base64,… olarak gömülebilir.",
+          "API kimlik doğrulama: Basic Auth, kullanıcı adını ve şifreyi Base64 olarak kodlar.",
+          "JSON payload'ları: Metin olmayan alanlar Base64 olarak saklanır."
+        ]
+      },
+      {
+        "h": "Türkçe ve Unicode desteklenir mi?",
+        "p": "Evet. Araç önce metninizi UTF-8 olarak kodlar, ardından Base64'e dönüştürür. Türkçe karakterler, emojiler ve diğer alfabeler bozulmadan kalır; ayrıca Base64 saf ASCII olduğu için platformlar arasında güvenle taşınır."
+      },
+      {
+        "h": "Base64 şifreleme midir?",
+        "p": "Hayır. Base64 bir kodlamadır, şifreleme değildir — veriyi gizlemez, yalnızca taşınabilir hale getirir. Şifreleri veya özel bilgileri korumak için asla yalnızca Base64'e güvenmeyin; hassas veriler için gerçek şifreleme kullanın."
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Her iki işlem de tarayıcınızda çalışır; verileriniz hiçbir zaman gönderilmez veya saklanmaz. Kayıt yok, tamamen ücretsiz."
+      }
     ],
     "url-encoder": [
-      { "h": "What is a URL Encoder/Decoder?", "p": "A URL Encoder/Decoder converts characters that are unsafe or change meaning in URLs into a safe form, and reverses the conversion. Encoding replaces spaces, Turkish letters, quotes and special marks with percent notation (%20, %C3%A7); decoding turns them back into readable text." },
-      { "h": "When is URL encoding needed?", "list": ["Search parameters: adding search phrases with spaces or Turkish characters to a query string.", "Form data: safely placing user text into GET requests.", "Sharing links: preventing & and + from being misinterpreted inside URLs.", "Code snippets: passing JSON, HTML or script content as a URL parameter."] },
-      { "h": "How are Turkish characters handled?", "p": "The tool encodes text as UTF-8, so ç, ğ, ı, ö, ş, ü and emojis become percent sequences like %C3%BC without corruption, and decoding restores full Turkish letters. Space-to-plus differences are handled automatically." },
-      { "h": "What encoding does it use?", "p": "It uses encodeURIComponent, the recommended comprehensive encoding for parameter values. Every character except A–Z, a–z, 0–9 and a few marks becomes percent notation, so browsers and servers always read your parameters identically." },
-      { "h": "Is my data safe?", "p": "Yes. Encoding and decoding happen entirely in your browser; inputs are never sent or stored. No signup, no install and completely free." }
+      {
+        "h": "URL Kodlayıcı/Çözücü Nedir?",
+        "p": "URL Kodlayıcı/Çözücü, URL'lerde güvenli olmayan veya anlam değiştiren karakterleri güvenli bir biçime dönüştürür ve işlemi geri alır. Kodlama; boşlukları, Türkçe harfleri, tırnakları ve özel işaretleri yüzde gösterimiyle (%20, %C3%A7) değiştirir; çözümleme onları tekrar okunabilir metne çevirir."
+      },
+      {
+        "h": "URL kodlaması ne zaman gerekir?",
+        "list": [
+          "Arama parametreleri: Sorgu dizesine boşluklu veya Türkçe karakterli arama ifadeleri eklemek için.",
+          "Form verileri: Kullanıcı metnini GET isteklerine güvenle yerleştirmek için.",
+          "Bağlantı paylaşma: & ve + sembollerinin URL içinde yanlış yorumlanmasını önlemek için.",
+          "Kod parçacıkları: JSON, HTML veya betik içeriğini URL parametresi olarak iletmek için."
+        ]
+      },
+      {
+        "h": "Türkçe karakterler nasıl ele alınır?",
+        "p": "Araç metni UTF-8 olarak kodlar; bu nedenle ç, ğ, ı, ö, ş, ü ve emojiler bozulmadan %C3%BC gibi yüzde dizilerine dönüşür ve çözümleme tam Türkçe harfleri geri yükler. Boşluk–artı farkları otomatik olarak ele alınır."
+      },
+      {
+        "h": "Hangi kodlama kullanılır?",
+        "p": "Parametre değerleri için önerilen kapsamlı kodlama olan encodeURIComponent kullanılır. A–Z, a–z, 0–9 ve birkaç işaret dışındaki her karakter yüzde gösterimine dönüşür; böylece tarayıcılar ve sunucular parametrelerinizi her zaman aynı şekilde okur."
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Kodlama ve çözümleme tamamen tarayıcınızda gerçekleşir; girdiler hiçbir zaman gönderilmez veya saklanmaz. Kayıt yok, kurulum yok, tamamen ücretsiz."
+      }
     ],
     "bmi-hesaplayici": [
-      { "h": "What is a BMI Calculator?", "p": "A BMI Calculator computes your body mass index from your height and weight. Enter height in centimeters and weight in kilograms, press Calculate, and the tool divides weight by the square of height in meters, then classifies the result as underweight, normal, overweight or obese." },
-      { "h": "How is BMI calculated?", "p": "BMI is weight (kg) divided by height in meters squared. A 70 kg person of 1.75 m has a BMI of about 22.9, which is a normal range. According to the WHO, below 18.5 is underweight, 18.5–25 normal, 25–30 overweight and above 30 obese." },
-      { "h": "Color scale and table", "p": "Your result is marked on a colored bar that runs from underweight to obese, so you see your category at a glance. The scale table below lists all ranges and categories in detail, highlighting your current one automatically." },
-      { "h": "How reliable is BMI?", "p": "BMI is a practical population indicator but not a medical diagnostic tool. It can mislead in muscular individuals, older adults, children and during pregnancy. Use results for information only and consult a physician for any health concerns." },
-      { "h": "Is my data safe?", "p": "Yes. All calculations run in your browser; your height and weight are never sent or stored. No signup, no install and completely free." }
+      {
+        "h": "Vücut Kitle İndeksi (BMI) Hesaplayıcı Nedir?",
+        "p": "BMI Hesaplayıcı, boyunuz ve kilonuzdan vücut kitle indeksinizi hesaplar. Boyu santimetre, kiloyu kilogram olarak girin, Hesapla'ya basın; araç kiloyu metre cinsinden boyun karesine böler ve sonucu düşük kilolu, normal, fazla kilolu veya obez olarak sınıflandırır."
+      },
+      {
+        "h": "BMI nasıl hesaplanır?",
+        "p": "BMI, kilonun (kg) metre cinsinden boyun karesine oranıdır. 1.75 m boyunda 70 kg bir kişinin BMI'si yaklaşık 22.9 olur ve bu normal aralıktadır. Dünya Sağlık Örgütü'ne (WHO) göre 18.5'in altı düşük kilolu, 18.5–25 normal, 25–30 fazla kilolu, 30'un üstü obezdir."
+      },
+      {
+        "h": "Renkli ölçek ve tablo",
+        "p": "Sonucunuz, düşük kiloludan obezluğe uzanan renkli bir çubukta işaretlenir; böylece kategorinizi bir bakışta görürsünüz. Aşağıdaki ölçek tablosu tüm aralıkları ve kategorileri ayrıntılı olarak listeler ve içinde bulunduğunuz kategoriyi otomatik olarak vurgular."
+      },
+      {
+        "h": "BMI ne kadar güvenilir?",
+        "p": "BMI pratik bir popülasyon göstergesidir ancak tıbbi bir tanı aracı değildir. Kaslı bireylerde, yaşlılarda, çocuklarda ve gebelikte yanıltıcı olabilir. Sonuçları yalnızca bilgi amaçlı kullanın ve sağlıkla ilgili herhangi bir endişede bir hekime başvurun."
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Tüm hesaplamalar tarayıcınızda çalışır; boyunuz ve kilonuz hiçbir zaman gönderilmez veya saklanmaz. Kayıt yok, kurulum yok, tamamen ücretsiz."
+      }
     ],
     "kdv-hesaplayici": [
-      { "h": "What is a VAT Calculator?", "p": "A VAT Calculator computes the value-added tax on an amount and the total price including tax. Enter the product or service price, choose a rate, and see the result. Supported rates are 1%, 8%, 10%, 18% and 20%, and you can mark whether your amount already includes tax." },
-      { "h": "VAT inclusive vs exclusive", "p": "With \"VAT exclusive\" the entered amount is the net price and the tool adds the tax to find the total. With \"VAT inclusive\" the amount already includes tax and the tool separates the tax to show the net (base) amount and the VAT amount. This helps you get the right figures for invoices and quotes fast." },
-      { "h": "Which rates are used?", "list": ["1%: reduced-rate products such as basic foods and bread.", "8% and 10%: intermediate rates for many services, books and food.", "18% and 20%: standard rates for most goods and services."] },
-      { "h": "Who benefits?", "p": "Small businesses preparing price lists, accountants verifying invoice amounts, consumers wondering about the VAT on a label and students practicing commerce math. Since everything runs in your browser, amounts never leave your device." },
-      { "h": "Is the result accurate?", "p": "Yes. Results follow the standard formulas of tax legislation to the kuruş and are shown in Turkish decimal format. The result recalculates live as you type, for every rate and type combination." }
+      {
+        "h": "KDV Hesaplayıcı Nedir?",
+        "p": "KDV Hesaplayıcı, bir tutar üzerindeki katma değer vergisini ve vergi dahil toplam fiyatı hesaplar. Ürün veya hizmet fiyatını girin, oran seçin ve sonucu görün. Desteklenen oranlar %1, %8, %10, %18 ve %20'dir; tutarınızın zaten vergi içerip içermediğini işaretleyebilirsiniz."
+      },
+      {
+        "h": "KDV dahil ve hariç",
+        "p": "\"KDV hariç\" seçeneğinde girilen tutar net fiyattır ve araç toplamı bulmak için vergiyi ekler. \"KDV dahil\" seçeneğinde tutar zaten vergiyi içerir ve araç net (baz) tutarı ve KDV tutarını göstermek için vergiyi ayırır. Bu, faturalar ve teklifler için doğru rakamları hızlıca almanızı sağlar."
+      },
+      {
+        "h": "Hangi oranlar kullanılır?",
+        "list": [
+          "%1: Temel gıdalar ve ekmek gibi indirimli oranlı ürünler.",
+          "%8 ve %10: Birçok hizmet, kitap ve gıda için ara oranlar.",
+          "%18 ve %20: Çoğu mal ve hizmet için standart oranlar."
+        ]
+      },
+      {
+        "h": "Kimler yararlanır?",
+        "p": "Fiyat listeleri hazırlayan küçük işletmeler, fatura tutarlarını doğrulayan muhasebeciler, etiket üzerindeki KDV'yi merak eden tüketiciler ve ticaret matematiği çalışan öğrenciler. Her şey tarayıcınızda çalıştığı için tutarlar cihazınızdan asla çıkmaz."
+      },
+      {
+        "h": "Sonuç doğru mu?",
+        "p": "Evet. Sonuçlar vergi mevzuatının standart formüllerini kuruşuna kadar uygular ve Türkçe ondalık biçimiyle gösterilir. Sonuç, her oran ve tür kombinasyonu için yazarken canlı olarak yeniden hesaplanır."
+      }
     ],
     "yuzde-hesaplayici": [
-      { "h": "What is a Percentage Calculator?", "p": "A Percentage Calculator solves the three most common percentage operations on one screen. Switch tabs to compute a percentage of a number, the percentage change between two values, or a part of a whole as a ratio. All results update instantly as you type." },
-      { "h": "Which operations are included?", "list": ["Percentage of a number: enter a number and a rate; e.g. 20% of 100 is 20.", "Percentage change: enter start and end values; e.g. going from 80 to 100 is a 25% increase.", "Percentage of a whole: see what share a part represents; e.g. 20 is 20% of 100."] },
-      { "h": "Where is it used?", "p": "Shopping to calculate discounts and price increases, education to read exam pass rates and surveys, business to track sales and profit changes, and daily budgeting to plan allocations. Decimal values are supported." },
-      { "h": "About the tool", "p": "Calculations run entirely in your browser; your inputs are never sent or stored, no signup or install is needed. In Change mode, increases and decreases are color coded so you interpret the result correctly at a glance." }
+      {
+        "h": "Yüzde Hesaplayıcı Nedir?",
+        "p": "Yüzde Hesaplayıcı, en sık yapılan üç yüzde işlemini tek ekranda çözer. Sekmeleri değiştirerek bir sayının yüzdesini, iki değer arasındaki yüzde değişimi veya bir bütünün parçasını oran olarak hesaplayabilirsiniz. Tüm sonuçlar yazarken anında güncellenir."
+      },
+      {
+        "h": "Hangi işlemler vardır?",
+        "list": [
+          "Bir sayının yüzdesi: Bir sayı ve oran girin; örneğin 100'ün %20'si 20'dir.",
+          "Yüzde değişimi: Başlangıç ve bitiş değerlerini girin; örneğin 80'den 100'e çıkmak %25 artıştır.",
+          "Bir bütünün yüzdesi: Bir parçanın payını görün; örneğin 20, 100'ün %20'sidir."
+        ]
+      },
+      {
+        "h": "Nerede kullanılır?",
+        "p": "Alışverişte indirim ve zamları hesaplamak için, eğitimde sınav başarı oranlarını ve anketleri okumak için, ticarette satış ve kâr değişimlerini izlemek için ve günlük bütçede paylaşımları planlamak için kullanılır. Ondalık değerler desteklenir."
+      },
+      {
+        "h": "Araç hakkında",
+        "p": "Hesaplamalar tamamen tarayıcınızda çalışır; girdileriniz hiçbir zaman gönderilmez veya saklanmaz, kayıt veya kurulum gerekmez. Değişim modunda artışlar ve azalışlar renk kodludur; böylece sonucu bir bakışta doğru şekilde yorumlarsınız."
+      }
     ],
     "yas-hesaplayici": [
-      { "h": "What is an Age Calculator?", "p": "An Age Calculator computes your age from your birth date with second-level precision. Pick your birth date and a live counter starts showing how many years, months, days, hours, minutes and seconds old you are, updating every second." },
-      { "h": "Why count age in seconds?", "p": "People usually state their age in years, but even two people born the same year can differ by months. This tool shows hours, minutes and seconds in addition to years, months and days, and the counter ticks every second to keep your age live." },
-      { "h": "Next birthday information", "p": "The tool also counts how many days remain until your next birthday, so you can plan celebrations and special dates without missing them." },
-      { "h": "Who benefits?", "list": ["People who need to prove their exact age in years, months and days for official procedures.", "Anyone checking exact birth dates for insurance, pension or age-limit calculations.", "Everyone who enjoys seeing their age tick second by second."] },
-      { "h": "Is my data safe?", "p": "Yes. Calculations run entirely in your browser; your birth date is never sent or stored. No signup, no install and completely free." }
+      {
+        "h": "Yaş Hesaplayıcı Nedir?",
+        "p": "Yaş Hesaplayıcı, doğum tarihinizden yaşınızı saniye hassasiyetiyle hesaplar. Doğum tarihinizi seçin; canlı bir sayaç kaç yaş, ay, gün, saat, dakika ve saniye olduğunuzu göstermeye başlar ve her saniye güncellenir."
+      },
+      {
+        "h": "Yaş saniye cinsinden neden sayılır?",
+        "p": "İnsanlar genellikle yaşını yılla söyler, ancak aynı yılda doğan iki kişi bile aylarca farklılık gösterebilir. Bu araç yıllar, aylar ve günlerin yanı sıra saat, dakika ve saniyeyi de gösterir ve sayaç yaşınız canlı kalsın diye her saniye işler."
+      },
+      {
+        "h": "Gelecek doğum günü bilgisi",
+        "p": "Araç, bir sonraki doğum gününüze kaç gün kaldığını da sayar; böylece kutlamaları ve özel günleri kaçırmadan planlayabilirsiniz."
+      },
+      {
+        "h": "Kimler yararlanır?",
+        "list": [
+          "Resmi işlemlerde yaşını yıl, ay ve gün olarak kanıtlaması gereken kişiler.",
+          "Sigorta, emeklilik veya yaş sınırı hesaplamaları için tam doğum tarihini kontrol eden herkes.",
+          "Yaşını saniye saniye ilerlerken görmeyi seven herkes."
+        ]
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Hesaplamalar tamamen tarayıcınızda çalışır; doğum tarihiniz hiçbir zaman gönderilmez veya saklanmaz. Kayıt yok, kurulum yok, tamamen ücretsiz."
+      }
     ],
     "qr-kod-olusturucu": [
-      { "h": "What is a QR Code Generator?", "p": "A QR Code Generator turns text or a web address into a scannable QR code. Phone camera apps read the code and open its content right away, so long links are shared without typing. It is widely used for restaurant menus, business cards, Wi-Fi access, tickets and product packaging." },
-      { "h": "What should you keep in mind?", "list": ["The encoded text is capped at 500 characters; use a short-URL service for long links.", "Printed codes can break when small; keep them at least 2 cm wide with high contrast.", "Keep dark modules on a light background; inverted colors confuse some scanners."] },
-      { "h": "Is my data safe?", "p": "Yes. The code is generated entirely in your browser; your text is never sent or stored. You can safely turn personal links, notes and business information into codes." },
-      { "h": "FAQ", "list": ["How do I scan a QR code? Point your phone camera at it.", "Does the code expire? No — generated codes are permanent.", "Can I print the downloaded PNG? Yes, it prints well at high resolution."] }
+      {
+        "h": "QR Kod Üreticisi Nedir?",
+        "p": "QR Kod Üreticisi, metni veya web adresini taranabilir bir QR koduna dönüştürür. Telefon kamera uygulamaları kodu okuyup içeriğini hemen açar; böylece uzun bağlantılar yazmadan paylaşılır. Restoran menüleri, kartvizitler, Wi-Fi erişimi, biletler ve ürün ambalajlarında yaygın olarak kullanılır."
+      },
+      {
+        "h": "Nelere dikkat etmelisiniz?",
+        "list": [
+          "Kodlanan metin 500 karakterle sınırlıdır; uzun bağlantılar için bir kısa URL servisi kullanın.",
+          "Basılı kodlar küçük olduğunda bozulabilir; en az 2 cm genişliğinde ve yüksek kontrastta tutun.",
+          "Koyu modülleri açık bir arka plan üzerinde tutun; ters renkler bazı tarayıcıları yanıltır."
+        ]
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Kod tamamen tarayıcınızda üretilir; metniniz hiçbir zaman gönderilmez veya saklanmaz. Kişisel bağlantılarınızı, notlarınızı ve iş bilgilerinizi güvenle kodlara dönüştürebilirsiniz."
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "QR kodu nasıl tararım? Telefon kameranızı kodun üzerine tutun.",
+          "Kodun süresi dolar mı? Hayır — üretilen kodlar kalıcıdır.",
+          "İndirdiğim PNG'yi yazdırabilir miyim? Evet, yüksek çözünürlükte iyi yazdırılır."
+        ]
+      }
     ],
     "sha-hash-uretici": [
-      { "h": "What is a SHA hash?", "p": "SHA (Secure Hash Algorithm) is a one-way cryptographic function that turns data of any length into a fixed-length digest. If one word changes the digest changes completely; the same input always gives the same output. This makes it essential for verifying file downloads, storing password hashes and validating signatures." },
-      { "h": "SHA-1, SHA-256 or SHA-512?", "p": "SHA-1 produces a 160-bit digest and has been considered insecure against collisions since 2005; use it only for legacy compatibility. SHA-256 gives a 32-byte (64 hex character) digest and SHA-512 a 64-byte (128 hex character) one. SHA-256 is the standard for new projects; choose SHA-512 when maximum strength matters." },
-      { "h": "Is my data safe?", "p": "Yes. Hashing runs in your browser's crypto library entirely on your device; your text is never sent anywhere. Private keys, passwords and sensitive data can be hashed safely here." },
-      { "h": "FAQ", "list": ["Can I reverse a hash to the original text? No — SHA is one-way.", "Does the same text give different hashes? No — SHA is deterministic.", "Which algorithm should I pick? SHA-256 is sufficient and secure for most cases."] }
+      {
+        "h": "SHA Hash Nedir?",
+        "p": "SHA (Secure Hash Algorithm), her uzunluktaki veriyi sabit uzunlukta bir özete dönüştüren tek yönlü kriptografik bir işlemdir. Tek bir kelime değişirse özet tamamen değişir; aynı giriş her zaman aynı çıktıyı verir. Bu, dosya indirmelerini doğrulamak, şifre hash'lerini saklamak ve imzaları geçerli kılmak için onu vazgeçilmez kılar."
+      },
+      {
+        "h": "SHA-1, SHA-256 mı SHA-512 mi?",
+        "p": "SHA-1, 160 bitlik bir özet üretir ve 2005'ten beri çarpışmalara karşı güvensiz kabul edilir; yalnızca eski sistemlerle uyumluluk için kullanın. SHA-256, 32 bayt (64 hex karakter)lik bir özet verir; SHA-512 ise 64 bayt (128 hex karakter)lik bir özet verir. SHA-256 yeni projeler için standarttır; en yüksek güç önemli olduğunda SHA-512'yi seçin."
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Hash işleme, tarayıcınızın crypto kütüphanesinde tamamen cihazınızda çalışır; metniniz hiçbir yere gönderilmez. Özel anahtarlar, şifreler ve hassas veriler burada güvenle hash'lenebilir."
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Hash'i özgün metne geri çevirebilir miyim? Hayır — SHA tek yönlüdür.",
+          "Aynı metin farklı hash'ler verir mi? Hayır — SHA deterministiktir.",
+          "Hangi algoritmayı seçmeliyim? Çoğu durum için SHA-256 yeterli ve güvenlidir."
+        ]
+      }
     ],
     "tarih-farki": [
-      { "h": "What is a Date Difference calculator?", "p": "A Date Difference calculator splits the duration between two dates into years, months and days, and also shows the total in days, weeks, hours and minutes. It saves time for birthdays, contract deadlines, tenure and project timelines — whichever date comes first, the absolute difference is shown." },
-      { "h": "How should you read the result?", "p": "The years/months/days conversion is based on calendar averages (365.2425 days per year) and gives a satisfying \"how long\" perspective. Total days and hours are exact and should be the basis for calculations that need precision, like contract periods." },
-      { "h": "Is my data safe?", "p": "Yes. The calculation happens entirely in your browser; your dates are never sent or stored. No signup, no install and completely free." },
-      { "h": "FAQ", "list": ["Does date order matter? No — the absolute difference is shown.", "Can the start date be today? Yes — fields default to today.", "Are total hours realistic? Yes — exact days multiplied by 24."] }
+      {
+        "h": "Tarih Farkı Hesaplayıcı Nedir?",
+        "p": "Tarih Farkı Hesaplayıcı, iki tarih arasındaki süreyi yıl, ay ve güne böler ve ayrıca toplamı gün, hafta, saat ve dakika olarak gösterir. Doğum günleri, sözleşme süreleri, kıdem ve proje takvimleri için zaman kazandırır — hangi tarih önce gelirse gelsin, mutlak fark gösterilir."
+      },
+      {
+        "h": "Sonuç nasıl okunur?",
+        "p": "Yıl/ay/gün dönüşümü takvim ortalamalarına (yıl başına 365.2425 gün) dayanır ve tatmin edici bir \"ne kadar sürdü\" perspektifi verir. Toplam gün ve saatler kesindir ve sözleşme süreleri gibi hassasiyet gerektiren hesaplamalarda temel alınmalıdır."
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Hesaplama tamamen tarayıcınızda gerçekleşir; tarihleriniz hiçbir zaman gönderilmez veya saklanmaz. Kayıt yok, kurulum yok, tamamen ücretsiz."
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Tarih sırası önemli mi? Hayır — mutlak fark gösterilir.",
+          "Başlangıç tarihi bugün olabilir mi? Evet — alanlar bugün olarak varsayılan gelir.",
+          "Toplam saatler gerçekçi mi? Evet — tam gün sayısı 24 ile çarpılır."
+        ]
+      }
     ],
     "renk-donusturucu": [
-      { "h": "What is a Color Converter?", "p": "A Color Converter instantly converts between HEX, RGB and HSL notations. Web developers constantly need to align colors across designs, mobile interfaces and graphics programs. This tool also previews the color and lets you copy any format with one click." },
-      { "h": "When is each format used?", "list": ["HEX: the standard in web design — #RRGGBB six-digit hex notation.", "RGB: three numbers 0–255 used by screens and graphics software; the basis of contrast math.", "HSL: hue, saturation and lightness make adjustments like \"lighter\" or \"darker\" natural."] },
-      { "h": "Is my data safe?", "p": "Yes. All conversions run in your browser; your color is never sent anywhere. Fast access without fees, memberships or ad filters." },
-      { "h": "FAQ", "list": ["Do I need the # prefix for HEX? Either works — both 6-digit forms are accepted.", "Which field updates the color? The last valid input applies; invalid entries keep the current color.", "Are the HSL percentages required? Yes — saturation and lightness need the % sign."] }
+      {
+        "h": "Renk Dönüştürücü Nedir?",
+        "p": "Renk Dönüştürücü, HEX, RGB ve HSL gösterimleri arasında anında dönüşüm yapar. Web geliştiricileri tasarımlar, mobil arayüzler ve grafik programları arasında renkleri hizalamak için sürekli ihtiyaç duyar. Bu araç rengi önizler ve her biçimi tek tıkla kopyalamanızı sağlar."
+      },
+      {
+        "h": "Her biçim ne zaman kullanılır?",
+        "list": [
+          "HEX: Web tasarımının standardı — #RRGGBB altı haneli hex gösterimi.",
+          "RGB: Ekranların ve grafik yazılımlarının kullandığı 0–255 arası üç sayı; kontrast matematiğinin temeli.",
+          "HSL: Ton, doygunluk ve parlaklık, \"daha açık\" veya \"daha koyu\" gibi ayarları doğal kılar."
+        ]
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Tüm dönüşümler tarayıcınızda çalışır; renginiz hiçbir yere gönderilmez. Ücret, üyelik veya reklam filtresi olmadan hızlı erişim."
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "HEX için # ön eki gerekli mi? İkisi de çalışır — 6 haneli her iki biçim de kabul edilir.",
+          "Hangi alan rengi günceller? Son geçerli giriş uygulanır; geçersiz girişler mevcut rengi korur.",
+          "Yüzdeler zorunlu mu? Evet — doygunluk ve parlaklık için % işareti gerekir."
+        ]
+      }
     ],
     "uuid-uretici": [
-      { "h": "What is a UUID?", "p": "A UUID (universally unique identifier) is a standard 128-bit identifier written in 36 characters, e.g. 123e4567-e89b-12d3-a456-426614174000. Version 4 is produced randomly, making collisions practically impossible across distributed systems, databases and APIs." },
-      { "h": "When should you use it?", "list": ["Database primary keys and record identifiers.", "API trace, session and transaction numbers.", "Test data, form fields and temporary file names.", "Apps where many servers create records at the same time."] },
-      { "h": "Is my data safe?", "p": "Yes. Values are generated on your device using the browser's cryptographic random source; nothing is sent anywhere. The identifiers are entirely yours." },
-      { "h": "FAQ", "list": ["Are UUID and GUID the same? Yes — GUID is Microsoft's name for a UUID.", "Can identifiers be changed? Every click produces fresh random values; generated lists are yours once copied.", "How many values can I generate? As many as you like in a single batch."] }
+      {
+        "h": "UUID Nedir?",
+        "p": "UUID (universally unique identifier), 36 karakterle yazılan standart 128 bitlik bir tanımlayıcıdır, örneğin 123e4567-e89b-12d3-a456-426614174000. Sürüm 4 rastgele üretilir; bu da dağıtık sistemler, veritabanları ve API'ler arasında çarpışmaları pratik olarak imkânsız kılar."
+      },
+      {
+        "h": "Ne zaman kullanılmalı?",
+        "list": [
+          "Veritabanı birincil anahtarları ve kayıt tanımlayıcıları.",
+          "API izleme, oturum ve işlem numaraları.",
+          "Test verileri, form alanları ve geçici dosya adları.",
+          "Birden çok sunucunun aynı anda kayıt oluşturduğu uygulamalar."
+        ]
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Değerler cihazınızda tarayıcının kriptografik rastgele kaynağı kullanılarak üretilir; hiçbir şey gönderilmez. Tanımlayıcılar tamamen size aittir."
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "UUID ve GUID aynı mı? Evet — GUID, Microsoft'un UUID için kullandığı addır.",
+          "Tanımlayıcılar değiştirilebilir mi? Her tıklama yeni rastgele değerler üretir; üretilen listeler kopyalandıktan sonra size ait olur.",
+          "Kaç değer üretebilirim? Tek seferde dilediğiniz kadar."
+        ]
+      }
     ],
     "birim-donusturucu": [
-      { "h": "What is a Unit Converter?", "p": "A Unit Converter moves measurements between units for length, weight, volume, area and temperature. From centimeters to inches, kilograms to pounds, Celsius to Fahrenheit — hundreds of everyday conversions on one screen, useful for recipes, math homework, engineering and shopping." },
-      { "h": "Which conversions are supported?", "list": ["Length: millimeter, centimeter, meter, kilometer, inch, foot, yard, mile.", "Weight: milligram, gram, kilogram, ton, ounce, pound.", "Volume: milliliter, centiliter, deciliter, liter, cubic meter, US gallon.", "Area: square millimeter/centimeter/meter, hectare, square kilometer, acre.", "Temperature: Celsius, Fahrenheit, Kelvin."] },
-      { "h": "Is my data safe?", "p": "Yes. All conversions run in your browser; your values are never sent or stored. Free and account free." },
-      { "h": "FAQ", "list": ["What decimal separator can I use? Both comma and dot are accepted (e.g. 1,5 or 1.5).", "Are results rounded? Values are rounded to six digits — accurate enough for everyday measurement.", "Can more units be added? The five most common categories are supported; categories can be extended on request."] }
+      {
+        "h": "Birim Dönüştürücü Nedir?",
+        "p": "Birim Dönüştürücü, uzunluk, ağırlık, hacim, alan ve sıcaklık birimleri arasında ölçüm dönüştürür. Santimetreden inçe, kilogramdan pound'a, santigrattan Fahrenheit'e — yüzlerce günlük dönüşüm tek ekranda; tarifler, matematik ödevleri, mühendislik ve alışveriş için kullanışlıdır."
+      },
+      {
+        "h": "Hangi dönüşümler desteklenir?",
+        "list": [
+          "Uzunluk: milimetre, santimetre, metre, kilometre, inç, fit, yarda, mil.",
+          "Ağırlık: miligram, gram, kilogram, ton, ons, pound.",
+          "Hacim: mililitre, santilitre, desilitre, litre, metreküp, ABD galonu.",
+          "Alan: milimetrekare/santimetrekare/metrekare, hektar, kilometrekare, akre.",
+          "Sıcaklık: Santigrat, Fahrenheit, Kelvin."
+        ]
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Tüm dönüşümler tarayıcınızda çalışır; değerleriniz hiçbir zaman gönderilmez veya saklanmaz. Ücretsiz ve hesap gerektirmez."
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Hangi ondalık ayracını kullanabilirim? Hem virgül hem nokta kabul edilir (örneğin 1,5 veya 1.5).",
+          "Sonuçlar yuvarlanır mı? Değerler altı haneye yuvarlanır — günlük ölçüm için yeterince hassas.",
+          "Daha fazla birim eklenebilir mi? En sık kullanılan beş kategori desteklenir; kategoriler talep üzerine genişletilebilir."
+        ]
+      }
     ],
     "parola-guc-testi": [
-      { "h": "What is a Password Strength Checker?", "p": "A Password Strength Checker evaluates how resistant your password is to attack using an estimated entropy score. Length, character diversity and similarity to common passwords are checked, with the result shown from very weak to very strong and each missing requirement flagged." },
-      { "h": "What is entropy and why does it matter?", "p": "Entropy measures a password's unpredictability in bits. Every extra character and new character type multiplies the combinations a brute-force attack must try. An 8-character lower-case-only password is weak; the same length with digits and symbols is far stronger. This tool uses the same measure as our password generator." },
-      { "h": "Is my data safe?", "p": "Yes. The test runs entirely in your browser; your password is never sent, stored or logged. Test even your real passwords with confidence." },
-      { "h": "FAQ", "list": ["What length is enough? Aim for at least 12 characters; 16+ is safer.", "Do you check the common-password list online? No — the list is embedded on your device.", "What is the best password? A unique, long, unpredictable password stored in a password manager."] }
+      {
+        "h": "Şifre Gücü Testi Nedir?",
+        "p": "Şifre Gücü Testi, tahmini bir entropi puanı kullanarak şifrenizin saldırıya ne kadar dirençli olduğunu değerlendirir. Uzunluk, karakter çeşitliliği ve yaygın şifrelerle benzerlik kontrol edilir; sonuç çok zayıftan çok güçlüye kadar gösterilir ve eksik her gereklilik işaretlenir."
+      },
+      {
+        "h": "Entropi nedir ve neden önemlidir?",
+        "p": "Entropi, şifrenizin tahmin edilemezliğini bit cinsinden ölçer. Eklenen her karakter ve yeni karakter türü, kaba kuvvet saldırılarının denemesi gereken kombinasyonları katlar. 8 karakterlik yalnızca küçük harfli bir şifre zayıftır; aynı uzunlukta rakam ve sembollerle çok daha güçlüdür. Bu araç, şifre üreticimizle aynı ölçüyü kullanır."
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Test tamamen tarayıcınızda çalışır; şifreniz hiçbir zaman gönderilmez, saklanmaz veya kaydedilmez. Gerçek şifrelerinizi bile gönül rahatlığıyla test edin."
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Hangi uzunluk yeterlidir? En az 12 karakteri hedefleyin; 16+ daha güvenlidir.",
+          "Yaygın şifre listesini çevrimiçi kontrol eder misiniz? Hayır — liste cihazınıza gömülüdür.",
+          "En iyi şifre nedir? Bir şifre yöneticisinde saklanan benzersiz, uzun ve tahmin edilemez bir şifre."
+        ]
+      }
     ],
     "sayi-donusturucu": [
-      { "h": "What is a Number Base Converter?", "p": "A Number Base Converter translates numbers between the four counting systems used in programming: binary (base 2), octal (base 8), decimal (base 10) and hexadecimal (base 16). Type a value, choose which base it is written in, and the tool shows all four representations at once — handy for color values, permission masks, memory addresses and bit-level work." },
-      { "h": "Why do large numbers stay exact?", "p": "The converter uses your browser's arbitrary-precision number type instead of floating-point math. Even values far beyond JavaScript's normal safe range convert digit-for-digit accurately and never round." },
-      { "h": "When is each base used?", "list": ["Binary (0, 1): bits, masks and bitwise operations in low-level programming.", "Octal (0–7): classic Unix file permission masks used with chmod.", "Decimal: ordinary everyday numbers.", "Hexadecimal (0–9, A–F): CSS colors such as #FF8800, memory addresses and byte values."] },
-      { "h": "Is my data safe?", "p": "Yes. All conversions run in your browser; the number you type is never sent or stored. Free, no signup and no install." }
+      {
+        "h": "Sayı Tabanı Dönüştürücü Nedir?",
+        "p": "Sayı Tabanı Dönüştürücü, programlamada kullanılan dört sayım sistemi arasında sayı dönüştürür: ikilik (taban 2), sekizlik (taban 8), onluk (taban 10) ve onaltılık (taban 16). Bir değer yazın, hangi tabanda yazıldığını seçin; araç dört gösterimi de aynı anda sunar — renk değerleri, izin maskeleri, bellek adresleri ve bit düzeyinde çalışmak için idealdir."
+      },
+      {
+        "h": "Büyük sayılar neden tam kalır?",
+        "p": "Dönüştürücü, kayan nokta matematiği yerine tarayıcınızın keyfi hassasiyetli sayı türünü kullanır. JavaScript'in normal güvenli aralığının çok ötesindeki değerler bile rakam rakam doğru dönüştürülür ve asla yuvarlanmaz."
+      },
+      {
+        "h": "Her taban ne zaman kullanılır?",
+        "list": [
+          "İkilik (0, 1): Düşük seviyeli programlamada bitler, maskeler ve bit işlemleri.",
+          "Sekizlik (0–7): chmod ile kullanılan klasik Unix dosya izin maskeleri.",
+          "Onluk: Sıradan günlük sayılar.",
+          "Onaltılık (0–9, A–F): #FF8800 gibi CSS renkleri, bellek adresleri ve bayt değerleri."
+        ]
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Tüm dönüşümler tarayıcınızda çalışır; yazdığınız sayı hiçbir zaman gönderilmez veya saklanmaz. Ücretsiz, kayıt yok, kurulum yok."
+      }
     ],
     "regex-testi": [
-      { "h": "What is a Regex Tester?", "p": "A Regex Tester applies a regular expression to your text and shows the result live while you type. Matched pieces are highlighted, a match counter updates on every keystroke, and invalid patterns explain their error instead of failing silently." },
-      { "h": "Which flags are supported?", "list": ["g — global: find all matches instead of just the first.", "i — ignore case: a matches both a and A.", "m — multiline: ^ and $ match line starts and ends.", "s — dot-all: . also matches newline characters.", "u — unicode: enables unicode-aware escapes such as \\p{...}."] },
-      { "h": "How do I anchor my pattern?", "p": "Use ^ to anchor to the start of the text and $ to the end. Without anchors a pattern matches anywhere in the text. Add \\b word boundaries for whole-word matching and use parentheses to capture groups you want to reuse." },
-      { "h": "Is my data safe?", "p": "Yes. Matching runs entirely on your device; your pattern and test text never leave the browser. Log lines, tokens or code samples can be tested here safely." }
+      {
+        "h": "Regex Test Aracı Nedir?",
+        "p": "Regex Test Aracı, düzenli ifadenizi metninizde uygular ve yazarken sonucu canlı gösterir. Eşleşen parçalar vurgulanır, eşleşme sayacı her tuş vuruşunda güncellenir ve geçersiz kalıplar sessizce başarısız olmak yerine hatalarını açıklar."
+      },
+      {
+        "h": "Hangi bayraklar desteklenir?",
+        "list": [
+          "g — global: yalnızca ilk eşleşme yerine tüm eşleşmeleri bulur.",
+          "i — büyük/küçük harf duyarsız: a hem a hem A ile eşleşir.",
+          "m — çok satırlı: ^ ve $ satır başlarını ve sonlarını eşleştirir.",
+          "s — nokta her şeyi kapsar: . ayrıca yeni satır karakterleriyle de eşleşir.",
+          "u — unicode: \\p{...} gibi unicode destekli kaçışları etkinleştirir."
+        ]
+      },
+      {
+        "h": "Kalıbımı nasıl çapa yaparım?",
+        "p": "Metnin başlangıcına çapa yapmak için ^, sonuna ise $ kullanın. Çapalar olmadan bir kalıp metnin herhangi bir yerinde eşleşir. Tüm kelime eşleşmesi için \\b kelime sınırlarını ekleyin ve yeniden kullanmak istediğiniz grupları yakalamak için parantez kullanın."
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Eşleşme tamamen cihazınızda çalışır; kalıbınız ve test metniniz tarayıcıdan asla çıkmaz. Günlük satırları, token'ları veya kod örneklerini burada güvenle test edebilirsiniz."
+      }
     ],
     "bosluk-temizleyici": [
-      { "h": "What is a Whitespace Cleaner?", "p": "A Whitespace Cleaner normalizes spaces and line breaks in your text. Trim every line, collapse runs of spaces into one, drop empty lines or remove all whitespace — four cleaning modes on one screen that you can combine freely." },
-      { "h": "Which cleanings are available?", "list": ["Trim lines: removes leading and trailing spaces from each line.", "Collapse multiple spaces: turns repeated spaces or tabs into a single space.", "Remove empty lines: deletes blank lines and closes gaps between paragraphs.", "Remove all whitespace: strips every space, tab and newline from the text."] },
-      { "h": "When is it useful?", "list": ["Cleaning text pasted from PDFs and emails that came with ragged spacing.", "Normalizing configuration and CSV columns before reuse.", "Compressing copy before conversion or measurement.", "Preparing clean text for translation and word-count checks."] },
-      { "h": "Is my data safe?", "p": "Yes. All cleaning happens in your browser; your text is never sent or stored. Free, no signup and completely client-side." }
+      {
+        "h": "Boşluk Temizleyici Nedir?",
+        "p": "Boşluk Temizleyici, metninizdeki boşlukları ve satır sonlarını normalize eder. Her satırı kırpın, ardışık boşlukları tek boşluğa indirin, boş satırları atın veya tüm boşlukları kaldırın — tek ekranda birleştirebileceğiniz dört temizleme modu."
+      },
+      {
+        "h": "Hangi temizlemeler mevcuttur?",
+        "list": [
+          "Satırları kırp: Her satırın başındaki ve sonundaki boşlukları kaldırır.",
+          "Çoklu boşlukları birleştir: Tekrarlanan boşlukları veya sekmeleri tek boşluğa çevirir.",
+          "Boş satırları kaldır: Boş satırları siler ve paragraflar arasındaki boşlukları kapatır.",
+          "Tüm boşlukları kaldır: Metindeki her boşluğu, sekmeyi ve satır sonunu temizler."
+        ]
+      },
+      {
+        "h": "Ne zaman kullanışlıdır?",
+        "list": [
+          "Düzensiz boşluklarla gelen PDF'lerden ve e-postalardan yapıştırılan metinleri temizlemek için.",
+          "Yeniden kullanımdan önce yapılandırma ve CSV sütunlarını normalleştirmek için.",
+          "Dönüştürme veya ölçüm öncesi metni sıkıştırmak için.",
+          "Çeviri ve kelime sayısı kontrolleri için temiz metin hazırlamak için."
+        ]
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Tüm temizlik tarayıcınızda gerçekleşir; metniniz hiçbir zaman gönderilmez veya saklanmaz. Ücretsiz, kayıt yok ve tamamen istemci tarafında."
+      }
     ]
   },
   "ToolPage": {
-    "linklyPre": "Want to share what you created? Try",
-    "linklyPost": "for a short, clean link.",
-    "breadcrumbAria": "Breadcrumb",
-    "home": "Home",
-    "viewAll": "{count} tools",
-    "otherTitle": "Other tools in this category",
-    "otherAll": "View all tools"
+    "linklyPre": "Oluşturduğunuzu paylaşmak mı istiyorsunuz? Düz ve kısa bir bağlantı için",
+    "linklyPost": "deneyin.",
+    "breadcrumbAria": "İçerik haritası",
+    "home": "Ana sayfa",
+    "viewAll": "{count} araç",
+    "otherTitle": "Bu kategorideki diğer araçlar",
+    "otherAll": "Tüm araçları görüntüle"
   },
   "Info": {
-    "breadcrumbHome": "Home",
+    "breadcrumbHome": "Ana sayfa",
     "hakkimizda": {
-      "navLabel": "About",
-      "title": "About",
-      "desc": "About FreetoolsY: we build free, ad-supported, privacy-first online tools that make everyday work faster.",
-      "h1": "About",
-      "p1": "FreetoolsY is a collection of simple, fast and free online tools that speed up everyday tasks. You never need to install heavy programs or send your data to unknown servers.",
+      "navLabel": "Hakkımızda",
+      "title": "Hakkımızda",
+      "desc": "FreetoolsY hakkında: Günlük çalışmayı hızlandıran ücretsiz, reklam destekli ve gizliliğe önem veren çevrimiçi araçlar geliştiriyoruz.",
+      "h1": "Hakkımızda",
+      "p1": "FreetoolsY, günlük işleri hızlandıran basit, hızlı ve ücretsiz çevrimiçi araçlardan oluşan bir koleksiyondur. Ağır programlar kurmanıza veya verilerinizi bilinmeyen sunuculara göndermenize hiç gerek yoktur.",
       "sections": [
         {
-          "h": "Why FreetoolsY?",
-          "p": "The web is full of similar tools, but most require signup, collect data or clutter the interface with ads. Our priority is plain tools that take no time to learn and no extra setup. Each tool is designed to do one thing well: count text, generate passwords, format JSON."
+          "h": "Neden FreetoolsY?",
+          "p": "İnternet benzer araçlarla dolu, ancak çoğu üyelik gerektirir, veri toplar veya arayüzü reklamlarla doldurur. Önceliğimiz, öğrenmesi zaman almayan ve ek ayar gerektirmeyen sade araçlardır. Her araç tek bir işi iyi yapmak üzere tasarlanmıştır: metin saymak, parola oluşturmak, JSON biçimlendirmek."
         },
         {
-          "h": "Your data stays yours",
-          "pre": "All of our tools run in your browser. Text, passwords and numbers you type are never sent to a server, saved or shared with a third party. The site only processes the standard technical data needed for analytics and advertising services. See our",
-          "link": "Privacy Policy",
+          "h": "Veriniz size aittir",
+          "pre": "Tüm araçlarımız tarayıcınızda çalışır. Girdiğiniz metin, parola ve sayılar hiçbir zaman sunucuya gönderilmez, kaydedilmez veya üçüncü bir tarafla paylaşılmaz. Site yalnızca analitik ve reklam hizmetleri için gerekli olan standart teknik verileri işler. Ayrıntılar için",
+          "link": "Gizlilik Politikamıza",
           "route": "/gizlilik-politikasi",
-          "post": "for details."
+          "post": "bakabilirsiniz."
         },
         {
-          "h": "How do we stay free?",
-          "p": "The site is funded by advertising to keep the tools free. Ads appear in dedicated spaces below the tools, placed so they never interrupt usage."
+          "h": "Nasıl ücretsiz kalıyoruz?",
+          "p": "Araçları ücretsiz tutmak için site reklamlarla finanse edilir. Reklamlar, kullanım asla kesintiye uğraması diye araçların altındaki ayrılmış alanlarda gösterilir."
         },
         {
-          "h": "Our roadmap",
-          "pre": "We keep adding tools and improving existing ones. Your suggestions guide us — if you have an idea, write to us via our",
-          "link": "contact page",
+          "h": "Yol haritamız",
+          "pre": "Araç eklemeye ve mevcut olanları geliştirmeye devam ediyoruz. Önerileriniz bize yol gösteriyor — bir fikriniz varsa, iletişim sayfamız üzerinden bize yazın:",
+          "link": "iletişim sayfası",
           "route": "/iletisim",
           "post": "."
         }
       ],
-      "jsonDesc": "Free online tools across text, security, developer and calculation categories.",
+      "jsonDesc": "Metin, güvenlik, geliştirici ve hesaplama kategorilerinde ücretsiz çevrimiçi araçlar.",
       "footerNote": ""
     },
     "iletisim": {
-      "navLabel": "Contact",
-      "title": "Contact",
-      "desc": "Get in touch with FreetoolsY: write to us with your questions, suggestions and feedback.",
-      "h1": "Contact",
-      "p1": "Use the form below for questions, suggestions or feedback. It forwards your message to destek@freetoolsy.com through your email app."
+      "navLabel": "İletişim",
+      "title": "İletişim",
+      "desc": "FreetoolsY ile iletişime geçin: sorularınızı, önerilerinizi ve geri bildirimlerinizi bize yazın.",
+      "h1": "İletişim",
+      "p1": "Sorularınız, önerileriniz veya geri bildirimleriniz için aşağıdaki formu kullanın. Form, mesajınızı e-posta uygulamanız aracılığıyla destek@freetoolsy.com adresine iletir."
     },
     "gizlilik": {
-      "navLabel": "Privacy Policy",
-      "title": "Privacy Policy",
-      "desc": "FreetoolsY privacy policy: which data is collected, cookies, third-party ads and your rights.",
-      "h1": "Privacy Policy",
-      "updated": "Last updated: September 22, 2026",
+      "navLabel": "Gizlilik Politikası",
+      "title": "Gizlilik Politikası",
+      "desc": "FreetoolsY gizlilik politikası: hangi verilerin toplandığı, çerezler, üçüncü taraf reklamlar ve haklarınız.",
+      "h1": "Gizlilik Politikası",
+      "updated": "Son güncelleme: 22 Eylül 2026",
       "sections": [
-        { "h": "1. General Information", "p": "FreetoolsY (\"we\", \"the site\") offers free online tools at https://freetoolsy.vercel.app. This policy explains what information is collected while you use the site and how it is used. By using the site you accept this policy." },
-        { "h": "2. Data Collected", "p": "Most of our tools run in your browser; the text, numbers or data you enter are not sent to or stored on our servers. The site may process certain technical data (IP address, browser type, visited pages, device information) for standard web analytics and advertising services." },
-        { "h": "3. Cookies", "p": "The site uses cookies to remember preferences (such as theme choice) and to measure service quality. You can allow or block cookies from your browser settings at any time; blocking them does not stop most tools from working." },
-        { "h": "4. Third-Party Ads", "p": "This site may use third-party ad providers such as Google AdSense for revenue. Google may use cookies (including DART cookies) to personalize ad delivery. See the", "link": "Google advertising page", "url": "https://policies.google.com/technologies/partner-sites", "post": " for details on Google's data usage. Users can opt out of personalized ads in", "post2": "Google Ad Settings", "url2": "https://adssettings.google.com" },
-        { "h": "5. Analytics", "p": "The site may use analytics services such as Google Analytics to understand visitor statistics. These services use cookies to analyze site usage; collected information is processed anonymously." },
-        { "h": "6. Data Security", "p": "The site takes reasonable measures to protect personal data. However, no method of transmission over the internet is 100% secure, so absolute security cannot be guaranteed." },
-        { "h": "7. Your Rights", "p": "Under KVKK and GDPR you have the right to access, correct, delete or object to the processing of your data. You can reach us through the contact section for any request." },
-        { "h": "8. Changes", "p": "This policy may be updated from time to time due to legal requirements or service changes. Updates are published on this page, with notice on the site for significant changes." },
-        { "h": "9. Contact", "pre": "For questions about this policy, use our", "link": "contact page", "post": "." }
+        {
+          "h": "1. Genel Bilgiler",
+          "p": "FreetoolsY (\"biz\", \"site\"), https://freetoolsy.vercel.app adresinde ücretsiz çevrimiçi araçlar sunar. Bu politika, siteyi kullanırken hangi bilgilerin toplandığını ve bu bilgilerin nasıl kullanıldığını açıklar. Siteyi kullanarak bu politikayı kabul etmiş olursunuz."
+        },
+        {
+          "h": "2. Toplanan Veriler",
+          "p": "Araçlarımızın çoğu tarayıcınızda çalışır; girdiğiniz metin, sayı veya veriler sunucularımıza gönderilmez veya sunucularımızda saklanmaz. Site, standart web analitiği ve reklam hizmetleri için belirli teknik verileri (IP adresi, tarayıcı türü, ziyaret edilen sayfalar, cihaz bilgileri) işleyebilir."
+        },
+        {
+          "h": "3. Çerezler",
+          "p": "Site, tercihleri hatırlamak (tema seçimi gibi) ve hizmet kalitesini ölçmek için çerezler kullanır. Çerezlere izin verebilir veya bunları tarayıcı ayarlarınızdan istediğiniz zaman engelleyebilirsiniz; engelleme, araçların çoğının çalışmasını durdurmaz."
+        },
+        {
+          "h": "4. Üçüncü Taraf Reklamları",
+          "p": "Bu site, gelir elde etmek için Google AdSense gibi üçüncü taraf reklam sağlayıcıları kullanabilir. Google, reklam sunumunu kişiselleştirmek için çerezleri (DART çerezleri dâhil) kullanabilir. Google'ın veri kullanımıyla ilgili ayrıntılar için",
+          "link": "Google reklam sayfasına",
+          "url": "https://policies.google.com/technologies/partner-sites",
+          "post": "bakabilirsiniz. Kullanıcılar kişiselleştirilmiş reklamlardan",
+          "post2": "Google Reklam Ayarları'ndan",
+          "url2": "https://adssettings.google.com"
+        },
+        {
+          "h": "5. Analitik",
+          "p": "Site, ziyaretçi istatistiklerini anlamak için Google Analytics gibi analitik hizmetler kullanabilir. Bu hizmetler site kullanımını analiz etmek için çerezler kullanır; toplanan bilgiler anonim olarak işlenir."
+        },
+        {
+          "h": "6. Veri Güvenliği",
+          "p": "Site, kişisel verileri korumak için makul önlemler alır. Bununla birlikte, internet üzerinden iletimin yüzde yüz güvenli bir yöntemi olmadığından mutlak güvenlik garanti edilemez."
+        },
+        {
+          "h": "7. Haklarınız",
+          "p": "KVKK ve GDPR kapsamında verilerinize erişme, bunları düzeltme, silme veya işlenmesine itiraz etme hakkına sahipsiniz. Her türlü talebiniz için iletişim bölümünden bize ulaşabilirsiniz."
+        },
+        {
+          "h": "8. Değişiklikler",
+          "p": "Bu politika, yasal gereklilikler veya hizmet değişiklikleri nedeniyle zaman zaman güncellenebilir. Güncellemeler bu sayfada yayımlanır; önemli değişiklikler için sitede bildirim yapılır."
+        },
+        {
+          "h": "9. İletişim",
+          "pre": "Bu politika hakkındaki sorularınız için iletişim sayfamızı kullanın:",
+          "link": "iletişim sayfası",
+          "post": "."
+        }
       ]
     }
   },
   "NotFound": {
-    "title": "Page not found",
-    "body": "The tool you are looking for does not exist or the address was mistyped.",
-    "cta": "Back to home"
+    "title": "Sayfa bulunamadı",
+    "body": "Aradığınız araç mevcut değil veya adres yanlış yazılmış.",
+    "cta": "Ana sayfaya dön"
   },
   "comp": {
     "karakterSayaci": {
-      "label": "Enter your text",
-      "placeholder": "Type or paste here…",
-      "chars": "Characters",
-      "noSpace": "Chars (no spaces)",
-      "words": "Words",
-      "lines": "Lines",
-      "sentences": "Sentences",
-      "paragraphs": "Paragraphs"
+      "label": "Metninizi girin",
+      "placeholder": "Buraya yazın veya yapıştırın…",
+      "chars": "Karakter",
+      "noSpace": "Karakter (boşluklar hariç)",
+      "words": "Kelime",
+      "lines": "Satır",
+      "sentences": "Cümle",
+      "paragraphs": "Paragraf"
     },
     "kelimeSayaci": {
-      "label": "Enter your text",
-      "placeholder": "Type or paste here…",
-      "words": "Words",
-      "chars": "Characters",
-      "sentences": "Sentences",
-      "paragraphs": "Paragraphs",
-      "readingTime": "Est. reading time",
-      "readingMinutes": "{minutes} min",
-      "topWords": "Most used words"
+      "label": "Metninizi girin",
+      "placeholder": "Buraya yazın veya yapıştırın…",
+      "words": "Kelime",
+      "chars": "Karakter",
+      "sentences": "Cümle",
+      "paragraphs": "Paragraf",
+      "readingTime": "Tahmini okuma süresi",
+      "readingMinutes": "{minutes} dk",
+      "topWords": "En çok kullanılan kelimeler"
     },
     "harfDonusturucu": {
-      "label": "Enter your text",
-      "placeholder": "Type or paste here…",
-      "upper": "UPPERCASE",
-      "lower": "lowercase",
-      "title": "Title Case",
-      "invert": "iNVERT cASE",
-      "copy": "Copy",
-      "copied": "Copied"
+      "label": "Metninizi girin",
+      "placeholder": "Buraya yazın veya yapıştırın…",
+      "upper": "BÜYÜK HARF",
+      "lower": "küçük harf",
+      "title": "Her Kelimeyi Büyük Harf",
+      "invert": "Ters Büyük/Küçük Harf",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı"
     },
     "sifreUretici": {
-      "length": "Length",
-      "charTypes": "Character types",
-      "genCount": "Number of passwords",
-      "optionLower": "Lowercase (a–z)",
-      "optionUpper": "Uppercase (A–Z)",
-      "optionDigits": "Digits (0–9)",
-      "optionSymbols": "Symbols (!@#…)",
-      "passwordSingular": "{count} password",
-      "passwordMany": "{count} passwords",
-      "generate": "Generate new password",
-      "generateMany": "Generate {count} passwords",
-      "copy": "Copy",
-      "copied": "Copied",
-      "strength": "Strength: {label}",
-      "selectType": "Select at least one character type",
-      "weak": "Weak",
-      "medium": "Medium",
-      "strong": "Strong",
-      "veryStrong": "Very strong"
+      "length": "Uzunluk",
+      "charTypes": "Karakter türleri",
+      "genCount": "Şifre sayısı",
+      "optionLower": "Küçük harf (a–z)",
+      "optionUpper": "Büyük harf (A–Z)",
+      "optionDigits": "Rakamlar (0–9)",
+      "optionSymbols": "Semboller (!@#…)",
+      "passwordSingular": "{count} şifre",
+      "passwordMany": "{count} şifre",
+      "generate": "Yeni şifre oluştur",
+      "generateMany": "{count} şifre oluştur",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı",
+      "strength": "Güç: {label}",
+      "selectType": "En az bir karakter türü seçin",
+      "weak": "Zayıf",
+      "medium": "Orta",
+      "strong": "Güçlü",
+      "veryStrong": "Çok güçlü"
     },
     "jsonFormatter": {
-      "raw": "Raw JSON",
-      "indent": "Indent",
-      "spaces2": "2 spaces",
-      "spaces4": "4 spaces",
-      "tab": "Tab",
-      "format": "Format",
-      "minify": "Minify",
-      "formatted": "Formatted JSON",
-      "copy": "Copy",
-      "copied": "Copied",
-      "clear": "Clear",
-      "emptyError": "Enter JSON data first.",
-      "invalidError": "Invalid JSON.",
-      "placeholderOutput": "Result will appear here…"
+      "raw": "Ham JSON",
+      "indent": "Girinti",
+      "spaces2": "2 boşluk",
+      "spaces4": "4 boşluk",
+      "tab": "Sekme",
+      "format": "Biçimlendir",
+      "minify": "Küçült",
+      "formatted": "Biçimlendirilmiş JSON",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı",
+      "clear": "Temizle",
+      "emptyError": "Önce JSON verisi girin.",
+      "invalidError": "Geçersiz JSON.",
+      "placeholderOutput": "Sonuç burada görünecek…"
     },
     "base64": {
-      "input": "Input",
-      "placeholderInput": "Text or Base64 data…",
-      "encode": "Encode",
-      "decode": "Decode",
-      "emptyError": "Enter Base64 data first.",
-      "invalidError": "Invalid Base64 data.",
-      "output": "Output",
-      "placeholderOutput": "Result will appear here…",
-      "copy": "Copy",
-      "copied": "Copied"
+      "input": "Girdi",
+      "placeholderInput": "Metin veya Base64 verisi…",
+      "encode": "Kodla",
+      "decode": "Çöz",
+      "emptyError": "Önce Base64 verisi girin.",
+      "invalidError": "Geçersiz Base64 verisi.",
+      "output": "Çıktı",
+      "placeholderOutput": "Sonuç burada görünecek…",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı"
     },
     "url": {
-      "input": "Input",
-      "placeholderInput": "https://example.com/path?q=value…",
-      "encode": "Encode",
-      "decode": "Decode",
-      "emptyError": "Enter encoded URL data first.",
-      "invalidError": "Invalid URL encoding.",
-      "output": "Output",
-      "placeholderOutput": "Result will appear here…",
-      "copy": "Copy",
-      "copied": "Copied",
-      "linklyNote": "For short, clean URLs try LinklyhHub →"
+      "input": "Girdi",
+      "placeholderInput": "https://example.com/path?q=deger…",
+      "encode": "Kodla",
+      "decode": "Çöz",
+      "emptyError": "Önce kodlanmış URL verisi girin.",
+      "invalidError": "Geçersiz URL kodlaması.",
+      "output": "Çıktı",
+      "placeholderOutput": "Sonuç burada görünecek…",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı",
+      "linklyNote": "Kısa ve temiz URL'ler için LinklyhHub'u deneyin →"
     },
     "kdv": {
-      "amount": "Amount",
-      "amountPlaceholder": "e.g. 2500",
-      "rate": "VAT rate",
-      "amountType": "Amount type",
-      "exclusive": "VAT exclusive",
-      "inclusive": "VAT inclusive",
-      "liveNote": "The result updates instantly as you change the amount.",
-      "base": "Amount (VAT excluded)",
-      "vat": "VAT amount",
-      "total": "Total (VAT included)",
-      "emptyState": "Enter an amount to see the result."
+      "amount": "Tutar",
+      "amountPlaceholder": "örn. 2500",
+      "rate": "KDV oranı",
+      "amountType": "Tutar türü",
+      "exclusive": "KDV hariç",
+      "inclusive": "KDV dahil",
+      "liveNote": "Sonuç, tutarı değiştirdiğinizde anında güncellenir.",
+      "base": "Tutar (KDV hariç)",
+      "vat": "KDV tutarı",
+      "total": "Toplam (KDV dahil)",
+      "emptyState": "Sonucu görmek için bir tutar girin."
     },
     "yuzde": {
-      "tabAria": "Calculation mode",
-      "modePercent": "Percentage of a number",
-      "modeChange": "Percentage change",
-      "modePart": "Percentage of a whole",
-      "number": "Number",
-      "percent": "Percentage (%)",
-      "start": "Start value",
-      "end": "End value",
-      "part": "Part value",
-      "whole": "Whole value",
-      "ph": "e.g. 100",
-      "result": "Result",
-      "info": "Info",
-      "change": "Change",
-      "percentSentence": "{number} number, {percent}% of it:",
-      "zeroStart": "Start value cannot be zero.",
-      "zeroWhole": "Whole value cannot be zero.",
-      "changeSentence": "Change from {start} to {end}:",
-      "increase": "shows an increase.",
-      "decrease": "shows a decrease.",
-      "partSentence": "{part} is this share of {whole}:",
-      "liveNote": "Results appear instantly once you type your values."
+      "tabAria": "Hesaplama modu",
+      "modePercent": "Bir sayının yüzdesi",
+      "modeChange": "Yüzde değişim",
+      "modePart": "Bütünün yüzdesi",
+      "number": "Sayı",
+      "percent": "Yüzde (%)",
+      "start": "Başlangıç değeri",
+      "end": "Bitiş değeri",
+      "part": "Kısmi değer",
+      "whole": "Bütün değer",
+      "ph": "örn. 100",
+      "result": "Sonuç",
+      "info": "Bilgi",
+      "change": "Değişim",
+      "percentSentence": "{number} sayısının %{percent}'i:",
+      "zeroStart": "Başlangıç değeri sıfır olamaz.",
+      "zeroWhole": "Bütün değer sıfır olamaz.",
+      "changeSentence": "{start} değerinden {end} değerine değişim:",
+      "increase": "artış gösterir.",
+      "decrease": "azalış gösterir.",
+      "partSentence": "{part}, {whole} sayısının bu payı:",
+      "liveNote": "Değerlerinizi yazdığınızda sonuçlar anında görünür."
     },
     "yas": {
-      "label": "Birth date",
-      "note": "Once you pick a date, the counter updates live every second.",
-      "year": "Year",
-      "month": "Month",
-      "day": "Day",
-      "hour": "Hour",
-      "minute": "Minute",
-      "second": "Second",
-      "futureError": "Birth date cannot be in the future.",
-      "daysLeft": "Your next birthday is in {days} days.",
-      "emptyState": "Pick your birth date to see your age."
+      "label": "Doğum tarihi",
+      "note": "Bir tarih seçtiğinizde sayaç her saniye canlı olarak güncellenir.",
+      "year": "Yıl",
+      "month": "Ay",
+      "day": "Gün",
+      "hour": "Saat",
+      "minute": "Dakika",
+      "second": "Saniye",
+      "futureError": "Doğum tarihi gelecekte olamaz.",
+      "daysLeft": "Bir sonraki doğum gününüze {days} gün kaldı.",
+      "emptyState": "Yaşınızı görmek için doğum tarihinizi seçin."
     },
     "bmi": {
-      "height": "Height (cm)",
-      "weight": "Weight (kg)",
-      "calculate": "Calculate",
-      "commaNote": "You can use a comma or a dot. Values are only processed in this browser.",
-      "emptyError": "Enter your height and weight.",
-      "rangeError": "Values are out of range. Height must be 50-250 cm, weight 10-400 kg.",
-      "low": "Underweight",
-      "normal": "Normal weight",
-      "overweight": "Overweight",
-      "obese": "Obesity",
-      "lowNote": "Your body mass index is below normal.",
-      "normalNote": "Your body mass index is in a healthy range.",
-      "overweightNote": "Your body mass index is above normal.",
-      "obeseNote": "Your body mass index is in the obesity range.",
-      "emptyState": "Enter your height and weight and press Calculate to see the result.",
-      "notMedical": "BMI is not a medical diagnostic tool; it ignores age, muscle mass and other factors.",
-      "scaleLabel": "BMI scale",
-      "scaleRange": "Range",
-      "scaleCategory": "Category",
-      "scaleNote": "Below 18.5 is underweight and above 30 is obese (WHO)."
+      "height": "Boy (cm)",
+      "weight": "Kilo (kg)",
+      "calculate": "Hesapla",
+      "commaNote": "Virgül veya nokta kullanabilirsiniz. Değerler yalnızca bu tarayıcıda işlenir.",
+      "emptyError": "Boyunuzu ve kilonuzu girin.",
+      "rangeError": "Değerler aralık dışında. Boy 50-250 cm, kilo 10-400 kg olmalıdır.",
+      "low": "Zayıf",
+      "normal": "Normal kilo",
+      "overweight": "Fazla kilolu",
+      "obese": "Obezite",
+      "lowNote": "Vücut kitle indeksiniz normalin altında.",
+      "normalNote": "Vücut kitle indeksiniz sağlıklı bir aralıkta.",
+      "overweightNote": "Vücut kitle indeksiniz normalin üzerinde.",
+      "obeseNote": "Vücut kitle indeksiniz obezite aralığında.",
+      "emptyState": "Sonucu görmek için boyunuzu ve kilonuzu girip Hesapla'ya basın.",
+      "notMedical": "BMI tıbbi bir tanı aracı değildir; yaş, kas kütlesi ve diğer faktörleri göz ardı eder.",
+      "scaleLabel": "BMI ölçeği",
+      "scaleRange": "Aralık",
+      "scaleCategory": "Kategori",
+      "scaleNote": "18,5'in altında zayıf, 30'un üzerinde obez olarak kabul edilir (WHO)."
     },
     "qr": {
-      "label": "Text or link",
-      "placeholder": "e.g. https://freetoolsy.vercel.app",
-      "emptyMsg": "An empty QR code cannot be created. Type something above.",
-      "download": "Download as PNG",
-      "copyText": "Copy text",
-      "copied": "Copied",
-      "note": "The QR code is generated entirely in your browser; the content is never sent to a server.",
+      "label": "Metin veya bağlantı",
+      "placeholder": "örn. https://freetoolsy.vercel.app",
+      "emptyMsg": "Boş bir QR kodu oluşturulamaz. Yukarıya bir şeyler yazın.",
+      "download": "PNG İndir",
+      "copyText": "Metni kopyala",
+      "copied": "Kopyalandı",
+      "note": "QR kodu tamamen tarayıcınızda oluşturulur; içerik hiçbir zaman sunucuya gönderilmez.",
       "charCount": "{count}/500"
     },
     "sha": {
-      "label": "Enter your text",
-      "placeholder": "Text to digest goes here",
-      "algorithm": "Algorithm",
-      "copy": "Copy",
-      "copied": "Copied",
-      "note": "Your text never leaves your browser during hashing. SHA digests are one-way: you cannot read them back into the original text. SHA-1 is no longer considered secure and is provided only for compatibility."
+      "label": "Metninizi girin",
+      "placeholder": "Özetlenecek metin buraya",
+      "algorithm": "Algoritma",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı",
+      "note": "Metniniz karma işlemi sırasında tarayıcınızı hiç terk etmez. SHA özetleri tek yönlüdür: orijinal metne geri dönülemez. SHA-1 artık güvenli kabul edilmez ve yalnızca uyumluluk için sunulur."
     },
     "dateDiff": {
-      "start": "Start date",
-      "end": "End date",
-      "difference": "Difference:",
-      "ymd": "{years} years, {months} months, {days} days",
-      "totalDays": "Total days",
-      "weeks": "Total weeks",
-      "monthsAvg": "Months (avg)",
-      "hours": "Total hours",
-      "minutes": "Total minutes",
-      "invalid": "Please pick two valid dates.",
-      "note": "Whichever date comes first, the absolute difference is shown. Years/months/days conversion uses calendar averages; day-based totals are exact."
+      "start": "Başlangıç tarihi",
+      "end": "Bitiş tarihi",
+      "difference": "Fark:",
+      "ymd": "{years} yıl, {months} ay, {days} gün",
+      "totalDays": "Toplam gün",
+      "weeks": "Toplam hafta",
+      "monthsAvg": "Ay (ort.)",
+      "hours": "Toplam saat",
+      "minutes": "Toplam dakika",
+      "invalid": "Lütfen iki geçerli tarih seçin.",
+      "note": "Hangi tarih önce gelirse gelsin, mutlak fark gösterilir. Yıl/ay/gün dönüşümleri takvim ortalamalarına göre yapılır; güne dayalı toplamlar kesindir."
     },
     "renk": {
-      "pickerAria": "Pick a color",
-      "hexLabel": "HEX code",
-      "invalid": "Invalid HEX code. Use #RRGGBB or #RGB.",
-      "copy": "Copy",
-      "copied": "Copied",
-      "shadesTitle": "Shades & tints (click to apply)",
-      "copyNote": "Click a tile to set it as your color. All conversions run instantly in your browser — nothing is sent to a server."
+      "pickerAria": "Renk seçin",
+      "hexLabel": "HEX kodu",
+      "invalid": "Geçersiz HEX kodu. #RRGGBB veya #RGB kullanın.",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı",
+      "shadesTitle": "Tonlar ve açık varyasyonlar (uygulamak için tıklayın)",
+      "copyNote": "Renginiz olarak ayarlamak için bir kareye tıklayın. Tüm dönüşümler anında tarayıcınızda çalışır — hiçbir şey sunucuya gönderilmez."
     },
     "uuid": {
-      "tabAria": "UUID tool",
-      "tabGenerate": "Generate",
-      "tabFormat": "Format",
-      "count": "How many?",
-      "generate": "Generate new UUIDs",
-      "inputLabel": "Paste UUIDs to format",
-      "inputPlaceholder": "e.g. ba3f2f96-7c62-4d22-9a5e-8a21a4ef90d1",
-      "format": "Format to uppercase",
-      "copyAll": "Copy all",
-      "copy": "Copy",
-      "copied": "Copied",
-      "note": "UUID v4 values are generated with your browser's cryptographic random source. Every value is considered globally unique; the chance of a duplicate is practically zero.",
-      "formatNote": "Formatting converts lowercase hexadecimal digits to uppercase. Only valid UUID values are accepted.",
-      "emptyError": "Enter at least one UUID to format.",
-      "invalidError": "Line contains an invalid UUID. Paste valid UUIDs separated by spaces or commas."
+      "tabAria": "UUID aracı",
+      "tabGenerate": "Oluştur",
+      "tabFormat": "Biçimlendir",
+      "count": "Kaç tane?",
+      "generate": "Yeni UUID'ler oluştur",
+      "inputLabel": "Biçimlendirmek için UUID'leri yapıştırın",
+      "inputPlaceholder": "örn. ba3f2f96-7c62-4d22-9a5e-8a21a4ef90d1",
+      "format": "Büyük harfe biçimlendir",
+      "copyAll": "Tümünü kopyala",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı",
+      "note": "UUID v4 değerleri tarayıcınızın kriptografik rastgele kaynağıyla üretilir. Her değer globally benzersiz kabul edilir; tekrar olma ihtimali pratikte sıfırdır.",
+      "formatNote": "Biçimlendirme, küçük harf onaltılık rakamları büyük harfe çevirir. Yalnızca geçerli UUID değerleri kabul edilir.",
+      "emptyError": "Biçimlendirmek için en az bir UUID girin.",
+      "invalidError": "Satırda geçersiz bir UUID var. Boşluk veya virgülle ayrılmış geçerli UUID'leri yapıştırın."
     },
     "birim": {
-      "tabAria": "Unit converter",
-      "tab-speed": "Speed",
-      "tab-length": "Length",
-      "tab-temp": "Temperature",
-      "tab-weight": "Weight",
-      "tab-data": "Data storage",
-      "tab-food": "Food & Cooking",
-      "tab-volume": "Volume",
-      "pre-speed-label": "Speed converter",
-      "pre-length-label": "Length converter",
-      "pre-temp-label": "Temperature converter",
-      "pre-weight-label": "Weight converter",
-      "pre-data-label": "Data storage converter",
-      "pre-volume-label": "Volume converter",
-      "unit-kph": "km/h",
+      "tabAria": "Birim dönüştürücü",
+      "tab-speed": "Hız",
+      "tab-length": "Uzunluk",
+      "tab-temp": "Sıcaklık",
+      "tab-weight": "Ağırlık",
+      "tab-data": "Veri depolama",
+      "tab-food": "Yemek & Mutfak",
+      "tab-volume": "Hacim",
+      "pre-speed-label": "Hız dönüştürücü",
+      "pre-length-label": "Uzunluk dönüştürücü",
+      "pre-temp-label": "Sıcaklık dönüştürücü",
+      "pre-weight-label": "Ağırlık dönüştürücü",
+      "pre-data-label": "Veri depolama dönüştürücü",
+      "pre-volume-label": "Hacim dönüştürücü",
+      "unit-kph": "km/s",
       "unit-mph": "mph",
       "unit-knot": "knot",
       "unit-mps": "m/s",
@@ -706,90 +1147,90 @@
       "unit-floz": "fl oz",
       "unit-tbsp": "tbsp",
       "unit-tsp": "tsp",
-      "value": "Value",
-      "from": "From",
-      "to": "To",
-      "swap": "Swap units",
-      "equal": "equals",
+      "value": "Değer",
+      "from": "Şu birimden",
+      "to": "Şu birime",
+      "swap": "Birimleri değiştir",
+      "equal": "eşittir",
       "invalid": "—",
-      "note": "Conversions happen instantly in your browser. Temperature uses exact formulas; all other units use standard conversion factors with up to 4 decimal places."
+      "note": "Dönüşümler tarayıcınızda anında gerçekleşir. Sıcaklık tam formüller kullanır; diğer tüm birimler, 4 ondalık basamağa kadar standart dönüşüm faktörleri kullanır."
     },
     "passwordStrength": {
-      "label": "Enter your password",
-      "placeholder": "Password to test",
-      "show": "Show",
-      "hide": "Hide",
-      "strength": "Strength: {label}",
-      "empty": "Empty",
-      "veryWeak": "Very weak",
-      "weak": "Weak",
-      "medium": "Medium",
-      "strong": "Strong",
-      "veryStrong": "Very strong",
-      "bits": "~{bits} bits of entropy",
-      "commonWarning": "This exactly matches one of the most common passwords. Change it immediately; it can be cracked in seconds by brute force.",
-      "checkLength": "At least 8 characters",
-      "checkLower": "Contains lowercase",
-      "checkUpper": "Contains uppercase",
-      "checkDigit": "Contains a digit",
-      "checkSymbol": "Contains a symbol",
-      "note": "Your password is tested only in this browser; it is never sent or saved. The entropy estimate is an upper bound based on character diversity; real strength depends on predictability."
+      "label": "Şifrenizi girin",
+      "placeholder": "Test edilecek şifre",
+      "show": "Göster",
+      "hide": "Gizle",
+      "strength": "Güç: {label}",
+      "empty": "Boş",
+      "veryWeak": "Çok zayıf",
+      "weak": "Zayıf",
+      "medium": "Orta",
+      "strong": "Güçlü",
+      "veryStrong": "Çok güçlü",
+      "bits": "~{bits} bit entropi",
+      "commonWarning": "Bu şifre en yaygın şifrelerden biriyle birebir aynı. Hemen değiştirin; kaba kuvvetle saniyeler içinde kırılabilir.",
+      "checkLength": "En az 8 karakter",
+      "checkLower": "Küçük harf içeriyor",
+      "checkUpper": "Büyük harf içeriyor",
+      "checkDigit": "Rakam içeriyor",
+      "checkSymbol": "Sembol içeriyor",
+      "note": "Şifreniz yalnızca bu tarayıcıda test edilir; hiçbir zaman gönderilmez veya kaydedilmez. Entropi tahmini, karakter çeşitliliğine dayalı bir üst sınırdır; gerçek güç tahmin edilebilirliğe bağlıdır."
     },
     "contactForm": {
-      "name": "Your name",
-      "namePlaceholder": "Your full name",
-      "email": "Email",
-      "emailPlaceholder": "name@example.com",
-      "message": "Your message",
-      "messagePlaceholder": "Write your question or feedback here…",
-      "fillError": "Please fill in all fields.",
-      "submit": "Send",
-      "note": "The form opens your email app with the message addressed to destek@freetoolsy.com. Your data is not stored on this site.",
-      "subject": "FreetoolsY contact",
-      "sent": "Your message is ready; your email app opened. Thank you! You can also reach us at"
+      "name": "Ad Soyad",
+      "namePlaceholder": "Adınız ve soyadınız",
+      "email": "E-posta",
+      "emailPlaceholder": "ad@ornek.com",
+      "message": "Mesajınız",
+      "messagePlaceholder": "Sorunuzu veya geri bildiriminizi buraya yazın…",
+      "fillError": "Lütfen tüm alanları doldurun.",
+      "submit": "Gönder",
+      "note": "Form, mesajınız destek@freetoolsy.com adresine yönelik olacak şekilde e-posta uygulamanızı açar. Verileriniz bu sitede saklanmaz.",
+      "subject": "FreetoolsY iletişim",
+      "sent": "Mesajınız hazır; e-posta uygulamanız açıldı. Teşekkürler! Bize şu adresten de ulaşabilirsiniz:"
     },
     "sayi": {
-      "baseLabel": "The number is read as",
-      "valueLabel": "Number",
-      "valuePlaceholder": "Type a number in the selected base",
-      "bin": "Binary",
-      "oct": "Octal",
-      "dec": "Decimal",
-      "hex": "Hexadecimal",
-      "invalid": "{value} is not a valid {base} number.",
-      "copy": "Copy",
-      "copied": "Copied",
-      "note": "Conversions update live as you type and support numbers of any size."
+      "baseLabel": "Sayı şu tabanda okunuyor",
+      "valueLabel": "Sayı",
+      "valuePlaceholder": "Seçili tabanda bir sayı yazın",
+      "bin": "İkilik",
+      "oct": "Sekizlik",
+      "dec": "Ondalık",
+      "hex": "Onaltılık",
+      "invalid": "{value} geçerli bir {base} sayısı değil.",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı",
+      "note": "Dönüşümler yazdıkça canlı güncellenir ve her boyutta sayıyı destekler."
     },
     "regex": {
-      "patternLabel": "Regular expression",
-      "patternPlaceholder": "e.g. \\b[a-z]+\\b",
-      "flagsLabel": "Flags",
-      "flagG": "all matches",
-      "flagI": "ignore case",
-      "flagM": "multiline",
-      "flagS": "dot matches newlines",
+      "patternLabel": "Düzenli ifade",
+      "patternPlaceholder": "örn. \\b[a-z]+\\b",
+      "flagsLabel": "Bayraklar",
+      "flagG": "tüm eşleşmeler",
+      "flagI": "büyük/küçük harf duyarsız",
+      "flagM": "çok satırlı",
+      "flagS": "nokta satır sonlarını eşleştirir",
       "flagU": "unicode",
-      "textLabel": "Test text",
-      "textPlaceholder": "Paste or type the text to test here…",
-      "matchCountOne": "{count} match",
-      "matchCountMany": "{count} matches",
-      "noMatches": "No matches — try a different pattern, flags or text.",
-      "error": "Invalid regular expression: {message}",
-      "note": "Testing runs entirely in your browser as you type."
+      "textLabel": "Test metni",
+      "textPlaceholder": "Test edilecek metni buraya yapıştırın veya yazın…",
+      "matchCountOne": "{count} eşleşme",
+      "matchCountMany": "{count} eşleşme",
+      "noMatches": "Eşleşme yok — farklı bir desen, bayrak veya metin deneyin.",
+      "error": "Geçersiz düzenli ifade: {message}",
+      "note": "Test, yazdığınız anda tamamen tarayıcınızda çalışır."
     },
     "bosluk": {
-      "modeLabel": "Cleaning options",
-      "modeTrim": "Trim lines",
-      "modeSpaces": "Collapse multiple spaces",
-      "modeEmpty": "Remove empty lines",
-      "modeAll": "Remove all whitespace",
-      "inputLabel": "Input",
-      "apply": "Apply cleaning",
-      "characters": "{count} characters",
-      "copy": "Copy",
-      "copied": "Copied",
-      "note": "Cleaning happens only in your browser; your text is never sent anywhere."
+      "modeLabel": "Temizleme seçenekleri",
+      "modeTrim": "Satırları kırp",
+      "modeSpaces": "Ardışık boşlukları tek boşluğa indir",
+      "modeEmpty": "Boş satırları kaldır",
+      "modeAll": "Tüm boşlukları kaldır",
+      "inputLabel": "Girdi",
+      "apply": "Temizlemeyi uygula",
+      "characters": "{count} karakter",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı",
+      "note": "Temizleme yalnızca tarayıcınızda yapılır; metniniz hiçbir yere gönderilmez."
     }
   }
 }
