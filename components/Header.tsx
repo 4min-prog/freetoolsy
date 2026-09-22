@@ -2,11 +2,12 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Link, useRouter } from "@/i18n/navigation";
-import { useTranslations } from "next-intl";
+import { useMessages, useTranslations } from "next-intl";
 import ThemeToggle from "./ThemeToggle";
 import LocaleSwitcher from "./LocaleSwitcher";
 import CategoryIcon from "./CategoryIcon";
-import { categories } from "@/data/tools";
+import ToolIcon from "./ToolIcon";
+import { categories, popularTools, getTool } from "@/data/tools";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -14,6 +15,11 @@ export default function Header() {
   const router = useRouter();
   const t = useTranslations("Header");
   const tc = useTranslations("Categories");
+  const messages = useMessages();
+  const meta = (messages as { ToolMeta?: Record<string, { name?: string }> })
+    .ToolMeta;
+  const quickTools = popularTools.map((slug) => ({ slug, tool: getTool(slug) }))
+    .filter((entry) => entry.tool);
 
   useEffect(() => {
     function onPointerDown(event: PointerEvent) {
@@ -92,7 +98,7 @@ export default function Header() {
             {open && (
               <div
                 role="menu"
-                className="absolute right-0 mt-1.5 w-56 rounded-xl border border-border bg-surface p-1.5 shadow-card-hover"
+                className="absolute right-0 mt-1.5 w-72 rounded-xl border border-border bg-surface p-1.5 shadow-card-hover"
               >
                 <Link
                   href="/"
@@ -102,6 +108,28 @@ export default function Header() {
                 >
                   {t("allTools")}
                 </Link>
+                <div role="separator" className="my-1.5 border-t border-border" />
+                <p
+                  role="presentation"
+                  className="px-3 pb-1 pt-0.5 text-[11px] font-semibold uppercase tracking-wide text-muted"
+                >
+                  {t("popular")}
+                </p>
+                {quickTools.map(({ slug, tool }) => (
+                  <Link
+                    key={slug}
+                    href={`/araclar/${slug}`}
+                    role="menuitem"
+                    onClick={() => setOpen(false)}
+                    className="flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm text-muted transition-colors hover:bg-surface-2 hover:text-text"
+                  >
+                    <ToolIcon
+                      id={tool!.slug}
+                      className="h-4 w-4 text-accent"
+                    />
+                    {meta?.[slug]?.name ?? slug}
+                  </Link>
+                ))}
                 <div role="separator" className="my-1.5 border-t border-border" />
                 {categories.map((category) => (
                   <Link
