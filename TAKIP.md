@@ -1,38 +1,38 @@
-# Takip Dosyası — FreetoolsY
+# Tracking File — FreetoolsY
 
-Bu dosya projenin nerede kaldığını gösterir. Her çalışma oturumunda en üstteki **Durum** bölümünü güncelle.
+This file tracks where the project stands. Whenever a working session ends, update the **Status** section at the top.
 
-## Durum
-**Son oturum:** Başlangıç (22 Eylül 2026)
-- Site tamamlandı, `npm run build` geçti, GitHub'a push edildi (main → 4min-prog/freetoolsy).
-- Sırada kalan iş: yeni araç ekleme, SEO/sitemap, deployment.
-- Teknik borç yok.
+## Status
+**Last session:** Initial build (Sep 22, 2026)
+- Site complete, `npm run build` passes, pushed to GitHub (main → 4min-prog/freetoolsy).
+- Next up: adding more tools, SEO/sitemap, deployment.
+- No technical debt.
 
-## Yapılanlar
+## Done
 - [x] Next.js 14 App Router + TypeScript + Tailwind scaffold
-- [x] Inter fontu (latin-ext, ciddi Türkçe desteği)
-- [x] Class tabanlı dark mode + ThemeToggle + FOUC önleme scripti
-- [x] `data/tools.ts`: 5 araç, 4 kategori, helper fonksiyonlar
-- [x] Ana sayfa: kategorilere göre araç kartları
+- [x] Inter font (latin-ext, full Turkish support)
+- [x] Class-based dark mode + ThemeToggle + FOUC prevention script
+- [x] `data/tools.ts`: 5 tools, 4 categories, helper functions
+- [x] Home page: tool cards grouped by category
 - [x] `app/araclar/[slug]/page.tsx`: SSG, generateMetadata, 404, breadcrumb
-- [x] Çalışan 5 araç (client components): karakter/kelime sayacı, şifre üretici, JSON formatter, BMI
-- [x] `app/not-found.tsx` (TR)
-- [x] Build hatasız, 10 statik sayfa üretildi
+- [x] 5 working tools (client components): char/word counter, password generator, JSON formatter, BMI
+- [x] `app/not-found.tsx` (Turkish)
+- [x] Build passes cleanly, 10 static pages generated
 
-## Tasarım kararları (kural — bozma)
-- Arka plan: açık `#F5F6F8`, koyu `#15161A` (asla tam siyah/beyaz, asla `#0B0B0B`)
-- Primary accent: açık `#2563EB`, koyu `#60A5FA` (WCAG AA kontrol edildi)
-- Font: sadece Inter. Radius/gölgeler kasıtlı çeşitlendirildi (`rounded-xl` kart, `rounded-lg` input).
-- Yasaklar: ALL CAPS başlık etiketi, "→" her yere, krem/terracotta, her karta aynı gölge.
-- Renk tokenları `app/globals.css` içindeki CSS değişkenlerinde tanımlı; Tailwind map'i `tailwind.config.ts`.
+## Design decisions (rules — do not break)
+- Background: light `#F5F6F8`, dark `#15161A` (never pure black/white, never `#0B0B0B`)
+- Primary accent: light `#2563EB`, dark `#60A5FA` (WCAG AA checked)
+- Font: Inter only. Radii/shadows intentionally varied (`rounded-xl` cards, `rounded-lg` inputs).
+- Banned: ALL CAPS heading labels, "→" everywhere, cream/terracotta, identical shadows on every card.
+- Color tokens are CSS variables in `app/globals.css`; mapped in `tailwind.config.ts`.
 
-## Yeni araç ekleme (standart iş akışı)
-1. `data/tools.ts` — `tools` dizisine kayıt ekle (`slug` küçük harf, tireyle)
-2. `components/tools/Xxx.tsx` — `"use client"` bileşen yaz
-3. `app/araclar/[slug]/page.tsx` — import + `toolComponents` map'ine ekle
-4. `npm run build` ile doğrula
+## Adding a new tool (standard workflow)
+1. `data/tools.ts` — add an entry to `tools` (`slug` lowercase, hyphenated)
+2. `components/tools/Xxx.tsx` — write a `"use client"` component
+3. `app/araclar/[slug]/page.tsx` — import it and add to the `toolComponents` map
+4. Verify with `npm run build`
 
-## Kurulum / komutlar
+## Install / commands
 ```bash
 npm install
 npm run dev          # http://localhost:3000
@@ -41,7 +41,7 @@ npm run lint
 git push             # main
 ```
 
-## Notlar
-- BMI sonucu sağlık beyanı değildir (bilgilendirme metni bileşenin içinde).
-- Değerler yalnızca istemcide işleniyor; servis/DB yok.
-- Domain `freetoolsy.com` metadata'da `metadataBase` ve canonical/OG olarak tanımlı (ilk deployment sonrası gözden geçir).
+## Notes
+- BMI result is not medical advice (disclaimer lives inside the component).
+- Everything runs client-side; no server/DB.
+- Domain `freetoolsy.com` is set in metadata (`metadataBase`, canonical/OG) — review after first deployment.
