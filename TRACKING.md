@@ -3,18 +3,14 @@
 This file tracks where the project stands. Whenever a working session ends, update the **Status** section at the top.
 
 ## Status
-**Last session:** i18n migration to next-intl — English-first (Sep 22, 2026)
-- **next-intl migration complete (English-first):** `/` = English (default, `localePrefix: "as-needed"`), `/tr` = Turkish. All pages/components/18 tools localized through `messages/en.json` + `messages/tr.json`.
-- Priority decision: the whole site is finished in **English** first; `tr.json` is currently a **placeholder copy of en.json**. Real Turkish translation is the LAST step.
-- New routing setup: `i18n/routing.ts` (`defineRouting`, locales `["en","tr"]`, default `en`), `i18n/navigation.ts` (`createNavigation` → `Link`, `usePathname`, `useRouter`), `middleware.ts`, `i18n/request.ts` (dynamic JSON import). `next.config.mjs` uses `createNextIntlPlugin()`.
-- **18 dedicated tool pages deleted** — consolidated into one localized page `app/[locale]/araclar/[slug]/page.tsx` (SSG 2 locales × 18 slugs). Info pages (`/hakkimizda`, `/iletisim`, `/gizlilik-politikasi`), `not-found`, Header/Footer/ToolCard/ToolExplorer/ThemeToggle/ToolJsonLd/ContactForm all localized. New components: `LocaleSwitcher`, `ToolSeoContent` (renders SEO blocks from `messages.ToolContent`).
-- `public/sitemap.xml` now bilingual with `xhtml:link` hreflang alternates (en + tr for all 21 URLs).
-- LinklyhHub links updated to **`https://linklyhub.com`** everywhere (was `linkly.hub`).
-- AdSense raw `<script>` kept in `<head>`, GA4 `next/script`, theme FOUC script preserved in the new `app/[locale]/layout.tsx`.
-- JSON-LD localized per-locale (SoftwareApplication URL/currency depends on locale).
-- `npm run build` passes (48 static pages: /en/** and /tr/**, middleware listed), lint clean.
-- ES5-aware constraints still apply: no `\p{L}`/`u` regex, no `for..of`, no spread on strings, no `flatMap`.
-- Next up: real Turkish translation of `tr.json`, real ad units after AdSense approval, buy `freetoolsy.com`.
+**Last session:** 3 new tools + AdSense/SEO improvements (Sep 22, 2026)
+- **21 tools now** (was 18): added Number Base Converter (`sayi-donusturucu`), Regex Tester (`regex-testi`), Whitespace Cleaner (`bosluk-temizleyici`) — each with `ToolMeta`/`ToolContent` SEO copy and `comp.*` translations in `en.json` + `tr.json` (kept in sync). Sitemap extended (27 URLs), Home meta count updated (`21 free online tools`). Build now 54 static pages.
+- **AdSlot → env-gated real AdSense:** `AdSlot` renders the real `<ins class="adsbygoogle">` + `push({})` only when `NEXT_PUBLIC_ADS_ENABLED=true` and `NEXT_PUBLIC_ADS_CLIENT` + `NEXT_PUBLIC_ADS_SLOT_(TOP|BOTTOM)` are set; otherwise it keeps the placeholder box. Set those Vercel env vars once AdSense approves.
+- **Tool pages now emit BreadcrumbList JSON-LD** (Home → Category → Tool) alongside SoftwareApplication.
+- **Dark-mode bug on locale switch fixed** (commit 4667e44): head theme script now removes `.dark` when the saved preference is light, and ThemeToggle derives initial state from `localStorage.theme`, forcing the class to match — theme can no longer flip to dark on language switch.
+- English-first: `tr.json` is still a **placeholder copy of en.json**. Real Turkish translation is the LAST step.
+- ES5-aware constraints still apply: no `\p{L}`/`u` regex, no `for..of`, no spread on strings, no `flatMap`, no `0n` BigInt literal (use `BigInt(0)`).
+- Next up: real Turkish translation of `tr.json`, real ad units (set env vars after AdSense approval), buy `freetoolsy.com`.
 
 ## Done
 - [x] Next.js 14 App Router + TypeScript + Tailwind scaffold
@@ -23,7 +19,7 @@ This file tracks where the project stands. Whenever a working session ends, upda
 - [x] `data/tools.ts`: 18 tools, 4 categories, helper functions
 - [x] Home page: SEO hero + live-search tool explorer grouped by category with icons and counts
 - [x] `app/araclar/[slug]/page.tsx`: SSG, generateMetadata, 404, breadcrumb
-- [x] 18 working tools (client components): char/word counter, case converter, JSON formatter, Base64, URL encoder, password generator, BMI, KDV, percentage, age, QR code, SHA hash, date diff, color converter, UUID, unit converter, password strength
+- [x] 21 working tools (client components): char/word counter, case converter, JSON formatter, Base64, URL encoder, password generator, BMI, KDV, percentage, age, QR code, SHA hash, date diff, color converter, UUID, unit converter, password strength, number base, regex tester, whitespace cleaner
 - [x] SEO pages for every tool via the consolidated `app/[locale]/araclar/[slug]/page.tsx` (own H1, meta, ad slot, localized SEO copy, linklyhub.com link)
 - [x] JSON-LD structured data (WebSite, SoftwareApplication per tool, FAQ, Organization, ContactPage) — Rich Results validated
 - [x] `app/not-found.tsx` (localized)

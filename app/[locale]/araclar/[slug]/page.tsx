@@ -22,7 +22,11 @@ import RenkDonusturucu from "@/components/tools/RenkDonusturucu";
 import UuidUretici from "@/components/tools/UuidUretici";
 import BirimDonusturucu from "@/components/tools/BirimDonusturucu";
 import ParolaGucTesti from "@/components/tools/ParolaGucTesti";
+import SayiDonusturucu from "@/components/tools/SayiDonusturucu";
+import RegexTesti from "@/components/tools/RegexTesti";
+import BoslukTemizleyici from "@/components/tools/BoslukTemizleyici";
 import AdSlot from "@/components/AdSlot";
+import JsonLd from "@/components/JsonLd";
 import ToolJsonLd from "@/components/ToolJsonLd";
 import ToolSeoContent from "@/components/ToolSeoContent";
 
@@ -45,6 +49,9 @@ const toolComponents: Record<string, React.ComponentType> = {
   "uuid-uretici": UuidUretici,
   "birim-donusturucu": BirimDonusturucu,
   "parola-guc-testi": ParolaGucTesti,
+  "sayi-donusturucu": SayiDonusturucu,
+  "regex-testi": RegexTesti,
+  "bosluk-temizleyici": BoslukTemizleyici,
 };
 
 const siteUrl = "https://freetoolsy.vercel.app";
@@ -101,10 +108,39 @@ export default async function AraclarPage({
   if (!ToolComponent) notFound();
 
   const category = categories.find((item) => item.id === tool.category);
+  const toolUrl = `${siteUrl}${locale === "en" ? "" : "/tr"}/araclar/${tool.slug}`;
+  const homeUrl = `${siteUrl}${locale === "en" ? "" : "/tr"}/`;
+  const categoryUrl = `${siteUrl}${locale === "en" ? "" : "/tr"}/#${category ? category.id : tool.category}`;
 
   return (
     <main className="mx-auto w-full max-w-2xl flex-1 px-4 py-10 sm:px-6 sm:py-14">
       <ToolJsonLd slug={tool.slug} />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: tInfo("breadcrumbHome"),
+              item: homeUrl,
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: tc(tool.category),
+              item: categoryUrl,
+            },
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: t("name"),
+              item: toolUrl,
+            },
+          ],
+        }}
+      />
       <nav
         aria-label={tPage("breadcrumbAria")}
         className="flex flex-wrap items-center gap-1.5 text-sm text-muted"

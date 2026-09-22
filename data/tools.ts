@@ -139,6 +139,27 @@ export const tools: Tool[] = [
     description:
       "Parolanızın ne kadar güçlü olduğunu tahmini entropiyle ölçer ve iyileştirme önerileri sunar.",
   },
+  {
+    slug: "sayi-donusturucu",
+    name: "Sayı Sistemi Dönüştürücü",
+    category: "gelistirici",
+    description:
+      "Sayıları ikili, sekizli, ondalık ve onaltılık sistemler arasında anında dönüştürür.",
+  },
+  {
+    slug: "regex-testi",
+    name: "RegEx Testi",
+    category: "gelistirici",
+    description:
+      "Düzenli ifadenizi metin üzerinde canlı olarak test eder ve eşleşmeleri vurgular.",
+  },
+  {
+    slug: "bosluk-temizleyici",
+    name: "Boşluk Temizleyici",
+    category: "metin",
+    description:
+      "Satır başı/sonu boşluklarını temizler, tekrarlı boşlukları birleştirir ve boş satırları kaldırır.",
+  },
 ];
 
 export function getTool(slug: string): Tool | undefined {

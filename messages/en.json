@@ -7,7 +7,7 @@
   },
   "Home": {
     "title": "Free Online Tools — Fast, Simple, in English",
-    "description": "18 free online tools in 4 categories. Character counter, password generator, JSON formatter, VAT calculator and more. No signup, no install.",
+    "description": "21 free online tools in 4 categories. Character counter, password generator, JSON formatter, VAT calculator and more. No signup, no install.",
     "heroTitle": "Free Online Tools — Fast, Simple, in English",
     "heroSubtitle": "{tools} free tools in {cats} categories: Text, Security, Developer and Calculation. No signup, no install; every calculation happens in your browser and your data never leaves it.",
     "jsonldSiteDesc": "Free online tools for text, security, developer and calculation. No signup, no install.",
@@ -193,6 +193,27 @@
       "title": "Password Strength Test — Free Online Tool",
       "pageDesc": "Check how strong your password really is with an entropy estimate and a checklist of missing character types. 100% client-side and private.",
       "intro": "Measure how strong your password is, see missing character types and estimated entropy."
+    },
+    "sayi-donusturucu": {
+      "name": "Number Base Converter",
+      "desc": "Converts numbers between binary, octal, decimal and hexadecimal instantly in your browser.",
+      "title": "Number Base Converter — Free Online Tool",
+      "pageDesc": "Convert numbers between binary, octal, decimal and hexadecimal with exact precision. Big-number safe, free and fully client-side.",
+      "intro": "Type a number, choose its base, and see binary, octal, decimal and hexadecimal side by side."
+    },
+    "regex-testi": {
+      "name": "Regex Tester",
+      "desc": "Tests a regular expression against your text live and highlights every match.",
+      "title": "Regex Tester — Free Online Tool",
+      "pageDesc": "Test regular expressions against any text with live highlighting and a match counter. Supports the g, i, m, s and u flags; 100% client-side.",
+      "intro": "Write a pattern, pick flags, and see every match highlighted as you type."
+    },
+    "bosluk-temizleyici": {
+      "name": "Whitespace Cleaner",
+      "desc": "Trims lines, collapses repeated spaces and removes blank lines from your text.",
+      "title": "Whitespace Cleaner — Free Online Tool",
+      "pageDesc": "Trim lines, collapse multiple spaces, remove empty lines or strip all whitespace from any text in one click. Free and private.",
+      "intro": "Clean trailing spaces, extra gaps and blank lines from any text in one click."
     }
   },
   "ToolContent": {
@@ -313,6 +334,24 @@
       { "h": "What is entropy and why does it matter?", "p": "Entropy measures a password's unpredictability in bits. Every extra character and new character type multiplies the combinations a brute-force attack must try. An 8-character lower-case-only password is weak; the same length with digits and symbols is far stronger. This tool uses the same measure as our password generator." },
       { "h": "Is my data safe?", "p": "Yes. The test runs entirely in your browser; your password is never sent, stored or logged. Test even your real passwords with confidence." },
       { "h": "FAQ", "list": ["What length is enough? Aim for at least 12 characters; 16+ is safer.", "Do you check the common-password list online? No — the list is embedded on your device.", "What is the best password? A unique, long, unpredictable password stored in a password manager."] }
+    ],
+    "sayi-donusturucu": [
+      { "h": "What is a Number Base Converter?", "p": "A Number Base Converter translates numbers between the four counting systems used in programming: binary (base 2), octal (base 8), decimal (base 10) and hexadecimal (base 16). Type a value, choose which base it is written in, and the tool shows all four representations at once — handy for color values, permission masks, memory addresses and bit-level work." },
+      { "h": "Why do large numbers stay exact?", "p": "The converter uses your browser's arbitrary-precision number type instead of floating-point math. Even values far beyond JavaScript's normal safe range convert digit-for-digit accurately and never round." },
+      { "h": "When is each base used?", "list": ["Binary (0, 1): bits, masks and bitwise operations in low-level programming.", "Octal (0–7): classic Unix file permission masks used with chmod.", "Decimal: ordinary everyday numbers.", "Hexadecimal (0–9, A–F): CSS colors such as #FF8800, memory addresses and byte values."] },
+      { "h": "Is my data safe?", "p": "Yes. All conversions run in your browser; the number you type is never sent or stored. Free, no signup and no install." }
+    ],
+    "regex-testi": [
+      { "h": "What is a Regex Tester?", "p": "A Regex Tester applies a regular expression to your text and shows the result live while you type. Matched pieces are highlighted, a match counter updates on every keystroke, and invalid patterns explain their error instead of failing silently." },
+      { "h": "Which flags are supported?", "list": ["g — global: find all matches instead of just the first.", "i — ignore case: a matches both a and A.", "m — multiline: ^ and $ match line starts and ends.", "s — dot-all: . also matches newline characters.", "u — unicode: enables unicode-aware escapes such as \\p{...}."] },
+      { "h": "How do I anchor my pattern?", "p": "Use ^ to anchor to the start of the text and $ to the end. Without anchors a pattern matches anywhere in the text. Add \\b word boundaries for whole-word matching and use parentheses to capture groups you want to reuse." },
+      { "h": "Is my data safe?", "p": "Yes. Matching runs entirely on your device; your pattern and test text never leave the browser. Log lines, tokens or code samples can be tested here safely." }
+    ],
+    "bosluk-temizleyici": [
+      { "h": "What is a Whitespace Cleaner?", "p": "A Whitespace Cleaner normalizes spaces and line breaks in your text. Trim every line, collapse runs of spaces into one, drop empty lines or remove all whitespace — four cleaning modes on one screen that you can combine freely." },
+      { "h": "Which cleanings are available?", "list": ["Trim lines: removes leading and trailing spaces from each line.", "Collapse multiple spaces: turns repeated spaces or tabs into a single space.", "Remove empty lines: deletes blank lines and closes gaps between paragraphs.", "Remove all whitespace: strips every space, tab and newline from the text."] },
+      { "h": "When is it useful?", "list": ["Cleaning text pasted from PDFs and emails that came with ragged spacing.", "Normalizing configuration and CSV columns before reuse.", "Compressing copy before conversion or measurement.", "Preparing clean text for translation and word-count checks."] },
+      { "h": "Is my data safe?", "p": "Yes. All cleaning happens in your browser; your text is never sent or stored. Free, no signup and completely client-side." }
     ]
   },
   "ToolPage": {
@@ -698,6 +737,49 @@
       "note": "The form opens your email app with the message addressed to destek@freetoolsy.com. Your data is not stored on this site.",
       "subject": "FreetoolsY contact",
       "sent": "Your message is ready; your email app opened. Thank you! You can also reach us at"
+    },
+    "sayi": {
+      "baseLabel": "The number is read as",
+      "valueLabel": "Number",
+      "valuePlaceholder": "Type a number in the selected base",
+      "bin": "Binary",
+      "oct": "Octal",
+      "dec": "Decimal",
+      "hex": "Hexadecimal",
+      "invalid": "{value} is not a valid {base} number.",
+      "copy": "Copy",
+      "copied": "Copied",
+      "note": "Conversions update live as you type and support numbers of any size."
+    },
+    "regex": {
+      "patternLabel": "Regular expression",
+      "patternPlaceholder": "e.g. \\b[a-z]+\\b",
+      "flagsLabel": "Flags",
+      "flagG": "all matches",
+      "flagI": "ignore case",
+      "flagM": "multiline",
+      "flagS": "dot matches newlines",
+      "flagU": "unicode",
+      "textLabel": "Test text",
+      "textPlaceholder": "Paste or type the text to test here…",
+      "matchCountOne": "{count} match",
+      "matchCountMany": "{count} matches",
+      "noMatches": "No matches — try a different pattern, flags or text.",
+      "error": "Invalid regular expression: {message}",
+      "note": "Testing runs entirely in your browser as you type."
+    },
+    "bosluk": {
+      "modeLabel": "Cleaning options",
+      "modeTrim": "Trim lines",
+      "modeSpaces": "Collapse multiple spaces",
+      "modeEmpty": "Remove empty lines",
+      "modeAll": "Remove all whitespace",
+      "inputLabel": "Input",
+      "apply": "Apply cleaning",
+      "characters": "{count} characters",
+      "copy": "Copy",
+      "copied": "Copied",
+      "note": "Cleaning happens only in your browser; your text is never sent anywhere."
     }
   }
 }

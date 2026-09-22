@@ -118,6 +118,24 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/parola-guc-testi" />
   </url>
   <url>
+    <loc>https://freetoolsy.vercel.app/araclar/sayi-donusturucu</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/sayi-donusturucu" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/sayi-donusturucu" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.vercel.app/araclar/regex-testi</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/regex-testi" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/regex-testi" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.vercel.app/araclar/bosluk-temizleyici</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/bosluk-temizleyici" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/bosluk-temizleyici" />
+  </url>
+  <url>
     <loc>https://freetoolsy.vercel.app/gizlilik-politikasi</loc>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/gizlilik-politikasi" />
