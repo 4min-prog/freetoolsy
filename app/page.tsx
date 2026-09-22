@@ -1,43 +1,31 @@
-import ToolCard from "@/components/ToolCard";
-import { categories, getToolsByCategory } from "@/data/tools";
+import type { Metadata } from "next";
+import ToolExplorer from "@/components/ToolExplorer";
+import { categories, tools } from "@/data/tools";
+
+export const metadata: Metadata = {
+  title: "Ücretsiz Online Araçlar — Hızlı, Kolay, Türkçe",
+  description: `${tools.length} ücretsiz online araç, ${categories.length} kategoride. Karakter sayacı, şifre üretici, JSON formatter, KDV ve daha fazlası. Üyelik yok, kurulum yok.`,
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   return (
     <main className="mx-auto w-full max-w-5xl flex-1 px-4 sm:px-6">
-      <section className="pb-12 pt-14 sm:pb-16 sm:pt-20">
+      <section className="pb-9 pt-14 sm:pb-10 sm:pt-20">
         <h1 className="max-w-[20ch] text-3xl font-semibold leading-tight tracking-tight text-text sm:text-4xl">
-          Günlük işler için sade online araçlar
+          Ücretsiz Online Araçlar — Hızlı, Kolay, Türkçe
         </h1>
         <p className="mt-4 max-w-[62ch] text-base leading-relaxed text-muted">
-          Metin, güvenlik, geliştirme ve hesaplama araçları. Üyelik yok, kurulum
-          yok; hesaplamaların tamamı tarayıcınızda yapılır.
+          {tools.length} ücretsiz araç, {categories.length} kategoride: Metin,
+          Güvenlik, Geliştirici ve Hesaplama. Üyelik yok, kurulum yok; tüm
+          hesaplamalar tarayıcınızda yapılır, verileriniz hiçbir yere
+          gönderilmez.
         </p>
       </section>
 
-      <div className="space-y-14 pb-20">
-        {categories.map((category) => {
-          const categoryTools = getToolsByCategory(category.name);
-          if (categoryTools.length === 0) return null;
-
-          return (
-            <section key={category.id} id={category.id} className="scroll-mt-20">
-              <div className="flex items-baseline justify-between gap-4 border-b border-border pb-3">
-                <h2 className="text-lg font-semibold tracking-tight text-text">
-                  {category.name}
-                </h2>
-                <span className="text-sm text-muted">
-                  {categoryTools.length} araç
-                </span>
-              </div>
-              <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {categoryTools.map((tool) => (
-                  <ToolCard key={tool.slug} tool={tool} />
-                ))}
-              </div>
-            </section>
-          );
-        })}
-      </div>
+      <ToolExplorer />
     </main>
   );
 }

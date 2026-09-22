@@ -6,18 +6,21 @@ export default function KarakterSayaci() {
   const [text, setText] = useState("");
 
   const stats = useMemo(() => {
+    const trimmed = text.trim();
     const chars = text.length;
     const charsNoSpace = text.replace(/\s/g, "").length;
-    const words = text.trim() ? text.trim().split(/\s+/).length : 0;
+    const words = trimmed ? trimmed.split(/\s+/).length : 0;
     const lines = text ? text.split(/\r\n|\r|\n/).length : 0;
-    const paragraphs = text.trim()
-      ? text.trim().split(/\n\s*\n/).length
+    const sentences = trimmed
+      ? trimmed.split(/[.!?…]+(?:\s|$)/).filter((part) => part.trim()).length
       : 0;
+    const paragraphs = trimmed ? trimmed.split(/\n\s*\n/).length : 0;
     return [
       { label: "Karakter", value: chars },
       { label: "Boşluksuz karakter", value: charsNoSpace },
       { label: "Kelime", value: words },
       { label: "Satır", value: lines },
+      { label: "Cümle", value: sentences },
       { label: "Paragraf", value: paragraphs },
     ];
   }, [text]);

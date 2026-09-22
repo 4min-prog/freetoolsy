@@ -4,16 +4,29 @@ import { notFound } from "next/navigation";
 import { categories, getTool, tools } from "@/data/tools";
 import KarakterSayaci from "@/components/tools/KarakterSayaci";
 import KelimeSayaci from "@/components/tools/KelimeSayaci";
+import HarfDonusturucu from "@/components/tools/HarfDonusturucu";
 import SifreUretici from "@/components/tools/SifreUretici";
 import JsonFormatter from "@/components/tools/JsonFormatter";
+import Base64Encoder from "@/components/tools/Base64Encoder";
+import UrlEncoder from "@/components/tools/UrlEncoder";
 import BmiHesaplayici from "@/components/tools/BmiHesaplayici";
+import KdvHesaplayici from "@/components/tools/KdvHesaplayici";
+import YuzdeHesaplayici from "@/components/tools/YuzdeHesaplayici";
+import YasHesaplayici from "@/components/tools/YasHesaplayici";
+import AdSlot from "@/components/AdSlot";
 
 const toolComponents: Record<string, React.ComponentType> = {
   "karakter-sayaci": KarakterSayaci,
   "kelime-sayaci": KelimeSayaci,
+  "harf-donusturucu": HarfDonusturucu,
   "sifre-uretici": SifreUretici,
   "json-formatter": JsonFormatter,
+  "base64": Base64Encoder,
+  "url-encoder": UrlEncoder,
   "bmi-hesaplayici": BmiHesaplayici,
+  "kdv-hesaplayici": KdvHesaplayici,
+  "yuzde-hesaplayici": YuzdeHesaplayici,
+  "yas-hesaplayici": YasHesaplayici,
 };
 
 export function generateStaticParams() {
@@ -74,9 +87,13 @@ export default function AraclarPage({ params }: { params: { slug: string } }) {
         {tool.description}
       </p>
 
+      <AdSlot slot="top" />
+
       <div className="mt-8 rounded-xl border border-border bg-surface p-5 shadow-card sm:p-6">
         <ToolComponent />
       </div>
+
+      <AdSlot slot="bottom" />
     </main>
   );
 }
