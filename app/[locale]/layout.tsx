@@ -8,6 +8,7 @@ import { routing, type Locale } from "@/i18n/routing";
 import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ThemeGuard from "@/components/ThemeGuard";
 
 const inter = Inter({
   subsets: ["latin", "latin-ext"],
@@ -92,6 +93,7 @@ export default async function RootLayout({
         )}
       </head>
       <body className={`${inter.variable} flex min-h-screen flex-col antialiased`}>
+        <ThemeGuard />
         <NextIntlClientProvider messages={messages}>
           <Header />
           {children}
