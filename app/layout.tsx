@@ -49,6 +49,11 @@ export default function RootLayout({
     <html lang="tr" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8880626756482815"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className={`${inter.variable} flex min-h-screen flex-col antialiased`}>
         <Header />
@@ -62,12 +67,6 @@ export default function RootLayout({
         <Script id="google-analytics-config" strategy="afterInteractive">
           {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-6J6JB9SHKZ");`}
         </Script>
-        <Script
-          id="adsense-init"
-          strategy="afterInteractive"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8880626756482815"
-          crossOrigin="anonymous"
-        />
       </body>
     </html>
   );
