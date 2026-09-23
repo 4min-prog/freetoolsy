@@ -10,6 +10,8 @@ export const categories: { id: string; name: string }[] = [
   { id: "guvenlik", name: "Güvenlik" },
   { id: "gelistirici", name: "Geliştirici" },
   { id: "hesaplama", name: "Hesaplama" },
+  { id: "gorsel", name: "Görsel" },
+  { id: "seo", name: "SEO" },
 ];
 
 export const tools: Tool[] = [
@@ -320,6 +322,195 @@ export const tools: Tool[] = [
     category: "guvenlik",
     description:
       "Dosyanın MD5 özetini tarayıcınızda hesaplar; dosya hiçbir yere gönderilmez.",
+  },
+  {
+    slug: "resim-sikistirici",
+    name: "Resim Sıkıştırıcı",
+    category: "gorsel",
+    description:
+      "JPEG/PNG görselleri kalite kaybını azaltarak tarayıcınızda küçültür.",
+  },
+  {
+    slug: "resim-boyutlandirici",
+    name: "Resim Boyutlandırıcı",
+    category: "gorsel",
+    description:
+      "Görselleri istediğiniz genişlik ve yüksekliğe, oranı koruyarak ölçekler.",
+  },
+  {
+    slug: "resim-donusturucu",
+    name: "Resim Dönüştürücü",
+    category: "gorsel",
+    description:
+      "Görselleri JPG, PNG ve WebP arasında anında dönüştürür.",
+  },
+  {
+    slug: "resimden-base64",
+    name: "Resimden Base64",
+    category: "gorsel",
+    description:
+      "Görseli data URL / Base64 metnine çevirir, tek tıkla kopyalayın.",
+  },
+  {
+    slug: "resimden-renk-secici",
+    name: "Resimden Renk Seçici",
+    category: "gorsel",
+    description:
+      "Görseldeki herhangi bir pikselin rengini HEX ve RGB değeriyle seçin.",
+  },
+  {
+    slug: "slug-uretici",
+    name: "Slug Üretici",
+    category: "seo",
+    description:
+      "Başlık metnini URL dostu, temiz ve küçük harfli sluga dönüştürür.",
+  },
+  {
+    slug: "meta-tag-uretici",
+    name: "Meta Tag Üretici",
+    category: "seo",
+    description:
+      "SEO meta etiketleri ve Open Graph kodları üretir; canlı önizleme sunar.",
+  },
+  {
+    slug: "anahtar-kelime-yogunlugu",
+    name: "Anahtar Kelime Yoğunluğu",
+    category: "seo",
+    description:
+      "Metindeki anahtar kelime yoğunluğunu ve tekrar sıklığını analiz eder.",
+  },
+  {
+    slug: "serp-onizleme",
+    name: "SERP Önizleme",
+    category: "seo",
+    description:
+      "Google arama sonucu görünümünü ve başlık/açıklama uzunluğunu denetler.",
+  },
+  {
+    slug: "okunabilirlik-skoru",
+    name: "Okunabilirlik Skoru",
+    category: "seo",
+    description:
+      "Flesch okunabilirlik skorunu ve yaklaşık sınıf seviyesini hesaplar.",
+  },
+  {
+    slug: "metin-karsilastirici",
+    name: "Metin Karşılaştırıcı",
+    category: "metin",
+    description:
+      "İki metni satır satır karşılaştırır, eklenen ve çıkarılan bölümleri renklendirir.",
+  },
+  {
+    slug: "html-entity-cevirici",
+    name: "HTML Entity Çevirici",
+    category: "metin",
+    description:
+      "Metni HTML entity biçimine çevirir veya entity kodlarını çözer.",
+  },
+  {
+    slug: "morse-cevirici",
+    name: "Morse Çevirici",
+    category: "metin",
+    description:
+      "Metni Morse koduna çevirir veya Morse kodunu metne dönüştürür.",
+  },
+  {
+    slug: "metin-ters-cevirici",
+    name: "Metin Ters Çevirici",
+    category: "metin",
+    description:
+      "Metni karakterleriyle, kelime sırasıyla veya her kelimeyi ayrı ayrı ters çevirir.",
+  },
+  {
+    slug: "kalin-italik-metin",
+    name: "Kalın ve İtalik Metin Üretici",
+    category: "metin",
+    description:
+      "Metni kalın, italik veya alt çizgili Unicode karakterlere dönüştürür.",
+  },
+  {
+    slug: "caesar-sifre",
+    name: "Caesar Şifre & ROT13",
+    category: "metin",
+    description:
+      "Caesar kaydırma ve ROT13 ile şifreleme veya çözme yapar.",
+  },
+  {
+    slug: "not-ortalamasi",
+    name: "Not Ortalaması Hesaplayıcı",
+    category: "hesaplama",
+    description:
+      "Not ve kredi ağırlıklarıyla GPA/ortalama hesaplar; 4.0 ölçeği destekler.",
+  },
+  {
+    slug: "kredi-emi",
+    name: "Kredi Taksit Hesaplayıcı",
+    category: "hesaplama",
+    description:
+      "Kredi tutarı, faiz ve vade ile aylık taksit ve toplam ödemeyi hesaplar.",
+  },
+  {
+    slug: "kalori-bmr",
+    name: "Kalori & BMR Hesaplayıcı",
+    category: "hesaplama",
+    description:
+      "Bazal metabolizma (BMR) ve günlük harcanan kalorileri (TDEE) hesaplar.",
+  },
+  {
+    slug: "vucut-yag-orani",
+    name: "Vücut Yağ Oranı Hesaplayıcı",
+    category: "hesaplama",
+    description:
+      "ABD Donanması yöntemiyle vücut yağ oranını ve yağ kütlesini hesaplar.",
+  },
+  {
+    slug: "ideal-kilo",
+    name: "İdeal Kilo Hesaplayıcı",
+    category: "hesaplama",
+    description:
+      "Boy ve cinsiyete göre ideal kiloyu ve sağlıklı kilo aralığını gösterir.",
+  },
+  {
+    slug: "uyku-hesaplayici",
+    name: "Uyku Hesaplayıcı",
+    category: "hesaplama",
+    description:
+      "Uyanma saatinize göre ideal uyku saatlerini veya uyku döngülerini hesaplar.",
+  },
+  {
+    slug: "cron-test",
+    name: "Cron İfade Testi",
+    category: "gelistirici",
+    description:
+      "Cron ifadenizi doğrular, insan diline çevirir ve sonraki çalışma zamanlarını gösterir.",
+  },
+  {
+    slug: "html-formatter",
+    name: "HTML Biçimlendirici",
+    category: "gelistirici",
+    description:
+      "Dağınık HTML kodunu düzenli girintili, okunabilir biçime getirir.",
+  },
+  {
+    slug: "aes-sifreleme",
+    name: "AES Şifreleme/Çözme",
+    category: "gelistirici",
+    description:
+      "Parolayla metni AES-256-GCM kullanarak tarayıcınızda şifreler ve çözer.",
+  },
+  {
+    slug: "rastgele-string-uretici",
+    name: "Rastgele String Üretici",
+    category: "gelistirici",
+    description:
+      "API anahtarı ve token için kriptografik olarak güvenli rastgele string üretir.",
+  },
+  {
+    slug: "jwt-uretici",
+    name: "JWT Üretici",
+    category: "gelistirici",
+    description:
+      "HS256 imzalı JWT token içeriği oluşturur; header, payload ve signature adımlarını gösterir.",
   },
 ];
 

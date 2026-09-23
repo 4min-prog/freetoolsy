@@ -7,9 +7,9 @@
   },
   "Home": {
     "title": "Free Online Tools for Text, Developers & More",
-    "description": "44 free online tools in 4 categories. Character counter, password generator, JSON formatter, VAT calculator and more. No signup, no install.",
+    "description": "Free online tools: image, text, SEO, security, developer and calculator. Character counter, password generator, JSON formatter, VAT calculator and more. No signup, no install.",
     "heroTitle": "Free Online Tools for Text, Developers & More",
-    "heroSubtitle": "{tools} free tools in {cats} categories: Text, Security, Developer and Calculation. No signup, no install; every calculation happens in your browser and your data never leaves it.",
+    "heroSubtitle": "{tools} free tools in {cats} categories: Text, Security, Developer, Calculation, Image and SEO. No signup, no install; every calculation happens in your browser and your data never leaves it.",
     "jsonldSiteDesc": "Free online tools for text, security, developer and calculation. No signup, no install.",
     "jsonldAppDesc": "Character counter, password generator, JSON formatter, VAT calculator and more.",
     "faq": [
@@ -75,7 +75,9 @@
     "metin": "Text",
     "guvenlik": "Security",
     "gelistirici": "Developer",
-    "hesaplama": "Calculation"
+    "hesaplama": "Calculation",
+    "gorsel": "Image",
+    "seo": "SEO"
   },
   "Faq": {
     "title": "Frequently Asked Questions",
@@ -393,6 +395,195 @@
       "title": "MD5 File Checksum — Free Online Tool",
       "pageDesc": "Compute the MD5 digest of any file right in your browser to verify integrity. Private by design — the file is never uploaded anywhere.",
       "intro": "Pick a file to compute its MD5 checksum locally and copy the digest with one click."
+    },
+    "resim-boyutlandirici": {
+      "name": "Image Resizer",
+      "desc": "Resize images online for free — set exact width and height while keeping the aspect ratio.",
+      "title": "Image Resizer — Free Online Tool",
+      "pageDesc": "Resize images online free. Enter exact pixel width and height, keep the aspect ratio locked and download a PNG or JPEG — it runs in your browser.",
+      "intro": "Scale photos to the exact pixel size you need without losing quality."
+    },
+    "resim-donusturucu": {
+      "name": "Image Converter",
+      "desc": "Convert images between JPEG, PNG and WebP online for free with adjustable quality.",
+      "title": "Image Converter — Free Online Tool",
+      "pageDesc": "Convert images online free — switch between JPEG, PNG and WebP, adjust quality and download the new file. Conversion runs privately in your browser.",
+      "intro": "Turn any image into the format you need in one click."
+    },
+    "resim-sikistirici": {
+      "name": "Image Compressor",
+      "desc": "Compress JPG, PNG and WebP images online with a quality slider — smaller files, same look.",
+      "title": "Image Compressor — Free Online Tool",
+      "pageDesc": "Compress images online for free. Reduce JPG, PNG and WebP file sizes with a quality slider — everything runs in your browser, no upload needed.",
+      "intro": "Shrink heavy images in seconds with a quality slider you control."
+    },
+    "resimden-base64": {
+      "name": "Image to Base64",
+      "desc": "Turn any image into a Base64 data URL online — free, instant, no upload.",
+      "title": "Image to Base64 — Free Online Tool",
+      "pageDesc": "Convert images to Base64 free online. Get a ready-to-paste data URL with a copy button, file size and length — it all runs privately in your browser.",
+      "intro": "Get a copy-ready data URL from any image in one click."
+    },
+    "resimden-renk-secici": {
+      "name": "Image Color Picker",
+      "desc": "Pick any color from an image online — live HEX and RGB values with a saved palette.",
+      "title": "Image Color Picker — Free Online Tool",
+      "pageDesc": "Pick colors from any image free online. Hover to read live HEX and RGB values, click to save colors to a palette and copy them — runs in your browser.",
+      "intro": "Sample any pixel and build a palette from your own images."
+    },
+    "anahtar-kelime-yogunlugu": {
+      "name": "Keyword Density Checker",
+      "desc": "Analyze any text to see its most frequent words, total and unique word counts, and percentage density.",
+      "title": "Keyword Density Checker — Free Online Tool",
+      "pageDesc": "Free online keyword density checker: paste text in your browser to instantly see total and unique words plus each keyword's percentage density.",
+      "intro": "Check how often your keywords appear in any text and spot overused terms instantly."
+    },
+    "meta-tag-uretici": {
+      "name": "Meta Tag Generator",
+      "desc": "Generate title, meta description, Open Graph and Twitter card tags with a live Google-style preview.",
+      "title": "Meta Tag Generator — Free Online Tool",
+      "pageDesc": "Free online meta tag generator: build title, description, Open Graph and Twitter tags in your browser and preview them like a Google result.",
+      "intro": "Craft perfectly structured meta tags and see exactly how they will look in search results."
+    },
+    "okunabilirlik-skoru": {
+      "name": "Readability Score",
+      "desc": "Score any text with the Flesch Reading Ease formula and get an approximate grade level instantly.",
+      "title": "Readability Score — Free Online Tool",
+      "pageDesc": "Free online readability checker: paste text in your browser for a Flesch Reading Ease score, grade level and word and sentence stats in seconds.",
+      "intro": "Measure how easy your text is to read and get an instant Flesch score with helpful stats."
+    },
+    "serp-onizleme": {
+      "name": "SERP Preview Checker",
+      "desc": "Preview exactly how your page title and meta description will appear in Google search results.",
+      "title": "SERP Preview Checker — Free Online Tool",
+      "pageDesc": "Free online SERP preview checker: type a title and meta description to see a live Google result preview with character counters and length recommendations.",
+      "intro": "See your search result snippet before you publish and fine-tune every character."
+    },
+    "slug-uretici": {
+      "name": "Slug Generator",
+      "desc": "Turn any title into a clean, URL-ready slug with custom separators and instant copy.",
+      "title": "Slug Generator — Free Online Tool",
+      "pageDesc": "Free online slug generator: turn any title into a clean, lowercase, SEO-friendly URL slug right in your browser, with custom separators and instant copy.",
+      "intro": "Create clean, search-friendly URL slugs from any title in seconds."
+    },
+    "caesar-sifre": {
+      "name": "Caesar Cipher & ROT13",
+      "desc": "Encrypts or decrypts text with a Caesar shift from 1 to 25, plus one-click ROT13.",
+      "title": "Caesar Cipher & ROT13 — Free Online Tool",
+      "pageDesc": "Encrypt or decrypt text with the Caesar cipher free online. Pick a shift from 1 to 25, choose a direction, or jump instantly to ROT13 in your browser.",
+      "intro": "Shift your message a few letters forward or backward to make it unreadable at a glance."
+    },
+    "html-entity-cevirici": {
+      "name": "HTML Entity Converter",
+      "desc": "Encodes text into HTML entities and decodes entities back to readable characters.",
+      "title": "HTML Entity Converter — Free Online Tool",
+      "pageDesc": "Convert text to HTML entities or decode entities back to characters free online. Reserved symbols and Turkish accents are handled right in your browser.",
+      "intro": "Paste your text and switch between encoding and decoding HTML entities in one click."
+    },
+    "kalin-italik-metin": {
+      "name": "Bold & Italic Text Generator",
+      "desc": "Converts your text into Unicode bold, italic, bold-italic and monospace styles.",
+      "title": "Bold & Italic Text Generator — Free Online Tool",
+      "pageDesc": "Generate Unicode bold, italic, bold-italic and monospace text for free online. Style your name, bio or post and copy it instantly in your browser.",
+      "intro": "Type your text and get four styled versions you can copy straight into social media."
+    },
+    "metin-karsilastirici": {
+      "name": "Text Diff Checker",
+      "desc": "Compares two texts line by line and highlights added, removed and unchanged lines side by side.",
+      "title": "Text Diff Checker — Free Online Tool",
+      "pageDesc": "Compare two texts line by line with our free online text diff checker. Added, removed and unchanged lines are shown side by side in your browser.",
+      "intro": "Paste two versions of a text to see exactly which lines were added or removed."
+    },
+    "metin-ters-cevirici": {
+      "name": "Reverse Text",
+      "desc": "Reverses your text by characters, by word order or word by word in one click.",
+      "title": "Reverse Text — Free Online Tool",
+      "pageDesc": "Reverse any text for free online: flip all characters, the word order, or each word. Pick a mode and copy the result instantly in your browser.",
+      "intro": "Pick a mode, paste your text and get the reversed version immediately with one click."
+    },
+    "morse-cevirici": {
+      "name": "Morse Code Translator",
+      "desc": "Translates text into Morse code and Morse code back into readable text.",
+      "title": "Morse Code Translator — Free Online Tool",
+      "pageDesc": "Translate text to Morse code or decode Morse code back to text for free online. Supports A–Z, 0–9 and common punctuation right in your browser.",
+      "intro": "Type a message and see it in dots and dashes, or paste Morse and read the plain text back."
+    },
+    "ideal-kilo": {
+      "name": "Ideal Weight Calculator",
+      "desc": "Find your ideal weight using Devine, Robinson and BMI ranges.",
+      "title": "Ideal Weight Calculator — Free Online Tool",
+      "pageDesc": "Free ideal weight calculator: get your ideal weight with the Devine and Robinson formulas plus the healthy BMI weight range — all in your browser.",
+      "intro": "Compare Devine and Robinson formulas with a healthy BMI range."
+    },
+    "kalori-bmr": {
+      "name": "BMR & TDEE Calculator",
+      "desc": "Estimate your daily calories with the Mifflin-St Jeor formula.",
+      "title": "BMR & TDEE Calculator — Free Online Tool",
+      "pageDesc": "Free BMR and TDEE calculator: estimate daily calorie needs with the Mifflin-St Jeor formula and get weight loss, maintenance and gain targets instantly.",
+      "intro": "Know your daily calorie budget for losing, keeping or gaining weight."
+    },
+    "kredi-emi": {
+      "name": "Loan EMI Calculator",
+      "desc": "Compute monthly loan payments with interest in a few seconds.",
+      "title": "Loan EMI Calculator — Free Online Tool",
+      "pageDesc": "Free loan EMI calculator: enter the amount, annual interest and term in months to see the monthly payment, total payment and amortization plan instantly.",
+      "intro": "See your monthly payment, total interest and full amortization in seconds."
+    },
+    "not-ortalamasi": {
+      "name": "GPA Calculator",
+      "desc": "Calculate your weighted 4.0 GPA from course credits and letter grades.",
+      "title": "GPA Calculator — Free Online Tool",
+      "pageDesc": "Free GPA calculator: enter course credits and letter grades to see your weighted 4.0 GPA, total credits and 100-scale average instantly in your browser.",
+      "intro": "Convert letter grades to points and get your weighted GPA in seconds."
+    },
+    "uyku-hesaplayici": {
+      "name": "Sleep Calculator",
+      "desc": "Find the best bedtime and wake-up time with sleep cycles.",
+      "title": "Sleep Calculator — Free Online Tool",
+      "pageDesc": "Free sleep calculator: enter your wake-up time or bedtime and get schedules built on 5 and 6 sleep cycles, computed instantly in your browser.",
+      "intro": "Wake up refreshed by using complete sleep cycles."
+    },
+    "vucut-yag-orani": {
+      "name": "Body Fat Calculator",
+      "desc": "Estimate body fat percentage with the U.S. Navy method.",
+      "title": "Body Fat Calculator — Free Online Tool",
+      "pageDesc": "Free body fat calculator with the U.S. Navy method: get your body fat percentage, ACE category and fat mass in kilograms instantly in your browser.",
+      "intro": "Find your body fat percentage from simple tape measurements."
+    },
+    "aes-sifreleme": {
+      "name": "AES Encrypt/Decrypt",
+      "desc": "Encrypt and decrypt text with AES-GCM 256 using a password-derived PBKDF2 key — entirely in your browser.",
+      "title": "AES Encrypt/Decrypt — Free Online Tool",
+      "pageDesc": "Encrypt and decrypt text with AES-GCM 256 right in your browser, using a password-based PBKDF2 key so your data stays private and local on your device.",
+      "intro": "Encrypt your text with AES-GCM 256 and a password-derived key, or decrypt it back — all locally."
+    },
+    "cron-test": {
+      "name": "Cron Expression Tester",
+      "desc": "Validate each cron field, read what it matches in plain language, and get the next five run times.",
+      "title": "Cron Expression Tester — Free Online Tool",
+      "pageDesc": "Test cron expressions free in your browser: validate each of the five fields, read plain-language descriptions and see the next five run times.",
+      "intro": "Understand and predict your cron jobs with field-by-field validation and live next-run times."
+    },
+    "html-formatter": {
+      "name": "HTML Formatter",
+      "desc": "Beautify HTML with clean two-space indentation while preserving raw pre, script and style blocks.",
+      "title": "HTML Formatter — Free Online Tool",
+      "pageDesc": "Format HTML for free in your browser: paste your markup and get clean two-space indentation while pre, script and style blocks stay untouched.",
+      "intro": "Turn messy or minified HTML into readable markup while keeping code blocks safe."
+    },
+    "jwt-uretici": {
+      "name": "JWT Generator",
+      "desc": "Create signed HS256 JWT tokens from your own header, payload and secret — instantly, in your browser.",
+      "title": "JWT Generator — Free Online Tool",
+      "pageDesc": "Create signed JWT tokens free in your browser: edit the header and payload JSON, enter your secret and copy an HS256 token with visible parts.",
+      "intro": "Build a signed HS256 JSON Web Token from your own header, payload and secret — right in the browser."
+    },
+    "rastgele-string-uretici": {
+      "name": "Random String Generator",
+      "desc": "Generate secure random strings with the character sets and length you choose, powered by crypto-grade randomness.",
+      "title": "Random String Generator — Free Online Tool",
+      "pageDesc": "Generate secure random strings for free in your browser: choose uppercase, lowercase, digits, symbols and a length up to 128 characters, then copy it.",
+      "intro": "Create strong random strings in seconds with exactly the characters and length you need."
     }
   },
   "ToolContent": {
@@ -1342,6 +1533,623 @@
         "h": "Is my data safe?",
         "p": "Yes. The digest is computed entirely in your browser from the file bytes on your device; the file is never uploaded to any server, and the results are gone when you close the page."
       }
+    ],
+    "resim-boyutlandirici": [
+      {
+        "h": "What Is an Image Resizer?",
+        "p": "An image resizer changes the pixel dimensions of a picture, making it larger or smaller while keeping the content intact. This free online resizer lets you type an exact width or height, lock the aspect ratio, and download the result as a PNG or JPEG in seconds."
+      },
+      {
+        "h": "When to use it",
+        "list": [
+          "Fitting a photo into a blog header or social media post",
+          "Creating thumbnails from larger source images",
+          "Meeting exact pixel requirements on application forms",
+          "Preparing product shots for an online store"
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Does resizing reduce quality? Scaling down keeps images sharp, while scaling beyond the original size can soften detail.",
+          "Is the aspect ratio preserved? Yes — with keep aspect ratio enabled, changing one field updates the other automatically.",
+          "Which output format should I pick? Choose PNG for transparency and crisp edges, or JPEG when a smaller file matters more."
+        ]
+      }
+    ],
+    "resim-donusturucu": [
+      {
+        "h": "What Is an Image Converter?",
+        "p": "An image converter changes a picture from one file format to another, such as JPEG to PNG or PNG to WebP. This free online converter re-encodes your file right in the browser with a quality slider, so you can balance clarity and file size before downloading the result."
+      },
+      {
+        "h": "When to use it",
+        "list": [
+          "Turning PNG screenshots into much smaller JPEG files",
+          "Switching to WebP for faster, lighter websites",
+          "Preparing images that only accept one specific format",
+          "Flattening transparency by converting to JPEG"
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Which image format is best? JPEG suits photos, PNG preserves transparency and sharp lines, and WebP modern compression for both.",
+          "Can I control the output quality? Yes — the quality slider applies to JPEG and WebP so you can trade a little detail for a smaller file.",
+          "Are converted files stored? No — conversion happens in your browser and the new file downloads straight to your device."
+        ]
+      }
+    ],
+    "resim-sikistirici": [
+      {
+        "h": "What is an Image Compressor?",
+        "p": "An image compressor reduces the file size of a photo or graphic while keeping it visually sharp. This free online tool re-encodes your JPG, PNG or WebP image at the exact quality you choose, producing a much lighter file in seconds without any software to install."
+      },
+      {
+        "h": "When to use it",
+        "list": [
+          "Speeding up a slow website, blog or landing page",
+          "Shrinking photos before attaching them to email",
+          "Saving storage space on your phone or laptop",
+          "Meeting strict file size limits on upload forms"
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Is this image compressor free? Yes — the tool is completely free and unlimited.",
+          "Do my images get uploaded anywhere? No, compression runs entirely in your browser, so files never leave your device.",
+          "Which format compresses best? JPEG and WebP give the smallest photo files, while PNG keeps transparency and sharp edges."
+        ]
+      }
+    ],
+    "resimden-base64": [
+      {
+        "h": "What Is Image to Base64?",
+        "p": "Base64 encoding turns a binary image into plain text so it can be embedded directly in HTML, CSS or JSON. This free online tool converts your picture into a data URL instantly and shows the file size plus the full encoded length, so you know exactly what you are about to paste."
+      },
+      {
+        "h": "When to use it",
+        "list": [
+          "Inlining small icons directly in CSS or HTML",
+          "Embedding images in JSON or API payloads",
+          "Sharing an image as text in chat or a support ticket",
+          "Avoiding extra image requests on a landing page"
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Is this Base64 converter free? Yes, it is completely free and you can convert as many images as you like.",
+          "Why is the Base64 string longer than the file? Encoding adds about a third in overhead, so a 30 KB image becomes roughly 40 KB of text.",
+          "Does my image get uploaded? No, the conversion uses your browser's FileReader and the data never leaves your device."
+        ]
+      }
+    ],
+    "resimden-renk-secici": [
+      {
+        "h": "What Is an Image Color Picker?",
+        "p": "An image color picker samples the exact color of any pixel in a picture and returns its HEX and RGB values. This free online tool shows a live swatch as you move the mouse, and every click saves the color to a palette you can copy straight into your design tool or stylesheet."
+      },
+      {
+        "h": "When to use it",
+        "list": [
+          "Matching brand colors from a logo or screenshot",
+          "Building a palette from a photo you love",
+          "Checking color pairs for accessible, readable designs",
+          "Copying exact HEX codes for CSS or design files"
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "How do I pick a color? Upload an image, hover over the canvas to preview a pixel, then click to add it to your picked colors.",
+          "Is the image color picker free? Yes — it is free to use and runs entirely in your browser with no account needed.",
+          "How do I copy a saved color? Press the copy button next to any color in the list to put its HEX code on the clipboard."
+        ]
+      }
+    ],
+    "anahtar-kelime-yogunlugu": [
+      {
+        "h": "What Is Keyword Density?",
+        "p": "Keyword density is the percentage of times a word or phrase appears in a text compared with the total number of words. A balanced density signals relevance to search engines without looking like keyword stuffing."
+      },
+      {
+        "h": "How to Read the Results",
+        "list": [
+          "Total words counts every token found in your text.",
+          "Unique words shows how many distinct terms appear.",
+          "Each row lists a word, its occurrence count, and its share of the whole text.",
+          "Lower the minimum length filter to include short words such as prepositions."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "What is a healthy keyword density? There is no fixed number, but repeating a key term around one to two percent of the time usually reads naturally.",
+          "Does punctuation affect the count? Yes, the tool strips punctuation so forms like word and word. count as the same term.",
+          "Is my text uploaded anywhere? No, the analysis runs entirely in your browser."
+        ]
+      }
+    ],
+    "meta-tag-uretici": [
+      {
+        "h": "Why Meta Tags Matter",
+        "p": "Meta tags are often the first thing visitors read about your page. A compelling title and description can significantly raise your click-through rate from search results, while Open Graph and Twitter tags control how your link looks when it is shared on social networks."
+      },
+      {
+        "h": "What This Generator Includes",
+        "list": [
+          "A HTML title tag and meta description for search engines.",
+          "Open Graph tags for Facebook and LinkedIn, and a type field for websites or articles.",
+          "Twitter Card tags that control how your link appears in tweets.",
+          "A Google-style preview so you can judge length and wording at a glance."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "How long should my title be? Aim for about 50 to 60 characters so search engines do not cut it off.",
+          "What is the ideal description length? Between 140 and 160 characters gives you room for a full message.",
+          "Do I need an image for Twitter cards? A large image card looks best, but the tool falls back to a summary card without one."
+        ]
+      }
+    ],
+    "okunabilirlik-skoru": [
+      {
+        "h": "What Is the Flesch Reading Ease Score?",
+        "p": "The Flesch Reading Ease formula rates a text from 0 to 100 based on average sentence length and average syllables per word. Higher scores mean the text is easier to read, while lower scores point to dense, academic writing."
+      },
+      {
+        "h": "Understanding the Scale",
+        "list": [
+          "90 to 100: very easy, understood by an average 11-year-old.",
+          "70 to 89: easy, works well for blogs and general audiences.",
+          "50 to 69: fairly difficult, suits informed readers on focused topics.",
+          "Below 50: difficult, consider shorter sentences and simpler words."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Does this work for Turkish text? Yes, the syllable counter uses a vowel-group heuristic that handles Turkish vowels correctly.",
+          "What grade level should I aim for? Most web content reads best around a seventh to ninth grade level.",
+          "Is my text stored? No, all calculations happen locally in your browser."
+        ]
+      }
+    ],
+    "serp-onizleme": [
+      {
+        "h": "How Google Displays Your Snippet",
+        "p": "Google shows a blue title followed by a short description under your page address. Both are usually truncated when they run too long, which can cut your message in half and lower click-through rates."
+      },
+      {
+        "h": "Recommended Lengths",
+        "list": [
+          "Keep the title at or below 60 characters to avoid truncation.",
+          "Keep the description at or below 160 characters.",
+          "Put your most important keyword near the start of the title.",
+          "Write a description that promises a clear benefit to the reader."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Does Google always use my title tag? Not always. It may rewrite titles it considers too long, too short, or stuffed with keywords.",
+          "What do the green and orange counters mean? Green means you are within the recommended length, orange means the text will likely be cut off.",
+          "Is the preview pixel perfect? It is a close approximation of Google's desktop layout, updated live as you type."
+        ]
+      }
+    ],
+    "slug-uretici": [
+      {
+        "h": "What Is a URL Slug?",
+        "p": "A URL slug is the human-readable part of a link that identifies a page, such as the words that appear after your domain in a blog post URL. Clean slugs help search engines and visitors understand what a page is about before they even click."
+      },
+      {
+        "h": "How to Use This Slug Generator",
+        "list": [
+          "Type or paste any title, sentence, or keyword phrase.",
+          "Choose a separator: hyphen, underscore, or no separator at all.",
+          "Toggle ASCII-only output to transliterate accented and Turkish characters.",
+          "Copy the finished slug and paste it into your CMS or router."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Why should slugs be lowercase? Lowercase slugs avoid duplicate URLs caused by case differences and are easier to share and remember.",
+          "What separator is best? Hyphens are the most common choice for SEO, but underscores work fine when your system expects them.",
+          "Does this tool send my text anywhere? No. Everything runs locally in your browser, so your input never leaves your device."
+        ]
+      }
+    ],
+    "caesar-sifre": [
+      {
+        "h": "What is the Caesar cipher?",
+        "p": "A substitution cipher where each letter of the alphabet is replaced by the letter a fixed number of positions later. With a shift of 3, A becomes D, B becomes E and so on; it is one of the oldest known encryption techniques."
+      },
+      {
+        "h": "How do I use it?",
+        "list": [
+          "Choose Encrypt or Decrypt to set the direction of the transformation.",
+          "Drag the shift slider from 1 to 25 to pick how far letters move.",
+          "Hit ROT13 to jump straight to shift 13, where encrypting and decrypting are the same operation."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Which characters are changed? Only A–Z and a–z are shifted; numbers, accents, Turkish letters and symbols stay untouched.",
+          "Is ROT13 secure? No, it is not a form of real encryption — like all Caesar shifts it is trivially breakable.",
+          "Where is the work done? Entirely in your browser; your text is never uploaded."
+        ]
+      }
+    ],
+    "html-entity-cevirici": [
+      {
+        "h": "What are HTML entities?",
+        "p": "HTML entities are codes that start with an ampersand and end with a semicolon, for example &amp; for &. They let you safely insert characters that have special meaning in HTML, like angle brackets, quotes and ampersands, without breaking the markup."
+      },
+      {
+        "h": "What gets converted?",
+        "list": [
+          "Reserved characters & < > \" ' are always encoded.",
+          "Common accents: é becomes &eacute;, and the Turkish letters ç, ğ, ı, ö, ş, ü and İ get proper entities.",
+          "All other characters are passed through unchanged."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Is my data sent anywhere? No — encoding and decoding run entirely in your browser.",
+          "Why does ' become &#39;? The apostrophe is encoded as a numeric entity so it is safe inside single-quoted attributes.",
+          "Can I decode any entity? Yes, standard named and numeric entities are decoded back to their characters."
+        ]
+      }
+    ],
+    "kalin-italik-metin": [
+      {
+        "h": "What is a bold & italic text generator?",
+        "p": "It replaces each letter and digit of your text with its Unicode mathematical style equivalent. Characters look bold, italic, bold-italic or monospace in any app that supports them, without you applying any formatting."
+      },
+      {
+        "h": "Where can I use styled text?",
+        "list": [
+          "Social media bios, usernames and captions that do not offer a bold button.",
+          "Chat messages, forum posts and comments that only accept plain text.",
+          "Titles, signatures and highlights inside documents or emails."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Why does the style disappear in some apps? The characters are real Unicode symbols, but apps that lack glyph support fall back to a plain look.",
+          "Are all characters converted? Only A–Z, a–z and 0–9 have styled equivalents; Turkish accents and symbols stay untouched.",
+          "Where does the conversion happen? Entirely in your browser — nothing is uploaded."
+        ]
+      }
+    ],
+    "metin-karsilastirici": [
+      {
+        "h": "What is a text diff checker?",
+        "p": "It compares two documents line by line and aligns them so matching lines stay paired. Lines that appear only in the first text are marked as removed, lines that appear only in the second are marked as added, while identical lines remain unhighlighted."
+      },
+      {
+        "h": "How should I use it?",
+        "list": [
+          "Paste the original text into the left box and the new version into the right box.",
+          "Review the side-by-side view: amber removals on the left, green additions on the right.",
+          "Check the summary tiles for total, added, removed and unchanged line counts."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Is my text uploaded anywhere? No — the comparison runs entirely in your browser and your text never leaves your device.",
+          "Is the comparison case-sensitive? Yes, lines are compared exactly; a line that only differs in capitalization counts as changed.",
+          "How are large texts handled? The comparison is line-based, so pairing stays correct across thousands of lines."
+        ]
+      }
+    ],
+    "metin-ters-cevirici": [
+      {
+        "h": "What does Reverse Text do?",
+        "p": "It rearranges the characters or words of your text in three ways: reverse every character, reverse the order of whole words while keeping letters readable, or reverse each word individually while keeping the sentence order."
+      },
+      {
+        "h": "What is each mode good for?",
+        "list": [
+          "Reverse all characters: classic mirror-style text used for puzzles and challenges.",
+          "Reverse word order: turns a phrase into its words read backwards, letters untouched.",
+          "Reverse each word: flips the letters inside every word but keeps the words in the same order."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Does it keep whitespace and punctuation? Yes, spaces, punctuation and line breaks keep their positions as closely as possible.",
+          "Is my text sent anywhere? No, everything runs locally in your browser.",
+          "Are Turkish characters supported? Yes, all Unicode text is reversed correctly."
+        ]
+      }
+    ],
+    "morse-cevirici": [
+      {
+        "h": "What is Morse code?",
+        "p": "Morse code encodes letters, digits and punctuation as sequences of dots and dashes. It was originally used for telegraph communication, where each character is a timed signal of short and long pulses."
+      },
+      {
+        "h": "How does this translator work?",
+        "list": [
+          "Text to Morse: letters become dot-dash sequences separated by spaces; words are separated by a slash (/).",
+          "Morse to text: each symbol is read back to its letter; a slash marks a word boundary.",
+          "Supported characters are A–Z, 0–9 and the punctuation . , ? ! & ( ) and -."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Can Turkish letters be translated? No — Turkish characters such as ç and ş are not part of standard Morse and are left as-is.",
+          "Why are words separated by /? It is the widely used convention for representing a space between words in Morse text.",
+          "Is my message sent to a server? No, all translation happens locally in your browser."
+        ]
+      }
+    ],
+    "ideal-kilo": [
+      {
+        "h": "Which formulas are used?",
+        "p": "This free calculator reports the two most common ideal weight formulas. Devine gives 50 + 2.3 × (height in inches - 60) for men and 45.5 + 2.3 × (height in inches - 60) for women. Robinson gives 52 + 1.9 × (...) for men and 49 + 1.7 × (...) for women. It also shows the healthy range for a BMI between 18.5 and 24.9."
+      },
+      {
+        "h": "How to use",
+        "list": [
+          "Select your sex and enter your height in centimeters.",
+          "Optional: enter your current weight to compare it with the healthy range.",
+          "Read the Devine and Robinson ideal weight values.",
+          "See the healthy BMI weight range and a color hint for your position in it."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Which ideal weight should I trust? The formulas were built for height-based estimates on adult populations, so small differences between them are normal. The healthy BMI range is often the better practical target because it acknowledges a span of healthy weights.",
+          "Why do men and women get different values? On average women have less lean mass and more essential body fat at the same height, so both formulas start from a lower base for women (45.5-49 kg instead of 50-52 kg) and the Robinson slope is smaller.",
+          "What is the healthy BMI range? A BMI between 18.5 and 24.9 is considered normal weight by the WHO. The calculator converts that BMI range to a weight range in kilograms based on your height."
+        ]
+      }
+    ],
+    "kalori-bmr": [
+      {
+        "h": "What are BMR and TDEE?",
+        "p": "BMR (Basal Metabolic Rate) is the energy your body burns at complete rest, and TDEE (Total Daily Energy Expenditure) adds the calories you burn through activity. This free calculator computes BMR with the Mifflin-St Jeor equation — men: 10×weight + 6.25×height - 5×age + 5, women: -161 — then multiplies it by your chosen activity factor."
+      },
+      {
+        "h": "How to use",
+        "list": [
+          "Select your sex and enter age, height in centimeters and weight in kilograms.",
+          "Choose an activity level that matches your typical weekly exercise.",
+          "Read your BMR and TDEE calorie cards, then check the three goal rows.",
+          "Copy your TDEE with one click to use it in your own plan."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Which activity level should I pick? Be honest about your real week. Sedentary means little exercise, light is 1-3 days, moderate is 3-5 days, active is 6-7 days and very active includes hard training or a physical job. Choosing too high a level often overestimates your burn.",
+          "Why does the calculator suggest -500 calories? One kilogram of body fat holds roughly 7,700 kcal, so cutting about 500 kcal a day means around -0.5 kg (about one pound) per week — a common, sustainable weight-loss target.",
+          "Can I trust these numbers exactly? Mifflin-St Jeor is accurate for most adults, but every formula is an estimate. Muscle mass, genetics and daily variation all affect real energy needs, so treat the result as a starting point."
+        ]
+      }
+    ],
+    "kredi-emi": [
+      {
+        "h": "What is an EMI?",
+        "p": "EMI (Equated Monthly Installment) is the fixed amount you pay each month to repay a loan with interest. This free calculator uses the standard formula P × r × (1+r)^n / ((1+r)^n - 1), where P is the principal, r the monthly interest rate and n the number of months, so you always see an accurate monthly payment."
+      },
+      {
+        "h": "How to use",
+        "list": [
+          "Enter the loan amount in your currency, e.g. 500000.",
+          "Type the annual interest rate in percent and the term in months.",
+          "Read the monthly payment, total payment and total interest cards.",
+          "Open the amortization table to see principal, interest and balance month by month."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "How is the monthly rate calculated? The annual interest rate is divided by 12 to get the monthly rate. For example, an annual rate of 24% becomes a 2% monthly rate before the EMI formula is applied.",
+          "Why is total interest almost as high as the principal? Interest is charged on the remaining balance each month. Early payments go mostly toward interest, so the total interest can be high for long terms or high rates.",
+          "Does the calculator include fees? No. It computes only principal and interest. Banks often add origination fees, insurance or other costs that are not included in the EMI here."
+        ]
+      }
+    ],
+    "not-ortalamasi": [
+      {
+        "h": "What is this GPA calculator?",
+        "p": "This free tool lets you enter each of your courses with its credit amount and letter grade, then computes a weighted GPA on the standard 4.0 scale used by most universities. A+ and A both count as 4.0, followed by A- 3.7, B+ 3.3 and so on down to F. You can also switch on a 100-scale average that estimates each grade's typical percentage."
+      },
+      {
+        "h": "How to use",
+        "list": [
+          "Click Add course to create rows for every course you have or plan to take.",
+          "Set the credits for each course (default 1) and pick the grade from the dropdown.",
+          "Read your weighted GPA, total credits and optional 100-scale average.",
+          "Copy the result with one click to share or store it."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Is A+ worth more than A? On the standard 4.0 scale both A+ and A equal 4.0 points. Some universities use a 4.3 scale that adds extra weight to A+, but this calculator follows the common 4.0 convention.",
+          "What does 'weighted' mean? All grades are multiplied by their course's credit amount before the average is taken. A strong grade in a high-credit course therefore affects your GPA more than a grade in a low-credit one.",
+          "Is the 100-scale average accurate? The 100-scale average uses each letter grade's typical percentage, so it is an estimate. Your school may apply a different conversion table, especially for A+ or F grading."
+        ]
+      }
+    ],
+    "uyku-hesaplayici": [
+      {
+        "h": "How does the sleep calculator work?",
+        "p": "A full sleep cycle lasts about 90 minutes and goes through light sleep, deep sleep and REM sleep. This free calculator adds about 15 minutes for falling asleep and then works backwards from your wake-up time — or forwards from your bedtime — to recommend schedules that end at the natural end of the 5th or 6th cycle."
+      },
+      {
+        "h": "How to use",
+        "list": [
+          "Choose the wake-up mode to get recommended bedtimes, or the bedtime mode for wake-up suggestions.",
+          "Pick a time with the time input.",
+          "Read the suggestions for 5 and 6 sleep cycles.",
+          "Copy the full list with one click and follow the schedule that fits your life."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Why are 5 or 6 cycles recommended? Waking up inside deep sleep makes you groggy, while waking between cycles leaves you more alert. With 5 cycles you sleep about 7.5 hours and with 6 about 9 hours, plus roughly 15 minutes to fall asleep.",
+          "Do I have to start in bed exactly at the suggested time? No. The suggested bedtime is when you should aim to fall asleep about 15 minutes later. Falling asleep a few minutes off is fine — consistency matters more than a perfect minute.",
+          "Can I use it if I sleep less than 5 cycles? It works with any wake-up or bedtime you enter. Staying within complete cycles is ideal, but a 4-cycle night is still calculated correctly if that is what your schedule allows."
+        ]
+      }
+    ],
+    "vucut-yag-orani": [
+      {
+        "h": "The U.S. Navy method",
+        "p": "This free calculator uses the U.S. Navy circumference method, which estimates body fat from height plus neck, waist and (for women) hip measurements. For men: 86.010 × log10(waist - neck) - 70.041 × log10(height) + 36.76. For women: 163.205 × log10(waist + hip - neck) - 97.684 × log10(height) - 78.387."
+      },
+      {
+        "h": "How to use",
+        "list": [
+          "Select your sex and enter height, neck, waist and, for women, hip in centimeters.",
+          "Optional: add your weight to also get your fat mass in kilograms.",
+          "Read your body fat percentage, ACE category and explanatory note.",
+          "Check the category table below for men and women ranges."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "How accurate is the U.S. Navy formula? When measured carefully, its error is typically around 3-4% compared with laboratory methods such as hydrostatic weighing. Keep measurements consistent and not too tight for the best result.",
+          "What do the ACE categories mean? They follow the American Council on Exercise ranges: essential fat, athletes, fitness, average and obese. They are general guides and your ideal range depends on age, sport and personal goals.",
+          "Why is the hip measurement only for women? Women store proportionally more fat around the hips and thighs, so the formula uses waist plus hip minus neck for them. Men can be estimated from the waist alone."
+        ]
+      }
+    ],
+    "aes-sifreleme": [
+      {
+        "h": "What is AES Encrypt/Decrypt?",
+        "p": "This tool encrypts your text with AES-GCM 256, a modern authenticated cipher, using a key derived from your password with PBKDF2 (100,000 iterations). The same password can decrypt the stored value back, and everything runs in your browser with nothing uploaded."
+      },
+      {
+        "h": "Why is the output in three parts?",
+        "list": [
+          "Salt: random bytes that make the derived key unique even for the same password.",
+          "IV: a fresh random initialization vector generated for every encryption.",
+          "Ciphertext: the encrypted bytes plus an integrity tag so tampering is always detected.",
+          "All three are base64-encoded and joined as base64(salt).base64(iv).base64(ciphertext); decrypt parses this exact format."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Can you decrypt my data? No — the password is required to derive the key, and encryption happens entirely in the browser; the tool never sees your plaintext or password.",
+          "Why is it not instant? PBKDF2 runs 100,000 iterations on purpose to make brute-force attacks expensive; that delay is what keeps the encryption strong.",
+          "A decrypt error says wrong password or bad format — what now? Either the password does not match, the value was edited, or the three base64 parts are missing."
+        ]
+      }
+    ],
+    "cron-test": [
+      {
+        "h": "What is a Cron Expression Tester?",
+        "p": "A Cron Expression Tester checks a five-field cron expression such as 0 9 * * MON-FRI and explains what each field matches in plain language. It then scans forward minute by minute from now to find the next five exact run times, which you can copy as ISO-style or localized timestamps."
+      },
+      {
+        "h": "How do the five fields work?",
+        "list": [
+          "Minute (0–59): picks the minute of each hour; */5 matches every 5 minutes.",
+          "Hour (0–23): selects which hours run; 9-17 means 09:00 through 17:00.",
+          "Day of month (1–31): selects days such as 1,15,31 or a range like 1-15.",
+          "Month (1–12 or JAN–DEC): restricts the expression to certain months; names like JAN-DEC are accepted.",
+          "Day of week (0–7 or SUN–SAT): 0 and 7 both mean Sunday; MON-FRI matches weekdays."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "What syntax does the tool accept? Standard five-field cron syntax: *, */n, a-b, a-b/n and comma-separated lists like 0,15,30,45.",
+          "Are month and weekday names case-sensitive? No — MON, mon and Mon are all accepted and can be mixed freely with numbers.",
+          "Do day-of-month and day-of-week combine? Yes, like classic cron: when both are restricted, a date matches when either field matches."
+        ]
+      }
+    ],
+    "html-formatter": [
+      {
+        "h": "What is an HTML Formatter?",
+        "p": "An HTML Formatter rewrites your markup with a consistent two-space indent so tags become easy to scan and edit. Text between tags is trimmed onto its own lines, comments are kept in place, and raw content inside pre, script and style blocks is preserved exactly as written."
+      },
+      {
+        "h": "How does formatting work here?",
+        "list": [
+          "Opening and closing tags are re-indented to reflect nesting depth; void and self-closing tags never add indentation.",
+          "Whitespace between tags is collapsed and inline text is placed on its own trimmed line.",
+          "Content inside <pre>, <script> and <style> is copied as-is — code is never reformatted.",
+          "HTML comments and doctypes are preserved, and malformed HTML never crashes the tool."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Does this change my JavaScript or CSS? No — anything inside script, style and pre tags is kept byte-for-byte; only the surrounding indentation changes.",
+          "Can I re-format the output again? Yes, formatting is idempotent: feeding the formatted result back in produces the same clean output.",
+          "Is my HTML uploaded anywhere? No — formatting runs entirely in your browser and your markup never leaves your device."
+        ]
+      }
+    ],
+    "jwt-uretici": [
+      {
+        "h": "What is a JWT Generator?",
+        "p": "A JWT Generator builds an HS256 JSON Web Token from three parts you control: a header JSON that declares the algorithm, a payload JSON with your claims, and a secret. The browser signs header.payload with HMAC-SHA256 via the Web Crypto API and shows each part so you can inspect the token."
+      },
+      {
+        "h": "What does each step produce?",
+        "list": [
+          "Header: your JSON header, base64url-encoded without padding.",
+          "Payload: your JSON claims, base64url-encoded.",
+          "Signature: the HMAC-SHA256 digest of header.payload keyed with your secret.",
+          "The full token is header.payload.signature — ready to copy into a test, curl command or audience tool."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Does this create a valid token? Yes — as long as header and payload are valid JSON and you provide a secret, the output is a correctly signed HS256 JWT that standard libraries can verify.",
+          "Where does the secret go? Nowhere — signing happens entirely in your browser and your secret is never uploaded or stored.",
+          "Can I use a different algorithm? The default is HS256; you may edit the header JSON, but the signature itself is always computed with HMAC-SHA256."
+        ]
+      }
+    ],
+    "rastgele-string-uretici": [
+      {
+        "h": "What is a Random String Generator?",
+        "p": "A Random String Generator instantly produces random text from the character types you enable: uppercase, lowercase, digits and symbols. It uses the browser crypto.getRandomValues API with unbiased sampling, so results suit tokens, salts, one-time codes and test data."
+      },
+      {
+        "h": "What can you configure?",
+        "list": [
+          "Uppercase (A–Z): capital letters.",
+          "Lowercase (a–z): lower-case letters.",
+          "Digits (0–9): numbers.",
+          "Symbols (!@#$…): punctuation and special characters.",
+          "Length: any value from 1 to 128 characters; you can regenerate as many times as you like."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Is it really random? Yes — values come from crypto.getRandomValues, a cryptographic-quality source; every generation is fresh and independent.",
+          "Can the same string appear twice? Randomness means a repeat is technically possible, but with long strings the chance is astronomically small.",
+          "Is the result stored or uploaded? No — generation happens locally in your browser and nothing is sent to any server."
+        ]
+      }
     ]
   },
   "ToolPage": {
@@ -2028,6 +2836,452 @@
       "copy": "Copy",
       "copied": "Copied!",
       "tip": "The result is computed entirely in your browser; the file is never sent anywhere."
+    },
+    "resimBoyutlandirici": {
+      "upload": "Choose an image",
+      "width": "Width (px)",
+      "height": "Height (px)",
+      "keepRatio": "Keep aspect ratio",
+      "format": "Output format",
+      "original": "Original: {w} × {h} px",
+      "output": "New size: {w} × {h} px",
+      "download": "Download resized",
+      "note": "Everything happens in your browser — no upload required.",
+      "error": "Could not process that file. Please choose a valid image."
+    },
+    "resimDonusturucu": {
+      "upload": "Choose an image",
+      "format": "Convert to",
+      "quality": "Quality",
+      "originalSize": "Original size",
+      "newSize": "New size",
+      "download": "Download converted",
+      "note": "Conversion runs in your browser — files are never uploaded.",
+      "error": "Unsupported file. Please choose an image in JPEG, PNG or WebP format."
+    },
+    "resimSikistirici": {
+      "upload": "Choose an image",
+      "quality": "Quality",
+      "maxWidth": "Max width (px, optional)",
+      "originalSize": "Original size",
+      "newSize": "New size",
+      "saved": "Saved",
+      "download": "Download compressed",
+      "note": "Runs entirely in your browser — your image never leaves your device.",
+      "error": "That file type is not supported. Please choose an image file."
+    },
+    "resimdenBase64": {
+      "upload": "Choose an image",
+      "result": "Base64 data URL",
+      "fileSize": "File size",
+      "dataLength": "Data URL length",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "note": "Encoding runs in your browser — nothing is uploaded.",
+      "error": "Could not read that file. Please choose an image."
+    },
+    "resimdenRenkSecici": {
+      "upload": "Choose an image",
+      "hint": "Move over the image to preview a color, click to save it.",
+      "current": "Current color",
+      "hex": "HEX",
+      "rgb": "RGB",
+      "picked": "Picked colors",
+      "empty": "Click the image to save colors.",
+      "clear": "Clear all",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "error": "Could not open that file. Please choose an image."
+    },
+    "anahtarKelimeYogunlugu": {
+      "label": "Your text",
+      "placeholder": "Paste your article, blog post, or keyword research here.",
+      "minLength": "Minimum word length",
+      "totalWords": "Total words",
+      "uniqueWords": "Unique words",
+      "topWords": "Words shown",
+      "thWord": "Word",
+      "thCount": "Count",
+      "thDensity": "Density",
+      "empty": "Paste some text to start the keyword density analysis."
+    },
+    "metaTagUretici": {
+      "titleLabel": "Page title",
+      "titlePlaceholder": "e.g. 10 SEO Tips That Actually Work",
+      "descLabel": "Meta description",
+      "descPlaceholder": "Write a short, tempting summary around 160 characters.",
+      "urlLabel": "Page URL",
+      "urlPlaceholder": "https://example.com/post",
+      "typeLabel": "Content type",
+      "typeWebsite": "Website",
+      "typeArticle": "Article",
+      "imageLabel": "Image URL",
+      "imagePlaceholder": "https://example.com/cover.jpg",
+      "handleLabel": "Twitter handle",
+      "handlePlaceholder": "@yourhandle",
+      "outputLabel": "Generated meta tags",
+      "outputPlaceholder": "Your meta tags will appear here as you fill the fields.",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "previewLabel": "Google preview",
+      "note": "The snippet updates live. Open Graph and Twitter tags are only emitted for the fields you fill in."
+    },
+    "okunabilirlikSkoru": {
+      "label": "Your text",
+      "placeholder": "Paste your article, email, or web copy here to score its readability.",
+      "fleschLabel": "Flesch Reading Ease",
+      "statWords": "Words",
+      "statSentences": "Sentences",
+      "statSyllables": "Syllables",
+      "avgLabel": "Avg. words / sentence",
+      "gradeLabel": "Approximate grade level",
+      "levelVeryEasy": "Very easy to read",
+      "levelEasy": "Easy to read",
+      "levelFairlyDifficult": "Fairly difficult",
+      "levelDifficult": "Difficult to read",
+      "empty": "Paste some text to calculate its readability score."
+    },
+    "serpOnizleme": {
+      "titleLabel": "Page title",
+      "titlePlaceholder": "e.g. The Complete Guide to Local SEO",
+      "descLabel": "Meta description",
+      "descPlaceholder": "Enter the description that appears under the blue title in search results.",
+      "ok": "Within the recommended length",
+      "over": "Over the recommended length",
+      "current": "Current: {count}",
+      "recommended": "Recommended: {max}",
+      "previewLabel": "Google search preview",
+      "emptyTitle": "Your page title preview will appear here.",
+      "emptyDesc": "Write a meta description to preview how your snippet will look in search results."
+    },
+    "slugUretici": {
+      "label": "Text to convert",
+      "placeholder": "e.g. How to Build Better Backlinks",
+      "separator": "Separator",
+      "sepHyphen": "Hyphen (-)",
+      "sepUnderscore": "Underscore (_)",
+      "sepNone": "None",
+      "keepAscii": "ASCII characters only",
+      "outputLabel": "Generated slug",
+      "empty": "Your slug will appear here as you type.",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "note": "Accented characters are transliterated automatically, so titles in any language produce friendly ASCII slugs."
+    },
+    "caesarSifre": {
+      "directionAria": "Choose cipher direction",
+      "modeEncrypt": "Encrypt",
+      "modeDecrypt": "Decrypt",
+      "rot13": "ROT13",
+      "label": "Enter your text",
+      "placeholder": "Type or paste here…",
+      "shift": "Shift",
+      "outputLabel": "Result",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "note": "Only A–Z and a–z letters are shifted; Turkish letters, numbers, punctuation and symbols are preserved as-is."
+    },
+    "htmlEntityCevirici": {
+      "tabAria": "Choose conversion direction",
+      "modeEncode": "HTML Encode",
+      "modeDecode": "HTML Decode",
+      "encodeLabel": "Text to encode",
+      "decodeLabel": "Entities to decode",
+      "encodePlaceholder": "Type or paste text to encode…",
+      "decodePlaceholder": "Paste HTML entities…",
+      "outputEncode": "Encoded output",
+      "outputDecode": "Decoded output",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "note": "Reserved characters (& < > \" ') and common accented letters (é and the Turkish set ç ğ ı ö ş ü İ) are converted; everything else stays untouched."
+    },
+    "kalinItalikMetin": {
+      "label": "Enter your text",
+      "placeholder": "Type or paste here…",
+      "styleBold": "Bold",
+      "styleItalic": "Italic",
+      "styleBoldItalic": "Bold Italic",
+      "styleMono": "Monospace",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "note": "Uses Unicode Mathematical Alphanumeric Symbols. Only A–Z, a–z and 0–9 are styled (italic and bold-italic have no digit forms); all other characters stay as-is."
+    },
+    "metinKarsilastirici": {
+      "originalLabel": "Original text",
+      "originalPlaceholder": "Paste the original version…",
+      "changedLabel": "Changed text",
+      "changedPlaceholder": "Paste the new version…",
+      "oldLabel": "Original",
+      "newLabel": "Changed",
+      "total": "Total lines",
+      "added": "Added",
+      "removed": "Removed",
+      "unchanged": "Unchanged",
+      "emptyHint": "Start typing in both boxes to see the diff.",
+      "note": "Line-based comparison. Matching lines are paired with LCS alignment; whitespace is compared as-is."
+    },
+    "metinTersCevirici": {
+      "label": "Enter your text",
+      "placeholder": "Type or paste here…",
+      "modeLabel": "Reverse mode",
+      "optionChars": "Reverse all characters",
+      "optionWords": "Reverse word order",
+      "optionWordChars": "Reverse each word",
+      "outputLabel": "Reversed output",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "note": "Reverse all characters flips the whole string; reverse word order keeps letters but flips the sequence of words; reverse each word flips the letters inside every word."
+    },
+    "morseCevirici": {
+      "tabAria": "Choose translation direction",
+      "modeText": "Text → Morse",
+      "modeMorse": "Morse → Text",
+      "textLabel": "Text to translate",
+      "morseLabel": "Morse code to read",
+      "textPlaceholder": "Type or paste a message…",
+      "morsePlaceholder": "Paste Morse code (letters split by spaces, slash / between words)…",
+      "outputText": "Morse code",
+      "outputMorse": "Plain text",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "note": "Supports A–Z, 0–9 and . , ? ! & ( ) and -. Unsupported characters are passed through as-is."
+    },
+    "idealKilo": {
+      "sexLabel": "Sex",
+      "male": "Male",
+      "female": "Female",
+      "heightLabel": "Height (cm)",
+      "currentWeightLabel": "Current weight (kg, optional)",
+      "currentWeightPlaceholder": "e.g. 72 (optional)",
+      "devine": "Ideal weight (Devine)",
+      "robinson": "Ideal weight (Robinson)",
+      "rangeLabel": "Healthy range (BMI 18.5-24.9)",
+      "currentState": "Your weight:",
+      "below": "you are below the healthy range.",
+      "within": "you are within the healthy range.",
+      "above": "you are above the healthy range.",
+      "copy": "Copy result",
+      "copied": "Copied",
+      "emptyState": "Enter your height to see your ideal weight.",
+      "note": "Based on the Devine and Robinson formulas plus the healthy BMI range."
+    },
+    "kaloriBmr": {
+      "sexLabel": "Sex",
+      "male": "Male",
+      "female": "Female",
+      "ageLabel": "Age",
+      "heightLabel": "Height (cm)",
+      "weightLabel": "Weight (kg)",
+      "activityLabel": "Activity level",
+      "sedentary": "Sedentary (little or no exercise)",
+      "light": "Lightly active (1-3 days/week)",
+      "moderate": "Moderately active (3-5 days/week)",
+      "active": "Active (6-7 days/week)",
+      "veryActive": "Very active (hard exercise / physical job)",
+      "bmr": "BMR",
+      "tdee": "TDEE",
+      "kcal": "kcal/day",
+      "loseGoal": "Weight loss (approx. -0.5 kg/week)",
+      "keepGoal": "Maintain weight",
+      "gainGoal": "Weight gain (approx. +0.5 kg/week)",
+      "copy": "Copy TDEE",
+      "copied": "Copied",
+      "emptyState": "Enter your sex, age, height, weight and activity level to see your calorie needs.",
+      "note": "BMR uses the Mifflin-St Jeor equation. Results are estimates and do not replace professional advice."
+    },
+    "krediEmi": {
+      "principalLabel": "Loan amount",
+      "principalPlaceholder": "e.g. 500000",
+      "interestLabel": "Annual interest rate (%)",
+      "interestPlaceholder": "e.g. 25",
+      "monthsLabel": "Loan term (months)",
+      "monthsPlaceholder": "e.g. 24",
+      "monthlyPayment": "Monthly payment",
+      "totalPayment": "Total payment",
+      "totalInterest": "Total interest",
+      "showAmortization": "Show amortization table",
+      "hideAmortization": "Hide amortization table",
+      "monthCol": "Month",
+      "paymentCol": "Payment",
+      "principalCol": "Principal",
+      "interestCol": "Interest",
+      "balanceCol": "Balance",
+      "copy": "Copy monthly payment",
+      "copied": "Copied",
+      "emptyState": "Enter the loan amount, rate and term to see the payment.",
+      "note": "The annual rate is converted to a monthly rate by dividing by 12. Results update instantly."
+    },
+    "notOrtalamasi": {
+      "courseLabel": "Course",
+      "creditsLabel": "Credits",
+      "gradeLabel": "Grade",
+      "addRow": "Add course",
+      "removeLabel": "Remove",
+      "removeRow": "Remove course",
+      "percentScale": "100-scale average",
+      "percentOff": "Off",
+      "percentOn": "On",
+      "gpa": "Weighted GPA",
+      "totalCredits": "Total credits",
+      "avg100": "Average (100)",
+      "copy": "Copy result",
+      "copied": "Copied",
+      "emptyState": "Add courses with credits and grades above to see your GPA.",
+      "note": "A+ and A both equal 4.0. The 100-scale average uses each grade's typical percentage and is an estimate."
+    },
+    "uykuHesaplayici": {
+      "tabAria": "Sleep calculator mode",
+      "tabWake": "Wake-up time",
+      "tabBed": "Bedtime",
+      "wakeLabel": "Wake-up time",
+      "bedLabel": "Bedtime",
+      "note": "Assumes about 15 minutes to fall asleep. Each sleep cycle lasts about 90 minutes.",
+      "bedAt": "Bed at",
+      "wakeAt": "wake at",
+      "cycles": "cycles",
+      "copy": "Copy suggestions",
+      "copied": "Copied",
+      "emptyState": "Pick a time to see recommended bedtimes or wake times."
+    },
+    "vucutYagOrani": {
+      "sexLabel": "Sex",
+      "male": "Male",
+      "female": "Female",
+      "heightLabel": "Height (cm)",
+      "neckLabel": "Neck (cm)",
+      "waistLabel": "Waist (cm)",
+      "hipLabel": "Hip (cm)",
+      "weightLabel": "Weight (kg, optional)",
+      "weightPlaceholder": "e.g. 70 (optional)",
+      "fatPercent": "Body fat",
+      "categoryLabel": "Category",
+      "fatMass": "Fat mass",
+      "essential": "Essential fat",
+      "athletes": "Athletes",
+      "fitness": "Fitness",
+      "average": "Average",
+      "obese": "Obese",
+      "essentialNote": "Essential fat is the minimum body fat needed for basic physical health.",
+      "athletesNote": "This range is common for many competitive and highly active athletes.",
+      "fitnessNote": "This range is typical for active, fit individuals.",
+      "averageNote": "This range is considered acceptable for the general population.",
+      "obeseNote": "This level is above the recommended range and may increase health risks.",
+      "scaleLabel": "ACE body fat categories (%)",
+      "scaleCategory": "Category",
+      "scaleNote": "Body fat percentage ranges according to the American Council on Exercise (ACE).",
+      "copy": "Copy result",
+      "copied": "Copied",
+      "emptyState": "Enter your measurements to see your body fat percentage.",
+      "note": "Uses the U.S. Navy method. The hip measurement is only needed for women."
+    },
+    "aesSifreleme": {
+      "modeEncrypt": "Encrypt",
+      "modeDecrypt": "Decrypt",
+      "modeAria": "Encoder mode",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "Your password…",
+      "plainLabel": "Plaintext",
+      "plainPlaceholder": "Text to encrypt…",
+      "cipherLabel": "Ciphertext (salt.iv.ciphertext)",
+      "cipherPlaceholder": "Paste ciphertext…",
+      "outputLabel": "Result",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "emptyError": "Enter a password and some text.",
+      "invalidFormat": "Invalid format. Expected base64(salt).base64(iv).base64(ciphertext).",
+      "decryptFailed": "Decryption failed — wrong password or corrupted data.",
+      "failed": "Something went wrong. Please try again.",
+      "unavailable": "Web Crypto is not available here. Open this page over HTTPS or localhost.",
+      "note": "AES-GCM 256 with a PBKDF2 key (100,000 iterations). Everything runs in your browser and nothing is uploaded."
+    },
+    "cronTest": {
+      "minuteLabel": "Minute (0–59)",
+      "hourLabel": "Hour (0–23)",
+      "domLabel": "Day of month (1–31)",
+      "monthLabel": "Month (1–12 or JAN–DEC)",
+      "dowLabel": "Day of week (0–7 or SUN–SAT)",
+      "placeholder": "e.g. */5, 0-30, 1,15,45",
+      "invalid": "Invalid value. Allowed: *, */n, a-b, a-b/n or a,b,c",
+      "run": "Find next runs",
+      "resultsLabel": "Next 5 matches",
+      "noMatch": "No matching time found within 366 days.",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "note": "Standard 5-field cron syntax: minute hour day-of-month month day-of-week. When both day fields are restricted, a date matches if either field matches.",
+      "descMinuteAll": "every minute",
+      "descHourAll": "every hour",
+      "descDomAll": "every day",
+      "descMonthAll": "every month",
+      "descDowAll": "any day of the week",
+      "stepMinute": "every {step} minutes",
+      "stepHour": "every {step} hours",
+      "stepDom": "every {step} days",
+      "stepMonth": "every {step} months",
+      "stepDow": "every {step} days of the week",
+      "rangeStepMinute": "every {step} minutes from {from} to {to}",
+      "rangeStepHour": "every {step} hours from {from} to {to}",
+      "rangeStepDom": "every {step} days from {from} to {to}",
+      "rangeStepMonth": "every {step} months from {from} to {to}",
+      "rangeStepDow": "every {step} days of the week from {from} to {to}",
+      "jan": "January",
+      "feb": "February",
+      "mar": "March",
+      "apr": "April",
+      "may": "May",
+      "jun": "June",
+      "jul": "July",
+      "aug": "August",
+      "sep": "September",
+      "oct": "October",
+      "nov": "November",
+      "dec": "December",
+      "sun": "Sunday",
+      "mon": "Monday",
+      "tue": "Tuesday",
+      "wed": "Wednesday",
+      "thu": "Thursday",
+      "fri": "Friday",
+      "sat": "Saturday"
+    },
+    "htmlFormatter": {
+      "label": "HTML input",
+      "placeholder": "Paste HTML…",
+      "format": "Format",
+      "outputLabel": "Formatted HTML",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "emptyError": "Enter some HTML to format.",
+      "note": "Tags are re-indented with 2 spaces. Raw content inside <pre>, <script> and <style> is preserved as-is."
+    },
+    "jwtUretici": {
+      "headerLabel": "Header (JSON)",
+      "payloadLabel": "Payload (JSON)",
+      "secretLabel": "Secret",
+      "generate": "Generate JWT",
+      "outputLabel": "JWT",
+      "stepsLabel": "Token parts",
+      "signatureLabel": "Signature",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "invalidHeader": "Header must be valid JSON.",
+      "invalidPayload": "Payload must be valid JSON.",
+      "secretError": "Enter a secret to sign the token.",
+      "unavailable": "Web Crypto is not available here. Open this page over HTTPS or localhost.",
+      "note": "Signs header.payload with HMAC-SHA256 (HS256) using the Web Crypto API. Everything runs in your browser and your secret is never sent anywhere."
+    },
+    "rastgeleStringUretici": {
+      "charTypes": "Character types",
+      "optionUpper": "Uppercase (A–Z)",
+      "optionLower": "Lowercase (a–z)",
+      "optionDigits": "Digits (0–9)",
+      "optionSymbols": "Symbols (!@#$…)",
+      "lengthLabel": "Length (1–128)",
+      "generate": "Generate",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "invalidLength": "Length must be a whole number between 1 and 128.",
+      "cryptoError": "Secure random generation is not available in this browser.",
+      "note": "Uses crypto.getRandomValues with unbiased sampling. Everything runs locally in your browser."
     }
   }
 }

@@ -7,9 +7,9 @@
   },
   "Home": {
     "title": "Ücretsiz Online Araçlar — Metin, Geliştirici ve Daha Fazlası",
-    "description": "4 kategoride 44 ücretsiz online araç. Karakter sayacı, parola üretici, JSON biçimlendirici, KDV hesaplama ve daha fazlası. Kayıt yok, kurulum yok.",
+    "description": "Ücretsiz online araçlar: görsel, metin, SEO, güvenlik, geliştirici ve hesaplama. Karakter sayacı, parola üretici, JSON biçimlendirici, KDV hesaplama ve daha fazlası. Kayıt yok, kurulum yok.",
     "heroTitle": "Ücretsiz Online Araçlar — Metin, Geliştirici ve Daha Fazlası",
-    "heroSubtitle": "Kategoriler: {cats}, araçlar: {tools}. Metin, Güvenlik, Geliştirici ve Hesaplama. Kayıt yok, kurulum yok; her hesaplama tarayıcınızda yapılır ve verileriniz asla tarayıcınızdan çıkmaz.",
+    "heroSubtitle": "Kategoriler: {cats}, araçlar: {tools}. Metin, Güvenlik, Geliştirici, Hesaplama, Görsel ve SEO. Kayıt yok, kurulum yok; her hesaplama tarayıcınızda yapılır ve verileriniz asla tarayıcınızdan çıkmaz.",
     "jsonldSiteDesc": "Metin, güvenlik, geliştirici ve hesaplama için ücretsiz online araçlar. Kayıt yok, kurulum yok.",
     "jsonldAppDesc": "Karakter sayacı, parola üretici, JSON biçimlendirici, KDV hesaplama ve daha fazlası.",
     "faq": [
@@ -75,7 +75,9 @@
     "metin": "Metin",
     "guvenlik": "Güvenlik",
     "gelistirici": "Geliştirici",
-    "hesaplama": "Hesaplama"
+    "hesaplama": "Hesaplama",
+    "gorsel": "Görsel",
+    "seo": "SEO"
   },
   "Faq": {
     "title": "Sıkça Sorulan Sorular",
@@ -393,6 +395,195 @@
       "title": "MD5 Dosya Checksum — Ücretsiz Çevrimiçi Araç",
       "pageDesc": "Bütünlüğü doğrulamak için herhangi bir dosyanın MD5 özetini doğrudan tarayıcınızda hesaplayın. Tasarım gereği gizli — dosya hiçbir yere yüklenmez.",
       "intro": "MD5 checksum'unu yerel olarak hesaplamak için bir dosya seçin ve özeti tek tıkla kopyalayın."
+    },
+    "resim-boyutlandirici": {
+      "name": "Resim Boyutlandırıcı",
+      "desc": "Görselleri ücretsiz online boyutlandırın — en-boy oranını koruyarak tam genişlik ve yükseklik ayarlayın.",
+      "title": "Resim Boyutlandırıcı — Ücretsiz Online Araç",
+      "pageDesc": "Görselleri ücretsiz online boyutlandırın. Piksel genişlik ve yükseklik girin, en-boy oranını koruyup PNG veya JPEG indirin — tarayıcınızda çalışır.",
+      "intro": "Kaliteyi bozmadan fotoğrafları tam istediğiniz piksel boyuta ölçekleyin."
+    },
+    "resim-donusturucu": {
+      "name": "Resim Dönüştürücü",
+      "desc": "Görselleri JPEG, PNG ve WebP arasında ayarlanabilir kaliteyle ücretsiz online dönüştürün.",
+      "title": "Resim Dönüştürücü — Ücretsiz Online Araç",
+      "pageDesc": "Görselleri ücretsiz online dönüştürün — JPEG, PNG ve WebP arasında geçiş yapın, kaliteyi ayarlayın ve yeni dosyayı indirin; dönüşüm tarayıcınızda olur.",
+      "intro": "Herhangi bir görseli tek tıkla ihtiyacınız olan formata dönüştürün."
+    },
+    "resim-sikistirici": {
+      "name": "Resim Sıkıştırıcı",
+      "desc": "JPG, PNG ve WebP görsellerinizi kalite kaydırıcısıyla online sıkıştırın — daha küçük dosyalar, aynı görünüm.",
+      "title": "Resim Sıkıştırıcı — Ücretsiz Online Araç",
+      "pageDesc": "Görsellerinizi ücretsiz online sıkıştırın. Kalite kaydırıcısıyla JPG, PNG ve WebP dosya boyutunu azaltın — tarayıcınızda çalışır, yükleme gerekmez.",
+      "intro": "Ayarlayabileceğiniz bir kalite kaydırıcısıyla ağır görselleri saniyeler içinde küçültün."
+    },
+    "resimden-base64": {
+      "name": "Resimden Base64",
+      "desc": "Herhangi bir görseli ücretsiz, anında ve yükleme yapmadan Base64 data URL'ye dönüştürün.",
+      "title": "Resimden Base64 — Ücretsiz Online Araç",
+      "pageDesc": "Görselleri ücretsiz online Base64'e dönüştürün. Kopyalamaya hazır data URL, dosya boyutu ve uzunluğu görün — her şey tarayıcınızda anında çalışır.",
+      "intro": "Herhangi bir görselden tek tıkla kopyalamaya hazır bir data URL alın."
+    },
+    "resimden-renk-secici": {
+      "name": "Resimden Renk Seçici",
+      "desc": "Görselden herhangi bir rengi online seçin — canlı HEX ve RGB değerleriyle kayıtlı bir palet.",
+      "title": "Resimden Renk Seçici — Ücretsiz Online Araç",
+      "pageDesc": "Herhangi bir görselden ücretsiz online renk seçin. Üzerine gelerek canlı HEX ve RGB değerlerini görün, tıklayarak paletinize ekleyin ve kopyalayın.",
+      "intro": "Herhangi bir pikseli örnekleyin ve kendi görsellerinizden palet oluşturun."
+    },
+    "anahtar-kelime-yogunlugu": {
+      "name": "Anahtar Kelime Yoğunluğu",
+      "desc": "Herhangi bir metni analiz ederek en sık kelimeleri, toplam ve benzersiz kelime sayılarını ve yüzde yoğunluğu görün.",
+      "title": "Anahtar Kelime Yoğunluğu — Ücretsiz Online Araç",
+      "pageDesc": "Ücretsiz online anahtar kelime yoğunluğu aracı: metni tarayıcıya yapıştırın, toplam ve benzersiz kelimelerle her terimin yüzde yoğunluğunu anında görün.",
+      "intro": "Anahtar kelimelerinizin bir metinde ne sıklıkla geçtiğini ölçün ve aşırı kullanılan terimleri anında fark edin."
+    },
+    "meta-tag-uretici": {
+      "name": "Meta Tag Üretici",
+      "desc": "Başlık, meta açıklama, Open Graph ve Twitter kart etiketlerini canlı Google stili önizlemeyle oluşturun.",
+      "title": "Meta Tag Üretici — Ücretsiz Online Araç",
+      "pageDesc": "Ücretsiz online meta tag üretici: başlık, açıklama, Open Graph ve Twitter etiketlerini tarayıcınızda oluşturun, Google sonucu gibi önizleyin.",
+      "intro": "Kusursuz yapılandırılmış meta etiketler oluşturun ve arama sonuçlarında tam olarak nasıl görüneceklerini görün."
+    },
+    "okunabilirlik-skoru": {
+      "name": "Okunabilirlik Skoru",
+      "desc": "Herhangi bir metni Flesch Reading Ease formülüyle puanlayın ve yaklaşık sınıf seviyesini anında alın.",
+      "title": "Okunabilirlik Skoru — Ücretsiz Online Araç",
+      "pageDesc": "Ücretsiz online okunabilirlik aracı: metninizi tarayıcıya yapıştırın, saniyeler içinde Flesch skoru, sınıf seviyesi ve kelime-cümle istatistikleri alın.",
+      "intro": "Metninizin ne kadar kolay okunduğunu ölçün ve faydalı istatistiklerle anında Flesch skoru alın."
+    },
+    "serp-onizleme": {
+      "name": "SERP Önizleme",
+      "desc": "Sayfa başlığınızın ve meta açıklamanızın Google arama sonuçlarında nasıl görüneceğini önceden görün.",
+      "title": "SERP Önizleme — Ücretsiz Online Araç",
+      "pageDesc": "Ücretsiz online SERP önizleme: başlık ve meta açıklama yazarak karakter sayaçları ve uzunluk önerileriyle canlı Google sonucu önizlemesi görün.",
+      "intro": "Yayınlamadan önce arama sonucu metninizi görün ve her karakteri inceltin."
+    },
+    "slug-uretici": {
+      "name": "Slug Üretici",
+      "desc": "Herhangi bir başlığı özel ayraçlarla temiz, URL uyumlu bir slug'a dönüştürün ve anında kopyalayın.",
+      "title": "Slug Üretici — Ücretsiz Online Araç",
+      "pageDesc": "Ücretsiz online slug üretici: başlığınızı tarayıcınızda temiz, küçük harfli ve arama dostu URL slug'ına dönüştürün; özel ayraçlar ve anında kopyalama ile.",
+      "intro": "Herhangi bir başlıktan saniyeler içinde temiz, arama dostu URL slug'ları oluşturun."
+    },
+    "caesar-sifre": {
+      "name": "Caesar Şifre & ROT13",
+      "desc": "Metni 1–25 arası kaydırmayla şifreler veya çözer; tek tıkla ROT13 yapar.",
+      "title": "Caesar Şifre & ROT13 — Ücretsiz Online Araç",
+      "pageDesc": "Metni Caesar şifresiyle ücretsiz şifreleyin veya çözün. 1–25 arası kaydırma seçip yönü belirleyin veya tarayıcınızda tek tıkla ROT13'e geçin.",
+      "intro": "Mesajınızı birkaç harf ileri veya geri kaydırın; bir bakışta okunamaz hale gelir."
+    },
+    "html-entity-cevirici": {
+      "name": "HTML Entity Çevirici",
+      "desc": "Metni HTML entity'lerine çevirir ve entity'leri okunabilir karakterlere geri çözer.",
+      "title": "HTML Entity Çevirici — Ücretsiz Online Araç",
+      "pageDesc": "Metni ücretsiz olarak HTML entity'lere çevirin veya entity'leri karakterlere geri çözün. Ayrılmış semboller ve Türkçe harfler tarayıcınızda anında işlenir.",
+      "intro": "Metninizi yapıştırın ve tek tıkla HTML entity kodlama ile çözme arasında geçiş yapın."
+    },
+    "kalin-italik-metin": {
+      "name": "Kalın ve İtalik Metin Üretici",
+      "desc": "Metninizi Unicode kalın, italik, kalın-italik ve monospace stillerine dönüştürür.",
+      "title": "Kalın ve İtalik Metin Üretici — Ücretsiz Online Araç",
+      "pageDesc": "Kalın, italik, kalın-italik ve monospace Unicode metin oluşturun. Adınızı, biyografinizi veya gönderinizi stilize edip tarayıcıdan anında kopyalayın.",
+      "intro": "Metninizi yazın; sosyal medyada kullanabileceğiniz dört farklı stil elde edin."
+    },
+    "metin-karsilastirici": {
+      "name": "Metin Karşılaştırıcı",
+      "desc": "İki metni satır satır karşılaştırır; eklenen, kaldırılan ve değişmeyen satırları yan yana gösterir.",
+      "title": "Metin Karşılaştırıcı — Ücretsiz Online Araç",
+      "pageDesc": "İki metni satır satır ücretsiz ve çevrimiçi olarak karşılaştırın; eklenen ve kaldırılan satırlar tarayıcınızda vurgulanır; veriler dışarı gönderilmez.",
+      "intro": "İki metin sürümünü yapıştırın; hangi satırların eklendiğini veya kaldırıldığını anında görün."
+    },
+    "metin-ters-cevirici": {
+      "name": "Metin Ters Çevirici",
+      "desc": "Metninizi harf harf, kelime sırasıyla veya kelime kelime ters çevirir.",
+      "title": "Metin Ters Çevirici — Ücretsiz Online Araç",
+      "pageDesc": "Herhangi bir metni ücretsiz ters çevirin: tüm karakterleri, kelime sırasını veya her kelimeyi çevirin. Modu seçin ve sonucu tarayıcınızdan kopyalayın.",
+      "intro": "Bir mod seçin, metninizi yapıştırın ve ters çevrilmiş sürümü tek tıkla anında alın."
+    },
+    "morse-cevirici": {
+      "name": "Morse Çevirici",
+      "desc": "Metni Mors koduna ve Mors kodunu okunabilir metne çevirir.",
+      "title": "Morse Çevirici — Ücretsiz Online Araç",
+      "pageDesc": "Metni ücretsiz olarak Mors koduna çevirin veya Mors kodunu metne dönüştürün. A–Z, 0–9 ve yaygın noktalama işaretleri tarayıcınızda desteklenir.",
+      "intro": "Bir mesaj yazın ve nokta-çizgi karşılığını görün ya da Mors kodunu yapıştırıp düz metni okuyun."
+    },
+    "ideal-kilo": {
+      "name": "İdeal Kilo Hesaplayıcı",
+      "desc": "Devine, Robinson ve BMI aralıklarıyla ideal kilonuzu bulun.",
+      "title": "İdeal Kilo Hesaplayıcı — Ücretsiz Online Araç",
+      "pageDesc": "Ücretsiz ideal kilo hesaplayıcı: Devine ve Robinson formülleriyle ideal kilonuzu ve sağlıklı BMI kilo aralığını tarayıcınızda anında hesaplayıp öğrenin.",
+      "intro": "Devine ve Robinson formüllerini sağlıklı BMI aralığıyla karşılaştırın."
+    },
+    "kalori-bmr": {
+      "name": "Kalori & BMR Hesaplayıcı",
+      "desc": "Mifflin-St Jeor formülüyle günlük kalori ihtiyacınızı tahmin edin.",
+      "title": "Kalori & BMR Hesaplayıcı — Ücretsiz Online Araç",
+      "pageDesc": "Ücretsiz kalori ve BMR hesaplayıcı: Mifflin-St Jeor formülüyle günlük kalori ihtiyacınızı tahmin edin; kilo verme, koruma ve alma hedeflerini anında görün.",
+      "intro": "Kilo verme, koruma veya alma için günlük kalori bütçenizi öğrenin."
+    },
+    "kredi-emi": {
+      "name": "Kredi Taksit Hesaplayıcı",
+      "desc": "Kredi tutarı ve faize göre aylık taksitleri saniyeler içinde hesaplayın.",
+      "title": "Kredi Taksit Hesaplayıcı — Ücretsiz Online Araç",
+      "pageDesc": "Ücretsiz kredi taksit hesaplayıcı: tutar, yıllık faiz ve ay cinsinden vadeyi girin; aylık taksit, toplam ödeme ve ödeme planını anında görün.",
+      "intro": "Aylık taksitinizi, toplam faizi ve ödeme planını saniyeler içinde görün."
+    },
+    "not-ortalamasi": {
+      "name": "Not Ortalaması Hesaplayıcı",
+      "desc": "Ders kredileri ve harf notlarıyla ağırlıklı 4.0 GPA'nızı hesaplayın.",
+      "title": "Not Ortalaması Hesaplayıcı — Ücretsiz Online Araç",
+      "pageDesc": "Ücretsiz not ortalaması hesaplayıcı: ders kredisi ve harf notlarını girip ağırlıklı 4.0 GPA, toplam kredi ve 100'lük ortalamayı tarayıcıda anında görün.",
+      "intro": "Harf notlarını puana çevirin ve ağırlıklı GPA'nızı saniyeler içinde öğrenin."
+    },
+    "uyku-hesaplayici": {
+      "name": "Uyku Hesaplayıcı",
+      "desc": "Uyku döngüleriyle en iyi yatma ve uyanma saatini bulun.",
+      "title": "Uyku Hesaplayıcı — Ücretsiz Online Araç",
+      "pageDesc": "Ücretsiz uyku hesaplayıcı: uyanma veya yatma saatinizi girin; 5 ve 6 uyku döngüsüne göre önerilen saatleri tarayıcınızda anında hesaplayıp görün.",
+      "intro": "Tam uyku döngüleriyle dinlenmiş uyanın."
+    },
+    "vucut-yag-orani": {
+      "name": "Vücut Yağ Oranı Hesaplayıcı",
+      "desc": "ABD Donanması yöntemiyle vücut yağ oranınızı tahmin edin.",
+      "title": "Vücut Yağ Oranı Hesaplayıcı — Ücretsiz Online Araç",
+      "pageDesc": "Ücretsiz vücut yağ oranı hesaplayıcı: ABD Donanması yöntemiyle yağ yüzdenizin, ACE kategorinizin ve yağ kütlenizin hesabını tarayıcıda anında görün.",
+      "intro": "Basit mezura ölçüleriyle vücut yağ oranınızı öğrenin."
+    },
+    "aes-sifreleme": {
+      "name": "AES Şifreleme/Çözme",
+      "desc": "Şifre tabanlı PBKDF2 anahtarıyla AES-GCM 256 kullanarak metni şifreler ve çözer — tamamen tarayıcınızda.",
+      "title": "AES Şifreleme/Çözme — Ücretsiz Online Araç",
+      "pageDesc": "Metni tarayıcınızda ücretsiz AES-GCM 256 ile şifreleyin ve çözün. Şifre tabanlı PBKDF2 anahtarı her şeyi özel tutar — verileriniz cihazınızdan asla çıkmaz.",
+      "intro": "Metninizi AES-GCM 256 ve şifreden türetilen bir anahtarla şifreleyin veya geri çözün — hepsi yerel olarak."
+    },
+    "cron-test": {
+      "name": "Cron İfade Testi",
+      "desc": "Her cron alanını doğrulayın, neyi eşleştirdiğini sade dille okuyun ve sonraki beş çalışma zamanını görün.",
+      "title": "Cron İfade Testi — Ücretsiz Online Araç",
+      "pageDesc": "Cron ifadelerinizi tarayıcınızda ücretsiz test edin: dakika, saat, gün, ay ve hafta günü alanlarını doğrulayın, sade dille açıklamaları okuyun ve sonraki beş çalışma zamanını görün.",
+      "intro": "Cron işlerinizi alan alan doğrulayarak ve sonraki çalışma zamanlarını anında görerek tahmin edin."
+    },
+    "html-formatter": {
+      "name": "HTML Biçimlendirici",
+      "desc": "HTML'i düzenli iki boşluklu girintiyle biçimlendirir; pre, script ve style bloklarını aynen korur.",
+      "title": "HTML Biçimlendirici — Ücretsiz Online Araç",
+      "pageDesc": "HTML'i tarayıcınızda ücretsiz biçimlendirin: işaretlemeyi yapıştırın ve anında temiz, tutarlı iki boşluklu girinti elde edin. pre, script ve style bloklarındaki kod aynen ve gizli kalır.",
+      "intro": "Dağınık veya sıkıştırılmış HTML'i okunur işaretlemeye dönüştürün; kod blokları aynen korunur."
+    },
+    "jwt-uretici": {
+      "name": "JWT Üretici",
+      "desc": "Kendi header, payload ve gizli anahtarınızla imzalı HS256 JWT token'ları oluşturun — anında, tarayıcınızda.",
+      "title": "JWT Üretici — Ücretsiz Online Araç",
+      "pageDesc": "Tarayıcınızda ücretsiz imzalı JWT token oluşturun. Header ve payload JSON'unu düzenleyin, gizli anahtarınızı girin ve anında HS256 imzalı token kopyalayın.",
+      "intro": "Kendi header, payload ve gizli anahtarınızla imzalı bir HS256 JSON Web Token oluşturun — doğrudan tarayıcıda."
+    },
+    "rastgele-string-uretici": {
+      "name": "Rastgele String Üretici",
+      "desc": "Seçtiğiniz karakter setleri ve uzunlukla, kriptografik kalitede rastgelelik kullanarak güvenli rastgele string'ler üretir.",
+      "title": "Rastgele String Üretici — Ücretsiz Online Araç",
+      "pageDesc": "Tarayıcınızda ücretsiz güvenli rastgele string üretin: büyük harf, küçük harf, rakam ve sembol seçin, 128'e kadar uzunluk belirleyin, sonucu anında kopyalayın.",
+      "intro": "İhtiyacınız olan karakterler ve uzunlukla saniyeler içinde güçlü rastgele string'ler oluşturun."
     }
   },
   "ToolContent": {
@@ -1342,6 +1533,623 @@
         "h": "Verilerim güvende mi?",
         "p": "Evet. Özet, cihazınızdaki dosya baytlarından tamamen tarayıcınızda hesaplanır; dosya hiçbir sunucuya yüklenmez ve sayfayı kapattığınızda sonuçlar kaybolur."
       }
+    ],
+    "resim-boyutlandirici": [
+      {
+        "h": "Resim Boyutlandırıcı Nedir?",
+        "p": "Resim boyutlandırıcı, bir görselin piksel boyutlarını büyütüp küçültürken içeriği korur. Bu ücretsiz online araç, tam genişlik veya yükseklik girmenize, en-boy oranını kilitlemenize ve sonucu saniyeler içinde PNG veya JPEG olarak indirmenize olanak tanır."
+      },
+      {
+        "h": "Ne Zaman Kullanılır?",
+        "list": [
+          "Bir fotoğrafı blog başlığına veya sosyal medya gönderisine sığdırmak için",
+          "Büyük kaynak görsellerden küçük önizlemeler oluşturmak için",
+          "Başvuru formlarındaki tam piksel şartlarına uymak için",
+          "Online mağaza için ürün görselleri hazırlamak için"
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Boyutlandırma kaliteyi düşürür mü? Küçültme net görünümü korur; orijinalden büyük ölçekleme detayları yumuşatabilir.",
+          "En-boy oranı korunur mu? Evet — en-boy oranını kor kutusu açıkken bir alanı değiştirmek diğerini otomatik günceller.",
+          "Çıktı formatı olarak hangisini seçmeliyim? Şeffaflık ve net kenarlar için PNG, daha küçük dosya için JPEG seçin."
+        ]
+      }
+    ],
+    "resim-donusturucu": [
+      {
+        "h": "Resim Dönüştürücü Nedir?",
+        "p": "Resim dönüştürücü, bir görseli JPEG'ten PNG'ye veya PNG'den WebP'ye gibi bir dosya formatından diğerine çevirir. Bu ücretsiz online araç dosyanızı doğrudan tarayıcınızda kalite kaydırıcısıyla yeniden kodlar; indirmeden önce netlik ve dosya boyutu arasında denge kurabilirsiniz."
+      },
+      {
+        "h": "Ne Zaman Kullanılır?",
+        "list": [
+          "PNG ekran görüntülerini çok daha küçük JPEG dosyalarına çevirmek için",
+          "Daha hızlı ve hafif siteler için WebP'ye geçmek için",
+          "Yalnızca tek bir format kabul eden görselleri hazırlamak için",
+          "Şeffaflığı kaldırıp JPEG'e dönüştürmek için"
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Hangi görsel formatı daha iyi? JPEG fotoğraflar için, PNG şeffaflık ve net çizgiler için, WebP ise ikisi için modern sıkıştırma sunar.",
+          "Çıktı kalitesini ayarlayabilir miyim? Evet — kalite kaydırıcısı JPEG ve WebP çıktısında geçerlidir.",
+          "Dönüştürülen dosyalar saklanır mı? Hayır — dönüşüm tarayıcınızda olur ve yeni dosya doğrudan cihazınıza iner."
+        ]
+      }
+    ],
+    "resim-sikistirici": [
+      {
+        "h": "Resim Sıkıştırıcı Nedir?",
+        "p": "Resim sıkıştırıcı, bir fotoğrafın veya grafiğin dosya boyutunu görsel kalitesini koruyarak azaltır. Bu ücretsiz online araç, JPG, PNG veya WebP görselinizi seçtiğiniz kalitede yeniden kodlayarak saniyeler içinde çok daha hafif bir dosya üretir; hiçbir program kurmanız gerekmez."
+      },
+      {
+        "h": "Ne Zaman Kullanılır?",
+        "list": [
+          "Yavaş çalışan bir web sitesi, blog veya açılış sayfasını hızlandırmak için",
+          "E-postaya ekleyeceğiniz fotoğrafları küçültmek için",
+          "Telefon veya bilgisayarınızda depolama alanı kazanmak için",
+          "Yükleme formlarındaki sıkı dosya boyutu limitlerine uymak için"
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Bu resim sıkıştırıcı ücretsiz mi? Evet — araç tamamen ücretsiz ve sınırsızdır.",
+          "Görsellerim bir sunucuya yükleniyor mu? Hayır, sıkıştırma tamamen tarayıcınızda çalışır ve dosyalarınız cihazınızdan çıkmaz.",
+          "Hangi format daha iyi sıkışır? JPEG ve WebP fotoğraflarda en küçük dosyayı verir; PNG şeffaflığı ve net kenarları korur."
+        ]
+      }
+    ],
+    "resimden-base64": [
+      {
+        "h": "Resimden Base64 Nedir?",
+        "p": "Base64 kodlama, ikili bir görseli HTML, CSS veya JSON'a doğrudan gömülebilen düz metne çevirir. Bu ücretsiz online araç fotoğrafınızı anında bir data URL'ye dönüştürür ve dosya boyutu ile kodlanmış uzunluğu gösterir; ne yapıştıracağınızı tam olarak görürsünüz."
+      },
+      {
+        "h": "Ne Zaman Kullanılır?",
+        "list": [
+          "Küçük simgeleri CSS veya HTML'e gömmek için",
+          "Görselleri JSON veya API isteklerine eklemek için",
+          "Bir görseli sohbette veya destek talebinde metin olarak paylaşmak için",
+          "Açılış sayfasında ekstra görsel isteklerinden kaçınmak için"
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Bu Base64 dönüştürücü ücretsiz mi? Evet, tamamen ücretsizdir ve istediğiniz kadar görsel dönüştürebilirsiniz.",
+          "Base64 metni neden dosyadan uzun? Kodlama yaklaşık üçte bir ek yük getirir; 30 KB'lık görsel kabaca 40 KB metin olur.",
+          "Görselim yükleniyor mu? Hayır, dönüşüm tarayıcınızın FileReader özelliğini kullanır ve veri cihazınızdan çıkmaz."
+        ]
+      }
+    ],
+    "resimden-renk-secici": [
+      {
+        "h": "Resimden Renk Seçici Nedir?",
+        "p": "Resimden renk seçici, bir görseldeki herhangi bir pikselin tam rengini örnekleyerek HEX ve RGB değerlerini verir. Bu ücretsiz online araç fareyle gezinirken canlı bir renk kutusu gösterir; her tıklama rengi, tasarım aracınıza veya stil dosyanıza doğrudan kopyalayabileceğiniz bir palete kaydeder."
+      },
+      {
+        "h": "Ne Zaman Kullanılır?",
+        "list": [
+          "Logo veya ekran görüntüsündeki marka renklerini eşleştirmek için",
+          "Beğendiğiniz bir fotoğraftan palet oluşturmak için",
+          "Erişilebilir ve okunabilir tasarımlar için renkleri kontrol etmek için",
+          "CSS veya tasarım dosyaları için tam HEX kodlarını kopyalamak için"
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Renk nasıl seçilir? Bir görsel yükleyin, önizlemek için tuvalin üzerine gelin, eklemek için tıklayın.",
+          "Resimden renk seçici ücretsiz mi? Evet — ücretsizdir ve hesap gerektirmeden tamamen tarayıcınızda çalışır.",
+          "Kayıtlı bir rengi nasıl kopyalarım? Listedeki rengin yanındaki kopyala düğmesine basarak HEX kodunu panoya alın."
+        ]
+      }
+    ],
+    "anahtar-kelime-yogunlugu": [
+      {
+        "h": "Anahtar Kelime Yoğunluğu Nedir?",
+        "p": "Anahtar kelime yoğunluğu, bir kelime veya ifadenin metinde toplam kelime sayısına oranla yüzde kaç kez geçtiğidir. Dengeli bir yoğunluk, anahtar kelime doldurma (keyword stuffing) izlenimi yaratmadan arama motorlarına alaka sinyali verir."
+      },
+      {
+        "h": "Sonuçları Nasıl Okumalısınız?",
+        "list": [
+          "Toplam kelimeler, metninizdeki her birimi sayar.",
+          "Benzersiz kelimeler, kaç farklı terim geçtiğini gösterir.",
+          "Her satırda bir kelime, geçme sayısı ve metindeki payı listelenir.",
+          "Minimum uzunluk filtresini düşürerek edat gibi kısa kelimeleri de dahil edebilirsiniz."
+        ]
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Sağlıklı anahtar kelime yoğunluğu nedir? Sabit bir sayı yoktur, ancak bir anahtar terimi metnin yüzde bir-iki kadarı kadar tekrarlamak genelde doğal okunur.",
+          "Noktalama işaretleri sayımı etkiler mi? Evet, araç noktalamayı temizler; böylece kelime ve kelime. aynı terim olarak sayılır.",
+          "Metnim bir yere yükleniyor mu? Hayır, analiz tamamen tarayıcınızda yapılır."
+        ]
+      }
+    ],
+    "meta-tag-uretici": [
+      {
+        "h": "Meta Etiketler Neden Önemlidir?",
+        "p": "Meta etiketler, ziyaretçilerin sayfanız hakkında okuduğu ilk şeydir. Etkileyici bir başlık ve açıklama, arama sonuçlarından tıklanma oranınızı ciddi şekilde artırabilir; Open Graph ve Twitter etiketleri ise bağlantınızın sosyal ağlarda paylaşılırken nasıl görüneceğini belirler."
+      },
+      {
+        "h": "Bu Üretici Neleri Kapsar?",
+        "list": [
+          "Arama motorları için HTML title etiketi ve meta açıklama.",
+          "Facebook ve LinkedIn için Open Graph etiketleri ile site veya makale tipi alanı.",
+          "Tweeter'larda bağlantınızın nasıl görüneceğini belirleyen Twitter Card etiketleri.",
+          "Uzunluğu ve ifadeyi bir bakışta değerlendirmeniz için Google stili önizleme."
+        ]
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Başlığım ne kadar uzun olmalı? Arama motorları kesmesin diye yaklaşık 50-60 karakter hedefleyin.",
+          "İdeal açıklama uzunluğu nedir? 140-160 karakter arası, mesajı tam olarak iletmek için yeterli alan sağlar.",
+          "Twitter kartları için görsel şart mı? Büyük görselli kart en iyi görünür; ancak araç görsel yoksa özet kartı kullanır."
+        ]
+      }
+    ],
+    "okunabilirlik-skoru": [
+      {
+        "h": "Flesch Okunabilirlik Skoru Nedir?",
+        "p": "Flesch Okunabilirlik formülü, bir metni ortalama cümle uzunluğuna ve kelime başına ortalama heceye göre 0 ile 100 arasında puanlar. Yüksek puanlar metnin kolay okunduğunu, düşük puanlar ise yoğun, akademik bir anlatımı gösterir."
+      },
+      {
+        "h": "Ölçeği Anlamak",
+        "list": [
+          "90-100: çok kolay, ortalama 11 yaşındaki biri anlayabilir.",
+          "70-89: kolay, bloglar ve genel kitleler için idealdir.",
+          "50-69: oldukça zor, alanın bilgili okuyucularına uygundur.",
+          "50'nin altı: zor, daha kısa cümleler ve basit kelimeler düşünün."
+        ]
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Bu araç Türkçe metinlerde de çalışır mı? Evet, hece sayacı Türkçe sesli harfleri doğru işleyen bir ünlü-grubu yöntemi kullanır.",
+          "Hangi sınıf seviyesini hedeflemeliyim? Çoğu web içeriği 7-9. sınıf seviyesinde en iyi okunur.",
+          "Metnim saklanıyor mu? Hayır, tüm hesaplamalar tarayıcınızda yapılır."
+        ]
+      }
+    ],
+    "serp-onizleme": [
+      {
+        "h": "Google Snippet'inizi Nasıl Gösterir?",
+        "p": "Google, sayfa adresinizin altında mavi bir başlık ve kısa bir açıklama gösterir. İkisi de çok uzun olunca genellikle kesilir; bu da mesajınızın yarısını kaybetmenize ve tıklanma oranınızın düşmesine neden olabilir."
+      },
+      {
+        "h": "Önerilen Uzunluklar",
+        "list": [
+          "Kesilmeyi önlemek için başlığı 60 karakter veya altında tutun.",
+          "Açıklamayı 160 karakter veya altında tutun.",
+          "En önemli anahtar kelimenizi başlığın başına yakın koyun.",
+          "Okura net bir fayda vadeden bir açıklama yazın."
+        ]
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Google her zaman benim title etiketimi kullanır mı? Her zaman değil; çok uzun, çok kısa veya anahtar kelimeyle dolu gördüğü başlıkları yeniden yazabilir.",
+          "Yeşil ve turuncu sayaçlar ne anlama geliyor? Yeşil, önerilen uzunluk içindesiniz demektir; turuncu ise metnin kesilme ihtimali olduğunu gösterir.",
+          "Önizleme piksel mükemmeliyetinde mi? Google'ın masaüstü düzenine yakın bir simülasyondur ve yazdıkça canlı güncellenir."
+        ]
+      }
+    ],
+    "slug-uretici": [
+      {
+        "h": "URL Slug Nedir?",
+        "p": "URL slug, bir bağlantının sayfayı tanımlayan, insanlar tarafından okunabilir bölümüdür; örneğin blog yazısı adresinde alan adınızdan sonra gelen kelimeler. Temiz slug'lar, arama motorlarının ve ziyaretçilerin tıklamadan önce sayfanın neyle ilgili olduğunu anlamasına yardımcı olur."
+      },
+      {
+        "h": "Bu Slug Üreticisini Nasıl Kullanırsınız?",
+        "list": [
+          "Herhangi bir başlığı, cümleyi veya anahtar kelime öbeğini yazın ya da yapıştırın.",
+          "Bir ayraç seçin: tire, alt çizgi veya hiç ayraç olmadan.",
+          "Aksanlı ve Türkçe karakterleri sadeleştirmek için ASCII yalnızca seçeneğini açın.",
+          "Hazır slug'ı kopyalayıp CMS'nize veya yönlendiricinize yapıştırın."
+        ]
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Slug'lar neden küçük harfli olmalı? Küçük harfli slug'lar büyük/küçük harf farkından doğan yinelenen URL'leri önler ve paylaşması, hatırlaması daha kolaydır.",
+          "Hangi ayraç en iyisi? Tireler SEO için en yaygın tercihtir, ancak sisteminiz bekliyorsa alt çizgi de işinizi görür.",
+          "Bu araç metnimi bir yere gönderiyor mu? Hayır. Her şey tarayıcınızda çalışır, girdileriniz cihazınızdan çıkmaz."
+        ]
+      }
+    ],
+    "caesar-sifre": [
+      {
+        "h": "Caesar şifresi nedir?",
+        "p": "Alfabedeki her harfin sabit sayıda ilerideki harfle değiştirildiği bir yer değiştirme şifresidir. 3 kaydırmada A, D; B, E olur; bilinen en eski şifreleme yöntemlerinden biridir."
+      },
+      {
+        "h": "Nasıl kullanırım?",
+        "list": [
+          "Dönüşüm yönünü belirlemek için Şifrele veya Çöz seçeneğinizi seçin.",
+          "Harflerin kaç adım kayacağını ayarlamak için kaydırma çubuğunu 1–25 arasında sürükleyin.",
+          "Şifreleme ve çözmenin aynı işlem olduğu 13 kaydırmasına atlamak için ROT13'e basın."
+        ]
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Hangi karakterler değişir? Yalnızca A–Z ve a–z kaydırılır; sayılar, aksanlar, Türkçe harfler ve semboller aynen kalır.",
+          "ROT13 güvenli mi? Hayır, gerçek bir şifreleme değildir — tüm Caesar kaydırmaları gibi kolayca çözülür.",
+          "İşlem nerede yapılıyor? Tamamen tarayıcınızda; metniniz hiçbir zaman yüklenmez."
+        ]
+      }
+    ],
+    "html-entity-cevirici": [
+      {
+        "h": "HTML entity nedir?",
+        "p": "HTML entity'leri bir ve işareti ile başlayıp noktalı virgülle biten kodlardır; örneğin & için &amp;. Web etiketlerinde özel anlam taşıyan karakterleri (köşeli parantez, tırnak, ve işareti gibi) işaretlemeyi bozmadan güvenle yazmanızı sağlarlar."
+      },
+      {
+        "h": "Neler dönüştürülür?",
+        "list": [
+          "Ayrılmış karakterler & < > \" ' her zaman kodlanır.",
+          "Yaygın aksanlar: é &eacute; olur; Türkçe ç, ğ, ı, ö, ş, ü ve İ harfleri uygun entity'lere çevrilir.",
+          "Diğer tüm karakterler aynen korunur."
+        ]
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Verilerim bir yere gönderiliyor mu? Hayır — kodlama ve çözme tamamen tarayıcınızda çalışır.",
+          "Neden ' karakteri &#39; oluyor? Kesme işareti, tek tırnaklı attribute'lar içinde güvenli olduğu için sayısal entity olarak kodlanır.",
+          "Her entity'yi çözebilir miyim? Evet, standart adlandırılmış ve sayısal entity'ler karakterlerine geri çevrilir."
+        ]
+      }
+    ],
+    "kalin-italik-metin": [
+      {
+        "h": "Kalın ve italik metin üretici nedir?",
+        "p": "Metninizdeki her harfi ve rakamı, Unicode'daki matematiksel stil karşılığıyla değiştirir. Karakterler onları destekleyen her uygulamada kalın, italik, kalın-italik veya monospace görünür; sizin biçimlendirme yapmanıza gerek kalmaz."
+      },
+      {
+        "h": "Stilize metni nerelerde kullanabilirim?",
+        "list": [
+          "Kalın butonu olmayan sosyal medya biyografileri, kullanıcı adları ve başlıklar.",
+          "Yalnızca düz metin kabul eden sohbet, forum ve yorum alanları.",
+          "Belgelerde ve e-postalarda başlıklar, imzalar ve vurgular."
+        ]
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Bazı uygulamalarda stil neden kayboluyor? Karakterler gerçek Unicode sembollerdir ancak glif desteği olmayan uygulamalar düz görünüme döner.",
+          "Tüm karakterler dönüştürülüyor mu? Yalnızca A–Z, a–z ve 0–9 için stilli karşılıklar vardır; Türkçe aksanlar ve semboller aynen kalır.",
+          "Dönüştürme nerede yapılıyor? Tamamen tarayıcınızda — hiçbir şey yüklenmez."
+        ]
+      }
+    ],
+    "metin-karsilastirici": [
+      {
+        "h": "Metin karşılaştırıcı nedir?",
+        "p": "İki belgeyi satır satır karşılaştırır ve eşleşen satırları yan yana hizalar. Yalnızca birinci metinde bulunan satırlar kaldırılmış, yalnızca ikincisinde bulunan satırlar eklenmiş olarak işaretlenir; aynı satırlar vurgulanmadan kalır."
+      },
+      {
+        "h": "Nasıl kullanmalıyım?",
+        "list": [
+          "Orijinal metni sol kutuya, yeni sürümü sağ kutuya yapıştırın.",
+          "Yan yana görünümü inceleyin: solda turuncu kaldırılanlar, sağda yeşil eklenenler.",
+          "Toplam, eklenen, kaldırılan ve değişmeyen satır sayılarını özet kutularından kontrol edin."
+        ]
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Metnim bir yere yükleniyor mu? Hayır — karşılaştırma tamamen tarayıcınızda çalışır, metniniz cihazınızdan asla çıkmaz.",
+          "Karşılaştırma büyük/küçük harfe duyarlı mı? Evet, satırlar birebir karşılaştırılır; yalnızca büyük/küçük harf farkı olan satır değişmiş sayılır.",
+          "Büyük metinler nasıl işleniyor? Karşılaştırma satır tabanlı olduğu için binlerce satırda bile eşleştirme doğru kalır."
+        ]
+      }
+    ],
+    "metin-ters-cevirici": [
+      {
+        "h": "Metin Ters Çevirici ne yapar?",
+        "p": "Metninizin karakterlerini veya kelimelerini üç farklı şekilde yeniden düzenler: tüm karakterleri ters çevirir, harfleri okunur bırakarak kelimelerin sırasını çevirir ya da kelime sırasını koruyarak her kelimenin içini ayrı ayrı çevirir."
+      },
+      {
+        "h": "Her mod ne işe yarar?",
+        "list": [
+          "Tüm karakterleri ters çevirme: bulmaca ve oyunlarda kullanılan klasik ayna yazısı.",
+          "Kelime sırasını ters çevirme: harflere dokunmadan cümleyi tersten okunan bir kelime dizisine dönüştürür.",
+          "Her kelimeyi ters çevirme: her kelimenin içindeki harfleri çevirir ama kelimeler aynı sırada kalır."
+        ]
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Boşlukları ve noktalamayı koruyor mu? Evet, boşluklar, noktalama ve satır geçişleri mümkün olduğunca yerinde kalır.",
+          "Metnim bir yere gönderiliyor mu? Hayır, her şey tarayıcınızda yerel olarak çalışır.",
+          "Türkçe karakterler destekleniyor mu? Evet, tüm Unicode metinler doğru şekilde ters çevrilir."
+        ]
+      }
+    ],
+    "morse-cevirici": [
+      {
+        "h": "Mors kodu nedir?",
+        "p": "Mors kodu harfleri, rakamları ve noktalamayı nokta-çizgi dizileri olarak kodlar. Aslen telgraf iletişiminde kullanılmıştır; her karakter kısa ve uzun vuruşların zamanlı bir sinyalidir."
+      },
+      {
+        "h": "Bu çevirici nasıl çalışır?",
+        "list": [
+          "Metinden Mors'a: harfler aralarında boşluk olacak şekilde nokta-çizgi dizilerine çevrilir; kelimeler bir virgül (/) ile ayrılır.",
+          "Mors'tan metne: her sembol harfine geri okunur; bir / kelime sınırını belirtir.",
+          "Desteklenen karakterler A–Z, 0–9 ile . , ? ! & ( ) ve - noktalamalarıdır."
+        ]
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Türkçe harfler çevrilebilir mi? Hayır — ç ve ş gibi Türkçe karakterler standart Mors'da olmadığından aynen bırakılır.",
+          "Kelimeler neden / ile ayrılıyor? Bu, Mors metninde kelimeler arası boşluğu göstermek için yaygın kullanılan kuraldır.",
+          "Mesajım bir sunucuya gönderiliyor mu? Hayır, tüm çeviri tarayıcınızda yerel olarak çalışır."
+        ]
+      }
+    ],
+    "ideal-kilo": [
+      {
+        "h": "Hangi formüller kullanılıyor?",
+        "p": "Bu ücretsiz hesap makinesi en yaygın iki ideal kilo formülünü raporlar. Devine, erkekler için 50 + 2,3 × (inç cinsinden boy - 60), kadınlar için 45,5 + 2,3 × (inç cinsinden boy - 60) verir. Robinson, erkekler için 52 + 1,9 × (...), kadınlar için 49 + 1,7 × (...) verir. Ayrıca BMI'si 18,5-24,9 arasında olan sağlıklı kilo aralığını da gösterir."
+      },
+      {
+        "h": "Nasıl kullanılır",
+        "list": [
+          "Cinsiyetinizi seçin ve boyunuzu santimetre olarak girin.",
+          "İsteğe bağlı: güncel kilonuzu girip sağlıklı aralıkla karşılaştırın.",
+          "Devine ve Robinson ideal kilo değerlerini okuyun.",
+          "Sağlıklı BMI kilo aralığını ve konumunuzla ilgili renkli ipucunu görün."
+        ]
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Hangi ideal kiloya güvenmeliyim? Formüller yetişkin popülasyonlar için boy tabanlı tahminlerdir, bu yüzden aralarındaki küçük farklar normaldir. Sağlıklı BMI aralığı, sağlıklı kilolardan oluşan bir bant sunduğu için genellikle daha pratik bir hedeftir.",
+          "Erkek ve kadın sonuçları neden farklı? Aynı boyda kadınlar ortalama olarak daha az yağsız kütleye ve daha fazla temel vücut yağına sahiptir; bu yüzden her iki formül de kadınlar için daha düşük bir tabandan başlar (50-52 kg yerine 45,5-49 kg) ve Robinson'un eğimi daha küçüktür.",
+          "Sağlıklı BMI aralığı nedir? WHO'ya göre 18,5-24,9 arası bir BMI normal kilodur. Hesap makinesi bu BMI aralığını boyunuza göre kilogram cinsinden bir kilo aralığına dönüştürür."
+        ]
+      }
+    ],
+    "kalori-bmr": [
+      {
+        "h": "BMR ve TDEE nedir?",
+        "p": "BMR (Bazal Metabolizma Hızı), vücudunuzun tam dinlenmede harcadığı enerjidir; TDEE (Toplam Günlük Enerji Harcaması) ise aktiviteyle yaktığınız kalorileri ekler. Bu ücretsiz hesap makinesi BMR'yi Mifflin-St Jeor denklemiyle hesaplar — erkekler: 10×kilo + 6,25×boy - 5×yaş + 5, kadınlar: -161 — ve seçtiğiniz aktivite faktörüyle çarpar."
+      },
+      {
+        "h": "Nasıl kullanılır",
+        "list": [
+          "Cinsiyetinizi seçin ve yaş, santimetre cinsinden boy ile kilogram cinsinden kilonuzu girin.",
+          "Haftalık egzersiz alışkanlığınıza uyan bir aktivite düzeyi seçin.",
+          "BMR ve TDEE kalori kartlarını okuyun, ardından üç hedef satırını inceleyin.",
+          "TDEE'yi tek tıkla kopyalayıp kendi planınızda kullanın."
+        ]
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Hangi aktivite düzeyini seçmeliyim? Gerçek haftanız konusunda dürüst olun. Hareketsiz az egzersiz, hafif haftada 1-3 gün, orta 3-5 gün, aktif 6-7 gün, çok aktif ise ağır antrenman veya fiziksel bir iş demektir. Düzeyi olduğundan yüksek seçmek genellikle harcamayı fazla tahmin eder.",
+          "Neden -500 kalori öneriliyor? Bir kilogram vücut yağı yaklaşık 7.700 kcal içerir; günde yaklaşık 500 kcal azaltmak haftada yaklaşık -0,5 kg'ye denk gelir ve yaygın, sürdürülebilir bir kilo verme hedefidir.",
+          "Bu rakamlara tamamen güvenebilir miyim? Mifflin-St Jeor çoğu yetişkin için isabetlidir ancak her formül bir tahmindir. Kas kütlesi, genetik ve günlük değişim gerçek enerji ihtiyacını etkiler; sonucu bir başlangıç noktası olarak görün."
+        ]
+      }
+    ],
+    "kredi-emi": [
+      {
+        "h": "EMI (taksit) nedir?",
+        "p": "EMI (Eşit Aylık Taksit), bir krediyi faiziyle birlikte ödemek için her ay ödediğiniz sabit tutardır. Bu ücretsiz hesap makinesi standart P × r × (1+r)^n / ((1+r)^n - 1) formülünü kullanır; P anapara, r aylık faiz oranı ve n ay sayısıdır. Böylece aylık taksidinizi her zaman doğru görürsünüz."
+      },
+      {
+        "h": "Nasıl kullanılır",
+        "list": [
+          "Kredi tutarını kendi para biriminizle girin, örn. 500000.",
+          "Yıllık faiz oranını yüzde cinsinden ve vadeyi ay olarak yazın.",
+          "Aylık taksit, toplam ödeme ve toplam faiz kartlarını okuyun.",
+          "Ödeme planını açarak her ayın anapara, faiz ve kalan bakiye sütunlarını görün."
+        ]
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Aylık oran nasıl hesaplanır? Yıllık faiz oranı 12'ye bölünerek aylık oran bulunur. Örneğin yıllık %24 oran, EMI formülü uygulanmadan önce aylık %2 olur.",
+          "Toplam faiz neden anaparaya yakın çıkıyor? Faiz her ay kalan bakiye üzerinden işlenir. İlk ödemeler çoğunlukla faize gider; bu nedenle uzun vade veya yüksek faizde toplam faiz çok yüksek olabilir.",
+          "Hesap makinesi masrafları kapsıyor mu? Hayır. Yalnızca anapara ve faizi hesaplar. Bankalar genellikle buradaki EMI'ye dahil olmayan dosya masrafı, sigorta veya başka ücretler ekler."
+        ]
+      }
+    ],
+    "not-ortalamasi": [
+      {
+        "h": "Bu not ortalaması hesaplayıcı nedir?",
+        "p": "Bu ücretsiz araç, her dersin kredisini ve harf notunu girmenizi sağlar ve çoğu üniversitede kullanılan standart 4.0 ölçeğinde ağırlıklı bir GPA hesaplar. A+ ve A ikisi de 4.0 sayılır, ardından A- 3.7, B+ 3.3 ve F'ye kadar devam eder. Dilerseniz her notun tipik yüzdesini tahmin eden 100'lük ortalamayı da açabilirsiniz."
+      },
+      {
+        "h": "Nasıl kullanılır",
+        "list": [
+          "Aldığınız veya almayı planladığınız her ders için 'Ders ekle' butonuna tıklayın.",
+          "Her dersin kredisini girin (varsayılan 1) ve açılır listeden notu seçin.",
+          "Ağırlıklı GPA, toplam kredi ve isteğe bağlı 100'lük ortalamayı görün.",
+          "Sonucu paylaşmak veya saklamak için tek tıkla kopyalayın."
+        ]
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "A+ notu A'dan daha mı değerli? Standart 4.0 ölçeğinde A+ ve A ikisi de 4.0 puandır. Bazı üniversiteler A+'ya fazladan ağırlık veren 4.3 ölçeğini kullanır; ancak bu hesap makinesi yaygın 4.0 kuralını izler.",
+          "Ağırlıklı ne demek? Ortalama alınmadan önce tüm notlar dersin kredi miktarıyla çarpılır. Yüksek kredili bir dersteki iyi not, düşük kredili dersteki nottan GPA'nızı daha çok etkiler.",
+          "100'lük ortalama doğru mu? 100'lük ortalama, her harf notunun tipik yüzdesini kullanır, bu yüzden bir tahmindir. Okulunuz, özellikle A+ veya F notları için farklı bir dönüşüm tablosu kullanıyor olabilir."
+        ]
+      }
+    ],
+    "uyku-hesaplayici": [
+      {
+        "h": "Uyku hesaplayıcı nasıl çalışır?",
+        "p": "Tam bir uyku döngüsü yaklaşık 90 dakika sürer ve hafif uyku, derin uyku ile REM uykusundan geçer. Bu ücretsiz hesap makinesi uykuya dalmak için yaklaşık 15 dakika ekler, ardından uyanma saatinizden geriye — ya da yatma saatinizden ileriye — giderek 5. veya 6. döngünün doğal sonunda biten programları önerir."
+      },
+      {
+        "h": "Nasıl kullanılır",
+        "list": [
+          "Önerilen yatma saatlerini görmek için uyanma modunu, uyanma önerileri için yatma modunu seçin.",
+          "Saat girişinden bir zaman seçin.",
+          "5 ve 6 uyku döngüsü için önerileri okuyun.",
+          "Listeyi tek tıkla kopyalayın ve hayatınıza uyan programı izleyin."
+        ]
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Neden 5 veya 6 döngü öneriliyor? Derin uykunun ortasında uyanmak sersemleticidir; döngü aralarında uyanmak ise daha zinde kalmayı sağlar. 5 döngüde yaklaşık 7,5 saat, 6 döngüde yaklaşık 9 saat uyursunuz; üstüne uykuya dalmak için yaklaşık 15 dakika eklenir.",
+          "Yatağa tam önerilen saatte mi girmeliyim? Hayır. Önerilen yatma saati, yaklaşık 15 dakika sonra uykuya dalmayı hedeflediğiniz andır. Birkaç dakika farkla uykuya dalmak sorun değildir — dakika hassasiyetinden çok düzenlilik önemlidir.",
+          "5 döngüden az uyursam kullanabilir miyim? Girdiğiniz her uyanma veya yatma saatiyle çalışır. Tam döngüler içinde kalmak idealdir ancak programınız izin veriyorsa 4 döngülük bir gece de doğru hesaplanır."
+        ]
+      }
+    ],
+    "vucut-yag-orani": [
+      {
+        "h": "ABD Donanması yöntemi",
+        "p": "Bu ücretsiz hesap makinesi, vücut yağını boy ile boyun, bel ve (kadınlarda) kalça ölçümlerinden tahmin eden ABD Donanması çevre yöntemini kullanır. Erkekler: 86,010 × log10(bel - boyun) - 70,041 × log10(boy) + 36,76. Kadınlar: 163,205 × log10(bel + kalça - boyun) - 97,684 × log10(boy) - 78,387."
+      },
+      {
+        "h": "Nasıl kullanılır",
+        "list": [
+          "Cinsiyetinizi seçin, boy, boyun, bel ve kadınlarda kalça ölçüsünü santimetre olarak girin.",
+          "İsteğe bağlı: kilonuzu girerek yağ kütlenizi kilogram cinsinden de öğrenin.",
+          "Vücut yağ yüzdenizi, ACE kategorisini ve açıklayıcı notu okuyun.",
+          "Alt taraftaki kategoriler tablosundan erkek ve kadın aralıklarını inceleyin."
+        ]
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "ABD Donanması formülü ne kadar doğrudur? Ölçümler dikkatli yapıldığında hata payı, su altı tartımı gibi laboratuvar yöntemlerine kıyasla genellikle %3-4 civarındadır. En iyi sonuç için ölçüleri tutarlı ve çok sıkı olmadan alın.",
+          "ACE kategorileri ne anlama gelir? American Council on Exercise aralıklarını izler: temel yağ, sporcular, fitness, ortalama ve obez. Bunlar genel rehberdir; ideal aralığınız yaşa, spor dallarına ve kişisel hedeflere göre değişir.",
+          "Kalça ölçüsü neden yalnızca kadınlar için? Kadınlar kalça ve bacaklarda orantısal olarak daha fazla yağ depoladığı için formül onlarda bel artı kalça eksi boyun kullanır. Erkekler yalnızca bel ölçüsüyle tahmin edilebilir."
+        ]
+      }
+    ],
+    "aes-sifreleme": [
+      {
+        "h": "AES Şifreleme/Çözme nedir?",
+        "p": "Bu araç metninizi, modern bir doğrulamalı şifre olan AES-GCM 256 ile, şifrenizden PBKDF2 (100.000 tur) kullanılarak türetilen bir anahtarla şifreler. Aynı şifre, saklanan değeri geri çözebilir; her şey tarayıcınızda çalışır ve hiçbir şey yüklenmez."
+      },
+      {
+        "h": "Çıktı neden üç parçadan oluşur?",
+        "list": [
+          "Salt: aynı şifrede bile türetilen anahtarı benzersiz kılan rastgele baytlar.",
+          "IV: her şifrelemede üretilen yeni bir rastgele başlatma vektörü.",
+          "Ciphertext: şifreli baytlar ve kurcalamayı her zaman algılayan bir bütünlük etiketi.",
+          "Üçü de base64 ile kodlanır ve base64(salt).base64(iv).base64(ciphertext) biçiminde birleştirilir; çözme işlemi tam olarak bu biçimi çözer."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Verilerimi siz çözebilir misiniz? Hayır — anahtarı türetmek için şifre gerekir ve şifreleme tamamen tarayıcıda olur; araç düz metninizi veya şifrenizi asla görmez.",
+          "Neden anında olmuyor? PBKDF2, kaba kuvvet saldırılarını pahalı hale getirmek için bilinçli olarak 100.000 tur çalışır; bu gecikme şifrelemeyi güçlü tutan şeydir.",
+          "Çözmede şifre veya biçim hatası alıyorum — ne yapmalıyım? Ya şifre eşleşmiyor, ya değer değiştirilmiş ya da üç base64 parçasından biri eksik."
+        ]
+      }
+    ],
+    "cron-test": [
+      {
+        "h": "Cron İfade Testi nedir?",
+        "p": "Cron İfade Testi, 0 9 * * MON-FRI gibi beş alanlı bir cron ifadesini kontrol eder ve her alanın neyi eşleştirdiğini sade dille açıklar. Ardından şu andan itibaren dakika dakika ilerleyip sonraki beş çalışma zamanını bulur; bunları ISO benzeri veya yerelleştirilmiş zaman damgası olarak kopyalayabilirsiniz."
+      },
+      {
+        "h": "Beş alan nasıl çalışır?",
+        "list": [
+          "Dakika (0–59): saatin dakikasını seçer; */5 her 5 dakikada bir eşleşir.",
+          "Saat (0–23): hangi saatlerin çalışacağını seçer; 9-17, 09:00 ile 17:00 arası demektir.",
+          "Ayın günü (1–31): 1,15,31 gibi günleri veya 1-15 gibi bir aralığı seçer.",
+          "Ay (1–12 veya JAN–DEC): ifadeyi belirli aylarla sınırlar; JAN-DEC gibi adlar kabul edilir.",
+          "Haftanın günü (0–7 veya SUN–SAT): 0 ve 7'nin ikisi de Pazar demektir; MON-FRI hafta içlerini eşleştirir."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Hangi sözdizimi kabul edilir? Standart beş alanlı cron sözdizimi: *, */n, a-b, a-b/n ve 0,15,30,45 gibi virgüllü listeler.",
+          "Ay ve hafta günü adları büyük/küçük harfe duyarlı mı? Hayır — MON, mon ve Mon kabul edilir ve sayılarla serbestçe karıştırılabilir.",
+          "Ayın günü ile haftanın günü nasıl birleşir? Klasik cronda olduğu gibi: ikisi de kısıtlıysa, alanlardan biri eşleştiğinde tarih kabul edilir."
+        ]
+      }
+    ],
+    "html-formatter": [
+      {
+        "h": "HTML Biçimlendirici nedir?",
+        "p": "HTML Biçimlendirici, işaretlemenizi tutarlı iki boşluklu girintiyle yeniden yazar; böylece etiketleri kolayca tarayıp düzenleyebilirsiniz. Etiketler arasındaki metin kendi satırına kırpılır, yorumlar yerinde kalır ve pre, script ile style bloklarındaki ham içerik aynen korunur."
+      },
+      {
+        "h": "Burada biçimlendirme nasıl çalışır?",
+        "list": [
+          "Açılış ve kapanış etiketleri iç içelik derinliğine göre yeniden girintilenir; void ve kendinden kapanan etiketler asla girinti eklemez.",
+          "Etiketler arasındaki boşluklar daraltılır ve satır içi metin kendi kırpılmış satırına alınır.",
+          "<pre>, <script> ve <style> içindeki içerik olduğu gibi kopyalanır — kod asla yeniden biçimlendirilmez.",
+          "HTML yorumları ve doctype'lar korunur; hatalı HTML asla aracı çökertmez."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "JavaScript veya CSS'im değişir mi? Hayır — script, style ve pre etiketleri içindeki her şey birebir korunur; yalnızca çevredeki girinti değişir.",
+          "Çıktıyı tekrar biçimlendirebilir miyim? Evet, biçimlendirme idempotenttir: sonucu tekrar girdi olarak verdiğinizde aynı temiz çıktıyı elde edersiniz.",
+          "HTML'im bir yere yükleniyor mu? Hayır — biçimlendirme tamamen tarayıcınızda çalışır ve işaretlemeniz cihazınızdan asla çıkmaz."
+        ]
+      }
+    ],
+    "jwt-uretici": [
+      {
+        "h": "JWT Üretici nedir?",
+        "p": "JWT Üretici, kontrol ettiğiniz üç parçadan bir HS256 JSON Web Token oluşturur: algoritmayı bildiren header JSON'u, taleplerinizi içeren payload JSON'u ve bir gizli anahtar. Tarayıcı, Web Crypto API ile header.payload'ı HMAC-SHA256 ile imzalar ve her parçayı inceleyebilmeniz için gösterir."
+      },
+      {
+        "h": "Her adımda ne üretilir?",
+        "list": [
+          "Header: JSON header'ınız, dolgusuz base64url olarak kodlanır.",
+          "Payload: JSON talepleriniz, base64url olarak kodlanır.",
+          "Signature: gizli anahtarınızla header.payload'ın HMAC-SHA256 özeti.",
+          "Tam token header.payload.signature biçimindedir — bir teste, curl komutuna veya doğrulama aracına kopyalanmaya hazırdır."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Bu gerçekten geçerli bir token oluşturur mu? Evet — header ve payload geçerli JSON olduğu ve bir gizli anahtar verdiğiniz sürece çıktı, standart kütüphanelerin doğrulayabileceği doğru imzalı bir HS256 JWT'dir.",
+          "Gizli anahtar nereye gider? Hiçbir yere — imzalama tamamen tarayıcınızda olur ve gizli anahtarınız asla yüklenmez veya saklanmaz.",
+          "Farklı bir algoritma kullanabilir miyim? Varsayılan HS256'dır; header JSON'unu düzenleyebilirsiniz, ancak imza her zaman HMAC-SHA256 ile hesaplanır."
+        ]
+      }
+    ],
+    "rastgele-string-uretici": [
+      {
+        "h": "Rastgele String Üretici nedir?",
+        "p": "Rastgele String Üretici, etkinleştirdiğiniz karakter türlerinden — büyük harf, küçük harf, rakam ve sembol — anında rastgele metin üretir. Tarayıcının crypto.getRandomValues API'sini önyargısız örneklemeyle kullanır; sonuçlar token, salt, tek kullanımlık kod ve test verileri için uygundur."
+      },
+      {
+        "h": "Neleri yapılandırabilirsiniz?",
+        "list": [
+          "Büyük harf (A–Z): büyük harfler.",
+          "Küçük harf (a–z): küçük harfler.",
+          "Rakamlar (0–9): sayılar.",
+          "Semboller (!@#$…): noktalama ve özel karakterler.",
+          "Uzunluk: 1 ile 128 karakter arasında herhangi bir değer; istediğiniz kadar yeniden üretebilirsiniz."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Gerçekten rastgele mi? Evet — değerler kriptografik kalitede bir kaynak olan crypto.getRandomValues'tan gelir; her üretim yeni ve bağımsızdır.",
+          "Aynı string iki kez çıkabilir mi? Rastgeleliğin doğası gereği teknik olarak tekrar mümkündür, ancak uzun string'lerde olasılık astronomik derecede küçüktür.",
+          "Sonuç saklanır veya yüklenir mi? Hayır — üretim tarayıcınızda yerel olarak olur ve hiçbir şey sunucuya gönderilmez."
+        ]
+      }
     ]
   },
   "ToolPage": {
@@ -2028,6 +2836,452 @@
       "copy": "Kopyala",
       "copied": "Kopyalandı!",
       "tip": "Sonuç tamamen tarayıcınızda hesaplanır; dosya hiçbir yere gönderilmez."
+    },
+    "resimBoyutlandirici": {
+      "upload": "Bir görsel seçin",
+      "width": "Genişlik (px)",
+      "height": "Yükseklik (px)",
+      "keepRatio": "En-boy oranını koru",
+      "format": "Çıktı formatı",
+      "original": "Orijinal: {w} × {h} px",
+      "output": "Yeni boyut: {w} × {h} px",
+      "download": "Boyutlandırılmışı indir",
+      "note": "Her şey tarayıcınızda olur — yükleme gerekmez.",
+      "error": "Bu işlenemedi. Lütfen geçerli bir görsel seçin."
+    },
+    "resimDonusturucu": {
+      "upload": "Bir görsel seçin",
+      "format": "Dönüştür",
+      "quality": "Kalite",
+      "originalSize": "Orijinal boyut",
+      "newSize": "Yeni boyut",
+      "download": "Dönüştürülmüşü indir",
+      "note": "Dönüşüm tarayıcınızda olur — dosyalar hiç yüklenmez.",
+      "error": "Desteklenmeyen dosya. Lütfen JPEG, PNG veya WebP formatında bir görsel seçin."
+    },
+    "resimSikistirici": {
+      "upload": "Bir görsel seçin",
+      "quality": "Kalite",
+      "maxWidth": "Maks. genişlik (px, isteğe bağlı)",
+      "originalSize": "Orijinal boyut",
+      "newSize": "Yeni boyut",
+      "saved": "Kazanç",
+      "download": "Sıkıştırılmışı indir",
+      "note": "Tamamen tarayıcınızda çalışır — görseliniz cihazınızdan hiç çıkmaz.",
+      "error": "Bu dosya türü desteklenmiyor. Lütfen bir görsel dosyası seçin."
+    },
+    "resimdenBase64": {
+      "upload": "Bir görsel seçin",
+      "result": "Base64 data URL",
+      "fileSize": "Dosya boyutu",
+      "dataLength": "Data URL uzunluğu",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "note": "Kodlama tarayıcınızda olur — hiçbir şey yüklenmez.",
+      "error": "Dosya okunamadı. Lütfen bir görsel seçin."
+    },
+    "resimdenRenkSecici": {
+      "upload": "Bir görsel seçin",
+      "hint": "Rengi önizlemek için görselin üzerine gelin, kaydetmek için tıklayın.",
+      "current": "Seçili renk",
+      "hex": "HEX",
+      "rgb": "RGB",
+      "picked": "Seçilen renkler",
+      "empty": "Renk kaydetmek için görselin üzerine tıklayın.",
+      "clear": "Tümünü temizle",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "error": "Dosya açılamadı. Lütfen bir görsel seçin."
+    },
+    "anahtarKelimeYogunlugu": {
+      "label": "Metniniz",
+      "placeholder": "Makalenizi, blog yazınızı veya anahtar kelime araştırmanızı buraya yapıştırın.",
+      "minLength": "Minimum kelime uzunluğu",
+      "totalWords": "Toplam kelime",
+      "uniqueWords": "Benzersiz kelime",
+      "topWords": "Gösterilen kelime",
+      "thWord": "Kelime",
+      "thCount": "Adet",
+      "thDensity": "Yoğunluk",
+      "empty": "Analizi başlatmak için biraz metin yapıştırın."
+    },
+    "metaTagUretici": {
+      "titleLabel": "Sayfa başlığı",
+      "titlePlaceholder": "Örn. Gerçekten İşe Yarayan 10 SEO İpucu",
+      "descLabel": "Meta açıklama",
+      "descPlaceholder": "Yaklaşık 160 karakterlik kısa ve cazip bir özet yazın.",
+      "urlLabel": "Sayfa URL'si",
+      "urlPlaceholder": "https://ornek.com/yazi",
+      "typeLabel": "İçerik tipi",
+      "typeWebsite": "Site",
+      "typeArticle": "Makale",
+      "imageLabel": "Görsel URL'si",
+      "imagePlaceholder": "https://ornek.com/kapak.jpg",
+      "handleLabel": "Twitter kullanıcı adı",
+      "handlePlaceholder": "@kullaniciadi",
+      "outputLabel": "Oluşturulan meta etiketler",
+      "outputPlaceholder": "Alanları doldurdukça meta etiketleriniz burada görünecek.",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "previewLabel": "Google önizleme",
+      "note": "Snippet canlı olarak güncellenir. Open Graph ve Twitter etiketleri yalnızca doldurduğunuz alanlar için üretilir."
+    },
+    "okunabilirlikSkoru": {
+      "label": "Metniniz",
+      "placeholder": "Makalenizi, e-postanızı veya web metninizi puanlamak için buraya yapıştırın.",
+      "fleschLabel": "Flesch Reading Ease",
+      "statWords": "Kelime",
+      "statSentences": "Cümle",
+      "statSyllables": "Hece",
+      "avgLabel": "Ort. kelime / cümle",
+      "gradeLabel": "Yaklaşık sınıf seviyesi",
+      "levelVeryEasy": "Okuması çok kolay",
+      "levelEasy": "Okuması kolay",
+      "levelFairlyDifficult": "Oldukça zor",
+      "levelDifficult": "Okuması zor",
+      "empty": "Okunabilirlik puanını hesaplamak için biraz metin yapıştırın."
+    },
+    "serpOnizleme": {
+      "titleLabel": "Sayfa başlığı",
+      "titlePlaceholder": "Örn. Yerel SEO İçin Kapsamlı Rehber",
+      "descLabel": "Meta açıklama",
+      "descPlaceholder": "Arama sonuçlarında mavi başlığın altında görünen açıklamayı girin.",
+      "ok": "Önerilen uzunluk içinde",
+      "over": "Önerilen uzunluğu aşıyor",
+      "current": "Mevcut: {count}",
+      "recommended": "Önerilen: {max}",
+      "previewLabel": "Google arama önizlemesi",
+      "emptyTitle": "Sayfa başlığı önizlemeniz burada görünecek.",
+      "emptyDesc": "Snippet'inizin arama sonuçlarında nasıl görüneceğini görmek için bir meta açıklama yazın."
+    },
+    "slugUretici": {
+      "label": "Dönüştürülecek metin",
+      "placeholder": "Örn. Güçlü Geri Bağlantılar Nasıl Kurulur",
+      "separator": "Ayraç",
+      "sepHyphen": "Tire (-)",
+      "sepUnderscore": "Alt çizgi (_)",
+      "sepNone": "Yok",
+      "keepAscii": "Yalnızca ASCII karakterler",
+      "outputLabel": "Oluşturulan slug",
+      "empty": "Yazdıkça slug'ınız burada görünecek.",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "note": "Aksanlı karakterler otomatik olarak sadeleştirilir; böylece her dildeki başlıklar dostça ASCII slug'lara dönüşür."
+    },
+    "caesarSifre": {
+      "directionAria": "Şifre yönünü seçin",
+      "modeEncrypt": "Şifrele",
+      "modeDecrypt": "Çöz",
+      "rot13": "ROT13",
+      "label": "Metninizi girin",
+      "placeholder": "Buraya yazın veya yapıştırın…",
+      "shift": "Kaydırma",
+      "outputLabel": "Sonuç",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "note": "Yalnızca A–Z ve a–z harfleri kaydırılır; Türkçe harfler, sayılar, noktalama ve semboller aynen korunur."
+    },
+    "htmlEntityCevirici": {
+      "tabAria": "Dönüştürme yönünü seçin",
+      "modeEncode": "HTML Kodla",
+      "modeDecode": "HTML Çöz",
+      "encodeLabel": "Kodlanacak metin",
+      "decodeLabel": "Çözülecek entity'ler",
+      "encodePlaceholder": "Kodlanacak metni yazın veya yapıştırın…",
+      "decodePlaceholder": "HTML entity'lerini yapıştırın…",
+      "outputEncode": "Kodlanmış çıktı",
+      "outputDecode": "Çözülmüş çıktı",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "note": "Ayrılmış karakterler (& < > \" ') ve yaygın aksanlı harfler (é ile ç ğ ı ö ş ü İ) dönüştürülür; diğer tüm karakterler aynen korunur."
+    },
+    "kalinItalikMetin": {
+      "label": "Metninizi girin",
+      "placeholder": "Buraya yazın veya yapıştırın…",
+      "styleBold": "Kalın",
+      "styleItalic": "İtalik",
+      "styleBoldItalic": "Kalın İtalik",
+      "styleMono": "Monospace",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "note": "Unicode Matematiksel Alfanumerik Sembolleri kullanır. Yalnızca A–Z, a–z ve 0–9 stilize edilir (italik ve kalın-italikte rakam formu yoktur); diğer karakterler aynen korunur."
+    },
+    "metinKarsilastirici": {
+      "originalLabel": "Orijinal metin",
+      "originalPlaceholder": "Orijinal sürümü yapıştırın…",
+      "changedLabel": "Değişen metin",
+      "changedPlaceholder": "Yeni sürümü yapıştırın…",
+      "oldLabel": "Orijinal",
+      "newLabel": "Değişen",
+      "total": "Toplam satır",
+      "added": "Eklenen",
+      "removed": "Kaldırılan",
+      "unchanged": "Değişmeyen",
+      "emptyHint": "Farkı görmek için iki kutuya da yazmaya başlayın.",
+      "note": "Satır tabanlı karşılaştırma. Eşleşen satırlar LCS hizalamasıyla eşleştirilir; boşluklar olduğu gibi karşılaştırılır."
+    },
+    "metinTersCevirici": {
+      "label": "Metninizi girin",
+      "placeholder": "Buraya yazın veya yapıştırın…",
+      "modeLabel": "Ters çevirme modu",
+      "optionChars": "Tüm karakterleri ters çevir",
+      "optionWords": "Kelime sırasını ters çevir",
+      "optionWordChars": "Her kelimeyi ters çevir",
+      "outputLabel": "Ters çevrilmiş çıktı",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "note": "Tüm karakterleri ters çevirme bütün diziyi çevirir; kelime sırası harfleri korurken kelimelerin dizilişini çevirir; her kelimeyi ters çevirme her kelimenin içindeki harfleri çevirir."
+    },
+    "morseCevirici": {
+      "tabAria": "Çeviri yönünü seçin",
+      "modeText": "Metin → Mors",
+      "modeMorse": "Mors → Metin",
+      "textLabel": "Çevrilecek metin",
+      "morseLabel": "Okunacak Mors kodu",
+      "textPlaceholder": "Bir mesaj yazın veya yapıştırın…",
+      "morsePlaceholder": "Mors kodunu yapıştırın (harfler boşlukla, kelimeler / ile ayrılır)…",
+      "outputText": "Mors kodu",
+      "outputMorse": "Düz metin",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "note": "A–Z, 0–9 ile . , ? ! & ( ) ve - desteklenir. Desteklenmeyen karakterler aynen geçer."
+    },
+    "idealKilo": {
+      "sexLabel": "Cinsiyet",
+      "male": "Erkek",
+      "female": "Kadın",
+      "heightLabel": "Boy (cm)",
+      "currentWeightLabel": "Güncel kilo (kg, isteğe bağlı)",
+      "currentWeightPlaceholder": "örn. 72 (isteğe bağlı)",
+      "devine": "İdeal kilo (Devine)",
+      "robinson": "İdeal kilo (Robinson)",
+      "rangeLabel": "Sağlıklı aralık (BMI 18,5-24,9)",
+      "currentState": "Kilonuz:",
+      "below": "sağlıklı aralığın altındasınız.",
+      "within": "sağlıklı aralıktasınız.",
+      "above": "sağlıklı aralığın üzerindesiniz.",
+      "copy": "Sonucu kopyala",
+      "copied": "Kopyalandı",
+      "emptyState": "İdeal kilonuzu görmek için boyunuzu girin.",
+      "note": "Devine ve Robinson formüllerine ve sağlıklı BMI aralığına dayanır."
+    },
+    "kaloriBmr": {
+      "sexLabel": "Cinsiyet",
+      "male": "Erkek",
+      "female": "Kadın",
+      "ageLabel": "Yaş",
+      "heightLabel": "Boy (cm)",
+      "weightLabel": "Kilo (kg)",
+      "activityLabel": "Aktivite düzeyi",
+      "sedentary": "Hareketsiz (az veya hiç egzersiz yok)",
+      "light": "Az aktif (haftada 1-3 gün)",
+      "moderate": "Orta aktif (haftada 3-5 gün)",
+      "active": "Aktif (haftada 6-7 gün)",
+      "veryActive": "Çok aktif (ağır egzersiz / fiziksel iş)",
+      "bmr": "BMR",
+      "tdee": "TDEE",
+      "kcal": "kcal/gün",
+      "loseGoal": "Kilo verme (yaklaşık -0,5 kg/hafta)",
+      "keepGoal": "Kilo koruma",
+      "gainGoal": "Kilo alma (yaklaşık +0,5 kg/hafta)",
+      "copy": "TDEE'yi kopyala",
+      "copied": "Kopyalandı",
+      "emptyState": "Kalori ihtiyacınızı görmek için cinsiyet, yaş, boy, kilo ve aktivite düzeyi girin.",
+      "note": "BMR, Mifflin-St Jeor denklemiyle hesaplanır. Sonuçlar tahmindir ve profesyonel tavsiyenin yerini tutmaz."
+    },
+    "krediEmi": {
+      "principalLabel": "Kredi tutarı",
+      "principalPlaceholder": "örn. 500000",
+      "interestLabel": "Yıllık faiz oranı (%)",
+      "interestPlaceholder": "örn. 25",
+      "monthsLabel": "Vade (ay)",
+      "monthsPlaceholder": "örn. 24",
+      "monthlyPayment": "Aylık taksit",
+      "totalPayment": "Toplam ödeme",
+      "totalInterest": "Toplam faiz",
+      "showAmortization": "Ödeme planını göster",
+      "hideAmortization": "Ödeme planını gizle",
+      "monthCol": "Ay",
+      "paymentCol": "Taksit",
+      "principalCol": "Anapara",
+      "interestCol": "Faiz",
+      "balanceCol": "Kalan bakiye",
+      "copy": "Aylık taksidi kopyala",
+      "copied": "Kopyalandı",
+      "emptyState": "Taksidi görmek için kredi tutarı, faiz ve vade girin.",
+      "note": "Yıllık oran 12'ye bölünerek aylık orana çevrilir. Sonuçlar anında güncellenir."
+    },
+    "notOrtalamasi": {
+      "courseLabel": "Ders",
+      "creditsLabel": "Kredi",
+      "gradeLabel": "Not",
+      "addRow": "Ders ekle",
+      "removeLabel": "Kaldır",
+      "removeRow": "Dersi kaldır",
+      "percentScale": "100'lük ortalama",
+      "percentOff": "Kapalı",
+      "percentOn": "Açık",
+      "gpa": "Ağırlıklı GPA",
+      "totalCredits": "Toplam kredi",
+      "avg100": "Ortalama (100)",
+      "copy": "Sonucu kopyala",
+      "copied": "Kopyalandı",
+      "emptyState": "GPA'nızı görmek için yukarıya kredili ve notlu dersler ekleyin.",
+      "note": "A+ ve A ikisi de 4.0'dır. 100'lük ortalama her notun tipik yüzdesini kullanır ve bir tahmindir."
+    },
+    "uykuHesaplayici": {
+      "tabAria": "Uyku hesaplayıcı modu",
+      "tabWake": "Uyanma saati",
+      "tabBed": "Yatma saati",
+      "wakeLabel": "Uyanma saati",
+      "bedLabel": "Yatma saati",
+      "note": "Uykuya dalmanın yaklaşık 15 dakika sürdüğü varsayılır. Her uyku döngüsü yaklaşık 90 dakikadır.",
+      "bedAt": "Yatma",
+      "wakeAt": "uyanma",
+      "cycles": "döngü",
+      "copy": "Önerileri kopyala",
+      "copied": "Kopyalandı",
+      "emptyState": "Önerilen yatma veya uyanma saatlerini görmek için bir saat seçin."
+    },
+    "vucutYagOrani": {
+      "sexLabel": "Cinsiyet",
+      "male": "Erkek",
+      "female": "Kadın",
+      "heightLabel": "Boy (cm)",
+      "neckLabel": "Boyun (cm)",
+      "waistLabel": "Bel (cm)",
+      "hipLabel": "Kalça (cm)",
+      "weightLabel": "Kilo (kg, isteğe bağlı)",
+      "weightPlaceholder": "örn. 70 (isteğe bağlı)",
+      "fatPercent": "Vücut yağı",
+      "categoryLabel": "Kategori",
+      "fatMass": "Yağ kütlesi",
+      "essential": "Temel yağ",
+      "athletes": "Sporcular",
+      "fitness": "Fitness",
+      "average": "Ortalama",
+      "obese": "Obez",
+      "essentialNote": "Temel yağ, temel vücut sağlığı için gereken minimum yağ seviyesidir.",
+      "athletesNote": "Bu aralık birçok profesyonel ve çok aktif sporcu için yaygındır.",
+      "fitnessNote": "Bu aralık aktif, fit bireyler için tipiktir.",
+      "averageNote": "Bu aralık genel toplum için kabul edilebilir kabul edilir.",
+      "obeseNote": "Bu seviye önerilen aralığın üzerindedir ve sağlık risklerini artırabilir.",
+      "scaleLabel": "ACE vücut yağı kategorileri (%)",
+      "scaleCategory": "Kategori",
+      "scaleNote": "American Council on Exercise (ACE) kategorilerine göre vücut yağı yüzdesi aralıkları.",
+      "copy": "Sonucu kopyala",
+      "copied": "Kopyalandı",
+      "emptyState": "Vücut yağ oranınızı görmek için ölçülerinizi girin.",
+      "note": "ABD Donanması yöntemini kullanır. Kalça ölçüsü yalnızca kadınlar için gereklidir."
+    },
+    "aesSifreleme": {
+      "modeEncrypt": "Şifrele",
+      "modeDecrypt": "Çöz",
+      "modeAria": "Şifreleme modu",
+      "passwordLabel": "Şifre",
+      "passwordPlaceholder": "Şifreniz…",
+      "plainLabel": "Düz metin",
+      "plainPlaceholder": "Şifrelenecek metin…",
+      "cipherLabel": "Şifreli metin (salt.iv.ciphertext)",
+      "cipherPlaceholder": "Şifreli metni yapıştırın…",
+      "outputLabel": "Sonuç",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "emptyError": "Bir şifre ve biraz metin girin.",
+      "invalidFormat": "Geçersiz biçim. Beklenen: base64(salt).base64(iv).base64(ciphertext).",
+      "decryptFailed": "Çözme başarısız — yanlış şifre veya bozuk veri.",
+      "failed": "Bir şeyler ters gitti. Lütfen tekrar deneyin.",
+      "unavailable": "Web Crypto burada kullanılamıyor. Bu sayfayı HTTPS veya localhost üzerinden açın.",
+      "note": "PBKDF2 anahtarıyla (100.000 tur) AES-GCM 256. Her şey tarayıcınızda çalışır ve hiçbir şey yüklenmez."
+    },
+    "cronTest": {
+      "minuteLabel": "Dakika (0–59)",
+      "hourLabel": "Saat (0–23)",
+      "domLabel": "Ayın günü (1–31)",
+      "monthLabel": "Ay (1–12 veya JAN–DEC)",
+      "dowLabel": "Haftanın günü (0–7 veya SUN–SAT)",
+      "placeholder": "örn. */5, 0-30, 1,15,45",
+      "invalid": "Geçersiz değer. İzin verilen: *, */n, a-b, a-b/n veya a,b,c",
+      "run": "Sonraki çalıştırmaları bul",
+      "resultsLabel": "Sonraki 5 eşleşme",
+      "noMatch": "366 gün içinde eşleşen zaman bulunamadı.",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "note": "Standart 5 alanlı cron sözdizimi: dakika saat ayın-günü ay haftanın-günü. İki gün alanı da kısıtlıysa, alanlardan biri eşleştiğinde tarih kabul edilir.",
+      "descMinuteAll": "her dakika",
+      "descHourAll": "her saat",
+      "descDomAll": "her gün",
+      "descMonthAll": "her ay",
+      "descDowAll": "haftanın her günü",
+      "stepMinute": "her {step} dakikada bir",
+      "stepHour": "her {step} saatte bir",
+      "stepDom": "her {step} günde bir",
+      "stepMonth": "her {step} ayda bir",
+      "stepDow": "her {step} hafta gününde bir",
+      "rangeStepMinute": "{from} ile {to} arası her {step} dakikada bir",
+      "rangeStepHour": "{from} ile {to} arası her {step} saatte bir",
+      "rangeStepDom": "{from} ile {to} arası her {step} günde bir",
+      "rangeStepMonth": "{from} ile {to} arası her {step} ayda bir",
+      "rangeStepDow": "{from} ile {to} arası her {step} hafta gününde bir",
+      "jan": "Ocak",
+      "feb": "Şubat",
+      "mar": "Mart",
+      "apr": "Nisan",
+      "may": "Mayıs",
+      "jun": "Haziran",
+      "jul": "Temmuz",
+      "aug": "Ağustos",
+      "sep": "Eylül",
+      "oct": "Ekim",
+      "nov": "Kasım",
+      "dec": "Aralık",
+      "sun": "Pazar",
+      "mon": "Pazartesi",
+      "tue": "Salı",
+      "wed": "Çarşamba",
+      "thu": "Perşembe",
+      "fri": "Cuma",
+      "sat": "Cumartesi"
+    },
+    "htmlFormatter": {
+      "label": "HTML girdisi",
+      "placeholder": "HTML yapıştırın…",
+      "format": "Biçimlendir",
+      "outputLabel": "Biçimlendirilmiş HTML",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "emptyError": "Biçimlendirmek için HTML girin.",
+      "note": "Etiketler 2 boşlukla yeniden girintilenir. <pre>, <script> ve <style> içindeki ham içerik aynen korunur."
+    },
+    "jwtUretici": {
+      "headerLabel": "Header (JSON)",
+      "payloadLabel": "Payload (JSON)",
+      "secretLabel": "Gizli anahtar",
+      "generate": "JWT oluştur",
+      "outputLabel": "JWT",
+      "stepsLabel": "Token parçaları",
+      "signatureLabel": "İmza",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "invalidHeader": "Header geçerli JSON olmalı.",
+      "invalidPayload": "Payload geçerli JSON olmalı.",
+      "secretError": "Token'ı imzalamak için bir gizli anahtar girin.",
+      "unavailable": "Web Crypto burada kullanılamıyor. Bu sayfayı HTTPS veya localhost üzerinden açın.",
+      "note": "Web Crypto API ile header.payload'ı HMAC-SHA256 (HS256) ile imzalar. Her şey tarayıcınızda çalışır ve gizli anahtarınız hiçbir yere gönderilmez."
+    },
+    "rastgeleStringUretici": {
+      "charTypes": "Karakter türleri",
+      "optionUpper": "Büyük harf (A–Z)",
+      "optionLower": "Küçük harf (a–z)",
+      "optionDigits": "Rakamlar (0–9)",
+      "optionSymbols": "Semboller (!@#$…)",
+      "lengthLabel": "Uzunluk (1–128)",
+      "generate": "Üret",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "invalidLength": "Uzunluk 1 ile 128 arasında tam sayı olmalı.",
+      "cryptoError": "Bu tarayıcıda güvenli rastgele üretim kullanılamıyor.",
+      "note": "Önyargısız örneklemeyle crypto.getRandomValues kullanır. Her şey tarayıcınızda yerel olarak çalışır."
     }
   }
 }

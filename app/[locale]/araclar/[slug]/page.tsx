@@ -48,6 +48,33 @@ import MetinSiralayici from "@/components/tools/MetinSiralayici";
 import ListeKaristirici from "@/components/tools/ListeKaristirici";
 import YamlJson from "@/components/tools/YamlJson";
 import Md5DosyaChecksum from "@/components/tools/Md5DosyaChecksum";
+import ResimSikistirici from "@/components/tools/ResimSikistirici";
+import ResimBoyutlandirici from "@/components/tools/ResimBoyutlandirici";
+import ResimDonusturucu from "@/components/tools/ResimDonusturucu";
+import ResimdenBase64 from "@/components/tools/ResimdenBase64";
+import ResimdenRenkSecici from "@/components/tools/ResimdenRenkSecici";
+import SlugUretici from "@/components/tools/SlugUretici";
+import MetaTagUretici from "@/components/tools/MetaTagUretici";
+import AnahtarKelimeYogunlugu from "@/components/tools/AnahtarKelimeYogunlugu";
+import SerpOnizleme from "@/components/tools/SerpOnizleme";
+import OkunabilirlikSkoru from "@/components/tools/OkunabilirlikSkoru";
+import MetinKarsilastirici from "@/components/tools/MetinKarsilastirici";
+import HtmlEntityCevirici from "@/components/tools/HtmlEntityCevirici";
+import MorseCevirici from "@/components/tools/MorseCevirici";
+import MetinTersCevirici from "@/components/tools/MetinTersCevirici";
+import KalinItalikMetin from "@/components/tools/KalinItalikMetin";
+import CaesarSifre from "@/components/tools/CaesarSifre";
+import NotOrtalamasi from "@/components/tools/NotOrtalamasi";
+import KrediEmi from "@/components/tools/KrediEmi";
+import KaloriBmr from "@/components/tools/KaloriBmr";
+import VucutYagOrani from "@/components/tools/VucutYagOrani";
+import IdealKilo from "@/components/tools/IdealKilo";
+import UykuHesaplayici from "@/components/tools/UykuHesaplayici";
+import CronTest from "@/components/tools/CronTest";
+import HtmlFormatter from "@/components/tools/HtmlFormatter";
+import AesSifreleme from "@/components/tools/AesSifreleme";
+import RastgeleStringUretici from "@/components/tools/RastgeleStringUretici";
+import JwtUretici from "@/components/tools/JwtUretici";
 import AdSlot from "@/components/AdSlot";
 import JsonLd from "@/components/JsonLd";
 import ToolJsonLd from "@/components/ToolJsonLd";
@@ -101,6 +128,33 @@ const toolComponents: Record<string, React.ComponentType> = {
   "liste-karistirici": ListeKaristirici,
   "yaml-json-donusturucu": YamlJson,
   "md5-dosya-checksum": Md5DosyaChecksum,
+  "resim-sikistirici": ResimSikistirici,
+  "resim-boyutlandirici": ResimBoyutlandirici,
+  "resim-donusturucu": ResimDonusturucu,
+  "resimden-base64": ResimdenBase64,
+  "resimden-renk-secici": ResimdenRenkSecici,
+  "slug-uretici": SlugUretici,
+  "meta-tag-uretici": MetaTagUretici,
+  "anahtar-kelime-yogunlugu": AnahtarKelimeYogunlugu,
+  "serp-onizleme": SerpOnizleme,
+  "okunabilirlik-skoru": OkunabilirlikSkoru,
+  "metin-karsilastirici": MetinKarsilastirici,
+  "html-entity-cevirici": HtmlEntityCevirici,
+  "morse-cevirici": MorseCevirici,
+  "metin-ters-cevirici": MetinTersCevirici,
+  "kalin-italik-metin": KalinItalikMetin,
+  "caesar-sifre": CaesarSifre,
+  "not-ortalamasi": NotOrtalamasi,
+  "kredi-emi": KrediEmi,
+  "kalori-bmr": KaloriBmr,
+  "vucut-yag-orani": VucutYagOrani,
+  "ideal-kilo": IdealKilo,
+  "uyku-hesaplayici": UykuHesaplayici,
+  "cron-test": CronTest,
+  "html-formatter": HtmlFormatter,
+  "aes-sifreleme": AesSifreleme,
+  "rastgele-string-uretici": RastgeleStringUretici,
+  "jwt-uretici": JwtUretici,
 };
 
 const siteUrl = "https://freetoolsy.vercel.app";

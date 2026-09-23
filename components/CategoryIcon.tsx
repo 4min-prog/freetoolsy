@@ -21,6 +21,19 @@ const ICONS: Record<string, ReactNode> = {
       <path d="M9 7.5h6M9 12.5h.01M12 12.5h.01M15 12.5h.01M9 15.5h.01M12 15.5h.01M15 15.5h.01M9 18.5h.01M12 18.5h.01M15 18.5h.01" />
     </>
   ),
+  gorsel: (
+    <>
+      <rect x="3.5" y="5" width="17" height="14" rx="2" />
+      <circle cx="8.5" cy="10" r="1.5" />
+      <path d="M20.5 15.5L16 11l-4.5 4.5L8.5 12.5 3.5 17.5" />
+    </>
+  ),
+  seo: (
+    <>
+      <circle cx="11" cy="11" r="7" />
+      <path d="M20 20l-3.2-3.2M11 7.5v3.5l2.5 1.5" />
+    </>
+  ),
 };
 
 export default function CategoryIcon({
