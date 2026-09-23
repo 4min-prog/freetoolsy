@@ -1,7 +1,11 @@
 "use client";
 
+import { showToast } from "@/lib/toast";
+
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
+import { SAMPLES } from "@/data/samples";
 
 const EXTRA_MAP: Record<string, string> = {
   "ı": "i",
@@ -52,7 +56,7 @@ export default function SlugUretici() {
     navigator.clipboard
       .writeText(slug)
       .then(() => {
-        setCopied(true);
+        setCopied(true); showToast();
         setTimeout(() => setCopied(false), 1500);
       })
       .catch(() => undefined);
@@ -71,6 +75,10 @@ export default function SlugUretici() {
         placeholder={t("placeholder")}
         className="mt-2 w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-sm text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
+
+      <div className="mt-2 flex flex-wrap gap-2">
+        <SampleButton onApply={() => setText(SAMPLES["slug-uretici"])} />
+      </div>
 
       <div className="mt-5 grid gap-4 sm:grid-cols-2">
         <div>

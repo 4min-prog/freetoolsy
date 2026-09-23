@@ -1,7 +1,10 @@
 "use client";
 
+import { showToast } from "@/lib/toast";
+
 import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
 
 const MAX_TABLE_MONTHS = 360;
 
@@ -93,7 +96,7 @@ export default function KrediEmi() {
     navigator.clipboard
       .writeText(currency.format(result.payment))
       .then(() => {
-        setCopied(true);
+        setCopied(true); showToast();
         setTimeout(() => setCopied(false), 1500);
       })
       .catch(() => undefined);
@@ -121,6 +124,9 @@ export default function KrediEmi() {
             placeholder={t("principalPlaceholder")}
             className="mt-2 w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-sm text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
           />
+          <div className="mt-2 flex flex-wrap gap-2">
+            <SampleButton onApply={() => { setPrincipal("500000"); setRate("2.49"); setMonths("120"); }} />
+          </div>
         </div>
         <div>
           <label htmlFor="kredi-emi-faiz" className="block text-sm font-medium text-text">

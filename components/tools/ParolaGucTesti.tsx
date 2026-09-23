@@ -2,6 +2,8 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
+import { SAMPLES } from "@/data/samples";
 
 const SHORT_PASSWORDS = new Set([
   "123456",
@@ -128,6 +130,10 @@ export default function ParolaGucTesti() {
         >
           {visible ? t("hide") : t("show")}
         </button>
+      </div>
+
+      <div className="mt-2 flex flex-wrap gap-2">
+        <SampleButton onApply={() => setPassword(SAMPLES["parola-guc-testi"])} />
       </div>
 
       <div

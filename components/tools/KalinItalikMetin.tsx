@@ -1,7 +1,11 @@
 "use client";
 
+import { showToast } from "@/lib/toast";
+
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
+import { SAMPLES } from "@/data/samples";
 
 type StyleBases = { upper: number; lower: number; digit: number | null };
 
@@ -52,7 +56,7 @@ export default function KalinItalikMetin() {
   async function copyValue(value: string, index: number) {
     try {
       await navigator.clipboard.writeText(value);
-      setCopiedIndex(index);
+      setCopiedIndex(index); showToast();
       setTimeout(() => setCopiedIndex(null), 1500);
     } catch {
       setCopiedIndex(null);
@@ -76,6 +80,10 @@ export default function KalinItalikMetin() {
         placeholder={t("placeholder")}
         className="mt-2 w-full resize-y rounded-lg border border-border bg-bg px-3.5 py-3 text-sm leading-relaxed text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
+
+      <div className="mt-2 flex flex-wrap gap-2">
+        <SampleButton onApply={() => setText(SAMPLES["kalin-italik-metin"])} />
+      </div>
 
       <div className="mt-5 space-y-3">
         {STYLES.map((style, index) => {

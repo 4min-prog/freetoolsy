@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
 
 const RATES = [1, 8, 10, 18, 20];
 
@@ -69,6 +70,10 @@ export default function KdvHesaplayici() {
         placeholder={t("amountPlaceholder")}
         className="mt-2 w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-sm text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
+
+      <div className="mt-2 flex flex-wrap gap-2">
+        <SampleButton onApply={() => { setAmount("250"); setRate(20); }} />
+      </div>
 
       <fieldset className="mt-5">
         <legend className="text-sm font-medium text-text">{t("rate")}</legend>

@@ -1,7 +1,10 @@
 "use client";
 
+import { showToast } from "@/lib/toast";
+
 import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
 
 const ACTIVITIES = [
   { value: "sed", factor: 1.2 },
@@ -80,7 +83,7 @@ export default function KaloriBmr() {
     navigator.clipboard
       .writeText(`${formatter.format(result.tdee)} ${t("kcal")}`)
       .then(() => {
-        setCopied(true);
+        setCopied(true); showToast();
         setTimeout(() => setCopied(false), 1500);
       })
       .catch(() => undefined);
@@ -158,6 +161,10 @@ export default function KaloriBmr() {
             className="mt-2 w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-sm text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
           />
         </div>
+      </div>
+
+      <div className="mt-2 flex flex-wrap gap-2">
+        <SampleButton onApply={() => { setAge("30"); setHeight("175"); setWeight("70"); }} />
       </div>
 
       <label htmlFor="kalori-bmr-aktivite" className="mt-5 block text-sm font-medium text-text">

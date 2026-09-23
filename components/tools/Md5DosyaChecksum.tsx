@@ -1,5 +1,7 @@
 "use client";
 
+import { showToast } from "@/lib/toast";
+
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 
@@ -126,7 +128,7 @@ export default function Md5DosyaChecksum() {
   async function copy() {
     try {
       await navigator.clipboard.writeText(digest);
-      setCopied(true);
+      setCopied(true); showToast();
       setTimeout(() => setCopied(false), 1500);
     } catch {
       setCopied(false);

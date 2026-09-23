@@ -1,7 +1,11 @@
 "use client";
 
+import { showToast } from "@/lib/toast";
+
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
+import { SAMPLES } from "@/data/samples";
 
 const MODES = ["trim", "spaces", "empty", "all"] as const;
 
@@ -50,7 +54,7 @@ export default function BoslukTemizleyici() {
     navigator.clipboard
       .writeText(output)
       .then(() => {
-        setCopied(true);
+        setCopied(true); showToast();
         setTimeout(() => setCopied(false), 1500);
       })
       .catch(() => undefined);
@@ -90,6 +94,10 @@ export default function BoslukTemizleyici() {
         rows={6}
         className="mt-2 w-full resize-y rounded-lg border border-border bg-bg px-3.5 py-3 text-sm leading-relaxed text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
+
+      <div className="mt-2 flex flex-wrap gap-2">
+        <SampleButton onApply={() => setInput(SAMPLES["bosluk-temizleyici"])} />
+      </div>
 
       <div className="mt-4 flex flex-wrap items-center gap-2">
         <button

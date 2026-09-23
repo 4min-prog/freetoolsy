@@ -1,5 +1,7 @@
 "use client";
 
+import { showToast } from "@/lib/toast";
+
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 
@@ -88,7 +90,7 @@ export default function UuidUretici() {
     navigator.clipboard
       .writeText(generated.join("\n"))
       .then(() => {
-        setCopied(true);
+        setCopied(true); showToast();
         setTimeout(() => setCopied(false), 1500);
       })
       .catch(() => undefined);

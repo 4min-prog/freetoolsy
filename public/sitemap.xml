@@ -436,6 +436,60 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/jwt-uretici" />
   </url>
   <url>
+    <loc>https://freetoolsy.vercel.app/kategoriler/metin</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/kategoriler/metin" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/kategoriler/metin" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.vercel.app/kategoriler/guvenlik</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/kategoriler/guvenlik" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/kategoriler/guvenlik" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.vercel.app/kategoriler/gelistirici</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/kategoriler/gelistirici" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/kategoriler/gelistirici" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.vercel.app/kategoriler/hesaplama</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/kategoriler/hesaplama" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/kategoriler/hesaplama" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.vercel.app/kategoriler/gorsel</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/kategoriler/gorsel" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/kategoriler/gorsel" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.vercel.app/kategoriler/seo</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/kategoriler/seo" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/kategoriler/seo" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.vercel.app/rehber</loc>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/rehber" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/rehber" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.vercel.app/rehber/json-formatter-nedir</loc>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/rehber/json-formatter-nedir" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/rehber/json-formatter-nedir" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.vercel.app/rehber/meta-tag-nedir</loc>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/rehber/meta-tag-nedir" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/rehber/meta-tag-nedir" />
+  </url>
+  <url>
     <loc>https://freetoolsy.vercel.app/gizlilik-politikasi</loc>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/gizlilik-politikasi" />

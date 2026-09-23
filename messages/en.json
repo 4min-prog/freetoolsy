@@ -36,7 +36,8 @@
     ]
   },
   "Common": {
-    "use": "Use"
+    "use": "Use",
+    "trySample": "Try sample data"
   },
   "Header": {
     "categories": "Categories",
@@ -59,6 +60,7 @@
     "about": "About",
     "privacy": "Privacy Policy",
     "contact": "Contact",
+    "guides": "Guides",
     "partner": "Partner",
     "linkly": "Shorten links with → LinklyhHub",
     "tools": "Tools",
@@ -1409,8 +1411,8 @@
         "h": "What is left untouched?",
         "list": [
           "Text content between tags and inside attributes, including quotes.",
-          "Preformatted regions: <pre> and <textarea> keep their exact content.",
-          "Code blocks: <script> and <style> contents are left intact."
+          "Preformatted regions: pre and textarea keep their exact content.",
+          "Code blocks: script and style contents are left intact."
         ]
       },
       {
@@ -2099,7 +2101,7 @@
         "list": [
           "Opening and closing tags are re-indented to reflect nesting depth; void and self-closing tags never add indentation.",
           "Whitespace between tags is collapsed and inline text is placed on its own trimmed line.",
-          "Content inside <pre>, <script> and <style> is copied as-is — code is never reformatted.",
+          "Content inside pre, script and style is copied as-is — code is never reformatted.",
           "HTML comments and doctypes are preserved, and malformed HTML never crashes the tool."
         ]
       },
@@ -2160,14 +2162,46 @@
       }
     ]
   },
+  "Rehber": {
+    "title": "Guides & how-tos",
+    "pageDesc": "Short, practical guides that explain how to use FreetoolsY tools and the concepts behind them.",
+    "breadcrumbAria": "Breadcrumb",
+    "backToAll": "All guides",
+    "relatedToolsTitle": "Tools used in this guide",
+    "home": "Home"
+  },
   "ToolPage": {
     "linklyPre": "Want to share what you created? Try",
     "linklyPost": "for a short, clean link.",
     "breadcrumbAria": "Breadcrumb",
     "home": "Home",
     "viewAll": "{count} tools",
-    "otherTitle": "Other tools in this category",
-    "otherAll": "View all tools"
+    "otherTitle": "Popular tools",
+    "otherAll": "View all tools",
+    "similarTitle": "Similar tools"
+  },
+  "Toast": {
+    "copied": "Copied ✓",
+    "downloaded": "Downloaded ✓",
+    "sampleLoaded": "Sample data loaded"
+  },
+  "Brand": {
+    "tagline": "Free tools, in your browser."
+  },
+  "CategoryPage": {
+    "breadcrumbAria": "Category breadcrumb",
+    "breadcrumbAll": "All tools",
+    "toolCount": "{count} tools",
+    "relatedTitle": "Browse more categories",
+    "ctaAllTools": "View all {count} tools",
+    "desc": {
+      "metin": "Free text tools: character counter, word counter, case converter, line sorter and more. All run in your browser, no signup needed.",
+      "guvenlik": "Security tools: password generator, password strength test, SHA & MD5 hash, AES encryption, file checksum. Your data never leaves your device.",
+      "gelistirici": "Developer tools: JSON & XML formatter, Base64/URL/JWT encoder, regex tester, UUID generator, color and unit converters.",
+      "hesaplama": "Calculation tools: VAT, percentage, BMI, age, discount, tip, loan and ideal weight calculators with instant results.",
+      "gorsel": "Image tools: compress, resize, convert and analyze images directly in your browser without uploading.",
+      "seo": "SEO tools: slug generator, meta tag generator, SERP preview, keyword density and readability score analyzers."
+    }
   },
   "Info": {
     "breadcrumbHome": "Home",
@@ -3259,7 +3293,7 @@
       "copy": "Copy",
       "copied": "Copied!",
       "emptyError": "Enter some HTML to format.",
-      "note": "Tags are re-indented with 2 spaces. Raw content inside <pre>, <script> and <style> is preserved as-is."
+      "note": "Tags are re-indented with 2 spaces. Raw content inside pre, script and style is preserved as-is."
     },
     "jwtUretici": {
       "headerLabel": "Header (JSON)",

@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import type { ReactNode } from "react";
 import { useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
 
 function parseBirthDate(value: string): Date | null {
   if (!value) return null;
@@ -134,6 +135,10 @@ export default function YasHesaplayici() {
         onChange={(event) => setBirthValue(event.target.value)}
         className="mt-2 w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-sm text-text focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
+
+      <div className="mt-2 flex flex-wrap gap-2">
+        <SampleButton onApply={() => setBirthValue("1995-06-15")} />
+      </div>
 
       <p className="mt-3 text-xs leading-relaxed text-muted">{t("note")}</p>
 

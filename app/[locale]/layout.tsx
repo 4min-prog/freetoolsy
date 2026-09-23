@@ -9,6 +9,7 @@ import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ThemeGuard from "@/components/ThemeGuard";
+import ToastHost from "@/components/ToastHost";
 
 const inter = Inter({
   subsets: ["latin", "latin-ext"],
@@ -111,6 +112,7 @@ export default async function RootLayout({
           <Header />
           {children}
           <Footer />
+          <ToastHost />
         </NextIntlClientProvider>
         <Script
           id="google-analytics"

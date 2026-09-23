@@ -1,7 +1,10 @@
 "use client";
 
+import { showToast } from "@/lib/toast";
+
 import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
 
 const GRADES = [
   { value: "A+", points: 4.0, percent: 96 },
@@ -86,7 +89,7 @@ export default function NotOrtalamasi() {
     navigator.clipboard
       .writeText(text)
       .then(() => {
-        setCopied(true);
+        setCopied(true); showToast();
         setTimeout(() => setCopied(false), 1500);
       })
       .catch(() => undefined);
@@ -96,13 +99,24 @@ export default function NotOrtalamasi() {
     <div>
       <div className="flex items-center justify-between gap-3">
         <p className="text-sm font-medium text-text">{t("courseLabel")}</p>
-        <button
-          type="button"
-          onClick={addRow}
-          className="rounded-lg bg-accent px-3 py-1.5 text-xs font-medium text-on-accent transition-opacity hover:opacity-90"
-        >
-          {t("addRow")}
-        </button>
+        <div className="flex items-center gap-2">
+          <SampleButton
+            onApply={() =>
+              setRows([
+                { id: 1, credits: "3", grade: "A" },
+                { id: 2, credits: "4", grade: "B+" },
+                { id: 3, credits: "2", grade: "C" },
+              ])
+            }
+          />
+          <button
+            type="button"
+            onClick={addRow}
+            className="rounded-lg bg-accent px-3 py-1.5 text-xs font-medium text-on-accent transition-opacity hover:opacity-90"
+          >
+            {t("addRow")}
+          </button>
+        </div>
       </div>
 
       <div className="mt-3 space-y-2">

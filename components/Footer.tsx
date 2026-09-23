@@ -61,6 +61,14 @@ export default async function Footer() {
                   {t("contact")}
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/rehber"
+                  className="text-sm text-muted transition-colors hover:text-text"
+                >
+                  {t("guides")}
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
@@ -104,7 +112,7 @@ export default async function Footer() {
                   ))}
                   <li>
                     <Link
-                      href={`/#${category.id}`}
+                      href={`/kategoriler/${category.id}`}
                       className="inline-flex items-center gap-1 text-sm font-medium text-accent transition-opacity hover:opacity-80"
                     >
                       {t("viewAll")}

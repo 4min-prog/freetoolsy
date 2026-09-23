@@ -1,7 +1,11 @@
 "use client";
 
+import { showToast } from "@/lib/toast";
+
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
+import { SAMPLES } from "@/data/samples";
 
 type Rgb = { r: number; g: number; b: number };
 
@@ -148,7 +152,7 @@ export default function RenkDonusturucu() {
     navigator.clipboard
       .writeText(value)
       .then(() => {
-        setCopied(true);
+        setCopied(true); showToast();
         setTimeout(() => setCopied(false), 1500);
       })
       .catch(() => undefined);
@@ -183,6 +187,10 @@ export default function RenkDonusturucu() {
             placeholder="#2563EB"
             className="mt-2 w-full font-mono text-sm rounded-lg border border-border bg-bg px-3.5 py-2.5 text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
           />
+
+          <div className="mt-2 flex flex-wrap gap-2">
+            <SampleButton onApply={() => setHex(SAMPLES["renk-donusturucu"])} />
+          </div>
 
           {rgb ? (
             <div className="mt-2 overflow-hidden rounded-lg border border-border bg-bg">

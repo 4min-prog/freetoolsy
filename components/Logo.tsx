@@ -1,4 +1,10 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 export default function Logo() {
+  const t = useTranslations("Brand");
+
   return (
     <span className="flex items-center gap-2.5">
       <span aria-hidden="true" className="grid h-7 w-7 place-items-center">
@@ -42,9 +48,14 @@ export default function Logo() {
           />
         </svg>
       </span>
-      <span className="text-[15px] tracking-tight">
-        <span className="font-semibold text-text">freetools</span>
-        <span className="font-extrabold text-accent">Y</span>
+      <span className="leading-tight">
+        <span className="block text-[15px] tracking-tight">
+          <span className="font-semibold text-text">freetools</span>
+          <span className="font-extrabold text-accent">Y</span>
+        </span>
+        <span className="hidden text-[9px] font-medium uppercase tracking-[0.18em] text-faint sm:block">
+          {t("tagline")}
+        </span>
       </span>
     </span>
   );

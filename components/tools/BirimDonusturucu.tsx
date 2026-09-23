@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
 
 type Unit = { id: string; symbol: string; factor: number };
 
@@ -118,8 +119,8 @@ function formatNumber(value: number, locale: string): string {
   }).format(value);
 }
 
-function UnitPanel(props: { pre: Pre; isFoodPanel?: boolean }) {
-  const { pre } = props;
+function UnitPanel(props: { pre: Pre; isFoodPanel?: boolean; showSample?: boolean }) {
+  const { pre, showSample } = props;
   const [fromIndex, setFromIndex] = useState(0);
   const [toIndex, setToIndex] = useState(Math.min(1, pre.units.length - 1));
   const [amountValue, setAmountValue] = useState("1");
@@ -159,6 +160,12 @@ function UnitPanel(props: { pre: Pre; isFoodPanel?: boolean }) {
         placeholder="e.g. 120"
         className="mt-2 w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-sm text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
+
+      {showSample ? (
+        <div className="mt-2 flex flex-wrap gap-2">
+          <SampleButton onApply={() => setAmountValue("10")} />
+        </div>
+      ) : null}
 
       <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-[1fr_auto_1fr]">
         <div>
@@ -261,10 +268,10 @@ export default function BirimDonusturucu() {
 
       <div className="mt-6">
         {pre ? (
-          <UnitPanel pre={pre} />
+          <UnitPanel pre={pre} showSample />
         ) : (
           <div className="grid gap-8 lg:grid-cols-2">
-            {FOOD_PANELS.map((panel) => (
+            {FOOD_PANELS.map((panel, index) => (
               <div
                 key={panel.id}
                 className="rounded-2xl border border-border bg-surface p-5"
@@ -272,7 +279,7 @@ export default function BirimDonusturucu() {
                 <h3 className="text-base font-semibold text-text">
                   {t(`tab-${panel.id}`)}
                 </h3>
-                <UnitPanel pre={panel} isFoodPanel />
+                <UnitPanel pre={panel} isFoodPanel showSample={index === 0} />
               </div>
             ))}
           </div>

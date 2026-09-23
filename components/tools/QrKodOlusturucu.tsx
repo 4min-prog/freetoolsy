@@ -1,7 +1,11 @@
 "use client";
 
+import { showToast } from "@/lib/toast";
+
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
+import { SAMPLES } from "@/data/samples";
 import QRCode from "react-qr-code";
 
 const LETTERS: string[] = "abcdefghijklmnopqrstuvwxyz".split("");
@@ -47,6 +51,7 @@ export default function QrKodOlusturucu() {
         link.download = "freetoolsy-qr.png";
         link.href = canvas.toDataURL("image/png");
         link.click();
+        showToast("download");
       }
       URL.revokeObjectURL(url);
     };
@@ -57,7 +62,7 @@ export default function QrKodOlusturucu() {
     navigator.clipboard
       .writeText(value)
       .then(() => {
-        setCopied(true);
+        setCopied(true); showToast();
         setTimeout(() => setCopied(false), 1500);
       })
       .catch(() => undefined);
@@ -85,6 +90,10 @@ export default function QrKodOlusturucu() {
       <p className="mt-1.5 text-right text-xs tabular-nums text-faint">
         {t("charCount", { count: text.length })}
       </p>
+
+      <div className="mt-2 flex flex-wrap gap-2">
+        <SampleButton onApply={() => setText(SAMPLES["qr-kod-olusturucu"])} />
+      </div>
 
       <div
         id="qr-svg-wrap"

@@ -1,7 +1,11 @@
 "use client";
 
+import { showToast } from "@/lib/toast";
+
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
+import { SAMPLES } from "@/data/samples";
 
 const VOID_TAGS = new Set([
   "area", "base", "br", "col", "embed", "hr", "img", "input",
@@ -147,7 +151,7 @@ export default function HtmlFormatter() {
   async function copy() {
     try {
       await navigator.clipboard.writeText(output);
-      setCopied(true);
+      setCopied(true); showToast();
       setTimeout(() => setCopied(false), 1500);
     } catch {
       setCopied(false);
@@ -168,6 +172,9 @@ export default function HtmlFormatter() {
         placeholder={t("placeholder")}
         className="mt-2 w-full resize-y rounded-lg border border-border bg-bg px-3.5 py-3 font-mono text-sm leading-relaxed text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
+      <div className="mt-2 flex flex-wrap gap-2">
+        <SampleButton onApply={() => setInput(SAMPLES["html-formatter"])} />
+      </div>
       <button
         type="button"
         onClick={run}

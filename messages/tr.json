@@ -36,7 +36,8 @@
     ]
   },
   "Common": {
-    "use": "Kullan"
+    "use": "Kullan",
+    "trySample": "Örnek veriyle dene"
   },
   "Header": {
     "categories": "Kategoriler",
@@ -59,6 +60,7 @@
     "about": "Hakkımızda",
     "privacy": "Gizlilik Politikası",
     "contact": "İletişim",
+    "guides": "Rehberler",
     "partner": "İş Ortaklığı",
     "linkly": "Linkleri kısaltın → LinklyhHub",
     "tools": "Araçlar",
@@ -1409,8 +1411,8 @@
         "h": "Neler aynen korunur?",
         "list": [
           "Etiketler arasındaki metin içeriği ve tırnaklar dahil nitelik değerleri.",
-          "Ön biçimli bölgeler: <pre> ve <textarea> içeriği birebir korunur.",
-          "Kod blokları: <script> ve <style> içerikleri aynen bırakılır."
+          "Ön biçimli bölgeler: pre ve textarea içeriği birebir korunur.",
+          "Kod blokları: script ve style içerikleri aynen bırakılır."
         ]
       },
       {
@@ -2099,7 +2101,7 @@
         "list": [
           "Açılış ve kapanış etiketleri iç içelik derinliğine göre yeniden girintilenir; void ve kendinden kapanan etiketler asla girinti eklemez.",
           "Etiketler arasındaki boşluklar daraltılır ve satır içi metin kendi kırpılmış satırına alınır.",
-          "<pre>, <script> ve <style> içindeki içerik olduğu gibi kopyalanır — kod asla yeniden biçimlendirilmez.",
+          "pre, script ve style içindeki içerik olduğu gibi kopyalanır — kod asla yeniden biçimlendirilmez.",
           "HTML yorumları ve doctype'lar korunur; hatalı HTML asla aracı çökertmez."
         ]
       },
@@ -2160,14 +2162,46 @@
       }
     ]
   },
+"Rehber": {
+    "title": "Rehberler ve nasıl yapılır",
+    "pageDesc": "FreetoolsY araçlarını nasıl kullanacağınızı ve arkasındaki kavramları anlatan kısa ve pratik rehberler.",
+    "breadcrumbAria": "Bağlantı izi",
+    "backToAll": "Tüm rehberler",
+    "relatedToolsTitle": "Bu rehberde kullanılan araçlar",
+    "home": "Ana Sayfa"
+  },
   "ToolPage": {
-    "linklyPre": "Oluşturduğunuzu paylaşmak mı istiyorsunuz? Düz ve kısa bir bağlantı için",
-    "linklyPost": "deneyin.",
-    "breadcrumbAria": "İçerik haritası",
-    "home": "Ana sayfa",
+    "linklyPre": "Oluşturduklarını paylaşmak mı istiyorsun?",
+    "linklyPost": "ile kısa ve temiz bir bağlantı al.",
+    "breadcrumbAria": "Bağlantı izi",
+    "home": "Ana Sayfa",
     "viewAll": "{count} araç",
-    "otherTitle": "Bu kategorideki diğer araçlar",
-    "otherAll": "Tüm araçları görüntüle"
+    "otherTitle": "Popüler araçlar",
+    "otherAll": "Tüm araçları gör",
+    "similarTitle": "Benzer araçlar"
+  },
+  "Toast": {
+    "copied": "Kopyalandı ✓",
+    "downloaded": "İndirildi ✓",
+    "sampleLoaded": "Örnek veri yüklendi"
+  },
+  "Brand": {
+    "tagline": "Ücretsiz araçlar, tarayıcınızda."
+  },
+  "CategoryPage": {
+    "breadcrumbAria": "Kategori bağlantı izi",
+    "breadcrumbAll": "Tüm araçlar",
+    "toolCount": "{count} araç",
+    "relatedTitle": "Diğer kategorilere göz at",
+    "ctaAllTools": "Tüm {count} aracı gör",
+    "desc": {
+      "metin": "Karakter sayacı, kelime sayacı, harf dönüştürücü, satır sıralayıcı ve daha fazlası. Hepsi tarayıcınızda çalışır, kayıt gerekmez.",
+      "guvenlik": "Şifre üretici, parola güç testi, SHA ve MD5 hash, AES şifreleme, dosya checksum. Verileriniz asla cihazınızdan çıkmaz.",
+      "gelistirici": "JSON ve XML biçimlendirici, Base64/URL/JWT kodlayıcı, regex testi, UUID üretici, renk ve birim dönüştürücüler.",
+      "hesaplama": "KDV, yüzde, BMI, yaş, indirim, bahşiş, kredi ve ideal kilo hesaplayıcılar — anında sonuç.",
+      "gorsel": "Görselleri tarayıcınızda sıkıştırın, boyutlandırın, dönüştürün ve analiz edin; yükleme gerekmez.",
+      "seo": "Slug üretici, meta tag üretici, SERP önizleme, anahtar kelime yoğunluğu ve okunabilirlik analizi araçları."
+    }
   },
   "Info": {
     "breadcrumbHome": "Ana sayfa",
@@ -3259,7 +3293,7 @@
       "copy": "Kopyala",
       "copied": "Kopyalandı!",
       "emptyError": "Biçimlendirmek için HTML girin.",
-      "note": "Etiketler 2 boşlukla yeniden girintilenir. <pre>, <script> ve <style> içindeki ham içerik aynen korunur."
+      "note": "Etiketler 2 boşlukla yeniden girintilenir. pre, script ve style içindeki ham içerik aynen korunur."
     },
     "jwtUretici": {
       "headerLabel": "Header (JSON)",

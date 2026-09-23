@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
 
 const DAY_MS = 86400000;
 
@@ -69,6 +70,9 @@ export default function TarihFarki() {
             onChange={(event) => setStart(event.target.value)}
             className="mt-2 w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-sm text-text focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
           />
+          <div className="mt-2 flex flex-wrap gap-2">
+            <SampleButton onApply={() => { setStart("2024-01-01"); setEnd("2026-09-23"); }} />
+          </div>
         </div>
         <div>
           <label htmlFor="tarih-bitis" className="block text-sm font-medium text-text">

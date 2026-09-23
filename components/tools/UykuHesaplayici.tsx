@@ -1,7 +1,10 @@
 "use client";
 
+import { showToast } from "@/lib/toast";
+
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
 
 const CYCLE_MIN = 90;
 const FALL_ASLEEP_MIN = 15;
@@ -63,7 +66,7 @@ export default function UykuHesaplayici() {
     navigator.clipboard
       .writeText(lines.join("\n"))
       .then(() => {
-        setCopied(true);
+        setCopied(true); showToast();
         setTimeout(() => setCopied(false), 1500);
       })
       .catch(() => undefined);
@@ -121,6 +124,10 @@ export default function UykuHesaplayici() {
         onChange={(event) => setTime(event.target.value)}
         className="mt-2 w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-sm tabular-nums text-text focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
+
+      <div className="mt-2 flex flex-wrap gap-2">
+        <SampleButton onApply={() => { setMode("wake"); setTime("07:30"); }} />
+      </div>
 
       <p className="mt-3 text-xs leading-relaxed text-muted">{t("note")}</p>
 

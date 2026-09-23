@@ -1,7 +1,11 @@
 "use client";
 
+import { showToast } from "@/lib/toast";
+
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
+import { SAMPLES } from "@/data/samples";
 
 type SortMode = "sortAz" | "sortZa" | "byLength" | "numeric" | "shuffle";
 
@@ -56,7 +60,7 @@ export default function MetinSiralayici() {
   async function copy() {
     try {
       await navigator.clipboard.writeText(output);
-      setCopied(true);
+      setCopied(true); showToast();
       setTimeout(() => setCopied(false), 1500);
     } catch {
       setCopied(false);
@@ -85,6 +89,10 @@ export default function MetinSiralayici() {
         placeholder={t("placeholder")}
         className="mt-2 w-full resize-y rounded-lg border border-border bg-bg px-3.5 py-3 text-sm leading-relaxed text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
+
+      <div className="mt-2 flex flex-wrap gap-2">
+        <SampleButton onApply={() => setInput(SAMPLES["metin-siralayici"])} />
+      </div>
 
       <div className="mt-4 flex flex-wrap gap-2">
         {buttons.map((button) => (

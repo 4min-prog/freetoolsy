@@ -2,6 +2,8 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
+import { SAMPLES } from "@/data/samples";
 
 function parseNumber(value: string): number {
   const normalized = value.trim().replace(",", ".");
@@ -94,6 +96,10 @@ export default function PxRemDonusturucu() {
             <span className="shrink-0 text-xs text-muted">{t("pxLabel")}</span>
           </div>
         </div>
+      </div>
+
+      <div className="mt-4 flex flex-wrap gap-2">
+        <SampleButton onApply={() => setPxInput(SAMPLES["px-rem-donusturucu"])} />
       </div>
     </div>
   );

@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
 
 type DiffRow = {
   oldLine: string | null;
@@ -110,6 +111,14 @@ export default function MetinKarsilastirici() {
             placeholder={t("originalPlaceholder")}
             className="mt-2 w-full resize-y rounded-lg border border-border bg-bg px-3.5 py-3 text-sm leading-relaxed text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
           />
+          <div className="mt-2 flex flex-wrap gap-2">
+            <SampleButton
+              onApply={() => {
+                setOriginal("elma\narmut\nmuz");
+                setChanged("elma\nkivi\nmuz");
+              }}
+            />
+          </div>
         </div>
         <div>
           <label

@@ -2,6 +2,8 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
+import { SAMPLES } from "@/data/samples";
 
 const BASES = [
   { id: "bin", radix: 2 },
@@ -59,6 +61,9 @@ export default function SayiDonusturucu() {
             placeholder={t("valuePlaceholder")}
             className="mt-2 w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 font-mono text-sm text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
           />
+          <div className="mt-2 flex flex-wrap gap-2">
+            <SampleButton onApply={() => setInput(SAMPLES["sayi-donusturucu"])} />
+          </div>
         </div>
         <div>
           <label htmlFor="sayi-taban" className="block text-sm font-medium text-text">

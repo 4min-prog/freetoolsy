@@ -1,7 +1,10 @@
 "use client";
 
+import { showToast } from "@/lib/toast";
+
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
 
 type FieldKey = "minute" | "hour" | "dom" | "month" | "dow";
 
@@ -296,7 +299,7 @@ export default function CronTest() {
   async function copy() {
     try {
       await navigator.clipboard.writeText(results.map((item) => item.iso).join("\n"));
-      setCopied(true);
+      setCopied(true); showToast();
       setTimeout(() => setCopied(false), 1500);
     } catch {
       setCopied(false);
@@ -343,6 +346,10 @@ export default function CronTest() {
             </div>
           );
         })}
+      </div>
+
+      <div className="mt-4 flex flex-wrap gap-2">
+        <SampleButton onApply={() => setExpr({ minute: "*/5", hour: "*", dom: "*", month: "*", dow: "*" })} />
       </div>
 
       <button

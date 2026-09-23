@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
 
 function parseNumber(value: string): number {
   const normalized = value.trim().replace(",", ".");
@@ -99,6 +100,10 @@ export default function OrtalamaHesaplayici() {
         placeholder={t("placeholder")}
         className="mt-2 w-full resize-y rounded-lg border border-border bg-bg px-3.5 py-3 text-sm leading-relaxed text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
+
+      <div className="mt-2 flex flex-wrap gap-2">
+        <SampleButton onApply={() => setInput("12, 18, 24, 30")} />
+      </div>
 
       <button
         type="button"

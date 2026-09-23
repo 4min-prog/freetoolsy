@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import ToolExplorer from "@/components/ToolExplorer";
 import SearchBox from "@/components/SearchBox";
 import JsonLd from "@/components/JsonLd";
+import AdSlot from "@/components/AdSlot";
 import { categories, tools } from "@/data/tools";
 
 export async function generateMetadata({
@@ -145,6 +146,8 @@ export default async function Home({ params }: { params: { locale: string } }) {
           <SearchBox large placeholder={t("searchPlaceholder")} />
         </div>
       </section>
+
+      <AdSlot slot="top" />
 
       <ToolExplorer />
     </main>

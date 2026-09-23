@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
 
 function parseIPv4(value: string): number | null {
   const parts = value.trim().split(".");
@@ -128,6 +129,10 @@ export default function SubnetHesaplayici() {
             className="mt-2 w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-sm text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
           />
         </div>
+      </div>
+
+      <div className="mt-4 flex flex-wrap gap-2">
+        <SampleButton onApply={() => { setIp("192.168.1.0"); setPrefix("24"); }} />
       </div>
 
       <button

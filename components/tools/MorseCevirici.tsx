@@ -1,7 +1,11 @@
 "use client";
 
+import { showToast } from "@/lib/toast";
+
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
+import { SAMPLES } from "@/data/samples";
 
 const MORSE: Record<string, string> = {
   A: ".-",
@@ -99,7 +103,7 @@ export default function MorseCevirici() {
   async function copy() {
     try {
       await navigator.clipboard.writeText(output);
-      setCopied(true);
+      setCopied(true); showToast();
       setTimeout(() => setCopied(false), 1500);
     } catch {
       setCopied(false);
@@ -156,6 +160,10 @@ export default function MorseCevirici() {
         placeholder={mode === "text" ? t("textPlaceholder") : t("morsePlaceholder")}
         className="mt-2 w-full resize-y rounded-lg border border-border bg-bg px-3.5 py-3 font-mono text-sm leading-relaxed text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
+
+      <div className="mt-2 flex flex-wrap gap-2">
+        <SampleButton onApply={() => setText(SAMPLES["morse-cevirici"])} />
+      </div>
 
       <div className="mt-4 flex items-center justify-between gap-2">
         <p className="text-sm font-medium text-text">

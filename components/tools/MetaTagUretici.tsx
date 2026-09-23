@@ -1,7 +1,10 @@
 "use client";
 
+import { showToast } from "@/lib/toast";
+
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
 
 export default function MetaTagUretici() {
   const [title, setTitle] = useState("");
@@ -66,7 +69,7 @@ export default function MetaTagUretici() {
     navigator.clipboard
       .writeText(snippet)
       .then(() => {
-        setCopied(true);
+        setCopied(true); showToast();
         setTimeout(() => setCopied(false), 1500);
       })
       .catch(() => undefined);
@@ -90,6 +93,18 @@ export default function MetaTagUretici() {
             placeholder={t("titlePlaceholder")}
             className={inputClass}
           />
+          <div className="mt-2 flex flex-wrap gap-2">
+            <SampleButton
+              onApply={() => {
+                setTitle("FreetoolsY – Ücretsiz Online Araçlar");
+                setDescription(
+                  "FreetoolsY tarayıcınızda çalışan ücretsiz online araçlar sunar. Metin, dönüştürme, hesaplama ve daha fazlası. Kayıt gerekmez, verileriniz cihazınızdan çıkmaz."
+                );
+                setUrl("https://freetoolsy.vercel.app");
+                setType("website");
+              }}
+            />
+          </div>
         </div>
         <div className="sm:col-span-2">
           <label htmlFor="meta-aciklama" className="block text-sm font-medium text-text">

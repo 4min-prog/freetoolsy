@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
 
 const TIP_RATES = [5, 10, 15, 20, 25];
 
@@ -64,6 +65,9 @@ export default function BahsisHesaplayici() {
             onChange={(event) => setBill(event.target.value)}
             className="mt-2 w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-sm text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
           />
+          <div className="mt-2 flex flex-wrap gap-2">
+            <SampleButton onApply={() => { setBill("480"); setTip(15); setSplit("3"); }} />
+          </div>
         </div>
         <div>
           <label htmlFor="bahsis-kisi" className="block text-sm font-medium text-text">

@@ -1,5 +1,7 @@
 "use client";
 
+import { showToast } from "@/lib/toast";
+
 import { useCallback, useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 
@@ -108,7 +110,7 @@ export default function RastgeleStringUretici() {
   async function copy() {
     try {
       await navigator.clipboard.writeText(generated);
-      setCopied(true);
+      setCopied(true); showToast();
       setTimeout(() => setCopied(false), 1500);
     } catch {
       setCopied(false);

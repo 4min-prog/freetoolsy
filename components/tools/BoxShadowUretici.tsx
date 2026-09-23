@@ -1,7 +1,10 @@
 "use client";
 
+import { showToast } from "@/lib/toast";
+
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
 
 type Rgb = { r: number; g: number; b: number };
 
@@ -77,7 +80,7 @@ export default function BoxShadowUretici() {
   async function copy() {
     try {
       await navigator.clipboard.writeText(cssLine);
-      setCopied(true);
+      setCopied(true); showToast();
       setTimeout(() => setCopied(false), 1500);
     } catch {
       setCopied(false);
@@ -168,6 +171,10 @@ export default function BoxShadowUretici() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="mt-2 flex flex-wrap gap-2">
+        <SampleButton onApply={() => { setOffsetX(0); setOffsetY(8); setBlur(24); setSpread(0); setOpacity(25); setColor("#3b82f6"); }} />
       </div>
 
       <div className="mt-6 flex h-48 items-center justify-center rounded-lg border border-border bg-bg">

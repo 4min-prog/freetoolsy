@@ -1,7 +1,10 @@
 "use client";
 
+import { showToast } from "@/lib/toast";
+
 import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
 
 function parseNumber(value: string): number {
   const normalized = value.trim().replace(",", ".");
@@ -47,7 +50,7 @@ export default function IdealKilo() {
     navigator.clipboard
       .writeText(text)
       .then(() => {
-        setCopied(true);
+        setCopied(true); showToast();
         setTimeout(() => setCopied(false), 1500);
       })
       .catch(() => undefined);
@@ -94,6 +97,10 @@ export default function IdealKilo() {
             className="mt-2 w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-sm text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
           />
         </div>
+      </div>
+
+      <div className="mt-2 flex flex-wrap gap-2">
+        <SampleButton onApply={() => { setSex("male"); setHeight("175"); }} />
       </div>
 
       <label htmlFor="ideal-kilo-guncel" className="mt-5 block text-sm font-medium text-text">

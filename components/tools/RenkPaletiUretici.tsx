@@ -1,7 +1,10 @@
 "use client";
 
+import { showToast } from "@/lib/toast";
+
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
 
 type Rgb = { r: number; g: number; b: number };
 
@@ -109,7 +112,7 @@ export default function RenkPaletiUretici() {
   async function copySwatch(hex: string, index: number) {
     try {
       await navigator.clipboard.writeText(hex);
-      setCopiedIndex(index);
+      setCopiedIndex(index); showToast();
       setTimeout(() => setCopiedIndex(null), 1500);
     } catch {
       setCopiedIndex(null);
@@ -135,6 +138,9 @@ export default function RenkPaletiUretici() {
               className="h-10 w-14 shrink-0 cursor-pointer rounded-lg border border-border bg-bg p-1"
             />
             <span className="font-mono text-sm text-text">{base.toUpperCase()}</span>
+          </div>
+          <div className="mt-2 flex flex-wrap gap-2">
+            <SampleButton onApply={() => setBase("#3b82f6")} />
           </div>
         </div>
         <div>

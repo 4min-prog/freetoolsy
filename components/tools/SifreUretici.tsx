@@ -1,5 +1,7 @@
 "use client";
 
+import { showToast } from "@/lib/toast";
+
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 
@@ -87,7 +89,7 @@ export default function SifreUretici() {
   async function copyPassword(password: string, index: number) {
     try {
       await navigator.clipboard.writeText(password);
-      setCopiedIndex(index);
+      setCopiedIndex(index); showToast();
       setTimeout(() => setCopiedIndex(null), 1500);
     } catch {
       setCopiedIndex(null);

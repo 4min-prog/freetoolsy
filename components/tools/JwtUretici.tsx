@@ -1,5 +1,7 @@
 "use client";
 
+import { showToast } from "@/lib/toast";
+
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 
@@ -99,7 +101,7 @@ export default function JwtUretici() {
   async function copy() {
     try {
       await navigator.clipboard.writeText(token);
-      setCopied(true);
+      setCopied(true); showToast();
       setTimeout(() => setCopied(false), 1500);
     } catch {
       setCopied(false);

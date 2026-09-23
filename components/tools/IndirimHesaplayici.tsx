@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
 
 function parseNumber(value: string): number {
   const normalized = value.trim().replace(",", ".");
@@ -64,6 +65,9 @@ export default function IndirimHesaplayici() {
             onChange={(event) => setPrice(event.target.value)}
             className="mt-2 w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-sm text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
           />
+          <div className="mt-2 flex flex-wrap gap-2">
+            <SampleButton onApply={() => { setPrice("1200"); setDiscount("25"); }} />
+          </div>
         </div>
         <div>
           <label htmlFor="indirim-oran" className="block text-sm font-medium text-text">

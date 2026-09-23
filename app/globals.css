@@ -129,6 +129,12 @@ select {
   font: inherit;
 }
 
+textarea {
+  font-family: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Consolas,
+    "Liberation Mono", monospace;
+  line-height: 1.6;
+}
+
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;

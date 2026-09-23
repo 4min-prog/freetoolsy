@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
 
 type Rgb = { r: number; g: number; b: number };
 
@@ -98,6 +99,10 @@ export default function WcagKontrast() {
             <span className="font-mono text-sm text-text">{bg.toUpperCase()}</span>
           </div>
         </div>
+      </div>
+
+      <div className="mt-4 flex flex-wrap gap-2">
+        <SampleButton onApply={() => { setFg("#ffffff"); setBg("#3b82f6"); }} />
       </div>
 
       <div

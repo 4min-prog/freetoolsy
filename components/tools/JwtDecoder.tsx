@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import SampleButton from "@/components/SampleButton";
+import { SAMPLES } from "@/data/samples";
 
 function base64UrlDecode(value: string): string {
   let base64 = value.replace(/-/g, "+").replace(/_/g, "/");
@@ -68,6 +70,10 @@ export default function JwtDecoder() {
         placeholder={t("placeholder")}
         className="mt-2 w-full resize-y rounded-lg border border-border bg-bg px-3.5 py-3 font-mono text-sm leading-relaxed text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
+
+      <div className="mt-2 flex flex-wrap gap-2">
+        <SampleButton onApply={() => setToken(SAMPLES["jwt-cozucu"])} />
+      </div>
 
       <button
         type="button"
