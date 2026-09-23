@@ -141,7 +141,7 @@ export default async function Home({ params }: { params: { locale: string } }) {
           ))}
         </ul>
 
-        <div className="mt-6 rounded-2xl border border-border bg-surface/80 p-2 shadow-card backdrop-blur">
+        <div className="relative z-30 mt-6 rounded-2xl border border-border bg-surface/80 p-2 shadow-card backdrop-blur">
           <SearchBox large placeholder={t("searchPlaceholder")} />
         </div>
       </section>
