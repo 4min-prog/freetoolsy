@@ -19,6 +19,9 @@
   --danger-border: #fecdca;
   --warning: #b54708;
   --success: #067647;
+  --logo-bg: #eff6ff;
+  --logo-stroke: #dbeafe;
+  --logo-bar: #2563eb;
 }
 
 .dark {
@@ -38,6 +41,9 @@
   --danger-border: #5c2b28;
   --warning: #fdba74;
   --success: #6ee7b7;
+  --logo-bg: #1a1d2e;
+  --logo-stroke: transparent;
+  --logo-bar: #3b82f6;
 }
 
 html {
@@ -71,13 +77,6 @@ body {
   transition:
     background-color 0.25s ease,
     color 0.25s ease;
-}
-
-.logo-box {
-  background-image: linear-gradient(135deg, #3b82f6, #4f46e5);
-}
-.dark .logo-box {
-  background-image: linear-gradient(135deg, #93b4fb, #818cf8);
 }
 
 .btn-accent {

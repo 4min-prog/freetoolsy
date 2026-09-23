@@ -6,6 +6,7 @@ import { useMessages } from "next-intl";
 import { useTranslations } from "next-intl";
 import ThemeToggle from "./ThemeToggle";
 import LocaleSwitcher from "./LocaleSwitcher";
+import Logo from "./Logo";
 import CategoryIcon from "./CategoryIcon";
 import ToolIcon from "./ToolIcon";
 import SearchOverlay from "./SearchOverlay";
@@ -47,16 +48,8 @@ export default function Header() {
         className="sticky top-0 z-50 border-b border-border bg-bg transition-colors"
       >
         <div className="mx-auto flex h-14 w-full max-w-5xl items-center gap-2 px-4 sm:px-6">
-          <Link href="/" className="flex items-center gap-2.5">
-            <span
-              aria-hidden="true"
-              className="logo-box grid h-7 w-7 place-items-center rounded-md text-sm font-semibold text-on-accent"
-            >
-              F
-            </span>
-            <span className="text-[15px] font-semibold tracking-tight text-text">
-              FreetoolsY
-            </span>
+          <Link href="/" aria-label="FreetoolsY">
+            <Logo />
           </Link>
 
           <nav className="ml-auto flex items-center gap-1 md:gap-2">
