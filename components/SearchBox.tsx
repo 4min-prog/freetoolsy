@@ -154,7 +154,7 @@ export default function SearchBox({
           role="listbox"
           id={resultsId}
           aria-label={placeholder}
-          className="absolute left-0 right-0 top-full z-50 mt-1.5 max-h-72 overflow-y-auto overscroll-contain rounded-xl border border-border bg-surface p-1 shadow-card-hover"
+          className="fancy-scroll absolute left-0 right-0 top-full z-50 mt-1.5 max-h-72 overflow-y-auto overscroll-contain rounded-xl border border-border bg-surface p-1 shadow-card-hover"
         >
           {matches.map((match, index) => (
             <li

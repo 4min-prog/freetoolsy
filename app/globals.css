@@ -68,3 +68,28 @@ select {
   background-color: var(--accent);
   color: var(--on-accent);
 }
+
+.fancy-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) transparent;
+  scrollbar-gutter: stable;
+}
+.fancy-scroll:hover {
+  scrollbar-color: var(--accent) transparent;
+}
+.fancy-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.fancy-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.fancy-scroll::-webkit-scrollbar-thumb {
+  min-height: 32px;
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+  background-color: var(--border-strong);
+}
+.fancy-scroll:hover::-webkit-scrollbar-thumb {
+  background-color: var(--accent);
+}
