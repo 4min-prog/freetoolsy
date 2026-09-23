@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useMessages, useTranslations } from "next-intl";
 import ToolCard from "@/components/ToolCard";
 import CategoryIcon from "@/components/CategoryIcon";
+import { categoryTheme } from "@/components/categoryTheme";
 import { useRouter } from "@/i18n/navigation";
 import { categories, getToolsByCategory, tools } from "@/data/tools";
 
@@ -19,6 +20,7 @@ export default function ToolExplorer() {
   const meta = messages.ToolMeta as Record<string, ToolMetaNs> | undefined;
   const [query, setQuery] = useState("");
   const [cat, setCat] = useState("");
+  const [visible, setVisible] = useState<Record<string, number>>({});
   const searchRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
 
@@ -92,12 +94,17 @@ export default function ToolExplorer() {
     });
   }
 
-  const tabClass = (active: boolean) =>
-    `inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm transition-colors ${
+  const tabClass = (active: boolean, catId?: string) => {
+    const theme = catId ? categoryTheme(catId) : null;
+    if (active && theme) {
+      return `inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-medium transition-colors ${theme.active}`;
+    }
+    return `inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm transition-colors ${
       active
-        ? "bg-accent font-medium text-on-accent"
+        ? "btn-accent font-medium text-on-accent"
         : "border border-border bg-surface text-muted hover:border-accent hover:text-text"
     }`;
+  };
 
   return (
     <div id="tools-explorer" className="scroll-mt-20 pb-20">
@@ -133,18 +140,41 @@ export default function ToolExplorer() {
       </div>
 
       <div className="mt-6 flex flex-wrap items-center gap-2">
-        <button type="button" onClick={() => selectCategory("")} className={tabClass(!cat)}>
+        <button
+          type="button"
+          onClick={() => selectCategory("")}
+          className={tabClass(!cat)}
+        >
           {t("tabAll")}
+          <span
+            className={`rounded-full px-1.5 text-xs ${
+              !cat ? "bg-white/20" : "bg-surface-2 text-faint"
+            }`}
+          >
+            {tools.length}
+          </span>
         </button>
         {categories.map((category) => (
           <button
             key={category.id}
             type="button"
             onClick={() => selectCategory(category.id)}
-            className={tabClass(cat === category.id)}
+            className={tabClass(cat === category.id, category.id)}
           >
-            <CategoryIcon id={category.id} className="h-4 w-4" />
+            <CategoryIcon
+              id={category.id}
+              className={`h-4 w-4 ${categoryTheme(category.id).iconText}`}
+            />
             {tc(category.id)}
+            <span
+              className={`rounded-full px-1.5 text-xs ${
+                cat === category.id
+                  ? "bg-white/20"
+                  : "bg-surface-2 text-faint"
+              }`}
+            >
+              {getToolsByCategory(category.id).length}
+            </span>
           </button>
         ))}
       </div>
@@ -174,24 +204,61 @@ export default function ToolExplorer() {
           {(cat ? categories.filter((c) => c.id === cat) : categories).map((category) => {
             const categoryTools = getToolsByCategory(category.id);
             if (categoryTools.length === 0) return null;
+            const theme = categoryTheme(category.id);
+            const shown = visible[category.id] ?? 9;
+            const remaining = categoryTools.length - shown;
+            const shownTools = categoryTools.slice(0, shown);
             return (
               <section key={category.id} id={category.id} className="scroll-mt-20">
                 <div className="flex items-baseline justify-between gap-4 border-b border-border pb-3">
                   <h2 className="flex items-center gap-2.5">
-                    <CategoryIcon id={category.id} className="h-5 w-5 text-accent" />
+                    <CategoryIcon
+                      id={category.id}
+                      className={`h-5 w-5 ${theme.iconText}`}
+                    />
                     <span className="text-lg font-semibold tracking-tight text-text">
                       {tc(category.id)}
                     </span>
                   </h2>
-                  <span className="text-sm text-muted">
+                  <span
+                    className={`rounded-full px-2 py-0.5 text-xs font-medium ${theme.iconBg} ${theme.iconText}`}
+                  >
                     {t("categoryToolsCount", { count: categoryTools.length })}
                   </span>
                 </div>
                 <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                  {categoryTools.map((tool) => (
+                  {shownTools.map((tool) => (
                     <ToolCard key={tool.slug} tool={tool} />
                   ))}
                 </div>
+                {remaining > 0 && (
+                  <div className="mt-5 flex justify-center">
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setVisible((prev) => ({
+                          ...prev,
+                          [category.id]: (prev[category.id] ?? 9) + 9,
+                        }))
+                      }
+                      className="inline-flex items-center gap-2 rounded-lg border border-border bg-surface px-4 py-2 text-sm text-muted transition-colors hover:border-accent hover:text-text"
+                    >
+                      {t("showMore", { count: Math.min(remaining, 9) })}
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        aria-hidden="true"
+                        className="h-4 w-4"
+                      >
+                        <path d="M6 9l6 6 6-6" />
+                      </svg>
+                    </button>
+                  </div>
+                )}
               </section>
             );
           })}

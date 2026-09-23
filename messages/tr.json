@@ -3,13 +3,30 @@
     "defaultTitle": "FreetoolsY — Ücretsiz Online Araçlar",
     "titleTemplate": "%s · FreetoolsY",
     "description": "Metin, güvenlik, geliştirici ve hesaplama için ücretsiz online araçlar. Kayıt yok, kurulum yok — her şey tarayıcınızda çalışır.",
-    "ogTitle": "FreetoolsY — Ücretsiz Online Araçlar"
+    "ogTitle": "FreetoolsY — Ücretsiz Online Araçlar",
+    "ogImageAlt": "FreetoolsY — herkes için ücretsiz online araçlar"
   },
   "Home": {
     "title": "Ücretsiz Online Araçlar — Metin, Geliştirici ve Daha Fazlası",
     "description": "Ücretsiz online araçlar: görsel, metin, SEO, güvenlik, geliştirici ve hesaplama. Karakter sayacı, parola üretici, JSON biçimlendirici, KDV hesaplama ve daha fazlası. Kayıt yok, kurulum yok.",
     "heroTitle": "Ücretsiz Online Araçlar — Metin, Geliştirici ve Daha Fazlası",
     "heroSubtitle": "Kategoriler: {cats}, araçlar: {tools}. Metin, Güvenlik, Geliştirici, Hesaplama, Görsel ve SEO. Kayıt yok, kurulum yok; her hesaplama tarayıcınızda yapılır ve verileriniz asla tarayıcınızdan çıkmaz.",
+    "heroTitleHighlight": "Ücretsiz Online Araçlar",
+    "trendingLabel": "Popüler",
+    "trendingTools": [
+      "json-formatter",
+      "qr-kod-olusturucu",
+      "resim-sikistirici",
+      "sifre-uretici",
+      "kelime-sayaci",
+      "meta-tag-uretici"
+    ],
+    "trustBrowser": "%100 tarayıcınızda çalışır",
+    "trustFree": "Ücretsiz, kayıt yok",
+    "trustPrivacy": "Verileriniz asla gönderilmez",
+    "statsTools": "ücretsiz araç",
+    "statsCategories": "kategori",
+    "searchPlaceholder": "Araçlarda ara… örn. şifre, JSON, KDV",
     "jsonldSiteDesc": "Metin, güvenlik, geliştirici ve hesaplama için ücretsiz online araçlar. Kayıt yok, kurulum yok.",
     "jsonldAppDesc": "Karakter sayacı, parola üretici, JSON biçimlendirici, KDV hesaplama ve daha fazlası.",
     "faq": [
@@ -36,7 +53,9 @@
     "searchPlaceholder": "Araçlarda ara… örn. şifre, JSON, KDV",
     "searchHint": "Gezinmek için ↑↓, açmak için Enter, kapatmak için ESC",
     "closeSearch": "Aramayı kapat",
-    "allTools": "Tüm Araçlar"
+    "allTools": "Tüm Araçlar",
+    "noResults": "Eşleşen araç bulunamadı.",
+    "searchSuggestions": "Öneriler"
   },
   "LocaleSwitcher": {
     "switchToTurkish": "Türkçeye geç",
@@ -69,7 +88,8 @@
     "toolCount": "{count} araç",
     "noResults": "Aranan kriterle \"{query}\" eşleşen araç bulunamadı. Farklı bir anahtar kelime deneyin.",
     "categoryToolsCount": "{count} araç",
-    "tabAll": "Tüm araçlar"
+    "tabAll": "Tüm araçlar",
+    "showMore": "Daha fazla göster ({count})"
   },
   "Categories": {
     "metin": "Metin",

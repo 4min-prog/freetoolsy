@@ -41,6 +41,10 @@ export async function generateMetadata({
     },
     description: t("description"),
     applicationName: "FreetoolsY",
+    icons: {
+      icon: [{ url: "/favicon.ico", sizes: "any" }],
+      apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+    },
     alternates: {
       canonical: canonicalPath,
       languages: {
@@ -55,11 +59,20 @@ export async function generateMetadata({
       url: `${siteUrl}${canonicalPath}`,
       title: t("ogTitle"),
       description: t("description"),
+      images: [
+        {
+          url: `${siteUrl}/og-image.png`,
+          width: 1200,
+          height: 630,
+          alt: t("ogImageAlt"),
+        },
+      ],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title: t("ogTitle"),
       description: t("description"),
+      images: [`${siteUrl}/og-image.png`],
     },
   };
 }

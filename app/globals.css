@@ -42,6 +42,24 @@
 
 html {
   background-color: var(--bg);
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) transparent;
+}
+html::-webkit-scrollbar {
+  width: 10px;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  min-height: 36px;
+  border-radius: 9999px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+  background-color: var(--border-strong);
+}
+html::-webkit-scrollbar-thumb:hover {
+  background-color: var(--accent);
 }
 
 body {
@@ -50,6 +68,59 @@ body {
   font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
     "Segoe UI", sans-serif;
   text-rendering: optimizeLegibility;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.logo-box {
+  background-image: linear-gradient(135deg, #3b82f6, #4f46e5);
+}
+.dark .logo-box {
+  background-image: linear-gradient(135deg, #93b4fb, #818cf8);
+}
+
+.btn-accent {
+  background-image: linear-gradient(135deg, var(--accent), #4f46e5);
+}
+.dark .btn-accent {
+  background-image: linear-gradient(135deg, var(--accent), #818cf8);
+}
+
+.fade-in-up {
+  animation: fade-in-up 0.35s ease both;
+}
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-up {
+    animation: none;
+  }
+}
+
+.hero-bg {
+  background-image:
+    linear-gradient(to right, rgba(96, 120, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(96, 120, 255, 0.08) 1px, transparent 1px);
+  background-size: 44px 44px;
+  -webkit-mask-image: radial-gradient(
+    ellipse 80% 70% at 50% 0%,
+    black 55%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    ellipse 80% 70% at 50% 0%,
+    black 55%,
+    transparent 100%
+  );
 }
 
 button,

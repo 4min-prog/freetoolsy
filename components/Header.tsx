@@ -9,6 +9,7 @@ import LocaleSwitcher from "./LocaleSwitcher";
 import CategoryIcon from "./CategoryIcon";
 import ToolIcon from "./ToolIcon";
 import SearchOverlay from "./SearchOverlay";
+import { categoryTheme } from "./categoryTheme";
 import { categories, getToolsByCategory } from "@/data/tools";
 
 type ToolMetaNs = { name?: string };
@@ -43,13 +44,13 @@ export default function Header() {
     <>
       <header
         ref={headerRef}
-        className="sticky top-0 z-50 border-b border-border bg-bg"
+        className="sticky top-0 z-50 border-b border-border bg-bg transition-colors"
       >
         <div className="mx-auto flex h-14 w-full max-w-5xl items-center gap-2 px-4 sm:px-6">
           <Link href="/" className="flex items-center gap-2.5">
             <span
               aria-hidden="true"
-              className="grid h-7 w-7 place-items-center rounded-md bg-accent text-sm font-semibold text-on-accent"
+              className="logo-box grid h-7 w-7 place-items-center rounded-md text-sm font-semibold text-on-accent"
             >
               F
             </span>
@@ -71,7 +72,7 @@ export default function Header() {
                   >
                     <CategoryIcon
                       id={category.id}
-                      className="h-3.5 w-3.5 shrink-0"
+                      className={`h-3.5 w-3.5 shrink-0 ${categoryTheme(category.id).iconText}`}
                     />
                     {tc(category.id)}
                     <svg
@@ -104,7 +105,7 @@ export default function Header() {
                         >
                           <ToolIcon
                             id={tool.slug}
-                            className="h-4 w-4 shrink-0 text-accent"
+                            className={`h-4 w-4 shrink-0 ${categoryTheme(category.id).iconText}`}
                           />
                           {meta?.[tool.slug]?.name ?? tool.slug}
                         </Link>

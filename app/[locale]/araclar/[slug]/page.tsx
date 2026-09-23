@@ -82,6 +82,7 @@ import ToolFaqJsonLd from "@/components/ToolFaqJsonLd";
 import ToolFaq from "@/components/ToolFaq";
 import ToolSeoContent from "@/components/ToolSeoContent";
 import ToolIcon from "@/components/ToolIcon";
+import { categoryTheme } from "@/components/categoryTheme";
 
 const toolComponents: Record<string, React.ComponentType> = {
   "karakter-sayaci": KarakterSayaci,
@@ -274,8 +275,15 @@ export default async function AraclarPage({
       </nav>
 
       <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2">
-        <span className="grid h-11 w-11 shrink-0 place-items-center rounded-lg bg-accent/10 text-accent">
-          <ToolIcon id={tool.slug} className="h-6 w-6" />
+        <span
+          className={`grid h-11 w-11 shrink-0 place-items-center rounded-lg ${
+            categoryTheme(tool.category).iconBg
+          }`}
+        >
+          <ToolIcon
+            id={tool.slug}
+            className={`h-6 w-6 ${categoryTheme(tool.category).iconText}`}
+          />
         </span>
         <h1 className="text-2xl font-semibold tracking-tight text-text sm:text-3xl">
           {t("name")}

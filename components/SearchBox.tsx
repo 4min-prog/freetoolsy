@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useId, useMemo, useRef, useState } from "react";
-import { useMessages } from "next-intl";
+import { useMessages, useTranslations } from "next-intl";
 import { Link, useRouter } from "@/i18n/navigation";
 import ToolIcon from "@/components/ToolIcon";
 import { tools } from "@/data/tools";
@@ -30,6 +30,7 @@ export default function SearchBox({
   const boxRef = useRef<HTMLDivElement>(null);
   const resultsId = useId();
   const router = useRouter();
+  const t = useTranslations("Header");
   const messages = useMessages();
   const meta = messages.ToolMeta as Record<string, ToolMetaNs> | undefined;
 
@@ -85,6 +86,8 @@ export default function SearchBox({
   }
 
   const showResults = open && Boolean(normalized) && matches.length > 0;
+  const showFallback = open && (!normalized || matches.length === 0);
+  const suggestions = tools.slice(0, 4);
 
   return (
     <div ref={boxRef} className="relative">
@@ -137,7 +140,7 @@ export default function SearchBox({
         }}
         placeholder={placeholder}
         aria-label={placeholder}
-        aria-expanded={showResults}
+        aria-expanded={showResults || showFallback}
         aria-controls={resultsId}
         aria-activedescendant={
           showResults ? `${resultsId}-${activeIndex}` : undefined
@@ -178,6 +181,41 @@ export default function SearchBox({
                 />
                 <span className="truncate">
                   {meta?.[match.slug]?.name ?? match.slug}
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
+      {showFallback && (
+        <ul
+          role="listbox"
+          id={resultsId}
+          aria-label={placeholder}
+          className="fancy-scroll absolute left-0 right-0 top-full z-50 mt-1.5 max-h-72 overflow-y-auto overscroll-contain rounded-xl border border-border bg-surface p-1 shadow-card-hover"
+        >
+          {Boolean(normalized) && (
+            <li role="option" aria-selected="false">
+              <span className="block rounded-lg px-3 py-2 text-sm text-muted">
+                {t("noResults")}
+              </span>
+            </li>
+          )}
+          <li role="option" aria-selected="false">
+            <span className="mt-1 block px-3 pb-1 pt-2 text-xs font-medium uppercase tracking-wide text-faint">
+              {t("searchSuggestions")}
+            </span>
+          </li>
+          {suggestions.map((tool) => (
+            <li key={tool.slug} role="option" aria-selected="false">
+              <Link
+                href={`/araclar/${tool.slug}`}
+                onClick={close}
+                className="flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm text-muted transition-colors hover:bg-surface-2 hover:text-text"
+              >
+                <ToolIcon id={tool.slug} className="h-4 w-4 shrink-0 text-accent" />
+                <span className="truncate">
+                  {meta?.[tool.slug]?.name ?? tool.slug}
                 </span>
               </Link>
             </li>

@@ -3,13 +3,30 @@
     "defaultTitle": "FreetoolsY — Free Online Tools",
     "titleTemplate": "%s · FreetoolsY",
     "description": "Free online tools for text, security, developer and calculation. No signup, no install — everything runs in your browser.",
-    "ogTitle": "FreetoolsY — Free Online Tools"
+    "ogTitle": "FreetoolsY — Free Online Tools",
+    "ogImageAlt": "FreetoolsY — free online tools for everyone"
   },
   "Home": {
     "title": "Free Online Tools for Text, Developers & More",
     "description": "Free online tools: image, text, SEO, security, developer and calculator. Character counter, password generator, JSON formatter, VAT calculator and more. No signup, no install.",
     "heroTitle": "Free Online Tools for Text, Developers & More",
     "heroSubtitle": "{tools} free tools in {cats} categories: Text, Security, Developer, Calculation, Image and SEO. No signup, no install; every calculation happens in your browser and your data never leaves it.",
+    "heroTitleHighlight": "Free Online Tools",
+    "trendingLabel": "Popular",
+    "trendingTools": [
+      "json-formatter",
+      "qr-kod-olusturucu",
+      "resim-sikistirici",
+      "sifre-uretici",
+      "kelime-sayaci",
+      "meta-tag-uretici"
+    ],
+    "trustBrowser": "100% runs in your browser",
+    "trustFree": "Free, no signup",
+    "trustPrivacy": "Your data is never sent",
+    "statsTools": "free tools",
+    "statsCategories": "categories",
+    "searchPlaceholder": "Search tools… e.g. password, JSON, VAT",
     "jsonldSiteDesc": "Free online tools for text, security, developer and calculation. No signup, no install.",
     "jsonldAppDesc": "Character counter, password generator, JSON formatter, VAT calculator and more.",
     "faq": [
@@ -36,7 +53,9 @@
     "searchPlaceholder": "Search tools… e.g. password, JSON, VAT",
     "searchHint": "Use ↑↓ to navigate, press Enter to open, ESC to close",
     "closeSearch": "Close search",
-    "allTools": "All tools"
+    "allTools": "All tools",
+    "noResults": "No matching tools were found.",
+    "searchSuggestions": "Suggestions"
   },
   "LocaleSwitcher": {
     "switchToTurkish": "Switch to Turkish",
@@ -69,7 +88,8 @@
     "toolCount": "{count} tools",
     "noResults": "No tools matched \"{query}\". Try a different keyword.",
     "categoryToolsCount": "{count} tools",
-    "tabAll": "All tools"
+    "tabAll": "All tools",
+    "showMore": "Show {count} more"
   },
   "Categories": {
     "metin": "Text",
