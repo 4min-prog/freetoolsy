@@ -82,6 +82,10 @@ export default function SearchBox({
     if (query) {
       onDone?.();
       router.push(`/?q=${encodeURIComponent(query)}`);
+      setTimeout(
+        () => window.dispatchEvent(new Event("freetoolsy:search")),
+        80
+      );
     }
   }
 

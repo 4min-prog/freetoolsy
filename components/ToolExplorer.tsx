@@ -1,11 +1,10 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { useMessages, useTranslations } from "next-intl";
 import ToolCard from "@/components/ToolCard";
 import CategoryIcon from "@/components/CategoryIcon";
 import { categoryTheme } from "@/components/categoryTheme";
-import { useRouter } from "@/i18n/navigation";
 import { categories, getToolsByCategory, tools } from "@/data/tools";
 
 interface ToolMetaNs {
@@ -21,32 +20,32 @@ export default function ToolExplorer() {
   const [query, setQuery] = useState("");
   const [cat, setCat] = useState("");
   const [visible, setVisible] = useState<Record<string, number>>({});
-  const searchRef = useRef<HTMLInputElement>(null);
-  const router = useRouter();
 
   useEffect(() => {
-    function readHash() {
-      const id = window.location.hash.replace(/^#/, "");
-      if (id && id !== cat && categories.some((c) => c.id === id)) {
-        setCat(id);
+    function sync() {
+      const hash = window.location.hash.replace(/^#/, "");
+      if (hash && hash !== cat && categories.some((c) => c.id === hash)) {
+        setCat(hash);
+      }
+      const params = new URLSearchParams(window.location.search);
+      const q = params.get("q");
+      if (q) {
+        setQuery(q);
+        requestAnimationFrame(() => {
+          document
+            .getElementById("tools-explorer")
+            ?.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
       }
     }
-    readHash();
-    window.addEventListener("hashchange", readHash);
-    return () => window.removeEventListener("hashchange", readHash);
+    sync();
+    window.addEventListener("hashchange", sync);
+    window.addEventListener("freetoolsy:search", sync);
+    return () => {
+      window.removeEventListener("hashchange", sync);
+      window.removeEventListener("freetoolsy:search", sync);
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const q = params.get("q");
-    if (q) {
-      setQuery(q);
-      requestAnimationFrame(() => {
-        searchRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
-        searchRef.current?.focus();
-      });
-    }
   }, []);
 
   const normalized = query.toLocaleLowerCase().trim();
@@ -62,25 +61,6 @@ export default function ToolExplorer() {
           .includes(normalized);
       })
     : null;
-
-  function handleSearchKeyDown(event: React.KeyboardEvent<HTMLInputElement>) {
-    if (event.key !== "Enter") return;
-    const q = event.currentTarget.value.toLocaleLowerCase().trim();
-    if (!q) return;
-    const match = tools.find((tool) => {
-      const toolMeta = meta ? meta[tool.slug] : undefined;
-      const name = toolMeta ? toolMeta.name ?? "" : tool.slug;
-      const desc = toolMeta ? toolMeta.desc ?? "" : "";
-      return [name, desc, tool.slug, tool.category]
-        .join(" ")
-        .toLocaleLowerCase()
-        .includes(q);
-    });
-    if (match) {
-      event.preventDefault();
-      router.push(`/araclar/${match.slug}`);
-    }
-  }
 
   function selectCategory(id: string) {
     setCat(id);
@@ -108,37 +88,6 @@ export default function ToolExplorer() {
 
   return (
     <div id="tools-explorer" className="scroll-mt-20 pb-20">
-      <div className="mx-auto w-full max-w-xl">
-        <label htmlFor="arac-ara" className="sr-only">
-          {t("searchLabel")}
-        </label>
-        <div className="relative">
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.8"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            aria-hidden="true"
-            className="pointer-events-none absolute left-3.5 top-1/2 h-5 w-5 -translate-y-1/2 text-faint"
-          >
-            <circle cx="11" cy="11" r="7" />
-            <path d="M20 20l-3.2-3.2" />
-          </svg>
-          <input
-            id="arac-ara"
-            ref={searchRef}
-            type="search"
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-            onKeyDown={handleSearchKeyDown}
-            placeholder={t("searchPlaceholder")}
-            className="w-full rounded-xl border border-border bg-surface py-3 pl-10 pr-4 text-sm text-text placeholder:text-faint shadow-card transition-colors focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
-          />
-        </div>
-      </div>
-
       <div className="mt-6 flex flex-wrap items-center gap-2">
         <button
           type="button"
@@ -220,11 +169,6 @@ export default function ToolExplorer() {
                       {tc(category.id)}
                     </span>
                   </h2>
-                  <span
-                    className={`rounded-full px-2 py-0.5 text-xs font-medium ${theme.iconBg} ${theme.iconText}`}
-                  >
-                    {t("categoryToolsCount", { count: categoryTools.length })}
-                  </span>
                 </div>
                 <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                   {shownTools.map((tool) => (

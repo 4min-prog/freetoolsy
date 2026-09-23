@@ -10,17 +10,8 @@
     "title": "Free Online Tools for Text, Developers & More",
     "description": "Free online tools: image, text, SEO, security, developer and calculator. Character counter, password generator, JSON formatter, VAT calculator and more. No signup, no install.",
     "heroTitle": "Free Online Tools for Text, Developers & More",
-    "heroSubtitle": "{tools} free tools in {cats} categories: Text, Security, Developer, Calculation, Image and SEO. No signup, no install; every calculation happens in your browser and your data never leaves it.",
+    "heroSubtitle": "Small, focused utilities that get the job done in seconds — all in one place.",
     "heroTitleHighlight": "Free Online Tools",
-    "trendingLabel": "Popular",
-    "trendingTools": [
-      "json-formatter",
-      "qr-kod-olusturucu",
-      "resim-sikistirici",
-      "sifre-uretici",
-      "kelime-sayaci",
-      "meta-tag-uretici"
-    ],
     "trustBrowser": "100% runs in your browser",
     "trustFree": "Free, no signup",
     "trustPrivacy": "Your data is never sent",
@@ -82,12 +73,9 @@
     "advertisement": "Advertisement"
   },
   "ToolExplorer": {
-    "searchLabel": "Search tools",
-    "searchPlaceholder": "Search tools… e.g. password, JSON, VAT",
     "results": "Results",
     "toolCount": "{count} tools",
     "noResults": "No tools matched \"{query}\". Try a different keyword.",
-    "categoryToolsCount": "{count} tools",
     "tabAll": "All tools",
     "showMore": "Show {count} more"
   },

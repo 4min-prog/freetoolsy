@@ -10,17 +10,8 @@
     "title": "Ücretsiz Online Araçlar — Metin, Geliştirici ve Daha Fazlası",
     "description": "Ücretsiz online araçlar: görsel, metin, SEO, güvenlik, geliştirici ve hesaplama. Karakter sayacı, parola üretici, JSON biçimlendirici, KDV hesaplama ve daha fazlası. Kayıt yok, kurulum yok.",
     "heroTitle": "Ücretsiz Online Araçlar — Metin, Geliştirici ve Daha Fazlası",
-    "heroSubtitle": "Kategoriler: {cats}, araçlar: {tools}. Metin, Güvenlik, Geliştirici, Hesaplama, Görsel ve SEO. Kayıt yok, kurulum yok; her hesaplama tarayıcınızda yapılır ve verileriniz asla tarayıcınızdan çıkmaz.",
+    "heroSubtitle": "İşi saniyeler içinde bitiren küçük ve odaklı araçlar — hepsi tek yerde.",
     "heroTitleHighlight": "Ücretsiz Online Araçlar",
-    "trendingLabel": "Popüler",
-    "trendingTools": [
-      "json-formatter",
-      "qr-kod-olusturucu",
-      "resim-sikistirici",
-      "sifre-uretici",
-      "kelime-sayaci",
-      "meta-tag-uretici"
-    ],
     "trustBrowser": "%100 tarayıcınızda çalışır",
     "trustFree": "Ücretsiz, kayıt yok",
     "trustPrivacy": "Verileriniz asla gönderilmez",
@@ -82,12 +73,9 @@
     "advertisement": "Reklam"
   },
   "ToolExplorer": {
-    "searchLabel": "Araç ara",
-    "searchPlaceholder": "Araçlarda ara… örn. şifre, JSON, KDV",
     "results": "Sonuçlar",
     "toolCount": "{count} araç",
     "noResults": "Aranan kriterle \"{query}\" eşleşen araç bulunamadı. Farklı bir anahtar kelime deneyin.",
-    "categoryToolsCount": "{count} araç",
     "tabAll": "Tüm araçlar",
     "showMore": "Daha fazla göster ({count})"
   },

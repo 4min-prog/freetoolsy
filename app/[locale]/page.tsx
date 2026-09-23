@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import ToolExplorer from "@/components/ToolExplorer";
 import SearchBox from "@/components/SearchBox";
 import JsonLd from "@/components/JsonLd";
-import { Link } from "@/i18n/navigation";
 import { categories, tools } from "@/data/tools";
 
 export async function generateMetadata({
@@ -30,16 +29,6 @@ export default async function Home({ params }: { params: { locale: string } }) {
   setRequestLocale(params.locale);
   const t = await getTranslations("Home");
   const faqs = t.raw("faq") as Array<{ q: string; a: string }>;
-  const trending = t.raw("trendingTools") as string[];
-  const messages = (await getMessages()) as {
-    ToolMeta?: Record<string, { name?: string }>;
-  };
-  const trendingLinks = trending
-    .map((slug) => ({
-      slug,
-      name: messages.ToolMeta?.[slug]?.name ?? slug,
-    }))
-    .filter((item) => tools.some((tool) => tool.slug === item.slug));
 
   const heroTitle = t("heroTitle");
   const heroHighlight = t("heroTitleHighlight");
@@ -107,7 +96,7 @@ export default async function Home({ params }: { params: { locale: string } }) {
           )}
         </h1>
         <p className="mt-4 max-w-[62ch] text-base leading-relaxed text-muted">
-          {t("heroSubtitle", { tools: tools.length, cats: categories.length })}
+          {t("heroSubtitle")}
         </p>
 
         <div className="mt-6 flex flex-wrap items-center gap-x-8 gap-y-3">
@@ -151,21 +140,6 @@ export default async function Home({ params }: { params: { locale: string } }) {
 
         <div className="mt-6 rounded-2xl border border-border bg-surface/80 p-2 shadow-card backdrop-blur">
           <SearchBox large placeholder={t("searchPlaceholder")} />
-        </div>
-
-        <div className="mt-4 flex flex-wrap items-center gap-2">
-          <span className="text-xs font-medium uppercase tracking-wide text-faint">
-            {t("trendingLabel")}
-          </span>
-          {trendingLinks.map((item) => (
-            <Link
-              key={item.slug}
-              href={`/araclar/${item.slug}`}
-              className="rounded-full border border-border bg-surface px-3 py-1 text-xs text-muted transition-colors hover:border-accent hover:text-text"
-            >
-              {item.name}
-            </Link>
-          ))}
         </div>
       </section>
 
