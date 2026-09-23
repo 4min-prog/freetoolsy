@@ -51,6 +51,8 @@ import Md5DosyaChecksum from "@/components/tools/Md5DosyaChecksum";
 import AdSlot from "@/components/AdSlot";
 import JsonLd from "@/components/JsonLd";
 import ToolJsonLd from "@/components/ToolJsonLd";
+import ToolFaqJsonLd from "@/components/ToolFaqJsonLd";
+import ToolFaq from "@/components/ToolFaq";
 import ToolSeoContent from "@/components/ToolSeoContent";
 import ToolIcon from "@/components/ToolIcon";
 
@@ -168,6 +170,7 @@ export default async function AraclarPage({
   return (
     <main className="mx-auto w-full max-w-2xl flex-1 px-4 py-10 sm:px-6 sm:py-14">
       <ToolJsonLd slug={tool.slug} />
+      <ToolFaqJsonLd slug={tool.slug} />
       <JsonLd
         data={{
           "@context": "https://schema.org",
@@ -240,6 +243,8 @@ export default async function AraclarPage({
       <AdSlot slot="bottom" />
 
       <ToolSeoContent slug={tool.slug} />
+
+      <ToolFaq slug={tool.slug} />
 
       {otherTools.length > 0 && (
         <section

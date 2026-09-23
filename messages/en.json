@@ -6,9 +6,9 @@
     "ogTitle": "FreetoolsY — Free Online Tools"
   },
   "Home": {
-    "title": "Free Online Tools — Fast, Simple, in English",
+    "title": "Free Online Tools for Text, Developers & More",
     "description": "44 free online tools in 4 categories. Character counter, password generator, JSON formatter, VAT calculator and more. No signup, no install.",
-    "heroTitle": "Free Online Tools — Fast, Simple, in English",
+    "heroTitle": "Free Online Tools for Text, Developers & More",
     "heroSubtitle": "{tools} free tools in {cats} categories: Text, Security, Developer and Calculation. No signup, no install; every calculation happens in your browser and your data never leaves it.",
     "jsonldSiteDesc": "Free online tools for text, security, developer and calculation. No signup, no install.",
     "jsonldAppDesc": "Character counter, password generator, JSON formatter, VAT calculator and more.",
@@ -76,6 +76,14 @@
     "guvenlik": "Security",
     "gelistirici": "Developer",
     "hesaplama": "Calculation"
+  },
+  "Faq": {
+    "title": "Frequently Asked Questions",
+    "whatIs": "What is {name}?",
+    "howTo": "How do I use {name}?",
+    "howToAnswer": "Type or paste your data into the field on this page and press the button. The result is calculated instantly in your browser — nothing is uploaded.",
+    "isFree": "Is {name} free?",
+    "isFreeAnswer": "Yes, {name} is completely free. No signup, no downloads and no usage limits."
   },
   "ToolMeta": {
     "karakter-sayaci": {

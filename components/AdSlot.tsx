@@ -22,7 +22,7 @@ export default async function AdSlot({
         <div
           id={elementId}
           style={{ minHeight: "90px" }}
-          className="flex w-full items-center justify-center rounded border border-dashed border-gray-700 bg-gray-100/5 text-sm text-gray-500"
+          className="flex w-full items-center justify-center rounded border border-dashed border-border text-sm text-muted"
         >
           {t("advertisement")}
         </div>

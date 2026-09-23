@@ -6,9 +6,9 @@
     "ogTitle": "FreetoolsY — Ücretsiz Online Araçlar"
   },
   "Home": {
-    "title": "Ücretsiz Online Araçlar — Hızlı, Basit",
+    "title": "Ücretsiz Online Araçlar — Metin, Geliştirici ve Daha Fazlası",
     "description": "4 kategoride 44 ücretsiz online araç. Karakter sayacı, parola üretici, JSON biçimlendirici, KDV hesaplama ve daha fazlası. Kayıt yok, kurulum yok.",
-    "heroTitle": "Ücretsiz Online Araçlar — Hızlı, Basit",
+    "heroTitle": "Ücretsiz Online Araçlar — Metin, Geliştirici ve Daha Fazlası",
     "heroSubtitle": "Kategoriler: {cats}, araçlar: {tools}. Metin, Güvenlik, Geliştirici ve Hesaplama. Kayıt yok, kurulum yok; her hesaplama tarayıcınızda yapılır ve verileriniz asla tarayıcınızdan çıkmaz.",
     "jsonldSiteDesc": "Metin, güvenlik, geliştirici ve hesaplama için ücretsiz online araçlar. Kayıt yok, kurulum yok.",
     "jsonldAppDesc": "Karakter sayacı, parola üretici, JSON biçimlendirici, KDV hesaplama ve daha fazlası.",
@@ -76,6 +76,14 @@
     "guvenlik": "Güvenlik",
     "gelistirici": "Geliştirici",
     "hesaplama": "Hesaplama"
+  },
+  "Faq": {
+    "title": "Sıkça Sorulan Sorular",
+    "whatIs": "{name} nedir?",
+    "howTo": "{name} nasıl kullanılır?",
+    "howToAnswer": "Bu sayfadaki alana verilerinizi yazın ya da yapıştırın ve düğmeye basın. Sonuç tarayıcınızda anında hesaplanır — hiçbir şey yüklenmez.",
+    "isFree": "{name} ücretsiz mi?",
+    "isFreeAnswer": "Evet, {name} tamamen ücretsizdir. Kayıt, indirme ve kullanım limiti yoktur."
   },
   "ToolMeta": {
     "karakter-sayaci": {
