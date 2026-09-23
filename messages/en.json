@@ -34,6 +34,8 @@
     "categories": "Categories",
     "searchLabel": "Search tools",
     "searchPlaceholder": "Search tools… e.g. password, JSON, VAT",
+    "searchHint": "Use ↑↓ to navigate, press Enter to open, ESC to close",
+    "closeSearch": "Close search",
     "allTools": "All tools"
   },
   "LocaleSwitcher": {

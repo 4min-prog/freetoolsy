@@ -34,6 +34,8 @@
     "categories": "Kategoriler",
     "searchLabel": "Araçlarda ara",
     "searchPlaceholder": "Araçlarda ara… örn. şifre, JSON, KDV",
+    "searchHint": "Gezinmek için ↑↓, açmak için Enter, kapatmak için ESC",
+    "closeSearch": "Aramayı kapat",
     "allTools": "Tüm Araçlar"
   },
   "LocaleSwitcher": {
