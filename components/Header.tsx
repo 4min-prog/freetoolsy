@@ -92,7 +92,7 @@ export default function Header() {
                   {openMenu === category.id && (
                     <div
                       role="menu"
-                      className="absolute left-0 mt-1.5 w-64 overflow-hidden rounded-xl border border-border bg-surface p-1.5 shadow-card-hover"
+                      className="absolute left-0 mt-1.5 w-64 max-h-[200px] overflow-y-auto overscroll-contain rounded-xl border border-border bg-surface p-1.5 shadow-card-hover"
                     >
                       {getToolsByCategory(category.id).map((tool) => (
                         <Link
