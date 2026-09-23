@@ -1,9 +1,11 @@
 import { Link } from "@/i18n/navigation";
 import { getMessages, getTranslations } from "next-intl/server";
-import { tools } from "@/data/tools";
+import CategoryIcon from "@/components/CategoryIcon";
+import { categories, getToolsByCategory } from "@/data/tools";
 
 export default async function Footer() {
   const t = await getTranslations("Footer");
+  const tc = await getTranslations("Categories");
   const messages = await getMessages();
   const meta = (messages as { ToolMeta?: Record<string, { name?: string }> })
     .ToolMeta;
@@ -80,17 +82,39 @@ export default async function Footer() {
       </div>
       <div className="mx-auto w-full max-w-5xl border-t border-border px-4 pb-10 pt-8 sm:px-6">
         <p className="text-sm font-semibold text-text">{t("tools")}</p>
-        <ul className="mt-4 grid grid-cols-2 gap-x-6 gap-y-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-          {tools.map((tool) => (
-            <li key={tool.slug}>
-              <Link
-                href={`/araclar/${tool.slug}`}
-                className="inline-block text-sm text-muted transition-colors hover:text-text"
-              >
-                {meta?.[tool.slug]?.name ?? tool.slug}
-              </Link>
-            </li>
-          ))}
+        <ul className="mt-4 grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
+          {categories.map((category) => {
+            const categoryTools = getToolsByCategory(category.id);
+            return (
+              <li key={category.id}>
+                <p className="flex items-center gap-2 text-sm font-semibold text-text">
+                  <CategoryIcon id={category.id} className="h-4 w-4 shrink-0 text-accent" />
+                  {tc(category.id)}
+                </p>
+                <ul className="mt-2.5 space-y-1.5">
+                  {categoryTools.slice(0, 5).map((tool) => (
+                    <li key={tool.slug}>
+                      <Link
+                        href={`/araclar/${tool.slug}`}
+                        className="inline-block text-sm text-muted transition-colors hover:text-text"
+                      >
+                        {meta?.[tool.slug]?.name ?? tool.slug}
+                      </Link>
+                    </li>
+                  ))}
+                  <li>
+                    <Link
+                      href={`/#${category.id}`}
+                      className="inline-flex items-center gap-1 text-sm font-medium text-accent transition-opacity hover:opacity-80"
+                    >
+                      {t("viewAll")}
+                      <span aria-hidden="true">→</span>
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+            );
+          })}
         </ul>
       </div>
       <div className="border-t border-border">

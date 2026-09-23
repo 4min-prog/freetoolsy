@@ -251,21 +251,21 @@ export default async function AraclarPage({
               {tPage("otherTitle")}
             </h2>
             <Link
-              href="/"
+              href={`/#${category ? category.id : tool.category}`}
               className="text-sm font-medium text-accent transition-opacity hover:opacity-80"
             >
               {tPage("otherAll")}
             </Link>
           </div>
-          <ul className="mt-4 flex flex-wrap gap-2">
+          <ul className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-3">
             {otherTools.map((item) => (
               <li key={item.slug}>
                 <Link
                   href={`/araclar/${item.slug}`}
-                  className="inline-flex items-center gap-2 rounded-full border border-border bg-bg px-3 py-1.5 text-sm text-muted transition-colors hover:border-accent hover:text-accent"
+                  className="flex items-center gap-2 rounded-lg border border-border bg-bg px-3 py-2 text-sm text-muted transition-colors hover:border-accent hover:text-accent"
                 >
-                  <ToolIcon id={item.slug} className="h-3.5 w-3.5" />
-                  {meta?.[item.slug]?.name ?? item.slug}
+                  <ToolIcon id={item.slug} className="h-4 w-4 shrink-0 text-accent" />
+                  <span className="truncate">{meta?.[item.slug]?.name ?? item.slug}</span>
                 </Link>
               </li>
             ))}

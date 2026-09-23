@@ -10,7 +10,6 @@
     "description": "4 kategoride 44 ücretsiz online araç. Karakter sayacı, parola üretici, JSON biçimlendirici, KDV hesaplama ve daha fazlası. Kayıt yok, kurulum yok.",
     "heroTitle": "Ücretsiz Online Araçlar — Hızlı, Basit",
     "heroSubtitle": "Kategoriler: {cats}, araçlar: {tools}. Metin, Güvenlik, Geliştirici ve Hesaplama. Kayıt yok, kurulum yok; her hesaplama tarayıcınızda yapılır ve verileriniz asla tarayıcınızdan çıkmaz.",
-    "popularTitle": "Popüler:",
     "jsonldSiteDesc": "Metin, güvenlik, geliştirici ve hesaplama için ücretsiz online araçlar. Kayıt yok, kurulum yok.",
     "jsonldAppDesc": "Karakter sayacı, parola üretici, JSON biçimlendirici, KDV hesaplama ve daha fazlası.",
     "faq": [
@@ -50,6 +49,7 @@
     "partner": "İş Ortaklığı",
     "linkly": "Linkleri kısaltın → LinklyhHub",
     "tools": "Araçlar",
+    "viewAll": "Tümünü gör",
     "rights": "© 2026 FreetoolsY."
   },
   "ThemeToggle": {
@@ -65,7 +65,8 @@
     "results": "Sonuçlar",
     "toolCount": "{count} araç",
     "noResults": "Aranan kriterle \"{query}\" eşleşen araç bulunamadı. Farklı bir anahtar kelime deneyin.",
-    "categoryToolsCount": "{count} araç"
+    "categoryToolsCount": "{count} araç",
+    "tabAll": "Tüm araçlar"
   },
   "Categories": {
     "metin": "Metin",

@@ -3,15 +3,15 @@
 This file tracks where the project stands. Whenever a working session ends, update the **Status** section at the top.
 
 ## Status
-**Last session:** Real TR translation done + 23 new tools added (Sep 22, 2026)
-- **Turkish translation COMPLETE:** `messages/tr.json` is now real Turkish (no longer a placeholder copy of en.json), translated in 6 parallel agents + merged/validated (identical key structure across en/tr, mojibake-free, placeholders preserved). Commits `64d200d`.
+**Last session:** UI sadeleştirme + destek maili + telif satırı (Sep 22, 2026)
+- **UI dedensified (kalabalık/dağınık his giderildi):** Home'da `PopularTools` şeridi kaldırıldı (devre dışı). `ToolExplorer` tek blok: üstte "Tüm araçlar" + 4 kategori sekmeleri (hash destekli: `/#metin` vb.), canlı arama ilk sırada. Header tek "Categories/Kategoriler" menüsü: 4 kategori ikonlu, 2 sütun grid (mobil+masaüstü aynı; 4 ayrı dropdown ve ayrı mobil menü kaldırıldı). Footer: 44 araçlık 6 sütun grid yerine kategori başına ilk 5 araç + "Tümünü gör →". Araç sayfası "diğer araçlar" bölümü kompakt 2-3 sütun kart grid'i, "view all" artık kategori linki. `popularTools` ve `PopularTools.tsx` kaldırıldı.
+- **Email:** her yerde `support@freetoolsy.com`. Footer telif: `© 2026 FreetoolsY.`
 - **44 tools now** (was 21): added in one batch — MD5 Hash (md5-hash), JWT Decoder (jwt-cozucu), JSON↔CSV (json-csv-donusturucu), Unix Timestamp (unix-timestamp-cevirici), Duplicate Line Remover (tekrar-satir-temizleyici), AI Token (ai-token-hesaplayici), Lorem Ipsum (lorem-ipsum-uretici), Tip (bahsis-hesaplayici), Discount (indirim-hesaplayici), Average (ortalama-hesaplayici), Dog Age (kopek-yasi-hesaplayici), Subnet (subnet-hesaplayici), PX↔REM (px-rem-donusturucu), XML Formatter (xml-formatter), CSS Minifier (css-minifier), HTML Minifier (html-minifier), WCAG Contrast (wcag-kontrast), Color Palette (renk-paleti-uretici), Box Shadow (box-shadow-uretici), Text Sorter (metin-siralayici), List Randomizer (liste-karistirici), YAML↔JSON (yaml-json-donusturucu), MD5 File Checksum (md5-dosya-checksum). Each has ToolMeta/ToolContent/comp messages in both languages, FA icon, registry entry. Home meta count updated to 44. Build now 100 static pages.
 - **AdSlot → env-gated real AdSense:** `AdSlot` renders the real `<ins class="adsbygoogle">` + `push({})` only when `NEXT_PUBLIC_ADS_ENABLED=true` and `NEXT_PUBLIC_ADS_CLIENT` + `NEXT_PUBLIC_ADS_SLOT_(TOP|BOTTOM)` are set; otherwise it keeps the placeholder box. Set those Vercel env vars once AdSense approves.
-- Header nav: category buttons each open their own drop-down menu of that category's tools (mobile: compact "Categories" menu, hidden md:flex). "All Tools" button removed.
 - Tool cards show Font Awesome watermark icons (right, rotate-6, white 15→hover 25).
 - Dark-mode bug on locale switch fixed (commit 4667e44) + ThemeGuard (77eb473) re-applies theme on locale-change navigation.
 - ES5-aware constraints still apply: no `\p{L}`/`u` regex, no `for..of`, no spread on strings, no `flatMap`, no `0n` BigInt literal (use `BigInt(0)`).
-- Next up: real ad units (set env vars after AdSense approval), buy `freetoolsy.com`.
+- Next up: set AdSense env vars after approval, buy `freetoolsy.com`.
 
 ## Done
 - [x] Next.js 14 App Router + TypeScript + Tailwind scaffold
