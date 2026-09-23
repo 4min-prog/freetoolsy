@@ -1,17 +1,18 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Link, useRouter } from "@/i18n/navigation";
+import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import ThemeToggle from "./ThemeToggle";
 import LocaleSwitcher from "./LocaleSwitcher";
 import CategoryIcon from "./CategoryIcon";
+import SearchBox from "./SearchBox";
 import { categories } from "@/data/tools";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [mobileSearchOpen, setMobileSearchOpen] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
-  const router = useRouter();
   const t = useTranslations("Header");
   const tc = useTranslations("Categories");
 
@@ -22,10 +23,14 @@ export default function Header() {
         !headerRef.current.contains(event.target as Node)
       ) {
         setOpen(false);
+        setMobileSearchOpen(false);
       }
     }
     function onKeyDown(event: KeyboardEvent) {
-      if (event.key === "Escape") setOpen(false);
+      if (event.key === "Escape") {
+        setOpen(false);
+        setMobileSearchOpen(false);
+      }
     }
     document.addEventListener("pointerdown", onPointerDown);
     document.addEventListener("keydown", onKeyDown);
@@ -34,20 +39,6 @@ export default function Header() {
       document.removeEventListener("keydown", onKeyDown);
     };
   }, []);
-
-  function focusSearch() {
-    const el = document.getElementById("arac-ara");
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "center" });
-      (el as HTMLInputElement).focus();
-      return;
-    }
-    router.push("/");
-    setTimeout(() => {
-      const target = document.getElementById("arac-ara");
-      (target as HTMLInputElement | null)?.focus();
-    }, 400);
-  }
 
   return (
     <header ref={headerRef} className="sticky top-0 z-50 border-b border-border bg-bg">
@@ -64,8 +55,46 @@ export default function Header() {
           </span>
         </Link>
 
-        <nav className="ml-auto flex items-center gap-1">
-          <div className="relative">
+        <nav className="ml-auto flex items-center gap-1 md:gap-2">
+          <div className="hidden lg:flex items-center gap-0.5">
+            {categories.map((category) => (
+              <Link
+                key={category.id}
+                href={`/#${category.id}`}
+                className="rounded-md px-2.5 py-1.5 text-sm text-muted transition-colors hover:text-text"
+              >
+                {tc(category.id)}
+              </Link>
+            ))}
+          </div>
+
+          <div className="relative hidden md:block w-36 xl:w-48">
+            <SearchBox placeholder={t("searchPlaceholder")} />
+          </div>
+
+          <button
+            type="button"
+            onClick={() => setMobileSearchOpen((value) => !value)}
+            aria-label={t("searchLabel")}
+            aria-expanded={mobileSearchOpen}
+            className="rounded-md p-2.5 text-muted transition-colors hover:text-text md:hidden"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+              className="h-5 w-5"
+            >
+              <circle cx="11" cy="11" r="7" />
+              <path d="M20 20l-3.2-3.2" />
+            </svg>
+          </button>
+
+          <div className="relative lg:hidden">
             <button
               type="button"
               onClick={() => setOpen((value) => !value)}
@@ -113,31 +142,21 @@ export default function Header() {
             )}
           </div>
 
-          <button
-            type="button"
-            onClick={focusSearch}
-            aria-label={t("searchLabel")}
-            className="rounded-md p-2.5 text-muted transition-colors hover:text-text"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.8"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
-              className="h-5 w-5"
-            >
-              <circle cx="11" cy="11" r="7" />
-              <path d="M20 20l-3.2-3.2" />
-            </svg>
-          </button>
-
           <LocaleSwitcher />
           <ThemeToggle />
         </nav>
       </div>
+
+      {mobileSearchOpen && (
+        <div className="border-t border-border px-4 py-3 sm:px-6 md:hidden">
+          <SearchBox
+            autoFocus
+            placeholder={t("searchPlaceholder")}
+            onDone={() => setMobileSearchOpen(false)}
+            onEsc={() => setMobileSearchOpen(false)}
+          />
+        </div>
+      )}
     </header>
   );
 }

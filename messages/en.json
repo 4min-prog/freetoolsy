@@ -33,6 +33,7 @@
   "Header": {
     "categories": "Categories",
     "searchLabel": "Search tools",
+    "searchPlaceholder": "Search tools… e.g. password, JSON, VAT",
     "allTools": "All tools"
   },
   "LocaleSwitcher": {

@@ -35,6 +35,18 @@ export default function ToolExplorer() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get("q");
+    if (q) {
+      setQuery(q);
+      requestAnimationFrame(() => {
+        searchRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+        searchRef.current?.focus();
+      });
+    }
+  }, []);
+
   const normalized = query.toLocaleLowerCase().trim();
 
   const filtered = normalized

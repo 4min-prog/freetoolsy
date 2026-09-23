@@ -33,6 +33,7 @@
   "Header": {
     "categories": "Kategoriler",
     "searchLabel": "Araçlarda ara",
+    "searchPlaceholder": "Araçlarda ara… örn. şifre, JSON, KDV",
     "allTools": "Tüm Araçlar"
   },
   "LocaleSwitcher": {
