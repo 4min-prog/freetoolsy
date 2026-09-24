@@ -122,6 +122,12 @@ export default async function RootLayout({
         <Script id="google-analytics-config" strategy="lazyOnload">
           {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-6J6JB9SHKZ");`}
         </Script>
+        <Script
+          id="goatcounter"
+          strategy="lazyOnload"
+          data-goatcounter="https://freetoolsy.goatcounter.com/count"
+          src="https://gc.zgo.at/count.js"
+        />
       </body>
     </html>
   );
