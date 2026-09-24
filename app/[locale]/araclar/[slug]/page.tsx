@@ -7,73 +7,73 @@ import { routing, type Locale } from "@/i18n/routing";
 import { POPULAR_SLUGS } from "@/data/popular";
 import { DYNAMIC_TOOL_SLUGS } from "@/data/dynamicTools";
 import { guides } from "@/data/guides";
-import KarakterSayaci from "@/components/tools/KarakterSayaci";
-import KelimeSayaci from "@/components/tools/KelimeSayaci";
-import HarfDonusturucu from "@/components/tools/HarfDonusturucu";
-import SifreUretici from "@/components/tools/SifreUretici";
+import CharacterCounter from "@/components/tools/CharacterCounter";
+import WordCounter from "@/components/tools/WordCounter";
+import CaseConverter from "@/components/tools/CaseConverter";
+import PasswordGenerator from "@/components/tools/PasswordGenerator";
 import JsonFormatter from "@/components/tools/JsonFormatter";
 import Base64Encoder from "@/components/tools/Base64Encoder";
 import UrlEncoder from "@/components/tools/UrlEncoder";
-import BmiHesaplayici from "@/components/tools/BmiHesaplayici";
-import KdvHesaplayici from "@/components/tools/KdvHesaplayici";
-import YuzdeHesaplayici from "@/components/tools/YuzdeHesaplayici";
-import YasHesaplayici from "@/components/tools/YasHesaplayici";
-import QrKodOlusturucu from "@/components/tools/QrKodOlusturucu";
-import ShaHashUretici from "@/components/tools/ShaHashUretici";
-import TarihFarki from "@/components/tools/TarihFarki";
-import RenkDonusturucu from "@/components/tools/RenkDonusturucu";
-import UuidUretici from "@/components/tools/UuidUretici";
-import BirimDonusturucu from "@/components/tools/BirimDonusturucu";
-import ParolaGucTesti from "@/components/tools/ParolaGucTesti";
-import SayiDonusturucu from "@/components/tools/SayiDonusturucu";
-import RegexTesti from "@/components/tools/RegexTesti";
-import BoslukTemizleyici from "@/components/tools/BoslukTemizleyici";
+import BmiCalculator from "@/components/tools/BmiCalculator";
+import VatCalculator from "@/components/tools/VatCalculator";
+import PercentageCalculator from "@/components/tools/PercentageCalculator";
+import AgeCalculator from "@/components/tools/AgeCalculator";
+import QrCodeGenerator from "@/components/tools/QrCodeGenerator";
+import ShaHashGenerator from "@/components/tools/ShaHashGenerator";
+import DateDifference from "@/components/tools/DateDifference";
+import ColorConverter from "@/components/tools/ColorConverter";
+import UuidGenerator from "@/components/tools/UuidGenerator";
+import UnitConverter from "@/components/tools/UnitConverter";
+import PasswordStrengthChecker from "@/components/tools/PasswordStrengthChecker";
+import NumberBaseConverter from "@/components/tools/NumberBaseConverter";
+import RegexTester from "@/components/tools/RegexTester";
+import WhitespaceCleaner from "@/components/tools/WhitespaceCleaner";
 import Md5Hash from "@/components/tools/Md5Hash";
 import JwtDecoder from "@/components/tools/JwtDecoder";
 import JsonCsv from "@/components/tools/JsonCsv";
 import TimestampConverter from "@/components/tools/TimestampConverter";
-import TekrarSatirTemizleyici from "@/components/tools/TekrarSatirTemizleyici";
-import AiTokenHesaplayici from "@/components/tools/AiTokenHesaplayici";
-import LoremIpsumUretici from "@/components/tools/LoremIpsumUretici";
-import BahsisHesaplayici from "@/components/tools/BahsisHesaplayici";
-import IndirimHesaplayici from "@/components/tools/IndirimHesaplayici";
-import OrtalamaHesaplayici from "@/components/tools/OrtalamaHesaplayici";
-import KopekYasiHesaplayici from "@/components/tools/KopekYasiHesaplayici";
-import SubnetHesaplayici from "@/components/tools/SubnetHesaplayici";
-import PxRemDonusturucu from "@/components/tools/PxRemDonusturucu";
+import DuplicateLineRemover from "@/components/tools/DuplicateLineRemover";
+import AiTokenCounter from "@/components/tools/AiTokenCounter";
+import LoremIpsumGenerator from "@/components/tools/LoremIpsumGenerator";
+import TipCalculator from "@/components/tools/TipCalculator";
+import DiscountCalculator from "@/components/tools/DiscountCalculator";
+import AverageCalculator from "@/components/tools/AverageCalculator";
+import DogAgeCalculator from "@/components/tools/DogAgeCalculator";
+import SubnetCalculator from "@/components/tools/SubnetCalculator";
+import PxRemConverter from "@/components/tools/PxRemConverter";
 import XmlFormatter from "@/components/tools/XmlFormatter";
 import CssMinifier from "@/components/tools/CssMinifier";
 import HtmlMinifier from "@/components/tools/HtmlMinifier";
-import WcagKontrast from "@/components/tools/WcagKontrast";
-import RenkPaletiUretici from "@/components/tools/RenkPaletiUretici";
-import BoxShadowUretici from "@/components/tools/BoxShadowUretici";
-import MetinSiralayici from "@/components/tools/MetinSiralayici";
-import ListeKaristirici from "@/components/tools/ListeKaristirici";
+import WcagContrastChecker from "@/components/tools/WcagContrastChecker";
+import ColorPaletteGenerator from "@/components/tools/ColorPaletteGenerator";
+import BoxShadowGenerator from "@/components/tools/BoxShadowGenerator";
+import TextSorter from "@/components/tools/TextSorter";
+import ListShuffler from "@/components/tools/ListShuffler";
 import YamlJson from "@/components/tools/YamlJson";
-import Md5DosyaChecksum from "@/components/tools/Md5DosyaChecksum";
+import Md5FileChecksum from "@/components/tools/Md5FileChecksum";
 import ToolDynamic from "@/components/tools/ToolDynamic";
-import SlugUretici from "@/components/tools/SlugUretici";
-import MetaTagUretici from "@/components/tools/MetaTagUretici";
-import AnahtarKelimeYogunlugu from "@/components/tools/AnahtarKelimeYogunlugu";
-import SerpOnizleme from "@/components/tools/SerpOnizleme";
-import OkunabilirlikSkoru from "@/components/tools/OkunabilirlikSkoru";
-import MetinKarsilastirici from "@/components/tools/MetinKarsilastirici";
-import HtmlEntityCevirici from "@/components/tools/HtmlEntityCevirici";
-import MorseCevirici from "@/components/tools/MorseCevirici";
-import MetinTersCevirici from "@/components/tools/MetinTersCevirici";
-import KalinItalikMetin from "@/components/tools/KalinItalikMetin";
-import CaesarSifre from "@/components/tools/CaesarSifre";
-import NotOrtalamasi from "@/components/tools/NotOrtalamasi";
-import KrediEmi from "@/components/tools/KrediEmi";
-import KaloriBmr from "@/components/tools/KaloriBmr";
-import VucutYagOrani from "@/components/tools/VucutYagOrani";
-import IdealKilo from "@/components/tools/IdealKilo";
-import UykuHesaplayici from "@/components/tools/UykuHesaplayici";
-import CronTest from "@/components/tools/CronTest";
+import SlugGenerator from "@/components/tools/SlugGenerator";
+import MetaTagGenerator from "@/components/tools/MetaTagGenerator";
+import KeywordDensityChecker from "@/components/tools/KeywordDensityChecker";
+import SerpPreview from "@/components/tools/SerpPreview";
+import ReadabilityScore from "@/components/tools/ReadabilityScore";
+import TextDiff from "@/components/tools/TextDiff";
+import HtmlEntityConverter from "@/components/tools/HtmlEntityConverter";
+import MorseConverter from "@/components/tools/MorseConverter";
+import TextReverser from "@/components/tools/TextReverser";
+import FancyTextGenerator from "@/components/tools/FancyTextGenerator";
+import CaesarCipher from "@/components/tools/CaesarCipher";
+import GpaCalculator from "@/components/tools/GpaCalculator";
+import LoanEmiCalculator from "@/components/tools/LoanEmiCalculator";
+import CalorieBmrCalculator from "@/components/tools/CalorieBmrCalculator";
+import BodyFatCalculator from "@/components/tools/BodyFatCalculator";
+import IdealWeightCalculator from "@/components/tools/IdealWeightCalculator";
+import SleepCalculator from "@/components/tools/SleepCalculator";
+import CronTester from "@/components/tools/CronTester";
 import HtmlFormatter from "@/components/tools/HtmlFormatter";
-import AesSifreleme from "@/components/tools/AesSifreleme";
-import RastgeleStringUretici from "@/components/tools/RastgeleStringUretici";
-import JwtUretici from "@/components/tools/JwtUretici";
+import AesEncryption from "@/components/tools/AesEncryption";
+import RandomStringGenerator from "@/components/tools/RandomStringGenerator";
+import JwtGenerator from "@/components/tools/JwtGenerator";
 import AdSlot from "@/components/AdSlot";
 import JsonLd from "@/components/JsonLd";
 import ToolJsonLd from "@/components/ToolJsonLd";
@@ -85,72 +85,72 @@ import ToolViewTracker from "@/components/ToolViewTracker";
 import { categoryTheme } from "@/components/categoryTheme";
 
 const toolComponents: Record<string, React.ComponentType> = {
-  "karakter-sayaci": KarakterSayaci,
-  "kelime-sayaci": KelimeSayaci,
-  "harf-donusturucu": HarfDonusturucu,
-  "sifre-uretici": SifreUretici,
+  "character-counter": CharacterCounter,
+  "word-counter": WordCounter,
+  "case-converter": CaseConverter,
+  "password-generator": PasswordGenerator,
   "json-formatter": JsonFormatter,
   "base64": Base64Encoder,
   "url-encoder": UrlEncoder,
-  "bmi-hesaplayici": BmiHesaplayici,
-  "kdv-hesaplayici": KdvHesaplayici,
-  "yuzde-hesaplayici": YuzdeHesaplayici,
-  "yas-hesaplayici": YasHesaplayici,
-  "qr-kod-olusturucu": QrKodOlusturucu,
-  "sha-hash-uretici": ShaHashUretici,
-  "tarih-farki": TarihFarki,
-  "renk-donusturucu": RenkDonusturucu,
-  "uuid-uretici": UuidUretici,
-  "birim-donusturucu": BirimDonusturucu,
-  "parola-guc-testi": ParolaGucTesti,
-  "sayi-donusturucu": SayiDonusturucu,
-  "regex-testi": RegexTesti,
-  "bosluk-temizleyici": BoslukTemizleyici,
+  "bmi-calculator": BmiCalculator,
+  "vat-calculator": VatCalculator,
+  "percentage-calculator": PercentageCalculator,
+  "age-calculator": AgeCalculator,
+  "qr-code-generator": QrCodeGenerator,
+  "sha-hash-generator": ShaHashGenerator,
+  "date-difference": DateDifference,
+  "color-converter": ColorConverter,
+  "uuid-generator": UuidGenerator,
+  "unit-converter": UnitConverter,
+  "password-strength-checker": PasswordStrengthChecker,
+  "number-base-converter": NumberBaseConverter,
+  "regex-tester": RegexTester,
+  "whitespace-cleaner": WhitespaceCleaner,
   "md5-hash": Md5Hash,
-  "jwt-cozucu": JwtDecoder,
-  "json-csv-donusturucu": JsonCsv,
-  "unix-timestamp-cevirici": TimestampConverter,
-  "tekrar-satir-temizleyici": TekrarSatirTemizleyici,
-  "ai-token-hesaplayici": AiTokenHesaplayici,
-  "lorem-ipsum-uretici": LoremIpsumUretici,
-  "bahsis-hesaplayici": BahsisHesaplayici,
-  "indirim-hesaplayici": IndirimHesaplayici,
-  "ortalama-hesaplayici": OrtalamaHesaplayici,
-  "kopek-yasi-hesaplayici": KopekYasiHesaplayici,
-  "subnet-hesaplayici": SubnetHesaplayici,
-  "px-rem-donusturucu": PxRemDonusturucu,
+  "jwt-decoder": JwtDecoder,
+  "json-csv-converter": JsonCsv,
+  "unix-timestamp-converter": TimestampConverter,
+  "duplicate-line-remover": DuplicateLineRemover,
+  "ai-token-counter": AiTokenCounter,
+  "lorem-ipsum-generator": LoremIpsumGenerator,
+  "tip-calculator": TipCalculator,
+  "discount-calculator": DiscountCalculator,
+  "average-calculator": AverageCalculator,
+  "dog-age-calculator": DogAgeCalculator,
+  "subnet-calculator": SubnetCalculator,
+  "px-rem-converter": PxRemConverter,
   "xml-formatter": XmlFormatter,
   "css-minifier": CssMinifier,
   "html-minifier": HtmlMinifier,
-  "wcag-kontrast": WcagKontrast,
-  "renk-paleti-uretici": RenkPaletiUretici,
-  "box-shadow-uretici": BoxShadowUretici,
-  "metin-siralayici": MetinSiralayici,
-  "liste-karistirici": ListeKaristirici,
-  "yaml-json-donusturucu": YamlJson,
-  "md5-dosya-checksum": Md5DosyaChecksum,
-  "slug-uretici": SlugUretici,
-  "meta-tag-uretici": MetaTagUretici,
-  "anahtar-kelime-yogunlugu": AnahtarKelimeYogunlugu,
-  "serp-onizleme": SerpOnizleme,
-  "okunabilirlik-skoru": OkunabilirlikSkoru,
-  "metin-karsilastirici": MetinKarsilastirici,
-  "html-entity-cevirici": HtmlEntityCevirici,
-  "morse-cevirici": MorseCevirici,
-  "metin-ters-cevirici": MetinTersCevirici,
-  "kalin-italik-metin": KalinItalikMetin,
-  "caesar-sifre": CaesarSifre,
-  "not-ortalamasi": NotOrtalamasi,
-  "kredi-emi": KrediEmi,
-  "kalori-bmr": KaloriBmr,
-  "vucut-yag-orani": VucutYagOrani,
-  "ideal-kilo": IdealKilo,
-  "uyku-hesaplayici": UykuHesaplayici,
-  "cron-test": CronTest,
+  "wcag-contrast-checker": WcagContrastChecker,
+  "color-palette-generator": ColorPaletteGenerator,
+  "box-shadow-generator": BoxShadowGenerator,
+  "text-sorter": TextSorter,
+  "list-shuffler": ListShuffler,
+  "yaml-json-converter": YamlJson,
+  "md5-file-checksum": Md5FileChecksum,
+  "slug-generator": SlugGenerator,
+  "meta-tag-generator": MetaTagGenerator,
+  "keyword-density-checker": KeywordDensityChecker,
+  "serp-preview": SerpPreview,
+  "readability-score": ReadabilityScore,
+  "text-diff": TextDiff,
+  "html-entity-converter": HtmlEntityConverter,
+  "morse-converter": MorseConverter,
+  "text-reverser": TextReverser,
+  "fancy-text-generator": FancyTextGenerator,
+  "caesar-cipher": CaesarCipher,
+  "gpa-calculator": GpaCalculator,
+  "loan-emi-calculator": LoanEmiCalculator,
+  "calorie-bmr-calculator": CalorieBmrCalculator,
+  "body-fat-calculator": BodyFatCalculator,
+  "ideal-weight-calculator": IdealWeightCalculator,
+  "sleep-calculator": SleepCalculator,
+  "cron-tester": CronTester,
   "html-formatter": HtmlFormatter,
-  "aes-sifreleme": AesSifreleme,
-  "rastgele-string-uretici": RastgeleStringUretici,
-  "jwt-uretici": JwtUretici,
+  "aes-encryption": AesEncryption,
+  "random-string-generator": RandomStringGenerator,
+  "jwt-generator": JwtGenerator,
 };
 
 const siteUrl = "https://freetoolsy.vercel.app";

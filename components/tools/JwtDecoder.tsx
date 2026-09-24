@@ -28,7 +28,7 @@ export default function JwtDecoder() {
   const [token, setToken] = useState("");
   const [result, setResult] = useState<Decoded | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const t = useTranslations("comp.jwt");
+  const t = useTranslations("comp.jwtDecoder");
 
   function decodeToken() {
     const parts = token.trim().split(".");
@@ -72,7 +72,7 @@ export default function JwtDecoder() {
       />
 
       <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton onApply={() => setToken(SAMPLES["jwt-cozucu"])} />
+        <SampleButton onApply={() => setToken(SAMPLES["jwt-decoder"])} />
       </div>
 
       <button

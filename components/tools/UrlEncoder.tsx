@@ -20,7 +20,7 @@ export default function UrlEncoder() {
   const [output, setOutput] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
-  const t = useTranslations("comp.url");
+  const t = useTranslations("comp.urlEncoder");
 
   function encode() {
     setError(null);

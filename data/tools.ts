@@ -6,509 +6,509 @@ export interface Tool {
 }
 
 export const categories: { id: string; name: string }[] = [
-  { id: "metin", name: "Metin" },
-  { id: "guvenlik", name: "Güvenlik" },
-  { id: "gelistirici", name: "Geliştirici" },
-  { id: "hesaplama", name: "Hesaplama" },
-  { id: "gorsel", name: "Görsel" },
+  { id: "text", name: "Metin" },
+  { id: "security", name: "Güvenlik" },
+  { id: "developer", name: "Geliştirici" },
+  { id: "calculation", name: "Hesaplama" },
+  { id: "image", name: "Görsel" },
   { id: "seo", name: "SEO" },
 ];
 
 export const tools: Tool[] = [
   {
-    slug: "karakter-sayaci",
+    slug: "character-counter",
     name: "Karakter Sayacı",
-    category: "metin",
+    category: "text",
     description:
       "Metnin karakter sayısını, boşluksuz sayımı, satır ve paragraf sayılarını anında gösterir.",
   },
   {
-    slug: "kelime-sayaci",
+    slug: "word-counter",
     name: "Kelime Sayacı",
-    category: "metin",
+    category: "text",
     description:
       "Kelime, cümle ve karakter istatistiklerini hesaplar; tahmini okuma süresini çıkarır.",
   },
   {
-    slug: "harf-donusturucu",
+    slug: "case-converter",
     name: "Harf Dönüştürücü",
-    category: "metin",
+    category: "text",
     description:
       "Metni büyük harfe, küçük harfe, başlık biçimine çevirir veya harfleri ters düz eder; tek tıkla kopyalayın.",
   },
   {
-    slug: "sifre-uretici",
+    slug: "password-generator",
     name: "Şifre Üretici",
-    category: "guvenlik",
+    category: "security",
     description:
       "Uzunluk ve karakter türlerini seçerek tarayıcınızda güçlü, rastgele parolalar üretir.",
   },
   {
     slug: "json-formatter",
     name: "JSON Formatter",
-    category: "gelistirici",
+    category: "developer",
     description:
       "JSON kodunuzu düzenler, doğrular ve okunabilir hâle getirir; hataları satır numarasıyla bildirir.",
   },
   {
     slug: "base64",
     name: "Base64 Encoder/Decoder",
-    category: "gelistirici",
+    category: "developer",
     description:
       "Metni Base64 biçimine çevirir veya Base64 verisini çözerek özgün içeriğe dönüştürür.",
   },
   {
     slug: "url-encoder",
     name: "URL Encoder/Decoder",
-    category: "gelistirici",
+    category: "developer",
     description:
       "Metni URL güvenli biçime kodlar veya kodlanmış URL parametrelerini anlaşılır hâle getirir.",
   },
   {
-    slug: "bmi-hesaplayici",
+    slug: "bmi-calculator",
     name: "BMI Hesaplayıcı",
-    category: "hesaplama",
+    category: "calculation",
     description:
       "Boy ve kilonuza göre vücut kitle indeksinizi hesaplar ve sonucu anlaşılır biçimde yorumlar.",
   },
   {
-    slug: "kdv-hesaplayici",
+    slug: "vat-calculator",
     name: "KDV Hesaplayıcı",
-    category: "hesaplama",
+    category: "calculation",
     description:
       "Tutar ve KDV oranı seçerek vergi tutarı ile toplam tutarı anında hesaplar.",
   },
   {
-    slug: "yuzde-hesaplayici",
+    slug: "percentage-calculator",
     name: "Yüzde Hesaplayıcı",
-    category: "hesaplama",
+    category: "calculation",
     description:
       "Sayının yüzdesini, yüzde değişimini ve bütünün yüzdesini tek ekranda hesaplar.",
   },
   {
-    slug: "yas-hesaplayici",
+    slug: "age-calculator",
     name: "Yaş Hesaplayıcı",
-    category: "hesaplama",
+    category: "calculation",
     description:
       "Doğum tarihinize göre yıl, ay, gün, saat, dakika ve saniye cinsinden yaşınızı canlı gösterir.",
   },
   {
-    slug: "qr-kod-olusturucu",
+    slug: "qr-code-generator",
     name: "QR Kod Oluşturucu",
-    category: "gelistirici",
+    category: "developer",
     description:
       "Metni veya bir bağlantıyı tarayıcınızda anında QR koda dönüştürür; PNG olarak indirin.",
   },
   {
-    slug: "sha-hash-uretici",
+    slug: "sha-hash-generator",
     name: "SHA Hash Üretici",
-    category: "guvenlik",
+    category: "security",
     description:
       "Metnin SHA-1, SHA-256 veya SHA-512 özetini tarayıcınızda hesaplar; tek tıkla kopyalayın.",
   },
   {
-    slug: "tarih-farki",
+    slug: "date-difference",
     name: "Tarih Farkı",
-    category: "hesaplama",
+    category: "calculation",
     description:
       "İki tarih arasındaki yıl, ay, gün, saat ve hafta farkını anında hesaplar.",
   },
   {
-    slug: "renk-donusturucu",
+    slug: "color-converter",
     name: "Renk Dönüştürücü",
-    category: "gelistirici",
+    category: "developer",
     description:
       "HEX, RGB ve HSL değerleri arasında anında dönüşüm yapar; önizleme ve kopyalama sunar.",
   },
   {
-    slug: "uuid-uretici",
+    slug: "uuid-generator",
     name: "UUID Üretici",
-    category: "gelistirici",
+    category: "developer",
     description:
       "Tek tıkla rastgele UUID v4 (GUID) üretir; birden çok kimliği toplu kopyalayın.",
   },
   {
-    slug: "birim-donusturucu",
+    slug: "unit-converter",
     name: "Birim Dönüştürücü",
-    category: "hesaplama",
+    category: "calculation",
     description:
       "Uzunluk, ağırlık, hacim, alan ve sıcaklık birimleri arasında hızlı dönüşüm yapar.",
   },
   {
-    slug: "parola-guc-testi",
+    slug: "password-strength-checker",
     name: "Parola Güç Testi",
-    category: "guvenlik",
+    category: "security",
     description:
       "Parolanızın ne kadar güçlü olduğunu tahmini entropiyle ölçer ve iyileştirme önerileri sunar.",
   },
   {
-    slug: "sayi-donusturucu",
+    slug: "number-base-converter",
     name: "Sayı Sistemi Dönüştürücü",
-    category: "gelistirici",
+    category: "developer",
     description:
       "Sayıları ikili, sekizli, ondalık ve onaltılık sistemler arasında anında dönüştürür.",
   },
   {
-    slug: "regex-testi",
+    slug: "regex-tester",
     name: "RegEx Testi",
-    category: "gelistirici",
+    category: "developer",
     description:
       "Düzenli ifadenizi metin üzerinde canlı olarak test eder ve eşleşmeleri vurgular.",
   },
   {
-    slug: "bosluk-temizleyici",
+    slug: "whitespace-cleaner",
     name: "Boşluk Temizleyici",
-    category: "metin",
+    category: "text",
     description:
       "Satır başı/sonu boşluklarını temizler, tekrarlı boşlukları birleştirir ve boş satırları kaldırır.",
   },
   {
     slug: "md5-hash",
     name: "MD5 Hash",
-    category: "guvenlik",
+    category: "security",
     description:
       "Metnin MD5 özetini tarayıcınızda anında hesaplar; tek tıkla kopyalayın.",
   },
   {
-    slug: "jwt-cozucu",
+    slug: "jwt-decoder",
     name: "JWT Çözücü",
-    category: "gelistirici",
+    category: "developer",
     description:
       "JWT token'ın başlık, yük ve imza bölümlerini okunabilir JSON olarak ayırır.",
   },
   {
-    slug: "json-csv-donusturucu",
+    slug: "json-csv-converter",
     name: "JSON ↔ CSV Dönüştürücü",
-    category: "gelistirici",
+    category: "developer",
     description:
       "JSON veri dizisini CSV'ye veya CSV'yi JSON'a hızlıca dönüştürür.",
   },
   {
-    slug: "unix-timestamp-cevirici",
+    slug: "unix-timestamp-converter",
     name: "Unix Zaman Damgası Çevirici",
-    category: "gelistirici",
+    category: "developer",
     description:
       "Unix zaman damgasını tarihe, tarihi zaman damgasına çevirir.",
   },
   {
-    slug: "tekrar-satir-temizleyici",
+    slug: "duplicate-line-remover",
     name: "Tekrar Satır Temizleyici",
-    category: "metin",
+    category: "text",
     description:
       "Listeden tekrarlanan satırları kaldırır, ilk görünüm sırasını korur.",
   },
   {
-    slug: "ai-token-hesaplayici",
+    slug: "ai-token-counter",
     name: "AI Token Hesaplayıcı",
-    category: "gelistirici",
+    category: "developer",
     description:
       "Metnin tahmini token, karakter, kelime ve satır sayısını gösterir.",
   },
   {
-    slug: "lorem-ipsum-uretici",
+    slug: "lorem-ipsum-generator",
     name: "Lorem Ipsum Üretici",
-    category: "metin",
+    category: "text",
     description:
       "Tasarım ve metin denemeleri için örnek Lorem Ipsum metni üretir.",
   },
   {
-    slug: "bahsis-hesaplayici",
+    slug: "tip-calculator",
     name: "Bahşiş Hesaplayıcı",
-    category: "hesaplama",
+    category: "calculation",
     description:
       "Hesap tutarı ve orana göre bahşiş ile kişi başı payı hesaplar.",
   },
   {
-    slug: "indirim-hesaplayici",
+    slug: "discount-calculator",
     name: "İndirim Hesaplayıcı",
-    category: "hesaplama",
+    category: "calculation",
     description:
       "Orijinal fiyat ve indirim oranına göre ödenecek tutarı hesaplar.",
   },
   {
-    slug: "ortalama-hesaplayici",
+    slug: "average-calculator",
     name: "Ortalama Hesaplayıcı",
-    category: "hesaplama",
+    category: "calculation",
     description:
       "Sayı listesinin ortalamasını, toplamını, adet, min ve maks değerlerini verir.",
   },
   {
-    slug: "kopek-yasi-hesaplayici",
+    slug: "dog-age-calculator",
     name: "Köpek Yaşı Hesaplayıcı",
-    category: "hesaplama",
+    category: "calculation",
     description:
       "Köpeğinizin yaşını boyutuna göre yaklaşık insan yaşına çevirir.",
   },
   {
-    slug: "subnet-hesaplayici",
+    slug: "subnet-calculator",
     name: "Subnet Hesaplayıcı",
-    category: "gelistirici",
+    category: "developer",
     description:
       "IP adresi ve prefixe göre ağ, broadcast, maske ve ana bilgisayar sayısını bulur.",
   },
   {
-    slug: "px-rem-donusturucu",
+    slug: "px-rem-converter",
     name: "PX → REM Dönüştürücü",
-    category: "gelistirici",
+    category: "developer",
     description:
       "Piksel ve REM birimlerini temel yazı boyutuna göre anında çevirir.",
   },
   {
     slug: "xml-formatter",
     name: "XML Biçimlendirici",
-    category: "gelistirici",
+    category: "developer",
     description:
       "XML'i düzenler veya küçültür; hataları anlaşılır biçimde bildirir.",
   },
   {
     slug: "css-minifier",
     name: "CSS Küçültücü",
-    category: "gelistirici",
+    category: "developer",
     description:
       "CSS kodunun boyutunu boşlukları ayıklayarak küçültür.",
   },
   {
     slug: "html-minifier",
     name: "HTML Küçültücü",
-    category: "gelistirici",
+    category: "developer",
     description:
       "HTML kodunu güvenle küçültür; içerik bloklarını korur.",
   },
   {
-    slug: "wcag-kontrast",
+    slug: "wcag-contrast-checker",
     name: "WCAG Kontrast Denetleyicisi",
-    category: "gelistirici",
+    category: "developer",
     description:
       "İki rengin kontrast oranını ve WCAG erişilebilirlik geçişini kontrol eder.",
   },
   {
-    slug: "renk-paleti-uretici",
+    slug: "color-palette-generator",
     name: "Renk Paleti Üretici",
-    category: "gelistirici",
+    category: "developer",
     description:
       "Ana renkten uyumlu analog veya tek renk tonları paleti oluşturur.",
   },
   {
-    slug: "box-shadow-uretici",
+    slug: "box-shadow-generator",
     name: "Box Shadow Üretici",
-    category: "gelistirici",
+    category: "developer",
     description:
       "Gölge bileşenlerini kaydırarak kullanıma hazır CSS üretir.",
   },
   {
-    slug: "metin-siralayici",
+    slug: "text-sorter",
     name: "Metin Sıralayıcı",
-    category: "metin",
+    category: "text",
     description:
       "Satırları alfabetik, uzunluk, sayısal veya rastgele sıralar.",
   },
   {
-    slug: "liste-karistirici",
+    slug: "list-shuffler",
     name: "Liste Karıştırıcı",
-    category: "metin",
+    category: "text",
     description:
       "Listeyi karıştırır veya içinden rastgele bir öğe çeker.",
   },
   {
-    slug: "yaml-json-donusturucu",
+    slug: "yaml-json-converter",
     name: "YAML ↔ JSON Dönüştürücü",
-    category: "gelistirici",
+    category: "developer",
     description:
       "YAML ile JSON arasında iki yönlü dönüşüm yapar.",
   },
   {
-    slug: "md5-dosya-checksum",
+    slug: "md5-file-checksum",
     name: "MD5 Dosya Checksum",
-    category: "guvenlik",
+    category: "security",
     description:
       "Dosyanın MD5 özetini tarayıcınızda hesaplar; dosya hiçbir yere gönderilmez.",
   },
   {
-    slug: "resim-sikistirici",
+    slug: "image-compressor",
     name: "Resim Sıkıştırıcı",
-    category: "gorsel",
+    category: "image",
     description:
       "JPEG/PNG görselleri kalite kaybını azaltarak tarayıcınızda küçültür.",
   },
   {
-    slug: "resim-boyutlandirici",
+    slug: "image-resizer",
     name: "Resim Boyutlandırıcı",
-    category: "gorsel",
+    category: "image",
     description:
       "Görselleri istediğiniz genişlik ve yüksekliğe, oranı koruyarak ölçekler.",
   },
   {
-    slug: "resim-donusturucu",
+    slug: "image-converter",
     name: "Resim Dönüştürücü",
-    category: "gorsel",
+    category: "image",
     description:
       "Görselleri JPG, PNG ve WebP arasında anında dönüştürür.",
   },
   {
-    slug: "resimden-base64",
+    slug: "image-to-base64",
     name: "Resimden Base64",
-    category: "gorsel",
+    category: "image",
     description:
       "Görseli data URL / Base64 metnine çevirir, tek tıkla kopyalayın.",
   },
   {
-    slug: "resimden-renk-secici",
+    slug: "image-color-picker",
     name: "Resimden Renk Seçici",
-    category: "gorsel",
+    category: "image",
     description:
       "Görseldeki herhangi bir pikselin rengini HEX ve RGB değeriyle seçin.",
   },
   {
-    slug: "slug-uretici",
+    slug: "slug-generator",
     name: "Slug Üretici",
     category: "seo",
     description:
       "Başlık metnini URL dostu, temiz ve küçük harfli sluga dönüştürür.",
   },
   {
-    slug: "meta-tag-uretici",
+    slug: "meta-tag-generator",
     name: "Meta Tag Üretici",
     category: "seo",
     description:
       "SEO meta etiketleri ve Open Graph kodları üretir; canlı önizleme sunar.",
   },
   {
-    slug: "anahtar-kelime-yogunlugu",
+    slug: "keyword-density-checker",
     name: "Anahtar Kelime Yoğunluğu",
     category: "seo",
     description:
       "Metindeki anahtar kelime yoğunluğunu ve tekrar sıklığını analiz eder.",
   },
   {
-    slug: "serp-onizleme",
+    slug: "serp-preview",
     name: "SERP Önizleme",
     category: "seo",
     description:
       "Google arama sonucu görünümünü ve başlık/açıklama uzunluğunu denetler.",
   },
   {
-    slug: "okunabilirlik-skoru",
+    slug: "readability-score",
     name: "Okunabilirlik Skoru",
     category: "seo",
     description:
       "Flesch okunabilirlik skorunu ve yaklaşık sınıf seviyesini hesaplar.",
   },
   {
-    slug: "metin-karsilastirici",
+    slug: "text-diff",
     name: "Metin Karşılaştırıcı",
-    category: "metin",
+    category: "text",
     description:
       "İki metni satır satır karşılaştırır, eklenen ve çıkarılan bölümleri renklendirir.",
   },
   {
-    slug: "html-entity-cevirici",
+    slug: "html-entity-converter",
     name: "HTML Entity Çevirici",
-    category: "metin",
+    category: "text",
     description:
       "Metni HTML entity biçimine çevirir veya entity kodlarını çözer.",
   },
   {
-    slug: "morse-cevirici",
+    slug: "morse-converter",
     name: "Morse Çevirici",
-    category: "metin",
+    category: "text",
     description:
       "Metni Morse koduna çevirir veya Morse kodunu metne dönüştürür.",
   },
   {
-    slug: "metin-ters-cevirici",
+    slug: "text-reverser",
     name: "Metin Ters Çevirici",
-    category: "metin",
+    category: "text",
     description:
       "Metni karakterleriyle, kelime sırasıyla veya her kelimeyi ayrı ayrı ters çevirir.",
   },
   {
-    slug: "kalin-italik-metin",
+    slug: "fancy-text-generator",
     name: "Kalın ve İtalik Metin Üretici",
-    category: "metin",
+    category: "text",
     description:
       "Metni kalın, italik veya alt çizgili Unicode karakterlere dönüştürür.",
   },
   {
-    slug: "caesar-sifre",
+    slug: "caesar-cipher",
     name: "Caesar Şifre & ROT13",
-    category: "metin",
+    category: "text",
     description:
       "Caesar kaydırma ve ROT13 ile şifreleme veya çözme yapar.",
   },
   {
-    slug: "not-ortalamasi",
+    slug: "gpa-calculator",
     name: "Not Ortalaması Hesaplayıcı",
-    category: "hesaplama",
+    category: "calculation",
     description:
       "Not ve kredi ağırlıklarıyla GPA/ortalama hesaplar; 4.0 ölçeği destekler.",
   },
   {
-    slug: "kredi-emi",
+    slug: "loan-emi-calculator",
     name: "Kredi Taksit Hesaplayıcı",
-    category: "hesaplama",
+    category: "calculation",
     description:
       "Kredi tutarı, faiz ve vade ile aylık taksit ve toplam ödemeyi hesaplar.",
   },
   {
-    slug: "kalori-bmr",
+    slug: "calorie-bmr-calculator",
     name: "Kalori & BMR Hesaplayıcı",
-    category: "hesaplama",
+    category: "calculation",
     description:
       "Bazal metabolizma (BMR) ve günlük harcanan kalorileri (TDEE) hesaplar.",
   },
   {
-    slug: "vucut-yag-orani",
+    slug: "body-fat-calculator",
     name: "Vücut Yağ Oranı Hesaplayıcı",
-    category: "hesaplama",
+    category: "calculation",
     description:
       "ABD Donanması yöntemiyle vücut yağ oranını ve yağ kütlesini hesaplar.",
   },
   {
-    slug: "ideal-kilo",
+    slug: "ideal-weight-calculator",
     name: "İdeal Kilo Hesaplayıcı",
-    category: "hesaplama",
+    category: "calculation",
     description:
       "Boy ve cinsiyete göre ideal kiloyu ve sağlıklı kilo aralığını gösterir.",
   },
   {
-    slug: "uyku-hesaplayici",
+    slug: "sleep-calculator",
     name: "Uyku Hesaplayıcı",
-    category: "hesaplama",
+    category: "calculation",
     description:
       "Uyanma saatinize göre ideal uyku saatlerini veya uyku döngülerini hesaplar.",
   },
   {
-    slug: "cron-test",
+    slug: "cron-tester",
     name: "Cron İfade Testi",
-    category: "gelistirici",
+    category: "developer",
     description:
       "Cron ifadenizi doğrular, insan diline çevirir ve sonraki çalışma zamanlarını gösterir.",
   },
   {
     slug: "html-formatter",
     name: "HTML Biçimlendirici",
-    category: "gelistirici",
+    category: "developer",
     description:
       "Dağınık HTML kodunu düzenli girintili, okunabilir biçime getirir.",
   },
   {
-    slug: "aes-sifreleme",
+    slug: "aes-encryption",
     name: "AES Şifreleme/Çözme",
-    category: "gelistirici",
+    category: "developer",
     description:
       "Parolayla metni AES-256-GCM kullanarak tarayıcınızda şifreler ve çözer.",
   },
   {
-    slug: "rastgele-string-uretici",
+    slug: "random-string-generator",
     name: "Rastgele String Üretici",
-    category: "gelistirici",
+    category: "developer",
     description:
       "API anahtarı ve token için kriptografik olarak güvenli rastgele string üretir.",
   },
   {
-    slug: "jwt-uretici",
+    slug: "jwt-generator",
     name: "JWT Üretici",
-    category: "gelistirici",
+    category: "developer",
     description:
       "HS256 imzalı JWT token içeriği oluşturur; header, payload ve signature adımlarını gösterir.",
   },

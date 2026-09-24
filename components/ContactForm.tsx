@@ -28,11 +28,11 @@ export default function ContactForm() {
     <form onSubmit={submit} className="mt-6">
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
-          <label htmlFor="iletisim-ad" className="block text-sm font-medium text-text">
+          <label htmlFor="contact-ad" className="block text-sm font-medium text-text">
             {t("name")}
           </label>
           <input
-            id="iletisim-ad"
+            id="contact-ad"
             type="text"
             value={name}
             onChange={(event) => setName(event.target.value)}
@@ -41,11 +41,11 @@ export default function ContactForm() {
           />
         </div>
         <div>
-          <label htmlFor="iletisim-eposta" className="block text-sm font-medium text-text">
+          <label htmlFor="contact-eposta" className="block text-sm font-medium text-text">
             {t("email")}
           </label>
           <input
-            id="iletisim-eposta"
+            id="contact-eposta"
             type="email"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
@@ -56,11 +56,11 @@ export default function ContactForm() {
       </div>
 
       <div className="mt-4">
-        <label htmlFor="iletisim-mesaj" className="block text-sm font-medium text-text">
+        <label htmlFor="contact-mesaj" className="block text-sm font-medium text-text">
           {t("message")}
         </label>
         <textarea
-          id="iletisim-mesaj"
+          id="contact-mesaj"
           rows={6}
           value={message}
           onChange={(event) => setMessage(event.target.value)}

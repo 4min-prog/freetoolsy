@@ -11,7 +11,7 @@ export default function TimestampConverter() {
   const [dateInput, setDateInput] = useState("");
   const [tsResult, setTsResult] = useState("");
   const [tsError, setTsError] = useState(false);
-  const t = useTranslations("comp.timestamp");
+  const t = useTranslations("comp.timestampConverter");
 
   function toDate() {
     const raw = secondsInput.trim().replace(",", ".");

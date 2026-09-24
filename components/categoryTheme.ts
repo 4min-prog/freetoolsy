@@ -8,7 +8,7 @@ export interface CategoryTheme {
 }
 
 const THEMES: Record<string, CategoryTheme> = {
-  metin: {
+  text: {
     iconText: "text-sky-600 dark:text-sky-400",
     iconBg: "bg-sky-500/10",
     strip: "bg-sky-500 dark:bg-sky-400",
@@ -16,7 +16,7 @@ const THEMES: Record<string, CategoryTheme> = {
     hoverBorder: "hover:border-sky-400/60 dark:hover:border-sky-400/60",
     hex: "#0ea5e9",
   },
-  guvenlik: {
+  security: {
     iconText: "text-emerald-600 dark:text-emerald-400",
     iconBg: "bg-emerald-500/10",
     strip: "bg-emerald-500 dark:bg-emerald-400",
@@ -26,7 +26,7 @@ const THEMES: Record<string, CategoryTheme> = {
       "hover:border-emerald-400/60 dark:hover:border-emerald-400/60",
     hex: "#10b981",
   },
-  gelistirici: {
+  developer: {
     iconText: "text-violet-600 dark:text-violet-400",
     iconBg: "bg-violet-500/10",
     strip: "bg-violet-500 dark:bg-violet-400",
@@ -34,7 +34,7 @@ const THEMES: Record<string, CategoryTheme> = {
     hoverBorder: "hover:border-violet-400/60 dark:hover:border-violet-400/60",
     hex: "#8b5cf6",
   },
-  hesaplama: {
+  calculation: {
     iconText: "text-amber-600 dark:text-amber-400",
     iconBg: "bg-amber-500/10",
     strip: "bg-amber-500 dark:bg-amber-400",
@@ -42,7 +42,7 @@ const THEMES: Record<string, CategoryTheme> = {
     hoverBorder: "hover:border-amber-400/60 dark:hover:border-amber-400/60",
     hex: "#f59e0b",
   },
-  gorsel: {
+  image: {
     iconText: "text-rose-600 dark:text-rose-400",
     iconBg: "bg-rose-500/10",
     strip: "bg-rose-500 dark:bg-rose-400",
@@ -61,5 +61,5 @@ const THEMES: Record<string, CategoryTheme> = {
 };
 
 export function categoryTheme(id: string): CategoryTheme {
-  return THEMES[id] ?? THEMES.metin;
+  return THEMES[id] ?? THEMES.text;
 }

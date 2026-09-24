@@ -2,33 +2,33 @@
 
 import dynamic from "next/dynamic";
 
-const ResimSikistirici = dynamic(() => import("./ResimSikistirici"), {
+const ImageCompressor = dynamic(() => import("./ImageCompressor"), {
   ssr: false,
   loading: () => <ToolLoading />,
 });
-const ResimBoyutlandirici = dynamic(() => import("./ResimBoyutlandirici"), {
+const ImageResizer = dynamic(() => import("./ImageResizer"), {
   ssr: false,
   loading: () => <ToolLoading />,
 });
-const ResimDonusturucu = dynamic(() => import("./ResimDonusturucu"), {
+const ImageConverter = dynamic(() => import("./ImageConverter"), {
   ssr: false,
   loading: () => <ToolLoading />,
 });
-const ResimdenBase64 = dynamic(() => import("./ResimdenBase64"), {
+const ImageToBase64 = dynamic(() => import("./ImageToBase64"), {
   ssr: false,
   loading: () => <ToolLoading />,
 });
-const ResimdenRenkSecici = dynamic(() => import("./ResimdenRenkSecici"), {
+const ImageColorPicker = dynamic(() => import("./ImageColorPicker"), {
   ssr: false,
   loading: () => <ToolLoading />,
 });
 
 const MAP: Record<string, React.ComponentType> = {
-  "resim-sikistirici": ResimSikistirici,
-  "resim-boyutlandirici": ResimBoyutlandirici,
-  "resim-donusturucu": ResimDonusturucu,
-  "resimden-base64": ResimdenBase64,
-  "resimden-renk-secici": ResimdenRenkSecici,
+  "image-compressor": ImageCompressor,
+  "image-resizer": ImageResizer,
+  "image-converter": ImageConverter,
+  "image-to-base64": ImageToBase64,
+  "image-color-picker": ImageColorPicker,
 };
 
 function ToolLoading() {

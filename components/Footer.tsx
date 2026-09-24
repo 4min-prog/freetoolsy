@@ -1,6 +1,7 @@
 import { Link } from "@/i18n/navigation";
 import { getMessages, getTranslations } from "next-intl/server";
 import CategoryIcon from "@/components/CategoryIcon";
+import Logo from "@/components/Logo";
 import { categories, getToolsByCategory } from "@/data/tools";
 
 export default async function Footer() {
@@ -14,16 +15,8 @@ export default async function Footer() {
     <footer className="mt-auto border-t border-border">
       <div className="mx-auto grid w-full max-w-5xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-[1fr_auto] md:items-start md:justify-between">
         <div className="flex flex-col gap-3">
-          <Link href="/" className="flex items-center gap-2.5">
-            <span
-              aria-hidden="true"
-              className="grid h-7 w-7 place-items-center rounded-md bg-accent text-sm font-semibold text-on-accent"
-            >
-              F
-            </span>
-            <span className="text-[15px] font-semibold tracking-tight text-text">
-              FreetoolsY
-            </span>
+          <Link href="/" className="flex items-center">
+            <Logo />
           </Link>
           <p className="max-w-[42ch] text-sm leading-relaxed text-muted">
             {t("desc")}
@@ -39,7 +32,7 @@ export default async function Footer() {
             <ul className="mt-3 space-y-2">
               <li>
                 <Link
-                  href="/hakkimizda"
+                  href="/about"
                   className="text-sm text-muted transition-colors hover:text-text"
                 >
                   {t("about")}
@@ -47,7 +40,7 @@ export default async function Footer() {
               </li>
               <li>
                 <Link
-                  href="/gizlilik-politikasi"
+                  href="/privacy-policy"
                   className="text-sm text-muted transition-colors hover:text-text"
                 >
                   {t("privacy")}
@@ -55,7 +48,7 @@ export default async function Footer() {
               </li>
               <li>
                 <Link
-                  href="/iletisim"
+                  href="/contact"
                   className="text-sm text-muted transition-colors hover:text-text"
                 >
                   {t("contact")}

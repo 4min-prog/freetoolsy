@@ -108,7 +108,7 @@ export default function JsonCsv() {
   const [output, setOutput] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
-  const t = useTranslations("comp.jsonCsv");
+  const t = useTranslations("comp.jsonCsvConverter");
 
   function convert() {
     const raw = input.trim();
@@ -195,7 +195,7 @@ export default function JsonCsv() {
             className="mt-2 w-full resize-y rounded-lg border border-border bg-bg px-3.5 py-3 font-mono text-sm leading-relaxed text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
           />
           <div className="mt-2 flex flex-wrap gap-2">
-            <SampleButton onApply={() => setInput(SAMPLES["json-csv-donusturucu"])} />
+            <SampleButton onApply={() => setInput(SAMPLES["json-csv-converter"])} />
           </div>
           <div className="mt-3 flex items-center gap-2">
             <button

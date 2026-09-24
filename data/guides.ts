@@ -19,8 +19,8 @@ export interface Guide {
 
 export const guides: Guide[] = [
   {
-    slug: "json-formatter-nedir",
-    relatedTools: ["json-formatter", "json-csv-donusturucu", "yaml-json-donusturucu"],
+    slug: "what-is-json-formatter",
+    relatedTools: ["json-formatter", "json-csv-converter", "yaml-json-converter"],
     content: {
       en: {
         title: "What is a JSON formatter and how do you use it?",
@@ -91,8 +91,8 @@ export const guides: Guide[] = [
     },
   },
   {
-    slug: "meta-tag-nedir",
-    relatedTools: ["meta-tag-uretici", "serp-onizleme", "anahtar-kelime-yogunlugu"],
+    slug: "what-is-meta-tags",
+    relatedTools: ["meta-tag-generator", "serp-preview", "keyword-density-checker"],
     content: {
       en: {
         title: "Meta tags explained: writing title & description for SEO",
