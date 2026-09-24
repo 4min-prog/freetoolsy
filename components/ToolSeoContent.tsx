@@ -11,7 +11,9 @@ export default async function ToolSeoContent({ slug }: { slug: string }) {
   const toolContents = messages.ToolContent as unknown as
     | Record<string, ToolContentBlock[]>
     | undefined;
-  const blocks = toolContents ? toolContents[slug] : [];
+  const blocks = toolContents?.[slug] ?? null;
+
+  if (!blocks) return null;
 
   return (
     <section className="mt-10 max-w-[65ch] text-sm leading-relaxed text-muted sm:text-base">
