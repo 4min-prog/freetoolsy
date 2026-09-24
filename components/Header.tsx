@@ -47,12 +47,12 @@ export default function Header() {
         ref={headerRef}
         className="sticky top-0 z-50 border-b border-border bg-bg transition-colors"
       >
-        <div className="mx-auto flex h-20 w-full max-w-5xl items-center justify-between gap-2 px-4 sm:px-6 md:justify-center">
-          <Link href="/" aria-label="FreetoolsY">
+        <div className="mx-auto grid h-20 w-full max-w-5xl grid-cols-[auto_1fr_auto] items-center gap-2 px-4 sm:px-6">
+          <Link href="/" aria-label="FreetoolsY" className="justify-self-start">
             <Logo size="lg" />
           </Link>
 
-          <nav className="flex items-center gap-1 md:gap-2">
+          <nav className="flex items-center justify-self-center gap-1 md:gap-2">
             <div className="hidden md:flex items-center gap-1 md:gap-2">
               {categories.map((category) => (
                 <div key={category.id} className="relative">
@@ -156,7 +156,9 @@ export default function Header() {
                 </div>
               )}
             </div>
+          </nav>
 
+          <div className="flex items-center justify-self-end gap-1 md:gap-2">
             <button
               type="button"
               onClick={() => setSearchOpen(true)}
@@ -180,7 +182,7 @@ export default function Header() {
 
             <LocaleSwitcher />
             <ThemeToggle />
-          </nav>
+          </div>
         </div>
       </header>
 
