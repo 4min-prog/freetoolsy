@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import ToolExplorer from "@/components/ToolExplorer";
 import SearchBox from "@/components/SearchBox";
+import PopularStrip from "@/components/PopularStrip";
 import JsonLd from "@/components/JsonLd";
 import AdSlot from "@/components/AdSlot";
 import { categories, tools } from "@/data/tools";
@@ -146,6 +147,8 @@ export default async function Home({ params }: { params: { locale: string } }) {
           <SearchBox large placeholder={t("searchPlaceholder")} />
         </div>
       </section>
+
+      <PopularStrip />
 
       <AdSlot slot="top" />
 

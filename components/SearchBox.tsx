@@ -4,7 +4,9 @@ import { useEffect, useId, useMemo, useRef, useState } from "react";
 import { useMessages, useTranslations } from "next-intl";
 import { Link, useRouter } from "@/i18n/navigation";
 import ToolIcon from "@/components/ToolIcon";
+import { POPULAR_SLUGS } from "@/data/popular";
 import { tools } from "@/data/tools";
+import { track } from "@/lib/analytics";
 
 interface ToolMetaNs {
   name?: string;
@@ -91,7 +93,28 @@ export default function SearchBox({
 
   const showResults = open && Boolean(normalized) && matches.length > 0;
   const showFallback = open && (!normalized || matches.length === 0);
-  const suggestions = tools.slice(0, 4);
+  const popularSlugs = useMemo(
+    () =>
+      POPULAR_SLUGS.filter((slug) => tools.some((tool) => tool.slug === slug)).slice(
+        0,
+        4
+      ),
+    []
+  );
+  const suggestions = popularSlugs;
+  const mostSearched = popularSlugs.map((slug) => meta?.[slug]?.name ?? slug);
+
+  function searchQuery(query: string) {
+    setQ("");
+    setOpen(false);
+    onDone?.();
+    track("search", { search_term: query });
+    router.push(`/?q=${encodeURIComponent(query)}`);
+    setTimeout(
+      () => window.dispatchEvent(new Event("freetoolsy:search")),
+      80
+    );
+  }
 
   return (
     <div ref={boxRef} className="relative">
@@ -210,20 +233,39 @@ export default function SearchBox({
               {t("searchSuggestions")}
             </span>
           </li>
-          {suggestions.map((tool) => (
-            <li key={tool.slug} role="option" aria-selected="false">
+          {suggestions.map((slug) => (
+            <li key={slug} role="option" aria-selected="false">
               <Link
-                href={`/araclar/${tool.slug}`}
+                href={`/araclar/${slug}`}
                 onClick={close}
                 className="flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm text-muted transition-colors hover:bg-surface-2 hover:text-text"
               >
-                <ToolIcon id={tool.slug} className="h-4 w-4 shrink-0 text-accent" />
+                <ToolIcon id={slug} className="h-4 w-4 shrink-0 text-accent" />
                 <span className="truncate">
-                  {meta?.[tool.slug]?.name ?? tool.slug}
+                  {meta?.[slug]?.name ?? slug}
                 </span>
               </Link>
             </li>
           ))}
+          <li role="option" aria-selected="false">
+            <span className="mt-2 block px-3 pb-1 pt-2 text-xs font-medium uppercase tracking-wide text-faint">
+              {t("mostSearched")}
+            </span>
+          </li>
+          <li role="option" aria-selected="false">
+            <div className="flex flex-wrap gap-1.5 px-3 pb-2 pt-1">
+              {mostSearched.map((query) => (
+                <button
+                  key={query}
+                  type="button"
+                  onClick={() => searchQuery(query)}
+                  className="rounded-full border border-border/70 bg-surface px-3 py-1 text-xs text-muted transition-colors hover:border-accent/40 hover:text-text"
+                >
+                  {query}
+                </button>
+              ))}
+            </div>
+          </li>
         </ul>
       )}
     </div>

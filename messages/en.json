@@ -20,6 +20,8 @@
     "searchPlaceholder": "Search tools… e.g. password, JSON, VAT",
     "jsonldSiteDesc": "Free online tools for text, security, developer and calculation. No signup, no install.",
     "jsonldAppDesc": "Character counter, password generator, JSON formatter, VAT calculator and more.",
+    "popularTitle": "Popular tools",
+    "popularSubtitle": "What most visitors use",
     "faq": [
       {
         "q": "Is FreetoolsY free?",
@@ -47,7 +49,8 @@
     "closeSearch": "Close search",
     "allTools": "All tools",
     "noResults": "No matching tools were found.",
-    "searchSuggestions": "Suggestions"
+    "searchSuggestions": "Suggestions",
+    "mostSearched": "Most searched"
   },
   "LocaleSwitcher": {
     "switchToTurkish": "Switch to Turkish",
