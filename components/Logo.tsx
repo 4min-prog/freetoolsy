@@ -5,8 +5,6 @@ import { useTranslations } from "next-intl";
 export default function Logo({ size = "md" }: { size?: "md" | "lg" }) {
   const t = useTranslations("Brand");
   const icon = size === "lg" ? "h-9 w-9" : "h-7 w-7";
-  const title = size === "lg" ? "text-[17px]" : "text-[15px]";
-  const tag = size === "lg" ? "text-[10px]" : "text-[9px]";
 
   return (
     <span className="flex items-center gap-2.5">
@@ -52,11 +50,11 @@ export default function Logo({ size = "md" }: { size?: "md" | "lg" }) {
         </svg>
       </span>
       <span className="leading-tight">
-        <span className={`block ${title} tracking-tight`}>
+        <span className="block text-[15px] tracking-tight">
           <span className="font-semibold text-text">freetools</span>
           <span className="font-extrabold text-accent">Y</span>
         </span>
-        <span className={`hidden ${tag} font-medium uppercase tracking-[0.18em] text-faint sm:block`}>
+        <span className="hidden text-[9px] font-medium uppercase tracking-[0.18em] text-faint sm:block">
           {t("tagline")}
         </span>
       </span>
