@@ -47,13 +47,13 @@ export default function Header() {
         ref={headerRef}
         className="sticky top-0 z-50 border-b border-border bg-bg transition-colors"
       >
-        <div className="mx-auto grid h-20 w-full max-w-5xl grid-cols-[auto_1fr_auto] items-center gap-2 px-4 sm:px-6">
+        <div className="mx-auto grid h-20 w-full max-w-7xl grid-cols-[auto_1fr_auto] items-center gap-2 px-4 sm:px-6">
           <Link href="/" aria-label="FreetoolsY" className="justify-self-start">
             <Logo size="lg" />
           </Link>
 
-          <nav className="flex items-center justify-self-center gap-1 md:gap-2">
-            <div className="hidden md:flex items-center gap-1 md:gap-2">
+          <nav className="flex items-center justify-self-center gap-1">
+            <div className="hidden xl:flex items-center gap-1">
               {categories.map((category) => (
                 <div key={category.id} className="relative">
                   <button
@@ -61,7 +61,7 @@ export default function Header() {
                     onClick={() => toggleMenu(category.id)}
                     aria-expanded={openMenu === category.id}
                     aria-haspopup="menu"
-                    className="flex items-center gap-1.5 rounded-md px-3 py-2 text-[15px] text-muted transition-colors hover:text-text"
+                    className="flex items-center gap-1.5 rounded-md px-2.5 py-2 text-[15px] text-muted transition-colors hover:text-text"
                   >
                     <CategoryIcon
                       id={category.id}
@@ -109,7 +109,7 @@ export default function Header() {
               ))}
             </div>
 
-            <div className="relative lg:hidden">
+            <div className="relative xl:hidden">
               <button
                 type="button"
                 onClick={() => toggleMenu("__mobile")}
