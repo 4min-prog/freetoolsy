@@ -74,6 +74,23 @@ import HtmlFormatter from "@/components/tools/HtmlFormatter";
 import AesEncryption from "@/components/tools/AesEncryption";
 import RandomStringGenerator from "@/components/tools/RandomStringGenerator";
 import JwtGenerator from "@/components/tools/JwtGenerator";
+import CurrencyConverter from "@/components/tools/CurrencyConverter";
+import CompoundInterestCalculator from "@/components/tools/CompoundInterestCalculator";
+import SalaryCalculator from "@/components/tools/SalaryCalculator";
+import SqlFormatter from "@/components/tools/SqlFormatter";
+import JsonXmlConverter from "@/components/tools/JsonXmlConverter";
+import MarkdownHtmlConverter from "@/components/tools/MarkdownHtmlConverter";
+import HmacGenerator from "@/components/tools/HmacGenerator";
+import HtmlTableGenerator from "@/components/tools/HtmlTableGenerator";
+import FaviconGenerator from "@/components/tools/FaviconGenerator";
+import ImageCrop from "@/components/tools/ImageCrop";
+import ImageWatermark from "@/components/tools/ImageWatermark";
+import JsonLdGenerator from "@/components/tools/JsonLdGenerator";
+import HreflangGenerator from "@/components/tools/HreflangGenerator";
+import RobotsTxtGenerator from "@/components/tools/RobotsTxtGenerator";
+import WheelOfNames from "@/components/tools/WheelOfNames";
+import RandomNumberGenerator from "@/components/tools/RandomNumberGenerator";
+import StopwatchTimer from "@/components/tools/StopwatchTimer";
 import AdSlot from "@/components/AdSlot";
 import JsonLd from "@/components/JsonLd";
 import ToolJsonLd from "@/components/ToolJsonLd";
@@ -151,9 +168,26 @@ const toolComponents: Record<string, React.ComponentType> = {
   "aes-encryption": AesEncryption,
   "random-string-generator": RandomStringGenerator,
   "jwt-generator": JwtGenerator,
+  "currency-converter": CurrencyConverter,
+  "compound-interest-calculator": CompoundInterestCalculator,
+  "salary-calculator": SalaryCalculator,
+  "sql-formatter": SqlFormatter,
+  "json-xml-converter": JsonXmlConverter,
+  "markdown-html-converter": MarkdownHtmlConverter,
+  "hmac-generator": HmacGenerator,
+  "html-table-generator": HtmlTableGenerator,
+  "favicon-generator": FaviconGenerator,
+  "image-crop": ImageCrop,
+  "image-watermark": ImageWatermark,
+  "jsonld-generator": JsonLdGenerator,
+  "hreflang-generator": HreflangGenerator,
+  "robots-txt-generator": RobotsTxtGenerator,
+  "wheel-of-names": WheelOfNames,
+  "random-number-generator": RandomNumberGenerator,
+  "stopwatch-timer": StopwatchTimer,
 };
 
-const siteUrl = "https://freetoolsy.vercel.app";
+const siteUrl = "https://freetoolsy.com";
 
 export function generateStaticParams() {
   const params: { locale: string; slug: string }[] = [];

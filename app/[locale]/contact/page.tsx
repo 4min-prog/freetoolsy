@@ -17,8 +17,8 @@ export async function generateMetadata({
     alternates: {
       canonical: params.locale === "en" ? "/contact" : `/${params.locale}/contact`,
       languages: {
-        en: "https://freetoolsy.vercel.app/contact",
-        tr: "https://freetoolsy.vercel.app/tr/contact",
+        en: "https://freetoolsy.com/contact",
+        tr: "https://freetoolsy.com/tr/contact",
       },
     },
   };
@@ -35,7 +35,7 @@ export default async function IletisimPage({
   const tInfo = await getTranslations("Info");
   const tTool = await getTranslations("ToolPage");
   const tContact = await getTranslations("Info.contact");
-  const url = `https://freetoolsy.vercel.app${isTr ? "/tr" : ""}/contact`;
+  const url = `https://freetoolsy.com${isTr ? "/tr" : ""}/contact`;
 
   return (
     <main className="mx-auto w-full max-w-2xl flex-1 px-4 py-10 sm:px-6 sm:py-14">

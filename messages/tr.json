@@ -87,7 +87,8 @@
     "security": "Güvenlik",
     "developer": "Geliştirici",
     "calculation": "Hesaplama",
-    "image": "Görsel"
+    "image": "Görsel",
+    "fun": "Eğlence"
   },
   "Faq": {
     "title": "Sıkça Sorulan Sorular",
@@ -594,6 +595,125 @@
       "title": "JWT Üretici — Ücretsiz Online Araç",
       "pageDesc": "Tarayıcınızda ücretsiz imzalı JWT token oluşturun. Header ve payload JSON'unu düzenleyin, gizli anahtarınızı girin ve anında HS256 imzalı token kopyalayın.",
       "intro": "Kendi header, payload ve gizli anahtarınızla imzalı bir HS256 JSON Web Token oluşturun — doğrudan tarayıcıda."
+    },
+    "currency-converter": {
+      "name": "Döviz Çevirici",
+      "desc": "Düzenleyebildiğiniz sabit referans kurlarıyla para birimleri arasında anında dönüşüm yapar.",
+      "title": "Döviz Çevirici — Ücretsiz Online Araç",
+      "pageDesc": "Dolar, Euro, TL ve daha fazlası arasında, düzenlenebilir kurlarla çevrimiçi döviz dönüşümü yapın. Ücretsiz ve tamamen tarayıcıda — paralarınız hiçbir yere gönderilmez.",
+      "intro": "Miktarı yazın, para birimlerini seçin ve dönüşüm sonucunu görün — isterseniz kendi kurunuzla."
+    },
+    "compound-interest-calculator": {
+      "name": "Bileşik Faiz Hesaplayıcı",
+      "desc": "Düzenli katkılar ve yıllık dökümle bileşik faiz büyümesini hesaplar.",
+      "title": "Bileşik Faiz Hesaplayıcı — Ücretsiz Online Araç",
+      "pageDesc": "Yıllık faiz oranı, bileşiklendirme sıklığı ve aylık katkılarla bileşik faizi, yıllık büyüme tablosuyla birlikte hesaplayın. Ücretsiz ve tamamen tarayıcıda.",
+      "intro": "Birikiminizin bileşik faiz, ek katkılar ve zamanla nasıl büyüdüğünü görün."
+    },
+    "salary-calculator": {
+      "name": "Net Maaş Hesaplayıcı",
+      "desc": "Brüt maaştan SGK, işsizlik ve gelir vergisi kesintisi sonrası net maaşı tahmin eder.",
+      "title": "Net Maaş Hesaplayıcı — Ücretsiz Online Araç",
+      "pageDesc": "SGK, işsizlik sigortası ve gelir vergisi kesintilerini anında hesaplayarak brüt maaştan net maaş tahmini yapın. Ücretsiz ve tamamen tarayıcıda.",
+      "intro": "Brüt maaşınızı girin, kesintileri ve net aylık-yıllık maaşınızı görün."
+    },
+    "sql-formatter": {
+      "name": "SQL Biçimlendirici",
+      "desc": "Anahtar kelime ve girinti tercihinizle SQL sorgularını düzenler veya küçültür.",
+      "title": "SQL Biçimlendirici — Ücretsiz Online Araç",
+      "pageDesc": "SQL sorgularını çevrimiçi biçimlendirin veya küçültün: anahtar kelime büyük/küçük harf, 2 veya 4 boşluk girinti. Tamamen tarayıcınızda çalışır.",
+      "intro": "Karışık veya sıkıştırılmış SQL'i okunaklı, tutarlı biçimlendirilmiş sorgulara dönüştürün."
+    },
+    "json-xml-converter": {
+      "name": "JSON ↔ XML Dönüştürücü",
+      "desc": "JSON'u XML'e ve XML'i JSON'a iki yönde dönüştürür; diziler ve öznitelikler korunur.",
+      "title": "JSON ↔ XML Dönüştürücü — Ücretsiz Online Araç",
+      "pageDesc": "JSON'u XML'e veya XML'i JSON'a çevrimiçi iki yönde dönüştürün. Diziler ve öznitelikler korunur, hatalar açıkça bildirilir. Ücretsiz ve gizli.",
+      "intro": "Verilerinizi tek tıkla iki yönde JSON ve XML arasında değiştirin."
+    },
+    "markdown-html-converter": {
+      "name": "Markdown ↔ HTML Dönüştürücü",
+      "desc": "Markdown'ı HTML'e, HTML'i Markdown'a canlı önizlemeyle çevirir.",
+      "title": "Markdown ↔ HTML Dönüştürücü — Ücretsiz Online Araç",
+      "pageDesc": "Markdown ve HTML arasında çevrimiçi ücretsiz dönüşüm. Başlıklar, listeler, tablolar, kod ve bağlantılar desteklenir; canlı önizleme sunulur. Tarayıcınızda çalışır.",
+      "intro": "Markdown yazın ve HTML'i görün veya HTML yapıştırın, Markdown olarak geri okuyun."
+    },
+    "hmac-generator": {
+      "name": "HMAC Üretici",
+      "desc": "HMAC-SHA256 veya HMAC-SHA512 imzası hesaplar; hex ve Base64 gösterir.",
+      "title": "HMAC Üretici — Ücretsiz Online Araç",
+      "pageDesc": "Web Crypto API ile çevrimiçi ücretsiz HMAC-SHA256 veya HMAC-SHA512 imzası üretin. Hex ve Base64 formlarını anında alın; her şey tarayıcınızda çalışır.",
+      "intro": "Herhangi bir mesajı gizli anahtarla imzalayın ve HMAC özetini hex veya Base64 olarak okuyun."
+    },
+    "html-table-generator": {
+      "name": "HTML Tablo Üretici",
+      "desc": "Satır, sütun ve yapıştırılmış veriden kullanıma hazır HTML tablo kodu üretir; önizleme sunar.",
+      "title": "HTML Tablo Üretici — Ücretsiz Online Araç",
+      "pageDesc": "Çevrimiçi HTML tablo kodu üretin: satır ve sütun sayısını ayarlayın, sekmeli veya virgüllü veri yapıştırın, sonucu önizleyip kopyalayın. Tarayıcınızda çalışır.",
+      "intro": "Verilerinizden temiz bir HTML tablo oluşturun ve kodu doğrudan sayfanıza yapıştırın."
+    },
+    "favicon-generator": {
+      "name": "Favicon Üretici",
+      "desc": "Metin ve renklerden favicon çizer; PNG veya ICO olarak indirir.",
+      "title": "Favicon Üretici — Ücretsiz Online Araç",
+      "pageDesc": "Metin, renk ve boyuttan çevrimiçi favicon oluşturun, PNG veya ICO olarak indirin. Şeffaf arka plan desteklenir; her şey tarayıcınızda çalışır.",
+      "intro": "Baş harflerinizden veya metinden küçük bir marka ikonu oluşturun, PNG veya ICO olarak dışa aktarın."
+    },
+    "image-crop": {
+      "name": "Resim Kırpma",
+      "desc": "Sürükleyerek seçtiğiniz alana göre görseli tarayıcınızda kırpar.",
+      "title": "Resim Kırpma — Ücretsiz Online Araç",
+      "pageDesc": "Çevrimiçi görsel kırpın: alanı sürükleyerek seçin, kırpma kutusunu ayarlayın ve sonucu PNG olarak indirin. Görseliniz cihazınızdan asla çıkmaz.",
+      "intro": "Görselin üzerine sürükleyerek saklamak istediğiniz alanı seçin ve kırpılmış sonucu indirin."
+    },
+    "image-watermark": {
+      "name": "Resime Filigran Ekleme",
+      "desc": "Seçtiğiniz konum ve opaklıkta görsele logo veya filigran ekler.",
+      "title": "Filigran Ekleme — Ücretsiz Online Araç",
+      "pageDesc": "Çevrimiçi filigran ekleyin: ana görsel ve logo yükleyin, konum ile opaklığı seçin, sonucu PNG olarak indirin. Tamamen tarayıcınızda çalışır.",
+      "intro": "İstediğiniz konum ve güçte logo filigranı ekleyerek fotoğraflarınızı koruyun."
+    },
+    "jsonld-generator": {
+      "name": "JSON-LD Üretici",
+      "desc": "Article, Product, FAQPage ve daha fazlası için schema.org JSON-LD yapılandırılmış verisi üretir.",
+      "title": "JSON-LD Üretici — Ücretsiz Online Araç",
+      "pageDesc": "Article, Product, Person, FAQPage ve daha fazlası için çevrimiçi schema.org JSON-LD üretin, sayfanıza yapıştırmaya hazır. Tamamen tarayıcınızda çalışır.",
+      "intro": "İçerik türünüz için yapılandırılmış veri oluşturun ve JSON-LD'yi sayfanıza kopyalayın."
+    },
+    "hreflang-generator": {
+      "name": "Hreflang Üretici",
+      "desc": "Çok dilli siteler için hreflang etiketleri ve sitemap bloğu üretir.",
+      "title": "Hreflang Üretici — Ücretsiz Online Araç",
+      "pageDesc": "Çok dilli siteniz için çevrimiçi hreflang etiketleri üretin: yerelleşitleri seçin, link etiketleri ve XML sitemap bloğunu anında alın. Tarayıcınızda çalışır.",
+      "intro": "Hreflang etiketleri ve sitemap bloğu oluşturun; arama motorları dil sürümlerinizi doğru ilişkilendirsin."
+    },
+    "robots-txt-generator": {
+      "name": "Robots.txt Üretici",
+      "desc": "Hazır şablonlar ve kendi kurallarınızla robots.txt içeriği oluşturur.",
+      "title": "Robots.txt Üretici — Ücretsiz Online Araç",
+      "pageDesc": "Denenmiş şablonlar veya kendi allow/disallow kurallarınızla, sitemap URL'niz de dahil çevrimiçi robots.txt oluşturun. Sonucu anında kopyalayın — tarayıcınızda çalışır.",
+      "intro": "Arama motorlarına neyi tarayacaklarını tam olarak söyleyen bir robots.txt oluşturun."
+    },
+    "wheel-of-names": {
+      "name": "İsim Çarkı",
+      "desc": "Çekiliş ve kura için rastgele kazanan seçmek üzere isim çarkını çevirin.",
+      "title": "İsim Çarkı — Ücretsiz Online Araç",
+      "pageDesc": "Çevrimiçi isim çarkını çevirerek rastgele kazanan seçin. Katılımcıları ekleyin, çevir tuşuna basın ve çarkın kararını izleyin — tamamen tarayıcınızda.",
+      "intro": "İsimleri çarka yazın, çevirin ve kazananı şansa bırakın."
+    },
+    "random-number-generator": {
+      "name": "Rastgele Sayı Üretici",
+      "desc": "Herhangi bir aralıkta, tekrarlı veya tekrarsız rastgele sayı listeleri üretir.",
+      "title": "Rastgele Sayı Üretici — Ücretsiz Online Araç",
+      "pageDesc": "Çevrimiçi rastgele sayı üretin: aralığı ve adedi ayarlayın, tekrarı önleyin, sonucu kopyalayın. Çekiliş ve seçimler için ideal — tarayıcınızda çalışır.",
+      "intro": "Aralık ve adet seçin, kullanmaya hazır rastgele sayılar elde edin."
+    },
+    "stopwatch-timer": {
+      "name": "Kronometre ve Zamanlayıcı",
+      "desc": "Tur kayıtlı süre ölçer ya da istediğiniz süreden geri sayar.",
+      "title": "Kronometre ve Zamanlayıcı — Ücretsiz Online Araç",
+      "pageDesc": "Tur süreli kronometre veya geri sayım sayacı — uygulama gerekmez, çevrimiçi ücretsiz. Saniyenin yüzde birini hassasiyetle ölçer, tamamen tarayıcınızda çalışır.",
+      "intro": "Bir şeyi zamanlayın: kronometreyi başlatıp turları kaydedin veya geri sayım kurup zili bekleyin."
     }
   },
   "ToolContent": {
@@ -2159,6 +2279,488 @@
           "Gizli anahtar nereye gider? Hiçbir yere — imzalama tamamen tarayıcınızda olur ve gizli anahtarınız asla yüklenmez veya saklanmaz.",
           "Farklı bir algoritma kullanabilir miyim? Varsayılan HS256'dır; header JSON'unu düzenleyebilirsiniz, ancak imza her zaman HMAC-SHA256 ile hesaplanır."
         ]
+      },
+      {
+        "h": "Döviz Çevirici nedir?",
+        "p": "Döviz çevirici, bir tutarı döviz kuru kullanarak bir para biriminden diğerine çevirir. Bu araç, ABD dolarına dayalı, istediğiniz an gerçek piyasaya göre ayarlayabileceğiniz sabit referans kurları kullanır."
+      },
+      {
+        "h": "Nasıl kullanılır?",
+        "list": [
+          "Çevirmek istediğiniz tutarı Başlangıç alanına girin.",
+          "Kaynak ve hedef para birimini açılır menülerden seçin.",
+          "İsterseniz kendi kurunuzu kullanmak için sonucun altındaki kur alanını düzenleyin.",
+          "İki para birimini hızlıca yer değiştirmek için takas butonunu kullanın."
+        ]
+      },
+      {
+        "h": "İpuçları",
+        "list": [
+          "Kurlar sabit referanslardır, canlı piyasa verisi değildir — gerçek işlemler için daima bankanızı veya canlı kur kaynağını kontrol edin.",
+          "Takas butonu kaynak ve hedef para birimlerini değiştirip sonucu anında yeniden hesaplar.",
+          "Ondalık sayıları noktayla yazabilirsiniz; tutardaki virgüller yok sayılır."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Kurlar canlı mı? Hayır — yerleşik kurlar, güncel piyasayı yansıtacak şekilde elle düzenleyebileceğiniz sabit referans değerleridir.",
+          "Verilerim bir yere gönderilir mi? Hayır — her dönüşüm tamamen tarayıcınızda gerçekleşir.",
+          "Kendi kurumu nasıl girerim? Sonucun altındaki kur kutusuna yeni değeri yazın; dönüşüm anında güncellenir."
+        ]
+      },
+      {
+        "h": "Bileşik faiz nedir?",
+        "p": "Bileşik faizde kazandığınız faiz anaparaya eklenir ve bir sonraki dönemin faizi büyüyen bu taban üzerinden hesaplanır. Zamanla bu üstel bir büyüme yaratır — ne kadar erken başlarsanız o kadar güçlü olur."
+      },
+      {
+        "h": "Nasıl kullanılır?",
+        "list": [
+          "Başlangıç tutarını, yıllık faiz oranını (yüzde) ve paranın büyüyeceği yıl sayısını girin.",
+          "Faizin ne sıklıkla bileşiklendirileceğini seçin — yıllık, aylık veya günlük.",
+          "İsterseniz sabit bir aylık katkı ve bunun yıllık artış oranını ekleyin.",
+          "Alttaki tablo her yılın sonundaki bakiye, yatırım ve kazanılan faizi gösterir."
+        ]
+      },
+      {
+        "h": "Sonuçlar ne anlama gelir?",
+        "list": [
+          "Toplam faiz: son bakiyenin tamamen bileşikleştirmeden gelen kısmı.",
+          "Toplam yatırım: anapara ve yaptığınız tüm ek katkılar.",
+          "Yıllık tablo, bileşikleştirmenin hızlanmaya başladığı anı tam olarak gösterir."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Faiz oranı basit mi yoksa bileşik mi? Her zaman bileşiktir — hesap makinesinin amacı budur.",
+          "Aylık katkılar nasıl çalışır? Her ayın sonunda eklenir ve sonra bakiye ile birlikte büyür.",
+          "Bu gerçek tasarruf hesaplarıyla aynı mı? Gerçek hesaplarda ayrıca vergi ve ücretler olabilir; sonucu temiz bir matematiksel tahmin olarak düşünün."
+        ]
+      },
+      {
+        "h": "Net maaş nedir?",
+        "p": "Net maaş, brüt ücretinizden yasal kesintiler düşüldükten sonra hesabınıza yatan tutardır. Türkiye'de bu kesintiler SGK işçi payı, işsizlik sigortası payı ve gelir vergisidir."
+      },
+      {
+        "h": "Neler kesilir?",
+        "list": [
+          "SGK işçi payı: brüt ücretin yüzde 14'ü sosyal güvenliğe ödenir.",
+          "İşsizlik sigortası işçi payı: brüt ücretin yüzde 1'i.",
+          "Gelir vergisi: 2026 yılı için artan oranlı dilimlerle hesaplanır.",
+          "Damga vergisi: brüt ücretin binde 7.59'u."
+        ]
+      },
+      {
+        "h": "Nasıl kullanılır?",
+        "p": "Brüt aylık maaşınızı yazın. Araç her kesintiyi anında listeler ve net aylık maaşınızı, 12 ayı yansıtan yıllık toplamlarla birlikte gösterir."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Hesaplama tam doğru mu? 2026 Türkiye dilimlerini ve standart oranları izler, ancak sosyal güvenlik ve gelir vergisi yasaları yıllık değişir; bunu bir tahmin olarak ele alın.",
+          "İşveren payı dahil mi? Evet — işveren maliyeti satırı, işverenin maaşınızın üzerine ödediği toplamı gösterir.",
+          "Yıllık vergi neden aylık verginin on iki katı değil? Her ay aynı dilimlerde hesaplanır, bu yüzden sonuç tam bir yıllık beyanname değil, temiz bir tahmindir."
+        ]
+      },
+      {
+        "h": "SQL biçimlendirme nedir?",
+        "p": "SQL biçimlendirme, sorguyu tutarlı girinti, satır sonları ve anahtar kelime büyük/küçük harfiyle yeniden yazar ve ilk bakışta okunabilir hale getirir. Bu araç ifadeleri tamamen tarayıcınızda düzenler veya küçültür."
+      },
+      {
+        "h": "Nasıl kullanılır?",
+        "list": [
+          "SQL sorgunuzu düzenleyicisine yapıştırın.",
+          "Anahtar kelime stilini seçin: SELECT gibi büyük veya select gibi küçük harf.",
+          "2 veya 4 boşluk girinti seçip Biçimlendir'e basın.",
+          "Sorguyu mümkün olduğunca az satıra sığdırmak için Küçült'ü kullanın."
+        ]
+      },
+      {
+        "h": "Neleri işler?",
+        "list": [
+          "Alt sorgular ve birleştirmeler içeren SELECT, INSERT, UPDATE ve DELETE ifadeleri.",
+          "Stringler, sayılar ve tırnaklı tanımlayıcılar olduğu gibi bırakılır.",
+          "Yorumlar ve yaygın PostgreSQL/MySQL söz dizimi korunur."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Çevrimiçi mi çalışır? Tarayıcınızın içinde, yerel olarak çalışır; sorgunuz cihazınızdan asla çıkmaz.",
+          "Sorgum bozulabilir mi? Düzgün yazılmış bir sorgu yalnızca boşluk ve harf büyüklüğü yeniden düzenlenir, anlamı değişmez.",
+          "Çok büyük betikler ne olacak? Yaygın durumlarda çoklu ifadeler de desteklenir — noktalı virgülle ayırın."
+        ]
+      },
+      {
+        "h": "Bu dönüştürücü nedir?",
+        "p": "JSON ve XML, veriyi yapılandırmanın iki yaygın yoludur. Bu araç, dizileri, nesneleri ve öznitelikleri koruyarak ikisi arasında iki yönde geçiş yapmanızı sağlar."
+      },
+      {
+        "h": "Nasıl kullanılır?",
+        "list": [
+          "Yönü seçin: JSON'dan XML'e veya XML'den JSON'a.",
+          "Girişinizi yapıştırın; yazarken otomatik olarak doğrulanır.",
+          "Sonucu kopyala butonuyla kopyalayın veya dosya olarak indirin."
+        ]
+      },
+      {
+        "h": "Bilinen kurallar",
+        "list": [
+          "JSON nesneleri, alt öğeleri olan XML öğelerine dönüşür.",
+          "Dizilerde her öğe aynı öğe adını bölüm içinde tekrar eder.",
+          "XML öznitelikleri, başında et işareti bulunan anahtarlar olarak geri yazılır."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "XML özniteliklerine ne olur? Korunur ve JSON çıktısında önünde et işareti bulunan anahtar olarak gösterilir.",
+          "Karma içerik desteklenir mi? Aynı düğümde metin ve alt öğeler desteklenir.",
+          "XML bildirimi olan dosyalar? XML bildirimi ayrıştırılır ve çıktıda yeniden üretilir."
+        ]
+      },
+      {
+        "h": "Markdown nedir?",
+        "p": "Markdown; başlıklar, kalın yazı, listeler ve bağlantılar gibi biçimlendirme için düz metin olarak okunaklı kalan hafif bir sözdizimidir. Bu araç Markdown'ı HTML'e ve geri çevirir."
+      },
+      {
+        "h": "Nasıl kullanılır?",
+        "list": [
+          "İhtiyacınız olan yönü seçin, ardından kaynak metninizi yapıştırın veya yazın.",
+          "Markdown'dan HTML'e, sözdiziminizi canlı önizlemeli temiz HTML etiketlerine dönüştürür.",
+          "HTML'den Markdown'a, yapıştırılan HTML'i okunaklı Markdown olarak geri yazar."
+        ]
+      },
+      {
+        "h": "Neler desteklenir?",
+        "list": [
+          "Başlıklar, paragraflar, alıntılar ve dil bilgili kod blokları.",
+          "Kalın, italik, bağlantılar, görseller, sıralı ve sırasız listeler ile tablolar.",
+          "Satır içi kod, yatay çizgiler ve satır sonları."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Önizleme sonuçla aynı mı? Evet — önizleme, üretilen HTML'in tam olarak ne ürettiğini gösterir.",
+          "Güvenle ileri geri çevirebilir miyim? Yaygın desenler iki yönde de korunur; sıra dışı iç içe yapılar bazı ayrıntıları kaybedebilir.",
+          "Metnim nereye gider? Hiçbir yere — dönüşüm tamamen tarayıcınızda olur."
+        ]
+      },
+      {
+        "h": "HMAC nedir?",
+        "p": "HMAC (hash tabanlı mesaj doğrulama kodu), bir mesajın kurcalanmadığını ve gizli anahtarı bilen biri tarafından oluşturulduğunu kanıtlar. Mesajı SHA-256 gibi bir hash fonksiyonuyla anahtarla birleştirir."
+      },
+      {
+        "h": "Nasıl kullanılır?",
+        "list": [
+          "Mesajınızı yazın veya yapıştırın ve gizli anahtarınızı girin.",
+          "Hash fonksiyonunu seçin: hız için SHA-256 veya daha uzun özet için SHA-512.",
+          "Mesaj ve anahtar için düz metin veya Base64 girişini seçin.",
+          "İmzayı ham hex veya standart Base64 olarak kopyalayın."
+        ]
+      },
+      {
+        "h": "Nasıl hesaplanır?",
+        "p": "Web Crypto API imzayı tarayıcınızda yerel olarak hesaplar. Hex biçimi ham özettir; Base64 biçimi aynı baytların metin alanlarına ve HTTP başlıklarına kolayca sığacak şekilde kodlanmış halidir."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "HMAC şifreleme midir? Hayır — HMAC içerik gizlemek değil, bütünlük ve doğruluğu kanıtlayan bir imzadır.",
+          "Aynı mesaj farklı imzalar üretebilir mi? Yalnızca anahtar veya hash fonksiyonu değişirse; algoritmanın kendisi deterministiktir.",
+          "Anahtar nereye gider? Hiçbir yere — tarayıcınızda kullanılır ve bir sunucuya gönderilmez."
+        ]
+      },
+      {
+        "h": "HTML tablo üretici nedir?",
+        "p": "HTML tablo üretici, basit tablo verisini kullanıma hazır bir tablo öğesine dönüştürür; böylece işaretlemeyi elle hiç yazmazsınız."
+      },
+      {
+        "h": "Nasıl kullanılır?",
+        "list": [
+          "Kaç satır ve sütun istediğinizi ayarlayın.",
+          "Sekmeli, virgüllü veya özel ayraçlı veri yapıştırın ya da hücreleri elle doldurun.",
+          "İlk satırı tablo başlığı olarak kullanmak için ayarı açın.",
+          "Tabloyu önizleyin ve oluşturulan HTML kodunu kopyalayın."
+        ]
+      },
+      {
+        "h": "İpuçları",
+        "list": [
+          "Ayraç menüsü, verinin geldiği yere göre noktalı virgül, virgül, sekme veya dikey çizgi kullanmanızı sağlar.",
+          "Kodu kopyalayıp herhangi bir HTML sayfasına veya içerik yönetim sistemine yapıştırın.",
+          "Başlık ve kenarlık sınıfları dahildir; tablo kutudan çıktığı gibi düzgün görünür."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Kendi hücre değerlerimi kullanabilir miyim? Evet — üretmeden önce tablodaki her hücre düzenlenebilir.",
+          "Verim tablodan fazla sütun içeriyorsa? Fazla değerler otomatik olarak ek sütunlara doldurulur; sınır kadar.",
+          "Verilerim nerede işlenir? Tamamen tarayıcınızda — hiçbir şey yüklenmez ve size zorunlu sarmalayıcı işaretleme dayatılmaz."
+        ]
+      },
+      {
+        "h": "Favicon nedir?",
+        "p": "Favicon, tarayıcı sekmesinde sayfa başlığının yanında görünen küçük ikondur. Burada bir metinden ve seçtiğiniz renklerden, görsel düzenleyici gerektirmeden favicon üretebilirsiniz."
+      },
+      {
+        "h": "Nasıl kullanılır?",
+        "list": [
+          "Göstermek istediğiniz metni girin; örneğin markanızın baş harfi.",
+          "Arka plan rengini, yazı rengini ve yazı boyutunu seçin.",
+          "Piksel boyutunu ayarlayın ve çıktı biçimi olarak PNG veya ICO seçin.",
+          "Sonucu indirin ve site ikonunuz olarak kullanın."
+        ]
+      },
+      {
+        "h": "Biçimler hakkında",
+        "list": [
+          "PNG, modern tarayıcılarda standart favicon link etiketiyle yaygın olarak desteklenir.",
+          "ICO klasik Windows biçimidir ve eski tarayıcılar için en güvenli seçimdir.",
+          "İki dosya da aynı ikonu gösterir — hangisini barındırıcınız veya çatınız bekliyorsa onu seçin."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Metin birden çok satıra sarılır mı? Uzun metin kare tuval sığacak şekilde küçültülür.",
+          "İkon bazı cihazlarda neden farklı görünüyor? Büyük tarayıcı ikonları tarayıcı tarafından aynı görüntüden çizilir; efektler bilinçli olarak minimal tutulur.",
+          "Görsel bir yerde saklanır mı? Hayır — her şey tarayıcınızda yerel olarak üretilir ve dışa aktarılır."
+        ]
+      },
+      {
+        "h": "Kırpma nedir?",
+        "p": "Kırpma, görselin istemediğiniz kısımlarını atar ve yalnızca seçtiğiniz alanı bırakır. Bu araç, görselin üzerine sürükleyerek kırpma bölgesini seçmenizi sağlar."
+      },
+      {
+        "h": "Nasıl kullanılır?",
+        "list": [
+          "Tuvale bir görsel yükleyin veya sürükleyin.",
+          "Saklamak istediğiniz alanı çizmek için görselin üzerine sürükleyin.",
+          "Aynı tutamacı seçimi yeniden boyutlandırmak için kullanın.",
+          "Sonucu PNG olarak indirmek için kırp butonuna tıklayın."
+        ]
+      },
+      {
+        "h": "İpuçları",
+        "list": [
+          "Kırpma kutusu çizdiğiniz dikdörtgeni korur.",
+          "Seçiminizi baştan yapmak için sıfırla butonunu kullanın.",
+          "Önizleme, dışa aktarmadan önce kesimin nerede olacağını tam olarak gösterir."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Kırpma kaliteyi düşürür mü? Kesimin ötesinde keskinleştirme veya yeniden örnekleme uygulanmaz.",
+          "Çok büyük görselleri kırpabilir miyim? Evet — dışa aktarma orijinal piksel verisini kullanır.",
+          "Görselim bir sunucuya yüklenir mi? Hayır — her şey tarayıcınızda yerel olarak çalışır."
+        ]
+      },
+      {
+        "h": "Filigran nedir?",
+        "p": "Filigran, sahipliği belirtmek veya izinsiz kullanımı azaltmak için logonuzu veya başka bir görseli fotoğrafın üzerine yerleştirir. Bu araç, kaplamayı seçtiğiniz konum ve opaklıkta yerleştirir."
+      },
+      {
+        "h": "Nasıl kullanılır?",
+        "list": [
+          "Üzerine yerleştirmek için bir ana görsel ve bir logo veya işaret yükleyin.",
+          "Konumu seçin: üst, orta veya alt ile sol veya sağ.",
+          "Opaklığı ve filigran boyutunu kaydırıcılarla ayarlayın.",
+          "Birleştirilmiş sonucu PNG olarak indirin."
+        ]
+      },
+      {
+        "h": "İpuçları",
+        "list": [
+          "Yüzde 40 civarındaki yarı saydam bir işaret, fotoğrafı gizlemeden üzerini kapatır.",
+          "Sağ alt köşedeki logolar çoğu zaman içerik tarafından kapatılmaz.",
+          "Çıktı, ana görselin tam çözünürlüğünü korur."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Metni filigran olarak kullanabilir miyim? Bu araç görsel kaplamalarla çalışır; metniniz veya logonuz için şeffaf PNG kullanın.",
+          "Görselimi sıkıştırır mı? Hayır — sonuç PNG olarak kayıpsız kaydedilir.",
+          "Her şey gizli mi? Evet, tüm süreç tarayıcınızda gerçekleşir."
+        ]
+      },
+      {
+        "h": "JSON-LD nedir?",
+        "p": "JSON-LD, arama motorlarının içeriği anlamasına yardımcı olan, sayfanıza gömülü yapılandırılmış veridir. Article, Product ve FAQPage gibi schema.org sözlüklerini kullanarak zengin sonuçları etkinleştirir."
+      },
+      {
+        "h": "Nasıl kullanılır?",
+        "list": [
+          "İçeriğinize uygun şema türünü seçin: article, product, person, organization, event, breadcrumb, FAQ veya webpage.",
+          "Tür için alanları doldurun — zorunlu olanlar açıkça işaretlenir.",
+          "Üretilen JSON yazarken canlı güncellenir.",
+          "Çıktıyı sayfanıza LD+JSON türünde bir script etiketi içinde ekleyin."
+        ]
+      },
+      {
+        "h": "Neden kullanmalı?",
+        "list": [
+          "Arama motorlarına içeriğinizin net bir tanımını verir.",
+          "Ürün yıldızları veya SSS parçacıkları gibi zengin sonuçlara hak kazandırabilir.",
+          "Makine tarafından okunabilir ama ziyaretçilere görünmez."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Tüm alanları doldurmam gerekir mi? Yalnızca işaretlileri; gerisi isteğe bağlı ama faydalı.",
+          "Sonradan JSON'u düzenleyebilir miyim? Evet — çıktı, dilediğiniz gibi değiştirebileceğiniz düz metindir.",
+          "Bu zengin sonuçları garanti eder mi? Hayır — yapılandırılmış veri güçlü bir sinyaldir, garanti değildir."
+        ]
+      },
+      {
+        "h": "Hreflang nedir?",
+        "p": "Hreflang etiketleri, arama motorlarına sitenizin hangi sayfasının hangi dil veya bölge sürümü olduğunu söyler ve yinelenen içerik sorunlarını önler. Hem link etiketlerinden hem XML sitemap'ten okunur."
+      },
+      {
+        "h": "Nasıl kullanılır?",
+        "list": [
+          "Sayfanın URL'sini yazın, ardından her dil sürümü için URL ekleyin.",
+          "Hızlı çiplerden dil ve bölge kodlarını seçin — en-US ve tr-TR gibi.",
+          "Araç, head bölümünüz için link etiketlerini ve sitemap bloğunu üretir.",
+          "İhtiyacınız olan parçayı sayfanıza veya sitemap dosyanıza kopyalayın."
+        ]
+      },
+      {
+        "h": "Ne zaman gerekir?",
+        "list": [
+          "Siteniz aynı içeriği birkaç dilde sunuyorsa.",
+          "Farklı bölgeler tek dili paylaşıyorsa, örneğin en-US ve en-GB.",
+          "Arama motorlarını her sayfanın kurallı sürümüne yönlendirmek istiyorsanız."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Her dil sürümünü her sayfada listelemeli miyim? Evet — her sayfa kendisi dahil tüm sürümleri içermelidir.",
+          "x-default değeri meselesi ne? Listelenen bölgelerin dışındaki kullanıcılar için geri dönüş olarak ekleyebilirsiniz.",
+          "Sitemap bloğu link etiketlerinin yerini alır mı? İki yöntemi de kullanabilirsiniz; ikisi de eşit derecede geçerlidir."
+        ]
+      },
+      {
+        "h": "robots.txt nedir?",
+        "p": "robots.txt, tarayıcılara sitenizin hangi bölümlerini isteyebileceklerini söyler. Sitemap'inizle birleştiğinde arama motorlarını önemli sayfalara yönlendirir ve gereksiz URL'leri indeksten uzak tutar."
+      },
+      {
+        "h": "Nasıl kullanılır?",
+        "list": [
+          "Bir şablon seçin: basic, strict veya SEO dostu — ya da özel kural listesiyle başlayın.",
+          "Kullanıcı aracıları ve yollar için allow ve disallow kuralları ekleyin.",
+          "Tarayıcıların bulması için sitemap URL'nizi girin.",
+          "Ortaya çıkan metni kopyalayın ve sitenizin köküne robots.txt olarak yayınlayın."
+        ]
+      },
+      {
+        "h": "Şablon notları",
+        "list": [
+          "Basic tüm tarayıcıları içeri alır ama birkaç gürültülü yolu engeller.",
+          "Strict varsayılan olarak her şeyi engeller ve yalnızca izin verdiklerinize açık olur.",
+          "SEO sitemap'inizi ekler ve taramayı indekslenebilir sayfalara odaklar."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "robots.txt indekslemeyi engeller mi? Hayır — indekslemeyi engellemek için farklı bir mekanizma olan noindex meta etiketi kullanın.",
+          "Özel dosyaları korur mu? Hayır — nazik bir istektir, güvenlik kontrolü değildir.",
+          "Dosyam nerede üretilir? Her şey tarayıcınızda yerel olarak çalışır, hiçbir şey yüklenmez."
+        ]
+      },
+      {
+        "h": "İsim çarkı nedir?",
+        "p": "İsim çarkı, her katılımcının dönen bir çarkta bir dilime sahip olduğu rastgele bir seçicidir. Çark durduğunda ibre kazananı işaretler — çekilişler, yarışmalar ve sınıf oyunları için ideal."
+      },
+      {
+        "h": "Nasıl kullanılır?",
+        "list": [
+          "Katılımcı adlarını satır satır girin.",
+          "Örnek grubu yükleyip çarkın davranışını görmek için örnek butonuna basın.",
+          "Çevir'e basın ve çarkın hızlanıp yavaşlamasını izleyin.",
+          "Kazanan çark üzerinde vurgulanır; çekilişi tekrarlamak için tekrar çevirin."
+        ]
+      },
+      {
+        "h": "Neden sevilir?",
+        "list": [
+          "Tamamen adildir — her dilim aynı boyutta ve şansa sahiptir.",
+          "Çevrimdışı çalışır ve adları cihazınızda gizli tutar.",
+          "Özellikle etkinliklerde her çekilişe eğlenceli, görsel bir an katar."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "İsimleri sonradan değiştirebilir miyim? Evet — metin kutusunu düzenleyin, çark otomatik yeniden kurulur.",
+          "Kazanan dilim gerçekten rastgele mi? Evet, son açı her seferinde rastgele bir sayıyla seçilir.",
+          "İki kazanan seçilebilir mi? Her yeni çekiliş için çarkı tekrar çevirin — eski sonucu asla hatırlamaz."
+        ]
+      },
+      {
+        "h": "Rastgele sayı üretici nedir?",
+        "p": "Rastgele sayı üretici, çekilişler, piyango benzeri seçimler, istatistiksel örnekler ve adil atamalar için kullanışlı, öngörülemeyen sayılar üretir. Bu araç herhangi bir aralıktan sayı seçmenizi sağlar."
+      },
+      {
+        "h": "Nasıl kullanılır?",
+        "list": [
+          "Aralığın en küçük ve en büyük değerini ayarlayın.",
+          "Kaç sayı istediğinizi girin ve tekrarlara izin verilip verilmeyeceğini seçin.",
+          "Listeyi doldurmak için üret'e basın, sonuçları kolayca sayın ve hepsini birden kopyalayın."
+        ]
+      },
+      {
+        "h": "İpuçları",
+        "list": [
+          "Tekrarsız modda adet, aralığın büyüklüğünü aşamaz.",
+          "Araç yalnızca tam sayılarla çalışır.",
+          "Tarayıcının kriptografik rastgele kaynağı sayesinde adil seçimler için idealdir."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Bunlar gerçekten rastgele mi? Tarayıcının kriptografik rastgele kaynağını kullanır — adil çekilişler için uygundur.",
+          "Adedim aralıktan büyük neden? Adedi aralık boyutunun altına düşürün veya tekrara izin verin.",
+          "Aynı çekilişi tekrar kullanabilir miyim? Yeniden üretmeden önce sonucu kopyalayın."
+        ]
+      },
+      {
+        "h": "Kronometre ve zamanlayıcı nedir?",
+        "p": "Kronometre, geçen süreyi hassas biçimde, her aralık için tur kayıtlarıyla ölçer. Zamanlayıcı, belirlediğiniz süreden geri sayar ve süre dolduğunda sizi uyarır. Bu araç ikisini de tek yerde sunar."
+      },
+      {
+        "h": "Nasıl kullanılır?",
+        "list": [
+          "Kronometre ve zamanlayıcı sekmeleri arasında geçiş yapın.",
+          "Kronometrede başlat'a basın, aynı butonla durdurun ve ilerledikçe tur kaydedin.",
+          "Zamanlayıcıda dakika ve saniyeyi ayarlayın, sonra başlat'a basın.",
+          "Sıfırla geçerli modu temizler; zamanlayıcı bitince zil çalar."
+        ]
+      },
+      {
+        "h": "Özellikler",
+        "list": [
+          "Ekran, hassas okumalar için saniyenin yüzde birini gösterir.",
+          "Tur süreleri, o turun bölümü ve toplamla birlikte listelenir.",
+          "Zamanlayıcı geri sayım sıfıra ulaştığında kısa bir zil sesi çalar."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Sekme değiştirirsem çalışmaya devam eder mi? Gerçek süreyi ölçer, sekme gizli olsa bile geçen değer doğru kalır.",
+          "Kaç tur kaydedebilirim? İstediğiniz kadar — kaydırılabilir bir listede tutulur.",
+          "Süreler nereye gider? Her şey cihazınızdaki bellekte kalır; hiçbir yere gönderilmez."
+        ]
       }
     ]
   },
@@ -2200,7 +2802,8 @@
       "security": "Şifre üretici, parola güç testi, SHA ve MD5 hash, AES şifreleme, dosya checksum. Verileriniz asla cihazınızdan çıkmaz.",
       "developer": "JSON ve XML biçimlendirici, Base64/URL/JWT kodlayıcı, regex testi, UUID üretici, renk ve birim dönüştürücüler.",
       "calculation": "KDV, yüzde, BMI, yaş, indirim, bahşiş, kredi ve ideal kilo hesaplayıcılar — anında sonuç.",
-      "image": "Görselleri tarayıcınızda sıkıştırın, boyutlandırın, dönüştürün ve analiz edin; yükleme gerekmez."
+      "image": "Görselleri tarayıcınızda sıkıştırın, boyutlandırın, dönüştürün ve analiz edin; yükleme gerekmez.",
+      "fun": "İsim çarkıyla rastgele kazanan seçin, sayı çekin veya kronometre ve zamanlayıcı kullanın — hepsi tarayıcınızda."
     }
   },
   "Info": {
@@ -2254,7 +2857,7 @@
       "sections": [
         {
           "h": "1. Genel Bilgiler",
-          "p": "FreetoolsY (\"biz\", \"site\"), https://freetoolsy.vercel.app adresinde ücretsiz çevrimiçi araçlar sunar. Bu politika, siteyi kullanırken hangi bilgilerin toplandığını ve bu bilgilerin nasıl kullanıldığını açıklar. Siteyi kullanarak bu politikayı kabul etmiş olursunuz."
+          "p": "FreetoolsY (\"biz\", \"site\"), https://freetoolsy.com adresinde ücretsiz çevrimiçi araçlar sunar. Bu politika, siteyi kullanırken hangi bilgilerin toplandığını ve bu bilgilerin nasıl kullanıldığını açıklar. Siteyi kullanarak bu politikayı kabul etmiş olursunuz."
         },
         {
           "h": "2. Toplanan Veriler",
@@ -2555,7 +3158,7 @@
     },
     "qrCodeGenerator": {
       "label": "Metin veya bağlantı",
-      "placeholder": "örn. https://freetoolsy.vercel.app",
+      "placeholder": "örn. https://freetoolsy.com",
       "emptyMsg": "Boş bir QR kodu oluşturulamaz. Yukarıya bir şeyler yazın.",
       "download": "PNG İndir",
       "copyText": "Metni kopyala",
@@ -3324,6 +3927,251 @@
       "copy": "Kopyala",
       "copied": "Kopyalandı!",
       "error": "Dosya açılamadı. Lütfen bir görsel seçin."
+    },
+    "currencyConverter": {
+      "amountLabel": "Tutar",
+      "amountPlaceholder": "Bir tutar girin",
+      "fromLabel": "Başlangıç",
+      "toLabel": "Hedef",
+      "rateLabel": "Kur (1 USD)",
+      "swap": "Takas",
+      "result": "{from} eşittir",
+      "reverse": "{to}",
+      "emptyState": "Dönüşüm sonucunu görmek için bir tutar girin.",
+      "note": "Kurlar, düzenleyebileceğiniz sabit referans değerleridir. Dönüşümler tamamen tarayıcınızda çalışır ve hiçbir şey yüklenmez."
+    },
+    "compoundInterest": {
+      "finalAmount": "Final bakiye",
+      "totalInvested": "Toplam yatırım",
+      "totalInterest": "Toplam faiz",
+      "principalLabel": "Başlangıç tutarı",
+      "principalPlaceholder": "ör. 10000",
+      "contributionLabel": "Aylık katkı",
+      "contributionPlaceholder": "ör. 500",
+      "rateLabel": "Yıllık faiz oranı",
+      "ratePlaceholder": "ör. 12",
+      "yearsLabel": "Süre (yıl)",
+      "yearsPlaceholder": "ör. 10",
+      "frequencyLabel": "Bileşiklendirme sıklığı",
+      "frequency_annually": "Yıllık",
+      "frequency_semiannually": "Altı ayda bir",
+      "frequency_quarterly": "Üç ayda bir",
+      "frequency_monthly": "Aylık",
+      "frequency_daily": "Günlük",
+      "note": "Bileşik büyümenin matematiksel bir tahminidir. Gerçek hesaplarda vergi, ücretler veya farklı yuvarlamalar olabilir.",
+      "hideGrowth": "Yıllık tabloyu gizle",
+      "showGrowth": "Yıllık tabloyu göster",
+      "yearCol": "Yıl",
+      "valueCol": "Bakiye",
+      "investedCol": "Yatırım",
+      "interestCol": "Faiz",
+      "emptyState": "Büyüme planınızı görmek için tutarı ve oranı girin."
+    },
+    "salaryCalculator": {
+      "grossLabel": "Brüt maaş",
+      "grossPlaceholder": "ör. 75000",
+      "note": "2026 Türkiye oranlarıyla net maaşı tahmin eder: %14 SGK, %1 işsizlik sigortası ve artan oranlı gelir vergisi dilimleri. Muhasebeciniz küçük farklar uygulayabilir.",
+      "emptyState": "Net tutarı görmek için brüt maaşınızı girin.",
+      "netMonthly": "Net aylık",
+      "monthlyTax": "Aylık gelir vergisi",
+      "sggkShare": "SGK + işsizlik",
+      "netYearly": "Net yıllık"
+    },
+    "sqlFormatter": {
+      "label": "SQL",
+      "placeholder": "SQL sorgunuzu buraya yapıştırın…",
+      "keywordUpper": "BÜYÜK harf anahtar kelimeler",
+      "keywordLower": "küçük harf anahtar kelimeler",
+      "keywordKeep": "Yazıldığı gibi bırak",
+      "indent2": "2 boşluk",
+      "indent4": "4 boşluk",
+      "minify": "Küçült (tek satır)",
+      "outputLabel": "Biçimlendirilmiş çıktı",
+      "emptyState": "Biçimlendirilmiş SQL burada görünür.",
+      "copied": "Kopyalandı!",
+      "copy": "Kopyala"
+    },
+    "jsonXmlConverter": {
+      "modeJsonToXml": "JSON'dan XML'e",
+      "modeXmlToJson": "XML'den JSON'a",
+      "label": "Girdi",
+      "placeholder": "JSON veya XML yapıştırın…",
+      "convert": "Dönüştür",
+      "outputLabel": "Çıktı",
+      "emptyState": "Dönüştürülen çıktı burada görünür.",
+      "copied": "Kopyalandı!",
+      "copy": "Kopyala",
+      "note": "Nesneler öğeye dönüşür, diziler öğelerini tekrar eder ve XML öznitelikleri JSON'da başında et işaretiyle geri yazılır. Tüm dönüşüm tarayıcınızda yapılır.",
+      "emptyInput": "Önce biraz JSON veya XML yapıştırın.",
+      "invalidXml": "XML düzgün biçimlendirilmiş değil. Lütfen içeriği kontrol edin."
+    },
+    "markdownHtmlConverter": {
+      "modeMdToHtml": "Markdown'dan HTML'e",
+      "modeHtmlToMd": "HTML'den Markdown'a",
+      "label": "Girdi",
+      "placeholder": "Markdown veya HTML yazın ya da yapıştırın…",
+      "sample": "Örnek",
+      "showHtml": "HTML'i göster",
+      "preview": "Önizleme",
+      "outputLabel": "Çıktı",
+      "emptyState": "Dönüştürülen çıktı burada görünür.",
+      "copied": "Kopyalandı!",
+      "copy": "Kopyala"
+    },
+    "hmacGenerator": {
+      "textLabel": "Mesaj",
+      "textPlaceholder": "İmzalamak istediğiniz mesaj",
+      "secretLabel": "Gizli anahtar",
+      "secretPlaceholder": "Paylaşılan gizli anahtar",
+      "algorithmLabel": "Hash fonksiyonu",
+      "working": "İmzalanıyor…",
+      "generate": "HMAC Üret",
+      "hexLabel": "Hex",
+      "base64Label": "Base64",
+      "digestLabel": "Hesaplanan:",
+      "copied": "Kopyalandı!",
+      "copy": "Kopyala",
+      "note": "Web Crypto API kullanılır — anahtar ve mesaj tarayıcınızdan asla çıkmaz.",
+      "emptyText": "İmzalamak için bir mesaj girin.",
+      "emptySecret": "Bir gizli anahtar girin.",
+      "error": "İmza oluşturulamadı. Lütfen tekrar deneyin."
+    },
+    "htmlTableGenerator": {
+      "rowsLabel": "Satır",
+      "colsLabel": "Sütun",
+      "dataLabel": "Veri",
+      "dataPlaceholder": "Ayrılmış değerler — sekme, virgül, noktalı virgül veya dikey çizgi…",
+      "sample": "Örnek",
+      "generate": "Oluştur",
+      "showCode": "Kodu göster",
+      "preview": "Önizleme",
+      "copied": "Kopyalandı!",
+      "copy": "Kopyala",
+      "extraRows": "{count, plural, one {1 fazladan satır} other {{count} fazladan satır}} tablonuza eklendi."
+    },
+    "faviconGenerator": {
+      "foregroundLabel": "Ön plan",
+      "backgroundLabel": "Arka plan",
+      "textLabel": "Metin",
+      "sizeLabel": "Boyut (px)",
+      "transparentLabel": "Şeffaf arka plan",
+      "error": "Favicon çizilemedi. Lütfen tekrar deneyin.",
+      "working": "Üretiliyor…",
+      "generate": "Favicon Üret",
+      "altPng": "Oluşturulan PNG favicon önizlemesi",
+      "downloadPng": "PNG İndir",
+      "icoLabel": "ICO",
+      "altIco": "Oluşturulan ICO favicon önizlemesi",
+      "downloadIco": "ICO İndir",
+      "copied": "Kopyalandı!",
+      "copyBase64": "Base64 Kopyala",
+      "note": "Canvas API ile tarayıcınızda yerel olarak üretilir — hiçbir şey yüklenmez."
+    },
+    "imageCrop": {
+      "replace": "Görseli değiştir",
+      "dropHint": "Bir görsel bırakın veya göz atmak için tıklayın",
+      "tooltip": "Kırpma alanını seçmek için görselin üzerine sürükleyin.",
+      "altImage": "Kaynak görsel",
+      "size": "{width} × {height} px",
+      "crop": "Kırp",
+      "reset": "Sıfırla",
+      "altResult": "Kırpılmış sonuç",
+      "download": "Kırpılmışı indir",
+      "note": "Her şey tarayıcınızda çalışır — görsel cihazınızdan asla çıkmaz.",
+      "error": "Görsel işlenemedi. Lütfen başka bir dosya deneyin."
+    },
+    "imageWatermark": {
+      "missingImages": "Hem bir temel görsel hem bir kaplama görseli seçin.",
+      "invalidOpacity": "Opaklık 0 ile 100 arasında olmalıdır.",
+      "error": "Filigran oluşturulamadı. Lütfen tekrar deneyin.",
+      "working": "Uygulanıyor…",
+      "apply": "Filigran Uygula",
+      "baseLabel": "Temel görsel",
+      "overlayLabel": "Kaplama görseli",
+      "positionLabel": "Konum",
+      "posBottomRight": "Sağ alt",
+      "posBottomLeft": "Sol alt",
+      "posTopRight": "Sağ üst",
+      "posTopLeft": "Sol üst",
+      "posCenter": "Orta",
+      "opacityLabel": "Opaklık",
+      "altBase": "Temel görsel önizlemesi",
+      "altOverlay": "Kaplama görseli önizlemesi",
+      "altResult": "Filigranlı sonuç",
+      "download": "Sonucu indir",
+      "note": "Birleştirme tamamen tarayıcınızda olur — görselleriniz asla yüklenmez."
+    },
+    "jsonLdGenerator": {
+      "nameLabel": "Ad",
+      "urlLabel": "URL",
+      "descriptionLabel": "Açıklama",
+      "invalidUrl": "URL http veya https ile başlamalıdır.",
+      "typeLabel": "Şema türü",
+      "generate": "JSON-LD Üret",
+      "copied": "Kopyalandı!",
+      "copy": "Kopyala",
+      "note": "Çıktı, LD+JSON türünde bir script etiketi içinde sayfanıza yapıştırılmaya hazırdır. Bir alan boşken güvenli örneğe varsayılan değer kullanılır."
+    },
+    "hreflangGenerator": {
+      "urlLabel": "Sayfa URL'si",
+      "langLabel": "Diller",
+      "generate": "Etiketleri Üret",
+      "emptyUrl": "Önce sayfa URL'sini girin.",
+      "invalidUrl": "URL http veya https ile başlamalıdır.",
+      "note": "Head bölümünüz için link etiketleri ve seçilen her dil sürümünü içeren XML sitemap bloğu üretir."
+    },
+    "robotsTxtGenerator": {
+      "presetLabel": "Şablon",
+      "siteLabel": "Site",
+      "ruleLabel": "Yol",
+      "actionLabel": "İşlem",
+      "disallow": "Yasakla",
+      "allow": "İzin ver",
+      "add": "Ekle",
+      "remove": "Kuralı kaldır",
+      "copied": "Kopyalandı!",
+      "copy": "Kopyala",
+      "note": "Bir şablonu kendi kurallarınız ve site adresinizle birleştirin. Sonucu alan adınızın köküne robots.txt olarak yayınlayın."
+    },
+    "wheelOfNames": {
+      "emptyWheel": "Aşağıya adları ekleyin ve Çevir'e basın.",
+      "winner": "{name} kazandı!",
+      "namesLabel": "Adlar",
+      "namesPlaceholder": "Satır başına bir ad…",
+      "count": "{count, plural, one {1 ad} other {{count} ad}} çarkta",
+      "sample": "Örnek",
+      "spinning": "Dönüyor…",
+      "spin": "Çevir",
+      "reset": "Sıfırla"
+    },
+    "randomNumberGenerator": {
+      "minLabel": "Minimum",
+      "maxLabel": "Maksimum",
+      "countLabel": "Adet",
+      "noRepeatLabel": "Tekrarsız",
+      "generate": "Üret",
+      "copied": "Kopyalandı!",
+      "copy": "Kopyala",
+      "invalidRange": "Aralık için geçerli tam sayılar girin.",
+      "rangeOrder": "Minimum, maksimumdan büyük olamaz.",
+      "invalidCount": "Kaç sayı üretileceğini girin.",
+      "noRepeatLimit": "Tekrarsız çekimde aralıktaki her değerden en fazla bir tane çekebilirsiniz."
+    },
+    "stopwatchTimer": {
+      "tabStopwatch": "Kronometre",
+      "tabTimer": "Zamanlayıcı",
+      "finished": "Süre doldu!",
+      "minutes": "Dakika",
+      "seconds": "Saniye",
+      "start": "Başlat",
+      "pause": "Durdur",
+      "restart": "Yeniden başlat",
+      "reset": "Sıfırla",
+      "lap": "Tur",
+      "lapCol": "Tur",
+      "splitCol": "Bölüm",
+      "totalCol": "Toplam",
+      "note": "Zamanlama tamamen bu cihazda çalışır. Zamanlayıcı bitince kısa bir zil çalar."
     }
   }
 }

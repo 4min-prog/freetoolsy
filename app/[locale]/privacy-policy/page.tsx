@@ -29,8 +29,8 @@ export async function generateMetadata({
           ? "/privacy-policy"
           : `/${params.locale}/privacy-policy`,
       languages: {
-        en: "https://freetoolsy.vercel.app/privacy-policy",
-        tr: "https://freetoolsy.vercel.app/tr/privacy-policy",
+        en: "https://freetoolsy.com/privacy-policy",
+        tr: "https://freetoolsy.com/tr/privacy-policy",
       },
     },
   };

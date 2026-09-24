@@ -87,7 +87,8 @@
     "security": "Security",
     "developer": "Developer",
     "calculation": "Calculation",
-    "image": "Image"
+    "image": "Image",
+    "fun": "Fun"
   },
   "Faq": {
     "title": "Frequently Asked Questions",
@@ -594,6 +595,125 @@
       "title": "JWT Generator — Free Online Tool",
       "pageDesc": "Create signed JWT tokens free in your browser: edit the header and payload JSON, enter your secret and copy an HS256 token with visible parts.",
       "intro": "Build a signed HS256 JSON Web Token from your own header, payload and secret — right in the browser."
+    },
+    "currency-converter": {
+      "name": "Currency Converter",
+      "desc": "Converts money between currencies instantly using fixed reference rates you can override.",
+      "title": "Currency Converter — Free Online Tool",
+      "pageDesc": "Convert currency online instantly between USD, EUR, TRY, GBP and more, with editable exchange rates. Free and fully client-side; amounts never leave your browser.",
+      "intro": "Type an amount, pick the currencies and see the converted result — optionally with your own rate."
+    },
+    "compound-interest-calculator": {
+      "name": "Compound Interest Calculator",
+      "desc": "Calculates compound interest growth with regular contributions and a full yearly breakdown.",
+      "title": "Compound Interest Calculator — Free Online Tool",
+      "pageDesc": "Calculate compound interest online with annual rate, compound frequency and monthly contributions, plus a yearly growth table. Free and fully client-side.",
+      "intro": "See how your savings grow with compound interest, extra contributions and the power of time."
+    },
+    "salary-calculator": {
+      "name": "Net Salary Calculator",
+      "desc": "Estimates net salary from your gross wage after SGK, unemployment and income tax deductions.",
+      "title": "Net Salary Calculator — Free Online Tool",
+      "pageDesc": "Estimate your net salary from a gross wage with SGK, unemployment insurance and income tax deductions computed instantly. Free and fully client-side.",
+      "intro": "Enter your gross wage to see the deductions and your net monthly and yearly salary."
+    },
+    "sql-formatter": {
+      "name": "SQL Formatter",
+      "desc": "Beautifies or minifies SQL queries with your choice of keyword casing and indentation.",
+      "title": "SQL Formatter — Free Online Tool",
+      "pageDesc": "Format or minify SQL queries online free: pick keyword casing, 2 or 4 space indentation and copy the result instantly. Runs entirely in your browser.",
+      "intro": "Turn messy or minified SQL into readable, consistently formatted statements."
+    },
+    "json-xml-converter": {
+      "name": "JSON ↔ XML Converter",
+      "desc": "Converts JSON to XML and XML to JSON in both directions with arrays and attributes supported.",
+      "title": "JSON ↔ XML Converter — Free Online Tool",
+      "pageDesc": "Convert JSON to XML or XML to JSON online in either direction. Arrays and attributes are preserved, and errors are reported clearly. Free and private.",
+      "intro": "Switch between JSON and XML for your data in one click in either direction."
+    },
+    "markdown-html-converter": {
+      "name": "Markdown ↔ HTML Converter",
+      "desc": "Converts Markdown to HTML and HTML back to Markdown with a live preview.",
+      "title": "Markdown ↔ HTML Converter — Free Online Tool",
+      "pageDesc": "Convert Markdown to HTML or HTML to Markdown online free. Headings, lists, tables, code and links are supported, with a live preview. Runs in your browser.",
+      "intro": "Write Markdown and see the HTML, or paste HTML and read it back as Markdown."
+    },
+    "hmac-generator": {
+      "name": "HMAC Generator",
+      "desc": "Computes HMAC-SHA256 or HMAC-SHA512 signatures and shows them in hex and Base64.",
+      "title": "HMAC Generator — Free Online Tool",
+      "pageDesc": "Generate HMAC-SHA256 or HMAC-SHA512 signatures online free using the Web Crypto API. Get both hex and Base64 forms instantly; everything runs in your browser.",
+      "intro": "Sign any message with a secret key and read the HMAC digest in hex or Base64."
+    },
+    "html-table-generator": {
+      "name": "HTML Table Generator",
+      "desc": "Generates ready-to-paste HTML table code from rows, columns and pasted data with a live preview.",
+      "title": "HTML Table Generator — Free Online Tool",
+      "pageDesc": "Generate HTML table code online free: set the row and column count, paste tab- or comma-separated data and preview or copy the result. Runs in your browser.",
+      "intro": "Build a clean HTML table from your data and paste the code straight into your page."
+    },
+    "favicon-generator": {
+      "name": "Favicon Generator",
+      "desc": "Draws a favicon from your text and colors and downloads it as PNG or ICO.",
+      "title": "Favicon Generator — Free Online Tool",
+      "pageDesc": "Generate a favicon online free from your text, colors and size, then download it as PNG or ICO. Transparent backgrounds are supported; everything runs in your browser.",
+      "intro": "Create a small brand icon from your initials or text and export it as PNG or ICO."
+    },
+    "image-crop": {
+      "name": "Image Cropper",
+      "desc": "Crops any image to the area you select by dragging directly in your browser.",
+      "title": "Image Cropper — Free Online Tool",
+      "pageDesc": "Crop images online free: drag to select the area, adjust the crop box and download the result as PNG. Private by design — your image never leaves your browser.",
+      "intro": "Drag over the image to choose the area you want and download the cropped result."
+    },
+    "image-watermark": {
+      "name": "Image Watermark",
+      "desc": "Adds a logo or image watermark at the position and opacity you choose.",
+      "title": "Image Watermark — Free Online Tool",
+      "pageDesc": "Watermark images online free: upload a base image and a logo, pick the position and opacity, and download the result as PNG. Runs entirely in your browser.",
+      "intro": "Protect your photos by adding a logo watermark at your preferred position and strength."
+    },
+    "jsonld-generator": {
+      "name": "JSON-LD Generator",
+      "desc": "Creates schema.org JSON-LD structured data for Article, Product, FAQPage, Events and more.",
+      "title": "JSON-LD Generator — Free Online Tool",
+      "pageDesc": "Generate schema.org JSON-LD online free for Article, Product, Person, FAQPage and more, ready to paste into your page. Runs entirely in your browser.",
+      "intro": "Build structured data for your content type and copy the JSON-LD script into your page."
+    },
+    "hreflang-generator": {
+      "name": "Hreflang Generator",
+      "desc": "Builds hreflang link tags and sitemap blocks for multilingual sites in one click.",
+      "title": "Hreflang Generator — Free Online Tool",
+      "pageDesc": "Generate hreflang tags online free for your multilingual site: pick the locales and get link tags plus an XML sitemap block instantly. Runs in your browser.",
+      "intro": "Create hreflang tags and a sitemap block so search engines link your language versions."
+    },
+    "robots-txt-generator": {
+      "name": "Robots.txt Generator",
+      "desc": "Creates robots.txt content from presets and your own allow and disallow rules.",
+      "title": "Robots.txt Generator — Free Online Tool",
+      "pageDesc": "Generate robots.txt online free from tried presets or your own allow/disallow rules, with your sitemap URL included. Copy the result instantly — runs in your browser.",
+      "intro": "Build a robots.txt that tells search engines exactly what to crawl."
+    },
+    "wheel-of-names": {
+      "name": "Wheel of Names",
+      "desc": "Spin a wheel of names to pick a random winner for contests and raffles.",
+      "title": "Wheel of Names — Free Online Tool",
+      "pageDesc": "Spin a wheel of names online free to pick a random winner. Add the participants, press spin and watch the wheel decide — entirely in your browser.",
+      "intro": "Put names on the wheel, spin it and let luck choose the winner."
+    },
+    "random-number-generator": {
+      "name": "Random Number Generator",
+      "desc": "Generates lists of random numbers within any range, with or without repeats.",
+      "title": "Random Number Generator — Free Online Tool",
+      "pageDesc": "Generate random numbers online free: set the range and count, choose to avoid repeats and copy the result. Perfect for draws and picks — runs in your browser.",
+      "intro": "Pick a range and count, and get random numbers you can use instantly."
+    },
+    "stopwatch-timer": {
+      "name": "Stopwatch & Timer",
+      "desc": "Measures elapsed time with laps, or counts down from any time you set.",
+      "title": "Stopwatch & Timer — Free Online Tool",
+      "pageDesc": "Use a stopwatch with lap times or a countdown timer online free — no app needed. Precisely tracks hundredths of a second and works entirely in your browser.",
+      "intro": "Time anything: start the stopwatch and record laps, or set a countdown and wait for the beep."
     }
   },
   "ToolContent": {
@@ -2159,6 +2279,488 @@
           "Where does the secret go? Nowhere — signing happens entirely in your browser and your secret is never uploaded or stored.",
           "Can I use a different algorithm? The default is HS256; you may edit the header JSON, but the signature itself is always computed with HMAC-SHA256."
         ]
+      },
+      {
+        "h": "What is a currency converter?",
+        "p": "A currency converter translates an amount from one currency to another using an exchange rate. This tool uses a set of reference rates based on the US dollar that you can adjust at any time to match the real market."
+      },
+      {
+        "h": "How to use",
+        "list": [
+          "Enter the amount you want to convert in the From field.",
+          "Pick the source currency and the target currency from the dropdowns.",
+          "Optionally edit the rate shown under the result to use your own exchange rate.",
+          "Press the swap button to reverse the two currencies quickly."
+        ]
+      },
+      {
+        "h": "Tips",
+        "list": [
+          "Rates are static references, not live market data — for real transactions always check your bank or a live rate source.",
+          "The swap button flips the From and To currencies and recomputes the result instantly.",
+          "You can type decimals with a dot; commas in the amount are ignored."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Are the rates live? No — the built-in rates are fixed reference values that you can edit manually to reflect the current market.",
+          "Is my data sent anywhere? No — every conversion happens entirely in your browser.",
+          "How do I set my own rate? During override mode the table shows every currency at your custom rate minus that base symbol, starting from USD."
+        ]
+      },
+      {
+        "h": "What is compound interest?",
+        "p": "With compound interest, the interest you earn is added to your principal, so the next period's interest is calculated on a growing base. Over time this creates exponential growth — the earlier you start, the more powerful it becomes."
+      },
+      {
+        "h": "How to use",
+        "list": [
+          "Enter the starting amount, the annual interest rate in percent and how many years the money will grow.",
+          "Choose how often interest is compounded — yearly, monthly or daily.",
+          "Optionally add a fixed monthly contribution and its yearly growth rate.",
+          "The table below shows the balance, deposits and interest gained at the end of each year."
+        ]
+      },
+      {
+        "h": "What the results mean",
+        "list": [
+          "Total interest: the part of your final balance that comes purely from compounding.",
+          "Total deposits: the principal plus every additional contribution you made.",
+          "The yearly table lets you see exactly when compounding starts to accelerate."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Is the interest rate simple or compound? It is always compound — that is the point of the calculator.",
+          "How do monthly contributions work? They are added at the end of each month and then grow together with the balance.",
+          "Does this match real savings accounts? Real accounts also have tax and fees; treat the result as a clean mathematical estimate."
+        ]
+      },
+      {
+        "h": "What is a net salary?",
+        "p": "Net salary is what actually lands in your account after legal deductions are removed from your gross wage. In Turkey those deductions are the SGK employee share, the unemployment insurance share and income tax."
+      },
+      {
+        "h": "What is deducted",
+        "list": [
+          "SSI employee share: 14 percent of the gross wage paid into social security.",
+          "Unemployment insurance employee share: 1 percent of the gross wage.",
+          "Income tax: calculated with progressive brackets for the year 2026.",
+          "Stamp tax: 7.59 per mille of the gross wage."
+        ]
+      },
+      {
+        "h": "How to use",
+        "p": "Type your gross monthly wage. The tool immediately lists each deduction and shows your net monthly salary plus the yearly totals that reflect those 12 months."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Is the calculation exact? It follows the 2026 Turkish brackets and standard rates, but state insurance and income tax laws change yearly, so treat it as an estimate.",
+          "Does it include the employer share? Yes — the employer cost line shows the total your employer pays on top of your wage.",
+          "Why is the yearly tax not just twelve times the monthly one? Each month is computed on the same brackets here, so it is a clean estimate rather than a precise annual filing."
+        ]
+      },
+      {
+        "h": "What is SQL formatting?",
+        "p": "SQL formatting rewrites a query with consistent indentation, line breaks and keyword casing so it becomes readable at a glance. This tool beautifies or minifies statements entirely in your browser."
+      },
+      {
+        "h": "How to use",
+        "list": [
+          "Paste your SQL query into the editor.",
+          "Choose the keyword style: uppercase like SELECT or lowercase like select.",
+          "Pick 2 or 4 spaces of indentation, then press Format.",
+          "Use Minify to squeeze the query onto as few lines as possible."
+        ]
+      },
+      {
+        "h": "What it handles",
+        "list": [
+          "SELECT, INSERT, UPDATE and DELETE statements including subqueries and joins.",
+          "Strings, numbers and quoted identifiers are left untouched.",
+          "Comments and common PostgreSQL and MySQL syntax are preserved."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Does it run online? It runs locally inside your browser; your query never leaves your device.",
+          "Can it break my query? A well-formed query is only re-spaced and re-cased, so its meaning does not change.",
+          "What about very large scripts? Multiple statements are supported for common cases too — split them on semicolons."
+        ]
+      },
+      {
+        "h": "What is this converter?",
+        "p": "JSON and XML are two common ways to structure data. This tool lets you switch between them in both directions, keeping arrays, objects and attributes intact."
+      },
+      {
+        "h": "How to use",
+        "list": [
+          "Select the direction: JSON to XML or XML to JSON.",
+          "Paste your input; it is validated automatically as you type.",
+          "Copy the converted result with the copy button or download it as a file."
+        ]
+      },
+      {
+        "h": "Known conventions",
+        "list": [
+          "JSON objects become XML elements with children.",
+          "Arrays repeat the same element name for each item.",
+          "XML attributes are written back as keys prefixed with an at sign."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "What about XML attributes? They are preserved and represented with a leading at sign followed by the attribute name in the JSON output.",
+          "Can it handle mixed content? Text and child elements inside the same node are supported.",
+          "My XML has a declaration — is that okay? The XML declaration is parsed and reproduced in the output."
+        ]
+      },
+      {
+        "h": "What is Markdown?",
+        "p": "Markdown is a lightweight syntax for formatting text — headings, bold, lists and links — that stays readable as plain text. This tool converts Markdown to HTML and back."
+      },
+      {
+        "h": "How to use",
+        "list": [
+          "Choose the direction you need, then paste or type your source text.",
+          "Markdown to HTML renders your syntax into clean HTML tags with a live preview.",
+          "HTML to Markdown takes pasted HTML and writes it back as readable Markdown."
+        ]
+      },
+      {
+        "h": "What is supported",
+        "list": [
+          "Headings, paragraphs, blockquotes and code blocks with language hints.",
+          "Bold, italic, links, images, ordered and unordered lists, and tables.",
+          "Inline code, horizontal rules and line breaks."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Does the preview match the output? Yes — the preview renders exactly what the generated HTML produces.",
+          "Can I convert back and forth safely? Common patterns survive both directions; exotic nesting may lose some detail.",
+          "Where does my text go? Nowhere — conversion runs entirely in your browser."
+        ]
+      },
+      {
+        "h": "What is HMAC?",
+        "p": "HMAC (hash-based message authentication code) proves that a message has not been tampered with and was created by someone who knows the secret key. It combines the message with a key using a hash function such as SHA-256."
+      },
+      {
+        "h": "How to use",
+        "list": [
+          "Type or paste your message and enter your secret key.",
+          "Pick the hash function: SHA-256 for speed or SHA-512 for a longer digest.",
+          "Choose between plain text and Base64 for the message and the key.",
+          "Copy the signature as raw hex or as standard Base64."
+        ]
+      },
+      {
+        "h": "How it is computed",
+        "p": "The Web Crypto API computes the signature natively in your browser. The hex form is the raw digest; the Base64 form is the same bytes encoded so it fits comfortably in text fields and HTTP headers."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Is HMAC encryption? No — HMAC is a signature that proves integrity and authenticity, not a way to hide content.",
+          "Can the same message produce different signatures? Only if the key or the hash function changes; the algorithm itself is deterministic.",
+          "Where does the key go? Nowhere — it is used in your browser and never sent to a server."
+        ]
+      },
+      {
+        "h": "What is an HTML table generator?",
+        "p": "An HTML table generator turns simple grid data into a ready-to-paste table element with header rows and proper structure, so you never hand-write the markup."
+      },
+      {
+        "h": "How to use",
+        "list": [
+          "Set how many rows and columns you want.",
+          "Paste tab-separated, comma-separated or custom-delimited data, or fill cells by hand.",
+          "Use the first row as table headers with the toggle.",
+          "Preview your table and copy the generated HTML code."
+        ]
+      },
+      {
+        "h": "Tips",
+        "list": [
+          "The delimiter dropdown lets you use semicolons, commas, tabs or pipes depending on where the data came from.",
+          "Copy the code and paste it into any HTML page or content management system.",
+          "Header and border classes are included so the table renders cleanly out of the box."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Can I use my own cell values? Yes — every cell in the grid can be edited before generating.",
+          "What if my data has more columns than the grid? Extra values are filled into additional columns automatically, up to the limit.",
+          "Where is my data processed? Entirely in your browser — nothing is uploaded and no wrapper markup is forced on you."
+        ]
+      },
+      {
+        "h": "What is a favicon?",
+        "p": "A favicon is the small icon shown in your browser tab next to the page title. You can generate one here from a piece of text and your choice of colors, with no image editor required."
+      },
+      {
+        "h": "How to use",
+        "list": [
+          "Enter the text you want to display, such as your brand initial.",
+          "Choose the background color, text color and font size.",
+          "Set the pixel size and pick PNG or ICO as the output format.",
+          "Download the result and use it as your site icon."
+        ]
+      },
+      {
+        "h": "About the formats",
+        "list": [
+          "PNG is widely supported in modern browsers through the standard favicon link tag.",
+          "ICO is the classic Windows format and the safest choice for older browsers.",
+          "Both files render the same icon — pick whichever your host or framework expects."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Does the text wrap into multiple lines? Longer text is scaled down to fit the square canvas.",
+          "Why does the icon look different on some devices? Bigger browser icons are drawn by the browser from the same image; effects are kept minimal on purpose.",
+          "Is the image stored anywhere? No — everything is generated and exported locally in your browser."
+        ]
+      },
+      {
+        "h": "What is cropping?",
+        "p": "Cropping removes the parts of an image you do not want, keeping only the area you select. This tool lets you choose the crop region by dragging directly on the image."
+      },
+      {
+        "h": "How to use",
+        "list": [
+          "Upload or drag an image into the canvas.",
+          "Drag over the image to draw the crop area you want to keep.",
+          "Use the same handle to resize or repaint the selection.",
+          "Click the crop button to download the result as a PNG."
+        ]
+      },
+      {
+        "h": "Tips",
+        "list": [
+          "The crop box keeps the rectangle you drew.",
+          "Use the reset button to start your selection over.",
+          "The preview shows exactly where the cut will happen before you export."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Does cropping reduce quality? No sharpening or resampling is applied beyond the actual cut.",
+          "Can I crop very large images? Yes — the export uses the original pixel data.",
+          "Is my image uploaded to a server? No — everything runs locally in your browser."
+        ]
+      },
+      {
+        "h": "What is watermarking?",
+        "p": "A watermark overlays your logo or another image on top of a photo to claim ownership or reduce silent reuse. This tool places the overlay at the position and opacity you choose."
+      },
+      {
+        "h": "How to use",
+        "list": [
+          "Upload a base image and a logo or mark to place on top of it.",
+          "Pick the position: top, center or bottom, and left or right.",
+          "Adjust the opacity and the size of the watermark with the sliders.",
+          "Download the combined result as a PNG."
+        ]
+      },
+      {
+        "h": "Tips",
+        "list": [
+          "A semi-transparent mark around 40 percent covers the photo without hiding it.",
+          "Logos on the bottom-right corner are often left unobstructed by content.",
+          "The output keeps the full resolution of the base image."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Can I use text as a watermark? This tool works with image overlays; use a transparent PNG of your text or logo.",
+          "Does it compress my image? No — the result is saved losslessly as PNG.",
+          "Is everything private? Yes, the whole process happens in your browser."
+        ]
+      },
+      {
+        "h": "What is JSON-LD?",
+        "p": "JSON-LD is structured data embedded in your page that helps search engines understand the content. It uses schema.org vocabularies like Article, Product and FAQPage to enable enriched results."
+      },
+      {
+        "h": "How to use",
+        "list": [
+          "Pick the schema type that matches your content: article, product, person, organization, event, breadcrumb, FAQ or webpage.",
+          "Fill in the fields for that type — required ones are marked clearly.",
+          "The generated JSON updates live as you type.",
+          "Add the output to your page inside a script tag with the type application of JSON data."
+        ]
+      },
+      {
+        "h": "Why use it",
+        "list": [
+          "It gives search engines an unambiguous description of your content.",
+          "It can qualify your page for rich results such as product stars or FAQ snippets.",
+          "It is machine-readable yet invisible to visitors."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Do I need all fields? Only the marked ones; the rest are optional but useful.",
+          "Can I edit the JSON afterwards? Yes — the output is plain text you can adjust freely.",
+          "Does this guarantee rich results? No — structured data is a strong signal, not a guarantee."
+        ]
+      },
+      {
+        "h": "What is hreflang?",
+        "p": "Hreflang tags tell search engines which page serves which language or regional version of your site, preventing duplicate-content issues. They are read both from link tags and from the XML sitemap."
+      },
+      {
+        "h": "How to use",
+        "list": [
+          "Type the URL of the page, then add the URL for each language version.",
+          "Pick the language and region codes from the quick chips — like en-US and tr-TR.",
+          "The tool generates the link tags for your head section and the sitemap block.",
+          "Copy whichever part you need into your page or sitemap file."
+        ]
+      },
+      {
+        "h": "When you need it",
+        "list": [
+          "Your site serves the same content in several languages.",
+          "Different regions share one language, such as en-US and en-GB.",
+          "You want to direct search engines to the canonical version of each page."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Do I link every language on every page? Yes — each page should list all the versions, including itself.",
+          "What about the x-default value? You can add it as a fallback for users outside the listed regions.",
+          "Does the sitemap block replace the link tags? You can use either method or both; they are equally valid."
+        ]
+      },
+      {
+        "h": "What is robots.txt?",
+        "p": "robots.txt tells crawlers which parts of your site they may request. Combined with your sitemap, it steers search engines to the pages that matter while keeping unnecessary URLs out of the index."
+      },
+      {
+        "h": "How to use",
+        "list": [
+          "Choose a preset: basic, strict or SEO-friendly — or start from the custom rule list.",
+          "Add allow and disallow rules for user agents and paths.",
+          "Enter the URL of your sitemap so crawlers find it.",
+          "Copy the resulting text and publish it as robots.txt at the root of your site."
+        ]
+      },
+      {
+        "h": "Preset notes",
+        "list": [
+          "Basic lets every crawler in but blocks a few noisy paths.",
+          "Strict disallows everything by default and only allows what you permit.",
+          "SEO adds your sitemap and keeps crawling focused on indexable pages."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Does robots.txt block indexing? No — to block indexing use a noindex robots meta tag, which is a different mechanism.",
+          "Does it protect private files? No — it is a polite request, not a security control.",
+          "Where is my file generated? Everything runs locally in your browser and nothing is uploaded."
+        ]
+      },
+      {
+        "h": "What is the wheel of names?",
+        "p": "The wheel of names is a random picker where every participant gets a slice of a spinning wheel. When the wheel stops, the needle marks the winner — perfect for raffles, contests and classroom games."
+      },
+      {
+        "h": "How to use",
+        "list": [
+          "Enter the participant names, one per line.",
+          "Press the sample button to load an example group and see how the wheel behaves.",
+          "Press Spin and watch the wheel accelerate and slow down.",
+          "The winner is highlighted on the wheel; press Spin again to redo the draw."
+        ]
+      },
+      {
+        "h": "Why people like it",
+        "list": [
+          "It is completely fair — every slice has the same size and chance.",
+          "It works offline and keeps the names private on your device.",
+          "It adds a fun, visual moment to any draw, especially at events."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Can I change the names later? Yes — edit the text box and the wheel rebuilds automatically.",
+          "Is the winning slice truly random? Yes, the final angle is picked with a random number each time.",
+          "Can two winners be picked? Run the wheel again for every new draw — it never remembers the old result."
+        ]
+      },
+      {
+        "h": "What is a random number generator?",
+        "p": "A random number generator produces numbers that cannot be predicted, useful for draws, lottery-like picks, statistical samples and fair assignments. This one lets you pick numbers from any range."
+      },
+      {
+        "h": "How to use",
+        "list": [
+          "Set the smallest and largest value of the range.",
+          "Enter how many numbers you want, then choose whether repeats are allowed.",
+          "Press generate to fill the list, count the results easily, and copy them all at once."
+        ]
+      },
+      {
+        "h": "Tips",
+        "list": [
+          "With repeats off, the count cannot exceed the size of the range.",
+          "The tool works with whole numbers only.",
+          "It is well suited for fair picks thanks to the browser's cryptographic random source."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Are these properly random? They use the browser's cryptographic random source, which is suitable for fair draws.",
+          "Why is my count bigger than the range? Reduce the count below the range size or allow repeats.",
+          "Can I reuse the same draw? Copy the result before generating again."
+        ]
+      },
+      {
+        "h": "What is a stopwatch and a timer?",
+        "p": "A stopwatch measures elapsed time precisely, with lap records for each interval. A timer counts down from a set duration and alerts you when the time is up. This tool gives you both in one place."
+      },
+      {
+        "h": "How to use",
+        "list": [
+          "Switch between the stopwatch and the timer tab.",
+          "On the stopwatch, press start, pause with the same button, and record laps as you go.",
+          "On the timer, set the minutes and seconds, then press start.",
+          "Reset clears the current mode; the timer rings when it finishes."
+        ]
+      },
+      {
+        "h": "Features",
+        "list": [
+          "The display shows hundredths of a second for precise readings.",
+          "Lap times are listed with the split for that round and the running total.",
+          "The timer plays a short beep when the countdown reaches zero."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Does it keep running if I switch tabs? It measures real time, so the elapsed value stays correct even when the tab is hidden.",
+          "How many laps can I record? As many as you want — they are kept in a scrollable list.",
+          "Where do the times go? Everything stays in memory on your device; nothing is sent anywhere."
+        ]
       }
     ]
   },
@@ -2200,7 +2802,8 @@
       "security": "Security tools: password generator, password strength test, SHA & MD5 hash, AES encryption, file checksum. Your data never leaves your device.",
       "developer": "Developer tools: JSON & XML formatter, Base64/URL/JWT encoder, regex tester, UUID generator, color and unit converters.",
       "calculation": "Calculation tools: VAT, percentage, BMI, age, discount, tip, loan and ideal weight calculators with instant results.",
-      "image": "Image tools: compress, resize, convert and analyze images directly in your browser without uploading."
+      "image": "Image tools: compress, resize, convert and analyze images directly in your browser without uploading.",
+      "fun": "Fun tools: pick a random name with the wheel of names, draw numbers, or use the stopwatch and timer — all in your browser."
     }
   },
   "Info": {
@@ -2254,7 +2857,7 @@
       "sections": [
         {
           "h": "1. General Information",
-          "p": "FreetoolsY (\"we\", \"the site\") offers free online tools at https://freetoolsy.vercel.app. This policy explains what information is collected while you use the site and how it is used. By using the site you accept this policy."
+          "p": "FreetoolsY (\"we\", \"the site\") offers free online tools at https://freetoolsy.com. This policy explains what information is collected while you use the site and how it is used. By using the site you accept this policy."
         },
         {
           "h": "2. Data Collected",
@@ -2555,7 +3158,7 @@
     },
     "qrCodeGenerator": {
       "label": "Text or link",
-      "placeholder": "e.g. https://freetoolsy.vercel.app",
+      "placeholder": "e.g. https://freetoolsy.com",
       "emptyMsg": "An empty QR code cannot be created. Type something above.",
       "download": "Download as PNG",
       "copyText": "Copy text",
@@ -3324,6 +3927,251 @@
       "copy": "Copy",
       "copied": "Copied!",
       "error": "Could not open that file. Please choose an image."
+    },
+    "currencyConverter": {
+      "amountLabel": "Amount",
+      "amountPlaceholder": "Enter an amount",
+      "fromLabel": "From",
+      "toLabel": "To",
+      "rateLabel": "Rate (1 USD)",
+      "swap": "Swap",
+      "result": "{from} equals",
+      "reverse": "{to}",
+      "emptyState": "Enter an amount to see the converted value.",
+      "note": "Rates are fixed reference values you can edit. Conversions run entirely in your browser and nothing is uploaded."
+    },
+    "compoundInterest": {
+      "finalAmount": "Final balance",
+      "totalInvested": "Total invested",
+      "totalInterest": "Total interest",
+      "principalLabel": "Initial amount",
+      "principalPlaceholder": "e.g. 10000",
+      "contributionLabel": "Monthly contribution",
+      "contributionPlaceholder": "e.g. 500",
+      "rateLabel": "Annual interest rate",
+      "ratePlaceholder": "e.g. 12",
+      "yearsLabel": "Period (years)",
+      "yearsPlaceholder": "e.g. 10",
+      "frequencyLabel": "Compounding frequency",
+      "frequency_annually": "Yearly",
+      "frequency_semiannually": "Semi-annually",
+      "frequency_quarterly": "Quarterly",
+      "frequency_monthly": "Monthly",
+      "frequency_daily": "Daily",
+      "note": "A mathematical estimate of compound growth. Real accounts may add tax, fees or different rounding.",
+      "hideGrowth": "Hide yearly table",
+      "showGrowth": "Show yearly table",
+      "yearCol": "Year",
+      "valueCol": "Balance",
+      "investedCol": "Invested",
+      "interestCol": "Interest",
+      "emptyState": "Enter the amount and rate to see your growth plan."
+    },
+    "salaryCalculator": {
+      "grossLabel": "Gross salary",
+      "grossPlaceholder": "e.g. 75000",
+      "note": "Estimates net salary using the 2026 Turkish rates: 14% SSI, 1% unemployment insurance and progressive income tax brackets. Your accountant may apply slight variations.",
+      "emptyState": "Enter your gross salary to see the net amount.",
+      "netMonthly": "Net monthly",
+      "monthlyTax": "Monthly income tax",
+      "sggkShare": "SSI + unemployment",
+      "netYearly": "Net yearly"
+    },
+    "sqlFormatter": {
+      "label": "SQL",
+      "placeholder": "Paste your SQL query here…",
+      "keywordUpper": "UPPERCASE keywords",
+      "keywordLower": "lowercase keywords",
+      "keywordKeep": "Keep as typed",
+      "indent2": "2 spaces",
+      "indent4": "4 spaces",
+      "minify": "Minify (one line)",
+      "outputLabel": "Formatted output",
+      "emptyState": "Formatted SQL appears here.",
+      "copied": "Copied!",
+      "copy": "Copy"
+    },
+    "jsonXmlConverter": {
+      "modeJsonToXml": "JSON to XML",
+      "modeXmlToJson": "XML to JSON",
+      "label": "Input",
+      "placeholder": "Paste JSON or XML here…",
+      "convert": "Convert",
+      "outputLabel": "Output",
+      "emptyState": "Converted output appears here.",
+      "copied": "Copied!",
+      "copy": "Copy",
+      "note": "Objects become elements, arrays repeat their element, and XML attributes are written back with a leading at sign in JSON. All conversion happens in your browser.",
+      "emptyInput": "Paste some JSON or XML first.",
+      "invalidXml": "The XML is not well-formed. Please check the content."
+    },
+    "markdownHtmlConverter": {
+      "modeMdToHtml": "Markdown to HTML",
+      "modeHtmlToMd": "HTML to Markdown",
+      "label": "Input",
+      "placeholder": "Type or paste Markdown or HTML here…",
+      "sample": "Sample",
+      "showHtml": "Show rendered HTML",
+      "preview": "Preview",
+      "outputLabel": "Output",
+      "emptyState": "Converted output appears here.",
+      "copied": "Copied!",
+      "copy": "Copy"
+    },
+    "hmacGenerator": {
+      "textLabel": "Message",
+      "textPlaceholder": "The message you want to sign",
+      "secretLabel": "Secret key",
+      "secretPlaceholder": "The shared secret key",
+      "algorithmLabel": "Hash function",
+      "working": "Signing…",
+      "generate": "Generate HMAC",
+      "hexLabel": "Hex",
+      "base64Label": "Base64",
+      "digestLabel": "Computed with",
+      "copied": "Copied!",
+      "copy": "Copy",
+      "note": "Using the Web Crypto API — the key and message never leave your browser.",
+      "emptyText": "Enter a message to sign.",
+      "emptySecret": "Enter a secret key.",
+      "error": "Signing failed. Please try again."
+    },
+    "htmlTableGenerator": {
+      "rowsLabel": "Rows",
+      "colsLabel": "Columns",
+      "dataLabel": "Data",
+      "dataPlaceholder": "Separated values — tab, comma, semicolon or pipe divided…",
+      "sample": "Sample",
+      "generate": "Generate",
+      "showCode": "Show code",
+      "preview": "Preview",
+      "copied": "Copied!",
+      "copy": "Copy",
+      "extraRows": "{count, plural, one {1 extra row} other {{count} extra rows}} added to your grid."
+    },
+    "faviconGenerator": {
+      "foregroundLabel": "Foreground",
+      "backgroundLabel": "Background",
+      "textLabel": "Text",
+      "sizeLabel": "Size (px)",
+      "transparentLabel": "Transparent background",
+      "error": "Could not draw the favicon. Please try again.",
+      "working": "Generating…",
+      "generate": "Generate favicon",
+      "altPng": "Generated PNG favicon preview",
+      "downloadPng": "Download PNG",
+      "icoLabel": "ICO",
+      "altIco": "Generated ICO favicon preview",
+      "downloadIco": "Download ICO",
+      "copied": "Copied!",
+      "copyBase64": "Copy Base64",
+      "note": "Generated locally in your browser with the canvas API — nothing is uploaded."
+    },
+    "imageCrop": {
+      "replace": "Replace image",
+      "dropHint": "Drop an image here or click to browse",
+      "tooltip": "Drag on the image to select the crop area.",
+      "altImage": "Source image",
+      "size": "{width} × {height} px",
+      "crop": "Crop",
+      "reset": "Reset",
+      "altResult": "Cropped result",
+      "download": "Download cropped",
+      "note": "Everything runs in your browser — the image never leaves your device.",
+      "error": "Could not process that image. Please try another file."
+    },
+    "imageWatermark": {
+      "missingImages": "Choose both a base image and an overlay image.",
+      "invalidOpacity": "Opacity must be between 0 and 100.",
+      "error": "Could not compose the watermark. Please try again.",
+      "working": "Applying…",
+      "apply": "Apply watermark",
+      "baseLabel": "Base image",
+      "overlayLabel": "Overlay image",
+      "positionLabel": "Position",
+      "posBottomRight": "Bottom right",
+      "posBottomLeft": "Bottom left",
+      "posTopRight": "Top right",
+      "posTopLeft": "Top left",
+      "posCenter": "Center",
+      "opacityLabel": "Opacity",
+      "altBase": "Base image preview",
+      "altOverlay": "Overlay image preview",
+      "altResult": "Watermarked result",
+      "download": "Download result",
+      "note": "The composition happens entirely in your browser — your images are never uploaded."
+    },
+    "jsonLdGenerator": {
+      "nameLabel": "Name",
+      "urlLabel": "URL",
+      "descriptionLabel": "Description",
+      "invalidUrl": "URL must start with http or https.",
+      "typeLabel": "Schema type",
+      "generate": "Generate JSON-LD",
+      "copied": "Copied!",
+      "copy": "Copy",
+      "note": "Output is ready to paste into your page inside a script tag with LD+JSON type. Overrides defaults to a safe example when a field is empty."
+    },
+    "hreflangGenerator": {
+      "urlLabel": "Page URL",
+      "langLabel": "Languages",
+      "generate": "Generate tags",
+      "emptyUrl": "Enter the page URL first.",
+      "invalidUrl": "URL must start with http or https.",
+      "note": "Generates link tags for your head section and an XML sitemap block containing every selected language version."
+    },
+    "robotsTxtGenerator": {
+      "presetLabel": "Template",
+      "siteLabel": "Site",
+      "ruleLabel": "Path",
+      "actionLabel": "Action",
+      "disallow": "Disallow",
+      "allow": "Allow",
+      "add": "Add",
+      "remove": "Remove rule",
+      "copied": "Copied!",
+      "copy": "Copy",
+      "note": "Combine a template with your own rules and site address. Publish the result as robots.txt at the root of your domain."
+    },
+    "wheelOfNames": {
+      "emptyWheel": "Add the names below and press Spin.",
+      "winner": "{name} wins!",
+      "namesLabel": "Names",
+      "namesPlaceholder": "One name per line…",
+      "count": "{count, plural, one {1 name} other {{count} names}} on the wheel",
+      "sample": "Sample",
+      "spinning": "Spinning…",
+      "spin": "Spin",
+      "reset": "Reset"
+    },
+    "randomNumberGenerator": {
+      "minLabel": "Minimum",
+      "maxLabel": "Maximum",
+      "countLabel": "How many",
+      "noRepeatLabel": "No repeats",
+      "generate": "Generate",
+      "copied": "Copied!",
+      "copy": "Copy",
+      "invalidRange": "Enter valid whole numbers for the range.",
+      "rangeOrder": "The minimum cannot be higher than the maximum.",
+      "invalidCount": "Enter how many numbers to generate.",
+      "noRepeatLimit": "Without repeats you can draw at most one number per value in the range."
+    },
+    "stopwatchTimer": {
+      "tabStopwatch": "Stopwatch",
+      "tabTimer": "Timer",
+      "finished": "Time is up!",
+      "minutes": "Minutes",
+      "seconds": "Seconds",
+      "start": "Start",
+      "pause": "Pause",
+      "restart": "Restart",
+      "reset": "Reset",
+      "lap": "Lap",
+      "lapCol": "Lap",
+      "splitCol": "Split",
+      "totalCol": "Total",
+      "note": "Timing runs entirely on this device. The timer plays a short beep when it finishes."
     }
   }
 }

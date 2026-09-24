@@ -17,7 +17,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const siteUrl = "https://freetoolsy.vercel.app";
+const siteUrl = "https://freetoolsy.com";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));

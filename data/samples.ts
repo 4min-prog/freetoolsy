@@ -6,7 +6,7 @@ export const SAMPLES: Record<string, string> = {
   "json-formatter":
     '{\n  "name": "freetoolsy",\n  "free": true,\n  "tools": 71,\n  "tags": ["json", "format"]\n}',
   "base64": "FreetoolsY — free tools, in your browser.",
-  "url-encoder": "https://freetoolsy.vercel.app/araclar?q=örnek metin&ücret=true",
+  "url-encoder": "https://freetoolsy.com/araclar?q=örnek metin&ücret=true",
   "sha-hash-generator": "FreetoolsY örnek metni",
   "md5-hash": "FreetoolsY örnek metni",
   "whitespace-cleaner": "  satır bir  \n\n  satır   iki   \n\n\n satır üç ",
@@ -32,7 +32,7 @@ export const SAMPLES: Record<string, string> = {
     "FreetoolsY, tarayıcınızda çalışan ücretsiz araçlar sunar. Her araç tek bir işi yapar: hızlı, sade ve kurulumsuzdur. Kayıt gerekmez, verileriniz cihazınızdan çıkmaz.",
   "keyword-density-checker":
     "freetoolsy ücretsiz araç ücretsiz araçlar tarayıcı araçları online ücretsiz araçlar",
-  "qr-code-generator": "https://freetoolsy.vercel.app",
+  "qr-code-generator": "https://freetoolsy.com",
   "ai-token-counter": "Ücretsiz araçlar, tarayıcınızda çalışır. Bu bir örnek token metnidir.",
   "aes-encryption": "FreetoolsY gizli örnek metni",
   "cron-tester": "*/5 * * * *",

@@ -34,6 +34,12 @@ const ICONS: Record<string, ReactNode> = {
       <path d="M20 20l-3.2-3.2M11 7.5v3.5l2.5 1.5" />
     </>
   ),
+  fun: (
+    <>
+      <circle cx="12" cy="12" r="8.5" />
+      <path d="M12 8.5v3.5l2.5 1.5M9.5 5V3.5M14.5 5V3.5M12 20.5V15M8.5 9.5H7M16.5 9.5H15" />
+    </>
+  ),
 };
 
 export default function CategoryIcon({

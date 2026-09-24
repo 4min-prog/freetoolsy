@@ -19,8 +19,8 @@ export async function generateMetadata({
     alternates: {
       canonical: params.locale === "en" ? "/" : `/${params.locale}`,
       languages: {
-        en: "https://freetoolsy.vercel.app/",
-        tr: "https://freetoolsy.vercel.app/tr",
+        en: "https://freetoolsy.com/",
+        tr: "https://freetoolsy.com/tr",
       },
     },
   };
@@ -45,7 +45,7 @@ export default async function Home({ params }: { params: { locale: string } }) {
             "@context": "https://schema.org",
             "@type": "WebSite",
             name: "FreetoolsY",
-            url: "https://freetoolsy.vercel.app/",
+            url: "https://freetoolsy.com/",
             description: t("jsonldSiteDesc"),
             inLanguage: params.locale === "tr" ? "tr" : "en",
           },
@@ -53,7 +53,7 @@ export default async function Home({ params }: { params: { locale: string } }) {
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
             name: "FreetoolsY",
-            url: "https://freetoolsy.vercel.app/",
+            url: "https://freetoolsy.com/",
             description: t("jsonldAppDesc"),
             applicationCategory: "UtilityApplication",
             operatingSystem: "Web",

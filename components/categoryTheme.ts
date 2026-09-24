@@ -58,6 +58,14 @@ const THEMES: Record<string, CategoryTheme> = {
     hoverBorder: "hover:border-cyan-400/60 dark:hover:border-cyan-400/60",
     hex: "#06b6d4",
   },
+  fun: {
+    iconText: "text-fuchsia-600 dark:text-fuchsia-400",
+    iconBg: "bg-fuchsia-500/10",
+    strip: "bg-fuchsia-500 dark:bg-fuchsia-400",
+    active: "bg-fuchsia-600 text-white dark:bg-fuchsia-400 dark:text-fuchsia-950",
+    hoverBorder: "hover:border-fuchsia-400/60 dark:hover:border-fuchsia-400/60",
+    hex: "#d946ef",
+  },
 };
 
 export function categoryTheme(id: string): CategoryTheme {

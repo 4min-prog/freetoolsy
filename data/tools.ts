@@ -12,6 +12,7 @@ export const categories: { id: string; name: string }[] = [
   { id: "calculation", name: "Hesaplama" },
   { id: "image", name: "Görsel" },
   { id: "seo", name: "SEO" },
+  { id: "fun", name: "Eğlence" },
 ];
 
 export const tools: Tool[] = [
@@ -511,6 +512,125 @@ export const tools: Tool[] = [
     category: "developer",
     description:
       "HS256 imzalı JWT token içeriği oluşturur; header, payload ve signature adımlarını gösterir.",
+  },
+  {
+    slug: "currency-converter",
+    name: "Döviz Çevirici",
+    category: "calculation",
+    description:
+      "Seçtiğiniz döviz kurlarıyla anında para birimi dönüşümü yapar; kur oranını istediğiniz gibi düzenleyin.",
+  },
+  {
+    slug: "compound-interest-calculator",
+    name: "Bileşik Faiz Hesaplayıcı",
+    category: "calculation",
+    description:
+      "Anapara ve düzenli katkılarla bileşik faiz getirisini; faiz, toplam yatırım ve birikim tablosuyla hesaplar.",
+  },
+  {
+    slug: "salary-calculator",
+    name: "Net Maaş Hesaplayıcı",
+    category: "calculation",
+    description:
+      "Brüt maaştan SGK, işsizlik ve gelir vergisi kesintilerini hesaplayarak net maaşınızı gösterir.",
+  },
+  {
+    slug: "sql-formatter",
+    name: "SQL Biçimlendirici",
+    category: "developer",
+    description:
+      "SQL sorgularını düzenler veya küçültür; anahtar kelime büyük/küçük harf tercihi sunar.",
+  },
+  {
+    slug: "json-xml-converter",
+    name: "JSON ↔ XML Dönüştürücü",
+    category: "developer",
+    description:
+      "JSON ile XML arasında iki yönlü dönüşüm yapar; hem düğüm hem dizi yapılarını destekler.",
+  },
+  {
+    slug: "markdown-html-converter",
+    name: "Markdown ↔ HTML Dönüştürücü",
+    category: "developer",
+    description:
+      "Markdown'ı HTML'e veya HTML'i Markdown'a çevirir; canlı önizleme sunar.",
+  },
+  {
+    slug: "hmac-generator",
+    name: "HMAC Üretici",
+    category: "developer",
+    description:
+      "SHA-256 / SHA-512 ile HMAC imzası üretir; hex ve base64 çıktı verir.",
+  },
+  {
+    slug: "html-table-generator",
+    name: "HTML Tablo Üretici",
+    category: "developer",
+    description:
+      "Satır/sütun sayısı ve veriyle kullanıma hazır HTML tablo kodu üretir; önizleme sunar.",
+  },
+  {
+    slug: "favicon-generator",
+    name: "Favicon Üretici",
+    category: "image",
+    description:
+      "Metin ve renklerle favicon üretir; PNG ve ICO olarak indirin.",
+  },
+  {
+    slug: "image-crop",
+    name: "Resim Kırpma",
+    category: "image",
+    description:
+      "Görseli tarayıcınızda sürükleyerek seçtiğiniz alana göre kırpar ve PNG olarak indirir.",
+  },
+  {
+    slug: "image-watermark",
+    name: "Resime Filigran Ekleme",
+    category: "image",
+    description:
+      "Görsele logo veya görsel filigran ekler; konum ve opaklığı ayarlar.",
+  },
+  {
+    slug: "jsonld-generator",
+    name: "JSON-LD Üretici",
+    category: "seo",
+    description:
+      "Article, Product, FAQPage ve daha fazlası için schema.org JSON-LD yapılandırılmış veri üretir.",
+  },
+  {
+    slug: "hreflang-generator",
+    name: "Hreflang Üretici",
+    category: "seo",
+    description:
+      "Çok dilli siteler için hreflang etiketleri ve sitemap bloğu üretir.",
+  },
+  {
+    slug: "robots-txt-generator",
+    name: "Robots.txt Üretici",
+    category: "seo",
+    description:
+      "Hazır şablonlar ve özel kurallarla robots.txt içeriği oluşturur; tek tıkla kopyalayın.",
+  },
+  {
+    slug: "wheel-of-names",
+    name: "İsim Çarkı",
+    category: "fun",
+    description:
+      "İsimleri çarka yazın, döndürün ve kazananı tarayıcınızda seçin.",
+  },
+  {
+    slug: "random-number-generator",
+    name: "Rastgele Sayı Üretici",
+    category: "fun",
+    description:
+      "Aralık ve adet seçerek tekrarsız rastgele sayılar üretir; kopyalayın.",
+  },
+  {
+    slug: "stopwatch-timer",
+    name: "Kronometre ve Zamanlayıcı",
+    category: "fun",
+    description:
+      "Kronometre ile tur süreleri kaydedin veya geri sayım yapan zamanlayıcı kullanın.",
   },
 ];
 

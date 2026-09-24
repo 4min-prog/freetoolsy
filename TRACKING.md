@@ -55,4 +55,4 @@ git push             # main
 ## Notes
 - BMI result is not medical advice (disclaimer lives inside the component).
 - Everything runs client-side; no server/DB.
-- Domain `freetoolsy.com` intended; site currently lives on `freetoolsy.vercel.app` (all URLs updated).
+- Domain `freetoolsy.com` intended; site currently lives on `freetoolsy.com` (all URLs updated).

@@ -9,7 +9,7 @@ export default async function ToolJsonLd({ slug }: { slug: string }) {
   const t = await getTranslations(`ToolMeta.${slug}`);
   const locale = await getLocale();
   const isTr = locale === "tr";
-  const url = `https://freetoolsy.vercel.app${isTr ? "/tr" : ""}/araclar/${slug}`;
+  const url = `https://freetoolsy.com${isTr ? "/tr" : ""}/araclar/${slug}`;
 
   return (
     <JsonLd

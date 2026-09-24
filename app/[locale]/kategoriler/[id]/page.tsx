@@ -9,7 +9,7 @@ import CategoryIcon from "@/components/CategoryIcon";
 import JsonLd from "@/components/JsonLd";
 import { categoryTheme } from "@/components/categoryTheme";
 
-const siteUrl = "https://freetoolsy.vercel.app";
+const siteUrl = "https://freetoolsy.com";
 
 export function generateStaticParams() {
   const params: { locale: string; id: string }[] = [];

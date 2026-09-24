@@ -7,7 +7,7 @@ import { getTool } from "@/data/tools";
 import { routing, type Locale } from "@/i18n/routing";
 import ToolIcon from "@/components/ToolIcon";
 
-const siteUrl = "https://freetoolsy.vercel.app";
+const siteUrl = "https://freetoolsy.com";
 
 export function generateStaticParams() {
   const params: { locale: string; slug: string }[] = [];

@@ -2,509 +2,617 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://freetoolsy.vercel.app/</loc>
+    <loc>https://freetoolsy.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/araclar/character-counter</loc>
+    <loc>https://freetoolsy.com/araclar/character-counter</loc>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/character-counter" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/character-counter" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/character-counter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/character-counter" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/araclar/word-counter</loc>
+    <loc>https://freetoolsy.com/araclar/word-counter</loc>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/word-counter" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/word-counter" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/word-counter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/word-counter" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/araclar/case-converter</loc>
+    <loc>https://freetoolsy.com/araclar/case-converter</loc>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/case-converter" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/case-converter" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/case-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/case-converter" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/araclar/password-generator</loc>
+    <loc>https://freetoolsy.com/araclar/password-generator</loc>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/password-generator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/password-generator" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/password-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/password-generator" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/araclar/json-formatter</loc>
+    <loc>https://freetoolsy.com/araclar/currency-converter</loc>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/json-formatter" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/json-formatter" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/currency-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/currency-converter" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/araclar/base64</loc>
+    <loc>https://freetoolsy.com/araclar/compound-interest-calculator</loc>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/base64" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/base64" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/compound-interest-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/compound-interest-calculator" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/araclar/url-encoder</loc>
+    <loc>https://freetoolsy.com/araclar/salary-calculator</loc>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/url-encoder" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/url-encoder" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/salary-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/salary-calculator" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/araclar/bmi-calculator</loc>
+    <loc>https://freetoolsy.com/araclar/sql-formatter</loc>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/bmi-calculator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/bmi-calculator" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/sql-formatter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/sql-formatter" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/araclar/vat-calculator</loc>
+    <loc>https://freetoolsy.com/araclar/json-xml-converter</loc>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/vat-calculator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/vat-calculator" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/json-xml-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/json-xml-converter" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/araclar/percentage-calculator</loc>
+    <loc>https://freetoolsy.com/araclar/markdown-html-converter</loc>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/percentage-calculator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/percentage-calculator" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/markdown-html-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/markdown-html-converter" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/araclar/age-calculator</loc>
+    <loc>https://freetoolsy.com/araclar/hmac-generator</loc>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/age-calculator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/age-calculator" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/hmac-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/hmac-generator" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/araclar/qr-code-generator</loc>
+    <loc>https://freetoolsy.com/araclar/html-table-generator</loc>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/qr-code-generator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/qr-code-generator" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/html-table-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/html-table-generator" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/araclar/sha-hash-generator</loc>
+    <loc>https://freetoolsy.com/araclar/favicon-generator</loc>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/sha-hash-generator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/sha-hash-generator" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/favicon-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/favicon-generator" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/araclar/date-difference</loc>
+    <loc>https://freetoolsy.com/araclar/image-crop</loc>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/date-difference" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/date-difference" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/image-crop" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/image-crop" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/araclar/color-converter</loc>
+    <loc>https://freetoolsy.com/araclar/image-watermark</loc>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/color-converter" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/color-converter" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/image-watermark" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/image-watermark" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/araclar/uuid-generator</loc>
+    <loc>https://freetoolsy.com/araclar/jsonld-generator</loc>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/uuid-generator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/uuid-generator" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/jsonld-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/jsonld-generator" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/araclar/unit-converter</loc>
+    <loc>https://freetoolsy.com/araclar/hreflang-generator</loc>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/unit-converter" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/unit-converter" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/hreflang-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/hreflang-generator" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/araclar/password-strength-checker</loc>
+    <loc>https://freetoolsy.com/araclar/robots-txt-generator</loc>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/password-strength-checker" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/password-strength-checker" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/robots-txt-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/robots-txt-generator" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/araclar/number-base-converter</loc>
+    <loc>https://freetoolsy.com/araclar/wheel-of-names</loc>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/number-base-converter" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/number-base-converter" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/wheel-of-names" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/wheel-of-names" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/araclar/regex-tester</loc>
+    <loc>https://freetoolsy.com/araclar/random-number-generator</loc>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/regex-tester" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/regex-tester" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/random-number-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/random-number-generator" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/araclar/whitespace-cleaner</loc>
+    <loc>https://freetoolsy.com/araclar/stopwatch-timer</loc>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/whitespace-cleaner" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/whitespace-cleaner" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/stopwatch-timer" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/stopwatch-timer" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/araclar/md5-hash</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/md5-hash" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/md5-hash" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/jwt-decoder</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/jwt-decoder" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/jwt-decoder" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/json-csv-converter</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/json-csv-converter" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/json-csv-converter" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/unix-timestamp-converter</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/unix-timestamp-converter" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/unix-timestamp-converter" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/duplicate-line-remover</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/duplicate-line-remover" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/duplicate-line-remover" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/ai-token-counter</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/ai-token-counter" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/ai-token-counter" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/lorem-ipsum-generator</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/lorem-ipsum-generator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/lorem-ipsum-generator" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/tip-calculator</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/tip-calculator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/tip-calculator" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/discount-calculator</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/discount-calculator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/discount-calculator" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/average-calculator</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/average-calculator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/average-calculator" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/dog-age-calculator</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/dog-age-calculator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/dog-age-calculator" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/subnet-calculator</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/subnet-calculator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/subnet-calculator" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/px-rem-converter</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/px-rem-converter" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/px-rem-converter" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/xml-formatter</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/xml-formatter" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/xml-formatter" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/css-minifier</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/css-minifier" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/css-minifier" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/html-minifier</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/html-minifier" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/html-minifier" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/wcag-contrast-checker</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/wcag-contrast-checker" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/wcag-contrast-checker" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/color-palette-generator</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/color-palette-generator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/color-palette-generator" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/box-shadow-generator</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/box-shadow-generator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/box-shadow-generator" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/text-sorter</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/text-sorter" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/text-sorter" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/list-shuffler</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/list-shuffler" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/list-shuffler" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/yaml-json-converter</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/yaml-json-converter" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/yaml-json-converter" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/md5-file-checksum</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/md5-file-checksum" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/md5-file-checksum" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/image-compressor</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/image-compressor" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/image-compressor" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/image-resizer</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/image-resizer" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/image-resizer" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/image-converter</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/image-converter" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/image-converter" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/image-to-base64</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/image-to-base64" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/image-to-base64" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/image-color-picker</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/image-color-picker" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/image-color-picker" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/slug-generator</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/slug-generator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/slug-generator" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/meta-tag-generator</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/meta-tag-generator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/meta-tag-generator" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/keyword-density-checker</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/keyword-density-checker" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/keyword-density-checker" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/serp-preview</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/serp-preview" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/serp-preview" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/readability-score</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/readability-score" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/readability-score" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/text-diff</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/text-diff" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/text-diff" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/html-entity-converter</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/html-entity-converter" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/html-entity-converter" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/morse-converter</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/morse-converter" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/morse-converter" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/text-reverser</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/text-reverser" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/text-reverser" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/fancy-text-generator</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/fancy-text-generator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/fancy-text-generator" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/caesar-cipher</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/caesar-cipher" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/caesar-cipher" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/gpa-calculator</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/gpa-calculator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/gpa-calculator" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/loan-emi-calculator</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/loan-emi-calculator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/loan-emi-calculator" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/calorie-bmr-calculator</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/calorie-bmr-calculator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/calorie-bmr-calculator" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/body-fat-calculator</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/body-fat-calculator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/body-fat-calculator" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/ideal-weight-calculator</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/ideal-weight-calculator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/ideal-weight-calculator" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/sleep-calculator</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/sleep-calculator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/sleep-calculator" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/cron-tester</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/cron-tester" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/cron-tester" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/html-formatter</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/html-formatter" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/html-formatter" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/aes-encryption</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/aes-encryption" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/aes-encryption" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/random-string-generator</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/random-string-generator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/random-string-generator" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/araclar/jwt-generator</loc>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/araclar/jwt-generator" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/araclar/jwt-generator" />
-  </url>
-  <url>
-    <loc>https://freetoolsy.vercel.app/kategoriler/text</loc>
+    <loc>https://freetoolsy.com/kategoriler/fun</loc>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/kategoriler/text" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/kategoriler/text" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/kategoriler/fun" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/kategoriler/fun" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/kategoriler/security</loc>
+    <loc>https://freetoolsy.com/araclar/json-formatter</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/json-formatter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/json-formatter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/base64</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/base64" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/base64" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/url-encoder</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/url-encoder" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/url-encoder" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/bmi-calculator</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/bmi-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/bmi-calculator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/vat-calculator</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/vat-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/vat-calculator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/percentage-calculator</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/percentage-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/percentage-calculator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/age-calculator</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/age-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/age-calculator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/qr-code-generator</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/qr-code-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/qr-code-generator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/sha-hash-generator</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/sha-hash-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/sha-hash-generator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/date-difference</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/date-difference" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/date-difference" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/color-converter</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/color-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/color-converter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/uuid-generator</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/uuid-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/uuid-generator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/unit-converter</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/unit-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/unit-converter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/password-strength-checker</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/password-strength-checker" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/password-strength-checker" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/number-base-converter</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/number-base-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/number-base-converter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/regex-tester</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/regex-tester" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/regex-tester" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/whitespace-cleaner</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/whitespace-cleaner" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/whitespace-cleaner" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/md5-hash</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/md5-hash" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/md5-hash" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/jwt-decoder</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/jwt-decoder" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/jwt-decoder" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/json-csv-converter</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/json-csv-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/json-csv-converter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/unix-timestamp-converter</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/unix-timestamp-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/unix-timestamp-converter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/duplicate-line-remover</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/duplicate-line-remover" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/duplicate-line-remover" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/ai-token-counter</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/ai-token-counter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/ai-token-counter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/lorem-ipsum-generator</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/lorem-ipsum-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/lorem-ipsum-generator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/tip-calculator</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/tip-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/tip-calculator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/discount-calculator</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/discount-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/discount-calculator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/average-calculator</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/average-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/average-calculator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/dog-age-calculator</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/dog-age-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/dog-age-calculator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/subnet-calculator</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/subnet-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/subnet-calculator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/px-rem-converter</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/px-rem-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/px-rem-converter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/xml-formatter</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/xml-formatter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/xml-formatter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/css-minifier</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/css-minifier" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/css-minifier" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/html-minifier</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/html-minifier" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/html-minifier" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/wcag-contrast-checker</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/wcag-contrast-checker" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/wcag-contrast-checker" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/color-palette-generator</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/color-palette-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/color-palette-generator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/box-shadow-generator</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/box-shadow-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/box-shadow-generator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/text-sorter</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/text-sorter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/text-sorter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/list-shuffler</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/list-shuffler" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/list-shuffler" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/yaml-json-converter</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/yaml-json-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/yaml-json-converter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/md5-file-checksum</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/md5-file-checksum" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/md5-file-checksum" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/image-compressor</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/image-compressor" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/image-compressor" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/image-resizer</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/image-resizer" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/image-resizer" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/image-converter</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/image-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/image-converter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/image-to-base64</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/image-to-base64" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/image-to-base64" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/image-color-picker</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/image-color-picker" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/image-color-picker" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/slug-generator</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/slug-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/slug-generator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/meta-tag-generator</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/meta-tag-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/meta-tag-generator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/keyword-density-checker</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/keyword-density-checker" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/keyword-density-checker" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/serp-preview</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/serp-preview" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/serp-preview" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/readability-score</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/readability-score" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/readability-score" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/text-diff</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/text-diff" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/text-diff" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/html-entity-converter</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/html-entity-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/html-entity-converter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/morse-converter</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/morse-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/morse-converter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/text-reverser</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/text-reverser" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/text-reverser" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/fancy-text-generator</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/fancy-text-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/fancy-text-generator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/caesar-cipher</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/caesar-cipher" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/caesar-cipher" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/gpa-calculator</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/gpa-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/gpa-calculator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/loan-emi-calculator</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/loan-emi-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/loan-emi-calculator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/calorie-bmr-calculator</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/calorie-bmr-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/calorie-bmr-calculator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/body-fat-calculator</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/body-fat-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/body-fat-calculator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/ideal-weight-calculator</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/ideal-weight-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/ideal-weight-calculator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/sleep-calculator</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/sleep-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/sleep-calculator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/cron-tester</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/cron-tester" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/cron-tester" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/html-formatter</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/html-formatter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/html-formatter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/aes-encryption</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/aes-encryption" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/aes-encryption" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/random-string-generator</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/random-string-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/random-string-generator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/araclar/jwt-generator</loc>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/araclar/jwt-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/jwt-generator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/kategoriler/text</loc>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/kategoriler/security" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/kategoriler/security" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/kategoriler/text" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/kategoriler/text" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/kategoriler/developer</loc>
+    <loc>https://freetoolsy.com/kategoriler/security</loc>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/kategoriler/developer" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/kategoriler/developer" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/kategoriler/security" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/kategoriler/security" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/kategoriler/calculation</loc>
+    <loc>https://freetoolsy.com/kategoriler/developer</loc>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/kategoriler/calculation" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/kategoriler/calculation" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/kategoriler/developer" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/kategoriler/developer" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/kategoriler/image</loc>
+    <loc>https://freetoolsy.com/kategoriler/calculation</loc>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/kategoriler/image" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/kategoriler/image" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/kategoriler/calculation" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/kategoriler/calculation" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/kategoriler/seo</loc>
+    <loc>https://freetoolsy.com/kategoriler/image</loc>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/kategoriler/seo" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/kategoriler/seo" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/kategoriler/image" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/kategoriler/image" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/rehber</loc>
+    <loc>https://freetoolsy.com/kategoriler/seo</loc>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/kategoriler/seo" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/kategoriler/seo" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/rehber</loc>
     <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/rehber" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/rehber" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/rehber/what-is-json-formatter</loc>
+    <loc>https://freetoolsy.com/rehber/what-is-json-formatter</loc>
     <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/rehber/what-is-json-formatter" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/rehber/what-is-json-formatter" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/what-is-json-formatter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/what-is-json-formatter" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/rehber/what-is-meta-tags</loc>
+    <loc>https://freetoolsy.com/rehber/what-is-meta-tags</loc>
     <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/rehber/what-is-meta-tags" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/rehber/what-is-meta-tags" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/what-is-meta-tags" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/what-is-meta-tags" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/privacy-policy</loc>
+    <loc>https://freetoolsy.com/privacy-policy</loc>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/privacy-policy" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/privacy-policy" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/about</loc>
+    <loc>https://freetoolsy.com/about</loc>
     <priority>0.4</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/about" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/about" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/about" />
   </url>
   <url>
-    <loc>https://freetoolsy.vercel.app/contact</loc>
+    <loc>https://freetoolsy.com/contact</loc>
     <priority>0.4</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.vercel.app/contact" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.vercel.app/tr/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/contact" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/contact" />
   </url>
 </urlset>
