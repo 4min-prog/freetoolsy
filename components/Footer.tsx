@@ -80,14 +80,15 @@ export default async function Footer() {
               <li className="pt-1">
                 <a
                   href="https://launchnest.io/p/freetoolsy"
+                  rel="dofollow"
+                  title="freetoolsy.com — Domain Rating by LaunchNest"
                   target="_blank"
-                  rel="noopener"
                 >
                   <img
-                    src="https://launchnest.io/brand/badges/listed-dark.svg"
-                    alt="Listed on LaunchNest"
-                    width="150"
-                    className="h-auto rounded-md border border-border bg-surface transition-opacity hover:opacity-80"
+                    src="https://launchnest.io/api/badge/dr?domain=freetoolsy.com&style=normal&shape=rect&color=dark"
+                    alt="freetoolsy.com Domain Rating"
+                    width="240"
+                    className="h-auto transition-opacity hover:opacity-80"
                   />
                 </a>
               </li>
