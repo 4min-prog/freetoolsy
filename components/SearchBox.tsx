@@ -6,7 +6,6 @@ import { Link, useRouter } from "@/i18n/navigation";
 import ToolIcon from "@/components/ToolIcon";
 import { POPULAR_SLUGS } from "@/data/popular";
 import { tools } from "@/data/tools";
-import { track } from "@/lib/analytics";
 
 interface ToolMetaNs {
   name?: string;
@@ -102,18 +101,9 @@ export default function SearchBox({
     []
   );
   const suggestions = popularSlugs;
-  const mostSearched = popularSlugs.map((slug) => meta?.[slug]?.name ?? slug);
 
-  function searchQuery(query: string) {
-    setQ("");
-    setOpen(false);
-    onDone?.();
-    track("search", { search_term: query });
-    router.push(`/?q=${encodeURIComponent(query)}`);
-    setTimeout(
-      () => window.dispatchEvent(new Event("freetoolsy:search")),
-      80
-    );
+  function toolName(slug: string) {
+    return meta?.[slug]?.name ?? slug;
   }
 
   return (
@@ -254,15 +244,15 @@ export default function SearchBox({
           </li>
           <li role="option" aria-selected="false">
             <div className="flex flex-wrap gap-1.5 px-3 pb-2 pt-1">
-              {mostSearched.map((query) => (
-                <button
-                  key={query}
-                  type="button"
-                  onClick={() => searchQuery(query)}
+              {popularSlugs.map((slug) => (
+                <Link
+                  key={slug}
+                  href={`/araclar/${slug}`}
+                  onClick={close}
                   className="rounded-full border border-border/70 bg-surface px-3 py-1 text-xs text-muted transition-colors hover:border-accent/40 hover:text-text"
                 >
-                  {query}
-                </button>
+                  {toolName(slug)}
+                </Link>
               ))}
             </div>
           </li>
