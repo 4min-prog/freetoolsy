@@ -20,7 +20,7 @@ export default function LocaleSwitcher() {
         other.toUpperCase()
       }
       title={other === "tr" ? t("switchToTurkish") : t("switchToEnglish")}
-      className="grid h-11 w-11 place-items-center rounded-lg border border-border bg-surface text-xs font-semibold uppercase text-muted transition-colors hover:border-strong hover:text-text"
+      className="grid h-12 w-12 place-items-center rounded-lg border border-border bg-surface text-[13px] font-semibold uppercase text-muted transition-colors hover:border-strong hover:text-text"
     >
       {other}
     </Link>

@@ -53,7 +53,7 @@ export default function Header() {
           </Link>
 
           <nav className="ml-auto flex items-center gap-1 md:gap-2">
-            <div className="hidden md:flex items-center gap-0.5">
+            <div className="hidden md:flex items-center gap-1 md:gap-2">
               {categories.map((category) => (
                 <div key={category.id} className="relative">
                   <button
@@ -61,11 +61,11 @@ export default function Header() {
                     onClick={() => toggleMenu(category.id)}
                     aria-expanded={openMenu === category.id}
                     aria-haspopup="menu"
-                    className="flex items-center gap-1.5 rounded-md px-2.5 py-1.5 text-sm text-muted transition-colors hover:text-text"
+                    className="flex items-center gap-1.5 rounded-md px-3 py-2 text-[15px] text-muted transition-colors hover:text-text"
                   >
                     <CategoryIcon
                       id={category.id}
-                      className={`h-3.5 w-3.5 shrink-0 ${categoryTheme(category.id).iconText}`}
+                      className={`h-4 w-4 shrink-0 ${categoryTheme(category.id).iconText}`}
                     />
                     {tc(category.id)}
                     <svg
@@ -76,7 +76,7 @@ export default function Header() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       aria-hidden="true"
-                      className={`h-3.5 w-3.5 transition-transform duration-200 ${
+                      className={`h-4 w-4 transition-transform duration-200 ${
                         openMenu === category.id ? "rotate-180" : ""
                       }`}
                     >
@@ -115,7 +115,7 @@ export default function Header() {
                 onClick={() => toggleMenu("__mobile")}
                 aria-expanded={openMenu === "__mobile"}
                 aria-haspopup="true"
-                className="flex items-center gap-1.5 rounded-md px-2 py-1.5 text-sm text-muted transition-colors hover:text-text"
+                className="flex items-center gap-1.5 rounded-md px-3 py-2 text-[15px] text-muted transition-colors hover:text-text"
               >
                 {t("categories")}
                 <svg
@@ -126,7 +126,7 @@ export default function Header() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   aria-hidden="true"
-                  className={`h-3.5 w-3.5 transition-transform duration-200 ${
+                  className={`h-4 w-4 transition-transform duration-200 ${
                     openMenu === "__mobile" ? "rotate-180" : ""
                   }`}
                 >
@@ -161,7 +161,7 @@ export default function Header() {
               type="button"
               onClick={() => setSearchOpen(true)}
               aria-label={t("searchLabel")}
-              className="rounded-md p-2.5 text-muted transition-colors hover:text-text"
+              className="rounded-md p-3 text-muted transition-colors hover:text-text"
             >
               <svg
                 viewBox="0 0 24 24"
@@ -171,7 +171,7 @@ export default function Header() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 aria-hidden="true"
-                className="h-5 w-5"
+                className="h-6 w-6"
               >
                 <circle cx="11" cy="11" r="7" />
                 <path d="M20 20l-3.2-3.2" />
