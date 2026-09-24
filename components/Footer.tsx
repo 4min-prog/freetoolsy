@@ -77,6 +77,20 @@ export default async function Footer() {
                   {t("linkly")}
                 </a>
               </li>
+              <li className="pt-1">
+                <a
+                  href="https://launchnest.io/p/freetoolsy"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <img
+                    src="https://launchnest.io/brand/badges/listed-dark.svg"
+                    alt="Listed on LaunchNest"
+                    width="150"
+                    className="h-auto rounded-md border border-border bg-surface transition-opacity hover:opacity-80"
+                  />
+                </a>
+              </li>
             </ul>
           </div>
         </nav>
