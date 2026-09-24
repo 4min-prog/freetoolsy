@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 
 export default function Logo({ size = "md" }: { size?: "md" | "lg" }) {
   const t = useTranslations("Brand");
-  const icon = size === "lg" ? "h-9 w-9" : "h-7 w-7";
+  const icon = size === "lg" ? "h-12 w-12" : "h-7 w-7";
 
   return (
     <span className="flex items-center gap-2.5">
