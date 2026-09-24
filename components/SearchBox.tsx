@@ -165,7 +165,7 @@ export default function SearchBox({
         role="combobox"
         className={`w-full border-border bg-surface text-text placeholder:text-faint transition-colors focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30 ${
           large
-            ? "rounded-xl border py-3.5 pl-11 pr-4 text-base shadow-card"
+            ? "rounded-xl border py-4 pl-12 pr-4 text-lg shadow-card"
             : "rounded-lg border py-2 pl-9 pr-3 text-sm"
         }`}
       />

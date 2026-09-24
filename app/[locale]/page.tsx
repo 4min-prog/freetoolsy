@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import {
+  getMessages,
+  getTranslations,
+  setRequestLocale,
+} from "next-intl/server";
 import ToolExplorer from "@/components/ToolExplorer";
 import SearchBox from "@/components/SearchBox";
 import PopularStrip from "@/components/PopularStrip";
+import ToolIcon from "@/components/ToolIcon";
 import JsonLd from "@/components/JsonLd";
 import AdSlot from "@/components/AdSlot";
-import { categories, tools } from "@/data/tools";
+import { Link } from "@/i18n/navigation";
+import { POPULAR_SLUGS } from "@/data/popular";
+import { categories, getTool, tools } from "@/data/tools";
 
 export async function generateMetadata({
   params,
@@ -30,6 +37,9 @@ export async function generateMetadata({
 export default async function Home({ params }: { params: { locale: string } }) {
   setRequestLocale(params.locale);
   const t = await getTranslations("Home");
+  const messages = await getMessages();
+  const toolMeta = (messages as { ToolMeta?: Record<string, { name?: string }> })
+    .ToolMeta;
   const faqs = t.raw("faq") as Array<{ q: string; a: string }>;
 
   const heroTitle = t("heroTitle");
@@ -87,11 +97,17 @@ export default async function Home({ params }: { params: { locale: string } }) {
           <div className="hero-bg absolute inset-0" />
           <div className="absolute -top-24 left-1/2 h-56 w-[30rem] -translate-x-1/2 rounded-full bg-accent/10 blur-2xl" />
         </div>
+        <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-emerald-600 dark:border-emerald-400/30 dark:bg-emerald-400/10 dark:text-emerald-300">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3.5 w-3.5">
+            <path d="M20 6L9 17l-5-5" />
+          </svg>
+          {tools.length} {t("statsTools")}
+        </span>
         <h1 className="max-w-[22ch] text-3xl font-semibold leading-tight tracking-tight text-text sm:text-4xl">
           {hasHighlight ? (
             <>
               {titleParts[0]}
-              <span className="bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent dark:from-blue-400 dark:to-indigo-300">
+              <span className="bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 bg-clip-text text-transparent dark:from-blue-400 dark:via-indigo-300 dark:to-purple-300">
                 {heroHighlight}
               </span>
               {titleParts[1]}
@@ -145,6 +161,29 @@ export default async function Home({ params }: { params: { locale: string } }) {
 
         <div className="relative z-30 mt-6 rounded-2xl border border-border bg-surface/80 p-2 shadow-card backdrop-blur">
           <SearchBox large placeholder={t("searchPlaceholder")} />
+        </div>
+
+        <div className="mt-4 flex flex-wrap items-center gap-x-1.5 gap-y-2">
+          <span className="mr-1 text-xs font-medium uppercase tracking-wide text-faint">
+            {t("popularTitle")}
+          </span>
+          {POPULAR_SLUGS.map((slug) => {
+            const tool = getTool(slug);
+            if (!tool) return null;
+            const toolName =
+              toolMeta?.[slug]?.name ??
+              (tools.find((tool) => tool.slug === slug)?.name ?? slug);
+            return (
+              <Link
+                key={slug}
+                href={`/araclar/${slug}`}
+                className="group inline-flex items-center gap-1.5 rounded-full border border-border bg-surface px-3 py-1 text-sm text-muted transition-colors hover:border-accent/50 hover:text-text"
+              >
+                <ToolIcon id={slug} className="h-4 w-4 text-accent" />
+                <span className="truncate">{toolName}</span>
+              </Link>
+            );
+          })}
         </div>
       </section>
 
