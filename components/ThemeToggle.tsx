@@ -11,10 +11,7 @@ export default function ThemeToggle() {
   useEffect(() => {
     let initial: boolean;
     try {
-      initial =
-        localStorage.theme !== undefined
-          ? localStorage.theme === "dark"
-          : window.matchMedia("(prefers-color-scheme: dark)").matches;
+      initial = localStorage.theme === "dark";
     } catch {
       initial = false;
     }

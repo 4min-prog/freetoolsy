@@ -5,10 +5,7 @@ import { usePathname } from "next/navigation";
 
 function resolveTheme(): boolean {
   try {
-    if (localStorage.theme !== undefined) {
-      return localStorage.theme === "dark";
-    }
-    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+    return localStorage.theme === "dark";
   } catch {
     return false;
   }
