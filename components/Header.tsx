@@ -47,9 +47,9 @@ export default function Header() {
         ref={headerRef}
         className="sticky top-0 z-50 border-b border-border bg-bg transition-colors"
       >
-        <div className="mx-auto flex h-14 w-full max-w-5xl items-center gap-2 px-4 sm:px-6">
+        <div className="mx-auto flex h-16 w-full max-w-5xl items-center gap-2 px-4 sm:px-6">
           <Link href="/" aria-label="FreetoolsY">
-            <Logo />
+            <Logo size="lg" />
           </Link>
 
           <nav className="ml-auto flex items-center gap-1 md:gap-2">
