@@ -162,29 +162,6 @@ export default async function Home({ params }: { params: { locale: string } }) {
         <div className="relative z-30 mt-6 rounded-2xl border border-border bg-surface/80 p-2 shadow-card backdrop-blur">
           <SearchBox large placeholder={t("searchPlaceholder")} />
         </div>
-
-        <div className="mt-4 flex flex-wrap items-center gap-x-1.5 gap-y-2">
-          <span className="mr-1 text-xs font-medium uppercase tracking-wide text-faint">
-            {t("popularTitle")}
-          </span>
-          {POPULAR_SLUGS.map((slug) => {
-            const tool = getTool(slug);
-            if (!tool) return null;
-            const toolName =
-              toolMeta?.[slug]?.name ??
-              (tools.find((tool) => tool.slug === slug)?.name ?? slug);
-            return (
-              <Link
-                key={slug}
-                href={`/araclar/${slug}`}
-                className="group inline-flex items-center gap-1.5 rounded-full border border-border bg-surface px-3 py-1 text-sm text-muted transition-colors hover:border-accent/50 hover:text-text"
-              >
-                <ToolIcon id={slug} className="h-4 w-4 text-accent" />
-                <span className="truncate">{toolName}</span>
-              </Link>
-            );
-          })}
-        </div>
       </section>
 
       <PopularStrip />
