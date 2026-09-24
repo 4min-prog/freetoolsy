@@ -2765,6 +2765,448 @@
           "Süreler nereye gider? Her şey cihazınızdaki bellekte kalır; hiçbir yere gönderilmez."
         ]
       }
+    ],
+    "currency-converter": [
+      {
+        "h": "Döviz Çevirici nedir?",
+        "p": "Döviz Çevirici, bir tutarı dilediğiniz para biriminden diğerine, ayarlayabildiğiniz referans kurlar üzerinden çevirir. Seyahat bütçeleri, yurtdışı alışverişleri, serbest çalışan faturaları ve yabancı para cinsinden tutarları kontrol etmek için idealdir."
+      },
+      {
+        "h": "Kurlar nereden gelir?",
+        "p": "Araç, sabit referans kurlarla yüklenir; bildiğiniz güncel kuru elle değiştirerek değeri güncelleyebilirsiniz. Piyasalar her an değiştiği için kesin tutar önemliyken rakamları o günkü spot kurla teyit edin."
+      },
+      {
+        "h": "Bir tutarı çevirme",
+        "list": [
+          "Kaynak ve hedef para birimini seçin.",
+          "Tutarı girin; kendi kurunuz farklıysa referans kurunu güncelleyin.",
+          "Sonucu ve ters kuru tek bakışta görün."
+        ]
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Kuru güncelleyebilir miyim? Evet — çevirmeden önce temel kur alanını düzenleyin.",
+          "İnternet gerekiyor mu? Hayır, her şey tarayıcınızda çalışır.",
+          "Kur canlı mı? Başlangıç değerleri referans kurlardır; güncel piyasa değeri için elle güncelleyin."
+        ]
+      }
+    ],
+    "compound-interest-calculator": [
+      {
+        "h": "Bileşik faiz nedir?",
+        "p": "Bileşik faiz, getirinizin kendi üzerinden de getiri üretmesidir. Bu hesap makinesi, ilk yatırımınızın faiz eklendikçe yıllar içinde nasıl büyüdüğünü, isteğe bağlı aylık katkılarla ve yıllık dökümle gösterir."
+      },
+      {
+        "h": "Neleri ayarlarsınız",
+        "list": [
+          "Başlangıç tutarı ve aylık yatırım.",
+          "Yıllık oran ve bileşiklenme sıklığı (yıllık, aylık, günlük).",
+          "Yıl veya ay cinsinden vade."
+        ]
+      },
+      {
+        "h": "Yıllık tablo neden önemli",
+        "p": "Yıllık döküm, her yıl ne kadarının birikiminizden, ne kadarının kazanılan faizden geldiğini tam gösterir. Ayda daha çok biriktirmek ile daha yüksek oran elde etmek gibi senaryoları karşılaştırın."
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Bileşiklenme sıklığı nasıl değişir? Ayarlardan günlük, aylık veya yıllık seçin; tablo yeniden hesplanır.",
+          "Vergi düşer mi? Hayır — sonuç, vergi ve ücretler öncesi kaba büyümedir.",
+          "Verilerim güvende mi? Tüm hesaplar tarayıcınızda yapılır; hiçbir şey gönderilmez."
+        ]
+      }
+    ],
+    "salary-calculator": [
+      {
+        "h": "Net Maaş Hesaplama nedir?",
+        "p": "Net Maaş Hesaplama, brüt maaşınızdan SGK, işsizlik sigortası ve gelir vergisi kesintileri sonrası elinize geçen tutarı tahmin eder. Türkiye'nin bordro düzenine uygun olarak aylık ve yıllık özet verir."
+      },
+      {
+        "h": "Neleri kapsar",
+        "list": [
+          "SGK ve işsizlik sigortası kesintileriyle brütten nete dönüşüm.",
+          "Dilimli ilerleyen gelir vergisi ve asgari ücret istisnası.",
+          "Aylık, yıllık ve muhasebe dönemi dökümleri."
+        ]
+      },
+      {
+        "h": "Planlama için kullanın",
+        "p": "Brüt maaşınızı girin ve net tutarı anında görün. Teklifleri karşılaştırın ya da bir zam kararından önce elinize geçecek tutarı kontrol edin."
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Bu tutar tam olarak doğru mu? Bir tahmindir; kesin rakam kendi durumunuza ve işveren tercihlerine göre değişir.",
+          "Ek ödemeleri içerir mi? Fazla mesai, prim ve diğer yan haklar kapsam dışıdır.",
+          "Vergi dilimleri güncel mi? Hesap makinesi güncel dilim mantığını kullanır; son oranlarla teyit edin."
+        ]
+      }
+    ],
+    "sql-formatter": [
+      {
+        "h": "SQL Formatlayıcı nedir?",
+        "p": "SQL Formatlayıcı, dağınık SQL'i temiz, okunur sorgulara dönüştürür — ya da tek satırlık kompakt bir çıktıya sıkıştırır. Girinti ve anahtar sözcük büyük/küçük harf tercihiyle tarayıcıda anında biçimlendirin."
+      },
+      {
+        "h": "Nerelerde kullanışlı",
+        "list": [
+          "Uzun saklı yordamları tutarlı hizalama ile çözmek.",
+          "Takım arkadaşlarıyla okunur sorguları paylaşmak.",
+          "Blog, sohbet veya küçük araç pencereleri için kompakt SQL hazırlamak."
+        ]
+      },
+      {
+        "h": "Biçimlendirme seçenekleri",
+        "p": "Girinti için boşluk sayısını ve anahtar sözcüklerin büyük, küçük ya da olduğu gibi yazılmasını seçin. Minify seçeneği tek satırlık çıktı için boşlukları ayıklar."
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "SQL Server, MySQL ve Postgres için çalışır mı? Evet — biçimleyici geneldir ve yaygın diyalektleri işler.",
+          "Sorgum sunucuya gönderilir mi? Hayır, her şey tarayıcınızda yerel çalışır.",
+          "Sorgu mantığını değiştirmeden biçimlendirebilir miyim? Evet, yalnızca boşluk ve harf durumu değişir."
+        ]
+      }
+    ],
+    "json-xml-converter": [
+      {
+        "h": "JSON ile XML dönüştürücü nedir?",
+        "p": "JSON ile XML dönüştürücü, JSON veriyi XML'e ve XML'i JSON'a iki yönde de çevirir. Diziler tekrarlanan öğeler olarak korunur ve XML öznitelikleri desteklenir; böylece çoğu gerçek belge temiz dönüşür."
+      },
+      {
+        "h": "Nasıl kullanılır",
+        "list": [
+          "Sola JSON veya XML yapıştırın, yönü seçin ve Dönüştür'e basın.",
+          "Çıktıyı ve dönüşüm başarısızsa hata mesajını inceleyin.",
+          "Sonucu tek tıkla kopyalayın."
+        ]
+      },
+      {
+        "h": "Zor durumlar nasıl ele alınır",
+        "p": "Öznitelikli belgeler @öznitelik sözleşmesiyle gidiş-geliş yapar; tekrarlanan öğeler diziye dönüşür. Belge geçersizse araç sorunu gösterir; düzeltip yeniden çevirebilirsiniz."
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Verilerim saklanır mı? Hayır — her şey tarayıcınızda işlenir.",
+          "Öznitelik sırası korunur mu? Geri çevirirken öznitelik sırası korunur.",
+          "Çok büyük dosyaları çevirebilir miyim? Evet, dönüştürme boyut sınırı olmadan tarayıcınızda çalışır."
+        ]
+      }
+    ],
+    "markdown-html-converter": [
+      {
+        "h": "Markdown ile HTML dönüştürücü nedir?",
+        "p": "Markdown ile HTML dönüştürücü, Markdown'dan HTML yazar ya da HTML'i geri Markdown'a çevirir; çalıştıkça sonucu görmeniz için canlı önizleme sunar."
+      },
+      {
+        "h": "Nerelerde işe yarar",
+        "list": [
+          "Markdown notlarınızı e-posta veya web editörleri için HTML'e çevirmek.",
+          "Mevcut HTML sayfalarını temiz Markdown'a dönüştürmek.",
+          "Yayınlamadan önce bir parçanın nasıl göründüğünü kontrol etmek."
+        ]
+      },
+      {
+        "h": "İçeriğim gizli mi?",
+        "p": "Evet. Dönüşüm tamamen tarayıcınızda gerçekleşir; yapıştırılan içerik cihazınızdan çıkmaz — taslaklar ve iç dokümanlar için güvenlidir."
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Hangi Markdown desteklenir? Yaygın söz dizimi: başlıklar, listeler, kod, tablolar ve bağlantılar.",
+          "HTML'den Markdown'a karmaşık yerleşimleri işler mi? Standart biçimlendirmeyi çevirir; çok karmaşık iç içe işaretlemeler kısmen HTML kalabilir.",
+          "İnternet gerekir mi? Hayır, araç tarayıcınızda çevrimdışı çalışır."
+        ]
+      }
+    ],
+    "hmac-generator": [
+      {
+        "h": "HMAC Üretici nedir?",
+        "p": "HMAC Üretici, mesajınız için bir gizli anahtar kullanarak HMAC-SHA256 veya HMAC-SHA512 imzası hesaplar ve sonucu hex ile Base64 olarak gösterir. API isteklerinin bütünlüğünü ve kaynağını doğrulamak için sık kullanılır."
+      },
+      {
+        "h": "Nasıl kullanılır",
+        "list": [
+          "Mesaj metninizi ve gizli anahtarınızı yapıştırın.",
+          "Karma işlevi olarak SHA-256 veya SHA-512 seçin.",
+          "Elde edilen imzayı hex veya Base64 olarak kopyalayın."
+        ]
+      },
+      {
+        "h": "Güvenlik notu",
+        "p": "İmza, mesajınızın birebir baytlarına bağlıdır. Görüştüğünüz hizmetle aynı imzalama ayarlarını kullanın ve üretim anahtarlarını güvenilmeyen makinelere asla yapıştırmayın — bu araç tamamen tarayıcınızda çalışır."
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "HMAC basit karmalama ile aynı mı? Hayır — HMAC karmayı bir sırla anahtarlar; yalnızca bütünlüğü değil, gerçekliği de doğrular.",
+          "Dosya üzerinde çalışır mı? Doğrudan değil; önce dosya içeriğini karma hale getirin, sonra bu karmayı imzalayın.",
+          "Gizli anahtarım güvende mi? Anahtar tarayıcınızda yerel işlenir ve asla gönderilmez."
+        ]
+      }
+    ],
+    "html-table-generator": [
+      {
+        "h": "HTML Tablo Üretici nedir?",
+        "p": "HTML Tablo Üretici, satır ve sütunlarınızdan ya da yapıştırdığınız veriden kopyalamaya hazır HTML tablo kodu üretir; canlı önizleme ile kopyalamadan önce son hali görürsünüz."
+      },
+      {
+        "h": "Tablo oluşturma yolları",
+        "list": [
+          "İstediğiniz satır ve sütun sayısıyla boş bir ızgara belirleyin.",
+          "TSV verisi yapıştırın (örneğin Excel veya Google Sheets'tan).",
+          "Tablo başlığı ekleyin ve isteğe bağlı kenarlıklar kullanın."
+        ]
+      },
+      {
+        "h": "Neden kullanmalı",
+        "p": "Tabloyu elle yazmak sıkıcıdır. Bu araç, bir CMS, editör veya e-posta şablonuna bırakabileceğiniz temiz, kopyalamaya hazır kod üretir; sonra kendi CSS'inizle şekillendirirsiniz."
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Başlık satırı ekleyebilir miyim? Evet — ilk satır tablo başlığı olarak işaretlenebilir.",
+          "Birleşik hücreler desteklenir mi? Otomatik değil; üretici yaygın düz tabloları kapsar.",
+          "Kod nerede üretilir? Tarayıcınızda — hiçbir şey yüklenmez."
+        ]
+      }
+    ],
+    "favicon-generator": [
+      {
+        "h": "Favicon Üretici nedir?",
+        "p": "Favicon Üretici, bir harf veya kısa metin ile seçtiğiniz renklerden favicon çizer ve PNG veya ICO olarak indirmenizi sağlar. Grafik programı gerektirmeden siteye tanınır bir sekme simgesi kazandırır."
+      },
+      {
+        "h": "Favicon'unuzu üretme",
+        "list": [
+          "Simgede görmek istediğiniz harfi/metni yazın ve metin rengini seçin.",
+          "Arka plan rengini (isteğe bağlı yuvarlak köşeli) belirleyin.",
+          "PNG veya ICO indirin ve site head'ine bağlayın."
+        ]
+      },
+      {
+        "h": "Tasarım ipuçları",
+        "p": "Faviconlar küçüktür — metni kısa, renkleri yüksek kontrastlı tutun. Hem açık hem koyu sekmede test ederek simgenin görünür kaldığını doğrulayın."
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "ICO ile PNG farkı ne? ICO eski tarayıcılar için çoklu boyut tutar; PNG daha basittir ve yeniler destekler.",
+          "Logo dosyamı okur mu? Üretici metinden çizer; özel logo için görsel düzenleyici kullanın.",
+          "Verilerim gizli mi? Her şey tarayıcı tarafında üretilir."
+        ]
+      }
+    ],
+    "image-crop": [
+      {
+        "h": "Görsel Kırpıcı nedir?",
+        "p": "Görsel Kırpıcı, herhangi bir görseli seçim kutusunu sürükleyerek tam istediğiniz alana kırpar — yüklemesiz, kayıtsız, doğrudan tarayıcıda."
+      },
+      {
+        "h": "Kırpma adımları",
+        "list": [
+          "Görseli seçin veya bırakın.",
+          "Tutacakları sürükleyerek koruyacağınız bölgeyi çerçeveleyin.",
+          "Kırpılan görseli PNG veya JPEG olarak indirin."
+        ]
+      },
+      {
+        "h": "Orijinal pikseller korunur",
+        "p": "Kırpma, seçimin dışındaki her şeyi kaldırır; kalan alan yeniden sıkıştırılmaz, böylece web kullanımında keskinlik korunur."
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Tam piksel boyutu verebilir miyim? Önce görsel olarak kırpın, gerekirse sitenin görsel yeniden boyutlandırıcısıyla ebadı ayarlayın.",
+          "Hangi biçimler destekleniyor? JPEG, PNG ve WebP dahil yaygın görsel biçimleri.",
+          "Fotoğrafım yüklenir mi? Hayır — tüm işlem tarayıcınızda yerel yapılır."
+        ]
+      }
+    ],
+    "image-watermark": [
+      {
+        "h": "Görsel Filigran nedir?",
+        "p": "Görsel Filigran, logo veya imza gibi bir görsel damgayı fotoğrafınızın üzerine seçtiğiniz konum ve saydamlıkta yerleştirir; içeriğinizi korur veya sosyal paylaşımlarda size atıf sağlar."
+      },
+      {
+        "h": "Filigran ekleme",
+        "list": [
+          "Ana görseli ve filigran görselini (logo veya imza) yükleyin.",
+          "Konumu, boyutu ve saydamlığı ayarlayın.",
+          "Sonucu PNG olarak indirin."
+        ]
+      },
+      {
+        "h": "Şık filigran için ipuçları",
+        "p": "Düşük saydamlık ve köşe konumu, fotoğrafı temiz tutar ama kaynağı yine de gösterir. Gerektiğinde şeffaf zemin için PNG olarak dışa aktarın."
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Logo yerine metin ekleyebilir miyim? Filigranı görsel olarak kaydedip bu aracı kullanın.",
+          "Orijinali yeniden boyutlandırır mı? Çıktı boyutu orijinal görseli takip eder.",
+          "İçeriğim yüklenir mi? Hayır, her şey tarayıcınızda çalışır."
+        ]
+      }
+    ],
+    "jsonld-generator": [
+      {
+        "h": "JSON-LD Üretici nedir?",
+        "p": "JSON-LD Üretici, schema.org yapılandırılmış verisi oluşturur — Article, Product, FAQPage, Event, Person ve daha fazlası — zengin sonuçlar için sayfanızın head'ine yapıştırmaya hazır."
+      },
+      {
+        "h": "Nasıl kullanılır",
+        "list": [
+          "Bir yapılandırılmış veri türü seçin.",
+          "Alanları sade dille doldurun.",
+          "Oluşan JSON-LD'yi kopyalayıp head içine script etiketiyle yapıştırın."
+        ]
+      },
+      {
+        "h": "Yapılandırılmış veri neden önemli",
+        "p": "Yapılandırılmış veri, arama motorlarının içeriğinizi anlamasına yardımcı olur; yıldız puanları, SSS ve etkinlik listeleri gibi zengin sonuçları açabilir — küçük bir snippet, gerçek bir görünürlük kazancı."
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Geliştirici olmam gerekir mi? Hayır — alanlar sade dille etiketlenmiştir.",
+          "Geçerli JSON üretir mi? Evet, çıktı her zaman geçerli JSON'dur; Google'ın sonuç test araçlarıyla doğrulayın.",
+          "İşlem nerede yapılıyor? Tarayıcınızda; içeriğiniz özel kalır."
+        ]
+      }
+    ],
+    "hreflang-generator": [
+      {
+        "h": "Hreflang Üretici nedir?",
+        "p": "Hreflang Üretici, çok dilli siteler için hreflang link etiketleri ve x-default girişlerini oluşturur, ardından head'inize veya XML sitemap'inize uygun biçimde düzenler — URL listelerini elle yazmak yok."
+      },
+      {
+        "h": "Etiketleri oluşturma",
+        "list": [
+          "Sayfanın her dil sürümünün URL'ini girin.",
+          "Çıktı biçimini HTML link etiketleri veya sitemap-XML bloğu olarak seçin.",
+          "Çıktıyı kopyalayıp head veya sitemap'e yapıştırın."
+        ]
+      },
+      {
+        "h": "Hreflang tam çiftler gerektirir",
+        "p": "Her dil sürümü, tüm karşılıklarını listelemeli ve eşleşen bir x-default eklemeli. Üretici x-default'u dahil eder; böylece arama motorları tam ve tutarlı bir sinyal görür."
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Her sayfada hreflang mı olmalı? Her yerelleştirilmiş URL'e ekleyin ve etiketleri her sürümde aynalayın.",
+          "URL'leri doğrular mısınız? Araç girişleri biçimlendirir; son kodu Search Console'da doğrulayın.",
+          "URL listem yüklenir mi? Hayır, tarayıcınızda yerel oluşturulur."
+        ]
+      }
+    ],
+    "robots-txt-generator": [
+      {
+        "h": "Robots.txt Üretici nedir?",
+        "p": "Robots.txt Üretici, ön ayarlardan — her şeye izin ver, her şeyi engelle — ve kendi izin/engelleme kurallarınızdan robots.txt içeriği yazar; site köküne bırakmaya hazır."
+      },
+      {
+        "h": "Nasıl çalışır",
+        "list": [
+          "Bir ön ayardan başlayın (herkese izin, hepsini engelle veya arama tarayıcılarını engelle).",
+          "Her kullanıcı ajanı için belirli yollara izin veya engel ekleyin.",
+          "Son metni /robots.txt dosyanıza kopyalayın."
+        ]
+      },
+      {
+        "h": "robots.txt'yi doğru kullanın",
+        "p": "robots.txt iyi huylu tarayıcıları yönlendirir; güvenlik engeli değildir. Engelleme kurallarını arama sonuçlarında kalmaması gereken yollarla sınırlı tutun ve değişiklikleri Search Console'da test edin."
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Hangi adres için üretmeliyim? Hizmet verdiğiniz ana adresin köküne tek bir robots.txt koyun.",
+          "Sitemap gösterebilir mi? Evet — üretilen metinde bir sitemap satırı bulunur.",
+          "Dosya bir yerde saklanır mı? Hayır, tarayıcınızda üretilir."
+        ]
+      }
+    ],
+    "wheel-of-names": [
+      {
+        "h": "İsim Çarkı nedir?",
+        "p": "İsim Çarkı, isim listenizi taşıyan renkli bir çarkı çevirir ve rastgele bir kazanan üzerinde durur. Sınıf seçimleri, çekilişler, grup görevleri ve dostça piyangolar için idealdir."
+      },
+      {
+        "h": "Çekiliş nasıl yapılır",
+        "list": [
+          "Her katılımcıyı isim kutusuna bir satır olarak ekleyin.",
+          "Çarkı çevirin ve kazananı izleyin.",
+          "Kazananı çıkarıp ikinci ödül için yeniden çevirin."
+        ]
+      },
+      {
+        "h": "Adil ve eğlenceli çekilişler",
+        "p": "Dönüş rastgeledir, sonuç tarafsızdır — üstelik renkli çark, projeksiyon veya büyük ekranda heyecanı artıran şık bir sunum sunar."
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Resim yerine isim kullanabilir miyim? Çark metin girişlerini destekler.",
+          "Birden çok kazanan seçilebilir mi? Evet — kazananı listeden çıkarıp yeniden çevirin.",
+          "İnternet gerekir mi? Hayır, tamamen tarayıcınızda çalışır."
+        ]
+      }
+    ],
+    "random-number-generator": [
+      {
+        "h": "Rastgele Sayı Üretici nedir?",
+        "p": "Rastgele Sayı Üretici, seçtiğiniz aralıkta, tekrarlı veya tekrarsız rastgele sayılar üretir. Piyango seçimleri, örneklem seçimi, zar benzeri atışlar ve test için kullanışlıdır."
+      },
+      {
+        "h": "Nasıl kullanılır",
+        "list": [
+          "Aralığın en küçük ve en büyük değerini girin.",
+          "Kaç sayı istediğinizi ve tekrara izin verilip verilmediğini seçin.",
+          "Üretin; listeyi kopyalayın veya sıralayın."
+        ]
+      },
+      {
+        "h": "Gerçek rastgelelik tarayıcıda",
+        "p": "Üretici, tarayıcının kriptografik rastgelelik kaynağını kullanır; her çekim bağımsızdır ve önceden kestirilemez."
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Tekrarlar kapatılabilir mi? Evet — her sayı bir kez görülmeli ise tekrarsız moda geçin.",
+          "Negatif sayıları destekler mi? Evet, her aralığı seçebilirsiniz.",
+          "Sonuç saklanır mı? Hayır, sayılar yerel olarak üretilir."
+        ]
+      }
+    ],
+    "stopwatch-timer": [
+      {
+        "h": "Kronometre ve Sayaç nedir?",
+        "p": "Kronometre, tur süreleriyle geçen zamanı ölçer; Sayaç ise belirlediğiniz süreye geri sayar ve bitince çalar. Yemek, antrenman, oyun ve çalışma zamanlaması için iki araç."
+      },
+      {
+        "h": "Bir süreyi ölçme",
+        "list": [
+          "Kronometre: Başlat'a dokunun, turları kaydedin ve toplam ile tur sürelerini okuyun.",
+          "Sayaç: dakika ve saniyeyi ayarlayıp Başlat'a basın.",
+          "Sıfırla mevcut modu temizler; sayaç bitince ses çalar."
+        ]
+      },
+      {
+        "h": "Arka planda da doğru",
+        "p": "Süreler gerçek saat zamanına dayanır; sekme gizlenmiş olsa bile ölçümler doğru kalır."
+      },
+      {
+        "h": "SSS",
+        "list": [
+          "Tur kaydedebilir miyim? Evet — tur ve toplam süreleriyle kaydırılabilir listeye yeteri kadar kayıt düşer.",
+          "Bitince çalar mı? Sayaç sıfıra ulaştığında kısa bir bip sesi verir.",
+          "Bir şey gönderilir mi? Hayır — her şey tarayıcınızda yerel çalışır."
+        ]
+      }
     ]
   },
   "Rehber": {
