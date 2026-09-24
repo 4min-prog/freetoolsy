@@ -79,13 +79,13 @@ export default async function Home({ params }: { params: { locale: string } }) {
           },
         ]}
       />
-      <section className="relative pb-9 pt-14 sm:pb-10 sm:pt-20">
+      <section className="fade-in-up relative pb-9 pt-14 sm:pb-10 sm:pt-20">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
         >
           <div className="hero-bg absolute inset-0" />
-          <div className="absolute -top-28 left-1/2 h-72 w-[38rem] -translate-x-1/2 rounded-full bg-accent/15 blur-3xl" />
+          <div className="absolute -top-24 left-1/2 h-56 w-[30rem] -translate-x-1/2 rounded-full bg-accent/10 blur-2xl" />
         </div>
         <h1 className="max-w-[22ch] text-3xl font-semibold leading-tight tracking-tight text-text sm:text-4xl">
           {hasHighlight ? (
