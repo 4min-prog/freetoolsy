@@ -8,7 +8,6 @@ import ToolExplorer from "@/components/ToolExplorer";
 import SearchBox from "@/components/SearchBox";
 import PopularStrip from "@/components/PopularStrip";
 import JsonLd from "@/components/JsonLd";
-import AdSlot from "@/components/AdSlot";
 import { Link } from "@/i18n/navigation";
 import { categories, tools } from "@/data/tools";
 import { toolPath } from "@/lib/paths";
@@ -195,8 +194,6 @@ export default async function Home({ params }: { params: { locale: string } }) {
       </section>
 
       <PopularStrip />
-
-      <AdSlot slot="top" />
 
       <ToolExplorer />
     </main>

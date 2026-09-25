@@ -18,7 +18,6 @@ import { DYNAMIC_TOOL_SLUGS } from "@/data/dynamicTools";
 import { toolComponents } from "@/data/toolComponents";
 import ToolDynamic from "@/components/tools/ToolDynamic";
 import { guides } from "@/data/guides";
-import AdSlot from "@/components/AdSlot";
 import JsonLd from "@/components/JsonLd";
 import ToolJsonLd from "@/components/ToolJsonLd";
 import ToolFaqJsonLd from "@/components/ToolFaqJsonLd";
@@ -187,8 +186,6 @@ export default async function AraclarPage({
         {t("pageDesc")}
       </p>
 
-      <AdSlot slot="top" />
-
       <div className="mt-8 rounded-xl border border-border bg-surface p-5 shadow-card sm:p-6">
         <NextIntlClientProvider messages={toolMessages}>
           {DYNAMIC_TOOL_SLUGS.has(tool.slug) ? (
@@ -198,8 +195,6 @@ export default async function AraclarPage({
           )}
         </NextIntlClientProvider>
       </div>
-
-      <AdSlot slot="bottom" />
 
       <ToolSeoContent slug={tool.slug} />
 
