@@ -14,9 +14,19 @@ export default function ToolCard({ tool }: { tool: Tool }) {
   return (
     <Link
       href={`/araclar/${tool.slug}`}
-      className={`group flex flex-col border border-border bg-surface p-4 transition-colors hover:bg-surface-2 active:bg-surface-2 sm:p-5 ${theme.hoverBorder}`}
+      className={`group relative flex flex-col overflow-hidden border border-border bg-surface p-4 transition-colors hover:bg-surface-2 active:bg-surface-2 sm:p-5 ${theme.hoverBorder}`}
     >
-      <div className="flex items-start gap-3">
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-y-0 right-0 flex w-[30%] items-center justify-center opacity-10 transition-opacity duration-200 group-hover:opacity-20"
+      >
+        <ToolIcon
+          id={tool.slug}
+          className={`h-28 w-28 rotate-6 ${theme.iconText}`}
+        />
+      </span>
+
+      <div className="relative z-10 flex items-start gap-3">
         <ToolIcon
           id={tool.slug}
           className={`mt-0.5 h-5 w-5 shrink-0 ${theme.iconText}`}
@@ -38,11 +48,11 @@ export default function ToolCard({ tool }: { tool: Tool }) {
         </svg>
       </div>
 
-      <span className="mt-2 font-mono text-[10px] uppercase tracking-[0.18em] text-faint">
+      <span className="relative z-10 mt-2 font-mono text-[10px] uppercase tracking-[0.18em] text-faint">
         {tc(tool.category)}
       </span>
 
-      <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">
+      <p className="relative z-10 mt-3 flex-1 text-sm leading-relaxed text-muted">
         {t("desc")}
       </p>
     </Link>
