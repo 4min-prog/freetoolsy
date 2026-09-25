@@ -16,9 +16,7 @@ export default function CookieBanner({
   adsEnabled: boolean;
 }) {
   const t = useTranslations("CookieBanner");
-  const [consent, setStoredConsent] = useState<Consent | null | "loading">(
-    "loading"
-  );
+  const [consent, setStoredConsent] = useState<Consent | null | "loading">("loading");
 
   useEffect(() => {
     setStoredConsent(getConsent());
@@ -28,6 +26,8 @@ export default function CookieBanner({
     setStoredConsent(value);
     setConsent(value);
   };
+
+  if (consent === "loading") return null;
 
   return (
     <>
@@ -58,7 +58,7 @@ export default function CookieBanner({
         </>
       )}
 
-      {consent !== null && consent !== "accepted" && (
+      {consent === null && (
         <div
           role="dialog"
           aria-live="polite"
