@@ -81,10 +81,11 @@
     "results": "Results",
     "toolCount": "{count} tools",
     "noResults": "No tools matched \"{query}\". Try a different keyword.",
-    "tabAll": "All tools",
-    "showMore": "Show {count} more",
-    "viewAll": "View all {count} tools"
-  },
+      "tabAll": "All tools",
+      "showMore": "Show {count} more",
+      "viewAll": "View all {count} tools",
+      "categories": "Tool categories"
+    },
   "Categories": {
     "seo": "SEO",
     "text": "Text",

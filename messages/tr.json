@@ -83,7 +83,8 @@
     "noResults": "Aranan kriterle \"{query}\" eşleşen araç bulunamadı. Farklı bir anahtar kelime deneyin.",
     "tabAll": "Tüm araçlar",
     "showMore": "Daha fazla göster ({count})",
-    "viewAll": "Tüm {count} aracı gör"
+    "viewAll": "Tüm {count} aracı gör",
+    "categories": "Araç kategorileri"
   },
   "Categories": {
     "seo": "SEO",
