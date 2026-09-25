@@ -5,6 +5,7 @@ import { getMessages, getTranslations, setRequestLocale } from "next-intl/server
 import { notFound } from "next/navigation";
 import Script from "next/script";
 import { routing, type Locale } from "@/i18n/routing";
+import { pickClientMessages } from "@/lib/clientMessages";
 import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -95,7 +96,7 @@ export default async function RootLayout({
   }
   const locale = params.locale as Locale;
   setRequestLocale(locale);
-  const messages = await getMessages();
+  const messages = pickClientMessages(await getMessages());
 
   return (
     <html lang={locale} suppressHydrationWarning>

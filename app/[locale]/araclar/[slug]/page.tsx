@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, getMessages, setRequestLocale } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { categories, getTool, tools, type Tool } from "@/data/tools";
 import type { Locale } from "@/i18n/routing";
@@ -11,93 +12,12 @@ import {
   toolPath,
   toolUrl,
 } from "@/lib/paths";
+import { pickToolMessages } from "@/lib/clientMessages";
 import { POPULAR_SLUGS } from "@/data/popular";
 import { DYNAMIC_TOOL_SLUGS } from "@/data/dynamicTools";
-import { guides } from "@/data/guides";
-import CharacterCounter from "@/components/tools/CharacterCounter";
-import WordCounter from "@/components/tools/WordCounter";
-import CaseConverter from "@/components/tools/CaseConverter";
-import PasswordGenerator from "@/components/tools/PasswordGenerator";
-import JsonFormatter from "@/components/tools/JsonFormatter";
-import Base64Encoder from "@/components/tools/Base64Encoder";
-import UrlEncoder from "@/components/tools/UrlEncoder";
-import BmiCalculator from "@/components/tools/BmiCalculator";
-import VatCalculator from "@/components/tools/VatCalculator";
-import PercentageCalculator from "@/components/tools/PercentageCalculator";
-import AgeCalculator from "@/components/tools/AgeCalculator";
-import QrCodeGenerator from "@/components/tools/QrCodeGenerator";
-import ShaHashGenerator from "@/components/tools/ShaHashGenerator";
-import DateDifference from "@/components/tools/DateDifference";
-import ColorConverter from "@/components/tools/ColorConverter";
-import UuidGenerator from "@/components/tools/UuidGenerator";
-import UnitConverter from "@/components/tools/UnitConverter";
-import PasswordStrengthChecker from "@/components/tools/PasswordStrengthChecker";
-import NumberBaseConverter from "@/components/tools/NumberBaseConverter";
-import RegexTester from "@/components/tools/RegexTester";
-import WhitespaceCleaner from "@/components/tools/WhitespaceCleaner";
-import Md5Hash from "@/components/tools/Md5Hash";
-import JwtDecoder from "@/components/tools/JwtDecoder";
-import JsonCsv from "@/components/tools/JsonCsv";
-import TimestampConverter from "@/components/tools/TimestampConverter";
-import DuplicateLineRemover from "@/components/tools/DuplicateLineRemover";
-import AiTokenCounter from "@/components/tools/AiTokenCounter";
-import LoremIpsumGenerator from "@/components/tools/LoremIpsumGenerator";
-import TipCalculator from "@/components/tools/TipCalculator";
-import DiscountCalculator from "@/components/tools/DiscountCalculator";
-import AverageCalculator from "@/components/tools/AverageCalculator";
-import DogAgeCalculator from "@/components/tools/DogAgeCalculator";
-import SubnetCalculator from "@/components/tools/SubnetCalculator";
-import PxRemConverter from "@/components/tools/PxRemConverter";
-import XmlFormatter from "@/components/tools/XmlFormatter";
-import CssMinifier from "@/components/tools/CssMinifier";
-import HtmlMinifier from "@/components/tools/HtmlMinifier";
-import WcagContrastChecker from "@/components/tools/WcagContrastChecker";
-import ColorPaletteGenerator from "@/components/tools/ColorPaletteGenerator";
-import BoxShadowGenerator from "@/components/tools/BoxShadowGenerator";
-import TextSorter from "@/components/tools/TextSorter";
-import ListShuffler from "@/components/tools/ListShuffler";
-import YamlJson from "@/components/tools/YamlJson";
-import Md5FileChecksum from "@/components/tools/Md5FileChecksum";
+import { toolComponents } from "@/data/toolComponents";
 import ToolDynamic from "@/components/tools/ToolDynamic";
-import SlugGenerator from "@/components/tools/SlugGenerator";
-import MetaTagGenerator from "@/components/tools/MetaTagGenerator";
-import KeywordDensityChecker from "@/components/tools/KeywordDensityChecker";
-import SerpPreview from "@/components/tools/SerpPreview";
-import ReadabilityScore from "@/components/tools/ReadabilityScore";
-import TextDiff from "@/components/tools/TextDiff";
-import HtmlEntityConverter from "@/components/tools/HtmlEntityConverter";
-import MorseConverter from "@/components/tools/MorseConverter";
-import TextReverser from "@/components/tools/TextReverser";
-import FancyTextGenerator from "@/components/tools/FancyTextGenerator";
-import CaesarCipher from "@/components/tools/CaesarCipher";
-import GpaCalculator from "@/components/tools/GpaCalculator";
-import LoanEmiCalculator from "@/components/tools/LoanEmiCalculator";
-import CalorieBmrCalculator from "@/components/tools/CalorieBmrCalculator";
-import BodyFatCalculator from "@/components/tools/BodyFatCalculator";
-import IdealWeightCalculator from "@/components/tools/IdealWeightCalculator";
-import SleepCalculator from "@/components/tools/SleepCalculator";
-import CronTester from "@/components/tools/CronTester";
-import HtmlFormatter from "@/components/tools/HtmlFormatter";
-import AesEncryption from "@/components/tools/AesEncryption";
-import RandomStringGenerator from "@/components/tools/RandomStringGenerator";
-import JwtGenerator from "@/components/tools/JwtGenerator";
-import CurrencyConverter from "@/components/tools/CurrencyConverter";
-import CompoundInterestCalculator from "@/components/tools/CompoundInterestCalculator";
-import SalaryCalculator from "@/components/tools/SalaryCalculator";
-import SqlFormatter from "@/components/tools/SqlFormatter";
-import JsonXmlConverter from "@/components/tools/JsonXmlConverter";
-import MarkdownHtmlConverter from "@/components/tools/MarkdownHtmlConverter";
-import HmacGenerator from "@/components/tools/HmacGenerator";
-import HtmlTableGenerator from "@/components/tools/HtmlTableGenerator";
-import FaviconGenerator from "@/components/tools/FaviconGenerator";
-import ImageCrop from "@/components/tools/ImageCrop";
-import ImageWatermark from "@/components/tools/ImageWatermark";
-import JsonLdGenerator from "@/components/tools/JsonLdGenerator";
-import HreflangGenerator from "@/components/tools/HreflangGenerator";
-import RobotsTxtGenerator from "@/components/tools/RobotsTxtGenerator";
-import WheelOfNames from "@/components/tools/WheelOfNames";
-import RandomNumberGenerator from "@/components/tools/RandomNumberGenerator";
-import StopwatchTimer from "@/components/tools/StopwatchTimer";
+import { guides } from "@/data/guides";
 import AdSlot from "@/components/AdSlot";
 import JsonLd from "@/components/JsonLd";
 import ToolJsonLd from "@/components/ToolJsonLd";
@@ -108,91 +28,6 @@ import ToolIcon from "@/components/ToolIcon";
 import ToolViewTracker from "@/components/ToolViewTracker";
 import { categoryTheme } from "@/components/categoryTheme";
 
-const toolComponents: Record<string, React.ComponentType> = {
-  "character-counter": CharacterCounter,
-  "word-counter": WordCounter,
-  "case-converter": CaseConverter,
-  "password-generator": PasswordGenerator,
-  "json-formatter": JsonFormatter,
-  "base64": Base64Encoder,
-  "url-encoder": UrlEncoder,
-  "bmi-calculator": BmiCalculator,
-  "vat-calculator": VatCalculator,
-  "percentage-calculator": PercentageCalculator,
-  "age-calculator": AgeCalculator,
-  "qr-code-generator": QrCodeGenerator,
-  "sha-hash-generator": ShaHashGenerator,
-  "date-difference": DateDifference,
-  "color-converter": ColorConverter,
-  "uuid-generator": UuidGenerator,
-  "unit-converter": UnitConverter,
-  "password-strength-checker": PasswordStrengthChecker,
-  "number-base-converter": NumberBaseConverter,
-  "regex-tester": RegexTester,
-  "whitespace-cleaner": WhitespaceCleaner,
-  "md5-hash": Md5Hash,
-  "jwt-decoder": JwtDecoder,
-  "json-csv-converter": JsonCsv,
-  "unix-timestamp-converter": TimestampConverter,
-  "duplicate-line-remover": DuplicateLineRemover,
-  "ai-token-counter": AiTokenCounter,
-  "lorem-ipsum-generator": LoremIpsumGenerator,
-  "tip-calculator": TipCalculator,
-  "discount-calculator": DiscountCalculator,
-  "average-calculator": AverageCalculator,
-  "dog-age-calculator": DogAgeCalculator,
-  "subnet-calculator": SubnetCalculator,
-  "px-rem-converter": PxRemConverter,
-  "xml-formatter": XmlFormatter,
-  "css-minifier": CssMinifier,
-  "html-minifier": HtmlMinifier,
-  "wcag-contrast-checker": WcagContrastChecker,
-  "color-palette-generator": ColorPaletteGenerator,
-  "box-shadow-generator": BoxShadowGenerator,
-  "text-sorter": TextSorter,
-  "list-shuffler": ListShuffler,
-  "yaml-json-converter": YamlJson,
-  "md5-file-checksum": Md5FileChecksum,
-  "slug-generator": SlugGenerator,
-  "meta-tag-generator": MetaTagGenerator,
-  "keyword-density-checker": KeywordDensityChecker,
-  "serp-preview": SerpPreview,
-  "readability-score": ReadabilityScore,
-  "text-diff": TextDiff,
-  "html-entity-converter": HtmlEntityConverter,
-  "morse-converter": MorseConverter,
-  "text-reverser": TextReverser,
-  "fancy-text-generator": FancyTextGenerator,
-  "caesar-cipher": CaesarCipher,
-  "gpa-calculator": GpaCalculator,
-  "loan-emi-calculator": LoanEmiCalculator,
-  "calorie-bmr-calculator": CalorieBmrCalculator,
-  "body-fat-calculator": BodyFatCalculator,
-  "ideal-weight-calculator": IdealWeightCalculator,
-  "sleep-calculator": SleepCalculator,
-  "cron-tester": CronTester,
-  "html-formatter": HtmlFormatter,
-  "aes-encryption": AesEncryption,
-  "random-string-generator": RandomStringGenerator,
-  "jwt-generator": JwtGenerator,
-  "currency-converter": CurrencyConverter,
-  "compound-interest-calculator": CompoundInterestCalculator,
-  "salary-calculator": SalaryCalculator,
-  "sql-formatter": SqlFormatter,
-  "json-xml-converter": JsonXmlConverter,
-  "markdown-html-converter": MarkdownHtmlConverter,
-  "hmac-generator": HmacGenerator,
-  "html-table-generator": HtmlTableGenerator,
-  "favicon-generator": FaviconGenerator,
-  "image-crop": ImageCrop,
-  "image-watermark": ImageWatermark,
-  "jsonld-generator": JsonLdGenerator,
-  "hreflang-generator": HreflangGenerator,
-  "robots-txt-generator": RobotsTxtGenerator,
-  "wheel-of-names": WheelOfNames,
-  "random-number-generator": RandomNumberGenerator,
-  "stopwatch-timer": StopwatchTimer,
-};
 
 export function generateStaticParams() {  const params: { locale: string; slug: string }[] = [];
   tools.forEach((tool) => {
@@ -240,6 +75,7 @@ export default async function AraclarPage({
   const tRehber = await getTranslations("Rehber");
   const tInfo = await getTranslations("Info");
   const messages = await getMessages();
+  const toolMessages = pickToolMessages(messages, tool.slug);
   const meta = (messages as { ToolMeta?: Record<string, { name?: string }> })
     .ToolMeta;
   const similarTools = tools
@@ -352,11 +188,13 @@ export default async function AraclarPage({
       <AdSlot slot="top" />
 
       <div className="mt-8 rounded-xl border border-border bg-surface p-5 shadow-card sm:p-6">
-        {DYNAMIC_TOOL_SLUGS.has(tool.slug) ? (
-          <ToolDynamic slug={tool.slug} />
-        ) : (
-          <ToolComponent />
-        )}
+        <NextIntlClientProvider messages={toolMessages}>
+          {DYNAMIC_TOOL_SLUGS.has(tool.slug) ? (
+            <ToolDynamic slug={tool.slug} />
+          ) : (
+            <ToolComponent />
+          )}
+        </NextIntlClientProvider>
       </div>
 
       <AdSlot slot="bottom" />
@@ -381,7 +219,7 @@ export default async function AraclarPage({
                   className="flex items-center gap-2 rounded-lg border border-border bg-bg px-3 py-2 text-sm text-muted transition-colors hover:border-accent hover:text-accent"
                 >
                   <span aria-hidden="true" className="text-accent">
-                    →
+                    â†’
                   </span>
                   <span className="truncate">{guide.content[locale].title}</span>
                 </Link>

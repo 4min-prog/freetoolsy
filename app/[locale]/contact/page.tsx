@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
-import { getLocale, getTranslations, setRequestLocale } from "next-intl/server";
+import {
+  getLocale,
+  getMessages,
+  getTranslations,
+  setRequestLocale,
+} from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
+import { pickCompMessages } from "@/lib/clientMessages";
 import { Link } from "@/i18n/navigation";
 import ContactForm from "@/components/ContactForm";
 import JsonLd from "@/components/JsonLd";
@@ -31,6 +38,7 @@ export default async function IletisimPage({
 }) {
   setRequestLocale(params.locale);
   const locale = await getLocale();
+  const formMessages = pickCompMessages(await getMessages(), "contactForm");
   const isTr = locale === "tr";
   const tInfo = await getTranslations("Info");
   const tTool = await getTranslations("ToolPage");
@@ -69,7 +77,9 @@ export default async function IletisimPage({
       </p>
 
       <div className="mt-8 rounded-xl border border-border bg-surface p-5 shadow-card sm:p-6">
+        <NextIntlClientProvider messages={formMessages}>
         <ContactForm />
+      </NextIntlClientProvider>
       </div>
     </main>
   );
