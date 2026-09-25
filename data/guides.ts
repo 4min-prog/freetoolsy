@@ -730,6 +730,552 @@ export const guides: Guide[] = [
       },
     },
   },
+  {
+    slug: "what-is-a-qr-code",
+    relatedTools: ["qr-code-generator", "url-encoder"],
+    content: {
+      en: {
+        title: "What is a QR code and how do you make one?",
+        desc: "QR codes explained: how they work, where they are used, and how to generate a custom QR code in seconds with FreetoolsY.",
+        intro:
+          "A QR code (Quick Response code) is a two-dimensional barcode that can be scanned by any smartphone camera. It stores text, URLs, Wi-Fi details or contact information and turns them into an instant action for the person scanning it.",
+        blocks: [
+          {
+            h2: "How does a QR code work?",
+            paragraphs: [
+              "A QR code stores data as black squares on a white background, arranged in a grid. Three large squares in the corners help the camera find and orient the code; everything else encodes the actual payload. Because scanning happens client-side, no data has to travel anywhere — the phone reads the pattern locally.",
+            ],
+            bullets: [
+              "URLs: open a website or landing page.",
+              "Wi-Fi: connect to a network with one tap.",
+              "Payments: start a payment link or program.",
+              "Products: show a menu, manual or campaign page.",
+            ],
+          },
+          {
+            h2: "How to generate a QR code with FreetoolsY",
+            paragraphs: [
+              "Open the QR Code Generator and type or paste the text, link or serial number you want to encode. Pick a size and the colors you like, then download the QR code as a PNG image and drop it into a poster, menu, business card or email signature.",
+            ],
+            bullets: [
+              "Test the code with a real phone camera before printing.",
+              "Use a solid, dark-on-light contrast for reliable scanning.",
+              "Keep a buffer zone around the code — do not cover it with artwork.",
+            ],
+          },
+          {
+            h2: "Best practices for QR codes",
+            paragraphs: [
+              "Run a quick error check before you print: a few wrong modules can make the whole code unreadable. If your target is a URL, point the code to a short redirect you can change later, so you do not have to reprint when the link updates.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "QR kod nedir ve nasıl oluşturulur?",
+        desc: "QR kodların nasıl çalıştığını, nerelerde kullanıldığını ve FreetoolsY ile saniyeler içinde özel QR kod nasıl üretileceğini öğrenin.",
+        intro:
+          "QR kod (Quick Response), herhangi bir akıllı telefon kamerasıyla taranabilen iki boyutlu bir barkoddur. Metin, URL, Wi-Fi bilgisi veya iletişim bilgisi saklar; tarayan kişi için bunları anında bir işleme dönüştürür.",
+        blocks: [
+          {
+            h2: "QR kod nasıl çalışır?",
+            paragraphs: [
+              "QR kod, veriyi siyah karelerin beyaz zemin üzerine yerleştiği bir ızgara olarak saklar. Köşelerdeki üç büyük kare kameranın kodu bulmasına ve yönünü belirlemesine yardımcı olur; gerisi gerçek yükü kodlar. Tarama tamamen cihazda yapıldığı için hiçbir veri başka bir yere gitmez.",
+            ],
+            bullets: [
+              "URL: bir web sitesini veya açılış sayfasını açar.",
+              "Wi-Fi: tek dokunuşla ağa bağlanır.",
+              "Ödeme: bir ödeme bağlantısını veya programını başlatır.",
+              "Ürün: menü, kılavuz veya kampanya sayfası gösterir.",
+            ],
+          },
+          {
+            h2: "FreetoolsY ile QR kod nasıl oluşturulur?",
+            paragraphs: [
+              "QR Kod Oluşturucu'yu açın ve kodlamak istediğiniz metni, bağlantıyı veya seri numarasını yazın ya da yapıştırın. Boyutu ve istediğiniz renkleri seçin, ardından QR kodu PNG olarak indirip afişe, menüye, kartvizite veya e-posta imzasına ekleyin.",
+            ],
+            bullets: [
+              "Baskıdan önce kodu gerçek bir telefon kamerasıyla test edin.",
+              "Güvenilir tarama için koyu ve açık zemin arasında güçlü kontrast kullanın.",
+              "Kodun çevresinde boşluk bırakın — üzerini tasarımla kapatmayın.",
+            ],
+          },
+          {
+            h2: "QR kod için en iyi uygulamalar",
+            paragraphs: [
+              "Baskı öncesi hata kontrolü yapın: birkaç yanlış modül, kodun tamamını okunmaz hale getirebilir. Hedef bir URL ise, kodu daha sonra değiştirebileceğiniz kısa bir yönlendirmeye bağlayın; böylece bağlantı güncellenince yeniden bastırmanız gerekmez.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "what-is-base64-encoding",
+    relatedTools: ["base64", "image-to-base64", "url-encoder"],
+    content: {
+      en: {
+        title: "What is Base64 encoding and when should you use it?",
+        desc: "Learn how Base64 works, why email, JSON and HTML use it, and how to encode or decode text and images instantly in your browser.",
+        intro:
+          "Base64 is a way to represent binary data as plain ASCII text. It turns bytes into a safe 64-character alphabet (A-Z, a-z, 0-9, + and /) so data can travel through systems that only understand text.",
+        blocks: [
+          {
+            h2: "Why is Base64 everywhere?",
+            paragraphs: [
+              "Emails, JSON APIs, CSS and HTML all predate modern binary-safe transport. Base64 lets them embed images, files and raw bytes without corruption. It grows data by about 33%, but the trade-off is universally compatible transport.",
+            ],
+            bullets: [
+              "Inline images in HTML or CSS as data URIs.",
+              "Attachments in email (MIME) and JWT payloads.",
+              "Storing binary values inside JSON or configuration files.",
+            ],
+          },
+          {
+            h2: "How to encode and decode with FreetoolsY",
+            paragraphs: [
+              "Paste text or a file into the Base64 Encoder and copy the encoded output. The tool also decodes — handy when you receive a Base64 blob from an API and want the original value back. Use image-to-base64 when you specifically need an image as a data URI.",
+            ],
+          },
+          {
+            h2: "Base64 is not encryption",
+            paragraphs: [
+              "Anyone can decode Base64 in a second, so never use it to protect passwords or secrets. Treat it as a format, not security. For sensitive data use a real encryption tool with a key.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "Base64 kodlama nedir ve ne zaman kullanılır?",
+        desc: "Base64'ün nasıl çalıştığını, e-posta, JSON ve HTML'nin onu neden kullandığını ve tarayıcınızda metin veya görselleri nasıl encode/decode edeceğinizi öğrenin.",
+        intro:
+          "Base64, ikili veriyi düz ASCII metin olarak temsil etmenin bir yoludur. Baytları güvenli 64 karakterlik bir alfabeye (A-Z, a-z, 0-9, + ve /) dönüştürür; böylece veri yalnızca metin anlayan sistemlerde güvenle taşınabilir.",
+        blocks: [
+          {
+            h2: "Base64 neden her yerde?",
+            paragraphs: [
+              "E-postalar, JSON API'ler, CSS ve HTML ikili veriye güvenli taşımanın yaygınlaşmasından önce ortaya çıktı. Base64 bu sistemlerin görsel, dosya ve ham baytları bozulmadan gömmesini sağlar. Veriyi yaklaşık %33 büyütür, ancak bedeli evrensel uyumlu taşımadır.",
+            ],
+            bullets: [
+              "HTML veya CSS'te data URI olarak satır içi görseller.",
+              "E-posta ekleri (MIME) ve JWT payload'ları.",
+              "JSON veya yapılandırma dosyalarında ikili değer saklama.",
+            ],
+          },
+          {
+            h2: "FreetoolsY ile nasıl encode/decode edilir?",
+            paragraphs: [
+              "Metni veya bir dosyayı Base64 Encoder'a yapıştırın ve çıktıyı kopyalayın. Araç aynı zamanda decode eder; bir API'den Base64 blob aldığınızda orijinal değere dönmek için idealdir. Görseli özellikle data URI olarak istiyorsanız image-to-base64 aracını kullanın.",
+            ],
+          },
+          {
+            h2: "Base64 şifreleme değildir",
+            paragraphs: [
+              "Base64 bir saniyede çözülebilir; şifreleri veya sırları korumak için asla kullanmayın. Onu bir format olarak görün, güvenlik olarak değil. Gizli veriler için anahtarlı gerçek bir şifreleme aracı kullanın.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "how-to-calculate-bmi",
+    relatedTools: ["bmi-calculator", "ideal-weight-calculator", "body-fat-calculator"],
+    content: {
+      en: {
+        title: "What is BMI and how do you calculate it?",
+        desc: "Body Mass Index explained: the formula, the categories, its limits, and how to check your BMI in one click with FreetoolsY.",
+        intro:
+          "BMI (Body Mass Index) is a quick number that relates your weight to your height. It is the most widely used screening tool for weight categories, calculated as weight in kilograms divided by height in meters squared.",
+        blocks: [
+          {
+            h2: "The BMI formula",
+            paragraphs: [
+              "BMI = weight (kg) / height (m)^2. Enter those two values into the BMI Calculator and it returns your index and your category: underweight, normal, overweight or obese, using the standard WHO ranges.",
+            ],
+            bullets: [
+              "Below 18.5: underweight.",
+              "18.5-24.9: normal weight.",
+              "25-29.9: overweight.",
+              "30 and above: obese.",
+            ],
+          },
+          {
+            h2: "Where BMI is useful and where it is not",
+            paragraphs: [
+              "BMI is a cheap, reproducible population indicator. For individuals it can mislead: athletes with high muscle mass often land in the overweight range, while older adults can be normal-weight yet frail. Use BMI as a starting point, and pair it with body fat percentage or waist measurement for a fuller picture — FreetoolsY has a Body Fat Calculator for that.",
+            ],
+          },
+          {
+            h2: "How to use the tool",
+            paragraphs: [
+              "Enter height and weight, then read the result instantly. The calculator shows the exact BMI value and the category, so you can track changes over time from the same starting data.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "Vücut Kitle İndeksi (BMI) nedir ve nasıl hesaplanır?",
+        desc: "Vücut Kitle İndeksi formülü, kategorileri, sınırları ve FreetoolsY ile BMI'ınızı tek tıkla nasıl ölçeceğiniz.",
+        intro:
+          "Vücut Kitle İndeksi (BMI), kilonuzu boyunuzla ilişkilendiren hızlı bir ölçüttür. Kilo kategorileri için en yaygın kullanılan tarama araçlarından biridir; kilonun (kg) boyun metre cinsinden karesine bölünmesiyle hesaplanır.",
+        blocks: [
+          {
+            h2: "BMI formülü",
+            paragraphs: [
+              "BMI = kilo (kg) / boy (m)^2. Bu iki değeri BMI Hesaplayıcı'ya girin; sonuç olarak endeksinizi ve kategorinizi verir: zayıf, normal, kilolu veya obez — standart WHO aralıklarına göre.",
+            ],
+            bullets: [
+              "18.5 altı: zayıf.",
+              "18.5-24.9: normal kilo.",
+              "25-29.9: kilolu.",
+              "30 ve üzeri: obez.",
+            ],
+          },
+          {
+            h2: "BMI nerede işe yarar, nerede yanıltır?",
+            paragraphs: [
+              "BMI ucuz ve tekrarlanabilir bir toplum ölçütüdür. Bireyler için yanıltıcı olabilir: kas oranı yüksek sporcular genellikle kilolu aralığına düşerken, yaşlı yetişkinler normal kiloda olup kırılgan olabilir. BMI'ı başlangıç noktası olarak kullanın ve vücut yağ oranı veya bel ölçüsüyle tamamlayın — FreetoolsY bunun için bir Vücut Yağ Hesaplayıcı sunar.",
+            ],
+          },
+          {
+            h2: "Araç nasıl kullanılır?",
+            paragraphs: [
+              "Boy ve kilonuzu girin, sonucu anında okuyun. Hesaplayıcı tam BMI değerini ve kategoriyi gösterir; aynı başlangıç verisiyle zaman içindeki değişimi takip edebilirsiniz.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "how-to-create-strong-passwords",
+    relatedTools: ["password-generator", "password-strength-checker", "random-string-generator"],
+    content: {
+      en: {
+        title: "How to create strong passwords and test their strength",
+        desc: "Password security made simple: what makes a password strong, how a generator creates secure passwords, and how to check strength in real time.",
+        intro:
+          "Most account takeovers come from weak, reused or predictable passwords. A strong password is long, random and unique per site. This guide shows how to generate one and how to verify its strength before you use it.",
+        blocks: [
+          {
+            h2: "What actually makes a password strong?",
+            paragraphs: [
+              "Length beats complexity. A 16-character random password has trillions of times more combinations than an 8-character one, even if the short one has symbols. The best approach is a generator that picks from a large alphabet: upper and lower case, digits and symbols, with no word patterns an attacker could guess.",
+            ],
+          },
+          {
+            h2: "Generate and verify with FreetoolsY",
+            paragraphs: [
+              "Use the Password Generator to create a long, random password and copy it into your password manager. Before committing, paste it into the Password Strength Checker to see an instant score and get specific feedback on length and variety.",
+            ],
+            bullets: [
+              "Use a unique password for every account.",
+              "Store them in a password manager, not a note file.",
+              "Enable two-factor authentication where possible.",
+            ],
+          },
+          {
+            h2: "What about passphrases?",
+            paragraphs: [
+              "A passphrase — several random words joined together — is easier to type and memorize while staying strong. The Random String Generator can build memorable combinations too, giving you the same protection with less friction.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "Güçlü şifre nasıl oluşturulur ve gücü nasıl test edilir?",
+        desc: "Şifre güvenliği sade anlatımla: şifreyi güçlü yapan şey, üreticinin nasıl güvenli şifre oluşturduğu ve gücünün anlık nasıl kontrol edileceği.",
+        intro:
+          "Hesap ele geçirmelerinin çoğu zayıf, tekrar kullanılan veya tahmin edilebilir şifrelerden gelir. Güçlü bir şifre uzun, rastgele ve her site için benzersizdir. Bu rehber, güçlü şifrenin nasıl üretileceğini ve kullanmadan önce gücünün nasıl doğrulanacağını gösterir.",
+        blocks: [
+          {
+            h2: "Şifreyi asıl güçlü yapan nedir?",
+            paragraphs: [
+              "Uzunluk, karmaşıklığı yener. 16 karakterlik rastgele bir şifre, sembollü olsa bile 8 karakterli olandan trilyonlarca kat fazla kombinasyona sahiptir. En iyi yaklaşım, büyük bir alfabeden seçim yapan üreticidir: büyük/küçük harf, rakam ve sembol; saldırganın tahmin edebileceği kelime örüntüleri olmadan.",
+            ],
+          },
+          {
+            h2: "FreetoolsY ile üretin ve doğrulayın",
+            paragraphs: [
+              "Şifre Oluşturucu ile uzun ve rastgele bir şifre üretin, ardından şifre yöneticinize kopyalayın. Kullanmadan önce Şifre Gücü Kontrol aracına yapıştırın; anlık puan ve uzunluk/çeşitlilik hakkında somut geri bildirim alın.",
+            ],
+            bullets: [
+              "Her hesap için benzersiz bir şifre kullanın.",
+              "Şifreleri not dosyasına değil, şifre yöneticisine kaydedin.",
+              "Mümkünse iki faktörlü doğrulamayı açın.",
+            ],
+          },
+          {
+            h2: "Peki parola cümleleri?",
+            paragraphs: [
+              "Parola cümlesi — birkaç rastgele kelimenin birleşimi — hem güçlü kalır hem yazması ve hatırlaması kolaydır. Rastgele Metin Oluşturucu da akılda kalıcı kombinasyonlar üretebilir; aynı korumayı daha az sürtünmeyle sunar.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "how-to-convert-unix-timestamps",
+    relatedTools: ["unix-timestamp-converter", "date-difference"],
+    content: {
+      en: {
+        title: "Unix timestamp converter: how Unix time works",
+        desc: "Understand Unix time, why developers store timestamps instead of dates, and how to convert seconds or milliseconds to a human-readable date.",
+        intro:
+          "A Unix timestamp is the number of seconds that have passed since 1 January 1970 00:00:00 UTC (the Unix epoch). Developers store this number instead of a date because it is unambiguous across time zones and easy to compare.",
+        blocks: [
+          {
+            h2: "Why timestamps not dates?",
+            paragraphs: [
+              "A string like '25/09/2026' is ambiguous — is it September 25th or 25th of September? A timestamp has no time zone, no format and no locale, so it travels between servers and languages without misinterpretation. Databases, JWT tokens and API logs all use them.",
+            ],
+          },
+          {
+            h2: "Convert with FreetoolsY",
+            paragraphs: [
+              "Paste a Unix timestamp into the Unix Timestamp Converter. It reads seconds, milliseconds and microseconds, shows the UTC time and your local time, and includes a copy-friendly ISO string for logs and tests.",
+            ],
+            bullets: [
+              "Convert back and forth: date to timestamp works too.",
+              "Check whether the source used seconds (10 digits) or milliseconds (13 digits).",
+              "Use the 'now' button to capture the current moment exactly.",
+            ],
+          },
+          {
+            h2: "Common mistakes",
+            paragraphs: [
+              "The most frequent bug is a missing zero: multiplying seconds by 1000 in JavaScript (or dividing by 1000 in other languages) turns a valid timestamp into a far-future or far-past date. The Date Difference tool helps verify the span between two such moments.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "Unix zaman damgası dönüştürücü: Unix saat nasıl çalışır?",
+        desc: "Unix zamanını, geliştiricilerin tarih yerine neden zaman damgası sakladığını ve saniye veya milisaniyeyi okunabilir tarihe nasıl çevireceğinizi öğrenin.",
+        intro:
+          "Unix zaman damgası, 1 Ocak 1970 00:00:00 UTC'den (Unix epoch) bu yana geçen saniye sayısıdır. Geliştiriciler bunu tarih yerine saklar çünkü saat dilimleri arasında belirsizlik yaratmaz ve karşılaştırması kolaydır.",
+        blocks: [
+          {
+            h2: "Neden tarih değil zaman damgası?",
+            paragraphs: [
+              "'25/09/2026' gibi bir metin belirsizdir — 25 Eylül mü, yoksa 25'inci Eylül mü? Zaman damgasının saat dilimi, formatı ve yereli yoktur; bu yüzden sunucular ve diller arasında yanlış anlaşılmadan dolaşır. Veritabanları, JWT token'ları ve API logları hep bunları kullanır.",
+            ],
+          },
+          {
+            h2: "FreetoolsY ile dönüştürün",
+            paragraphs: [
+              "Unix zaman damgasını Unix Zaman Damgası Dönüştürücü'ye yapıştırın. Saniye, milisaniye ve mikrosaniyeyi okur; UTC saatini ve yerel saatinizi gösterir; log ve testler için kopyalanabilir ISO metni sunar.",
+            ],
+            bullets: [
+              "Ters yön de çalışır: tarihten zaman damgası üretebilirsiniz.",
+              "Kaynağın saniye (10 hane) mi milisaniye (13 hane) mi kullandığını kontrol edin.",
+              "'Şimdi' butonuyla anın tam değerini yakalayın.",
+            ],
+          },
+          {
+            h2: "Sık yapılan hatalar",
+            paragraphs: [
+              "En yaygın hata sıfır eklemektir: JavaScript'te saniye değerini 1000 ile çarpmak (veya başka dillerde 1000'e bölmek) geçerli bir zaman damgasını uzak geleceğe ya da uzak geçmişe taşır. Tarih Farkı aracı, iki an arasındaki süreyi doğrulamaya yardımcı olur.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "json-vs-csv-when-to-use",
+    relatedTools: ["json-csv-converter", "json-formatter"],
+    content: {
+      en: {
+        title: "JSON vs CSV: which format should you use?",
+        desc: "Compare JSON and CSV for data exchange, import or export, and convert between both formats without losing structure.",
+        intro:
+          "JSON and CSV are the two most common formats for moving tabular data between applications. CSV is a simple grid of rows and columns; JSON is a nested, typed structure. Each is better for different jobs.",
+        blocks: [
+          {
+            h2: "CSV: simple and universal",
+            paragraphs: [
+              "CSV is a plain-text table. Spreadsheets, database tools and practically every import feature read it, which makes it ideal for exporting reports or moving data between systems. The weakness: no nesting, no types, and no obvious way to represent a hierarchy or an empty cell vs a missing value.",
+            ],
+          },
+          {
+            h2: "JSON: structure and types",
+            paragraphs: [
+              "JSON supports objects, arrays, numbers, booleans and null, so it mirrors how applications actually think about data. It is the default for APIs and configuration. The weakness: it is verbose, and flattening a deep structure into a spreadsheet takes extra work.",
+            ],
+            bullets: [
+              "Use CSV when a human will open it in Excel or Google Sheets.",
+              "Use JSON when an API, config or frontend consumes the data.",
+            ],
+          },
+          {
+            h2: "Convert between them",
+            paragraphs: [
+              "The Json Csv Converter flattens a JSON array of objects into CSV columns, or rebuilds the nested structure back from CSV. Combine it with the Json Formatter to inspect the structure first — formatting before converting reveals exactly how the rows will map.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "JSON vs CSV: hangi formatı kullanmalısınız?",
+        desc: "Veri değişimi, içe/dışa aktarma için JSON ve CSV'yi karşılaştırın ve yapıyı bozmadan iki format arasında dönüştürün.",
+        intro:
+          "JSON ve CSV, uygulamalar arasında tablo verisi taşımak için en yaygın iki formattır. CSV, satır ve sütunlardan oluşan basit bir ızgaradır; JSON ise iç içe, tipli bir yapıdır. Her biri farklı işler için daha iyidir.",
+        blocks: [
+          {
+            h2: "CSV: basit ve evrensel",
+            paragraphs: [
+              "CSV, düz metin tablosudur. Elektronik tablolar, veritabanı araçları ve neredeyse tüm içe aktarma özellikleri onu okur; rapor dışa aktarmak veya veriyi sistemler arasında taşımak için idealdir. Zayıflığı: iç içelik, tipler yoktur; hiyerarşiyi veya boş hücreyle eksik değer arasındaki farkı temsil etmek zordur.",
+            ],
+          },
+          {
+            h2: "JSON: yapı ve tipler",
+            paragraphs: [
+              "JSON; nesneleri, dizileri, sayıları, boolean'ları ve null'u destekler; böylece uygulamaların veriyi gerçekte nasıl düşündüğünü yansıtır. API'ler ve yapılandırma için varsayılandır. Zayıflığı: hızlı büyür ve derin bir yapıyı elektronik tabloya düzleştirmek ekstra iş gerektirir.",
+            ],
+            bullets: [
+              "Veriyi bir insan Excel veya Google Sheets'te açacaksa CSV kullanın.",
+              "Veriyi bir API, yapılandırma veya frontend tüketecekse JSON kullanın.",
+            ],
+          },
+          {
+            h2: "İkisi arasında dönüştürme",
+            paragraphs: [
+              "JSON CSV Dönüştürücü, JSON nesne dizisini CSV sütunlarına düzleştirir veya iç içe yapıyı CSV'den geri kurar. Önce JSON Formatlayıcı ile yapıyı inceleyin — dönüştürmeden önce biçimlendirmek satırların nasıl eşleşeceğini gösterir.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "how-to-convert-color-formats",
+    relatedTools: ["color-converter", "color-palette-generator", "image-color-picker"],
+    content: {
+      en: {
+        title: "How to convert hex, RGB and HSL colors",
+        desc: "Convert between hex, RGB and HSL, pick colors from images, and generate harmonious palettes with FreetoolsY.",
+        intro:
+          "Designers and developers switch between color formats constantly: hex in CSS, RGB in code, HSL when tweaking hue and lightness. Converting between them by hand is error-prone; a converter does it instantly with exact values.",
+        blocks: [
+          {
+            h2: "The common formats",
+            paragraphs: [
+              "Hex (#2563EB) is compact and CSS-friendly. RGB (37, 99, 235) separates red, green and blue channels. HSL (222, 82%, 53%) describes the same color by hue, saturation and lightness, which makes adjustments like 'slightly darker' trivial.",
+            ],
+          },
+          {
+            h2: "Convert and sample with FreetoolsY",
+            paragraphs: [
+              "Paste any color format into the Color Converter to see it in all the others at once. Need a color that is inside an image? Open Image Color Picker, click any pixel and copy its code. To build a whole palette, start from one flat color and let the Palette Generator propose harmonious variations.",
+            ],
+          },
+          {
+            h2: "Keep your palette consistent",
+            paragraphs: [
+              "Save every brand color in one place — a hex dashboard — and reference it everywhere. Small shifts in lightness change perceived color more than small shifts in hue, so prefer HSL when you tune a shade.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "HEX, RGB ve HSL renkleri nasıl dönüştürülür?",
+        desc: "HEX, RGB ve HSL arasında dönüştürme yapın, görsellerden renk seçin ve FreetoolsY ile uyumlu paletler üretin.",
+        intro:
+          "Tasarımcılar ve geliştiriciler renk formatları arasında sürekli geçiş yapar: CSS'te hex, kodda RGB, ton ve parlaklığı ayarlarken HSL. Elle dönüştürme hataya açıktır; bir çevirici tam değerlerle anında sonuç verir.",
+        blocks: [
+          {
+            h2: "Yaygın formatlar",
+            paragraphs: [
+              "HEX (#2563EB) kompakt ve CSS uyumludur. RGB (37, 99, 235) kırmızı, yeşil ve mavi kanalları ayırır. HSL (222, 82%, 53%) aynı rengi ton, doygunluk ve parlaklıkla tanımlar; 'biraz daha koyu' gibi ayarlamaları kolaylaştırır.",
+            ],
+          },
+          {
+            h2: "FreetoolsY ile dönüştürün ve örnekleyin",
+            paragraphs: [
+              "Herhangi bir renk formatını Renk Dönüştürücü'ye yapıştırın; hepsini aynı anda görün. Görselin içindeki bir renk mi gerekiyor? Görselden Renk Seç'i açın, herhangi bir piksele tıklayın ve kodunu kopyalayın. Bütün bir palet için tek bir düz renkten başlayın; Palet Oluşturucu uyumlu varyasyonlar önersin.",
+            ],
+          },
+          {
+            h2: "Paletinizi tutarlı tutun",
+            paragraphs: [
+              "Her marka rengini tek yerde — bir hex panosunda — saklayın ve her yerde ona atıfta bulunun. Parlaklıktaki küçük kaymalar, ton farklarından daha fazla algısal değişim yaratır; bu yüzden ton ayarlarken HSL'yi tercih edin.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "how-to-check-color-contrast-wcag",
+    relatedTools: ["wcag-contrast-checker", "color-converter"],
+    content: {
+      en: {
+        title: "How to check color contrast for WCAG accessibility",
+        desc: "Test foreground/background contrast for WCAG AA and AAA, and make sure every visitor can read your interface.",
+        intro:
+          "Color contrast is the difference in brightness between text and its background. When it is too low, many users cannot read the content. WCAG defines concrete ratios — 4.5:1 for normal text, 3:1 for large text — and a checker tells you in seconds whether a pair passes.",
+        blocks: [
+          {
+            h2: "The ratios that matter",
+            paragraphs: [
+              "WCAG AA requires 4.5:1 for normal-size text and 3:1 for large text (18px+ or 14px bold). AAA raises the bars to 7:1 and 4.5:1. Interfaces that pass these ratios are readable for people with low vision and in sunlight.",
+            ],
+            bullets: [
+              "AA: minimum for public sites.",
+              "AAA: the stricter standard for text-heavy content.",
+              "Graphic elements and icons need 3:1 as well.",
+            ],
+          },
+          {
+            h2: "Check a pair with FreetoolsY",
+            paragraphs: [
+              "Enter your foreground and background colors into the WCAG Contrast Checker. It computes the exact ratio and instantly marks whether the pair passes AA or AAA. Adjust the values live until a pair you like is compliant — no guessing.",
+            ],
+          },
+          {
+            h2: "Design with contrast first",
+            paragraphs: [
+              "Pick text and background colors from the same palette, then verify before you ship the component. Combine the Contrast Checker with the Color Converter to test the exact hex values your CSS uses.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "WCAG erişilebilirliği için renk kontrastı nasıl kontrol edilir?",
+        desc: "Metin ve zemin arasındaki kontrastı WCAG AA ve AAA için test edin; her ziyaretçinin arayüzünüzü okuyabildiğinden emin olun.",
+        intro:
+          "Renk kontrastı, metin ile zemini arasındaki parlaklık farkıdır. Çok düşük olduğunda birçok kullanıcı içeriği okuyamaz. WCAG somut oranlar tanımlar — normal metin için 4.5:1, büyük metin için 3:1 — ve bir denetleyici saniyeler içinde çiftin geçerli olup olmadığını söyler.",
+        blocks: [
+          {
+            h2: "Önemli oranlar",
+            paragraphs: [
+              "WCAG AA, normal boyutlu metin için 4.5:1, büyük metin için (18px+ veya 14px koyu) 3:1 ister. AAA çıtayı 7:1 ve 4.5:1'e yükseltir. Bu oranları geçen arayüzler düşük görüşlü kişiler ve gün ışığında okunabilir.",
+            ],
+            bullets: [
+              "AA: herkese açık siteler için minimum.",
+              "AAA: metin ağırlıklı içerik için daha katı standart.",
+              "Grafik öğeler ve ikonlar da 3:1 gerektirir.",
+            ],
+          },
+          {
+            h2: "FreetoolsY ile bir çifti test edin",
+            paragraphs: [
+              "WCAG Kontrast Denetleyici'ye metin ve zemin renginizi girin. Tam oranı hesaplar ve çiftin AA veya AAA'yı geçip geçmediğini anında gösterir. Sevdiğiniz çift uyumlu olana kadar değerleri canlı ayarlayın — tahmin yok.",
+            ],
+          },
+          {
+            h2: "Önce kontrastla tasarlayın",
+            paragraphs: [
+              "Metin ve zemin renklerini aynı paletten seçin, ardından bileşeni yayınlamadan önce doğrulayın. Kontrast Denetleyici'yi Renk Dönüştürücü ile birleştirip CSS'inizde kullandığınız tam hex değerlerini test edin.",
+            ],
+          },
+        ],
+      },
+    },
+  },
 ];
 
 export function getGuide(slug: string): Guide | undefined {

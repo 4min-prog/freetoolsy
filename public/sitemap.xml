@@ -858,6 +858,70 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/wheel-of-names-random-picker-guide" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/rehber/what-is-a-qr-code</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/what-is-a-qr-code" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/what-is-a-qr-code" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/what-is-a-qr-code" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/rehber/what-is-base64-encoding</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/what-is-base64-encoding" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/what-is-base64-encoding" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/what-is-base64-encoding" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/rehber/how-to-calculate-bmi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/how-to-calculate-bmi" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/how-to-calculate-bmi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/how-to-calculate-bmi" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/rehber/how-to-create-strong-passwords</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/how-to-create-strong-passwords" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/how-to-create-strong-passwords" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/how-to-create-strong-passwords" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/rehber/how-to-convert-unix-timestamps</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/how-to-convert-unix-timestamps" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/how-to-convert-unix-timestamps" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/how-to-convert-unix-timestamps" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/rehber/json-vs-csv-when-to-use</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/json-vs-csv-when-to-use" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/json-vs-csv-when-to-use" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/json-vs-csv-when-to-use" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/rehber/how-to-convert-color-formats</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/how-to-convert-color-formats" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/how-to-convert-color-formats" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/how-to-convert-color-formats" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/rehber/how-to-check-color-contrast-wcag</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/how-to-check-color-contrast-wcag" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/how-to-check-color-contrast-wcag" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/how-to-check-color-contrast-wcag" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/about</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
