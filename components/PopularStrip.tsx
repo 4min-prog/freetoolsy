@@ -1,11 +1,13 @@
 "use client";
 
-import { useMessages, useTranslations } from "next-intl";
+import { useLocale, useMessages, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import ToolIcon from "@/components/ToolIcon";
 import { POPULAR_SLUGS } from "@/data/popular";
 import { getTool } from "@/data/tools";
 import { track } from "@/lib/analytics";
+import { toolPath } from "@/lib/paths";
+import type { Locale } from "@/i18n/routing";
 
 interface ToolMetaNs {
   name?: string;
@@ -13,6 +15,7 @@ interface ToolMetaNs {
 
 export default function PopularStrip() {
   const t = useTranslations("Home");
+  const locale = useLocale() as Locale;
   const messages = useMessages();
   const meta = (messages as { ToolMeta?: Record<string, ToolMetaNs> })
     .ToolMeta;
@@ -38,7 +41,7 @@ export default function PopularStrip() {
             return (
               <li key={`${slug}-${index}`} className="shrink-0">
                 <Link
-                  href={`/araclar/${slug}`}
+                  href={toolPath(locale, slug)}
                   onClick={() => onClick(slug)}
                   className="group flex items-center gap-3 border-r border-border px-6 py-4 transition-colors hover:bg-surface/60"
                 >

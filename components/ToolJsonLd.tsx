@@ -1,15 +1,17 @@
 import JsonLd from "./JsonLd";
 import { getLocale, getTranslations } from "next-intl/server";
 import { getTool } from "@/data/tools";
+import { toolUrl } from "@/lib/paths";
+import type { Locale } from "@/i18n/routing";
 
 export default async function ToolJsonLd({ slug }: { slug: string }) {
   const tool = getTool(slug);
   if (!tool) return null;
 
   const t = await getTranslations(`ToolMeta.${slug}`);
-  const locale = await getLocale();
+  const locale = (await getLocale()) as Locale;
   const isTr = locale === "tr";
-  const url = `https://freetoolsy.com${isTr ? "/tr" : ""}/araclar/${slug}`;
+  const url = toolUrl(locale, slug);
 
   return (
     <JsonLd

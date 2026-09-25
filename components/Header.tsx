@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Link } from "@/i18n/navigation";
-import { useMessages, useTranslations } from "next-intl";
+import { useLocale, useMessages, useTranslations } from "next-intl";
 import ThemeToggle from "./ThemeToggle";
 import LocaleSwitcher from "./LocaleSwitcher";
 import Logo from "./Logo";
@@ -11,6 +11,8 @@ import ToolIcon from "./ToolIcon";
 import SearchOverlay from "./SearchOverlay";
 import { categoryTheme } from "./categoryTheme";
 import { categories, getToolsByCategory, tools } from "@/data/tools";
+import { toolPath } from "@/lib/paths";
+import type { Locale } from "@/i18n/routing";
 
 type ToolMetaNs = { name?: string };
 
@@ -31,6 +33,7 @@ export default function Header() {
   const t = useTranslations("Header");
   const tc = useTranslations("Categories");
   const tf = useTranslations("Footer");
+  const locale = useLocale() as Locale;
   const messages = useMessages() as { ToolMeta?: Record<string, ToolMetaNs> };
   const meta = messages.ToolMeta;
 
@@ -121,7 +124,7 @@ export default function Header() {
                     {getToolsByCategory(category.id).map((tool) => (
                       <Link
                         key={tool.slug}
-                        href={`/araclar/${tool.slug}`}
+                        href={toolPath(locale, tool.slug)}
                         onClick={closeAll}
                         className="flex items-center gap-2.5 px-3 py-2.5 text-sm text-muted transition-colors hover:bg-surface-2 hover:text-foreground"
                       >

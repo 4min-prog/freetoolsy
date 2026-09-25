@@ -11,6 +11,8 @@ import JsonLd from "@/components/JsonLd";
 import AdSlot from "@/components/AdSlot";
 import { Link } from "@/i18n/navigation";
 import { categories, tools } from "@/data/tools";
+import { toolPath } from "@/lib/paths";
+import type { Locale } from "@/i18n/routing";
 
 export async function generateMetadata({
   params,
@@ -34,6 +36,7 @@ export async function generateMetadata({
 
 export default async function Home({ params }: { params: { locale: string } }) {
   setRequestLocale(params.locale);
+  const locale = params.locale as Locale;
   const t = await getTranslations("Home");
   const messages = await getMessages();
   const toolMeta = (messages as { ToolMeta?: Record<string, { name?: string }> })
@@ -172,7 +175,7 @@ export default async function Home({ params }: { params: { locale: string } }) {
                   {[...column, ...column].map((tool, index) => (
                     <li key={`${tool.slug}-${index}`}>
                       <Link
-                        href={`/araclar/${tool.slug}`}
+                        href={toolPath(locale, tool.slug)}
                         className="group flex items-baseline gap-2 font-mono text-xs text-muted transition-colors hover:text-foreground"
                       >
                         <span className="w-6 shrink-0 text-right text-[10px] text-faint">

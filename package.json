@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sitemap": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/generate-sitemap.mts"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.3.1",

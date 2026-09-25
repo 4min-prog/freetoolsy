@@ -1,5 +1,7 @@
 import { Link } from "@/i18n/navigation";
-import { getMessages, getTranslations } from "next-intl/server";
+import { getLocale, getMessages, getTranslations } from "next-intl/server";
+import { categoryPath, toolPath } from "@/lib/paths";
+import type { Locale } from "@/i18n/routing";
 import CategoryIcon from "@/components/CategoryIcon";
 import Logo from "@/components/Logo";
 import { categories, getToolsByCategory } from "@/data/tools";
@@ -8,6 +10,7 @@ export default async function Footer() {
   const t = await getTranslations("Footer");
   const tc = await getTranslations("Categories");
   const messages = await getMessages();
+  const locale = (await getLocale()) as Locale;
   const meta = (messages as { ToolMeta?: Record<string, { name?: string }> })
     .ToolMeta;
 
@@ -125,7 +128,7 @@ export default async function Footer() {
                   {categoryTools.slice(0, 5).map((tool) => (
                     <li key={tool.slug}>
                       <Link
-                        href={`/araclar/${tool.slug}`}
+                        href={toolPath(locale, tool.slug)}
                         className="inline-block text-sm text-muted transition-colors hover:text-text"
                       >
                         {meta?.[tool.slug]?.name ?? tool.slug}
@@ -134,7 +137,7 @@ export default async function Footer() {
                   ))}
                   <li>
                     <Link
-                      href={`/kategoriler/${category.id}`}
+                      href={categoryPath(locale, category.id)}
                       className="inline-flex items-center gap-1 text-sm font-medium text-accent transition-opacity hover:opacity-80"
                     >
                       {t("viewAll")}

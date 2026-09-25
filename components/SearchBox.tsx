@@ -1,11 +1,13 @@
 "use client";
 
 import { useEffect, useId, useMemo, useRef, useState } from "react";
-import { useMessages, useTranslations } from "next-intl";
+import { useLocale, useMessages, useTranslations } from "next-intl";
 import { Link, useRouter } from "@/i18n/navigation";
 import ToolIcon from "@/components/ToolIcon";
 import { POPULAR_SLUGS } from "@/data/popular";
 import { tools } from "@/data/tools";
+import { toolPath } from "@/lib/paths";
+import type { Locale } from "@/i18n/routing";
 
 interface ToolMetaNs {
   name?: string;
@@ -32,6 +34,7 @@ export default function SearchBox({
   const resultsId = useId();
   const router = useRouter();
   const t = useTranslations("Header");
+  const locale = useLocale() as Locale;
   const messages = useMessages();
   const meta = messages.ToolMeta as Record<string, ToolMetaNs> | undefined;
 
@@ -70,7 +73,7 @@ export default function SearchBox({
     setQ("");
     setOpen(false);
     onDone?.();
-    router.push(`/araclar/${slug}`);
+    router.push(toolPath(locale, slug));
   }
 
   function submit() {
@@ -184,7 +187,7 @@ export default function SearchBox({
               aria-selected={index === activeIndex}
             >
               <Link
-                href={`/araclar/${match.slug}`}
+                href={toolPath(locale, match.slug)}
                 onClick={close}
                 className={`flex min-h-11 items-center gap-2.5 px-3 text-sm transition-colors ${
                   index === activeIndex
@@ -226,7 +229,7 @@ export default function SearchBox({
           {suggestions.map((slug) => (
             <li key={slug} role="option" aria-selected="false">
               <Link
-                href={`/araclar/${slug}`}
+                href={toolPath(locale, slug)}
                 onClick={close}
                 className="flex min-h-11 items-center gap-2.5 px-3 text-sm text-muted transition-colors hover:bg-surface-2 hover:text-text"
               >
@@ -247,7 +250,7 @@ export default function SearchBox({
               {popularSlugs.map((slug) => (
                 <Link
                   key={slug}
-                  href={`/araclar/${slug}`}
+                  href={toolPath(locale, slug)}
                   onClick={close}
                   className="rounded-full border border-border/70 bg-surface px-3 py-1 text-xs text-muted transition-colors hover:border-accent/40 hover:text-text"
                 >

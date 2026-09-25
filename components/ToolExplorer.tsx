@@ -1,12 +1,14 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { useMessages, useTranslations } from "next-intl";
+import { useLocale, useMessages, useTranslations } from "next-intl";
 import ToolCard from "@/components/ToolCard";
 import CategoryIcon from "@/components/CategoryIcon";
 import { Link } from "@/i18n/navigation";
 import { categoryTheme } from "@/components/categoryTheme";
 import { categories, getToolsByCategory, tools } from "@/data/tools";
+import { categoryPath } from "@/lib/paths";
+import type { Locale } from "@/i18n/routing";
 
 interface ToolMetaNs {
   name?: string;
@@ -15,6 +17,7 @@ interface ToolMetaNs {
 
 export default function ToolExplorer() {
   const t = useTranslations("ToolExplorer");
+  const locale = useLocale() as Locale;
   const tf = useTranslations("Footer");
   const tc = useTranslations("Categories");
   const messages = useMessages();
@@ -189,7 +192,7 @@ export default function ToolExplorer() {
                     </span>
                   </h2>
                   <Link
-                    href={`/kategoriler/${category.id}`}
+                    href={categoryPath(locale, category.id)}
                     className="group inline-flex shrink-0 items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.15em] text-muted transition-colors hover:text-accent"
                   >
                     <span className="underline decoration-border underline-offset-4 group-hover:decoration-accent">
@@ -217,7 +220,7 @@ export default function ToolExplorer() {
                 {remaining > 0 && (
                   <div className="mt-5 flex justify-center">
                     <Link
-                      href={`/kategoriler/${category.id}`}
+                      href={categoryPath(locale, category.id)}
                       className="group inline-flex min-h-11 items-center gap-2 border border-border px-5 text-sm text-muted transition-colors hover:border-foreground hover:bg-surface-2 hover:text-foreground"
                     >
                       {t("viewAll", { count: categoryTools.length })}

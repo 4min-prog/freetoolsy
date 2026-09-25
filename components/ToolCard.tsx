@@ -1,19 +1,22 @@
 "use client";
 
 import { Link } from "@/i18n/navigation";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import ToolIcon from "@/components/ToolIcon";
 import { categoryTheme } from "@/components/categoryTheme";
 import type { Tool } from "@/data/tools";
+import { toolPath } from "@/lib/paths";
+import type { Locale } from "@/i18n/routing";
 
 export default function ToolCard({ tool }: { tool: Tool }) {
   const t = useTranslations(`ToolMeta.${tool.slug}`);
+  const locale = useLocale() as Locale;
   const tc = useTranslations("Categories");
   const theme = categoryTheme(tool.category);
 
   return (
     <Link
-      href={`/araclar/${tool.slug}`}
+      href={toolPath(locale, tool.slug)}
       className={`group relative flex flex-col overflow-hidden border border-border bg-surface p-4 transition-colors hover:bg-surface-2 active:bg-surface-2 sm:p-5 ${theme.hoverBorder}`}
     >
       <span

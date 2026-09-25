@@ -3,7 +3,14 @@ import { notFound } from "next/navigation";
 import { getTranslations, getMessages, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { categories, getTool, tools, type Tool } from "@/data/tools";
-import { routing, type Locale } from "@/i18n/routing";
+import type { Locale } from "@/i18n/routing";
+import {
+  categoryPath,
+  categoryUrl,
+  localizedUrl,
+  toolPath,
+  toolUrl,
+} from "@/lib/paths";
 import { POPULAR_SLUGS } from "@/data/popular";
 import { DYNAMIC_TOOL_SLUGS } from "@/data/dynamicTools";
 import { guides } from "@/data/guides";
@@ -187,14 +194,9 @@ const toolComponents: Record<string, React.ComponentType> = {
   "stopwatch-timer": StopwatchTimer,
 };
 
-const siteUrl = "https://freetoolsy.com";
-
-export function generateStaticParams() {
-  const params: { locale: string; slug: string }[] = [];
-  routing.locales.forEach((locale) => {
-    tools.forEach((tool) => {
-      params.push({ locale, slug: tool.slug });
-    });
+export function generateStaticParams() {  const params: { locale: string; slug: string }[] = [];
+  tools.forEach((tool) => {
+    params.push({ locale: "tr", slug: tool.slug });
   });
   return params;
 }
@@ -213,10 +215,10 @@ export async function generateMetadata({
     title: t("title"),
     description: t("pageDesc"),
     alternates: {
-      canonical: locale === "en" ? `/araclar/${tool.slug}` : `/${locale}/araclar/${tool.slug}`,
+      canonical: localizedUrl(locale, toolPath(locale, tool.slug)),
       languages: {
-        en: `${siteUrl}/araclar/${tool.slug}`,
-        tr: `${siteUrl}/tr/araclar/${tool.slug}`,
+        en: toolUrl("en", tool.slug),
+        tr: toolUrl("tr", tool.slug),
       },
     },
   };
@@ -259,9 +261,8 @@ export default async function AraclarPage({
   if (!ToolComponent && !DYNAMIC_TOOL_SLUGS.has(tool.slug)) notFound();
 
   const category = categories.find((item) => item.id === tool.category);
-  const toolUrl = `${siteUrl}${locale === "en" ? "" : "/tr"}/araclar/${tool.slug}`;
-  const homeUrl = `${siteUrl}${locale === "en" ? "" : "/tr"}/`;
-  const categoryUrl = `${siteUrl}${locale === "en" ? "" : "/tr"}/kategoriler/${category ? category.id : tool.category}`;
+  const categoryId = category ? category.id : tool.category;
+  const homeUrl = localizedUrl(locale, "/");
 
   return (
     <main
@@ -286,13 +287,13 @@ export default async function AraclarPage({
               "@type": "ListItem",
               position: 2,
               name: tc(tool.category),
-              item: categoryUrl,
+              item: categoryUrl(locale, categoryId),
             },
             {
               "@type": "ListItem",
               position: 3,
               name: t("name"),
-              item: toolUrl,
+              item: toolUrl(locale, tool.slug),
             },
           ],
         }}
@@ -308,7 +309,7 @@ export default async function AraclarPage({
           /
         </span>
         <Link
-          href={`/kategoriler/${category ? category.id : tool.category}`}
+          href={categoryPath(locale, categoryId)}
           className="transition-colors hover:text-text"
         >
           {tc(tool.category)}
@@ -400,7 +401,7 @@ export default async function AraclarPage({
               {tPage("similarTitle")}
             </h2>
             <Link
-              href={`/kategoriler/${category ? category.id : tool.category}`}
+              href={categoryPath(locale, categoryId)}
               className="text-sm font-medium text-accent transition-opacity hover:opacity-80"
             >
               {tPage("otherAll")}
@@ -410,7 +411,7 @@ export default async function AraclarPage({
             {similarTools.map((item) => (
               <li key={item.slug}>
                 <Link
-                  href={`/araclar/${item.slug}`}
+                  href={toolPath(locale, item.slug)}
                   className="flex items-center gap-2 rounded-lg border border-border bg-bg px-3 py-2 text-sm text-muted transition-colors hover:border-accent hover:text-accent"
                 >
                   <ToolIcon id={item.slug} className="h-4 w-4 shrink-0 text-accent" />
@@ -442,7 +443,7 @@ export default async function AraclarPage({
             {popularTools.map((item) => (
               <li key={item.slug}>
                 <Link
-                  href={`/araclar/${item.slug}`}
+                  href={toolPath(locale, item.slug)}
                   className="flex items-center gap-2 rounded-lg border border-border bg-bg px-3 py-2 text-sm text-muted transition-colors hover:border-accent hover:text-accent"
                 >
                   <ToolIcon id={item.slug} className="h-4 w-4 shrink-0 text-accent" />

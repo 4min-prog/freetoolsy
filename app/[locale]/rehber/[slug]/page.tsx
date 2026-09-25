@@ -5,6 +5,7 @@ import { Link } from "@/i18n/navigation";
 import { guides, getGuide } from "@/data/guides";
 import { getTool } from "@/data/tools";
 import { routing, type Locale } from "@/i18n/routing";
+import { toolPath } from "@/lib/paths";
 import ToolIcon from "@/components/ToolIcon";
 
 const siteUrl = "https://freetoolsy.com";
@@ -134,7 +135,7 @@ export default async function RehberDetay({
               return (
                 <li key={slug}>
                   <Link
-                    href={`/araclar/${slug}`}
+                    href={toolPath(locale, slug)}
                     className="flex items-center gap-2 rounded-lg border border-border bg-bg px-3 py-2 text-sm text-muted transition-colors hover:border-accent hover:text-accent"
                   >
                     <ToolIcon id={slug} className="h-4 w-4 shrink-0 text-accent" />

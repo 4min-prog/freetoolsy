@@ -3,22 +3,21 @@ import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { categories, getToolsByCategory, tools } from "@/data/tools";
-import { routing, type Locale } from "@/i18n/routing";
+import type { Locale } from "@/i18n/routing";
+import {
+  categoryPath,
+  categoryUrl,
+  localizedUrl,
+  toolUrl,
+} from "@/lib/paths";
 import ToolCard from "@/components/ToolCard";
 import CategoryIcon from "@/components/CategoryIcon";
 import JsonLd from "@/components/JsonLd";
 import { categoryTheme } from "@/components/categoryTheme";
 
-const siteUrl = "https://freetoolsy.com";
 
 export function generateStaticParams() {
-  const params: { locale: string; id: string }[] = [];
-  routing.locales.forEach((locale) => {
-    categories.forEach((category) => {
-      params.push({ locale, id: category.id });
-    });
-  });
-  return params;
+  return categories.map((category) => ({ locale: "tr", id: category.id }));
 }
 
 export async function generateMetadata({
@@ -36,10 +35,10 @@ export async function generateMetadata({
     title: `${tc(category.id)} ${locale === "en" ? "Tools" : "Araçları"} – FreetoolsY`,
     description: t(`desc.${category.id}`),
     alternates: {
-      canonical: locale === "en" ? `/kategoriler/${category.id}` : `/${locale}/kategoriler/${category.id}`,
+      canonical: localizedUrl(locale, categoryPath(locale, category.id)),
       languages: {
-        en: `${siteUrl}/kategoriler/${category.id}`,
-        tr: `${siteUrl}/tr/kategoriler/${category.id}`,
+        en: categoryUrl("en", category.id),
+        tr: categoryUrl("tr", category.id),
       },
     },
   };
@@ -62,8 +61,8 @@ export default async function CategoryPage({
   const categoryTools = getToolsByCategory(category.id);
   const related = categories.filter((item) => item.id !== category.id);
 
-  const categoryUrl = `${siteUrl}${locale === "en" ? "" : "/tr"}/kategoriler/${category.id}`;
-  const homeUrl = `${siteUrl}${locale === "en" ? "" : "/tr"}/`;
+  
+  const homeUrl = localizedUrl(locale, "/");
 
   return (
     <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-10 sm:px-6 sm:py-14">
@@ -89,7 +88,7 @@ export default async function CategoryPage({
                 "@type": "ListItem",
                 position: 3,
                 name: tc(category.id),
-                item: categoryUrl,
+                item: categoryUrl(locale, category.id),
               },
             ],
           },
@@ -97,7 +96,7 @@ export default async function CategoryPage({
             "@context": "https://schema.org",
             "@type": "CollectionPage",
             name: `${tc(category.id)} tools`,
-            url: categoryUrl,
+            url: categoryUrl(locale, category.id),
             inLanguage: locale,
             mainEntity: {
               "@type": "ItemList",
@@ -105,7 +104,7 @@ export default async function CategoryPage({
                 "@type": "ListItem",
                 position: index + 1,
                 name: tool.name,
-                url: `${siteUrl}${locale === "en" ? "" : "/tr"}/araclar/${tool.slug}`,
+                url: toolUrl(locale, tool.slug),
               })),
             },
           },
@@ -162,7 +161,7 @@ export default async function CategoryPage({
             return (
               <Link
                 key={item.id}
-                href={`/kategoriler/${item.id}`}
+                href={categoryPath(locale, item.id)}
                 className={`flex items-center gap-2 rounded-lg border border-border bg-bg px-3 py-2 text-sm text-muted transition-colors ${itemTheme.hoverBorder}`}
               >
                 <CategoryIcon
