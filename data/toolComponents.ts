@@ -85,6 +85,7 @@ export const toolComponents: Record<string, ComponentType> = {
   "wheel-of-names": dynamic(() => import("@/components/tools/WheelOfNames")),
   "random-number-generator": dynamic(() => import("@/components/tools/RandomNumberGenerator")),
   "stopwatch-timer": dynamic(() => import("@/components/tools/StopwatchTimer")),
+  "time-zone-converter": dynamic(() => import("@/components/tools/TimeZoneConverter")),
 };
 
 export const TOOL_COMPONENT_SLUGS = Object.keys(toolComponents);

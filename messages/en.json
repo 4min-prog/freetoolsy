@@ -725,6 +725,13 @@
       "title": "Stopwatch & Timer — Free Online Tool",
       "pageDesc": "Use a stopwatch with lap times or a countdown timer online free — no app needed. Precisely tracks hundredths of a second and works entirely in your browser.",
       "intro": "Time anything: start the stopwatch and record laps, or set a countdown and wait for the beep."
+    },
+    "time-zone-converter": {
+      "name": "Time Zone Converter",
+      "desc": "Convert a date and time between any two time zones with daylight saving handled automatically.",
+      "title": "Time Zone Converter - Convert Between Time Zones",
+      "pageDesc": "Convert a date and time between any two time zones. See the current time in hundreds of cities and get the UTC offset for each zone.",
+      "intro": "Convert any date and time from one time zone to another, with daylight saving time handled automatically."
     }
   },
   "ToolContent": {
@@ -4734,6 +4741,19 @@
       "splitCol": "Split",
       "totalCol": "Total",
       "note": "Timing runs entirely on this device. The timer plays a short beep when it finishes."
+    },
+    "timeZoneConverter": {
+      "field": {
+        "when": "Date and time",
+        "from": "From time zone",
+        "to": "To time zone"
+      },
+      "useNow": "Now",
+      "copied": "Copied",
+      "copyResult": "Copy result",
+      "commonTitle": "Current time in popular time zones",
+      "diff": "{source} → {target}",
+      "note": "Conversion runs entirely in your browser using the IANA time zone database built into it. Times are correct for daylight saving changes, and nothing is sent to a server."
     }
   }
 }

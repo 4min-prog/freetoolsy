@@ -632,6 +632,13 @@ export const tools: Tool[] = [
     description:
       "Kronometre ile tur süreleri kaydedin veya geri sayım yapan zamanlayıcı kullanın.",
   },
+  {
+    slug: "time-zone-converter",
+    name: "Zaman Dilimi Dönüştürücü",
+    category: "calculation",
+    description:
+      "İki zaman dilimi arasında tarih ve saat dönüşümü yapar; yaz saati otomatik hesaplanır.",
+  },
 ];
 
 export function getTool(slug: string): Tool | undefined {

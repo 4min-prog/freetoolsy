@@ -82,6 +82,7 @@ export const TOOL_COMP_NAMESPACE: Record<string, string> = {
   "wheel-of-names": "wheelOfNames",
   "random-number-generator": "randomNumberGenerator",
   "stopwatch-timer": "stopwatchTimer",
+  "time-zone-converter": "timeZoneConverter",
 };
 
 export function toolCompNamespace(slug: string): string | undefined {

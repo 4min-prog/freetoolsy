@@ -25,6 +25,7 @@ import {
   faDatabase,
   faDice,
   faDiceD6,
+  faEarthAmericas,
   faEye,
   faEyeDropper,
   faFileArrowDown,
@@ -173,6 +174,7 @@ const ICONS: Record<string, IconDefinition> = {
   "wheel-of-names": faTrophy,
   "random-number-generator": faDiceD6,
   "stopwatch-timer": faStopwatch,
+  "time-zone-converter": faEarthAmericas,
 };
 
 export default function ToolIcon({

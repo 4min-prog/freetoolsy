@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run check:tools && next build",
     "start": "next start",
     "lint": "next lint",
-    "sitemap": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/generate-sitemap.mts"
+    "sitemap": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/generate-sitemap.mts",
+    "check:tools": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/check-tools.mts"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.3.1",

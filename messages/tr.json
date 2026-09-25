@@ -725,6 +725,13 @@
       "title": "Kronometre ve Zamanlayıcı — Ücretsiz Online Araç",
       "pageDesc": "Tur süreli kronometre veya geri sayım sayacı — uygulama gerekmez, çevrimiçi ücretsiz. Saniyenin yüzde birini hassasiyetle ölçer, tamamen tarayıcınızda çalışır.",
       "intro": "Bir şeyi zamanlayın: kronometreyi başlatıp turları kaydedin veya geri sayım kurup zili bekleyin."
+    },
+    "time-zone-converter": {
+      "name": "Zaman Dilimi Dönüştürücü",
+      "desc": "İki zaman dilimi arasında tarih ve saat dönüşümü yapar; yaz saati otomatik hesaplanır.",
+      "title": "Zaman Dilimi Dönüştürücü - Saat Dilimi Çevirici",
+      "pageDesc": "İki zaman dilimi arasında tarih ve saat dönüşümü yapın. Yüzlerce şehrin güncel saatini ve her dilimin UTC farkını görün.",
+      "intro": "Herhangi bir tarih ve saati bir zaman diliminden diğerine dönüştürün; yaz saati uygulaması otomatik olarak hesaplanır."
     }
   },
   "ToolContent": {
@@ -4734,6 +4741,19 @@
       "splitCol": "Bölüm",
       "totalCol": "Toplam",
       "note": "Zamanlama tamamen bu cihazda çalışır. Zamanlayıcı bitince kısa bir zil çalar."
+    },
+    "timeZoneConverter": {
+      "field": {
+        "when": "Tarih ve saat",
+        "from": "Kaynak zaman dilimi",
+        "to": "Hedef zaman dilimi"
+      },
+      "useNow": "Şimdi",
+      "copied": "Kopyalandı",
+      "copyResult": "Sonucu kopyala",
+      "commonTitle": "Popüler zaman dilimlerinde şu an",
+      "diff": "{source} → {target}",
+      "note": "Dönüşüm tamamen tarayıcında, tarayıcının kendi IANA zaman dilimi veritabanı kullanılarak yapılır. Yaz saati uygulaması dahil tüm saatler doğrudur; hiçbir veri sunucuya gönderilmez."
     }
   }
 }

@@ -11,6 +11,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/rehber</loc>
     <lastmod>2026-09-25T20:05:23+03:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -29,7 +38,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/categories/text" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/kategoriler/text</loc>
+    <lastmod>2026-09-24T16:24:39+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/categories/text" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/kategoriler/text" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/categories/text" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/categories/security</loc>
+    <lastmod>2026-09-24T16:24:39+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/categories/security" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/kategoriler/security" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/categories/security" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/kategoriler/security</loc>
     <lastmod>2026-09-24T16:24:39+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -47,7 +74,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/categories/developer" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/kategoriler/developer</loc>
+    <lastmod>2026-09-24T16:24:39+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/categories/developer" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/kategoriler/developer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/categories/developer" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/categories/calculation</loc>
+    <lastmod>2026-09-24T16:24:39+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/categories/calculation" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/kategoriler/calculation" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/categories/calculation" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/kategoriler/calculation</loc>
     <lastmod>2026-09-24T16:24:39+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -65,7 +110,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/categories/image" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/kategoriler/image</loc>
+    <lastmod>2026-09-24T16:24:39+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/categories/image" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/kategoriler/image" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/categories/image" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/categories/seo</loc>
+    <lastmod>2026-09-24T16:24:39+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/categories/seo" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/kategoriler/seo" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/categories/seo" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/kategoriler/seo</loc>
     <lastmod>2026-09-24T16:24:39+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -83,7 +146,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/categories/fun" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/kategoriler/fun</loc>
+    <lastmod>2026-09-24T16:24:39+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/categories/fun" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/kategoriler/fun" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/categories/fun" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/character-counter</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/character-counter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/character-counter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/character-counter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/character-counter</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -101,7 +182,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/word-counter" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/word-counter</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/word-counter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/word-counter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/word-counter" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/case-converter</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/case-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/case-converter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/case-converter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/case-converter</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -119,7 +218,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/password-generator" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/password-generator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/password-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/password-generator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/password-generator" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/json-formatter</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/json-formatter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/json-formatter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/json-formatter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/json-formatter</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -137,7 +254,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/base64" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/base64</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/base64" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/base64" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/base64" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/url-encoder</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/url-encoder" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/url-encoder" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/url-encoder" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/url-encoder</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -155,7 +290,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/bmi-calculator" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/bmi-calculator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/bmi-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/bmi-calculator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/bmi-calculator" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/vat-calculator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/vat-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/vat-calculator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/vat-calculator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/vat-calculator</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -173,7 +326,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/percentage-calculator" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/percentage-calculator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/percentage-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/percentage-calculator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/percentage-calculator" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/age-calculator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/age-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/age-calculator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/age-calculator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/age-calculator</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -191,7 +362,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/qr-code-generator" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/qr-code-generator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/qr-code-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/qr-code-generator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/qr-code-generator" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/sha-hash-generator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/sha-hash-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/sha-hash-generator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/sha-hash-generator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/sha-hash-generator</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -209,7 +398,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/date-difference" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/date-difference</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/date-difference" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/date-difference" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/date-difference" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/color-converter</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/color-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/color-converter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/color-converter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/color-converter</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -227,7 +434,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/uuid-generator" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/uuid-generator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/uuid-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/uuid-generator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/uuid-generator" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/unit-converter</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/unit-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/unit-converter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/unit-converter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/unit-converter</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -245,7 +470,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/password-strength-checker" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/password-strength-checker</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/password-strength-checker" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/password-strength-checker" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/password-strength-checker" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/number-base-converter</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/number-base-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/number-base-converter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/number-base-converter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/number-base-converter</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -263,7 +506,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/regex-tester" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/regex-tester</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/regex-tester" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/regex-tester" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/regex-tester" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/whitespace-cleaner</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/whitespace-cleaner" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/whitespace-cleaner" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/whitespace-cleaner" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/whitespace-cleaner</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -281,7 +542,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/md5-hash" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/md5-hash</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/md5-hash" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/md5-hash" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/md5-hash" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/jwt-decoder</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/jwt-decoder" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/jwt-decoder" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/jwt-decoder" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/jwt-decoder</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -299,7 +578,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/json-csv-converter" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/json-csv-converter</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/json-csv-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/json-csv-converter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/json-csv-converter" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/unix-timestamp-converter</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/unix-timestamp-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/unix-timestamp-converter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/unix-timestamp-converter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/unix-timestamp-converter</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -317,7 +614,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/duplicate-line-remover" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/duplicate-line-remover</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/duplicate-line-remover" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/duplicate-line-remover" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/duplicate-line-remover" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/ai-token-counter</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/ai-token-counter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/ai-token-counter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/ai-token-counter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/ai-token-counter</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -335,7 +650,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/lorem-ipsum-generator" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/lorem-ipsum-generator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/lorem-ipsum-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/lorem-ipsum-generator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/lorem-ipsum-generator" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/tip-calculator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/tip-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/tip-calculator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/tip-calculator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/tip-calculator</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -353,7 +686,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/discount-calculator" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/discount-calculator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/discount-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/discount-calculator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/discount-calculator" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/average-calculator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/average-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/average-calculator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/average-calculator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/average-calculator</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -371,7 +722,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/dog-age-calculator" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/dog-age-calculator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/dog-age-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/dog-age-calculator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/dog-age-calculator" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/subnet-calculator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/subnet-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/subnet-calculator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/subnet-calculator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/subnet-calculator</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -389,7 +758,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/px-rem-converter" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/px-rem-converter</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/px-rem-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/px-rem-converter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/px-rem-converter" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/xml-formatter</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/xml-formatter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/xml-formatter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/xml-formatter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/xml-formatter</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -407,7 +794,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/css-minifier" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/css-minifier</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/css-minifier" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/css-minifier" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/css-minifier" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/html-minifier</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/html-minifier" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/html-minifier" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/html-minifier" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/html-minifier</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -425,7 +830,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/wcag-contrast-checker" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/wcag-contrast-checker</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/wcag-contrast-checker" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/wcag-contrast-checker" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/wcag-contrast-checker" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/color-palette-generator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/color-palette-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/color-palette-generator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/color-palette-generator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/color-palette-generator</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -443,7 +866,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/box-shadow-generator" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/box-shadow-generator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/box-shadow-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/box-shadow-generator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/box-shadow-generator" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/text-sorter</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/text-sorter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/text-sorter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/text-sorter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/text-sorter</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -461,7 +902,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/list-shuffler" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/list-shuffler</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/list-shuffler" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/list-shuffler" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/list-shuffler" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/yaml-json-converter</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/yaml-json-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/yaml-json-converter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/yaml-json-converter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/yaml-json-converter</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -479,7 +938,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/md5-file-checksum" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/md5-file-checksum</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/md5-file-checksum" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/md5-file-checksum" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/md5-file-checksum" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/image-compressor</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/image-compressor" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/image-compressor" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/image-compressor" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/image-compressor</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -497,7 +974,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/image-resizer" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/image-resizer</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/image-resizer" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/image-resizer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/image-resizer" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/image-converter</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/image-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/image-converter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/image-converter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/image-converter</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -515,7 +1010,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/image-to-base64" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/image-to-base64</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/image-to-base64" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/image-to-base64" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/image-to-base64" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/image-color-picker</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/image-color-picker" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/image-color-picker" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/image-color-picker" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/image-color-picker</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -533,7 +1046,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/slug-generator" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/slug-generator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/slug-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/slug-generator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/slug-generator" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/meta-tag-generator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/meta-tag-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/meta-tag-generator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/meta-tag-generator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/meta-tag-generator</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -551,7 +1082,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/keyword-density-checker" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/keyword-density-checker</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/keyword-density-checker" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/keyword-density-checker" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/keyword-density-checker" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/serp-preview</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/serp-preview" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/serp-preview" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/serp-preview" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/serp-preview</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -569,7 +1118,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/readability-score" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/readability-score</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/readability-score" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/readability-score" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/readability-score" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/text-diff</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/text-diff" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/text-diff" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/text-diff" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/text-diff</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -587,7 +1154,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/html-entity-converter" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/html-entity-converter</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/html-entity-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/html-entity-converter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/html-entity-converter" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/morse-converter</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/morse-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/morse-converter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/morse-converter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/morse-converter</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -605,7 +1190,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/text-reverser" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/text-reverser</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/text-reverser" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/text-reverser" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/text-reverser" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/fancy-text-generator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/fancy-text-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/fancy-text-generator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/fancy-text-generator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/fancy-text-generator</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -623,7 +1226,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/caesar-cipher" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/caesar-cipher</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/caesar-cipher" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/caesar-cipher" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/caesar-cipher" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/gpa-calculator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/gpa-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/gpa-calculator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/gpa-calculator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/gpa-calculator</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -641,7 +1262,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/loan-emi-calculator" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/loan-emi-calculator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/loan-emi-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/loan-emi-calculator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/loan-emi-calculator" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/calorie-bmr-calculator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/calorie-bmr-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/calorie-bmr-calculator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/calorie-bmr-calculator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/calorie-bmr-calculator</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -659,7 +1298,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/body-fat-calculator" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/body-fat-calculator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/body-fat-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/body-fat-calculator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/body-fat-calculator" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/ideal-weight-calculator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/ideal-weight-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/ideal-weight-calculator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/ideal-weight-calculator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/ideal-weight-calculator</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -677,7 +1334,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/sleep-calculator" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/sleep-calculator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/sleep-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/sleep-calculator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/sleep-calculator" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/cron-tester</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/cron-tester" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/cron-tester" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/cron-tester" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/cron-tester</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -695,7 +1370,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/html-formatter" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/html-formatter</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/html-formatter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/html-formatter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/html-formatter" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/aes-encryption</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/aes-encryption" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/aes-encryption" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/aes-encryption" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/aes-encryption</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -713,7 +1406,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/random-string-generator" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/random-string-generator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/random-string-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/random-string-generator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/random-string-generator" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/jwt-generator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/jwt-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/jwt-generator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/jwt-generator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/jwt-generator</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -731,7 +1442,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/currency-converter" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/currency-converter</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/currency-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/currency-converter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/currency-converter" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/compound-interest-calculator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/compound-interest-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/compound-interest-calculator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/compound-interest-calculator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/compound-interest-calculator</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -749,7 +1478,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/salary-calculator" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/salary-calculator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/salary-calculator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/salary-calculator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/salary-calculator" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/sql-formatter</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/sql-formatter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/sql-formatter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/sql-formatter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/sql-formatter</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -767,7 +1514,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/json-xml-converter" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/json-xml-converter</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/json-xml-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/json-xml-converter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/json-xml-converter" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/markdown-html-converter</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/markdown-html-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/markdown-html-converter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/markdown-html-converter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/markdown-html-converter</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -785,7 +1550,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/hmac-generator" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/hmac-generator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/hmac-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/hmac-generator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/hmac-generator" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/html-table-generator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/html-table-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/html-table-generator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/html-table-generator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/html-table-generator</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -803,7 +1586,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/favicon-generator" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/favicon-generator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/favicon-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/favicon-generator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/favicon-generator" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/image-crop</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/image-crop" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/image-crop" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/image-crop" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/image-crop</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -821,7 +1622,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/image-watermark" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/image-watermark</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/image-watermark" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/image-watermark" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/image-watermark" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/jsonld-generator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/jsonld-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/jsonld-generator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/jsonld-generator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/jsonld-generator</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -839,7 +1658,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/hreflang-generator" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/hreflang-generator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/hreflang-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/hreflang-generator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/hreflang-generator" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/robots-txt-generator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/robots-txt-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/robots-txt-generator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/robots-txt-generator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/robots-txt-generator</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -857,7 +1694,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/wheel-of-names" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/wheel-of-names</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/wheel-of-names" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/wheel-of-names" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/wheel-of-names" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/tools/random-number-generator</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/random-number-generator" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/random-number-generator" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/random-number-generator" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/random-number-generator</loc>
     <lastmod>2026-09-25T22:25:15+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -875,7 +1730,43 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/stopwatch-timer" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/araclar/stopwatch-timer</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/stopwatch-timer" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/stopwatch-timer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/stopwatch-timer" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tools/time-zone-converter</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/time-zone-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/time-zone-converter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/time-zone-converter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/araclar/time-zone-converter</loc>
+    <lastmod>2026-09-25T22:25:15+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/tools/time-zone-converter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/araclar/time-zone-converter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/tools/time-zone-converter" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/rehber/what-is-json-formatter</loc>
+    <lastmod>2026-09-25T20:05:23+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/what-is-json-formatter" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/what-is-json-formatter" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/what-is-json-formatter" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/rehber/what-is-json-formatter</loc>
     <lastmod>2026-09-25T20:05:23+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -893,7 +1784,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/what-is-meta-tags" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/rehber/what-is-meta-tags</loc>
+    <lastmod>2026-09-25T20:05:23+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/what-is-meta-tags" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/what-is-meta-tags" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/what-is-meta-tags" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/rehber/what-is-json-ld</loc>
+    <lastmod>2026-09-25T20:05:23+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/what-is-json-ld" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/what-is-json-ld" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/what-is-json-ld" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/rehber/what-is-json-ld</loc>
     <lastmod>2026-09-25T20:05:23+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -911,7 +1820,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/how-to-write-robots-txt" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/rehber/how-to-write-robots-txt</loc>
+    <lastmod>2026-09-25T20:05:23+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/how-to-write-robots-txt" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/how-to-write-robots-txt" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/how-to-write-robots-txt" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/rehber/what-is-hreflang-multilingual-seo</loc>
+    <lastmod>2026-09-25T20:05:23+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/what-is-hreflang-multilingual-seo" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/what-is-hreflang-multilingual-seo" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/what-is-hreflang-multilingual-seo" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/rehber/what-is-hreflang-multilingual-seo</loc>
     <lastmod>2026-09-25T20:05:23+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -929,7 +1856,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/markdown-to-html-guide" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/rehber/markdown-to-html-guide</loc>
+    <lastmod>2026-09-25T20:05:23+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/markdown-to-html-guide" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/markdown-to-html-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/markdown-to-html-guide" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/rehber/how-to-convert-currency</loc>
+    <lastmod>2026-09-25T20:05:23+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/how-to-convert-currency" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/how-to-convert-currency" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/how-to-convert-currency" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/rehber/how-to-convert-currency</loc>
     <lastmod>2026-09-25T20:05:23+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -947,7 +1892,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/what-is-compound-interest" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/rehber/what-is-compound-interest</loc>
+    <lastmod>2026-09-25T20:05:23+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/what-is-compound-interest" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/what-is-compound-interest" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/what-is-compound-interest" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/rehber/how-to-format-sql-queries</loc>
+    <lastmod>2026-09-25T20:05:23+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/how-to-format-sql-queries" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/how-to-format-sql-queries" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/how-to-format-sql-queries" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/rehber/how-to-format-sql-queries</loc>
     <lastmod>2026-09-25T20:05:23+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -965,7 +1928,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/wheel-of-names-random-picker-guide" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/rehber/wheel-of-names-random-picker-guide</loc>
+    <lastmod>2026-09-25T20:05:23+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/wheel-of-names-random-picker-guide" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/wheel-of-names-random-picker-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/wheel-of-names-random-picker-guide" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/rehber/what-is-a-qr-code</loc>
+    <lastmod>2026-09-25T20:05:23+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/what-is-a-qr-code" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/what-is-a-qr-code" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/what-is-a-qr-code" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/rehber/what-is-a-qr-code</loc>
     <lastmod>2026-09-25T20:05:23+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -983,7 +1964,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/what-is-base64-encoding" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/rehber/what-is-base64-encoding</loc>
+    <lastmod>2026-09-25T20:05:23+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/what-is-base64-encoding" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/what-is-base64-encoding" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/what-is-base64-encoding" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/rehber/how-to-calculate-bmi</loc>
+    <lastmod>2026-09-25T20:05:23+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/how-to-calculate-bmi" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/how-to-calculate-bmi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/how-to-calculate-bmi" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/rehber/how-to-calculate-bmi</loc>
     <lastmod>2026-09-25T20:05:23+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1001,7 +2000,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/how-to-create-strong-passwords" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/rehber/how-to-create-strong-passwords</loc>
+    <lastmod>2026-09-25T20:05:23+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/how-to-create-strong-passwords" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/how-to-create-strong-passwords" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/how-to-create-strong-passwords" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/rehber/how-to-convert-unix-timestamps</loc>
+    <lastmod>2026-09-25T20:05:23+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/how-to-convert-unix-timestamps" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/how-to-convert-unix-timestamps" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/how-to-convert-unix-timestamps" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/rehber/how-to-convert-unix-timestamps</loc>
     <lastmod>2026-09-25T20:05:23+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1019,7 +2036,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/json-vs-csv-when-to-use" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/rehber/json-vs-csv-when-to-use</loc>
+    <lastmod>2026-09-25T20:05:23+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/json-vs-csv-when-to-use" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/json-vs-csv-when-to-use" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/json-vs-csv-when-to-use" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/rehber/how-to-convert-color-formats</loc>
+    <lastmod>2026-09-25T20:05:23+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/how-to-convert-color-formats" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/how-to-convert-color-formats" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/how-to-convert-color-formats" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/rehber/how-to-convert-color-formats</loc>
     <lastmod>2026-09-25T20:05:23+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1037,7 +2072,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/how-to-check-color-contrast-wcag" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/rehber/how-to-check-color-contrast-wcag</loc>
+    <lastmod>2026-09-25T20:05:23+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/how-to-check-color-contrast-wcag" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/how-to-check-color-contrast-wcag" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber/how-to-check-color-contrast-wcag" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/about</loc>
+    <lastmod>2026-09-25T22:10:40+03:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/about" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/about" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/about</loc>
     <lastmod>2026-09-25T22:10:40+03:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -1055,6 +2108,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/contact" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/tr/contact</loc>
+    <lastmod>2026-09-25T22:10:40+03:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/contact" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/contact" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/privacy-policy</loc>
     <lastmod>2026-09-25T22:10:40+03:00</lastmod>
     <changefreq>yearly</changefreq>
@@ -1062,5 +2124,23 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/privacy-policy" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/privacy-policy" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/privacy-policy</loc>
+    <lastmod>2026-09-25T22:10:40+03:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/privacy-policy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/privacy-policy" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/tr/rehber</loc>
+    <lastmod>2026-09-25T20:05:23+03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freetoolsy.com/rehber" />
   </url>
 </urlset>

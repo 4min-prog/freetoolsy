@@ -44,4 +44,5 @@ export const SAMPLES: Record<string, string> = {
   "number-base-converter": "255",
   "subnet-calculator": "192.168.1.0/24",
   "wcag-contrast-checker": "#3b82f6",
+  "time-zone-converter": "2026-01-15T14:30",
 };

@@ -67,6 +67,14 @@ const entries: Entry[] = [
     lastmod: homeLastMod,
   },
   {
+    loc: homeTr,
+    en: homeEn,
+    tr: homeTr,
+    changefreq: "weekly",
+    priority: "1.0",
+    lastmod: homeLastMod,
+  },
+  {
     loc: guidesEn,
     en: guidesEn,
     tr: guidesTr,
@@ -74,38 +82,89 @@ const entries: Entry[] = [
     priority: "0.8",
     lastmod: guideLastMod,
   },
-  ...categories.map((category) => ({
-    loc: categoryUrl("en", category.id),
-    en: categoryUrl("en", category.id),
-    tr: categoryUrl("tr", category.id),
-    changefreq: "weekly" as const,
-    priority: "0.9",
-    lastmod: categoryLastMod,
-  })),
-  ...tools.map((tool) => ({
-    loc: toolUrl("en", tool.slug),
-    en: toolUrl("en", tool.slug),
-    tr: toolUrl("tr", tool.slug),
-    changefreq: "monthly" as const,
+  // Kategoriler her iki dilde de tek basina indekslenebilir sayfalar, bu yuzden
+  // EN ve TR ayri <url> girdisi olarak yaziliyor. (Arac ve rehberler de ayni
+  // sekilde iki girdi aliyor.)
+  ...categories.flatMap((category) => [
+    {
+      loc: categoryUrl("en", category.id),
+      en: categoryUrl("en", category.id),
+      tr: categoryUrl("tr", category.id),
+      changefreq: "weekly" as const,
+      priority: "0.9",
+      lastmod: categoryLastMod,
+    },
+    {
+      loc: categoryUrl("tr", category.id),
+      en: categoryUrl("en", category.id),
+      tr: categoryUrl("tr", category.id),
+      changefreq: "weekly" as const,
+      priority: "0.9",
+      lastmod: categoryLastMod,
+    },
+  ]),
+  ...tools.flatMap((tool) => [
+    {
+      loc: toolUrl("en", tool.slug),
+      en: toolUrl("en", tool.slug),
+      tr: toolUrl("tr", tool.slug),
+      changefreq: "monthly" as const,
+      priority: "0.8",
+      lastmod: toolLastMod,
+    },
+    {
+      loc: toolUrl("tr", tool.slug),
+      en: toolUrl("en", tool.slug),
+      tr: toolUrl("tr", tool.slug),
+      changefreq: "monthly" as const,
+      priority: "0.8",
+      lastmod: toolLastMod,
+    },
+  ]),
+  ...guides.flatMap((guide) => [
+    {
+      loc: `${siteUrl}/rehber/${guide.slug}`,
+      en: `${siteUrl}/rehber/${guide.slug}`,
+      tr: `${siteUrl}/tr/rehber/${guide.slug}`,
+      changefreq: "monthly" as const,
+      priority: "0.6",
+      lastmod: guideLastMod,
+    },
+    {
+      loc: `${siteUrl}/tr/rehber/${guide.slug}`,
+      en: `${siteUrl}/rehber/${guide.slug}`,
+      tr: `${siteUrl}/tr/rehber/${guide.slug}`,
+      changefreq: "monthly" as const,
+      priority: "0.6",
+      lastmod: guideLastMod,
+    },
+  ]),
+  ...["about", "contact", "privacy-policy"].flatMap((page) => [
+    {
+      loc: `${siteUrl}/${page}`,
+      en: `${siteUrl}/${page}`,
+      tr: `${siteUrl}/tr/${page}`,
+      changefreq: "yearly" as const,
+      priority: "0.3",
+      lastmod: staticLastMod,
+    },
+    {
+      loc: `${siteUrl}/tr/${page}`,
+      en: `${siteUrl}/${page}`,
+      tr: `${siteUrl}/tr/${page}`,
+      changefreq: "yearly" as const,
+      priority: "0.3",
+      lastmod: staticLastMod,
+    },
+  ]),
+  {
+    loc: guidesTr,
+    en: guidesEn,
+    tr: guidesTr,
+    changefreq: "monthly",
     priority: "0.8",
-    lastmod: toolLastMod,
-  })),
-  ...guides.map((guide) => ({
-    loc: `${siteUrl}/rehber/${guide.slug}`,
-    en: `${siteUrl}/rehber/${guide.slug}`,
-    tr: `${siteUrl}/tr/rehber/${guide.slug}`,
-    changefreq: "monthly" as const,
-    priority: "0.6",
     lastmod: guideLastMod,
-  })),
-  ...["about", "contact", "privacy-policy"].map((page) => ({
-    loc: `${siteUrl}/${page}`,
-    en: `${siteUrl}/${page}`,
-    tr: `${siteUrl}/tr/${page}`,
-    changefreq: "yearly" as const,
-    priority: "0.3",
-    lastmod: staticLastMod,
-  })),
+  },
 ];
 
 const body = entries
