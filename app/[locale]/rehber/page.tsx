@@ -21,15 +21,18 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("pageDesc"),
-    alternates: {
-      canonical: locale === "en" ? "/rehber" : `/${locale}/rehber`,
-      languages: {
-        en: `${siteUrl}/rehber`,
-        tr: `${siteUrl}/tr/rehber`,
+      alternates: {
+        canonical: locale === "en" ? "/rehber" : `/${locale}/rehber`,
+        languages: {
+          en: `${siteUrl}/rehber`,
+          tr: `${siteUrl}/tr/rehber`,
+        },
       },
-    },
-  };
-}
+      openGraph: {
+        url: locale === "en" ? "/rehber" : `/${locale}/rehber`,
+      },
+    };
+  }
 
 export default async function RehberIndex({ params }: { params: { locale: string } }) {
   const locale = params.locale as Locale;

@@ -21,15 +21,18 @@ export async function generateMetadata({
   return {
     title: tContact("title"),
     description: tContact("desc"),
-    alternates: {
-      canonical: params.locale === "en" ? "/contact" : `/${params.locale}/contact`,
-      languages: {
-        en: "https://freetoolsy.com/contact",
-        tr: "https://freetoolsy.com/tr/contact",
+      alternates: {
+        canonical: params.locale === "en" ? "/contact" : `/${params.locale}/contact`,
+        languages: {
+          en: "https://freetoolsy.com/contact",
+          tr: "https://freetoolsy.com/tr/contact",
+        },
       },
-    },
-  };
-}
+      openGraph: {
+        url: params.locale === "en" ? "/contact" : `/${params.locale}/contact`,
+      },
+    };
+  }
 
 export default async function IletisimPage({
   params,

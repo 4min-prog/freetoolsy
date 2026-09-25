@@ -33,6 +33,12 @@ export async function generateMetadata({
         tr: "https://freetoolsy.com/tr/privacy-policy",
       },
     },
+    openGraph: {
+      url:
+        params.locale === "en"
+          ? "/privacy-policy"
+          : `/${params.locale}/privacy-policy`,
+    },
   };
 }
 

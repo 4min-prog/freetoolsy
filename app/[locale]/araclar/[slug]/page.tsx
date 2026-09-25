@@ -47,16 +47,18 @@ export async function generateMetadata({
   const locale = params.locale as Locale;
   setRequestLocale(locale);
   const t = await getTranslations(`ToolMeta.${tool.slug}`);
+  const canonical = localizedUrl(locale, toolPath(locale, tool.slug));
   return {
     title: t("title"),
     description: t("pageDesc"),
     alternates: {
-      canonical: localizedUrl(locale, toolPath(locale, tool.slug)),
+      canonical,
       languages: {
         en: toolUrl("en", tool.slug),
         tr: toolUrl("tr", tool.slug),
       },
     },
+    openGraph: { url: canonical },
   };
 }
 

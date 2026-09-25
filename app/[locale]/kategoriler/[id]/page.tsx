@@ -32,19 +32,21 @@ export async function generateMetadata({
   const locale = params.locale as Locale;
   setRequestLocale(locale);
   const t = await getTranslations("CategoryPage");
-  const tc = await getTranslations("Categories");
-  return {
-    title: `${tc(category.id)} ${locale === "en" ? "Tools" : "Araçları"} – FreetoolsY`,
-    description: t(`desc.${category.id}`),
-    alternates: {
-      canonical: localizedUrl(locale, categoryPath(locale, category.id)),
-      languages: {
-        en: categoryUrl("en", category.id),
-        tr: categoryUrl("tr", category.id),
+    const tc = await getTranslations("Categories");
+    const canonical = localizedUrl(locale, categoryPath(locale, category.id));
+    return {
+      title: `${tc(category.id)} ${locale === "en" ? "Tools" : "Araçları"} · FreetoolsY`,
+      description: t(`desc.${category.id}`),
+      alternates: {
+        canonical,
+        languages: {
+          en: categoryUrl("en", category.id),
+          tr: categoryUrl("tr", category.id),
+        },
       },
-    },
-  };
-}
+      openGraph: { url: canonical },
+    };
+  }
 
 export default async function CategoryPage({
   params,

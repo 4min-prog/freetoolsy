@@ -5,7 +5,7 @@ import { Link } from "@/i18n/navigation";
 import { guides, getGuide } from "@/data/guides";
 import { getTool } from "@/data/tools";
 import { routing, type Locale } from "@/i18n/routing";
-import { toolPath } from "@/lib/paths";
+import { localizedUrl, toolPath } from "@/lib/paths";
 import ToolIcon from "@/components/ToolIcon";
 
 const siteUrl = "https://freetoolsy.com";
@@ -29,19 +29,21 @@ export async function generateMetadata({
   if (!guide) notFound();
   const locale = params.locale as Locale;
   setRequestLocale(locale);
-  const content = guide.content[locale];
-  return {
-    title: content.title,
-    description: content.desc,
-    alternates: {
-      canonical: locale === "en" ? `/rehber/${guide.slug}` : `/${locale}/rehber/${guide.slug}`,
-      languages: {
-        en: `${siteUrl}/rehber/${guide.slug}`,
-        tr: `${siteUrl}/tr/rehber/${guide.slug}`,
+    const content = guide.content[locale];
+    const canonical = localizedUrl(locale, `/rehber/${guide.slug}`);
+    return {
+      title: content.title,
+      description: content.desc,
+      alternates: {
+        canonical,
+        languages: {
+          en: `${siteUrl}/rehber/${guide.slug}`,
+          tr: `${siteUrl}/tr/rehber/${guide.slug}`,
+        },
       },
-    },
-  };
-}
+      openGraph: { url: canonical },
+    };
+  }
 
 export default async function RehberDetay({
   params,

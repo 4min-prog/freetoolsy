@@ -13,15 +13,18 @@ export async function generateMetadata({
   return {
     title: tAbout("title"),
     description: tAbout("desc"),
-    alternates: {
-      canonical: params.locale === "en" ? "/about" : `/${params.locale}/about`,
-      languages: {
-        en: "https://freetoolsy.com/about",
-        tr: "https://freetoolsy.com/tr/about",
+      alternates: {
+        canonical: params.locale === "en" ? "/about" : `/${params.locale}/about`,
+        languages: {
+          en: "https://freetoolsy.com/about",
+          tr: "https://freetoolsy.com/tr/about",
+        },
       },
-    },
-  };
-}
+      openGraph: {
+        url: params.locale === "en" ? "/about" : `/${params.locale}/about`,
+      },
+    };
+  }
 
 interface AboutSection {
   h?: string;
