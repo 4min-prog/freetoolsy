@@ -1,18 +1,11 @@
 import type { Metadata } from "next";
-import {
-  getMessages,
-  getTranslations,
-  setRequestLocale,
-} from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import ToolExplorer from "@/components/ToolExplorer";
 import SearchBox from "@/components/SearchBox";
 import PopularStrip from "@/components/PopularStrip";
-import ToolIcon from "@/components/ToolIcon";
 import JsonLd from "@/components/JsonLd";
 import AdSlot from "@/components/AdSlot";
-import { Link } from "@/i18n/navigation";
-import { POPULAR_SLUGS } from "@/data/popular";
-import { categories, getTool, tools } from "@/data/tools";
+import { categories, tools } from "@/data/tools";
 
 export async function generateMetadata({
   params,
@@ -37,9 +30,6 @@ export async function generateMetadata({
 export default async function Home({ params }: { params: { locale: string } }) {
   setRequestLocale(params.locale);
   const t = await getTranslations("Home");
-  const messages = await getMessages();
-  const toolMeta = (messages as { ToolMeta?: Record<string, { name?: string }> })
-    .ToolMeta;
   const faqs = t.raw("faq") as Array<{ q: string; a: string }>;
 
   const heroTitle = t("heroTitle");
