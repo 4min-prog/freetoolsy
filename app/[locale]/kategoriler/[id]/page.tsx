@@ -16,6 +16,8 @@ import JsonLd from "@/components/JsonLd";
 import { categoryTheme } from "@/components/categoryTheme";
 
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return categories.map((category) => ({ locale: "tr", id: category.id }));
 }

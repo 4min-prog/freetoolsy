@@ -6,6 +6,8 @@ import AraclarPage, {
   generateMetadata as buildToolMetadata,
 } from "../../araclar/[slug]/page";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return tools.map((tool) => ({ locale: "en", slug: tool.slug }));
 }

@@ -29,6 +29,8 @@ import ToolViewTracker from "@/components/ToolViewTracker";
 import { categoryTheme } from "@/components/categoryTheme";
 
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {  const params: { locale: string; slug: string }[] = [];
   tools.forEach((tool) => {
     params.push({ locale: "tr", slug: tool.slug });

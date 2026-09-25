@@ -6,6 +6,8 @@ import CategoryPage, {
   generateMetadata as buildCategoryMetadata,
 } from "../../kategoriler/[id]/page";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return categories.map((category) => ({ locale: "en", id: category.id }));
 }
