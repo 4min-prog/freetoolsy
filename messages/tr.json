@@ -845,6 +845,14 @@
       {
         "h": "Verilerim güvende mi?",
         "p": "Evet. Biçimlendirme, doğrulama ve küçültme tamamen tarayıcınızda yapılır; XML'iniz hiçbir sunucuya gönderilmez. Hassas değerler içeren yapılandırmalar bile güvenle işlenebilir."
+      },
+      {
+        "h": "Güzel yazdırma nasıl çalışır?",
+        "p": "Bir biçimleyici mevcut girintiyi okur, sonra ağacın her seviyesini, alt öğeler kendi boyutuyla tutarlı hizalanacak şekilde yeniden kurar. Nitelikler öğelerinde kalır, yorumlar yerini korur; yoğun işaretlemeyi yukarıdan aşağıya okunabilir bir yapıya çevirir."
+      },
+      {
+        "h": "Biçimlendirme doğrulama değildir",
+        "p": "Güzel çıktı yalnızca belgenin ayrıştırılabilir olduğunu kanıtlar. Yanlış bir öğe adı veya yerinde olmayan nitelik yine temiz biçimlenir — doğruluk için bir doğrulayıcı, okunabilirlik için biçimleyici kullanın. Bozuk XML, sessiz çıktı yerine hata olarak yüzeye çıkar; bu yüzden önce doğrulamayı düzeltin."
       }
     ],
     "css-minifier": [
@@ -863,6 +871,19 @@
       {
         "h": "Verilerim güvende mi?",
         "p": "Evet. Küçültme tamamen tarayıcınızda gerçekleşir; CSS'iniz hiçbir zaman gönderilmez veya saklanmaz. Kayıt veya kurulum gerekmez."
+      },
+      {
+        "h": "CSS sıkıştırma neleri kaldırır?",
+        "list": [
+          "Yorumlar ve uzun boşluk dizileri.",
+          "Kapanış süslü parantezlerden önceki son noktalı virgüller.",
+          "Gereksiz birimler ve baştaki sıfırlar (0.5em → .5em).",
+          "İki nokta, virgül ve parantez çevresindeki gereksiz boşluklar."
+        ]
+      },
+      {
+        "h": "Sıkıştırma ne zaman ters teper?",
+        "p": "Sıkıştırılmış çıktı insanlar için okunamaz; bu yüzden orijinal kaynağı her zaman sürüm kontrolünde tutun. Sıkıştırmayı, içerik değiştiğinde tarayıcıların yeni dosyayı alması için style.min.css?hash gibi önbellek dostu bir isimle eşleştirin."
       }
     ],
     "html-minifier": [
@@ -881,6 +902,19 @@
       {
         "h": "Verilerim güvende mi?",
         "p": "Evet. Tüm temizleme tarayıcınızda yapılır; HTML'iniz hiçbir yere yüklenmez. Özel şablonlar, e-posta kaynakları ve hazırlanmakta olan işaretlemeler için güvenlidir."
+      },
+      {
+        "h": "HTML sıkıştırma nelere dokunur?",
+        "list": [
+          "Dosya kaynaklı etiketler arasındaki boşluklar.",
+          "Birçok sıkıştırıcıda güvenli niteliklerdeki gereksiz tırnaklar.",
+          "Spesifikasyonun izin verdiği isteğe bağlı kapanış etiketleri.",
+          "Koşullu veya IE direktifi olmayan yorumlar."
+        ]
+      },
+      {
+        "h": "Boşluğu güvenle daraltmak",
+        "p": "<pre> ve <textarea> içindeki metin ile satır içi öğe aralıkları anlamlı olabilir. Sıkıştırıcılar bu durumları korur, ancak kaydettikten sonra oluşan düzeni doğrulayın — boşlukta bir piksel kayması, agresif HTML sıkıştırmanın klasik gizli maliyetidir."
       }
     ],
     "html-formatter": [
@@ -904,6 +938,14 @@
           "Çıktıyı tekrar biçimlendirebilir miyim? Evet, biçimlendirme idempotenttir: sonucu tekrar girdi olarak verdiğinizde aynı temiz çıktıyı elde edersiniz.",
           "HTML'im bir yere yükleniyor mu? Hayır — biçimlendirme tamamen tarayıcınızda çalışır ve işaretlemeniz cihazınızdan asla çıkmaz."
         ]
+      },
+      {
+        "h": "Temiz girinti neyi ortaya çıkarır?",
+        "p": "Her açılış ve kapanış etiketi aynı derinlikte hizalandığında, eşleşmeyen etiketler anında göze çarpar ve iç içelik tek bakışta netleşir. Bu görsel düzen, kapanmamış bölümleri tarayıcıdan önce yakalamanın en hızlı yoludur."
+      },
+      {
+        "h": "Şablonlardan gelen kodu biçimlendirme",
+        "p": "Sunucuda üretilen veya şablon çıktısı genellikle tek ve uzun bir satırdır. Biçimleyiciden geçirdiğinizde etiketler okunur satırlara bölünür; böylece üretilen HTML'de hata ayıklamak, kaynak şablonu okumak kadar kolay olur."
       }
     ],
     "character-counter": [
@@ -1384,6 +1426,19 @@
       {
         "h": "Verilerim güvende mi?",
         "p": "Evet. Çözme işlemi tamamen tarayıcınızda gerçekleşir; token hiçbir sunucuya gönderilmez. Unutmayın: çözmek imzayı doğrulamaz — bir JWT onu alan herkes tarafından okunabilir."
+      },
+      {
+        "h": "Çözülen bir token neleri gösterir?",
+        "list": [
+          "Başlık: HS256 veya RS256 gibi imzalama algoritması.",
+          "Payload: issuer, subject, scope ve son kullanma gibi talepler, base64url'den çevrilmiş hâliyle.",
+          "İmza: kriptografik özet — gösterilir ama asla çözülmez, çünkü çözülemez.",
+          "Zaman damgaları ham epoch sayıları yerine okunur biçimde görünür."
+        ]
+      },
+      {
+        "h": "Burada hassas hiçbir şey tutmayın",
+        "p": "Çözme tamamen yerel çalışır — araç token'ınızı hiçbir yere göndermez ve gizli anahtarınıza ihtiyaç duymaz. Ancak çözülmüş bir JWT, payload'ını düz metin olarak ortaya serer: token kişisel veri içeriyorsa çözülmüş görünüme depolama alanı değil, hassas bir çıktı olarak yaklaşın."
       }
     ],
     "json-csv-converter": [
@@ -1428,6 +1483,14 @@
       {
         "h": "Verilerim güvende mi?",
         "p": "Evet. Tüm dönüştürme tarayıcınızda çalışır; hiçbir değer gönderilmez veya saklanmaz. Kayıt ve kurulum gerekmez."
+      },
+      {
+        "h": "Sayıdan okunur zamana",
+        "p": "Unix zaman damgası, dönemden (epoch) beri geçen saniye sayısıdır ve neredeyse her zaman UTC'dir. Dönüştürücü aynı anı hem UTC hem yerel saat diliminizde gösterir; böylece sunucu log'larını veya API değerlerini zihinsel aritmetik yapmadan çevirirsiniz."
+      },
+      {
+        "h": "Pratik aralık",
+        "p": "1 Ocak 1970'ten önceki zaman damgaları negatiftir ve 32 bit sistemler 19 Ocak 2038, 03:14:07'de durur. Bu kadar uzak yıllar, uzun ömürlü veritabanlarında ve gömülü sistemlerde önem taşır — saklanan bir sayı imkânsız derecede eski veya büyük göründüğünde işe yarar."
       }
     ],
     "duplicate-line-remover": [
@@ -1446,6 +1509,19 @@
       {
         "h": "Verilerim güvende mi?",
         "p": "Evet. İşlem tamamen tarayıcınızda çalışır; listeniz hiçbir zaman yüklenmez veya saklanmaz. Özel verilerinizi gönül rahatlığıyla yapıştırın."
+      },
+      {
+        "h": "Tekrar giderme nasıl çalışır?",
+        "list": [
+          "Satırlar kırpıldıktan sonra karşılaştırılır; 'text' ile ' text ' trim modunda aynı satır sayılır.",
+          "İlk geçen korunur, birebir kopyalar atılır.",
+          "Kalan satırların sırası varsayılan olarak korunur.",
+          "Bazı modlar trim'in üzerine harf duyarlılığını da kaldırır."
+        ]
+      },
+      {
+        "h": "Nerede saatler kazandırır?",
+        "p": "Yapılandırma dosyalarını birleştirmek, aktarılan isim listelerini bir araya getirmek veya kazınmış bir veri setini temizlemek hep tekrarlardan zarar görür. Hızlı bir tekrar temizleme, binlerce kopya satırı düzenli ve benzersiz bir listeye çevirir ve yanlışlıkla çift su altı aktarımlarını üretime düşmeden yakalar."
       }
     ],
     "ai-token-counter": [
@@ -1528,6 +1604,14 @@
           "%15 — birçok ülkede standart bahşiş oranı.",
           "%20 ve %25 — iyi servis veya büyük gruplar için."
         ]
+      },
+      {
+        "h": "Hesabı adilce bölmek",
+        "p": "Hesabı toplayın, bir yüzde seçin ve masaya bölün. İşleri basit tutmak için bahşişin, yuvarlanmış hesaba göre mi yoksa sonrasında mı uygulanacağına karar verin — birkaç kuruş, yemek sonunda kavga etmeye değmez."
+      },
+      {
+        "h": "Bahşiş kültürü farklılık gösterir",
+        "p": "Yüzde on ila yirmi, Amerika Birleşik Devletleri'nde yaygın aralıktır; pek çok ülke servisi fiyata dahil eder ve ekstra bir şey beklemez. Seyahat ederken, evde geçerli yüzdeyi varsaymak yerine yerel gelenekleri kontrol edin."
       }
     ],
     "discount-calculator": [
@@ -1546,6 +1630,14 @@
           "İndirim etiketleri ve kampanyalar hazırlayan mağaza sahipleri.",
           "Yüzde ve indirim matematiği çalışan öğrenciler."
         ]
+      },
+      {
+        "h": "İki yön, tek soru",
+        "p": "Yüzde indirim, '80 €'nun %25'i ne kadar?' sorusunu yanıtlar. Nihai fiyat ise '60 € ödedim — bu yüzde kaç?' sorusunu. İkisi farklı anlarda işe yarar: hızlı alışverişte, sonra da bir 'fırsatın' gerçekten fırsat olup olmadığını gözden geçirirken."
+      },
+      {
+        "h": "Birleşik indirimler toplamsal değildir",
+        "p": "%20 indirim üstüne ek %10 kupon yaklaşık %28 toplam verir, %30 değil — her indirim zaten indirilmiş fiyata uygulanır. Yüzdeleri toplamak yerine indirimleri sırayla uygulayın, yoksa kasada sonuç sizi şaşırtır."
       }
     ],
     "average-calculator": [
@@ -1565,6 +1657,19 @@
           "Spor: maç veya sezon genelindeki ortalama skorlar.",
           "Kişisel takip: ortalama harcama, mesafe veya süre."
         ]
+      },
+      {
+        "h": "Ortalama işe yarar — yanıltana kadar",
+        "p": "Aritmetik ortalama, düzgün ve eşit dağılmış sayılarla iyi çalışır. Tek bir büyük aykırı değer sonucu çektiğinde (daireler sokağında tek bir köşk), ortalama hiç kimseyi tanımlamaz. Sayıya güvenmeden önce bu durumları fark edin."
+      },
+      {
+        "h": "Hangi ortalama uygun?",
+        "list": [
+          "Aritmetik ortalama: değerler eşit dağıldığında adildir.",
+          "Medyan: aykırı değerlerde daha güvenilir olan ortanca değer.",
+          "Mod: kategoriler için işe yarayan en sık değer.",
+          "Ağırlıklı ortalama: bazı girdilerin daha fazla sayılması gerektiğinde."
+        ]
       }
     ],
     "dog-age-calculator": [
@@ -1579,6 +1684,14 @@
       {
         "h": "Verilerim güvende mi?",
         "p": "Evet. Tahmin tamamen tarayıcınızda hesaplanır; girdiğiniz yaş ve boyut hiçbir zaman gönderilmez veya saklanmaz. Ücretsiz, kayıt yok ve tamamen istemci tarafında."
+      },
+      {
+        "h": "Neden 'bir yıl yedi yıldır' yanlış?",
+        "p": "Köpekler ilk iki yılda hızla yaşlanır — ilk yıl kabaca 15 insan yılına, ikinci yıl yaklaşık 9'una denk gelir — sonra tempo yavaşlar. Eski kural genç köpekleri abartır, yaşlıları küçümser; modern çizelgeler çoğunlukla iki aşamalı bir ölçek kullanır."
+      },
+      {
+        "h": "Boyut ve cins sayıları değiştirir",
+        "p": "Büyük ırklar yetişkinliğe daha erken ulaşır ve daha erken yaşlanır; küçük köpekler çoğu zaman daha uzun yaşar. Sonuç bir tahmindir, teşhis değil — kesin bir insan-yılı sayısından çok düzenli veteriner kontrolleri önemlidir."
       }
     ],
     "subnet-calculator": [
@@ -1593,6 +1706,19 @@
       {
         "h": "Kullanılabilir ana bilgisayarlar neden toplamdan azdır?",
         "p": "Ağ adresi ve broadcast adresi her zaman ayrılır ve bir cihaza atanamaz. Bu nedenle /24 alt ağı 256 adres içerir ancak 254 kullanılabilir ana bilgisayar sunar."
+      },
+      {
+        "h": "Hepsi tek ekranda",
+        "list": [
+          "Ağ adresi ve CIDR maskesi.",
+          "Alt ağın yayın (broadcast) adresi.",
+          "Kullanılabilir ana bilgisayar aralığı (ağ ve yayın hariç).",
+          "Blok için toplam adres sayısı."
+        ]
+      },
+      {
+        "h": "CIDR'ı hızlı okumak",
+        "p": "192.168.1.0/24'teki /24, ilk 24 bitin sabit olduğunu, geriye 8 bit kaldığını söyler — 256 adres, 254 kullanılabilir. Her eksik / biti bloğu ikiye katlar: /23 512'ye çıkar, /25 128'e düşer. Bu trend en hızlı zihinsel kısayoldur."
       }
     ],
     "px-rem-converter": [
@@ -1607,6 +1733,14 @@
       {
         "h": "Temel değer neden varsayılan olarak 16 px'dir?",
         "p": "Başlıca tarayıcılar varsayılan kök yazı boyutunu 16 px kullanır; bu yüzden çoğu proje buradan başlar. Bazı tasarım sistemleri 14 px veya 10 px gibi farklı tabanlar benimsediği için değeri değiştirebilirsiniz."
+      },
+      {
+        "h": "rem neden px'ten iyi?",
+        "p": "rem, kök yazı boyutuna göre ölçülür; böylece tarayıcı ayarlarını büyüten kullanıcılar kendisiyle ölçeklenen bir site elde eder. Pikselle sabitlenmiş metin bu tercihi görmezden gelir ve az gören kullanıcılar için içeriği erişilemez kılabilir."
+      },
+      {
+        "h": "Matematik nasıl işler?",
+        "p": "Bir rem, kök yazı boyutuna eşittir — tarayıcılarda varsayılan 16px. Tasarımcının 24px değeri 1.5rem olur (24 ÷ 16). Dönüştürücü bu bölmeyi iki yönde de yapar; pratik CSS için yuvarladığı ondalık sonuçlar dahil."
       }
     ],
     "wcag-contrast-checker": [
@@ -1626,6 +1760,19 @@
       {
         "h": "Verilerim güvende mi?",
         "p": "Evet. Oran tarayıcınızda yerel olarak hesaplanır; renkleriniz cihazınızdan asla çıkmaz. Kayıt veya kurulum gerekmez."
+      },
+      {
+        "h": "Oranlar ne anlama gelir?",
+        "list": [
+          "4.5:1, normal metin için AA eşiğidir.",
+          "3:1, büyük metin (18px+ veya 14px bold) için AA eşiğidir.",
+          "7:1, normal metin için AAA; büyük metinde yaklaşık 4.5:1.",
+          "Bu hedefler, görseller üzerindeki metin dahil zemin üzerindeki tüm metne uygulanır."
+        ]
+      },
+      {
+        "h": "Kağıtta geçer, ekranda geçmez",
+        "p": "Bir oran geçebilir ama kenar yumuşatma sonrası veya ince yazı ağırlığında yine de bulanık görünebilir. Yayınlamadan önce gerçek yazı boyutu ve ağırlığıyla kontrol edin; sayısal geçişi bir okunabilirlik garantisi değil, taban olarak görün."
       }
     ],
     "color-palette-generator": [
@@ -1643,6 +1790,14 @@
       {
         "h": "Verilerim güvende mi?",
         "p": "Evet. Paletler tamamen tarayıcınızda üretilir; ana renginiz hiçbir yere gönderilmez. Her şey cihazınızda kalır."
+      },
+      {
+        "h": "Tek bir tohum renkten paletler",
+        "p": "Renk teorisi güvenilir aileler sunar: analog, komşu tonlara kayar; tamamlayıcı, zıt rengi seçer; üçlü, çarkta eşit adımlarla ilerler. Bir marka renginden başlayıp gerisi türetmek, seti rastgele yerine uyumlu tutar."
+      },
+      {
+        "h": "Önce erişilebilir palet kurun",
+        "p": "Güzel çiftler kontrastta yine de başarısız olabilir. Kullanmayı planladığınız her metin-zemin kombinasyonunu test edin — üretici şemayı odaklar, ancak yalnızca kontrast kontrolü, kullanıcılar okumakta zorlanmadan önce WCAG'yi onaylar."
       }
     ],
     "box-shadow-generator": [
@@ -1662,6 +1817,19 @@
       {
         "h": "Verilerim güvende mi?",
         "p": "Evet. CSS tarayıcınızda üretilir; ayarlarınız hiçbir zaman gönderilmez veya saklanmaz. Sonucu kopyalayıp doğrudan stiller dosyanıza yapıştırın."
+      },
+      {
+        "h": "Bir kutu gölgesinin anatomisi",
+        "list": [
+          "offset-x ve offset-y gölgeyi yatay ve dikey kaydırır.",
+          "blur-radius kenarı yumuşatır — sıfır, sert gölge verir.",
+          "spread-radius gölge boyutunu büyütür veya küçültür.",
+          "color rengini verir; inset ise gölgeyi kutunun içine çizer."
+        ]
+      },
+      {
+        "h": "Katmanlı gölgeler derinlik yaratır",
+        "p": "Tek gölge düz okunur; farklı bulanıklık ve kaydırmalı iki-üç gölge gerçek ışığı taklit eder. İlk katmanı keskin ve yakın, ikincisini daha yumuşak ve geniş tutun — kartlar ve yüzer butonların klasik kombinasyonu."
       }
     ],
     "text-sorter": [
@@ -1708,6 +1876,14 @@
       {
         "h": "Verilerim güvende mi?",
         "p": "Evet. Her şey tarayıcınızda gerçekleşir; listeniz hiçbir yere gönderilmez. Tamamen istemci tarafında çalışır."
+      },
+      {
+        "h": "İyi bir karıştırma neyi garanti eder?",
+        "p": "Gerçek bir karıştırma her sıralamayı eşit olasılıklı sayar; böylece çekiliş ve rastgele seçimler adil olur. Araç her çalıştırdığınızda sırayı yeniden karıştırır — aynı desen döngüsü değil, yeni bir çekim."
+      },
+      {
+        "h": "Ne zaman karıştırmamalı?",
+        "p": "Çekilişler, öğrenme sırası ve indeks sırasını kırmak için kullanın. Deterministik veya geri döndürülebilir herhangi bir şey için ona güvenmeyin — karıştırılmış bir liste yok edilmiş düzendir; orijinal önemliyse bir kopya saklayın."
       }
     ],
     "yaml-json-converter": [
@@ -1726,6 +1902,19 @@
       {
         "h": "Verilerim güvende mi?",
         "p": "Evet. Ayrıştırma ve dönüştürme tamamen tarayıcınızda gerçekleşir; verileriniz hiçbir zaman gönderilmez veya saklanmaz. Gizli bilgi içeren yapılandırmalar güvenle dönüştürülebilir."
+      },
+      {
+        "h": "YAML ve JSON",
+        "list": [
+          "YAML insanlar tarafından yazılır: girinti ve az noktalama.",
+          "JSON makine önceliklidir: süslü parantezler, köşeli parantezler, her zaman tırnaklı anahtarlar.",
+          "Her JSON belgesi geçerli YAML'dır ama her YAML geçerli JSON değildir.",
+          "API'ler ve kodun ayrıştırdığı yapılandırmalar için JSON; düzenlenebilir yapılandırma dosyaları için YAML seçin."
+        ]
+      },
+      {
+        "h": "Girinti asıl sözdizimidir",
+        "p": "YAML'de iki boşluk genellikle daha derin bir seviye demektir; boşlukla sekme karıştırmak veya tutarsız derinlikler ayrıştırmayı bozar. Dönüştürme başarısız olursa kontrol edilecek ilk şey, yanlış bir sekme veya düzgün girintilenmemiş bir bloktur."
       }
     ],
     "md5-file-checksum": [
@@ -1744,6 +1933,14 @@
       {
         "h": "Verilerim güvende mi?",
         "p": "Evet. Özet, cihazınızdaki dosya baytlarından tamamen tarayıcınızda hesaplanır; dosya hiçbir sunucuya yüklenmez ve sayfayı kapattığınızda sonuçlar kaybolur."
+      },
+      {
+        "h": "Dosya sağlama toplamı nasıl çalışır?",
+        "p": "Araç dosyayı bayt bayt okur ve baytları MD5'e besler; 32 karakterlik bir parmak izi üretir. Hesaplama tamamen tarayıcınızda yapıldığı için dosyanın bir kopyası cihazınızdan asla çıkmaz."
+      },
+      {
+        "h": "Her önemli indirmeden sonra karşılaştırın",
+        "p": "Projeler sağlama toplamlarını bir sebeple yayınlar: indirdikten sonra dizgeyi onlarınkiyle doğrulayın. Eşleşme, bozuk veya beklenmedik bir dosya demektir — güvenmeden önce yeniden indirin ve güvenlik açısından önemli indirmeleri varsayılan olarak doğrulayın."
       }
     ],
     "image-compressor": [
@@ -1803,6 +2000,14 @@
           "En-boy oranı korunur mu? Evet — en-boy oranını kor kutusu açıkken bir alanı değiştirmek diğerini otomatik günceller.",
           "Çıktı formatı olarak hangisini seçmeliyim? Şeffaflık ve net kenarlar için PNG, daha küçük dosya için JPEG seçin."
         ]
+      },
+      {
+        "h": "Yüklemeden önce yeniden boyutlandırın",
+        "p": "Kameralar ve tasarım araçları, çoğu sayfanın ihtiyacından çok daha büyük görseller dışa aktarır. Görüntülenme genişliğine küçültmek dosya boyutunu ve sayfa ağırlığını keser; bu da yavaş bağlantılarda yüklenme hızını doğrudan iyileştirir."
+      },
+      {
+        "h": "Kaliteye dikkat edin",
+        "p": "Küçültme detayın çoğunu korur, ancak küçültüp yeniden büyütmek netliği kaybettirir, büyütmek bulanıklık ekler. Orjinalden tek adımda boyutlandırın, sonra sıkıştırın — küçük görselleri büyütüp keskin sonuç beklemeyin."
       }
     ],
     "image-converter": [
@@ -1826,6 +2031,19 @@
           "Çıktı kalitesini ayarlayabilir miyim? Evet — kalite kaydırıcısı JPEG ve WebP çıktısında geçerlidir.",
           "Dönüştürülen dosyalar saklanır mı? Hayır — dönüşüm tarayıcınızda olur ve yeni dosya doğrudan cihazınıza iner."
         ]
+      },
+      {
+        "h": "Hangi biçim ne zaman uyar?",
+        "list": [
+          "JPEG: fotoğraflar ve gradyanlar — boyut/kalite oranı mükemmel.",
+          "PNG: net metin, logo ve şeffaflık.",
+          "WebP: modern her yönüyle — çoğu durumda ikisinden de küçük.",
+          "Bitmap/RAW tarzı dışa aktarımlar: yalnızca iş akışı açıkça gerektiriyorsa."
+        ]
+      },
+      {
+        "h": "Kalite kaybetmeden dönüştürmek",
+        "p": "Elinizdeki en yüksek kaliteli orijinalden başlayın; sıkıştırılmış bir JPEG'i PNG'ye çevirmek detay geri getirmez. Biçimi içeriğe uydurun, mantıklı bir kalite seçin ve bayt sayısına güvenmek yerine sonucu görsel olarak kontrol edin."
       }
     ],
     "image-to-base64": [
@@ -1849,6 +2067,14 @@
           "Base64 metni neden dosyadan uzun? Kodlama yaklaşık üçte bir ek yük getirir; 30 KB'lık görsel kabaca 40 KB metin olur.",
           "Görselim yükleniyor mu? Hayır, dönüşüm tarayıcınızın FileReader özelliğini kullanır ve veri cihazınızdan çıkmaz."
         ]
+      },
+      {
+        "h": "Görselleri data URI olarak gömmek",
+        "p": "Bir görseli base64'e çevirmek, doğrudan CSS veya HTML içine yerleşebilen bir data: URI üretir. Simge ve küçük logo gibi küçük varlıklar için fazladan bir HTTP isteğinden kurtarır; bu da ilk çizimde gerçek zaman kazandırabilir."
+      },
+      {
+        "h": "%33 boyut uyarısı",
+        "p": "Base64 ikili veriyi kabaca üçte bir oranında büyütür; bu yüzden data URI, diskteki aynı dosyadan her zaman daha büyüktür. Birkaç kilobyte üzerindeki her şeyde, önbellekli normal bir URL, genel performans açısından satır içi bloğu yener."
       }
     ],
     "image-color-picker": [
@@ -1872,6 +2098,14 @@
           "Resimden renk seçici ücretsiz mi? Evet — ücretsizdir ve hesap gerektirmeden tamamen tarayıcınızda çalışır.",
           "Kayıtlı bir rengi nasıl kopyalarım? Listedeki rengin yanındaki kopyala düğmesine basarak HEX kodunu panoya alın."
         ]
+      },
+      {
+        "h": "Tam marka rengini bulmak",
+        "p": "Bir seçici, imlecinizin altındaki pikseli okur ve hex, RGB veya HSL değerini döndürür. Mevcut bir grafikten bir markanın imza rengini alıp kendi tasarımlarınızda tutarlı kullanmanın en hızlı yolu budur."
+      },
+      {
+        "h": "Kod örneklerinden isimlere",
+        "p": "Tasarımcılar renkleri genellikle sunum veya kablosuz tasarım bağlantılarında ham hex dizgeleri olarak alır. Değeri yapıştırın, görün ve en yakın okunur varyantı kopyalayın — ekranın gösterdiğini eşleştirmek, çıplak bir koddan tahmin etmekten iyidir."
       }
     ],
     "slug-generator": [
@@ -2034,6 +2268,14 @@
           "Hangi sınıf seviyesini hedeflemeliyim? Çoğu web içeriği 7-9. sınıf seviyesinde en iyi okunur.",
           "Metnim saklanıyor mu? Hayır, tüm hesaplamalar tarayıcınızda yapılır."
         ]
+      },
+      {
+        "h": "Bir skor gerçekte ne demek?",
+        "p": "Okunabilirlik formülleri, çoğunlukla cümle uzunluğuna ve kelime uzunluğuna dayanarak, bir metni anlamak için gereken eğitim seviyesini tahmin eder. Kolaylığı öngörürler, kaliteyi değil — mantık belirsizse mükemmel skor bile kafa karıştırıcı olabilir."
+      },
+      {
+        "h": "Onu karar değil, kadran olarak kullanın",
+        "p": "Kısa cümleler ve yaygın kelimeler metni genelde kolaylaştırır; çoğu site için uygundur. Skoru hızlı bir sinyal olarak görün: tercih edilen aralığın dışına çıkarsa, her şeyi yeniden yazmak yerine bölünecek uzun dolambaçlı cümleleri arayın."
       }
     ],
     "text-diff": [
@@ -2056,6 +2298,14 @@
           "Karşılaştırma büyük/küçük harfe duyarlı mı? Evet, satırlar birebir karşılaştırılır; yalnızca büyük/küçük harf farkı olan satır değişmiş sayılır.",
           "Büyük metinler nasıl işleniyor? Karşılaştırma satır tabanlı olduğu için binlerce satırda bile eşleştirme doğru kalır."
         ]
+      },
+      {
+        "h": "Satır veya karakter hassasiyeti",
+        "p": "Satır satır fark, bütün değişen satırları vurgular — kod ve yapılandırma için idealdir. Kelime ve karakter farkı, bir cümlenin içinde tam olarak neyin değiştiğine odaklanır; metin düzenleme ve düzeltme için daha iyidir."
+      },
+      {
+        "h": "Temiz bir inceleme akışı",
+        "p": "Orijinali ve düzenlenmiş sürümü yan yana yapıştırın, ardından yalnızca vurgulanan bölümleri tarayın. Bu odaklı inceleme, dosyayı yeniden okurken çoğu zaman gözden kaçan kazara silinmeleri — özellikle otomatik düzenlemelerden sonra — yakalar."
       }
     ],
     "html-entity-converter": [
@@ -2078,6 +2328,19 @@
           "Neden ' karakteri &#39; oluyor? Kesme işareti, tek tırnaklı attribute'lar içinde güvenli olduğu için sayısal entity olarak kodlanır.",
           "Her entity'yi çözebilir miyim? Evet, standart adlandırılmış ve sayısal entity'ler karakterlerine geri çevrilir."
         ]
+      },
+      {
+        "h": "Karakter referansları neden var?",
+        "list": [
+          "< ve > açılı etiketler etiket olarak okunur; bu yüzden HTML, &lt; ve &gt; gibi kaçışlara ihtiyaç duyar.",
+          "Özel simgeler (©, ®, emoji) okunur adlandırılmış veya sayısal referanslar olarak var olur.",
+          "URL'lerdeki ve işaretleri, öznitelik ayrıştırmasını bozmamak için &amp; gerektirir.",
+          "Referanslar, kullanıcı metnini işaretlemeye gömerken de sizi korur."
+        ]
+      },
+      {
+        "h": "Adlandırılmış mı, sayısal mı?",
+        "p": "Adlandırılmış referanslar (&amp;) okunması kolaydır; sayısal olanlar (&#38;) adın bulunmadığı kodlamalarda bile çalışır. Uyumluluk için sayısal olanlar güvenli varsayılandır — dönüştürücü ikisini de verir, seçin."
       }
     ],
     "morse-converter": [
@@ -2135,6 +2398,14 @@
           "Metnim bir yere gönderiliyor mu? Hayır, her şey tarayıcınızda yerel olarak çalışır.",
           "Türkçe karakterler destekleniyor mu? Evet, tüm Unicode metinler doğru şekilde ters çevrilir."
         ]
+      },
+      {
+        "h": "Eğlenceli ve pratik kullanımlar",
+        "p": "Metni ters çevirmek, bir kelime bulmacası, gizli bir sohbet bahsi veya hafif bir oyalanma yaratmanın kolay yoludur. Tasarımın ters karakterler gerektirdiği çıkartma ve tabelalarda metni aynalamak için de zaman zaman işe yarar."
+      },
+      {
+        "h": "Unicode karakterlere dikkat",
+        "p": "Aksanlı harfler, emoji ve Arapça veya İbranice gibi alfabeler birden çok kod noktasından oluşur. Kod noktalarını ters çevirmek, işaretleri yanlış glife karıştırabilir; bu yüzden girdi düz A-Z metni değilse sonucu dikkatle okuyun."
       }
     ],
     "fancy-text-generator": [
@@ -2157,6 +2428,14 @@
           "Tüm karakterler dönüştürülüyor mu? Yalnızca A–Z, a–z ve 0–9 için stilli karşılıklar vardır; Türkçe aksanlar ve semboller aynen kalır.",
           "Dönüştürme nerede yapılıyor? Tamamen tarayıcınızda — hiçbir şey yüklenmez."
         ]
+      },
+      {
+        "h": "Bu stiller gerçekte nedir?",
+        "p": "Şık görünen harfler, ayrı glifler olarak zaten var olan Unicode karakterleridir — kalın, italik, daire içinde, el yazısı ve daha fazlası. Tarayıcı onları doğrudan çizer; üretici yalnızca her harfi süslenmiş ikizine eşler."
+      },
+      {
+        "h": "Kullanmadan önce uyumluluk kontrolü",
+        "p": "Az bilinen glifler, okuyucunun cihazında kurulu fontlara bağlıdır. Telefonunuzda harika görünen bir stil, eski bir bilgisayarda kutu veya yedek font olarak çıkabilir; bu yüzden süslü metni önemli paylaşımlarda ölçülü kullanın."
       }
     ],
     "caesar-cipher": [
@@ -2179,6 +2458,14 @@
           "ROT13 güvenli mi? Hayır, gerçek bir şifreleme değildir — tüm Caesar kaydırmaları gibi kolayca çözülür.",
           "İşlem nerede yapılıyor? Tamamen tarayıcınızda; metniniz hiçbir zaman yüklenmez."
         ]
+      },
+      {
+        "h": "Kaydırmalı şifre nasıl çalışır?",
+        "p": "Her harf alfabede sabit sayıda yer ilerler: kaydırma 3 iken A, D olur; Z ise C'ye sarmalanır. Şifre simetriktir — çözme aynı kaydırmayı ters yönde uygular ve tek sır kaydırma değeridir."
+      },
+      {
+        "h": "Bir şifre, ama güvenlik değil",
+        "p": "Yalnızca 25 anlamlı kaydırma vardır; bir insan dakikalar içinde elle, bir bilgisayar milisaniyeler içinde kırar. Caesar'ı eğlenceli bir bulmaca veya öğretim aracı sayın; gerçek veri koruması olarak asla kullanmayın."
       }
     ],
     "gpa-calculator": [
@@ -2202,6 +2489,14 @@
           "Ağırlıklı ne demek? Ortalama alınmadan önce tüm notlar dersin kredi miktarıyla çarpılır. Yüksek kredili bir dersteki iyi not, düşük kredili dersteki nottan GPA'nızı daha çok etkiler.",
           "100'lük ortalama doğru mu? 100'lük ortalama, her harf notunun tipik yüzdesini kullanır, bu yüzden bir tahmindir. Okulunuz, özellikle A+ veya F notları için farklı bir dönüşüm tablosu kullanıyor olabilir."
         ]
+      },
+      {
+        "h": "Ağırlıklı ve ağırlıksız",
+        "p": "Ağırlıksız GPA her dersi eşit sayar (A = 4.0, nerede olursa olsun). Ağırlıklı GPA, honors ve AP sınıfları için bonus ekler; transkriptlerde genelde iki sayı da görünür. Karşılaştırmadan önce okulunuzun veya başvurunuzun hangi ölçeği beklediğini bilin."
+      },
+      {
+        "h": "Kredi saatleri ortalamayı değiştirir",
+        "p": "Bir dönemlik ders ile yıllık ders aynı ağırlıkta değildir. Ortalamadan önce her notu kredi saatiyle çarpmak daha gerçekçi bir tablo verir — hesap makinesi her satırı eşit saymak yerine tam bunu yapar."
       }
     ],
     "loan-emi-calculator": [
@@ -2225,6 +2520,19 @@
           "Toplam faiz neden anaparaya yakın çıkıyor? Faiz her ay kalan bakiye üzerinden işlenir. İlk ödemeler çoğunlukla faize gider; bu nedenle uzun vade veya yüksek faizde toplam faiz çok yüksek olabilir.",
           "Hesap makinesi masrafları kapsıyor mu? Hayır. Yalnızca anapara ve faizi hesaplar. Bankalar genellikle buradaki EMI'ye dahil olmayan dosya masrafı, sigorta veya başka ücretler ekler."
         ]
+      },
+      {
+        "h": "Bir EMI neleri kapsar?",
+        "list": [
+          "Orijinal kredi tutarının geri ödemesi (anapara).",
+          "Kalan bakiye üzerinden işleyen faiz.",
+          "Her ay eşit tam ödeme — kısaca 'eşit aylık taksit'.",
+          "Kredi verene göre genellikle işlem ücretleri veya sigorta."
+        ]
+      },
+      {
+        "h": "Faiz kredinin önünü yükler",
+        "p": "İlk taksitler çoğunlukla faizdir; sonrakiler çoğunlukla anapara. Faiz bakiye büyükken işlediği için daha kısa vade toplam faizi keskin biçimde azaltır — hesap makinesi bu takası bir bakışta gösterir."
       }
     ],
     "calorie-bmr-calculator": [
@@ -2248,6 +2556,14 @@
           "Neden -500 kalori öneriliyor? Bir kilogram vücut yağı yaklaşık 7.700 kcal içerir; günde yaklaşık 500 kcal azaltmak haftada yaklaşık -0,5 kg'ye denk gelir ve yaygın, sürdürülebilir bir kilo verme hedefidir.",
           "Bu rakamlara tamamen güvenebilir miyim? Mifflin-St Jeor çoğu yetişkin için isabetlidir ancak her formül bir tahmindir. Kas kütlesi, genetik ve günlük değişim gerçek enerji ihtiyacını etkiler; sonucu bir başlangıç noktası olarak görün."
         ]
+      },
+      {
+        "h": "BMR ve gerçek günlük harcamanız",
+        "p": "BMR, vücudunuzun tam dinlenmede harcadığı enerjidir — tabandır. Gerçek günlük toplamınız (TDEE) hareketi ekler: yürüyüş, egzersiz, sindirim. BMR'yi temel alın, sonra gerçekte yaktığınızı tahmin etmek için bir aktivite faktörüyle çarpın."
+      },
+      {
+        "h": "Tahminler, laboratuvar verisi değil",
+        "p": "Formül sonuçları ortalamalara dayanır ve bireyler için yüzlerce kalori yanılabilir. Gerçek dünya takibiyle birleştiğinde kilo hedeflerine rehberlik eder, ancak söz konusu sağlık veya performans olduğunda profesyonel değerlendirmenin yerini asla almaz."
       }
     ],
     "body-fat-calculator": [
@@ -2270,6 +2586,19 @@
           "ABD Donanması formülü ne kadar doğrudur? Ölçümler dikkatli yapıldığında hata payı, su altı tartımı gibi laboratuvar yöntemlerine kıyasla genellikle %3-4 civarındadır. En iyi sonuç için ölçüleri tutarlı ve çok sıkı olmadan alın.",
           "ACE kategorileri ne anlama gelir? American Council on Exercise aralıklarını izler: temel yağ, sporcular, fitness, ortalama ve obez. Bunlar genel rehberdir; ideal aralığınız yaşa, spor dallarına ve kişisel hedeflere göre değişir.",
           "Kalça ölçüsü neden yalnızca kadınlar için? Kadınlar kalça ve bacaklarda orantısal olarak daha fazla yağ depoladığı için formül onlarda bel artı kalça eksi boyun kullanır. Erkekler yalnızca bel ölçüsüyle tahmin edilebilir."
+        ]
+      },
+      {
+        "h": "Yöntem sayıyı şekillendirir",
+        "p": "Farklı formüller farklı ölçümler kullanır — boyun, bel, kalça ve boy — ve her biri biraz farklı sonuç getirir. Çıktıyı, aynı yöntemden tutarlı bir eğilim göstergesi olarak görün; mutlak bir laboratuvar ölçümü değil."
+      },
+      {
+        "h": "Bantlar nereyi gösterir?",
+        "list": [
+          "Çok düşük aralıklar sporculara uyar ama çoğu zaman sağlık takasları getirir.",
+          "Orta aralıklar (yaklaşık erkeklerde %15–25, kadınlarda %20–32) yaygın sağlıklı bölgelerdir.",
+          "Tutarlı haftalık ölçüm, tek kaygılı ölçümden iyidir.",
+          "Su durumu ve günün saati sonucu birkaç puan değiştirir."
         ]
       }
     ],
@@ -2294,6 +2623,14 @@
           "Erkek ve kadın sonuçları neden farklı? Aynı boyda kadınlar ortalama olarak daha az yağsız kütleye ve daha fazla temel vücut yağına sahiptir; bu yüzden her iki formül de kadınlar için daha düşük bir tabandan başlar (50-52 kg yerine 45,5-49 kg) ve Robinson'un eğimi daha küçüktür.",
           "Sağlıklı BMI aralığı nedir? WHO'ya göre 18,5-24,9 arası bir BMI normal kilodur. Hesap makinesi bu BMI aralığını boyunuza göre kilogram cinsinden bir kilo aralığına dönüştürür."
         ]
+      },
+      {
+        "h": "Farklı formüller, farklı yanıtlar",
+        "p": "Devine, Robinson ve Miller, vücut yapısı hakkında farklı varsayımlar yapar; bu yüzden 'ideal' sayı aralarında birkaç kilo oynar. Bu fark normaldir — araç, tek bir sihirli rakama takılmamanız için bir aralık gösterir."
+      },
+      {
+        "h": "Hüküm değil, aralık düşünün",
+        "p": "Vücut kompozisyonu, aynı boy ve kiloda iki kişinin çok farklı sağlık tabloları olabileceği anlamına gelir. Sonucu BMI aracıyla birlikte kabaca bir referans bölgesi olarak kullanın; tıbben anlamlı bir şey için yargıyı klinisyene bırakın."
       }
     ],
     "sleep-calculator": [
@@ -2317,6 +2654,14 @@
           "Yatağa tam önerilen saatte mi girmeliyim? Hayır. Önerilen yatma saati, yaklaşık 15 dakika sonra uykuya dalmayı hedeflediğiniz andır. Birkaç dakika farkla uykuya dalmak sorun değildir — dakika hassasiyetinden çok düzenlilik önemlidir.",
           "5 döngüden az uyursam kullanabilir miyim? Girdiğiniz her uyanma veya yatma saatiyle çalışır. Tam döngüler içinde kalmak idealdir ancak programınız izin veriyorsa 4 döngülük bir gece de doğru hesaplanır."
         ]
+      },
+      {
+        "h": "Uyku döngüleri neden önemli?",
+        "p": "Uyku, yaklaşık 90 dakikalık hafif, derin ve REM aşamaları döngüleriyle işler. Döngünün ortasında uyanmak sizi mahmur bırakır; alarmları döngü sınırlarına hizalamak — gece için yaklaşık 5 veya 6 döngü — aynı toplam uykuyla çok daha dinç hissettirir."
+      },
+      {
+        "h": "Tutarlılık kusursuz sayıyı yener",
+        "p": "Sabit bir uyku saati ve uyanma saati iç saatinizi eğitir; genellikle fazladan 15 dakika kovalamaktan daha önemlidir. Bir gece uykudan kısmak zorunda kalırsanız, haftanın geri kalanında çılgınca farklı saatler planlamak yerine deseni sabit tutun."
       }
     ],
     "cron-tester": [
@@ -2341,6 +2686,19 @@
           "Ay ve hafta günü adları büyük/küçük harfe duyarlı mı? Hayır — MON, mon ve Mon kabul edilir ve sayılarla serbestçe karıştırılabilir.",
           "Ayın günü ile haftanın günü nasıl birleşir? Klasik cronda olduğu gibi: ikisi de kısıtlıysa, alanlardan biri eşleştiğinde tarih kabul edilir."
         ]
+      },
+      {
+        "h": "Cron ifadesini okumak",
+        "list": [
+          "Beş alan sırasıyla dakika, saat, ayın günü, ay ve haftanın günüdür.",
+          "* 'her' demektir — * * * * * her dakika çalışır.",
+          "Listeler, aralıklar ve adımlar: 0,15,30,45; 9-17; */30.",
+          "Bilinen tuzak: katı bir ayın günü ile haftanın günü, motora göre çakışabilir."
+        ]
+      },
+      {
+        "h": "Saat dilimi tuzağı",
+        "p": "Cron zamanı sizin değil, sunucunun saat dilimine göre yorumlar. Sunucu bölge değiştirirse veya yaz saati geçişi olursa, takviminize göre ayarlanmış bir görev saatlerce kayar — test cihazı ortaya çıkan anları gösterdiği için uyumsuzluk sezilir."
       }
     ],
     "aes-encryption": [
@@ -2363,6 +2721,19 @@
           "Verilerimi siz çözebilir misiniz? Hayır — anahtarı türetmek için şifre gerekir ve şifreleme tamamen tarayıcıda olur; araç düz metninizi veya şifrenizi asla görmez.",
           "Neden anında olmuyor? PBKDF2, kaba kuvvet saldırılarını pahalı hale getirmek için bilinçli olarak 100.000 tur çalışır; bu gecikme şifrelemeyi güçlü tutan şeydir.",
           "Çözmede şifre veya biçim hatası alıyorum — ne yapmalıyım? Ya şifre eşleşmiyor, ya değer değiştirilmiş ya da üç base64 parçasından biri eksik."
+        ]
+      },
+      {
+        "h": "AES neyi garanti eder?",
+        "p": "AES simetrik bir şifredir: aynı anahtar şifreler ve çözer. TLS ve disk şifrelemenin arkasındaki standarttır; güvenliği tamamen anahtarın gizli tutulmasına dayanır — kaybederseniz veriyi kimse kurtaramaz."
+      },
+      {
+        "h": "Anahtar, IV ve mod önemlidir",
+        "list": [
+          "Anahtar uzunluğu (128/192/256) gücü etkiler; 256 yaygın güvenli seçimdir.",
+          "IV (başlatma vektörü) çıktıyı rastgeleleştirir; aynı girdiler farklı şifrelenir.",
+          "Mod blokları zincirler: CBC ve GCM yaygındır, GCM kimlik doğrulama ekler.",
+          "Aynı anahtarla IV'ün tekrarı bilgi sızdırır — asla yapmayın."
         ]
       }
     ],

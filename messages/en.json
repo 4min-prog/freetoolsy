@@ -845,6 +845,14 @@
       {
         "h": "Is my data safe?",
         "p": "Yes. Formatting, validation and minifying all happen locally in your browser; your XML is never sent to any server, so even configuration with sensitive values can be handled safely."
+      },
+      {
+        "h": "How pretty-printing works",
+        "p": "A formatter reads the indentation already present, then rebuilds every level of the tree so child elements line up consistently with their size. Attributes stay on their elements and comments keep their place, turning dense markup into a structure you can read top to bottom."
+      },
+      {
+        "h": "Formatting is not validating",
+        "p": "Pretty output only proves that the document is parseable. A wrong element name or misplaced attribute still formats cleanly — keep a validator for correctness and the formatter for readability. Broken XML surfaces as an error instead of silent output, so fix validation first."
       }
     ],
     "css-minifier": [
@@ -863,6 +871,19 @@
       {
         "h": "Is my data safe?",
         "p": "Yes. Minifying happens entirely in your browser; your CSS is never sent or stored. No signup or install is needed."
+      },
+      {
+        "h": "What CSS minifying removes",
+        "list": [
+          "Comments and long whitespace runs.",
+          "Final semicolons before closing braces.",
+          "Redundant units and leading zeros (0.5em → .5em).",
+          "Unneeded spaces around colons, commas and braces."
+        ]
+      },
+      {
+        "h": "When minification backfires",
+        "p": "Minified output is unreadable for humans, so always keep the original source file under version control. Pair minification with a cache-friendly name (style.min.css?hash) so browsers fetch the new file once the content changes."
       }
     ],
     "html-minifier": [
@@ -881,6 +902,19 @@
       {
         "h": "Is my data safe?",
         "p": "Yes. All cleaning happens in your browser; your HTML is never uploaded anywhere. It is safe for private templates, email source and in-progress markup."
+      },
+      {
+        "h": "What HTML minifying touches",
+        "list": [
+          "Whitespace between file-generated tags.",
+          "Unused quotes on safe attributes in many minifiers.",
+          "Optional closing tags where the spec allows.",
+          "Comments that are not conditional or IE directives."
+        ]
+      },
+      {
+        "h": "Collapsing whitespace safely",
+        "p": "Text inside <pre>, <textarea> and inline-sibling spacing can be significant. Minifiers keep such cases intact, but verify rendered layout after saving — a one-pixel shift in spacing is the classic hidden cost of aggressive HTML minification."
       }
     ],
     "html-formatter": [
@@ -904,6 +938,14 @@
           "Can I re-format the output again? Yes, formatting is idempotent: feeding the formatted result back in produces the same clean output.",
           "Is my HTML uploaded anywhere? No — formatting runs entirely in your browser and your markup never leaves your device."
         ]
+      },
+      {
+        "h": "What clean indentation reveals",
+        "p": "When every open and close tag lines up at the same depth, mismatched tags stand out immediately and nesting becomes obvious at a glance. That visual pattern is the fastest way to spot unclosed sections before a browser does it for you."
+      },
+      {
+        "h": "Formatting code from templates",
+        "p": "Server-rendered or template output is often one long line. Running it through a formatter splits tags into readable rows, which makes debugging the emitted HTML as easy as reading the source template."
       }
     ],
     "character-counter": [
@@ -1384,6 +1426,19 @@
       {
         "h": "Is my data safe?",
         "p": "Yes. Decoding happens entirely in your browser; the token is never sent to any server. Note that decoding does not verify the signature — a JWT is readable by everyone who receives it."
+      },
+      {
+        "h": "What a decoded token shows",
+        "list": [
+          "Header: the signing algorithm, like HS256 or RS256.",
+          "Payload: claims such as issuer, subject, scope and expiry, translated from base64url.",
+          "Signature: the cryptographic digest — shown but never decrypted, because it cannot be.",
+          "Timestamps appear in readable form, not raw epoch numbers."
+        ]
+      },
+      {
+        "h": "Store nothing sensitive here",
+        "p": "Decoding is purely local — the tool never sends your token anywhere and never needs your secret. But a decoded JWT reveals its payload in plain text: if a token contains personal data, treat the decoded view as sensitive output, not as a storage area."
       }
     ],
     "json-csv-converter": [
@@ -1428,6 +1483,14 @@
       {
         "h": "Is my data safe?",
         "p": "Yes. All conversion runs in your browser; no value is ever sent or stored. No signup and no install needed."
+      },
+      {
+        "h": "From a number to a readable time",
+        "p": "A Unix timestamp is a count of seconds since the epoch, and it is nearly always UTC. The converter shows the same instant both in UTC and in your local time zone, so you can translate server logs or API values without mental arithmetic."
+      },
+      {
+        "h": "The practical range",
+        "p": "Timestamps before 1 January 1970 are negative, and 32-bit systems stop at 3:14:07 on 19 January 2038. Years that far out matter in long-lived databases and embedded systems — worth remembering when a stored number looks impossibly old or huge."
       }
     ],
     "duplicate-line-remover": [
@@ -1446,6 +1509,19 @@
       {
         "h": "Is my data safe?",
         "p": "Yes. The process runs entirely in your browser; your list is never uploaded or stored. Paste anything private with confidence."
+      },
+      {
+        "h": "How deduplication works",
+        "list": [
+          "Lines are compared after trimming, so 'text' and ' text ' count as the same line if you choose trim mode.",
+          "The first occurrence is kept; later exact copies are dropped.",
+          "Order of the remaining lines is preserved by default.",
+          "Some modes also ignore case on top of trimming."
+        ]
+      },
+      {
+        "h": "Where it saves hours",
+        "p": "Merging config files, combining exported name lists or cleaning a scraped dataset all suffer from repeats. A quick dedupe pass turns thousands of duplicated rows into a tidy unique list, and often catches accidental double-imports before they reach production."
       }
     ],
     "ai-token-counter": [
@@ -1528,6 +1604,14 @@
           "15% — the standard tip in many countries.",
           "20% and 25% — for great service or larger groups."
         ]
+      },
+      {
+        "h": "Splitting the bill fairly",
+        "p": "Total the check, choose a percentage, then split across the table. To keep things simple, decide whether the tip applies before or after rounding the bill — a few cents is not worth an argument at the end of dinner."
+      },
+      {
+        "h": "Tip culture varies",
+        "p": "Ten to twenty percent is the common range in the United States, while many countries include service in the final price and expect little or nothing extra. When traveling, check local customs instead of assuming the same percentage that works at home."
       }
     ],
     "discount-calculator": [
@@ -1546,6 +1630,14 @@
           "Shop owners preparing sale labels and promotions.",
           "Students practicing percentage and discount math."
         ]
+      },
+      {
+        "h": "Two directions, one question",
+        "p": "Percent off answers 'what does 25% of €80 cost?' Final-price answers 'I paid €60 — what percent is that?' Both are useful in different moments: shopping quickly, then reviewing whether a 'deal' was actually a deal."
+      },
+      {
+        "h": "Stacking discounts is not additive",
+        "p": "A 20% sale followed by an extra 10% coupon is roughly 28% total, not 30% — each discount applies to the already-reduced price. Fold discounts one after the other instead of adding percentages, or the total will surprise you at checkout."
       }
     ],
     "average-calculator": [
@@ -1565,6 +1657,19 @@
           "Sports: average scores across games or seasons.",
           "Personal tracking: average spending, distance or time."
         ]
+      },
+      {
+        "h": "Mean works — until it misleads",
+        "p": "The arithmetic mean handles tidy, evenly spread numbers well. When one huge outlier drags results (a single mansion in a street of flats), the average describes nobody. Spot these cases before trusting the number."
+      },
+      {
+        "h": "Which average fits?",
+        "list": [
+          "Arithmetic mean: fair when values cluster evenly.",
+          "Median: the middle value, safer with outliers.",
+          "Mode: the most frequent value, useful for categories.",
+          "Weighted mean: when some entries should count more."
+        ]
       }
     ],
     "dog-age-calculator": [
@@ -1579,6 +1684,14 @@
       {
         "h": "Is my data safe?",
         "p": "Yes. The estimate is calculated entirely in your browser; the age and size you enter are never sent or stored. Free, no signup and completely client-side."
+      },
+      {
+        "h": "Why 'one year equals seven' is wrong",
+        "p": "Dogs age fast in their first two years — the first year matches roughly 15 human years, the second about 9 more — then the pace slows. The old rule overstates young dogs and understates seniors, so most modern charts use a two-phase scale."
+      },
+      {
+        "h": "Size and breed shift the numbers",
+        "p": "Large breeds reach adulthood earlier and age sooner; small dogs often live longer. The result is an estimate, not a diagnosis — regular vet checks matter far more than a precise human-age number."
       }
     ],
     "subnet-calculator": [
@@ -1593,6 +1706,19 @@
       {
         "h": "Why are usable hosts fewer than total hosts?",
         "p": "The network address and the broadcast address are always reserved and cannot be assigned to a device. A /24 subnet therefore holds 256 addresses but offers 254 usable hosts."
+      },
+      {
+        "h": "Everything in one view",
+        "list": [
+          "Network address and CIDR mask.",
+          "Broadcast address for the subnet.",
+          "Usable host range (network and broadcast excluded).",
+          "Total address count for the block."
+        ]
+      },
+      {
+        "h": "Reading CIDR quickly",
+        "p": "The /24 in 192.168.1.0/24 means the first 24 bits are fixed, leaving 8 host bits — 256 addresses, 254 usable. Each fewer / bit doubles the block: /23 doubles to 512, /25 halves to 128. The trend is the fastest mental shortcut."
       }
     ],
     "px-rem-converter": [
@@ -1607,6 +1733,14 @@
       {
         "h": "Why is 16 px the default base?",
         "p": "Major browsers use a default root font size of 16 px, which is why most projects start there. You can change it because some design systems adopt other bases such as 14 px or 10 px."
+      },
+      {
+        "h": "Why rem beats px",
+        "p": "rem is measured against the root font size, so users who enlarge their browser settings get a website that scales with them. Pixel-fixed text ignores that preference and can push content out of reach for low-vision users."
+      },
+      {
+        "h": "How the math works",
+        "p": "One rem equals the root font size — 16px by default in browsers. A designer value of 24px becomes 1.5rem (24 ÷ 16). The converter does that division for both directions, including decimal results it rounds for practical CSS."
       }
     ],
     "wcag-contrast-checker": [
@@ -1626,6 +1760,19 @@
       {
         "h": "Is my data safe?",
         "p": "Yes. The ratio is computed locally in your browser; your colors never leave your device. No signup or install is required."
+      },
+      {
+        "h": "What the ratios mean",
+        "list": [
+          "4.5:1 is the AA threshold for normal text.",
+          "3:1 is the AA threshold for large text (18px+ or 14px bold).",
+          "7:1 is AAA for normal text; around 4.5:1 for large.",
+          "These targets apply to text on background, including text over images."
+        ]
+      },
+      {
+        "h": "Passing on paper, failing on screen",
+        "p": "A ratio can pass yet still look muddy after antialiasing or at thin font weights. Check with actual font size and weight before publishing, and treat the numeric pass as a floor rather than a guarantee of readability."
       }
     ],
     "color-palette-generator": [
@@ -1643,6 +1790,14 @@
       {
         "h": "Is my data safe?",
         "p": "Yes. Palettes are generated entirely in your browser; your base color is never sent anywhere. Everything stays on your device."
+      },
+      {
+        "h": "Palettes from one seed color",
+        "p": "Color theory offers reliable families: analogous shifts to neighboring hues, complementary picks the opposite, and triadic steps evenly around the wheel. Starting from a brand color and deriving the rest keeps the set cohesive instead of random."
+      },
+      {
+        "h": "Build accessible palettes first",
+        "p": "Pretty pairs can still fail contrast. Test each text-on-background combination you plan to use — the generator focuses the scheme, but only a contrast check confirms it satisfies WCAG before users struggle reading it."
       }
     ],
     "box-shadow-generator": [
@@ -1662,6 +1817,19 @@
       {
         "h": "Is my data safe?",
         "p": "Yes. The CSS is generated in your browser; your settings are never sent or saved. Copy the result and paste it straight into your stylesheet."
+      },
+      {
+        "h": "Anatomy of a box shadow",
+        "list": [
+          "offset-x and offset-y shift the shadow horizontally and vertically.",
+          "blur-radius softens the edge — zero gives a hard shadow.",
+          "spread-radius inflates or shrinks the shadow size.",
+          "color tints it, and inset draws the shadow inside the box."
+        ]
+      },
+      {
+        "h": "Layered shadows create depth",
+        "p": "A single shadow reads flat; two or three stacked ones with different blur and offset mimic real light. Keep the first layer crisp and near, the second softer and wider — the classic combination for cards and floating buttons."
       }
     ],
     "text-sorter": [
@@ -1708,6 +1876,14 @@
       {
         "h": "Is my data safe?",
         "p": "Yes. Everything happens in your browser; your list is never sent anywhere. Runs fully client-side."
+      },
+      {
+        "h": "What a good shuffle guarantees",
+        "p": "A true shuffle treats every ordering as equally likely, so results are fair for raffles and random picks. The tool reseeds the order each time you run it — a new draw, not the same pattern recycled."
+      },
+      {
+        "h": "When not to shuffle",
+        "p": "Use it for draws, learning order and breaking index order in lists. Do not rely on it for anything deterministic or reversible — a shuffled list is destroyed order, so keep a copy when the original matters."
       }
     ],
     "yaml-json-converter": [
@@ -1726,6 +1902,19 @@
       {
         "h": "Is my data safe?",
         "p": "Yes. Parsing and conversion happen entirely in your browser; your data is never sent or stored. Configurations with secrets can be converted safely."
+      },
+      {
+        "h": "YAML vs JSON",
+        "list": [
+          "YAML is written by humans: indentation and minimal punctuation.",
+          "JSON is machine-first: braces, brackets, always quoted keys.",
+          "Every JSON document is valid YAML, but not every YAML is valid JSON.",
+          "Choose JSON for APIs and configs parsed by code; YAML for editable config files."
+        ]
+      },
+      {
+        "h": "Indentation is the real syntax",
+        "p": "In YAML, two spaces often mean a deeper level, and mixing spaces with tabs or inconsistent depths breaks the parse. If a conversion fails, the first thing to check is a stray tab or an unevenly indented block."
       }
     ],
     "md5-file-checksum": [
@@ -1744,6 +1933,14 @@
       {
         "h": "Is my data safe?",
         "p": "Yes. The digest is computed entirely in your browser from the file bytes on your device; the file is never uploaded to any server, and the results are gone when you close the page."
+      },
+      {
+        "h": "How a file checksum works",
+        "p": "The tool reads the file byte by byte and feeds the bytes into MD5, producing a 32-character fingerprint. Because the computation happens entirely in your browser, no copy of the file ever leaves your device."
+      },
+      {
+        "h": "Compare after every important download",
+        "p": "Projects publish checksums for a reason: verify the string against theirs after downloading. A mismatch means a corrupted or unexpected file — re-download before trusting it, and treat security-sensitive downloads as checksum-verified by default."
       }
     ],
     "image-compressor": [
@@ -1803,6 +2000,14 @@
           "Is the aspect ratio preserved? Yes — with keep aspect ratio enabled, changing one field updates the other automatically.",
           "Which output format should I pick? Choose PNG for transparency and crisp edges, or JPEG when a smaller file matters more."
         ]
+      },
+      {
+        "h": "Resize before you upload",
+        "p": "Cameras and design tools export far larger images than most pages need. Downscaling to the display width slashes file size and page weight, which directly improves load speed on slow connections."
+      },
+      {
+        "h": "Keep an eye on quality",
+        "p": "Downscaling keeps most detail, but downscaling then rescaling loses sharpness and upscaling adds blur. Resize from the original in one step, then compress — never upscale small images and expect crisp results."
       }
     ],
     "image-converter": [
@@ -1826,6 +2031,19 @@
           "Can I control the output quality? Yes — the quality slider applies to JPEG and WebP so you can trade a little detail for a smaller file.",
           "Are converted files stored? No — conversion happens in your browser and the new file downloads straight to your device."
         ]
+      },
+      {
+        "h": "When each format fits",
+        "list": [
+          "JPEG: photos and gradients, with excellent size-to-quality ratio.",
+          "PNG: crisp text, logos and transparency.",
+          "WebP: modern all-rounder — smaller than both in most cases.",
+          "Bitmap/RAW-style exports: only when a workflow explicitly needs them."
+        ]
+      },
+      {
+        "h": "Converting without losing quality",
+        "p": "Start from the highest-quality original you have; converting a compressed JPEG to PNG does not restore detail. Match the format to the content, pick a sensible quality, and check the result visually instead of trusting the byte count."
       }
     ],
     "image-to-base64": [
@@ -1849,6 +2067,14 @@
           "Why is the Base64 string longer than the file? Encoding adds about a third in overhead, so a 30 KB image becomes roughly 40 KB of text.",
           "Does my image get uploaded? No, the conversion uses your browser's FileReader and the data never leaves your device."
         ]
+      },
+      {
+        "h": "Inlining images as data URIs",
+        "p": "Turning an image into base64 produces a data: URI that can sit directly inside CSS or HTML. It saves an extra HTTP request for small assets like icons and tiny logos, which can shave real time off first render."
+      },
+      {
+        "h": "The 33% size warning",
+        "p": "Base64 expands binary data by about a third, so a data URI is always larger than the same file on disk. For anything above a few kilobytes, a normal URL with caching beats an inline blob for overall performance."
       }
     ],
     "image-color-picker": [
@@ -1872,6 +2098,14 @@
           "Is the image color picker free? Yes — it is free to use and runs entirely in your browser with no account needed.",
           "How do I copy a saved color? Press the copy button next to any color in the list to put its HEX code on the clipboard."
         ]
+      },
+      {
+        "h": "Finding the exact brand color",
+        "p": "A picker reads the pixel under your cursor and returns its hex, RGB or HSL value. That is the fastest way to grab a brand's signature color from an existing graphic and reuse it consistently across your own designs."
+      },
+      {
+        "h": "From code samples back to names",
+        "p": "Designers often receive colors as raw hex strings in talk or wireframe links. Paste the value, see it, and copy the closest readable variant — matching what the screen shows beats guessing from a bare code."
       }
     ],
     "slug-generator": [
@@ -2034,6 +2268,14 @@
           "What grade level should I aim for? Most web content reads best around a seventh to ninth grade level.",
           "Is my text stored? No, all calculations happen locally in your browser."
         ]
+      },
+      {
+        "h": "What a score really means",
+        "p": "Readability formulas estimate the school level needed to understand a text, based mostly on sentence length and word length. They predict ease, not quality — a perfect score can still be confusing if the logic is unclear."
+      },
+      {
+        "h": "Use it as a dial, not a verdict",
+        "p": "Short sentences and common words usually make a text easier, which suits most websites. Treat the score as a quick signal: if it drifts beyond the preferred band, look for long winding sentences to split rather than rewriting everything."
       }
     ],
     "text-diff": [
@@ -2056,6 +2298,14 @@
           "Is the comparison case-sensitive? Yes, lines are compared exactly; a line that only differs in capitalization counts as changed.",
           "How are large texts handled? The comparison is line-based, so pairing stays correct across thousands of lines."
         ]
+      },
+      {
+        "h": "Line or character granularity",
+        "p": "Line-by-line diff highlights whole changed rows — ideal for code and configs. Word and character diff zooms into exactly what changed inside a sentence — better for copy editing and proofreading tweaks."
+      },
+      {
+        "h": "A clean review workflow",
+        "p": "Paste the original and the edited version side by side, then scan only the highlighted hunks. That focused review catches accidental deletions that a full re-read of the file often misses — especially after automated edits."
       }
     ],
     "html-entity-converter": [
@@ -2078,6 +2328,19 @@
           "Why does ' become &#39;? The apostrophe is encoded as a numeric entity so it is safe inside single-quoted attributes.",
           "Can I decode any entity? Yes, standard named and numeric entities are decoded back to their characters."
         ]
+      },
+      {
+        "h": "Why entities exist",
+        "list": [
+          "The angle brackets < and > would be read as tags, so HTML needs escapes like &lt; and &gt;.",
+          "Special symbols (©, ®, emoji) exist as readable named entities or numeric references.",
+          "Ampersands in URLs need &amp; to avoid breaking attribute parsing.",
+          "Entities also protect you when embedding user text inside markup."
+        ]
+      },
+      {
+        "h": "Named or numeric?",
+        "p": "Named entities (&amp;) are easy to read; numeric ones (&#38;) work even in encodings missing the name. For compatibility, numeric references are the safe default — the converter gives you both and lets you pick."
       }
     ],
     "morse-converter": [
@@ -2135,6 +2398,14 @@
           "Is my text sent anywhere? No, everything runs locally in your browser.",
           "Are Turkish characters supported? Yes, all Unicode text is reversed correctly."
         ]
+      },
+      {
+        "h": "Playful and practical uses",
+        "p": "Reversing text is a light way to make a word puzzle, a hidden chat wager or a mild distraction. It is also occasionally handy for mirroring text in stickers and signage where the design calls for flipped characters."
+      },
+      {
+        "h": "Watch Unicode characters",
+        "p": "Letters with accents, emoji and scripts like Arabic and Hebrew are composed of multiple codepoints. Reversing codepoints can scramble marks to the wrong glyph, so read the result carefully when the input is not plain A-Z text."
       }
     ],
     "fancy-text-generator": [
@@ -2157,6 +2428,14 @@
           "Are all characters converted? Only A–Z, a–z and 0–9 have styled equivalents; Turkish accents and symbols stay untouched.",
           "Where does the conversion happen? Entirely in your browser — nothing is uploaded."
         ]
+      },
+      {
+        "h": "What these styles actually are",
+        "p": "Styled-looking letters are Unicode characters that already exist as separate glyphs — bold, italic, circled, script and more. The browser renders them directly; the generator simply maps each letter to its decorated twin."
+      },
+      {
+        "h": "Compatibility check before use",
+        "p": "Uncommon glyphs depend on fonts installed on the reader's device. A style that looks great on your phone may render as boxes or fallback on an older computer, so use fancy text sparingly in posts and profiles where it counts."
       }
     ],
     "caesar-cipher": [
@@ -2179,6 +2458,14 @@
           "Is ROT13 secure? No, it is not a form of real encryption — like all Caesar shifts it is trivially breakable.",
           "Where is the work done? Entirely in your browser; your text is never uploaded."
         ]
+      },
+      {
+        "h": "How a shift cipher works",
+        "p": "Every letter moves a fixed number of places down the alphabet: with shift 3, A becomes D and Z wraps to C. The cipher is symmetric — decoding repeats the same shift in the opposite direction, and the shift value is the only secret."
+      },
+      {
+        "h": "A cipher, not security",
+        "p": "There are only 25 meaningful shifts, so a human can break it by hand in minutes and a computer in milliseconds. Treat Caesar as a fun puzzle or a teaching tool, never as protection for real data."
       }
     ],
     "gpa-calculator": [
@@ -2202,6 +2489,14 @@
           "What does 'weighted' mean? All grades are multiplied by their course's credit amount before the average is taken. A strong grade in a high-credit course therefore affects your GPA more than a grade in a low-credit one.",
           "Is the 100-scale average accurate? The 100-scale average uses each letter grade's typical percentage, so it is an estimate. Your school may apply a different conversion table, especially for A+ or F grading."
         ]
+      },
+      {
+        "h": "Weighted vs unweighted",
+        "p": "Unweighted GPA treats every course as equal (A = 4.0 regardless). Weighted GPA adds bonuses for honors and AP classes, which is why transcripts often carry both numbers. Know which scale your school or application expects before comparing."
+      },
+      {
+        "h": "Credit hours change the average",
+        "p": "A semester-long course and a full-year course do not carry the same weight. Multiplying each grade by its credit hours before averaging gives a truer picture — the calculator does exactly that instead of treating every row equally."
       }
     ],
     "loan-emi-calculator": [
@@ -2225,6 +2520,19 @@
           "Why is total interest almost as high as the principal? Interest is charged on the remaining balance each month. Early payments go mostly toward interest, so the total interest can be high for long terms or high rates.",
           "Does the calculator include fees? No. It computes only principal and interest. Banks often add origination fees, insurance or other costs that are not included in the EMI here."
         ]
+      },
+      {
+        "h": "What an EMI covers",
+        "list": [
+          "Repayment of the original loan amount (principal).",
+          "Interest accruing on the outstanding balance.",
+          "The full equal payment each month — hence 'equal monthly installment'.",
+          "Often administration fees or insurance, depending on the lender."
+        ]
+      },
+      {
+        "h": "Interest front-loads the loan",
+        "p": "Early installments are mostly interest; the later ones are mostly principal. Because interest charges while the balance is still large, a shorter tenure cuts total interest sharply — the calculator shows that trade-off at a glance."
       }
     ],
     "calorie-bmr-calculator": [
@@ -2248,6 +2556,14 @@
           "Why does the calculator suggest -500 calories? One kilogram of body fat holds roughly 7,700 kcal, so cutting about 500 kcal a day means around -0.5 kg (about one pound) per week — a common, sustainable weight-loss target.",
           "Can I trust these numbers exactly? Mifflin-St Jeor is accurate for most adults, but every formula is an estimate. Muscle mass, genetics and daily variation all affect real energy needs, so treat the result as a starting point."
         ]
+      },
+      {
+        "h": "BMR vs your real daily burn",
+        "p": "BMR is the energy your body uses at complete rest — the floor. Your actual daily total (TDEE) adds movement: walking, workouts, digestion. Use BMR as the baseline, then multiply by an activity factor to estimate what you really burn."
+      },
+      {
+        "h": "Estimates, not lab data",
+        "p": "Formula results are built from averages and can be off by hundreds of calories for individuals. Combined with real-world tracking they guide weight goals, but they never replace a professional assessment when health or performance is on the line."
       }
     ],
     "body-fat-calculator": [
@@ -2270,6 +2586,19 @@
           "How accurate is the U.S. Navy formula? When measured carefully, its error is typically around 3-4% compared with laboratory methods such as hydrostatic weighing. Keep measurements consistent and not too tight for the best result.",
           "What do the ACE categories mean? They follow the American Council on Exercise ranges: essential fat, athletes, fitness, average and obese. They are general guides and your ideal range depends on age, sport and personal goals.",
           "Why is the hip measurement only for women? Women store proportionally more fat around the hips and thighs, so the formula uses waist plus hip minus neck for them. Men can be estimated from the waist alone."
+        ]
+      },
+      {
+        "h": "The method shapes the number",
+        "p": "Different formulas use different measurements — neck, waist, hip and height — and each returns slightly different results. Treat the output as a consistent trend marker from the same method, not an absolute lab measurement."
+      },
+      {
+        "h": "Where the bands point",
+        "list": [
+          "Very low ranges suit athletes but often come with health trade-offs.",
+          "Mid ranges (roughly 15–25% men, 20–32% women) are common healthy zones.",
+          "Consistent weekly measurement beats a single anxious reading.",
+          "Hydration and time of day shift results by a few percent."
         ]
       }
     ],
@@ -2294,6 +2623,14 @@
           "Why do men and women get different values? On average women have less lean mass and more essential body fat at the same height, so both formulas start from a lower base for women (45.5-49 kg instead of 50-52 kg) and the Robinson slope is smaller.",
           "What is the healthy BMI range? A BMI between 18.5 and 24.9 is considered normal weight by the WHO. The calculator converts that BMI range to a weight range in kilograms based on your height."
         ]
+      },
+      {
+        "h": "Different formulas, different answers",
+        "p": "Devine, Robinson and Miller each make different assumptions about body build, so the 'ideal' number varies by a few kilos between them. The variation is normal — the tool shows a range so you do not fixate on one magic digit."
+      },
+      {
+        "h": "Think range, not verdict",
+        "p": "Body composition means two people of the same height and weight can have very different health pictures. Use the result as a rough reference zone alongside the BMI tool, and let a clinician apply judgement for anything medically meaningful."
       }
     ],
     "sleep-calculator": [
@@ -2317,6 +2654,14 @@
           "Do I have to start in bed exactly at the suggested time? No. The suggested bedtime is when you should aim to fall asleep about 15 minutes later. Falling asleep a few minutes off is fine — consistency matters more than a perfect minute.",
           "Can I use it if I sleep less than 5 cycles? It works with any wake-up or bedtime you enter. Staying within complete cycles is ideal, but a 4-cycle night is still calculated correctly if that is what your schedule allows."
         ]
+      },
+      {
+        "h": "Why sleep cycles matter",
+        "p": "Sleep runs in roughly 90-minute cycles of light, deep and REM stages. Waking mid-cycle leaves you groggy, while aligning alarms to cycle boundaries — about 5 or 6 cycles for a night — feels dramatically more rested with the same total sleep."
+      },
+      {
+        "h": "Consistency beats a perfect number",
+        "p": "A fixed bedtime and wake time train your internal clock, which usually matters more than chasing an extra 15 minutes. If you must cut sleep for a night, keep the pattern stable the rest of the week instead of scheduling wildly different hours."
       }
     ],
     "cron-tester": [
@@ -2341,6 +2686,19 @@
           "Are month and weekday names case-sensitive? No — MON, mon and Mon are all accepted and can be mixed freely with numbers.",
           "Do day-of-month and day-of-week combine? Yes, like classic cron: when both are restricted, a date matches when either field matches."
         ]
+      },
+      {
+        "h": "Reading a cron expression",
+        "list": [
+          "The five fields are minute, hour, day-of-month, month and day-of-week.",
+          "* means 'every' — * * * * * runs every minute.",
+          "Lists, ranges and steps: 0,15,30,45; 9-17; */30.",
+          "A known gotcha: a strict day-of-month and day-of-week can conflict, depending on the engine."
+        ]
+      },
+      {
+        "h": "The timezone gotcha",
+        "p": "Cron interprets time in the server's time zone, not yours. A job tuned against your calendar can fire hours off from what you expected after a server moves regions or daylight saving changes — the tester shows the resulting instants so the mismatch is obvious."
       }
     ],
     "aes-encryption": [
@@ -2363,6 +2721,19 @@
           "Can you decrypt my data? No — the password is required to derive the key, and encryption happens entirely in the browser; the tool never sees your plaintext or password.",
           "Why is it not instant? PBKDF2 runs 100,000 iterations on purpose to make brute-force attacks expensive; that delay is what keeps the encryption strong.",
           "A decrypt error says wrong password or bad format — what now? Either the password does not match, the value was edited, or the three base64 parts are missing."
+        ]
+      },
+      {
+        "h": "What AES guarantees",
+        "p": "AES is a symmetric cipher: the same key encrypts and decrypts. It is the encryption standard behind TLS and disk encryption, and its security rests entirely on keeping the key secret — lose it and the data is unrecoverable by anyone."
+      },
+      {
+        "h": "Key, IV and mode matter",
+        "list": [
+          "Key length (128/192/256) affects strength; 256 is the common safe choice.",
+          "The IV (initialization vector) randomizes output so identical inputs encrypt differently.",
+          "Mode chains blocks: CBC and GCM are widespread, GCM adds authentication.",
+          "Reusing an IV with the same key leaks information — never do it."
         ]
       }
     ],
