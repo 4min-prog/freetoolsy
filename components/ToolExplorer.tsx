@@ -160,7 +160,7 @@ export default function ToolExplorer() {
             const shownTools = categoryTools.slice(0, shown);
             return (
               <section key={category.id} id={category.id} className="scroll-mt-20">
-                <div className="flex items-baseline justify-between gap-4 border-b border-border pb-3">
+                <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b border-border pb-3">
                   <h2 className="flex items-center gap-2.5">
                     <CategoryIcon
                       id={category.id}
