@@ -4,7 +4,7 @@ import { useMessages, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import ToolIcon from "@/components/ToolIcon";
 import { POPULAR_SLUGS } from "@/data/popular";
-import { getTool, tools } from "@/data/tools";
+import { getTool } from "@/data/tools";
 import { track } from "@/lib/analytics";
 
 interface ToolMetaNs {
@@ -24,39 +24,52 @@ export default function PopularStrip() {
   }
 
   return (
-    <section
-      aria-label={t("popularTitle")}
-      className="mt-6 rounded-2xl border border-border bg-surface/60 p-4 sm:p-5"
-    >
-      <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-        <p className="text-sm font-semibold tracking-tight text-text">
+    <section aria-label={t("popularTitle")} className="mt-10 border-y border-border">
+      <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 py-4">
+        <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-foreground">
           {t("popularTitle")}
-        </p>
+        </h2>
         <p className="text-xs text-muted">{t("popularSubtitle")}</p>
-        <span aria-hidden="true" className="ml-auto hidden text-faint sm:inline">
-          {tools.length} {t("statsTools")}
-        </span>
       </div>
-      <ul className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
-        {items.map((slug, index) => {
-          const toolName = meta?.[slug]?.name ?? slug;
-          return (
-            <li key={slug}>
-              <Link
-                href={`/araclar/${slug}`}
-                onClick={() => onClick(slug)}
-                className="flex items-center gap-2 rounded-lg border border-border/70 bg-surface px-3 py-2 text-sm text-muted transition-colors hover:border-accent/40 hover:text-text"
-              >
-                <span className="shrink-0 font-mono text-[11px] text-faint">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <ToolIcon id={slug} className="h-4 w-4 shrink-0 text-accent" />
-                <span className="truncate">{toolName}</span>
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
+      <div className="popular-ticker-track popular-ticker-mask overflow-hidden border-t border-border">
+        <ul className="popular-ticker">
+          {[...items, ...items].map((slug, index) => {
+            const toolName = meta?.[slug]?.name ?? slug;
+            return (
+              <li key={`${slug}-${index}`} className="shrink-0">
+                <Link
+                  href={`/araclar/${slug}`}
+                  onClick={() => onClick(slug)}
+                  className="group flex items-center gap-3 border-r border-border px-6 py-4 transition-colors hover:bg-surface/60"
+                >
+                  <span className="font-mono text-[11px] tabular-nums text-faint">
+                    {String((index % items.length) + 1).padStart(2, "0")}
+                  </span>
+                  <ToolIcon
+                    id={slug}
+                    className="h-4 w-4 shrink-0 text-accent"
+                  />
+                  <span className="whitespace-nowrap text-sm font-medium text-text">
+                    {toolName}
+                  </span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                    className="h-3.5 w-3.5 shrink-0 text-faint opacity-0 transition-all group-hover:translate-x-0.5 group-hover:text-accent group-hover:opacity-100"
+                  >
+                    <path d="M5 12h14M13 6l6 6-6 6" />
+                  </svg>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </section>
   );
 }
