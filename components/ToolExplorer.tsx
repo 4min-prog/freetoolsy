@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useMessages, useTranslations } from "next-intl";
 import ToolCard from "@/components/ToolCard";
 import CategoryIcon from "@/components/CategoryIcon";
+import { Link } from "@/i18n/navigation";
 import { categoryTheme } from "@/components/categoryTheme";
 import { categories, getToolsByCategory, tools } from "@/data/tools";
 
@@ -168,7 +169,30 @@ export default function ToolExplorer() {
                     <span className="text-lg font-semibold tracking-tight text-text">
                       {tc(category.id)}
                     </span>
+                    <span className="font-mono text-[11px] tabular-nums text-faint">
+                      {String(categoryTools.length).padStart(2, "0")}
+                    </span>
                   </h2>
+                  <Link
+                    href={`/kategoriler/${category.id}`}
+                    className="group inline-flex shrink-0 items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.15em] text-muted transition-colors hover:text-accent"
+                  >
+                    <span className="underline decoration-border underline-offset-4 group-hover:decoration-accent">
+                      {t("viewAll", { count: categoryTools.length })}
+                    </span>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                      className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"
+                    >
+                      <path d="M5 12h14M13 6l6 6-6 6" />
+                    </svg>
+                  </Link>
                 </div>
                 <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                   {shownTools.map((tool) => (

@@ -82,7 +82,8 @@
     "toolCount": "{count} araç",
     "noResults": "Aranan kriterle \"{query}\" eşleşen araç bulunamadı. Farklı bir anahtar kelime deneyin.",
     "tabAll": "Tüm araçlar",
-    "showMore": "Daha fazla göster ({count})"
+    "showMore": "Daha fazla göster ({count})",
+    "viewAll": "Tüm {count} aracı gör"
   },
   "Categories": {
     "seo": "SEO",
