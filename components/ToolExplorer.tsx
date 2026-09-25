@@ -75,18 +75,12 @@ export default function ToolExplorer() {
     });
   }
 
-  const tabClass = (active: boolean, catId?: string) => {
-    const theme = catId ? categoryTheme(catId) : null;
+  const tabClass = (active: boolean) => {
     const base =
       "inline-flex min-h-11 items-center gap-1.5 border px-3 text-sm transition-colors";
-    if (active && theme) {
-      return `${base} font-medium ${theme.active}`;
-    }
-    return `${base} ${
-      active
-        ? "btn-accent font-medium text-on-accent"
-        : "border-border bg-surface text-muted hover:border-foreground hover:text-text"
-    }`;
+    return active
+      ? `${base} border-foreground font-medium text-foreground`
+      : `${base} border-border bg-surface text-muted hover:border-foreground hover:text-foreground`;
   };
 
   return (
@@ -111,7 +105,7 @@ export default function ToolExplorer() {
             key={category.id}
             type="button"
             onClick={() => selectCategory(category.id)}
-            className={tabClass(cat === category.id, category.id)}
+            className={tabClass(cat === category.id)}
           >
             <CategoryIcon
               id={category.id}
