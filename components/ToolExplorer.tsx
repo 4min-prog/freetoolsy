@@ -89,7 +89,9 @@ export default function ToolExplorer() {
                   : "border-l-transparent text-muted hover:border-l-border hover:bg-surface/60 hover:text-foreground"
               }`}
             >
-              {t("tabAll")}
+              <span className="transition-transform duration-200 group-hover:translate-x-2.5">
+                {t("tabAll")}
+              </span>
               <span className="font-mono text-[11px] tabular-nums text-faint transition-colors group-hover:text-muted">
                 {tools.length}
               </span>
@@ -107,7 +109,7 @@ export default function ToolExplorer() {
                       : "border-l-transparent text-muted hover:border-l-border hover:bg-surface/60 hover:text-foreground"
                   }`}
                 >
-                  <span className="flex items-center gap-2">
+                  <span className="flex items-center gap-2 transition-transform duration-200 group-hover:translate-x-2.5">
                     <CategoryIcon
                       id={category.id}
                       className={`h-4 w-4 shrink-0 ${categoryTheme(category.id).iconText}`}
