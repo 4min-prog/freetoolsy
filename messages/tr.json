@@ -3357,7 +3357,7 @@
         },
         {
           "h": "3. Çerezler",
-          "p": "Site, tercihleri hatırlamak (tema seçimi gibi) ve hizmet kalitesini ölçmek için çerezler kullanır. Çerezlere izin verebilir veya bunları tarayıcı ayarlarınızdan istediğiniz zaman engelleyebilirsiniz; engelleme, araçların çoğının çalışmasını durdurmaz."
+          "p": "Site, tercihleri hatırlamak (tema seçimi gibi) ve hizmet kalitesini ölçmek için çerezler kullanır. Analitik ve reklam script'leri yalnızca çerez banner'ı üzerinden kabul ettikten sonra yüklenir; tercihiniz tarayıcınızın localStorage'ında \"cookie_consent\" anahtarı altında saklanır ve tarayıcı verilerinizi temizleyerek istediğiniz zaman değiştirebilirsiniz. Çerezlere izin verebilir veya bunları tarayıcı ayarlarınızdan istediğiniz zaman engelleyebilirsiniz; engelleme, araçların çoğunun çalışmasını durdurmaz."
         },
         {
           "h": "4. Üçüncü Taraf Reklamları",
@@ -3370,7 +3370,7 @@
         },
         {
           "h": "5. Analitik",
-          "p": "Site, ziyaretçi istatistiklerini anlamak için Google Analytics gibi analitik hizmetler kullanabilir. Bu hizmetler site kullanımını analiz etmek için çerezler kullanır; toplanan bilgiler anonim olarak işlenir."
+          "p": "Site, ziyaretçi istatistiklerini anlamak için Google Analytics ve GoatCounter hizmetlerini kullanır. Google Analytics site kullanımını analiz etmek için çerezler kullanır. GoatCounter gizlilik odaklı, açık kaynaklı bir analitik hizmetidir: çerez kullanmaz, kişisel veri saklamaz ve siteler arası profil oluşturmaz. Her iki hizmet de çerez banner'ı üzerinden onayınız verilmeden yüklenmez ve toplanan bilgiler anonim olarak işlenir."
         },
         {
           "h": "6. Veri Güvenliği",

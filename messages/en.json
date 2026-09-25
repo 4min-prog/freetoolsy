@@ -3357,7 +3357,7 @@
         },
         {
           "h": "3. Cookies",
-          "p": "The site uses cookies to remember preferences (such as theme choice) and to measure service quality. You can allow or block cookies from your browser settings at any time; blocking them does not stop most tools from working."
+          "p": "The site uses cookies to remember preferences (such as theme choice) and to measure service quality. Analytics and advertising scripts are only loaded after you accept them through the cookie banner; your choice is stored in your browser's localStorage under the key \"cookie_consent\" and you can change it at any time by clearing your browser data. You can allow or block cookies from your browser settings at any time; blocking them does not stop most tools from working."
         },
         {
           "h": "4. Third-Party Ads",
@@ -3370,7 +3370,7 @@
         },
         {
           "h": "5. Analytics",
-          "p": "The site may use analytics services such as Google Analytics to understand visitor statistics. These services use cookies to analyze site usage; collected information is processed anonymously."
+          "p": "The site uses Google Analytics and GoatCounter to understand visitor statistics. Google Analytics uses cookies to analyze site usage. GoatCounter is a privacy-focused, open source analytics service: it does not use cookies, does not store personal data and does not build cross-site profiles. Neither service is loaded until you give consent through the cookie banner, and the information collected is processed anonymously."
         },
         {
           "h": "6. Data Security",
