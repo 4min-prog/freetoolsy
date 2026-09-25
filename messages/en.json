@@ -74,24 +74,24 @@
     "toLight": "Switch to light mode",
     "toDark": "Switch to dark mode"
   },
-    "CookieBanner": {
-      "title": "Cookie preferences",
-      "text": "We use cookies for analytics and advertising. By continuing, you accept our Privacy Policy.",
-      "accept": "Accept All",
-      "reject": "Reject"
-    },
-    "AdSlot": {
+  "CookieBanner": {
+    "title": "Cookie preferences",
+    "text": "We use cookies for analytics and advertising. By continuing, you accept our Privacy Policy.",
+    "accept": "Accept All",
+    "reject": "Reject"
+  },
+  "AdSlot": {
     "advertisement": "Advertisement"
   },
   "ToolExplorer": {
     "results": "Results",
     "toolCount": "{count} tools",
     "noResults": "No tools matched \"{query}\". Try a different keyword.",
-      "tabAll": "All tools",
-      "showMore": "Show {count} more",
-      "viewAll": "View all {count} tools",
-      "categories": "Tool categories"
-    },
+    "tabAll": "All tools",
+    "showMore": "Show {count} more",
+    "viewAll": "View all {count} tools",
+    "categories": "Tool categories"
+  },
   "Categories": {
     "seo": "SEO",
     "text": "Text",
@@ -224,10 +224,10 @@
     },
     "qr-code-generator": {
       "name": "QR Code Generator",
-      "desc": "Turns text or a link into a QR code instantly in your browser; download it as PNG.",
-      "title": "QR Code Generator — Free Online Tool",
-      "pageDesc": "Create a QR code from any text or link instantly and download it as a high-resolution PNG. Free and private; content never leaves your browser.",
-      "intro": "Turn any text or link into a scannable QR code and download it as a PNG."
+      "desc": "Turn a link, text, Wi-Fi password, contact card, e-mail, phone number or location into a custom QR code. Download as PNG or SVG.",
+      "title": "QR Code Generator - Free Custom QR Code Creator",
+      "pageDesc": "Create custom QR codes for links, text, Wi-Fi, contact cards, e-mail, phone, SMS and location. Choose colours, quiet zone and error correction, then download as PNG or SVG.",
+      "intro": "Create a QR code for a link, text, Wi-Fi network, contact card, e-mail, phone number, SMS or location, then download it as PNG or SVG."
     },
     "sha-hash-generator": {
       "name": "SHA Hash Generator",
@@ -3649,14 +3649,82 @@
       "emptyState": "Pick your birth date to see your age."
     },
     "qrCodeGenerator": {
-      "label": "Text or link",
-      "placeholder": "e.g. https://freetoolsy.com",
-      "emptyMsg": "An empty QR code cannot be created. Type something above.",
-      "download": "Download as PNG",
-      "copyText": "Copy text",
+      "typeLabel": "What do you want to convert?",
+      "types": {
+        "url": "Link",
+        "text": "Text",
+        "wifi": "Wi-Fi",
+        "vcard": "Contact card",
+        "email": "E-mail",
+        "phone": "Phone",
+        "sms": "SMS",
+        "location": "Location"
+      },
+      "field": {
+        "url": "Link address",
+        "text": "Text",
+        "ssid": "Network name (SSID)",
+        "wifiPassword": "Password",
+        "wifiEncryption": "Encryption",
+        "wifiHidden": "Hidden network",
+        "vName": "Full name",
+        "vPhone": "Phone number",
+        "vEmail": "E-mail address",
+        "vOrg": "Company or organisation",
+        "vUrl": "Website",
+        "emailTo": "Recipient",
+        "emailSubject": "Subject",
+        "emailBody": "Message",
+        "phone": "Phone number",
+        "smsNumber": "Phone number",
+        "smsBody": "Message",
+        "lat": "Latitude",
+        "lng": "Longitude"
+      },
+      "ph": {
+        "url": "example.com",
+        "text": "Write anything you want to turn into a QR code",
+        "ssid": "MyHomeWiFi",
+        "wifiPassword": "Network password",
+        "vName": "Jane Doe",
+        "vPhone": "+90 555 000 00 00",
+        "vEmail": "jane@example.com",
+        "vOrg": "FreetoolsY",
+        "vUrl": "freetoolsy.com",
+        "emailTo": "hello@example.com",
+        "emailSubject": "Meeting tomorrow",
+        "emailBody": "See you at 10:00.",
+        "phone": "+90 555 000 00 00",
+        "smsNumber": "+90 555 000 00 00",
+        "smsBody": "Hello! Here is my message.",
+        "lat": "41.0082",
+        "lng": "28.9784"
+      },
+      "enc": {
+        "wpa": "WPA / WPA2 / WPA3",
+        "wep": "WEP",
+        "none": "No password"
+      },
+      "levelTitle": "Error correction",
+      "level": {
+        "L": "L · recovers about 7% damage. Smallest code, best for short content.",
+        "M": "M · recovers about 15% damage. Good default for most uses.",
+        "Q": "Q · recovers about 25% damage. Recommended for printing.",
+        "H": "H · recovers about 30% damage. Densest code, needs clean printing."
+      },
+      "fgColor": "Code colour",
+      "bgColor": "Background",
+      "margin": "Quiet zone",
+      "sizeTitle": "PNG size",
+      "downloadPng": "Download PNG",
+      "downloadSvg": "Download SVG",
+      "copyPayload": "Copy content",
       "copied": "Copied",
-      "note": "The QR code is generated entirely in your browser; the content is never sent to a server.",
-      "charCount": "{count}/500"
+      "clear": "Clear",
+      "emptyMsg": "Fill in the required field to generate a QR code.",
+      "tooLong": "This content is too long for a QR code. Shorten it and try again.",
+      "charCount": "{count} characters encoded",
+      "note": "The QR code is generated entirely in your browser; your content is never sent to a server. A higher error correction level makes the code denser, so use H for printing and L for screen use."
     },
     "shaHashGenerator": {
       "label": "Enter your text",

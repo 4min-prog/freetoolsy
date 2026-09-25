@@ -224,10 +224,10 @@
     },
     "qr-code-generator": {
       "name": "QR Kod Oluşturucu",
-      "desc": "Metni veya bir bağlantıyı tarayıcınızda anında QR koda dönüştürür; PNG olarak indirin.",
-      "title": "QR Kod Oluşturucu — Ücretsiz Çevrimiçi Araç",
-      "pageDesc": "Herhangi bir metin veya bağlantıdan anında QR kod oluşturun ve yüksek çözünürlüklü PNG olarak indirin. Ücretsiz ve gizli; içerik tarayıcınızı asla terk etmez.",
-      "intro": "Herhangi bir metni veya bağlantıyı taranabilir bir QR koda dönüştürün ve PNG olarak indirin."
+      "desc": "Bağlantı, metin, Wi-Fi şifresi, kartvizit, e-posta, telefon veya konumu özel QR koda dönüştür. PNG veya SVG olarak indir.",
+      "title": "QR Kod Oluşturucu - Ücretsiz Özel QR Kod",
+      "pageDesc": "Bağlantı, metin, Wi-Fi, kartvizit, e-posta, telefon, SMS ve konum için özel QR kod oluştur. Rengi, sessiz bölgeyi ve hata düzeltmeyi seç, PNG veya SVG olarak indir.",
+      "intro": "Bağlantı, metin, Wi-Fi ağı, kartvizit, e-posta, telefon, SMS veya konum için QR kod oluştur, PNG veya SVG olarak indir."
     },
     "sha-hash-generator": {
       "name": "SHA Hash Üretici",
@@ -3649,14 +3649,82 @@
       "emptyState": "Yaşınızı görmek için doğum tarihinizi seçin."
     },
     "qrCodeGenerator": {
-      "label": "Metin veya bağlantı",
-      "placeholder": "örn. https://freetoolsy.com",
-      "emptyMsg": "Boş bir QR kodu oluşturulamaz. Yukarıya bir şeyler yazın.",
-      "download": "PNG İndir",
-      "copyText": "Metni kopyala",
+      "typeLabel": "Neye dönüştürmek istiyorsun?",
+      "types": {
+        "url": "Bağlantı",
+        "text": "Metin",
+        "wifi": "Wi-Fi",
+        "vcard": "Kartvizit",
+        "email": "E-posta",
+        "phone": "Telefon",
+        "sms": "SMS",
+        "location": "Konum"
+      },
+      "field": {
+        "url": "Bağlantı adresi",
+        "text": "Metin",
+        "ssid": "Ağ adı (SSID)",
+        "wifiPassword": "Şifre",
+        "wifiEncryption": "Şifreleme",
+        "wifiHidden": "Gizli ağ",
+        "vName": "Ad soyad",
+        "vPhone": "Telefon numarası",
+        "vEmail": "E-posta adresi",
+        "vOrg": "Şirket veya kurum",
+        "vUrl": "Web sitesi",
+        "emailTo": "Alıcı",
+        "emailSubject": "Konu",
+        "emailBody": "Mesaj",
+        "phone": "Telefon numarası",
+        "smsNumber": "Telefon numarası",
+        "smsBody": "Mesaj",
+        "lat": "Enlem",
+        "lng": "Boylam"
+      },
+      "ph": {
+        "url": "example.com",
+        "text": "QR koda dönüştürmek istediğin her şeyi yaz",
+        "ssid": "EvWifi",
+        "wifiPassword": "Ağ şifresi",
+        "vName": "Ayşe Yılmaz",
+        "vPhone": "+90 555 000 00 00",
+        "vEmail": "ayse@example.com",
+        "vOrg": "FreetoolsY",
+        "vUrl": "freetoolsy.com",
+        "emailTo": "merhaba@example.com",
+        "emailSubject": "Yarın toplantı",
+        "emailBody": "Saat 10:00'da görüşürüz.",
+        "phone": "+90 555 000 00 00",
+        "smsNumber": "+90 555 000 00 00",
+        "smsBody": "Merhaba! Mesajım bu.",
+        "lat": "41.0082",
+        "lng": "28.9784"
+      },
+      "enc": {
+        "wpa": "WPA / WPA2 / WPA3",
+        "wep": "WEP",
+        "none": "Şifresiz"
+      },
+      "levelTitle": "Hata düzeltme",
+      "level": {
+        "L": "L · yaklaşık %7 hasarı kurtarır. En küçük kod, kısa içerik için ideal.",
+        "M": "M · yaklaşık %15 hasarı kurtarır. Çoğu kullanım için iyi varsayılan.",
+        "Q": "Q · yaklaşık %25 hasarı kurtarır. Baskı için önerilir.",
+        "H": "H · yaklaşık %30 hasarı kurtarır. En yoğun kod, temiz baskı gerektirir."
+      },
+      "fgColor": "Kod rengi",
+      "bgColor": "Arka plan",
+      "margin": "Sessiz bölge",
+      "sizeTitle": "PNG boyutu",
+      "downloadPng": "PNG indir",
+      "downloadSvg": "SVG indir",
+      "copyPayload": "İçeriği kopyala",
       "copied": "Kopyalandı",
-      "note": "QR kodu tamamen tarayıcınızda oluşturulur; içerik hiçbir zaman sunucuya gönderilmez.",
-      "charCount": "{count}/500"
+      "clear": "Temizle",
+      "emptyMsg": "QR kod üretmek için gerekli alanı doldur.",
+      "tooLong": "Bu içerik QR kod için çok uzun. Kısaltıp tekrar dene.",
+      "charCount": "{count} karakter kodlandı",
+      "note": "QR kod tamamen tarayıcında üretilir; içeriğin hiçbir zaman sunucuya gönderilmez. Hata düzeltme seviyesi yükseldikçe kod yoğunlaşır: baskı için H, ekran için L daha uygundur."
     },
     "shaHashGenerator": {
       "label": "Metninizi girin",
