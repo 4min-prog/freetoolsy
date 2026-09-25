@@ -85,22 +85,25 @@ export default async function Home({ params }: { params: { locale: string } }) {
           className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
         >
           <div className="hero-bg absolute inset-0" />
-          <div className="absolute -top-24 left-1/2 h-56 w-[30rem] -translate-x-1/2 rounded-full bg-accent/10 blur-2xl" />
         </div>
-        <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-emerald-600 dark:border-emerald-400/30 dark:bg-emerald-400/10 dark:text-emerald-300">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-3.5 w-3.5">
-            <path d="M20 6L9 17l-5-5" />
-          </svg>
-          {tools.length} {t("statsTools")}
-        </span>
-        <h1 className="max-w-[22ch] text-3xl font-semibold leading-tight tracking-tight text-text sm:text-4xl">
+        <div className="flex items-center gap-4">
+          <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted">
+            {tools.length} {t("statsTools")} / {categories.length}{" "}
+            {t("statsCategories")}
+          </span>
+          <span aria-hidden="true" className="h-px flex-1 bg-border" />
+        </div>
+        <h1 className="mt-6 max-w-[20ch] text-4xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-5xl">
           {hasHighlight ? (
             <>
-              {titleParts[0]}
-              <span className="bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 bg-clip-text text-transparent dark:from-blue-400 dark:via-indigo-300 dark:to-purple-300">
-                {heroHighlight}
+              <span>
+                {`${titleParts[0]}${heroHighlight}`.trim()}
               </span>
-              {titleParts[1]}
+              {titleParts[1]?.trim() && (
+                <span className="mt-2 block font-normal text-muted">
+                  {titleParts[1].trim()}
+                </span>
+              )}
             </>
           ) : (
             heroTitle
@@ -110,37 +113,22 @@ export default async function Home({ params }: { params: { locale: string } }) {
           {t("heroSubtitle")}
         </p>
 
-        <div className="mt-6 flex flex-wrap items-center gap-x-8 gap-y-3">
-          <div className="flex items-baseline gap-2">
-            <span className="text-2xl font-semibold tracking-tight text-text">
-              {tools.length}
-            </span>
-            <span className="text-sm text-muted">{t("statsTools")}</span>
-          </div>
-          <span aria-hidden="true" className="h-6 w-px bg-border" />
-          <div className="flex items-baseline gap-2">
-            <span className="text-2xl font-semibold tracking-tight text-text">
-              {categories.length}
-            </span>
-            <span className="text-sm text-muted">{t("statsCategories")}</span>
-          </div>
+        <div className="relative z-30 mt-8">
+          <SearchBox large placeholder={t("searchPlaceholder")} />
         </div>
 
-        <ul className="mt-5 flex flex-wrap gap-2">
+        <ul className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-border pt-4 font-mono text-[11px] uppercase tracking-[0.15em] text-muted">
           {trustBadges.map((key) => (
-            <li
-              key={key}
-              className="flex items-center gap-1.5 rounded-full border border-border bg-surface px-3 py-1.5 text-xs text-muted"
-            >
+            <li key={key} className="flex items-center gap-1.5">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="2.5"
+                strokeWidth="3"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 aria-hidden="true"
-                className="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400"
+                className="h-3 w-3 text-accent"
               >
                 <path d="M20 6L9 17l-5-5" />
               </svg>
@@ -148,10 +136,6 @@ export default async function Home({ params }: { params: { locale: string } }) {
             </li>
           ))}
         </ul>
-
-        <div className="relative z-30 mt-6 rounded-2xl border border-border bg-surface/80 p-2 shadow-card backdrop-blur">
-          <SearchBox large placeholder={t("searchPlaceholder")} />
-        </div>
       </section>
 
       <PopularStrip />
