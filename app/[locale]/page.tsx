@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import {
+  getMessages,
+  getTranslations,
+  setRequestLocale,
+} from "next-intl/server";
 import ToolExplorer from "@/components/ToolExplorer";
 import SearchBox from "@/components/SearchBox";
 import PopularStrip from "@/components/PopularStrip";
 import JsonLd from "@/components/JsonLd";
 import AdSlot from "@/components/AdSlot";
+import { Link } from "@/i18n/navigation";
 import { categories, tools } from "@/data/tools";
 
 export async function generateMetadata({
@@ -30,7 +35,13 @@ export async function generateMetadata({
 export default async function Home({ params }: { params: { locale: string } }) {
   setRequestLocale(params.locale);
   const t = await getTranslations("Home");
+  const messages = await getMessages();
+  const toolMeta = (messages as { ToolMeta?: Record<string, { name?: string }> })
+    .ToolMeta;
   const faqs = t.raw("faq") as Array<{ q: string; a: string }>;
+
+  const half = Math.ceil(tools.length / 2);
+  const indexColumns = [tools.slice(0, half), tools.slice(half)];
 
   const heroTitle = t("heroTitle");
   const heroHighlight = t("heroTitleHighlight");
@@ -86,14 +97,16 @@ export default async function Home({ params }: { params: { locale: string } }) {
         >
           <div className="hero-bg absolute inset-0" />
         </div>
-        <div className="flex items-center gap-4">
-          <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted">
-            {tools.length} {t("statsTools")} / {categories.length}{" "}
-            {t("statsCategories")}
-          </span>
-          <span aria-hidden="true" className="h-px flex-1 bg-border" />
-        </div>
-        <h1 className="mt-6 max-w-[20ch] text-4xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-5xl">
+        <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-start lg:gap-12">
+          <div>
+            <div className="flex items-center gap-4">
+              <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted">
+                {tools.length} {t("statsTools")} / {categories.length}{" "}
+                {t("statsCategories")}
+              </span>
+              <span aria-hidden="true" className="h-px flex-1 bg-border" />
+            </div>
+            <h1 className="mt-6 max-w-[20ch] text-4xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-5xl">
           {hasHighlight ? (
             <>
               <span>
@@ -136,6 +149,46 @@ export default async function Home({ params }: { params: { locale: string } }) {
             </li>
           ))}
         </ul>
+          </div>
+          <aside className="mt-12 hidden border-l border-border pl-6 lg:mt-2 lg:block">
+            <div className="flex items-baseline justify-between gap-3">
+              <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-foreground">
+                {t("statsTools")}
+              </span>
+              <span className="font-mono text-[11px] text-faint">
+                {String(tools.length).padStart(3, "0")}
+              </span>
+            </div>
+            <div className="hero-marquee-mask mt-4 flex h-[22rem] gap-5 overflow-hidden">
+              {indexColumns.map((column, columnIndex) => (
+                <ul
+                  key={columnIndex}
+                  className={
+                    columnIndex === 0
+                      ? "hero-marquee w-1/2 shrink-0 space-y-2.5"
+                      : "hero-marquee-reverse w-1/2 shrink-0 space-y-2.5"
+                  }
+                >
+                  {[...column, ...column].map((tool, index) => (
+                    <li key={`${tool.slug}-${index}`}>
+                      <Link
+                        href={`/araclar/${tool.slug}`}
+                        className="group flex items-baseline gap-2 font-mono text-xs text-muted transition-colors hover:text-foreground"
+                      >
+                        <span className="w-6 shrink-0 text-right text-[10px] text-faint">
+                          {String(index + 1).padStart(2, "0")}
+                        </span>
+                        <span className="truncate group-hover:underline">
+                          {toolMeta?.[tool.slug]?.name ?? tool.name}
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              ))}
+            </div>
+          </aside>
+        </div>
       </section>
 
       <PopularStrip />

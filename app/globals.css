@@ -122,6 +122,52 @@ body {
   );
 }
 
+@keyframes hero-marquee {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+.hero-marquee {
+  animation: hero-marquee 55s linear infinite;
+}
+
+.hero-marquee-reverse {
+  animation: hero-marquee 70s linear infinite reverse;
+}
+
+.hero-marquee-mask:hover .hero-marquee,
+.hero-marquee-mask:hover .hero-marquee-reverse {
+  animation-play-state: paused;
+}
+
+.hero-marquee-mask {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 12%,
+    black 88%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 12%,
+    black 88%,
+    transparent
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-marquee,
+  .hero-marquee-reverse {
+    animation: none;
+  }
+}
+
 button,
 input,
 textarea,
