@@ -15,12 +15,12 @@ interface ToolMetaNs {
 
 export default function ToolExplorer() {
   const t = useTranslations("ToolExplorer");
+  const tf = useTranslations("Footer");
   const tc = useTranslations("Categories");
   const messages = useMessages();
   const meta = messages.ToolMeta as Record<string, ToolMetaNs> | undefined;
   const [query, setQuery] = useState("");
   const [cat, setCat] = useState("");
-  const [visible, setVisible] = useState<Record<string, number>>({});
   const firstLoad = useRef(true);
 
   useEffect(() => {
@@ -171,9 +171,8 @@ export default function ToolExplorer() {
             const categoryTools = getToolsByCategory(category.id);
             if (categoryTools.length === 0) return null;
             const theme = categoryTheme(category.id);
-            const shown = visible[category.id] ?? 9;
-            const remaining = categoryTools.length - shown;
-            const shownTools = categoryTools.slice(0, shown);
+            const shownTools = categoryTools.slice(0, 9);
+            const remaining = categoryTools.length - shownTools.length;
             return (
               <section key={category.id} id={category.id} className="scroll-mt-20">
                 <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b border-border pb-3">
@@ -194,7 +193,7 @@ export default function ToolExplorer() {
                     className="group inline-flex shrink-0 items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.15em] text-muted transition-colors hover:text-accent"
                   >
                     <span className="underline decoration-border underline-offset-4 group-hover:decoration-accent">
-                      {t("viewAll", { count: categoryTools.length })}
+                      {tf("viewAll")}
                     </span>
                     <svg
                       viewBox="0 0 24 24"
@@ -217,30 +216,24 @@ export default function ToolExplorer() {
                 </div>
                 {remaining > 0 && (
                   <div className="mt-5 flex justify-center">
-                    <button
-                      type="button"
-                      onClick={() =>
-                        setVisible((prev) => ({
-                          ...prev,
-                          [category.id]: (prev[category.id] ?? 9) + 9,
-                        }))
-                      }
-                      className="inline-flex min-h-11 items-center gap-2 border border-border bg-surface px-5 text-sm text-muted transition-colors hover:border-foreground hover:text-foreground"
+                    <Link
+                      href={`/kategoriler/${category.id}`}
+                      className="group inline-flex min-h-11 items-center gap-2 border border-border px-5 text-sm text-muted transition-colors hover:border-foreground hover:bg-surface-2 hover:text-foreground"
                     >
-                      {t("showMore", { count: Math.min(remaining, 9) })}
+                      {t("viewAll", { count: categoryTools.length })}
                       <svg
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
-                        strokeWidth="2"
+                        strokeWidth="2.5"
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         aria-hidden="true"
-                        className="h-4 w-4"
+                        className="h-4 w-4 transition-transform group-hover:translate-x-0.5"
                       >
-                        <path d="M6 9l6 6 6-6" />
+                        <path d="M5 12h14M13 6l6 6-6 6" />
                       </svg>
-                    </button>
+                    </Link>
                   </div>
                 )}
               </section>
