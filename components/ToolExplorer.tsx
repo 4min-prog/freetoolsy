@@ -75,58 +75,57 @@ export default function ToolExplorer() {
     });
   }
 
-  const tabClass = (active: boolean) => {
-    const base =
-      "inline-flex min-h-11 items-center gap-1.5 border px-3 text-sm transition-colors";
-    return active
-      ? `${base} border-foreground font-medium text-foreground`
-      : `${base} border-border bg-surface text-muted hover:border-foreground hover:text-foreground`;
-  };
-
   return (
     <div id="tools-explorer" className="scroll-mt-20 pb-20">
-      <div className="mt-6 flex flex-wrap items-center gap-2">
-        <button
-          type="button"
-          onClick={() => selectCategory("")}
-          className={tabClass(!cat)}
-        >
-          {t("tabAll")}
-          <span
-            className={`rounded-full px-1.5 text-xs ${
-              !cat ? "bg-white/20" : "bg-surface-2 text-faint"
-            }`}
-          >
-            {tools.length}
-          </span>
-        </button>
-        {categories.map((category) => (
-          <button
-            key={category.id}
-            type="button"
-            onClick={() => selectCategory(category.id)}
-            className={tabClass(cat === category.id)}
-          >
-            <CategoryIcon
-              id={category.id}
-              className={`h-4 w-4 ${categoryTheme(category.id).iconText}`}
-            />
-            {tc(category.id)}
-            <span
-              className={`rounded-full px-1.5 text-xs ${
-                cat === category.id
-                  ? "bg-white/20"
-                  : "bg-surface-2 text-faint"
+      <div className="mt-6 lg:grid lg:grid-cols-[13rem_minmax(0,1fr)] lg:gap-10">
+        <nav className="hidden lg:block" aria-label={t("categories")}>
+          <div className="sticky top-24">
+            <button
+              type="button"
+              onClick={() => selectCategory("")}
+              className={`group flex w-full items-center justify-between gap-2 border-b border-l-2 py-3 pl-3 pr-2 text-left text-sm transition-colors ${
+                !cat
+                  ? "border-l-accent font-medium text-foreground"
+                  : "border-l-transparent text-muted hover:text-foreground"
               }`}
             >
-              {getToolsByCategory(category.id).length}
-            </span>
-          </button>
-        ))}
-      </div>
+              {t("tabAll")}
+              <span className="font-mono text-[11px] tabular-nums text-faint">
+                {tools.length}
+              </span>
+            </button>
+            {categories.map((category) => {
+              const active = cat === category.id;
+              return (
+                <button
+                  key={category.id}
+                  type="button"
+                  onClick={() => selectCategory(category.id)}
+                  className={`group flex w-full items-center justify-between gap-2 border-b border-l-2 py-3 pl-3 pr-2 text-left text-sm transition-colors ${
+                    active
+                      ? "border-l-accent font-medium text-foreground"
+                      : "border-l-transparent text-muted hover:text-foreground"
+                  }`}
+                >
+                  <span className="flex items-center gap-2">
+                    <CategoryIcon
+                      id={category.id}
+                      className={`h-4 w-4 shrink-0 ${categoryTheme(category.id).iconText}`}
+                    />
+                    {tc(category.id)}
+                  </span>
+                  <span className="font-mono text-[11px] tabular-nums text-faint">
+                    {getToolsByCategory(category.id).length}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        </nav>
 
+        <div>
       {filtered ? (
-        <section className="mt-10" aria-live="polite">
+        <section className="mt-0" aria-live="polite">
           <div className="flex items-baseline justify-between gap-4 border-b border-border pb-3">
             <h2 className="text-lg font-semibold tracking-tight text-text">
               {t("results")}
@@ -136,7 +135,7 @@ export default function ToolExplorer() {
             </span>
           </div>
           {filtered.length > 0 ? (
-            <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-5 grid gap-4 sm:grid-cols-2">
               {filtered.map((tool) => (
                 <ToolCard key={tool.slug} tool={tool} />
               ))}
@@ -146,7 +145,7 @@ export default function ToolExplorer() {
           )}
         </section>
       ) : (
-        <div className="mt-10 space-y-14">
+        <div className="space-y-14">
           {(cat ? categories.filter((c) => c.id === cat) : categories).map((category) => {
             const categoryTools = getToolsByCategory(category.id);
             if (categoryTools.length === 0) return null;
@@ -190,7 +189,7 @@ export default function ToolExplorer() {
                     </svg>
                   </Link>
                 </div>
-                <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="mt-5 grid gap-4 sm:grid-cols-2">
                   {shownTools.map((tool) => (
                     <ToolCard key={tool.slug} tool={tool} />
                   ))}
@@ -227,7 +226,9 @@ export default function ToolExplorer() {
             );
           })}
         </div>
-      )}
+        )}
+        </div>
+      </div>
     </div>
   );
 }
