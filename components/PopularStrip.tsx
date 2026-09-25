@@ -42,7 +42,7 @@ export default function PopularStrip() {
               <li key={`${slug}-${index}`} className="shrink-0">
                 <Link
                   href={toolPath(locale, slug)}
-                  onClick={() => onClick(slug)}
+                  onClick={index < items.length ? () => onClick(slug) : undefined}
                   className="group flex items-center gap-3 border-r border-border px-6 py-4 transition-colors hover:bg-surface/60"
                 >
                   <span className="font-mono text-[11px] tabular-nums text-faint">

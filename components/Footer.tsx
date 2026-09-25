@@ -83,7 +83,7 @@ export default async function Footer() {
               <li className="pt-1">
                 <a
                   href="https://launchnest.io/p/freetoolsy"
-                  rel="dofollow"
+                  rel="dofollow noopener noreferrer"
                   title="freetoolsy.com — Domain Rating by LaunchNest"
                   target="_blank"
                 >
@@ -91,6 +91,8 @@ export default async function Footer() {
                     src="https://launchnest.io/api/badge/dr?domain=freetoolsy.com&style=normal&shape=rect&color=dark"
                     alt="freetoolsy.com Domain Rating"
                     width="240"
+                    loading="lazy"
+                    decoding="async"
                     className="h-auto transition-opacity hover:opacity-80"
                   />
                 </a>

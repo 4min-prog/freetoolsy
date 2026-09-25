@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { ADS_CLIENT } from "@/lib/ads";
 
 export default async function AdSlot({
   slot = "bottom",
@@ -9,7 +10,7 @@ export default async function AdSlot({
   const adsEnabled =
     process.env.NEXT_PUBLIC_ADS_ENABLED === "true" &&
     Boolean(process.env.NEXT_PUBLIC_ADS_CLIENT);
-  const clientId = process.env.NEXT_PUBLIC_ADS_CLIENT || "";
+  const clientId = process.env.NEXT_PUBLIC_ADS_CLIENT || ADS_CLIENT;
   const adSlotId =
     slot === "top"
       ? process.env.NEXT_PUBLIC_ADS_SLOT_TOP || ""
