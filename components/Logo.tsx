@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 
 export default function Logo({ size = "md" }: { size?: "md" | "lg" }) {
   const t = useTranslations("Brand");
-  const icon = size === "lg" ? "h-14 w-14" : "h-7 w-7";
+  const icon = size === "lg" ? "h-10 w-10" : "h-7 w-7";
 
   return (
     <span className="flex items-center gap-2.5">
@@ -15,17 +15,16 @@ export default function Logo({ size = "md" }: { size?: "md" | "lg" }) {
             y="0.5"
             width="63"
             height="63"
-            rx="14"
+            rx="3"
             fill="var(--logo-bg)"
             stroke="var(--logo-stroke)"
           />
-          <rect x="14" y="18" width="40" height="5" rx="2.5" fill="var(--logo-bar)" />
+          <rect x="14" y="18" width="40" height="5" fill="var(--logo-bar)" />
           <rect
             x="14"
             y="29"
             width="28"
             height="5"
-            rx="2.5"
             fill="var(--logo-bar)"
             opacity="0.55"
           />
@@ -34,7 +33,6 @@ export default function Logo({ size = "md" }: { size?: "md" | "lg" }) {
             y="40"
             width="34"
             height="5"
-            rx="2.5"
             fill="var(--logo-bar)"
             opacity="0.3"
           />
@@ -43,7 +41,6 @@ export default function Logo({ size = "md" }: { size?: "md" | "lg" }) {
             y="51"
             width="20"
             height="5"
-            rx="2.5"
             fill="var(--logo-bar)"
             opacity="0.15"
           />

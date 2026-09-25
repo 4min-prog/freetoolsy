@@ -77,13 +77,15 @@ export default function ToolExplorer() {
 
   const tabClass = (active: boolean, catId?: string) => {
     const theme = catId ? categoryTheme(catId) : null;
+    const base =
+      "inline-flex min-h-11 items-center gap-1.5 border px-3 text-sm transition-colors";
     if (active && theme) {
-      return `inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-medium transition-colors ${theme.active}`;
+      return `${base} font-medium ${theme.active}`;
     }
-    return `inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm transition-colors ${
+    return `${base} ${
       active
         ? "btn-accent font-medium text-on-accent"
-        : "border border-border bg-surface text-muted hover:border-accent hover:text-text"
+        : "border-border bg-surface text-muted hover:border-foreground hover:text-text"
     }`;
   };
 
@@ -209,7 +211,7 @@ export default function ToolExplorer() {
                           [category.id]: (prev[category.id] ?? 9) + 9,
                         }))
                       }
-                      className="inline-flex items-center gap-2 rounded-lg border border-border bg-surface px-4 py-2 text-sm text-muted transition-colors hover:border-accent hover:text-text"
+                      className="inline-flex min-h-11 items-center gap-2 border border-border bg-surface px-5 text-sm text-muted transition-colors hover:border-foreground hover:text-foreground"
                     >
                       {t("showMore", { count: Math.min(remaining, 9) })}
                       <svg

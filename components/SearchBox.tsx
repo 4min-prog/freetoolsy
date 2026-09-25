@@ -174,7 +174,7 @@ export default function SearchBox({
           role="listbox"
           id={resultsId}
           aria-label={placeholder}
-          className="fancy-scroll absolute left-0 right-0 top-full z-50 mt-1.5 max-h-72 overflow-y-auto overscroll-contain rounded-xl border border-border bg-surface p-1 shadow-card-hover"
+          className="fancy-scroll absolute left-0 right-0 top-full z-50 mt-px max-h-72 overflow-y-auto overscroll-contain border border-t-0 border-border bg-surface p-1"
         >
           {matches.map((match, index) => (
             <li
@@ -186,7 +186,7 @@ export default function SearchBox({
               <Link
                 href={`/araclar/${match.slug}`}
                 onClick={close}
-                className={`flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm transition-colors ${
+                className={`flex min-h-11 items-center gap-2.5 px-3 text-sm transition-colors ${
                   index === activeIndex
                     ? "bg-surface-2 text-text"
                     : "text-muted hover:bg-surface-2 hover:text-text"
@@ -209,11 +209,11 @@ export default function SearchBox({
           role="listbox"
           id={resultsId}
           aria-label={placeholder}
-          className="fancy-scroll absolute left-0 right-0 top-full z-50 mt-1.5 max-h-72 overflow-y-auto overscroll-contain rounded-xl border border-border bg-surface p-1 shadow-card-hover"
+          className="fancy-scroll absolute left-0 right-0 top-full z-50 mt-px max-h-72 overflow-y-auto overscroll-contain border border-t-0 border-border bg-surface p-1"
         >
           {Boolean(normalized) && (
             <li role="option" aria-selected="false">
-              <span className="block rounded-lg px-3 py-2 text-sm text-muted">
+              <span className="block px-3 py-2.5 text-sm text-muted">
                 {t("noResults")}
               </span>
             </li>
@@ -228,7 +228,7 @@ export default function SearchBox({
               <Link
                 href={`/araclar/${slug}`}
                 onClick={close}
-                className="flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm text-muted transition-colors hover:bg-surface-2 hover:text-text"
+                className="flex min-h-11 items-center gap-2.5 px-3 text-sm text-muted transition-colors hover:bg-surface-2 hover:text-text"
               >
                 <ToolIcon id={slug} className="h-4 w-4 shrink-0 text-accent" />
                 <span className="truncate">
