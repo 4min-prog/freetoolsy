@@ -43,8 +43,11 @@ export async function generateMetadata({
     description: t("description"),
     applicationName: "FreetoolsY",
     icons: {
-      icon: [{ url: "/favicon.ico", sizes: "any" }],
-      apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+      icon: [
+        { url: "/icon.svg", type: "image/svg+xml" },
+        { url: "/favicon.ico", sizes: "16x16 32x32 48x48", type: "image/x-icon" },
+      ],
+      apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
     },
     alternates: {
       canonical: canonicalPath,

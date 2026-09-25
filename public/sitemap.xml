@@ -598,6 +598,54 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/what-is-meta-tags" />
   </url>
   <url>
+    <loc>https://freetoolsy.com/rehber/how-to-convert-currency</loc>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/how-to-convert-currency" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/how-to-convert-currency" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/rehber/how-to-format-sql-queries</loc>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/how-to-format-sql-queries" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/how-to-format-sql-queries" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/rehber/how-to-write-robots-txt</loc>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/how-to-write-robots-txt" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/how-to-write-robots-txt" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/rehber/markdown-to-html-guide</loc>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/markdown-to-html-guide" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/markdown-to-html-guide" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/rehber/what-is-compound-interest</loc>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/what-is-compound-interest" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/what-is-compound-interest" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/rehber/what-is-hreflang-multilingual-seo</loc>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/what-is-hreflang-multilingual-seo" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/what-is-hreflang-multilingual-seo" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/rehber/what-is-json-ld</loc>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/what-is-json-ld" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/what-is-json-ld" />
+  </url>
+  <url>
+    <loc>https://freetoolsy.com/rehber/wheel-of-names-random-picker-guide</loc>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/rehber/wheel-of-names-random-picker-guide" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://freetoolsy.com/tr/rehber/wheel-of-names-random-picker-guide" />
+  </url>
+  <url>
     <loc>https://freetoolsy.com/privacy-policy</loc>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://freetoolsy.com/privacy-policy" />

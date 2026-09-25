@@ -82,7 +82,8 @@
     "toolCount": "{count} tools",
     "noResults": "No tools matched \"{query}\". Try a different keyword.",
     "tabAll": "All tools",
-    "showMore": "Show {count} more"
+    "showMore": "Show {count} more",
+    "viewAll": "View all {count} tools"
   },
   "Categories": {
     "seo": "SEO",
@@ -2763,6 +2764,448 @@
           "Does it keep running if I switch tabs? It measures real time, so the elapsed value stays correct even when the tab is hidden.",
           "How many laps can I record? As many as you want — they are kept in a scrollable list.",
           "Where do the times go? Everything stays in memory on your device; nothing is sent anywhere."
+        ]
+      }
+    ],
+    "currency-converter": [
+      {
+        "h": "What is a Currency Converter?",
+        "p": "A Currency Converter converts an amount from one currency to another using reference rates you can adjust. It is useful for travel budgets, online shopping in foreign stores, freelance invoices and checking prices when an amount is quoted in another money."
+      },
+      {
+        "h": "Where do the rates come from?",
+        "p": "The tool ships with fixed reference rates that you can override manually with the latest rate you know. Because markets change every second, double-check your figures against the spot rate when the exact amount matters."
+      },
+      {
+        "h": "How to convert an amount",
+        "list": [
+          "Choose the source and target currencies.",
+          "Enter the amount or adjust the reference rate if yours differs.",
+          "Read the converted result and the reverse rate in one glance."
+        ]
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Can I update the rate? Yes — edit the base rate field before converting.",
+          "Do I need an internet connection? No, everything runs in your browser.",
+          "Is the exchange rate live? The initial values are reference rates; update them for the current market value."
+        ]
+      }
+    ],
+    "compound-interest-calculator": [
+      {
+        "h": "What is Compound Interest?",
+        "p": "Compound interest means your returns earn their own returns. This calculator shows how an initial deposit grows over the years when interest is added, with optional monthly contributions and a full yearly breakdown."
+      },
+      {
+        "h": "What you can adjust",
+        "list": [
+          "Starting amount and monthly deposit.",
+          "Annual rate and compounding frequency (yearly, monthly, daily).",
+          "Investment length in years or months."
+        ]
+      },
+      {
+        "h": "Why the yearly table matters",
+        "p": "The yearly breakdown shows exactly how much comes from contributions and how much is earned interest each year. Use it to compare scenarios, such as saving more each month versus getting a higher rate."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "How does compounding frequency change? Pick daily, monthly or yearly in the settings and the table recalculates.",
+          "Is this tax-adjusted? No — the result is gross growth before any taxes or fees.",
+          "Is my data safe? All calculations happen in your browser; nothing is sent anywhere."
+        ]
+      }
+    ],
+    "salary-calculator": [
+      {
+        "h": "What is a Net Salary Calculator?",
+        "p": "A Net Salary Calculator estimates how much of your gross wage you take home after SGK, unemployment insurance and income tax deductions. It follows Turkey's payroll system and gives you monthly and annual summaries."
+      },
+      {
+        "h": "What it covers",
+        "list": [
+          "Gross-to-net conversion with SGK and unemployment deductions.",
+          "Income tax according to the progressive brackets and the minimum wage deduction threshold.",
+          "Monthly, annual and per-pay-period breakdowns."
+        ]
+      },
+      {
+        "h": "Use it to plan",
+        "p": "Enter your gross wage and see the net salary instantly. Compare offers or check how a raise changes your take-home amount before you sign anything."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Is this number exact? It is an estimate; the final figure depends on your exact situation and employer choices.",
+          "Does it include bonuses? Overtime, bonuses and other perks are not covered.",
+          "Are tax brackets up to date? The calculator uses the current bracket logic; verify against the latest official rates."
+        ]
+      }
+    ],
+    "sql-formatter": [
+      {
+        "h": "What is a SQL Formatter?",
+        "p": "A SQL Formatter turns messy SQL into clean, readable queries — or compresses it into one compact line. Choose your indentation and keyword casing and format instantly in your browser."
+      },
+      {
+        "h": "Where it helps",
+        "list": [
+          "Debugging long stored procedures with consistent alignment.",
+          "Sharing readable queries with teammates.",
+          "Preparing compact SQL for blog posts, chat or small tool windows."
+        ]
+      },
+      {
+        "h": "Formatting options",
+        "p": "Pick the number of indent spaces and whether keywords are uppercase, lowercase or left as written. The Minify option strips whitespace for a single-line output."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Does it work for SQL Server, MySQL and Postgres? Yes — the formatter is generic and handles the common dialects.",
+          "Is my query sent to a server? No, everything runs locally in your browser.",
+          "Can I format without changing the query logic? Yes, formatting only changes whitespace and casing."
+        ]
+      }
+    ],
+    "json-xml-converter": [
+      {
+        "h": "What is a JSON to XML Converter?",
+        "p": "A JSON to XML Converter changes JSON data into XML and XML into JSON, in both directions. Arrays are preserved as repeated elements and XML attributes are supported, so most real-world documents convert cleanly."
+      },
+      {
+        "h": "How to use it",
+        "list": [
+          "Paste JSON or XML on the left, choose the direction and click Convert.",
+          "Review the output and the error message if conversion fails.",
+          "Copy the result with one click."
+        ]
+      },
+      {
+        "h": "How edge cases are handled",
+        "p": "Documents with attributes round-trip using an @attr convention, and repeated elements become arrays. If a document is invalid, the tool points to the problem so you can fix it and convert again."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Is my data stored? No — everything is processed in your browser.",
+          "Does it keep the order of attributes? Attribute order is preserved when converting back.",
+          "Can I convert very large files? Yes, the conversion runs directly in your browser with no size limit."
+        ]
+      }
+    ],
+    "markdown-html-converter": [
+      {
+        "h": "What is a Markdown to HTML Converter?",
+        "p": "A Markdown to HTML Converter writes HTML from Markdown or translates HTML back into Markdown, with a live preview so you see the result as you go."
+      },
+      {
+        "h": "Where it is useful",
+        "list": [
+          "Turning Markdown notes into HTML for emails or website editors.",
+          "Converting existing HTML pages back into clean Markdown.",
+          "Checking how a snippet will render before publishing."
+        ]
+      },
+      {
+        "h": "Is my content private?",
+        "p": "Yes. The conversion happens entirely in your browser, so pasted content never leaves your device — safe for drafts and internal documents."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Which Markdown is supported? Common syntax: headings, lists, code, tables and links.",
+          "Does HTML-to-Markdown handle complex layouts? It converts standard formatting; very complex nested markup may stay partly as HTML.",
+          "Do I need internet? No, the tool works offline in your browser."
+        ]
+      }
+    ],
+    "hmac-generator": [
+      {
+        "h": "What is an HMAC Generator?",
+        "p": "An HMAC Generator computes an HMAC-SHA256 or HMAC-SHA512 signature for your message using a secret key, and shows the result in hex and Base64. It is commonly used to verify the integrity and origin of API requests."
+      },
+      {
+        "h": "How to use it",
+        "list": [
+          "Paste your message text and your secret key.",
+          "Choose SHA-256 or SHA-512 as the hash function.",
+          "Copy the resulting signature in hex or Base64."
+        ]
+      },
+      {
+        "h": "A security note",
+        "p": "The signature depends on the exact bytes of your message. Use the same signing settings as the service you are talking to, and never paste production secrets on untrusted machines — this tool runs entirely in your browser."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Is HMAC the same as simple hashing? No — HMAC keys the hash with a secret, so it proves authenticity, not just integrity.",
+          "Does it work on files? Not directly; hash the file contents first, then sign the hash.",
+          "Is my secret key safe? The key is processed locally in your browser and never transmitted."
+        ]
+      }
+    ],
+    "html-table-generator": [
+      {
+        "h": "What is an HTML Table Generator?",
+        "p": "An HTML Table Generator creates ready-to-paste HTML table code from your rows, columns and pasted data, with a live preview so you see the final look before copying."
+      },
+      {
+        "h": "Ways to build a table",
+        "list": [
+          "Set a blank grid with your chosen number of rows and columns.",
+          "Paste TSV data (for example, from Excel or Google Sheets).",
+          "Add a table caption and optional borders."
+        ]
+      },
+      {
+        "h": "Why use it",
+        "p": "Hand-writing table markup is tedious. This tool generates clean, ready-to-paste code you can drop into a CMS, editor or email template, then restyle with your own CSS."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Can I include a header row? Yes, the first row can be marked as table headers.",
+          "Does it support merged cells? Not automatically; the generator covers the common flat tables.",
+          "Where is the code produced? In your browser — nothing is uploaded."
+        ]
+      }
+    ],
+    "favicon-generator": [
+      {
+        "h": "What is a Favicon Generator?",
+        "p": "A Favicon Generator draws a favicon from a letter or short text plus your colors, then lets you download it as PNG or ICO. Use it to give a site a recognizable browser-tab icon without a graphics program."
+      },
+      {
+        "h": "How to make your favicon",
+        "list": [
+          "Type the character or text you want on the icon and choose the text color.",
+          "Pick the background color (optionally with rounded corners).",
+          "Download as PNG or ICO and point your head at it."
+        ]
+      },
+      {
+        "h": "Design tips",
+        "p": "Favicons are tiny — keep the text short and the colors high-contrast. Test it in both light and dark tabs so the icon stays visible."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "What is the difference between ICO and PNG? ICO keeps multiple sizes for older browsers; PNG is simpler and supported by modern ones.",
+          "Does it read my logo file? The generator draws from text; use an image editor for a custom logo.",
+          "Is my data private? Everything is generated client-side."
+        ]
+      }
+    ],
+    "image-crop": [
+      {
+        "h": "What is an Image Cropper?",
+        "p": "An Image Cropper lets you trim any image to the exact area you want by dragging a selection box directly in the browser — no uploads, no signup."
+      },
+      {
+        "h": "How to crop",
+        "list": [
+          "Drop or select an image file.",
+          "Drag the handles to frame the part you want to keep.",
+          "Download the cropped image as PNG or JPEG."
+        ]
+      },
+      {
+        "h": "Original pixels are respected",
+        "p": "The crop removes everything outside the selection without recompressing the rest, so the sharpness of the kept area is preserved for web use."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Can I set an exact pixel size? Crop visually first, then optionally resize the result with the site's image resizer.",
+          "What formats are supported? Common image formats including JPEG, PNG and WebP.",
+          "Is my photo uploaded? No — all processing happens locally in your browser."
+        ]
+      }
+    ],
+    "image-watermark": [
+      {
+        "h": "What is an Image Watermark?",
+        "p": "An Image Watermark places a logo or image stamp over your photo at the position and opacity you choose, protecting your content or showing ownership on social shares."
+      },
+      {
+        "h": "How to add a watermark",
+        "list": [
+          "Load the base image and the watermark image (a logo or signature).",
+          "Set the position, size and opacity.",
+          "Download the resulting image as PNG."
+        ]
+      },
+      {
+        "h": "Tips for a subtle mark",
+        "p": "Lower opacity and a corner position keep photos clean while still identifying the source. Export as PNG so the composite keeps a transparent background where needed."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Can I add text instead of a logo? Use this tool with the watermark saved as an image, or use a dedicated text tool.",
+          "Does it resize the original? The output size follows the original image.",
+          "Is my content uploaded? No, everything runs in your browser."
+        ]
+      }
+    ],
+    "jsonld-generator": [
+      {
+        "h": "What is a JSON-LD Generator?",
+        "p": "A JSON-LD Generator builds schema.org structured data for common types — Article, Product, FAQPage, Event, Person and more — ready to paste into your page head for rich results."
+      },
+      {
+        "h": "How to use it",
+        "list": [
+          "Pick a structured data type.",
+          "Fill in the fields shown in plain language.",
+          "Copy the generated JSON-LD and paste it inside a script tag in your head."
+        ]
+      },
+      {
+        "h": "Why structured data matters",
+        "p": "Structured data helps search engines understand your content and can unlock rich results such as star ratings, FAQs and event listings — a small snippet with real visibility payoff."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Do I need to be a developer? No — the fields are labeled in plain language.",
+          "Does it produce valid JSON? Yes, the output is always valid JSON; verify it in Google's result-testing tools.",
+          "Where does processing happen? In your browser, so your content stays private."
+        ]
+      }
+    ],
+    "hreflang-generator": [
+      {
+        "h": "What is an Hreflang Generator?",
+        "p": "An Hreflang Generator creates hreflang link tags and x-default entries for multilingual sites, then formats them for your head or your XML sitemap — no more hand-typing URL lists."
+      },
+      {
+        "h": "How to build the tags",
+        "list": [
+          "Enter the URL of each language version of the page.",
+          "Choose the output format: HTML link tags or sitemap-XML blocks.",
+          "Copy the output and paste it into your head or sitemap."
+        ]
+      },
+      {
+        "h": "Hreflang requires complete pairs",
+        "p": "Every language version should list all of its siblings and add a matching x-default. The generator includes x-default so search engines see a complete, self-consistent signal."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Do I need hreflang on every page? Add it to every localized URL and mirror the tags on each version.",
+          "Do you validate the URLs? The tool formats the entries; verify the final code in Search Console.",
+          "Is my URL list uploaded? No, it is built locally in your browser."
+        ]
+      }
+    ],
+    "robots-txt-generator": [
+      {
+        "h": "What is a Robots.txt Generator?",
+        "p": "A Robots.txt Generator writes robots.txt content from presets — like allow-all or block-all — plus your own allow and disallow rules, ready to drop into your site root."
+      },
+      {
+        "h": "How it works",
+        "list": [
+          "Start from a preset (allow all, block all, or block search crawlers).",
+          "Add specific paths to allow or disallow for each user agent.",
+          "Copy the final text into your /robots.txt file."
+        ]
+      },
+      {
+        "h": "Use robots.txt correctly",
+        "p": "robots.txt steers well-behaved crawlers; it is not a security barrier. Keep disallow rules to paths that should stay out of search results, and test changes in Search Console afterwards."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Which hostname should I use? Place one robots.txt at the root of the exact host you serve.",
+          "Can it point to a sitemap? Yes — the generated text includes a sitemap line.",
+          "Is the file stored anywhere? No, it is produced locally in your browser."
+        ]
+      }
+    ],
+    "wheel-of-names": [
+      {
+        "h": "What is a Wheel of Names?",
+        "p": "A Wheel of Names spins a colorful wheel carrying your list of names, then lands on a random winner. Perfect for classroom picks, prize draws, team assignments and friendly raffles."
+      },
+      {
+        "h": "How to run a draw",
+        "list": [
+          "Add each entry as a line in the names box.",
+          "Spin the wheel and watch it settle on a winner.",
+          "Remove the winner and spin again for a second prize."
+        ]
+      },
+      {
+        "h": "Draws that are fair and fun",
+        "p": "The spin is random, so the result is impartial — and the colorful wheel looks great on a projector or big screen while the tension builds."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Can I use pictures instead of names? The wheel supports text entries.",
+          "Can I pick several winners? Yes — remove a winner from the list and spin again.",
+          "Does it need internet? No, it runs entirely in your browser."
+        ]
+      }
+    ],
+    "random-number-generator": [
+      {
+        "h": "What is a Random Number Generator?",
+        "p": "A Random Number Generator produces random numbers within any range you choose, with or without repeats. It is handy for lottery picks, sample selection, dice-like rolls and testing."
+      },
+      {
+        "h": "How to use it",
+        "list": [
+          "Enter the minimum and maximum of the range.",
+          "Choose how many numbers you want and whether repeats are allowed.",
+          "Generate, then copy the list or sort it."
+        ]
+      },
+      {
+        "h": "True randomness lives in the browser",
+        "p": "The generator uses the browser's cryptographic randomness source, so every draw is independent and cannot be predicted."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Can repeats be disabled? Yes — switch to unique-only mode when each number may appear once.",
+          "Does it support negative numbers? Yes, choose any range.",
+          "Is the result stored? No, numbers are generated locally."
+        ]
+      }
+    ],
+    "stopwatch-timer": [
+      {
+        "h": "What is a Stopwatch and Timer?",
+        "p": "A Stopwatch measures elapsed time with lap splits, while a Timer counts down from a set duration and rings when finished. Two tools for timing craft, cooking, workouts and games."
+      },
+      {
+        "h": "How to time something",
+        "list": [
+          "Stopwatch: tap Start, record laps, and read the total and split times.",
+          "Timer: set minutes and seconds, then press Start.",
+          "Reset clears the current mode; the timer beeps when it finishes."
+        ]
+      },
+      {
+        "h": "Accurate even in the background",
+        "p": "Times are based on real clock time, so even if the tab is hidden the durations stay correct."
+      },
+      {
+        "h": "FAQ",
+        "list": [
+          "Can I record laps? Yes — as many as you need, kept in a scrollable list with splits and totals.",
+          "Does it ring on completion? The timer plays a short beep at zero.",
+          "Is anything transmitted? No — everything runs locally in your browser."
         ]
       }
     ]
