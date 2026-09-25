@@ -818,6 +818,14 @@
       {
         "h": "Is my data safe?",
         "p": "Yes. The digest is computed entirely in your browser; your text is never sent or stored. MD5 is fast and practical for checksums, though it is not recommended for storing passwords."
+      },
+      {
+        "h": "What is MD5 used for today?",
+        "p": "MD5 still works as a fast integrity check: verify that a downloaded file matches its published checksum, or detect accidental corruption in transfers. It is built into many systems, which is why you will keep seeing it in logs and package metadata."
+      },
+      {
+        "h": "Why not for passwords?",
+        "p": "MD5 is designed to be fast, and fast hashing is exactly what password crackers want. Modern hardware restores simple MD5 hashes in seconds, so passwords should be stored with slow, salted algorithms instead. Use the SHA hash tools when a one-way cryptographic digest is needed."
       }
     ],
     "xml-formatter": [
@@ -1394,6 +1402,14 @@
       {
         "h": "Is my data safe?",
         "p": "Yes. All conversion happens in your browser; your data is never uploaded or stored. Use it for private lists, reports and configuration data without worry."
+      },
+      {
+        "h": "When are flat rows not enough?",
+        "p": "CSV works best for tabular data where every record has the same fields. Deeply nested JSON — objects inside arrays inside objects — does not translate cleanly to rows. Flatten with explicit keys (like user.address.city) so no information is lost, and rebuild from CSV only when the structure allows it."
+      },
+      {
+        "h": "Column mapping matters",
+        "p": "Check the generated columns before you import: empty arrays become missing columns, and nested objects become dotted keys. Spend one minute verifying the mapping, and your spreadsheet or database import runs without surprises."
       }
     ],
     "unix-timestamp-converter": [
@@ -1448,6 +1464,19 @@
       {
         "h": "Is my data safe?",
         "p": "Yes. Counting runs entirely in your browser; your text is never sent to any server or API. Keep your prompts and sensitive drafts private while you plan token usage."
+      },
+      {
+        "h": "How are tokens counted?",
+        "p": "Models rarely count characters; they count tokens, which are pieces of words. Roughly one token equals one word in English and less than a word in many other languages. Counting tokens before sending text to a model tells you how long the request is and how much context you are using."
+      },
+      {
+        "h": "Tokens are not characters",
+        "list": [
+          "Punctuation and spaces often form their own tokens.",
+          "Rare or long words split into multiple tokens.",
+          "A token budget is shared between the prompt and the reply.",
+          "The same text can produce different counts on different models."
+        ]
       }
     ],
     "lorem-ipsum-generator": [
@@ -1467,6 +1496,19 @@
       {
         "h": "Is my data safe?",
         "p": "Yes. The text is generated entirely in your browser; your inputs and the generated paragraphs are never sent or stored. No signup, no install and completely free."
+      },
+      {
+        "h": "Where placeholder text helps",
+        "list": [
+          "Layout mockups before the real copy is written.",
+          "Font and spacing tests with representative line lengths.",
+          "Editorial templates and print proofs that need sample text.",
+          "Documentation examples that must not distract with real content."
+        ]
+      },
+      {
+        "h": "Keep placeholders clearly marked",
+        "p": "Lorem Ipsum is nonsense on purpose, so reviewers never mistake it for final copy. When you replace it with real text, check headings and long paragraphs too — awkward line breaks often show up only with authentic content."
       }
     ],
     "tip-calculator": [
@@ -1639,6 +1681,19 @@
       {
         "h": "Is my data safe?",
         "p": "Yes. Sorting runs entirely in your browser; your text is never sent or stored. No signup and completely free."
+      },
+      {
+        "h": "Sorting rules that matter",
+        "list": [
+          "Alphabetical A→Z and Z→A for lists of names and words.",
+          "Numeric sorting for version numbers, scores or prices.",
+          "Ignore case so uppercase words do not cluster at the top.",
+          "Remove duplicates while sorting to clean repeated data."
+        ]
+      },
+      {
+        "h": "When does sorting help?",
+        "p": "Shuffled lists waste time: sorting finds duplicates instantly, makes comparisons easy and turns an unordered export into an organized reference. Sort a curriculum, a name list or a set of options before you publish anything."
       }
     ],
     "list-shuffler": [
@@ -1711,6 +1766,19 @@
           "Is this image compressor free? Yes — the tool is completely free and unlimited.",
           "Do my images get uploaded anywhere? No, compression runs entirely in your browser, so files never leave your device.",
           "Which format compresses best? JPEG and WebP give the smallest photo files, while PNG keeps transparency and sharp edges."
+        ]
+      },
+      {
+        "h": "How much should you compress?",
+        "p": "There is no single perfect quality setting; the right value depends on the image and its use. Drop the quality slider slowly until the file is small enough but the image still looks clean at the size you display it. Preview the result inside the tool instead of guessing from the number alone."
+      },
+      {
+        "h": "Best practices for web images",
+        "list": [
+          "Resize to the width that will actually be shown — extra pixels only add bytes.",
+          "Use JPEG for photos and WebP for a modern, smaller alternative.",
+          "Keep transparency in PNG only where it is really needed.",
+          "Aim for under 100 KB for content images; hero images can go a bit higher."
         ]
       }
     ],
@@ -1827,6 +1895,19 @@
           "What separator is best? Hyphens are the most common choice for SEO, but underscores work fine when your system expects them.",
           "Does this tool send my text anywhere? No. Everything runs locally in your browser, so your input never leaves your device."
         ]
+      },
+      {
+        "h": "What makes a good slug?",
+        "list": [
+          "Lowercase letters and hyphens — no spaces or special characters.",
+          "Short: three to five words are usually enough.",
+          "Include the main keyword for your page.",
+          "Be stable: change the slug rarely, because URLs are indexed."
+        ]
+      },
+      {
+        "h": "Slugs and SEO",
+        "p": "Search engines read the URL as a relevance signal and users read it before they click. A clear slug like /how-to-bake-bread tells both exactly what the page covers. Keep the same slug when the title changes, or set a redirect when you must rewrite it."
       }
     ],
     "meta-tag-generator": [
@@ -1850,6 +1931,19 @@
           "What is the ideal description length? Between 140 and 160 characters gives you room for a full message.",
           "Do I need an image for Twitter cards? A large image card looks best, but the tool falls back to a summary card without one."
         ]
+      },
+      {
+        "h": "Meta tags you actually need",
+        "list": [
+          "Title (under 60 characters) and meta description (around 155).",
+          "Canonical URL to point search engines at the preferred version.",
+          "Open Graph (og:title, og:image) to control social shares.",
+          "Charset and viewport so mobile browsers render correctly."
+        ]
+      },
+      {
+        "h": "Preview before you publish",
+        "p": "Metadata only matters when it shows up the way you planned. Run the result through a search snippet preview to see how the title and description behave, then fine-tune wording until the snippet looks compelling."
       }
     ],
     "keyword-density-checker": [
@@ -1873,6 +1967,14 @@
           "Does punctuation affect the count? Yes, the tool strips punctuation so forms like word and word. count as the same term.",
           "Is my text uploaded anywhere? No, the analysis runs entirely in your browser."
         ]
+      },
+      {
+        "h": "What is a good density?",
+        "p": "There is no exact rule, but a keyword appearing naturally once or twice per paragraph is usually sane. Very high repetition triggers readability problems and looks like stuffing. Use the checker to stay consistent, not to chase an exact percentage."
+      },
+      {
+        "h": "Density is not the goal",
+        "p": "Search engines evaluate whether a page truly covers a topic, not whether a phrase shows up a specific number of times. Write the best answer you can, then use the density tool to catch accidental overuse or a forgotten main term."
       }
     ],
     "serp-preview": [
@@ -1895,6 +1997,19 @@
           "Does Google always use my title tag? Not always. It may rewrite titles it considers too long, too short, or stuffed with keywords.",
           "What do the green and orange counters mean? Green means you are within the recommended length, orange means the text will likely be cut off.",
           "Is the preview pixel perfect? It is a close approximation of Google's desktop layout, updated live as you type."
+        ]
+      },
+      {
+        "h": "What Google truncates",
+        "p": "Titles that are too long get cut off mid-word, and long descriptions end with an ellipsis. Testing a full-width preview shows exactly where the cut happens, so you can keep the important words inside the visible part."
+      },
+      {
+        "h": "How to write a snippet that gets clicks",
+        "list": [
+          "Lead with the value: what the page offers or solves.",
+          "Use the keyword early, but read naturally.",
+          "Stay inside the visible limits — don't waste pixels on branding.",
+          "End with a concrete promise instead of a vague phrase."
         ]
       }
     ],
@@ -1984,6 +2099,19 @@
           "Can Turkish letters be translated? No — Turkish characters such as ç and ş are not part of standard Morse and are left as-is.",
           "Why are words separated by /? It is the widely used convention for representing a space between words in Morse text.",
           "Is my message sent to a server? No, all translation happens locally in your browser."
+        ]
+      },
+      {
+        "h": "Morse code basics",
+        "p": "Morse replaces each letter with a pattern of dots (short) and dashes (long), separated by pauses. Letters are separated by one pause, words by three. The timing is what makes Morse readable — not just which marks exist."
+      },
+      {
+        "h": "Practice tips",
+        "list": [
+          "Learn a few letters first — start with SOS, the most famous pattern.",
+          "Convert your own name to see real text become Morse.",
+          "Translate to Morse, copy the pattern, and recite it from memory.",
+          "Use it for fun projects, puzzles and learning about early radio."
         ]
       }
     ],
@@ -2260,6 +2388,19 @@
           "Can the same string appear twice? Randomness means a repeat is technically possible, but with long strings the chance is astronomically small.",
           "Is the result stored or uploaded? No — generation happens locally in your browser and nothing is sent to any server."
         ]
+      },
+      {
+        "h": "What to use random strings for",
+        "list": [
+          "Password salts and reset tokens that must never repeat.",
+          "Temporary identifiers for test data and fixtures.",
+          "Example keys in documentation and demos.",
+          "Unique name suffixes when copy-pasting between environments."
+        ]
+      },
+      {
+        "h": "Length and entropy",
+        "p": "Longer strings with a bigger alphabet give far more combinations. For security-critical values like salts or tokens, prefer 32+ characters from the full character set. For display or test purposes, shorter strings are fine and easier to type."
       }
     ],
     "jwt-generator": [

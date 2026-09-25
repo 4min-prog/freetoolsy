@@ -818,6 +818,14 @@
       {
         "h": "Verilerim güvende mi?",
         "p": "Evet. Özet tamamen tarayıcınızda hesaplanır; metniniz hiçbir zaman gönderilmez veya saklanmaz. MD5, sağlama toplamı için hızlı ve pratiktir; ancak şifre saklamak için önerilmez."
+      },
+      {
+        "h": "MD5 bugün ne için kullanılır?",
+        "p": "MD5 hâlâ hızlı bir bütünlük kontrolü olarak işe yarar: indirilen bir dosyanın yayınlanan sağlama toplamıyla eşleştiğini doğrulayın veya aktarımda oluşan kazara bozulmayı tespit edin. Birçok sistemde yerleşiktir; bu yüzden log ve paket meta verilerinde onu görmeye devam edersiniz."
+      },
+      {
+        "h": "Neden şifreler için değil?",
+        "p": "MD5 hızlı olacak şekilde tasarlanmıştır ve hızlı hashing, parola kıranların tam da istediği şeydir. Modern donanım basit MD5 hash'lerini saniyeler içinde geri kazanır; bu yüzden parolalar yavaş, tuzlu algoritmalarla saklanmalıdır. Tek yönlü kriptografik bir özet gerektiğinde SHA hash araçlarını kullanın."
       }
     ],
     "xml-formatter": [
@@ -1394,6 +1402,14 @@
       {
         "h": "Verilerim güvende mi?",
         "p": "Evet. Tüm dönüştürme tarayıcınızda gerçekleşir; verileriniz hiçbir zaman yüklenmez veya saklanmaz. Özel listeler, raporlar ve yapılandırma verileri için gönül rahatlığıyla kullanın."
+      },
+      {
+        "h": "Düz satırlar ne zaman yetmez?",
+        "p": "CSV, her kaydın aynı alanlara sahip olduğu tablo verileri için en iyisidir. Derin iç içe JSON — diziler içinde nesneler içinde diziler — satırlara temiz şekilde çevrilemez. Bilgi kaybolmaması için user.address.city gibi açık anahtarlarla düzleştirin; CSV'den geri kurulumu yalnızca yapı izin verdiğinde yapın."
+      },
+      {
+        "h": "Sütun eşlemesi önemlidir",
+        "p": "İçe aktarmadan önce üretilen sütunları kontrol edin: boş diziler eksik sütuna, iç içe nesneler noktalı anahtarlara dönüşür. Eşlemeyi doğrulamak için bir dakika harcayın; elektronik tablo veya veritabanı aktarımınız sürprizsiz çalışır."
       }
     ],
     "unix-timestamp-converter": [
@@ -1448,6 +1464,19 @@
       {
         "h": "Verilerim güvende mi?",
         "p": "Evet. Sayma tamamen tarayıcınızda çalışır; metniniz hiçbir sunucuya veya API'ye gönderilmez. Token kullanımını planlarken prompt'larınızı ve hassas taslaklarınızı gizli tutun."
+      },
+      {
+        "h": "Token'lar nasıl sayılır?",
+        "p": "Modeller genellikle karakter saymaz; kelimelerin parçaları olan token'ları sayar. Kabaca bir token, İngilizcede bir kelimeye, pek çok dilde bir kelimeden daha azına denk gelir. Metni modele göndermeden önce token saymak, isteğin ne kadar uzun olduğunu ve ne kadar bağlam kullandığınızı söyler."
+      },
+      {
+        "h": "Token, karakter değildir",
+        "list": [
+          "Noktalama ve boşluklar genellikle kendi token'larını oluşturur.",
+          "Nadir veya uzun kelimeler birden çok token'a bölünür.",
+          "Token bütçesi, komut ile yanıt arasında paylaşılır.",
+          "Aynı metin farklı modellerde farklı sayılar üretebilir."
+        ]
       }
     ],
     "lorem-ipsum-generator": [
@@ -1467,6 +1496,19 @@
       {
         "h": "Verilerim güvende mi?",
         "p": "Evet. Metin tamamen tarayıcınızda üretilir; girdileriniz ve üretilen paragraflar hiçbir zaman gönderilmez veya saklanmaz. Kayıt yok, kurulum yok, tamamen ücretsiz."
+      },
+      {
+        "h": "Yer tutucu metin ne işe yarar?",
+        "list": [
+          "Gerçek metin yazılmadan önceki yerleşim mokap'ları.",
+          "Temsili satır uzunluklarıyla yazı tipi ve boşluk testleri.",
+          "Örnek metin gerektiren editoryal şablonlar ve baskı provaları.",
+          "Gerçek içerikle dikkat dağıtmaması gereken dokümantasyon örnekleri."
+        ]
+      },
+      {
+        "h": "Yer tutucuları açıkça işaretli tutun",
+        "p": "Lorem Ipsum bilinçli olarak anlamsızdır; böylece inceleyenler asla son metinle karıştırmaz. Gerçek metinle değiştirirken başlıkları ve uzun paragrafları da kontrol edin — garip satır sonları genellikle yalnızca özgün içerikle ortaya çıkar."
       }
     ],
     "tip-calculator": [
@@ -1639,6 +1681,19 @@
       {
         "h": "Verilerim güvende mi?",
         "p": "Evet. Sıralama tamamen tarayıcınızda çalışır; metniniz hiçbir zaman gönderilmez veya saklanmaz. Kayıt yok, tamamen ücretsiz."
+      },
+      {
+        "h": "Önemli sıralama kuralları",
+        "list": [
+          "İsim ve kelime listeleri için alfabetik A→Z ve Z→A.",
+          "Sürüm no, puan veya fiyatlar için sayısal sıralama.",
+          "Büyük/küçük harf eşlemesini dikkate al ki büyük harfli kelimeler üstte toplanmasın.",
+          "Sıralarken tekrarları temizlemek için kopyaları kaldır."
+        ]
+      },
+      {
+        "h": "Sıralama ne zaman işe yarar?",
+        "p": "Karışık listeler zaman kaybettirir: sıralama, kopyaları anında bulur, karşılaştırmayı kolaylaştırır ve düzensiz bir dışa aktarmayı organize bir referansa çevirir. Yayınlamadan önce bir müfredatı, isim listesini veya seçenekleri sıralayın."
       }
     ],
     "list-shuffler": [
@@ -1711,6 +1766,19 @@
           "Bu resim sıkıştırıcı ücretsiz mi? Evet — araç tamamen ücretsiz ve sınırsızdır.",
           "Görsellerim bir sunucuya yükleniyor mu? Hayır, sıkıştırma tamamen tarayıcınızda çalışır ve dosyalarınız cihazınızdan çıkmaz.",
           "Hangi format daha iyi sıkışır? JPEG ve WebP fotoğraflarda en küçük dosyayı verir; PNG şeffaflığı ve net kenarları korur."
+        ]
+      },
+      {
+        "h": "Ne kadar sıkıştırmalısınız?",
+        "p": "Tek bir mükemmel kalite ayarı yoktur; doğru değer görsele ve kullanımına bağlıdır. Kalite kaydırıcısını, dosya yeterince küçük olana ve görsel gösterdiğiniz boyutta hâlâ temiz görünene kadar yavaşça düşürün. Sadece sayıya bakmak yerine sonucu araç içinde önizleyin."
+      },
+      {
+        "h": "Web görselleri için en iyi uygulamalar",
+        "list": [
+          "Gerçekte gösterilecek genişliğe küçültün — fazla pikseller yalnızca bayt ekler.",
+          "Fotoğraflar için JPEG, modern ve daha küçük bir alternatif için WebP kullanın.",
+          "Şeffaflığı yalnızca gerçekten gerektiğinde PNG olarak koruyun.",
+          "İçerik görselleri için 100 KB altını hedefleyin; kapak görselleri biraz daha yüksek olabilir."
         ]
       }
     ],
@@ -1827,6 +1895,19 @@
           "Hangi ayraç en iyisi? Tireler SEO için en yaygın tercihtir, ancak sisteminiz bekliyorsa alt çizgi de işinizi görür.",
           "Bu araç metnimi bir yere gönderiyor mu? Hayır. Her şey tarayıcınızda çalışır, girdileriniz cihazınızdan çıkmaz."
         ]
+      },
+      {
+        "h": "İyi bir slug'ı ne yapar?",
+        "list": [
+          "Küçük harfler ve tireler — boşluk veya özel karakter yok.",
+          "Kısa: üç ila beş kelime genellikle yeterlidir.",
+          "Sayfanızın ana anahtar kelimesini içersin.",
+          "Sabit olsun: URL'ler dizine alındığı için slug'ı az değiştirin."
+        ]
+      },
+      {
+        "h": "Slug ve SEO",
+        "p": "Arama motorları URL'yi bir alaka sinyali olarak okur, kullanıcılar tıklamadan önce okur. /nasil-ekmek-yapilir gibi net bir slug, her ikisine de sayfanın neyi anlattığını söyler. Başlık değişse bile slug'ı koruyun; yeniden yazmak zorunda kalırsanız yönlendirme kurun."
       }
     ],
     "meta-tag-generator": [
@@ -1850,6 +1931,19 @@
           "İdeal açıklama uzunluğu nedir? 140-160 karakter arası, mesajı tam olarak iletmek için yeterli alan sağlar.",
           "Twitter kartları için görsel şart mı? Büyük görselli kart en iyi görünür; ancak araç görsel yoksa özet kartı kullanır."
         ]
+      },
+      {
+        "h": "Gerçekten ihtiyacınız olan meta etiketler",
+        "list": [
+          "Başlık (60 karakter altı) ve meta açıklama (yaklaşık 155).",
+          "Arama motorlarını tercih edilen sürüme yönlendiren canonical URL.",
+          "Sosyal paylaşımları kontrol eden Open Graph (og:title, og:image).",
+          "Mobil tarayıcıların doğru çizmesi için charset ve viewport."
+        ]
+      },
+      {
+        "h": "Yayınlamadan önce önizleyin",
+        "p": "Meta veri, yalnızca planladığınız gibi göründüğünde işe yarar. Sonucu bir arama snippet önizlemesinde deneyin; başlığın ve açıklamanın nasıl davrandığını görün, sonra snippet ikna edici olana kadar metni ince ayarlayın."
       }
     ],
     "keyword-density-checker": [
@@ -1873,6 +1967,14 @@
           "Noktalama işaretleri sayımı etkiler mi? Evet, araç noktalamayı temizler; böylece kelime ve kelime. aynı terim olarak sayılır.",
           "Metnim bir yere yükleniyor mu? Hayır, analiz tamamen tarayıcınızda yapılır."
         ]
+      },
+      {
+        "h": "İyi bir yoğunluk nedir?",
+        "p": "Kesin bir kural yoktur, ancak bir anahtar kelimenin her paragrafta doğal olarak bir veya iki kez geçmesi genellikle sağlıklıdır. Çok yüksek tekrar, okunabilirlik sorunları yaratır ve keyword stuffingle gibi görünür. Denetleyiciyi tam bir yüzde kovalamak için değil, tutarlılık için kullanın."
+      },
+      {
+        "h": "Yoğunluk hedef değildir",
+        "p": "Arama motorları bir sayfanın konuyu gerçekten kapsayıp kapsamadığını değerlendirir; bir ifadenin belirli sayıda geçmesini değil. En iyi yanıtı yazın, ardından kazara aşırı kullanımı veya unutulan ana terimi yakalamak için yoğunluk aracını kullanın."
       }
     ],
     "serp-preview": [
@@ -1895,6 +1997,19 @@
           "Google her zaman benim title etiketimi kullanır mı? Her zaman değil; çok uzun, çok kısa veya anahtar kelimeyle dolu gördüğü başlıkları yeniden yazabilir.",
           "Yeşil ve turuncu sayaçlar ne anlama geliyor? Yeşil, önerilen uzunluk içindesiniz demektir; turuncu ise metnin kesilme ihtimali olduğunu gösterir.",
           "Önizleme piksel mükemmeliyetinde mi? Google'ın masaüstü düzenine yakın bir simülasyondur ve yazdıkça canlı güncellenir."
+        ]
+      },
+      {
+        "h": "Google'ın kırptığı yerler",
+        "p": "Çok uzun başlıklar kelimenin ortasında kesilir, uzun açıklamalar ise üç noktayla biter. Geniş bir önizlemeyi test etmek kesim noktasını tam olarak gösterir; böylece önemli kelimeleri görünür kısımda tutabilirsiniz."
+      },
+      {
+        "h": "Tık alan bir snippet nasıl yazılır?",
+        "list": [
+          "Değerle başlayın: sayfanın sunduğu veya çözdüğü şey.",
+          "Anahtar kelimeyi erken kullanın, ama doğal okuyun.",
+          "Görünür sınırlar içinde kalın — pikselleri markaya harcamayın.",
+          "Belirsiz bir ifade yerine somut bir vaatle bitirin."
         ]
       }
     ],
@@ -1984,6 +2099,19 @@
           "Türkçe harfler çevrilebilir mi? Hayır — ç ve ş gibi Türkçe karakterler standart Mors'da olmadığından aynen bırakılır.",
           "Kelimeler neden / ile ayrılıyor? Bu, Mors metninde kelimeler arası boşluğu göstermek için yaygın kullanılan kuraldır.",
           "Mesajım bir sunucuya gönderiliyor mu? Hayır, tüm çeviri tarayıcınızda yerel olarak çalışır."
+        ]
+      },
+      {
+        "h": "Mors kodunun temelleri",
+        "p": "Mors, her harfi nokta (kısa) ve çizgi (uzun) desenleriyle, aralarına verilen duraklarla değiştirir. Harfler bir duraklamayla, kelimeler üç duraklamayla ayrılır. Mors'u okunur yapan zamanlamadır — sadece hangi işaretlerin olduğu değil."
+      },
+      {
+        "h": "Pratik ipuçları",
+        "list": [
+          "Önce birkaç harf öğrenin — en ünlü desen olan SOS ile başlayın.",
+          "Kendi adınızı dönüştürün ve gerçek metnin Mors'a dönüşünü görün.",
+          "Mors'a çevirin, deseni kopyalayın ve ezberden okuyun.",
+          "Eğlenceli projeler, bulmacalar ve erken radyo öğrenimi için kullanın."
         ]
       }
     ],
@@ -2260,6 +2388,19 @@
           "Aynı string iki kez çıkabilir mi? Rastgeleliğin doğası gereği teknik olarak tekrar mümkündür, ancak uzun string'lerde olasılık astronomik derecede küçüktür.",
           "Sonuç saklanır veya yüklenir mi? Hayır — üretim tarayıcınızda yerel olarak olur ve hiçbir şey sunucuya gönderilmez."
         ]
+      },
+      {
+        "h": "Rastgele metinler ne için kullanılır?",
+        "list": [
+          "Asla tekrar etmemesi gereken parola tuzları ve sıfırlama token'ları.",
+          "Test verileri ve fixture'lar için geçici tanımlayıcılar.",
+          "Dokümantasyon ve demolar için örnek anahtarlar.",
+          "Ortamlar arasında kopyala-yapıştırda benzersiz ad sonları."
+        ]
+      },
+      {
+        "h": "Uzunluk ve entropi",
+        "p": "Daha büyük alfabe ve daha uzun metinler çok daha fazla kombinasyon üretir. Tuz veya token gibi güvenlik açısından kritik değerler için tam karakter setinden 32+ karakter tercih edin. Gösterim veya test için kısa metinler yeterli ve yazması kolaydır."
       }
     ],
     "jwt-generator": [
