@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
-import { ADS_CLIENT } from "@/lib/ads";
+import { ADS_CLIENT, ADS_ENABLED } from "@/lib/ads";
+import AdSlotClient from "@/components/AdSlotClient";
 
 export default async function AdSlot({
   slot = "bottom",
@@ -7,17 +8,13 @@ export default async function AdSlot({
   slot?: "top" | "bottom";
 }) {
   const t = await getTranslations("AdSlot");
-  const adsEnabled =
-    process.env.NEXT_PUBLIC_ADS_ENABLED === "true" &&
-    Boolean(process.env.NEXT_PUBLIC_ADS_CLIENT);
-  const clientId = process.env.NEXT_PUBLIC_ADS_CLIENT || ADS_CLIENT;
-  const adSlotId =
-    slot === "top"
-      ? process.env.NEXT_PUBLIC_ADS_SLOT_TOP || ""
-      : process.env.NEXT_PUBLIC_ADS_SLOT_BOTTOM || "";
   const elementId = slot === "top" ? "ad-top" : "ad-bottom";
+  const adSlotId =
+    (slot === "top"
+      ? process.env.NEXT_PUBLIC_ADS_SLOT_TOP
+      : process.env.NEXT_PUBLIC_ADS_SLOT_BOTTOM) || "auto";
 
-  if (!adsEnabled || !adSlotId) {
+  if (!ADS_ENABLED) {
     return (
       <div className="mt-8">
         <div
@@ -49,19 +46,10 @@ export default async function AdSlot({
 
   return (
     <div className="mt-8">
-      <ins
-        id={elementId}
-        className="adsbygoogle"
-        style={{ display: "block", minHeight: "90px" }}
-        data-ad-client={clientId}
-        data-ad-slot={adSlotId}
-        data-ad-format="auto"
-        data-full-width-responsive="true"
-      />
-      <script
-        dangerouslySetInnerHTML={{
-          __html: "(window.adsbygoogle = window.adsbygoogle || []).push({});",
-        }}
+      <AdSlotClient
+        elementId={elementId}
+        clientId={ADS_CLIENT}
+        slotId={adSlotId}
       />
     </div>
   );

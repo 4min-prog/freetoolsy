@@ -77,6 +77,12 @@
   "AdSlot": {
     "advertisement": "Reklam"
   },
+  "CookieBanner": {
+    "title": "Çerez tercihleri",
+    "text": "Analitik ve reklam amaçlı çerezler kullanıyoruz. Devam etmeniz halinde Gizlilik Politikamızı kabul etmiş sayılırsınız.",
+    "accept": "Tümünü Kabul Et",
+    "reject": "Reddet"
+  },
   "ToolExplorer": {
     "results": "Sonuçlar",
     "toolCount": "{count} araç",

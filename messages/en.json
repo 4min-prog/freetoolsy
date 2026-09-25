@@ -74,7 +74,13 @@
     "toLight": "Switch to light mode",
     "toDark": "Switch to dark mode"
   },
-  "AdSlot": {
+    "CookieBanner": {
+      "title": "Cookie preferences",
+      "text": "We use cookies for analytics and advertising. By continuing, you accept our Privacy Policy.",
+      "accept": "Accept All",
+      "reject": "Reject"
+    },
+    "AdSlot": {
     "advertisement": "Advertisement"
   },
   "ToolExplorer": {

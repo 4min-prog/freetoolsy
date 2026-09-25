@@ -3,16 +3,16 @@ import { Inter } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
-import Script from "next/script";
 import { routing, type Locale } from "@/i18n/routing";
 import { pickClientMessages } from "@/lib/clientMessages";
-import { ADS_CLIENT } from "@/lib/ads";
+import { ADS_CLIENT, ADS_ENABLED } from "@/lib/ads";
 import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ThemeGuard from "@/components/ThemeGuard";
 import ToastHost from "@/components/ToastHost";
 import PageViewTracker from "@/components/PageViewTracker";
+import CookieBanner from "@/components/CookieBanner";
 
 const inter = Inter({
   subsets: ["latin", "latin-ext"],
@@ -104,11 +104,6 @@ export default async function RootLayout({
     <html lang={locale} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
-        <script
-          async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADS_CLIENT}`}
-          crossOrigin="anonymous"
-        />
       </head>
       <body className={`${inter.variable} flex min-h-screen flex-col antialiased`}>
         <ThemeGuard />
@@ -118,21 +113,8 @@ export default async function RootLayout({
           {children}
           <Footer />
           <ToastHost />
+          <CookieBanner adsClient={ADS_CLIENT} adsEnabled={ADS_ENABLED} />
         </NextIntlClientProvider>
-        <Script
-          id="google-analytics"
-          strategy="lazyOnload"
-          src="https://www.googletagmanager.com/gtag/js?id=G-6J6JB9SHKZ"
-        />
-        <Script id="google-analytics-config" strategy="lazyOnload">
-          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-6J6JB9SHKZ",{send_page_view:false});`}
-        </Script>
-        <Script
-          id="goatcounter"
-          strategy="lazyOnload"
-          data-goatcounter="https://freetoolsy.goatcounter.com/count"
-          src="https://gc.zgo.at/count.js"
-        />
       </body>
     </html>
   );

@@ -1,3 +1,5 @@
+import { hasAccepted } from "@/lib/consent";
+
 declare global {
   interface Window {
     dataLayer?: unknown[];
@@ -15,7 +17,7 @@ export function track(
   event: string,
   params: Record<string, string | number | boolean> = {}
 ): void {
-  if (typeof window === "undefined") return;
+  if (typeof window === "undefined" || !hasAccepted()) return;
   if (typeof window.gtag === "function") {
     window.gtag("event", event, params);
     return;
@@ -24,7 +26,7 @@ export function track(
 }
 
 export function pageView(): void {
-  if (typeof window === "undefined") return;
+  if (typeof window === "undefined" || !hasAccepted()) return;
   pushToDataLayer([
     "event",
     "page_view",
