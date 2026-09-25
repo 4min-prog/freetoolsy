@@ -4384,7 +4384,9 @@
       "result": "{from} eşittir",
       "reverse": "{to}",
       "emptyState": "Dönüşüm sonucunu görmek için bir tutar girin.",
-      "note": "Kurlar, düzenleyebileceğiniz sabit referans değerleridir. Dönüşümler tamamen tarayıcınızda çalışır ve hiçbir şey yüklenmez."
+      "note": "Canlı kurlar open.er-api.com’dan gelir, her gün güncellenir. Dilerseniz kendi kurunuzu da girebilirsiniz.",
+      "liveStatus": "Canlı kurlar · son güncelleme {time}",
+      "fallbackStatus": "Canlı kurlar alınamadı — referans kurlar kullanılıyor."
     },
     "compoundInterest": {
       "finalAmount": "Final bakiye",

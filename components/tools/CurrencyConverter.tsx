@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import SampleButton from "@/components/SampleButton";
 
@@ -15,19 +15,61 @@ const CURRENCIES = [
   "CAD",
   "CHF",
   "RUB",
+  "AED",
+  "SAR",
+  "KWD",
+  "QAR",
+  "IRR",
+  "KRW",
+  "SGD",
+  "NOK",
+  "SEK",
+  "DKK",
+  "PLN",
+  "CZK",
+  "HUF",
+  "RON",
+  "ILS",
+  "ZAR",
+  "BRL",
+  "MXN",
+  "INR",
+  "PKR",
+  "NZD",
 ];
 
 const RATES_TO_USD: Record<string, number> = {
   USD: 1,
-  EUR: 1.08,
-  TRY: 34.5,
-  GBP: 1.27,
-  JPY: 149,
-  CNY: 7.2,
-  AUD: 0.65,
-  CAD: 0.74,
-  CHF: 1.13,
-  RUB: 93,
+  EUR: 0.88,
+  TRY: 48.9,
+  GBP: 0.76,
+  JPY: 158.7,
+  CNY: 6.72,
+  AUD: 1.43,
+  CAD: 1.41,
+  CHF: 0.83,
+  RUB: 84.5,
+  AED: 3.67,
+  SAR: 3.75,
+  KWD: 0.31,
+  QAR: 3.64,
+  IRR: 42100,
+  KRW: 1390,
+  SGD: 1.3,
+  NOK: 10.6,
+  SEK: 10.3,
+  DKK: 6.55,
+  PLN: 3.9,
+  CZK: 22.5,
+  HUF: 355,
+  RON: 4.35,
+  ILS: 3.55,
+  ZAR: 13.8,
+  BRL: 4.95,
+  MXN: 17.4,
+  INR: 83.1,
+  PKR: 278,
+  NZD: 1.55,
 };
 
 function cleanNumber(value: string): number {
@@ -40,15 +82,33 @@ export default function CurrencyConverter() {
   const [from, setFrom] = useState("USD");
   const [to, setTo] = useState("TRY");
   const [rateOverride, setRateOverride] = useState("");
+  const [ratesReady, setRatesReady] = useState(false);
+  const [liveOk, setLiveOk] = useState(false);
+  const [rates, setRates] = useState<Record<string, number> | null>(null);
+  const [updatedAt, setUpdatedAt] = useState<number | null>(null);
   const t = useTranslations("comp.currencyConverter");
   const locale = useLocale();
 
+  useEffect(() => {
+    fetch("/api/rates")
+      .then((response) => response.json())
+      .then((data) => {
+        setRates(data?.rates ?? null);
+        setUpdatedAt(data?.updatedAt ?? null);
+        setLiveOk(!!data?.live);
+      })
+      .catch(() => {
+        setLiveOk(false);
+      })
+      .finally(() => setRatesReady(true));
+  }, []);
+
   const defaultRate = useMemo(() => {
-    const f = RATES_TO_USD[from] ?? 1;
-    const d = RATES_TO_USD[to] ?? 1;
+    const f = rates?.[from] ?? RATES_TO_USD[from] ?? 1;
+    const d = rates?.[to] ?? RATES_TO_USD[to] ?? 1;
     if (!f || !d) return 0;
     return d / f;
-  }, [from, to]);
+  }, [from, to, rates]);
 
   const rate = useMemo(() => {
     const override = cleanNumber(rateOverride);
@@ -62,6 +122,14 @@ export default function CurrencyConverter() {
     return value * rate;
   }, [amount, rate]);
 
+  const timeLabel = useMemo(() => {
+    if (!updatedAt) return "";
+    return new Intl.DateTimeFormat(locale, {
+      dateStyle: "short",
+      timeStyle: "short",
+    }).format(updatedAt * 1000);
+  }, [updatedAt, locale]);
+
   const formatter = useMemo(
     () =>
       new Intl.NumberFormat(locale, {
@@ -73,8 +141,8 @@ export default function CurrencyConverter() {
   );
 
   function swap() {
-    setFrom(to);
     setTo(from);
+    setFrom(to);
     setRateOverride("");
   }
 
@@ -169,7 +237,13 @@ export default function CurrencyConverter() {
         </button>
       </div>
 
-      <p className="mt-3 text-xs leading-relaxed text-muted">{t("note")}</p>
+      <p className="mt-3 text-xs leading-relaxed text-muted">
+        {ratesReady
+          ? liveOk && updatedAt
+            ? t("liveStatus", { time: timeLabel })
+            : t("fallbackStatus")
+          : t("note")}
+      </p>
 
       {result !== null && rate > 0 ? (
         <div className="mt-5 rounded-lg border border-border bg-bg px-5 py-4 text-center">

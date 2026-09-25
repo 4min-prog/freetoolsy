@@ -4384,7 +4384,9 @@
       "result": "{from} equals",
       "reverse": "{to}",
       "emptyState": "Enter an amount to see the converted value.",
-      "note": "Rates are fixed reference values you can edit. Conversions run entirely in your browser and nothing is uploaded."
+      "note": "Live rates from open.er-api.com, updated daily. You can still enter a custom rate.",
+      "liveStatus": "Live rates · last updated {time}",
+      "fallbackStatus": "Live rates unavailable — using reference rates."
     },
     "compoundInterest": {
       "finalAmount": "Final balance",
