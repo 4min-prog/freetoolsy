@@ -85,12 +85,12 @@ export default function ToolExplorer() {
               onClick={() => selectCategory("")}
               className={`group flex w-full items-center justify-between gap-2 border-b border-l-2 py-3 pl-3 pr-2 text-left text-sm transition-colors ${
                 !cat
-                  ? "border-l-accent font-medium text-foreground"
-                  : "border-l-transparent text-muted hover:text-foreground"
+                  ? "border-l-accent bg-surface-2 font-medium text-foreground"
+                  : "border-l-transparent text-muted hover:border-l-border hover:bg-surface/60 hover:text-foreground"
               }`}
             >
               {t("tabAll")}
-              <span className="font-mono text-[11px] tabular-nums text-faint">
+              <span className="font-mono text-[11px] tabular-nums text-faint transition-colors group-hover:text-muted">
                 {tools.length}
               </span>
             </button>
@@ -103,8 +103,8 @@ export default function ToolExplorer() {
                   onClick={() => selectCategory(category.id)}
                   className={`group flex w-full items-center justify-between gap-2 border-b border-l-2 py-3 pl-3 pr-2 text-left text-sm transition-colors ${
                     active
-                      ? "border-l-accent font-medium text-foreground"
-                      : "border-l-transparent text-muted hover:text-foreground"
+                      ? "border-l-accent bg-surface-2 font-medium text-foreground"
+                      : "border-l-transparent text-muted hover:border-l-border hover:bg-surface/60 hover:text-foreground"
                   }`}
                 >
                   <span className="flex items-center gap-2">
@@ -114,7 +114,7 @@ export default function ToolExplorer() {
                     />
                     {tc(category.id)}
                   </span>
-                  <span className="font-mono text-[11px] tabular-nums text-faint">
+                  <span className="font-mono text-[11px] tabular-nums text-faint transition-colors group-hover:text-muted">
                     {getToolsByCategory(category.id).length}
                   </span>
                 </button>
@@ -164,7 +164,7 @@ export default function ToolExplorer() {
                     <span className="text-lg font-semibold tracking-tight text-text">
                       {tc(category.id)}
                     </span>
-                    <span className="font-mono text-[11px] tabular-nums text-faint">
+                    <span className="font-mono text-[11px] tabular-nums text-faint transition-colors group-hover:text-muted">
                       {String(categoryTools.length).padStart(2, "0")}
                     </span>
                   </h2>
