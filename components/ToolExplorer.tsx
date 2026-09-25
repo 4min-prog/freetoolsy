@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useMessages, useTranslations } from "next-intl";
 import ToolCard from "@/components/ToolCard";
 import CategoryIcon from "@/components/CategoryIcon";
@@ -21,12 +21,21 @@ export default function ToolExplorer() {
   const [query, setQuery] = useState("");
   const [cat, setCat] = useState("");
   const [visible, setVisible] = useState<Record<string, number>>({});
+  const firstLoad = useRef(true);
 
   useEffect(() => {
     function sync() {
       const hash = window.location.hash.replace(/^#/, "");
       if (hash && hash !== cat && categories.some((c) => c.id === hash)) {
         setCat(hash);
+        if (firstLoad.current) {
+          window.setTimeout(() => {
+            const target =
+              document.getElementById(hash) ??
+              document.getElementById("tools-explorer");
+            target?.scrollIntoView({ behavior: "auto", block: "start" });
+          }, 0);
+        }
       }
       const params = new URLSearchParams(window.location.search);
       const q = params.get("q");
@@ -38,6 +47,7 @@ export default function ToolExplorer() {
             ?.scrollIntoView({ behavior: "smooth", block: "start" });
         });
       }
+      firstLoad.current = false;
     }
     sync();
     window.addEventListener("hashchange", sync);
@@ -50,6 +60,18 @@ export default function ToolExplorer() {
   }, []);
 
   const normalized = query.toLocaleLowerCase().trim();
+
+  const firstRun = useRef(true);
+  useEffect(() => {
+    if (firstRun.current) {
+      firstRun.current = false;
+      return;
+    }
+    const target =
+      (cat ? document.getElementById(cat) : null) ??
+      document.getElementById("tools-explorer");
+    target?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [cat]);
 
   const filtered = normalized
     ? tools.filter((tool) => {
@@ -70,9 +92,6 @@ export default function ToolExplorer() {
     } else {
       history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
     }
-    requestAnimationFrame(() => {
-      document.getElementById(id || "tools-explorer")?.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
   }
 
   return (
