@@ -1,17 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import SplitText from "./SplitText";
 
-type RotatingHeroWordProps = {
+type RotatingWordsProps = {
   words: string[];
   intervalMs?: number;
 };
 
-export default function RotatingHeroWord({
+export default function RotatingWords({
   words,
   intervalMs = 2600,
-}: RotatingHeroWordProps) {
+}: RotatingWordsProps) {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -24,18 +23,8 @@ export default function RotatingHeroWord({
   const word = words[index % words.length];
 
   return (
-    <SplitText
-      key={word}
-      tag="span"
-      text={word}
-      delay={60}
-      duration={0.5}
-      ease="power3.out"
-      from={{ opacity: 0, y: 40 }}
-      to={{ opacity: 1, y: 0 }}
-      threshold={0.1}
-      rootMargin="-100px"
-      textAlign="left"
-    />
+    <span key={word} className="hero-rotating-word">
+      {word}
+    </span>
   );
 }

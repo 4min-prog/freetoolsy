@@ -8,7 +8,7 @@ import ToolExplorer from "@/components/ToolExplorer";
 import SearchBox from "@/components/SearchBox";
 import PopularStrip from "@/components/PopularStrip";
 import JsonLd from "@/components/JsonLd";
-import RotatingHeroWord from "@/components/RotatingHeroWord";
+import RotatingWords from "@/components/RotatingWords";
 import { Link } from "@/i18n/navigation";
 import { displayToolCount, tools } from "@/data/tools";
 import { toolPath } from "@/lib/paths";
@@ -55,7 +55,7 @@ export default async function Home({ params }: { params: { locale: string } }) {
   const trustBadges = ["trustBrowser", "trustFree", "trustPrivacy"];
   const categoryNames = (messages as { Categories?: Record<string, string> })
     .Categories;
-  const heroWords = ["fun", "text", "security", "developer", "calculation", "image", "seo"]
+  const heroWords = ["text", "developer", "security", "calculation", "image", "seo", "fun"]
     .map((id) => categoryNames?.[id])
     .filter((name): name is string => Boolean(name));
 
@@ -123,20 +123,11 @@ export default async function Home({ params }: { params: { locale: string } }) {
               </span>
               {titleParts[1]?.trim() && (
                 <span className="mt-2 block font-normal text-muted">
-                  {locale === "tr" ? (
-                    <>
-                      {heroWords.length > 0 && <RotatingHeroWord words={heroWords} />}{" "}
-                      {t("heroTitleFor")}
-                    </>
+                  {t("heroTitleFor")}{" "}
+                  {heroWords.length > 0 ? (
+                    <RotatingWords words={heroWords} />
                   ) : (
-                    <>
-                      {t("heroTitleFor")}{" "}
-                      {heroWords.length > 0 ? (
-                        <RotatingHeroWord words={heroWords} />
-                      ) : (
-                        titleParts[1].trim()
-                      )}
-                    </>
+                    titleParts[1].trim()
                   )}
                 </span>
               )}
