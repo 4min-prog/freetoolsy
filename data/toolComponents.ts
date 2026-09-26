@@ -86,6 +86,10 @@ export const toolComponents: Record<string, ComponentType> = {
   "random-number-generator": dynamic(() => import("@/components/tools/RandomNumberGenerator")),
   "stopwatch-timer": dynamic(() => import("@/components/tools/StopwatchTimer")),
   "time-zone-converter": dynamic(() => import("@/components/tools/TimeZoneConverter")),
+  "qr-code-reader": dynamic(() => import("@/components/tools/QrCodeReader")),
+  "text-extractor": dynamic(() => import("@/components/tools/TextExtractor")),
+  "css-gradient-generator": dynamic(() => import("@/components/tools/CssGradientGenerator")),
+  "border-radius-generator": dynamic(() => import("@/components/tools/BorderRadiusGenerator")),
 };
 
 export const TOOL_COMPONENT_SLUGS = Object.keys(toolComponents);

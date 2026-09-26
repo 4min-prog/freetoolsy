@@ -83,6 +83,10 @@ export const TOOL_COMP_NAMESPACE: Record<string, string> = {
   "random-number-generator": "randomNumberGenerator",
   "stopwatch-timer": "stopwatchTimer",
   "time-zone-converter": "timeZoneConverter",
+  "qr-code-reader": "qrCodeReader",
+  "text-extractor": "textExtractor",
+  "css-gradient-generator": "cssGradientGenerator",
+  "border-radius-generator": "borderRadiusGenerator",
 };
 
 export function toolCompNamespace(slug: string): string | undefined {

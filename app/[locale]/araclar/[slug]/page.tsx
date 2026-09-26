@@ -218,7 +218,7 @@ export default async function AraclarPage({
                   className="flex items-center gap-2 rounded-lg border border-border bg-bg px-3 py-2 text-sm text-muted transition-colors hover:border-accent hover:text-accent"
                 >
                   <span aria-hidden="true" className="text-accent">
-                    â†’
+                    →
                   </span>
                   <span className="truncate">{guide.content[locale].title}</span>
                 </Link>

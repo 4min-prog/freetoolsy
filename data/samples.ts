@@ -45,4 +45,6 @@ export const SAMPLES: Record<string, string> = {
   "subnet-calculator": "192.168.1.0/24",
   "wcag-contrast-checker": "#3b82f6",
   "time-zone-converter": "2026-01-15T14:30",
+  "text-extractor":
+    "Merhaba! Bana adres@example.com ve destek@freetoolsy.vercel.test üzerinden ulaşabilirsiniz.\nSiteyi https://freetoolsy.com adresinden ziyaret edin, #ücretsiz #geliştirici etiketlerini kullanın.\nTelefon: +90 555 123 45 67",
 };

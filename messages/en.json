@@ -732,6 +732,34 @@
       "title": "Time Zone Converter - Convert Between Time Zones",
       "pageDesc": "Convert a date and time between any two time zones. See the current time in hundreds of cities and get the UTC offset for each zone.",
       "intro": "Convert any date and time from one time zone to another, with daylight saving time handled automatically."
+    },
+    "qr-code-reader": {
+      "name": "QR Code Reader",
+      "desc": "Decode a QR code from any image right in your browser — no upload required.",
+      "title": "QR Code Reader - Scan QR Codes From Images Online",
+      "pageDesc": "Decode QR codes from images instantly and privately. Upload a screenshot or photo of a QR code and read the text, link or data it contains — everything runs in your browser.",
+      "intro": "Upload an image containing a QR code and this tool reads it on your device. Decoding runs with the jsQR engine in your browser, so the image never leaves your computer."
+    },
+    "text-extractor": {
+      "name": "Text Extractor",
+      "desc": "Pull email addresses, phone numbers, URLs and hashtags out of any text in one click.",
+      "title": "Text Extractor - Emails, Phone Numbers, URLs and Hashtags",
+      "pageDesc": "Extract email addresses, phone numbers, URLs and hashtags from any text instantly. Works fully in your browser — nothing is uploaded.",
+      "intro": "Paste any text and this tool collects every email address, phone number, URL and hashtag in it. Extraction runs on your device, so the text never leaves your computer."
+    },
+    "css-gradient-generator": {
+      "name": "CSS Gradient Generator",
+      "desc": "Create linear gradients visually and copy the ready-to-use CSS code.",
+      "title": "CSS Gradient Generator - Linear Gradient Maker With Live Preview",
+      "pageDesc": "Design CSS linear gradients visually. Pick two or three colors, choose the direction and angle, preview the result live and copy the ready-to-use CSS. Free, no sign-up, works in your browser.",
+      "intro": "Choose two or three colors, set the angle and watch a live preview update as you go. The ready-to-paste CSS is always one click away."
+    },
+    "border-radius-generator": {
+      "name": "Border Radius Generator",
+      "desc": "Round box corners visually and copy the border-radius CSS in one click.",
+      "title": "Border Radius Generator - Rounded Corners With Live Preview",
+      "pageDesc": "Create border-radius CSS visually. Adjust each corner, preview the rounded box live and copy the code into your stylesheet. Free and works entirely in your browser.",
+      "intro": "Adjust the corner sliders and watch a live preview change as the radius grows. Link the corners to keep them equal, or style each one separately, then copy the generated CSS."
     }
   },
   "ToolContent": {
@@ -3261,6 +3289,124 @@
           "Is anything transmitted? No — everything runs locally in your browser."
         ]
       }
+    ],
+    "qr-code-reader": [
+      {
+        "h": "What is a QR code reader?",
+        "p": "A QR code reader decodes the patterns printed on a QR square and turns them into readable content. Depending on the code, that content can be a website address, plain text, Wi-Fi settings, contact details or a payment reference."
+      },
+      {
+        "h": "How does reading an image work?",
+        "list": [
+          "The image is rendered on a hidden canvas in your browser.",
+          "jsQR inspects the position markers and the black-and-white matrix.",
+          "The captured data is decoded from the pattern.",
+          "The result is shown as text you can copy."
+        ]
+      },
+      {
+        "h": "When do you need to read a QR code from an image?",
+        "list": [
+          "Recovering a link from an old screenshot.",
+          "Opening a printed code that you cannot scan live.",
+          "Verifying what a code contains before trusting it.",
+          "Forwarding the raw value of a code to someone else."
+        ]
+      },
+      {
+        "h": "Why does browser-only decoding matter?",
+        "p": "The image is processed with JavaScript on your device and never uploaded. Codes sometimes contain payment or login data, so keeping the process local protects you even when the payload itself is sensitive."
+      },
+      {
+        "h": "Tips for a successful read",
+        "p": "Crop closely around the QR square, keep the image sharp and make sure the code is flat in the frame. A little blur or a steep angle is the most common reason a read fails; when it does, nothing is sent anywhere, so you can simply try a better picture."
+      }
+    ],
+    "text-extractor": [
+      {
+        "h": "What is a text extractor?",
+        "p": "A text extractor scans a block of text and separates the structured pieces from the words around them — emails, phone numbers, URLs and hashtags. Instead of scrolling through a long message looking for every address or link, you get a clean, deduplicated list."
+      },
+      {
+        "h": "What can be extracted?",
+        "list": [
+          "Email addresses such as name@example.com.",
+          "Phone numbers in common international formats.",
+          "Website links starting with http://, https:// or www.",
+          "Hashtags used on social media platforms."
+        ]
+      },
+      {
+        "h": "How does the extraction work?",
+        "p": "The tool scans the text with regular expressions tuned for each type and removes duplicates automatically. Results follow the order of the text, so the first occurrence appears first. You can copy the whole list or a single value with one click."
+      },
+      {
+        "h": "When is this useful?",
+        "list": [
+          "Cleaning a customer list that mixes contacts and notes.",
+          "Collecting links shared in a long chat conversation.",
+          "Pulling every email out of a support ticket.",
+          "Building hashtag lists from a caption or comment thread."
+        ]
+      },
+      {
+        "h": "Is my text sent anywhere?",
+        "p": "No. All matching happens in your browser with JavaScript, so the text you paste is never uploaded or stored. For the phone-number filter, formats follow a common international pattern; dial extensions and unusual separators may be skipped."
+      }
+    ],
+    "css-gradient-generator": [
+      {
+        "h": "What is a CSS gradient?",
+        "p": "A CSS gradient is a smooth transition between two or more colors that the browser draws instead of loading an image file. The linear-gradient() function renders it as a straight color blend controlled by an angle and a set of color stops."
+      },
+      {
+        "h": "How do the controls map to CSS?",
+        "p": "The angle slider writes the first argument of linear-gradient(). The first color starts at 0%, the last one finishes at 100%, and when a third color is enabled it becomes a stop in the middle whose position you can slide between 0% and 100%. The preset buttons simply pick common angles for you."
+      },
+      {
+        "h": "When should I use a gradient?",
+        "list": [
+          "Buttons, cards and hero backgrounds that need a modern look without an image.",
+          "Subtle depth on headers and sidebar items.",
+          "Placeholders and empty-state sections with no image asset.",
+          "Brand color transitions across banner areas."
+        ]
+      },
+      {
+        "h": "Why do gradients load faster than images?",
+        "p": "A gradient is pure CSS, so it adds no HTTP request and no file size. It scales to any resolution, stays crisp on high-DPI screens and adapts to the container size instantly — ideal for responsive layouts."
+      },
+      {
+        "h": "Is the generated code ready to use?",
+        "p": "Yes. The output is a single standard background property. Paste it into your stylesheet and it works in every modern browser, since linear-gradient() no longer needs a vendor prefix."
+      }
+    ],
+    "border-radius-generator": [
+      {
+        "h": "What is border-radius?",
+        "p": "border-radius rounds the corners of an element. Instead of applying a uniform radius, CSS lets you define up to four values — one per corner — so a box can look nearly square on one side and fully rounded on the other."
+      },
+      {
+        "h": "How do the four values work?",
+        "p": "The order is clockwise starting from the top-left corner: top-left, top-right, bottom-right, bottom-left. When every corner shares the same value, the shorthand border-radius: 20px is enough; otherwise all four values are written in order."
+      },
+      {
+        "h": "What can rounded corners be used for?",
+        "list": [
+          "Buttons, chips and badges with a soft pill look.",
+          "Cards and modals that feel friendlier than sharp rectangles.",
+          "Avatars that need a perfect circle by setting half the size.",
+          "Input fields and tags with a consistent radius."
+        ]
+      },
+      {
+        "h": "Should the radius be small or large?",
+        "p": "Small radii (2–8px) look subtle and professional; large radii (16–40px) feel rounded and playful. As a rule of thumb, keep the radius clearly smaller than the element — a radius larger than half the box simply produces a pill shape."
+      },
+      {
+        "h": "Is the generated CSS minimal?",
+        "p": "Yes. When the corners are linked, the tool writes the short form with a single value. As soon as any corner differs, it switches to four explicit values, so the output stays minimal and readable."
+      }
     ]
   },
   "Rehber": {
@@ -4754,6 +4900,65 @@
       "commonTitle": "Current time in popular time zones",
       "diff": "{source} → {target}",
       "note": "Conversion runs entirely in your browser using the IANA time zone database built into it. Times are correct for daylight saving changes, and nothing is sent to a server."
+    },
+    "qrCodeReader": {
+      "fileLabel": "Choose an image with a QR code",
+      "decoding": "Reading the QR code…",
+      "notFound": "No QR code found. Try a sharper or more frontal image.",
+      "result": "Decoded content",
+      "copy": "Copy",
+      "copied": "Copied",
+      "replace": "Change image",
+      "imageAlt": "Uploaded image",
+      "tip": "Works best with a clean, well-lit, frontal QR photo. Only the selected image is processed — entirely on this device."
+    },
+    "textExtractor": {
+      "inputLabel": "Paste your text",
+      "placeholder": "Paste or type your text here…",
+      "typesTitle": "Extract",
+      "email": "Email addresses",
+      "phone": "Phone numbers",
+      "url": "URLs",
+      "hashtag": "Hashtags",
+      "resultsTitle": "Extracted items",
+      "count": "{count} found",
+      "none": "Nothing found yet.",
+      "copyAll": "Copy all",
+      "copy": "Copy",
+      "copied": "Copied",
+      "tip": "Extraction happens only in your browser. Phone numbers use a common international pattern, so unusual formats may be skipped."
+    },
+    "cssGradientGenerator": {
+      "colorA": "First color",
+      "colorB": "Second color",
+      "useThree": "Add a third color",
+      "colorC": "Third color",
+      "middleStop": "Middle color position",
+      "angle": "Angle",
+      "previewTitle": "Preview",
+      "cssLabel": "CSS code",
+      "copy": "Copy CSS",
+      "copied": "Copied",
+      "tip": "The angle is measured in degrees for the CSS linear-gradient() function. With three colors enabled, the second color becomes the middle stop — slide its position between 0% and 100%.",
+      "dir": {
+        "to-right": "To right",
+        "to-bottom": "To bottom",
+        "to-bottom-right": "To bottom right",
+        "to-left": "To left",
+        "to-top": "To top"
+      }
+    },
+    "borderRadiusGenerator": {
+      "previewTitle": "Preview",
+      "linked": "Link all corners",
+      "tl": "Top-left",
+      "tr": "Top-right",
+      "br": "Bottom-right",
+      "bl": "Bottom-left",
+      "cssLabel": "CSS code",
+      "copy": "Copy CSS",
+      "copied": "Copied",
+      "tip": "When all four corners are equal, the CSS uses the short form border-radius: Npx. Otherwise four values are written clockwise starting from the top-left corner."
     }
   }
 }

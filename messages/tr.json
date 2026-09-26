@@ -732,6 +732,34 @@
       "title": "Zaman Dilimi Dönüştürücü - Saat Dilimi Çevirici",
       "pageDesc": "İki zaman dilimi arasında tarih ve saat dönüşümü yapın. Yüzlerce şehrin güncel saatini ve her dilimin UTC farkını görün.",
       "intro": "Herhangi bir tarih ve saati bir zaman diliminden diğerine dönüştürün; yaz saati uygulaması otomatik olarak hesaplanır."
+    },
+    "qr-code-reader": {
+      "name": "QR Kod Okuyucu",
+      "desc": "Bir görseldeki QR kodu tarayıcınızda okur; yükleme veya kayıt gerektirmez.",
+      "title": "QR Kod Okuyucu - Görselden QR Kod Okuma",
+      "pageDesc": "QR kodları resimden anında ve gizli şekilde okuyun. QR kod içeren bir ekran görüntüsünü veya fotoğrafı yükleyin; içindeki metni, bağlantıyı veya veriyi görün — her şey tarayıcınızda çalışır.",
+      "intro": "QR kod içeren bir görsel yükleyin; bu araç kodu cihazınızda okur. Çözümleme jsQR motoruyla tarayıcınızda yapılır, görseliniz bilgisayarınızdan asla çıkmaz."
+    },
+    "text-extractor": {
+      "name": "Metin Çıkarıcı",
+      "desc": "Bir metinden e-posta adreslerini, telefon numaralarını, URL'leri ve etiketleri tek tıkla ayıklar.",
+      "title": "Metin Çıkarıcı - E-posta, Telefon, URL ve Etiket Çıkarma",
+      "pageDesc": "Herhangi bir metinden e-posta adreslerini, telefon numaralarını, URL'leri ve etiketleri anında çıkarın. Tamamen tarayıcınızda çalışır — hiçbir şey yüklenmez.",
+      "intro": "Bir metin yapıştırın; bu araç içindeki her e-posta adresini, telefon numarasını, URL'yi ve etiketi toplar. Çıkarma işlemi cihazınızda yapılır, metin bilgisayarınızdan çıkmaz."
+    },
+    "css-gradient-generator": {
+      "name": "CSS Gradient Üretici",
+      "desc": "Lineer gradientleri görsel olarak tasarlayıp kullanıma hazır CSS kodunu kopyalayın.",
+      "title": "CSS Gradient Üretici - Canlı Önizlemeli Lineer Gradient Aracı",
+      "pageDesc": "CSS lineer gradientlerini görsel olarak tasarlayın. İki veya üç renk seçin, açıyı belirleyin, sonucu canlı önizleyin ve kullanıma hazır CSS'i kopyalayın. Ücretsiz, kayıtsız ve tarayıcınızda çalışır.",
+      "intro": "İki veya üç renk seçin, açıyı ayarlayın ve canlı önizlemenin nasıl değiştiğini izleyin. Yapıştırmaya hazır CSS her zaman tek tık uzakta."
+    },
+    "border-radius-generator": {
+      "name": "Border Radius Üretici",
+      "desc": "Köşeleri görsel olarak yuvarlayıp border-radius CSS kodunu tek tıkla kopyalayın.",
+      "title": "Border Radius Üretici - Canlı Önizlemeli Yuvarlatılmış Köşeler",
+      "pageDesc": "Border-radius CSS'ini görsel olarak oluşturun. Her köşeyi ayarlayın, yuvarlatılmış kutuyu canlı önizleyin ve kodu still dosyanıza kopyalayın. Ücretsiz ve tamamen tarayıcınızda çalışır.",
+      "intro": "Köşe kaydırıcılarını ayarlayın; yarıçap büyüdükçe canlı önizlemenin değiştiğini izleyin. Köşeleri eşit tutmak için birleştirin veya her birini ayrı şekillendirin, ardından üretilen CSS'i kopyalayın."
     }
   },
   "ToolContent": {
@@ -3261,6 +3289,124 @@
           "Bir şey gönderilir mi? Hayır — her şey tarayıcınızda yerel çalışır."
         ]
       }
+    ],
+    "qr-code-reader": [
+      {
+        "h": "QR kod okuyucu nedir?",
+        "p": "QR kod okuyucu, kare üzerindeki desenleri çözümleyerek onu okunabilir içeriğe dönüştürür. Koda bağlı olarak bu içerik bir web adresi, düz metin, Wi-Fi ayarları, iletişim bilgisi veya bir ödeme referansı olabilir."
+      },
+      {
+        "h": "Görselden okuma nasıl çalışır?",
+        "list": [
+          "Görsel, tarayıcınızda gizli bir tuval üzerine çizilir.",
+          "jsQR, konum işaretlerini ve siyah-beyaz matrisi inceler.",
+          "Desenlerden veri çözümlenir.",
+          "Sonuç kopyalayabileceğiniz metin olarak gösterilir."
+        ]
+      },
+      {
+        "h": "Bir QR kodu görselden ne zaman okumak gerekir?",
+        "list": [
+          "Eski bir ekran görüntüsündeki bağlantıyı kurtarmak.",
+          "Canlı tarayamadığınız basılı bir kodu açmak.",
+          "Bir kodu güvenmeden önce içeriğinin ne olduğunu doğrulamak.",
+          "Bir kodun ham değerini başkasına iletmek."
+        ]
+      },
+      {
+        "h": "Çözümlemenin yalnızca tarayıcıda olması neden önemli?",
+        "p": "Görsel, cihazınızda JavaScript ile işlenir ve hiçbir yere yüklenmez. Kodlar bazen ödeme veya giriş verisi içerir; işlemi cihazda tutmak, verinin kendisi hassas olsa bile sizi korur."
+      },
+      {
+        "h": "Başarılı okuma için ipuçları",
+        "p": "QR kareye yakın kesin, görseli net tutun ve kodun çerçevede düz durduğundan emin olun. Hafif bulanıklık veya dik açı, okumanın başarısız olmasının en yaygın nedenidir; başarısız olduğunda hiçbir şey bir yere gönderilmediği için daha iyi bir görsel deneyebilirsiniz."
+      }
+    ],
+    "text-extractor": [
+      {
+        "h": "Metin çıkarıcı nedir?",
+        "p": "Metin çıkarıcı, bir metin bloğunu tarar ve yapılandırılmış parçaları etrafındaki sözcüklerden ayırır — e-postalar, telefon numaraları, URL'ler ve etiketler. Uzun bir mesajda her adresi veya bağlantıyı aramak yerine tekrarsız ve temiz bir liste elde edersiniz."
+      },
+      {
+        "h": "Neler çıkarılabilir?",
+        "list": [
+          "name@example.com gibi e-posta adresleri.",
+          "Yaygın uluslararası biçimdeki telefon numaraları.",
+          "http://, https:// veya www. ile başlayan web bağlantıları.",
+          "Sosyal medya platformlarında kullanılan etiketler."
+        ]
+      },
+      {
+        "h": "Çıkarma nasıl çalışır?",
+        "p": "Araç, metni her tür için ayarlanmış düzenli ifadelerle tarar ve yineleyenleri otomatik olarak kaldırır. Sonuçlar metindeki sıraya uyar; ilk geçen önce görünür. Tüm listeyi veya tek bir değeri tek tıkla kopyalayabilirsiniz."
+      },
+      {
+        "h": "Bu özellik ne zaman işe yarar?",
+        "list": [
+          "İletişim ve notları karışık olan bir müşteri listesini temizlemek.",
+          "Uzun bir sohbet konuşmasında paylaşılan bağlantıları toplamak.",
+          "Bir destek kaydındaki tüm e-postaları ayıklamak.",
+          "Bir açıklama veya yorum zincirinden etiket listeleri oluşturmak."
+        ]
+      },
+      {
+        "h": "Metnim bir yere gönderiliyor mu?",
+        "p": "Hayır. Tüm eşleştirme tarayıcınızda JavaScript ile yapılır; yapıştırdığınız metin asla yüklenmez veya saklanmaz. Telefon filtresi yaygın uluslararası biçimi esas alır; dahili hatlar ve alışılmadık ayraçlar atlanabilir."
+      }
+    ],
+    "css-gradient-generator": [
+      {
+        "h": "CSS gradient nedir?",
+        "p": "CSS gradient, tarayıcının bir görsel dosyası yüklemek yerine çizdiği, iki veya daha fazla renk arasındaki yumuşak geçiştir. linear-gradient() fonksiyonu bunu açı ve renk duraklarıyla kontrol edilen düz bir renk karışımı olarak çizer."
+      },
+      {
+        "h": "Kontroller CSS'e nasıl dönüşür?",
+        "p": "Açı kaydırıcısı, linear-gradient() fonksiyonunun ilk parametresini yazar. İlk renk 0%'da, son renk 100%'de biter; üçüncü renk açıldığında ortadaki durağa dönüşür ve konumunu 0% ile 100% arasında kaydırabilirsiniz. Hazır yön butonları yalnızca yaygın açıları sizin için seçer."
+      },
+      {
+        "h": "Gradient ne zaman kullanılmalı?",
+        "list": [
+          "Görsel olmadan modern bir görünüm isteyen buton, kart ve hero arka planlarında.",
+          "Başlık ve kenar çubuğu öğelerinde hafif derinlik hissinde.",
+          "Görsel bulunmayan yer tutucu ve boş durum bölümlerinde.",
+          "Banner alanlarında marka rengi geçişlerinde."
+        ]
+      },
+      {
+        "h": "Gradient neden görsellerden hızlı yüklenir?",
+        "p": "Gradient tamamen CSS'tir; bu yüzden HTTP isteği ve dosya boyutu eklemez. Her çözünürlüğe ölçeklenir, yüksek piksel yoğunluklu ekranlarda net kalır ve kapsayıcı boyutuna anında uyum sağlar — duyarlı tasarımlar için idealdir."
+      },
+      {
+        "h": "Üretilen kod kullanıma hazır mı?",
+        "p": "Evet. Çıktı, standart tek bir background özelliğidir. Stil dosyanıza yapıştırın; linear-gradient() artık satıcı öneki gerektirmediği için her modern tarayıcıda çalışır."
+      }
+    ],
+    "border-radius-generator": [
+      {
+        "h": "border-radius nedir?",
+        "p": "border-radius, bir öğenin köşelerini yuvarlatır. CSS, tek tip bir yarıçap uygulamak yerine köşe başına en fazla dört değer tanımlamanıza izin verir; böylece bir kutu bir yandan neredeyse kare, diğer yandan tamamen yuvarlak görünebilir."
+      },
+      {
+        "h": "Dört değer nasıl çalışır?",
+        "p": "Sıra, sol üst köşeden başlayarak saat yönünde gider: sol üst, sağ üst, sağ alt, sol alt. Tüm köşeler aynı değeri taşıdığında kısa biçim border-radius: 20px yeterlidir; aksi hâlde dört değer sırayla yazılır."
+      },
+      {
+        "h": "Yuvarlatılmış köşeler nerelerde kullanılır?",
+        "list": [
+          "Yumuşak hap görünümlü buton, rozet ve etiketlerde.",
+          "Keskin dikdörtgenlerden daha dost canlısı hissettiren kart ve pencerelerde.",
+          "Boyutun yarısı ayarlanarak kusursuz daire elde edilen avatarlarda.",
+          "Tutarlı yarıçaplı giriş alanları ve etiketlerde."
+        ]
+      },
+      {
+        "h": "Yarıçap küçük mü yoksa büyük mü olmalı?",
+        "p": "Küçük yarıçaplar (2–8px) sade ve profesyonel görünür; büyük yarıçaplar (16–40px) yuvarlak ve eğlenceli hissettirir. Genel kural, yarıçapı öğeden belirgin şekilde küçük tutmaktır — kutunun yarısından büyük bir yarıçap yalnızca hap şekli üretir."
+      },
+      {
+        "h": "Üretilen CSS minimum düzeyde mi?",
+        "p": "Evet. Köşeler birleştirildiğinde araç tek değerli kısa biçimi yazar. Herhangi bir köşe farklılaştığında dört açık değere geçer; böylece çıktı minimum ve okunaklı kalır."
+      }
     ]
   },
   "Rehber": {
@@ -4754,6 +4900,65 @@
       "commonTitle": "Popüler zaman dilimlerinde şu an",
       "diff": "{source} → {target}",
       "note": "Dönüşüm tamamen tarayıcında, tarayıcının kendi IANA zaman dilimi veritabanı kullanılarak yapılır. Yaz saati uygulaması dahil tüm saatler doğrudur; hiçbir veri sunucuya gönderilmez."
+    },
+    "qrCodeReader": {
+      "fileLabel": "QR kod içeren bir görsel seçin",
+      "decoding": "QR kod okunuyor…",
+      "notFound": "QR kod bulunamadı. Daha net veya düz çekilmiş bir görsel deneyin.",
+      "result": "Çözülen içerik",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı",
+      "replace": "Görseli değiştir",
+      "imageAlt": "Yüklenen görsel",
+      "tip": "En iyi sonuç temiz, iyi ışık almış ve düz çekilmiş bir QR fotoğrafından alınır. Görsel yalnızca bu cihazda işlenir."
+    },
+    "textExtractor": {
+      "inputLabel": "Metninizi yapıştırın",
+      "placeholder": "Metninizi buraya yapıştırın veya yazın…",
+      "typesTitle": "Çıkarılacaklar",
+      "email": "E-posta adresleri",
+      "phone": "Telefon numaraları",
+      "url": "URL'ler",
+      "hashtag": "Etiketler",
+      "resultsTitle": "Çıkarılan öğeler",
+      "count": "{count} bulundu",
+      "none": "Henüz bir şey bulunamadı.",
+      "copyAll": "Tümünü kopyala",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı",
+      "tip": "Çıkarma işlemi yalnızca tarayıcınızda yapılır. Telefon numaraları yaygın uluslararası biçime göre eşleştirilir; alışılmadık biçimler atlanabilir."
+    },
+    "cssGradientGenerator": {
+      "colorA": "Birinci renk",
+      "colorB": "İkinci renk",
+      "useThree": "Üçüncü renk ekle",
+      "colorC": "Üçüncü renk",
+      "middleStop": "Orta rengin konumu",
+      "angle": "Açı",
+      "previewTitle": "Önizleme",
+      "cssLabel": "CSS kodu",
+      "copy": "CSS'i kopyala",
+      "copied": "Kopyalandı",
+      "tip": "Açı, CSS linear-gradient() fonksiyonuna derece cinsinden yazılır. Üç renk açıkken ikinci renk orta durak olur; konumunu 0% ile 100% arasında kaydırabilirsiniz.",
+      "dir": {
+        "to-right": "Sağa",
+        "to-bottom": "Aşağı",
+        "to-bottom-right": "Sağ alt",
+        "to-left": "Sola",
+        "to-top": "Yukarı"
+      }
+    },
+    "borderRadiusGenerator": {
+      "previewTitle": "Önizleme",
+      "linked": "Tüm köşeleri birleştir",
+      "tl": "Sol üst",
+      "tr": "Sağ üst",
+      "br": "Sağ alt",
+      "bl": "Sol alt",
+      "cssLabel": "CSS kodu",
+      "copy": "CSS'i kopyala",
+      "copied": "Kopyalandı",
+      "tip": "Dört köşe eşit olduğunda CSS kısa biçim border-radius: Npx kullanır. Aksi hâlde dört değer sol üstten başlayarak saat yönünde yazılır."
     }
   }
 }

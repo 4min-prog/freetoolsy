@@ -11,6 +11,7 @@ import {
   faCalculator,
   faCalendarCheck,
   faCalendarDays,
+  faCamera,
   faChartLine,
   faClock,
   faClone,
@@ -26,6 +27,7 @@ import {
   faDice,
   faDiceD6,
   faEarthAmericas,
+  faEnvelope,
   faEye,
   faEyeDropper,
   faFileArrowDown,
@@ -175,6 +177,10 @@ const ICONS: Record<string, IconDefinition> = {
   "random-number-generator": faDiceD6,
   "stopwatch-timer": faStopwatch,
   "time-zone-converter": faEarthAmericas,
+  "qr-code-reader": faCamera,
+  "text-extractor": faEnvelope,
+  "css-gradient-generator": faPalette,
+  "border-radius-generator": faSquare,
 };
 
 export default function ToolIcon({

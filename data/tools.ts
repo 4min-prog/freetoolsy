@@ -639,6 +639,34 @@ export const tools: Tool[] = [
     description:
       "İki zaman dilimi arasında tarih ve saat dönüşümü yapar; yaz saati otomatik hesaplanır.",
   },
+  {
+    slug: "qr-code-reader",
+    name: "QR Kod Okuyucu",
+    category: "developer",
+    description:
+      "Görseldeki QR kodu tarayıcınızda okur; içindeki metni veya bağlantıyı çıkarır.",
+  },
+  {
+    slug: "text-extractor",
+    name: "Metin Çıkarıcı",
+    category: "text",
+    description:
+      "Metinden e-posta adreslerini, telefon numaralarını, URL'leri ve etiketleri ayıklar.",
+  },
+  {
+    slug: "css-gradient-generator",
+    name: "CSS Gradient Üretici",
+    category: "developer",
+    description:
+      "Renk, açı ve yön seçerek kullanıma hazır CSS lineer gradient kodu üretir.",
+  },
+  {
+    slug: "border-radius-generator",
+    name: "Border Radius Üretici",
+    category: "developer",
+    description:
+      "Köşeleri görsel olarak yuvarlayıp border-radius CSS kodunu tek tıkla kopyalayın.",
+  },
 ];
 
 export function getTool(slug: string): Tool | undefined {
