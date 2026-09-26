@@ -8,7 +8,7 @@ import ToolExplorer from "@/components/ToolExplorer";
 import SearchBox from "@/components/SearchBox";
 import PopularStrip from "@/components/PopularStrip";
 import JsonLd from "@/components/JsonLd";
-import RotatingWords from "@/components/RotatingWords";
+import SplitText from "@/components/SplitText";
 import { Link } from "@/i18n/navigation";
 import { displayToolCount, tools } from "@/data/tools";
 import { toolPath } from "@/lib/paths";
@@ -53,11 +53,6 @@ export default async function Home({ params }: { params: { locale: string } }) {
   const titleParts = heroTitle.split(heroHighlight);
   const hasHighlight = titleParts.length === 2;
   const trustBadges = ["trustBrowser", "trustFree", "trustPrivacy"];
-  const categoryNames = (messages as { Categories?: Record<string, string> })
-    .Categories;
-  const heroWords = ["text", "developer", "security", "calculation", "image", "seo", "fun"]
-    .map((id) => categoryNames?.[id])
-    .filter((name): name is string => Boolean(name));
 
   return (
     <main className="mx-auto w-full max-w-5xl flex-1 px-4 sm:px-6">
@@ -123,12 +118,19 @@ export default async function Home({ params }: { params: { locale: string } }) {
               </span>
               {titleParts[1]?.trim() && (
                 <span className="mt-2 block font-normal text-muted">
-                  {t("heroTitleFor")}{" "}
-                  {heroWords.length > 0 ? (
-                    <RotatingWords words={heroWords} />
-                  ) : (
-                    titleParts[1].trim()
-                  )}
+                  <SplitText
+                    tag="span"
+                    text={t("heroTitleForFun")}
+                    delay={80}
+                    duration={0.7}
+                    ease="power3.out"
+                    splitType="chars"
+                    from={{ opacity: 0, y: 40 }}
+                    to={{ opacity: 1, y: 0 }}
+                    threshold={0.1}
+                    rootMargin="-100px"
+                    textAlign="left"
+                  />
                 </span>
               )}
             </>
