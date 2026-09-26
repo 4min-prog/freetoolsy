@@ -720,6 +720,86 @@ export const tools: Tool[] = [
       "Celsius, Fahrenheit ve Kelvin arasında anında dönüşüm yapar.",
     addedAt: "2026-09-26",
   },
+  {
+    slug: "calculator",
+    name: "Hesap Makinesi",
+    category: "calculation",
+    description:
+      "Toplama, çıkarma, çarpma, bölme, yüzde ve karekök içeren basit hesap makinesi.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "html-to-text-converter",
+    name: "HTML'den Metne Dönüştürücü",
+    category: "text",
+    description:
+      "HTML işaretlemelerini temizleyip düz metne çevirir; script ve style blokları atlanır.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "chmod-calculator",
+    name: "CHMOD Hesaplayıcı",
+    category: "developer",
+    description:
+      "Okuma, yazma ve çalıştırma izinlerinden dosya izin değerini ve sembolik gösterimi üretir.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "dice-roller",
+    name: "Zar Atma",
+    category: "fun",
+    description:
+      "İstediğiniz sayıda ve yüzde zar atar; toplamları ve geçmişi gösterir.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "coin-flipper",
+    name: "Para Atma",
+    category: "fun",
+    description:
+      "Yazı-tura atar; sayım, seri istatistiği ve geçmişi takip eder.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "word-frequency-counter",
+    name: "Kelime Frekansı Sayacı",
+    category: "text",
+    description:
+      "Metindeki kelimelerin tekrar sayısını çıkarır; sık kullanılan kelimeler isteğe bağlı atlanır.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "prime-factors-calculator",
+    name: "Asal Çarpan Hesaplayıcı",
+    category: "calculation",
+    description:
+      "Bir sayıyı asal çarpanlarına ayırır ve üslü gösterimle sonuç verir.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "angle-converter",
+    name: "Açı Dönüştürücü",
+    category: "calculation",
+    description:
+      "Derece, radyan ve grad cinsinden açıları birbirine çevirir.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "data-size-converter",
+    name: "Veri Boyutu Dönüştürücü",
+    category: "developer",
+    description:
+      "Byte, KB, MB, GB ve TB arasında ondalık veya ikili tabana göre dönüşüm yapar.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "fibonacci-generator",
+    name: "Fibonacci Üretici",
+    category: "calculation",
+    description:
+      "Fibonacci dizisini üretir; toplam ve son terim değerini gösterir.",
+    addedAt: "2026-09-26",
+  },
 ];
 
 export function getTool(slug: string): Tool | undefined {

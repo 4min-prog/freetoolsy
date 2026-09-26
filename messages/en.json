@@ -803,6 +803,76 @@
       "title": "Temperature Converter - Celsius, Fahrenheit and Kelvin",
       "pageDesc": "Convert temperatures between Celsius, Fahrenheit and Kelvin in real time. Type in any unit and the other two update instantly. Free and works in your browser.",
       "intro": "Type a value in Celsius, Fahrenheit or Kelvin and watch the other two units update instantly and accurately."
+    },
+    "calculator": {
+      "name": "Calculator",
+      "desc": "Add, subtract, multiply and divide with a simple in-browser calculator.",
+      "title": "Calculator - Free Online Basic Calculator App",
+      "pageDesc": "Use a simple calculator with addition, subtraction, multiplication, division, percentage and square root. Free, fast and works entirely in your browser with no install.",
+      "intro": "Click the digits and operators to calculate instantly. Supports +, −, ×, ÷, % and √ with a running result."
+    },
+    "html-to-text-converter": {
+      "name": "HTML to Text Converter",
+      "desc": "Strip HTML tags and extract clean readable text from any markup.",
+      "title": "HTML to Text Converter - Strip Tags and Extract Plain Text",
+      "pageDesc": "Paste HTML and get clean plain text. Tags are removed, script and style blocks are skipped, and blank lines are collapsed. Free and private.",
+      "intro": "Paste a block of HTML, press Convert, and read the text with all markup removed. Script and style content can be skipped automatically."
+    },
+    "chmod-calculator": {
+      "name": "CHMOD Calculator",
+      "desc": "Build Unix file permissions visually and copy the numeric or symbolic mode.",
+      "title": "CHMOD Calculator - Convert Unix Permissions to Numbers Online",
+      "pageDesc": "Set read, write and execute permissions for owner, group and others and see the octal value (like 755) plus the symbolic form (rwxr-xr-x). Free and instant.",
+      "intro": "Tick the permission boxes to build a mode. The octal value and rwx notation update live, and preset buttons apply common modes."
+    },
+    "dice-roller": {
+      "name": "Dice Roller",
+      "desc": "Roll one or more dice with custom sides and see totals and history.",
+      "title": "Dice Roller - Roll Virtual Dice Online For Free",
+      "pageDesc": "Roll up to 12 dice with 2 to 100 sides. See every result, the total and the full roll history. Perfect for board games and tabletop RPGs. Free.",
+      "intro": "Choose how many dice and how many sides, then press Roll. Results, totals and past throws are shown instantly."
+    },
+    "coin-flipper": {
+      "name": "Coin Flipper",
+      "desc": "Flip heads or tails, track counts and see your longest streak.",
+      "title": "Coin Flipper - Heads or Tails Online",
+      "pageDesc": "Flip a virtual coin anywhere. Track heads and tails counts, see your longest streak and browse the last throws. Free and instant.",
+      "intro": "Press Flip and watch heads or tails land. Counts, streaks and the recent history update with every throw."
+    },
+    "word-frequency-counter": {
+      "name": "Word Frequency Counter",
+      "desc": "Count how often each word appears in your text and spot repeated terms.",
+      "title": "Word Frequency Counter - Analyze Word Usage in Text",
+      "pageDesc": "Paste any text and get a word frequency table sorted by count. Optionally ignore common stop words. Good for SEO analysis and essays. Free.",
+      "intro": "Paste your text and press Analyze. Unique words with their counts are listed from most to least frequent."
+    },
+    "prime-factors-calculator": {
+      "name": "Prime Factor Calculator",
+      "desc": "Break any number into prime factors and read the result in power notation.",
+      "title": "Prime Factor Calculator - Factorization of Numbers Online",
+      "pageDesc": "Factor any number up to 100,000,000 into its prime factors with exponents, and see whether the number is prime. Free and instant.",
+      "intro": "Enter a number and its prime factors appear in power notation, like 360 = 2^3 × 3^2 × 5."
+    },
+    "angle-converter": {
+      "name": "Angle Converter",
+      "desc": "Convert angles between degrees, radians and gradians instantly.",
+      "title": "Angle Converter - Degrees to Radians Online Calculator",
+      "pageDesc": "Convert angles between degrees, radians and gradians in real time. Type in any unit and the others update instantly. Free, works in your browser.",
+      "intro": "Type a value in degrees, radians or gradians and see the other two units update instantly."
+    },
+    "data-size-converter": {
+      "name": "Data Size Converter",
+      "desc": "Convert file and storage sizes between bytes, KB, MB, GB and TB.",
+      "title": "Data Size Converter - Bytes to KB, MB, GB Online",
+      "pageDesc": "Convert data sizes between B, KB, MB, GB and TB with decimal (1000) or binary (1024) base. See every unit at once. Free and instant.",
+      "intro": "Type a size, pick its unit and base, and read the equivalent in every unit at the same time."
+    },
+    "fibonacci-generator": {
+      "name": "Fibonacci Generator",
+      "desc": "Generate the Fibonacci sequence up to 100 terms with sum and last value.",
+      "title": "Fibonacci Generator - Generate the Fibonacci Sequence Online",
+      "pageDesc": "Generate any length of the Fibonacci sequence up to 100 terms. See the list, the sum and the nth value. Free and instant.",
+      "intro": "Choose how many terms to print and generate the sequence, its sum and the final value in one click."
     }
   },
   "ToolContent": {
@@ -3612,6 +3682,245 @@
         "h": "Is it accurate?",
         "p": "The formulas are exact, and the display rounds only for a cleaner result. Use the tool to convert recipes, weather forecasts, or lab values without doing the math by hand."
       }
+    ],
+    "calculator": [
+      {
+        "h": "What can this calculator do?",
+        "p": "This calculator handles addition, subtraction, multiplication and division, plus percentage and square root. It works like a pocket calculator but runs right in your browser."
+      },
+      {
+        "h": "How do the functions work?",
+        "list": [
+          "The % key divides the current value by 100.",
+          "The √ key computes the square root of the current value.",
+          "⌫ deletes the last digit and C clears everything."
+        ]
+      },
+      {
+        "h": "How are calculations chained?",
+        "p": "Press an operator, enter the next number and press = for the result. Repeated operators are evaluated in order from left to right, like a classic simple calculator."
+      },
+      {
+        "h": "What happens when I divide by zero?",
+        "p": "Divisions by zero show an error message instead of a result. Press C to start a fresh calculation."
+      },
+      {
+        "h": "Can I use the keyboard?",
+        "p": "The tool is designed for clicks and taps, so it also works comfortably on phones. Results are shown with up to twelve significant digits for accuracy."
+      }
+    ],
+    "html-to-text-converter": [
+      {
+        "h": "What does the converter do?",
+        "p": "It takes a block of HTML and returns clean plain text. Tags like <div> and <p> are removed while the visible text inside them is kept."
+      },
+      {
+        "h": "Why remove script and style blocks?",
+        "p": "JavaScript and CSS are not part of the page content. Skipping them (the default) stops hidden code from leaking into your text and keeps the output clean."
+      },
+      {
+        "h": "When is this useful?",
+        "list": [
+          "Extracting article text from a copied web page.",
+          "Reading email HTML templates without markup.",
+          "Preparing HTML content for plain-text apps."
+        ]
+      },
+      {
+        "h": "Does it keep lists and paragraphs?",
+        "p": "Readable line breaks are preserved where the source structure has them, and long runs of blank lines are collapsed so the result stays tidy."
+      },
+      {
+        "h": "Is my data sent anywhere?",
+        "p": "No. Conversion happens locally in your browser with the built-in HTML parser. Your content never leaves the device."
+      }
+    ],
+    "chmod-calculator": [
+      {
+        "h": "What do file permissions mean?",
+        "p": "Unix files have three permission types — read (r), write (w) and execute (x) — for three groups: the owner, the group and everyone else. Each combination creates a three-digit mode."
+      },
+      {
+        "h": "How is the number calculated?",
+        "p": "Each set of rwx permissions is a value from 0 to 7. Read is worth 4, write 2 and execute 1. For example read and write gives 6, and all three gives 7."
+      },
+      {
+        "h": "What do common modes mean?",
+        "list": [
+          "chmod 755 — owner can read, write and execute; others can read and execute.",
+          "chmod 644 — owner can read and write; others can only read.",
+          "chmod 600 — only the owner can read and write."
+        ]
+      },
+      {
+        "h": "What is the symbolic form?",
+        "p": "Alongside the number, the symbolic notation like rwxr-xr-x describes the same permissions as ten characters: one for the type and nine for the three groups."
+      },
+      {
+        "h": "How do I use the calculator?",
+        "p": "Tick the boxes for each permission and group, or press a preset button like 755 or 644. The numeric value updates live and can be copied in one click."
+      }
+    ],
+    "dice-roller": [
+      {
+        "h": "How many dice can I roll?",
+        "p": "You can roll from 1 to 12 dice at once, and each die can have anywhere from 2 to 100 sides. The default is two six-sided dice."
+      },
+      {
+        "h": "Why support more than six sides?",
+        "p": "Many tabletop games use dice like d8, d10, d12 and d20. This tool supports all of them and even unusual dice like a 100-sided d100."
+      },
+      {
+        "h": "What is shown after a roll?",
+        "p": "The latest roll appears as large dice with each result, followed by the total. The last runs are listed in a history table so you can retell a lucky moment."
+      },
+      {
+        "h": "Is the random result fair?",
+        "p": "Results come from the browser's Math.random engine, which is random enough for games and tests. Each side of a die has an equal chance of appearing."
+      },
+      {
+        "h": "Can I use it for RPGs?",
+        "p": "Yes. Set the number of dice and sides your character sheet needs, roll once and read the total. No setup, dice or download required."
+      }
+    ],
+    "coin-flipper": [
+      {
+        "h": "How does the flip work?",
+        "p": "Each press of Flip produces heads or tails with a 50% chance for each, just like a real coin. The sides are picked instantly by the browser."
+      },
+      {
+        "h": "What statistics are tracked?",
+        "p": "The tool counts how many times heads and tails have appeared and shows your longest run — the most consecutive flips landing on the same side."
+      },
+      {
+        "h": "Why show the history?",
+        "p": "The last throws are displayed as small chips so you can review a decision or double-check that a coin really came up fair over several flips."
+      },
+      {
+        "h": "Where is a coin flip useful?",
+        "list": [
+          "Settling a tie or deciding who goes first.",
+          "Choosing between two options without bias.",
+          "Teaching probability with real trial counts."
+        ]
+      },
+      {
+        "h": "Is it really random?",
+        "p": "Yes — each flip is independent and has an equal chance either way. Over many flips the counts should stay close to balanced."
+      }
+    ],
+    "word-frequency-counter": [
+      {
+        "h": "What does the counter do?",
+        "p": "It splits your text into words, lowercases them and counts how often each one appears. The result is a table sorted from the most to the least repeated word."
+      },
+      {
+        "h": "What are stop words?",
+        "p": "Stop words are very common words like 'the', 'and' or 'of' that rarely carry meaning. Removing them (the default) makes the table focus on the meaningful vocabulary."
+      },
+      {
+        "h": "How is it useful for writing?",
+        "p": "Authors use word frequency to check that key ideas are repeated consistently and to spot overused words that weaken the text."
+      },
+      {
+        "h": "How useful is it for SEO?",
+        "p": "Keyword research is about how often terms appear. Paste page copy to see which terms dominate and confirm keywords are used naturally, not stuffed."
+      },
+      {
+        "h": "What counts as a word?",
+        "p": "Words are sequences of letters and numbers. Turkish characters are supported and punctuation is ignored, so apostrophes and accented letters are handled correctly."
+      }
+    ],
+    "prime-factors-calculator": [
+      {
+        "h": "What is a prime factor?",
+        "p": "A prime factor is a factor that is a prime number. Factoring means breaking a number into its smallest possible building blocks, like 360 = 2 × 2 × 2 × 3 × 3 × 5."
+      },
+      {
+        "h": "Why use exponents?",
+        "p": "Repeated factors are written with exponents to keep the result compact: 2 × 2 × 2 becomes 2^3. The display uses this notation so long numbers stay readable."
+      },
+      {
+        "h": "How large can the number be?",
+        "p": "Numbers from 1 to 100,000,000 are supported. Larger values would require much heavier math in the browser, so the tool keeps a practical limit."
+      },
+      {
+        "h": "Can it decide if a number is prime?",
+        "p": "Yes. A number with exactly one factor — itself, with exponent one — is reported as prime. Numbers below that are shown with their full factorization instead."
+      },
+      {
+        "h": "Where is factorization used?",
+        "p": "Factoring appears in school math, cryptography, and simplifying fractions. It is also a handy way to check whether a number divides into another cleanly."
+      }
+    ],
+    "angle-converter": [
+      {
+        "h": "Why convert angles?",
+        "p": "Degrees are used in everyday life, radians in mathematics and programming, and gradians in surveying and some engineering. Converting between them is a constant need."
+      },
+      {
+        "h": "What are the relationships?",
+        "p": "A full circle is 360 degrees, 2π radians or 400 gradians. So 180 degrees equals π radians and 100 gradians, the conversion used by this tool."
+      },
+      {
+        "h": "Why do programmers use radians?",
+        "p": "JavaScript and most math libraries expect angles in radians for functions like Math.sin and Math.cos. Typing the value here and copying the result avoids unit mistakes."
+      },
+      {
+        "h": "Can I type decimals?",
+        "p": "Yes. Values like 45.5 degrees are accepted, and the two other units update instantly with results rounded to eight decimal places."
+      },
+      {
+        "h": "Is the conversion exact?",
+        "p": "The formulas are exact math; rounding is applied only for display. Converting 180 degrees always gives π radians, so no information is lost."
+      }
+    ],
+    "data-size-converter": [
+      {
+        "h": "What is the difference between 1000 and 1024?",
+        "p": "Decimal base uses 1 KB = 1000 bytes, which storage manufacturers use. Binary base uses 1 KiB = 1024 bytes, which operating systems often use. Choose the base that matches your situation."
+      },
+      {
+        "h": "Which base should I use?",
+        "list": [
+          "Decimal (1000) for drive capacity and data plans.",
+          "Binary (1024) for RAM, memory and file sizes shown by many systems."
+        ]
+      },
+      {
+        "h": "Why see every unit at once?",
+        "p": "Seeing one size in all units at the same time makes comparisons easy, whether you are checking upload limits, disk usage or email attachment caps."
+      },
+      {
+        "h": "Can I convert between bytes and TB?",
+        "p": "Yes. Every unit from byte to terabyte is listed in one table, and you can enter a value in any of them to see the rest."
+      },
+      {
+        "h": "Is my data private?",
+        "p": "Completely. The conversion is simple multiplication in your browser — nothing is calculated on a server or stored anywhere."
+      }
+    ],
+    "fibonacci-generator": [
+      {
+        "h": "What is the Fibonacci sequence?",
+        "p": "The Fibonacci sequence starts with 0 and 1, and every following number is the sum of the two before it: 0, 1, 1, 2, 3, 5, 8, 13 and so on."
+      },
+      {
+        "h": "How many terms can I generate?",
+        "p": "Any number from 1 to 100 terms. The tool prints the list, the sum of all terms and the value of the last term so results are easy to check."
+      },
+      {
+        "h": "Where does Fibonacci appear?",
+        "p": "The sequence shows up in nature, art and trading. Spiral patterns of sunflowers and seashells follow the golden ratio derived from Fibonacci ratios."
+      },
+      {
+        "h": "How is it useful in programming?",
+        "p": "Fibonacci is a classic exercise for learning loops, recursion and dynamic programming. Generating the sequence by hand is a quick way to test an implementation."
+      },
+      {
+        "h": "How fast does it grow?",
+        "p": "The numbers grow quickly — the 100th term is a 21-digit number. The tool keeps up to 100 terms, which is plenty for almost every practical use."
+      }
     ]
   },
   "Rehber": {
@@ -5229,6 +5538,95 @@
       "fahrenheit": "Fahrenheit (°F)",
       "kelvin": "Kelvin (K)",
       "tip": "Type a value in any of the three rows and the other two update instantly. Decimals are supported and results are rounded to six digits."
+    },
+    "calculator": {
+      "clear": "C",
+      "backspace": "⌫",
+      "error": "Error",
+      "tip": "Calculations run instantly in your browser. Operators are applied from left to right, and dividing by zero shows an error."
+    },
+    "htmlToTextConverter": {
+      "inputLabel": "HTML input",
+      "inputPlaceholder": "Paste HTML here...",
+      "outputLabel": "Plain text",
+      "outputPlaceholder": "The extracted text appears here.",
+      "convert": "Convert",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "removeScripts": "Skip script and style blocks",
+      "tip": "Markup is stripped locally using the browser's own HTML parser. Line breaks from the source are kept and extra blank lines are collapsed."
+    },
+    "chmodCalculator": {
+      "target": "Group",
+      "read": "Read",
+      "write": "Write",
+      "execute": "Execute",
+      "owner": "Owner",
+      "group": "Group",
+      "others": "Others",
+      "tip": "The number updates as you tick boxes: read = 4, write = 2, execute = 1. Use the presets to apply common modes such as 755 or 644."
+    },
+    "diceRoller": {
+      "diceCount": "Number of dice",
+      "sides": "Sides per die",
+      "roll": "Roll",
+      "total": "Total",
+      "rollCol": "Roll",
+      "resultCol": "Result",
+      "totalCol": "Total",
+      "tip": "Rolls are produced locally and fairly: every side has an equal chance. History keeps the last 20 throws."
+    },
+    "coinFlipper": {
+      "heads": "Heads",
+      "tails": "Tails",
+      "empty": "Toss?",
+      "flip": "Flip",
+      "headsCount": "Heads",
+      "tailsCount": "Tails",
+      "streak": "Longest streak",
+      "tip": "Each flip is independent with a 50% chance either way. Counts, streaks and the last throws update in real time."
+    },
+    "wordFrequencyCounter": {
+      "inputLabel": "Your text",
+      "inputPlaceholder": "Type or paste the text to analyze...",
+      "excludeStopwords": "Ignore common stop words",
+      "analyze": "Analyze",
+      "results": "{count} unique words · {total} total",
+      "wordCol": "Word",
+      "countCol": "Count",
+      "tip": "The top 40 most frequent words are listed. Turkish letters are supported and punctuation is ignored."
+    },
+    "primeFactorsCalculator": {
+      "inputLabel": "Number",
+      "rangeHint": "Enter a whole number from 1 to 100,000,000.",
+      "resultLabel": "Prime factorization",
+      "prime": "This number is prime.",
+      "showDivides": "Show division steps",
+      "tip": "Results use power notation, so 360 is shown as 2^3 × 3^2 × 5. Numbers up to one hundred million are supported."
+    },
+    "angleConverter": {
+      "degrees": "Degrees (°)",
+      "radians": "Radians (rad)",
+      "gradians": "Gradians (grad)",
+      "tip": "Type a value into any field and the others update instantly. This tool rounds results to eight decimal places for readability."
+    },
+    "dataSizeConverter": {
+      "valueLabel": "Value",
+      "unitLabel": "Unit",
+      "baseLabel": "Base",
+      "decimalBase": "Decimal (1000)",
+      "binaryBase": "Binary (1024)",
+      "unitCol": "Unit",
+      "sizeCol": "Size",
+      "source": "source",
+      "tip": "Decimal base matches drive capacities; binary base matches how many operating systems count memory and files."
+    },
+    "fibonacciGenerator": {
+      "countLabel": "Number of terms",
+      "generate": "Generate",
+      "sum": "Sum of all terms",
+      "nth": "Last term",
+      "tip": "Each term is the sum of the two previous ones. Up to 100 terms are generated, along with the total and the final value."
     }
   }
 }

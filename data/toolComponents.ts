@@ -96,6 +96,16 @@ export const toolComponents: Record<string, ComponentType> = {
   "credit-card-validator": dynamic(() => import("@/components/tools/CreditCardValidator")),
   "roman-numeral-converter": dynamic(() => import("@/components/tools/RomanNumeralConverter")),
   "temperature-converter": dynamic(() => import("@/components/tools/TemperatureConverter")),
+  "calculator": dynamic(() => import("@/components/tools/Calculator")),
+  "html-to-text-converter": dynamic(() => import("@/components/tools/HtmlToTextConverter")),
+  "chmod-calculator": dynamic(() => import("@/components/tools/ChmodCalculator")),
+  "dice-roller": dynamic(() => import("@/components/tools/DiceRoller")),
+  "coin-flipper": dynamic(() => import("@/components/tools/CoinFlipper")),
+  "word-frequency-counter": dynamic(() => import("@/components/tools/WordFrequencyCounter")),
+  "prime-factors-calculator": dynamic(() => import("@/components/tools/PrimeFactorsCalculator")),
+  "angle-converter": dynamic(() => import("@/components/tools/AngleConverter")),
+  "data-size-converter": dynamic(() => import("@/components/tools/DataSizeConverter")),
+  "fibonacci-generator": dynamic(() => import("@/components/tools/FibonacciGenerator")),
 };
 
 export const TOOL_COMPONENT_SLUGS = Object.keys(toolComponents);

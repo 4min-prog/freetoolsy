@@ -803,6 +803,76 @@
       "title": "Sıcaklık Dönüştürücü - Celsius, Fahrenheit ve Kelvin",
       "pageDesc": "Sıcaklıkları Celsius, Fahrenheit ve Kelvin arasında gerçek zamanlı çevirin. Bir birime değer yazın, diğer ikisi anında güncellensin. Ücretsiz, tarayıcıda çalışır.",
       "intro": "Celsius, Fahrenheit ya da Kelvin alanına bir değer yazın; diğer iki birim anında ve doğru şekilde güncellensin."
+    },
+    "calculator": {
+      "name": "Hesap Makinesi",
+      "desc": "Toplama, çıkarma, çarpma ve bölmeyi tarayıcıda çözen basit hesap makinesi.",
+      "title": "Hesap Makinesi - Ücretsiz Online Basit Hesap Makinesi",
+      "pageDesc": "Toplama, çıkarma, çarpma, bölme, yüzde ve karekök içeren basit hesap makinesini kullanın. Ücretsiz, hızlı ve kurulum gerektirmeden tamamen tarayıcınızda çalışır.",
+      "intro": "Rakamlara ve işleçlere tıklayarak anında hesap yapın. +, −, ×, ÷, % ve √ desteklenir."
+    },
+    "html-to-text-converter": {
+      "name": "HTML'den Metne Dönüştürücü",
+      "desc": "HTML etiketlerini temizleyip işaretlemeden okunaklı düz metin çıkarır.",
+      "title": "HTML'den Metne Dönüştürücü - Etiketleri Temizleyip Düz Metin Çıkarın",
+      "pageDesc": "HTML yapıştırın ve temiz düz metin elde edin. Etiketler kaldırılır, script ve style blokları atlanır, boş satırlar sadeleştirilir. Ücretsiz ve gizli.",
+      "intro": "Bir HTML bloğu yapıştırın, Dönüştür'e basın ve tüm işaretlemelerden arındırılmış metni okuyun."
+    },
+    "chmod-calculator": {
+      "name": "CHMOD Hesaplayıcı",
+      "desc": "Unix dosya izinlerini görsel olarak kurar; sayısal ve sembolik gösterimi üretir.",
+      "title": "CHMOD Hesaplayıcı - Unix İzinlerini Sayıya Çevirme",
+      "pageDesc": "Sahip, grup ve diğerleri için okuma, yazma ve çalıştırma izinlerini seçin; 755 gibi sekizlik değeri ve rwxr-xr-x gibi sembolik biçimi anında görün. Ücretsiz.",
+      "intro": "İzin kutularını işaretleyerek modu oluşturun. Sekizlik değer ve rwx gösterimi anlık güncellenir; hazır düğmelerle yaygın modlar uygulanır."
+    },
+    "dice-roller": {
+      "name": "Zar Atma",
+      "desc": "İstediğiniz sayıda ve yüzde zar atar; sonuçları ve geçmişi gösterir.",
+      "title": "Zar Atma - Online Sanal Zar Atma Aracı",
+      "pageDesc": "2 ile 100 yüzlü, en fazla 12 zar atın. Her sonucu, toplamı ve tüm atış geçmişini görün. Masa oyunları ve rol yapma oyunları için ideal. Ücretsiz.",
+      "intro": "Zar sayısını ve yüz sayısını seçin, Zar At'a basın. Sonuçlar, toplam ve geçmiş anında gösterilir."
+    },
+    "coin-flipper": {
+      "name": "Para Atma",
+      "desc": "Yazı veya tura atar; sayımları ve en uzun seriyi takip eder.",
+      "title": "Para Atma - Online Yazı Tura",
+      "pageDesc": "Sanal parayı her yerde atın. Yazı-tura sayısını, en uzun serinizi ve son atışları görün. Ücretsiz ve anlık.",
+      "intro": "At'a basın ve yazı ya da turanın gelişini izleyin. Sayımlar, seriler ve son atışlar her seferinde güncellenir."
+    },
+    "word-frequency-counter": {
+      "name": "Kelime Frekansı Sayacı",
+      "desc": "Metindeki her kelimenin kaç kez geçtiğini sayar ve en çok tekrarlananları gösterir.",
+      "title": "Kelime Frekansı Sayacı - Metinde Kelime Kullanımını Analiz Edin",
+      "pageDesc": "Herhangi bir metni yapıştırın ve sıklığa göre sıralanmış kelime tablosu elde edin. İsteğe bağlı olarak sık kullanılan kelimeler atlanır. SEO analizi ve makaleler için uygundur. Ücretsiz.",
+      "intro": "Metninizi yapıştırın ve Analiz Et'e basın. Eşsiz kelimeler sayılarıyla birlikte en çoktan en aza sıralanır."
+    },
+    "prime-factors-calculator": {
+      "name": "Asal Çarpan Hesaplayıcı",
+      "desc": "Bir sayıyı asal çarpanlarına ayırır ve üslü gösterimle sonuç verir.",
+      "title": "Asal Çarpan Hesaplayıcı - Sayıları Asal Çarpanlarına Ayırma",
+      "pageDesc": "100.000.000'a kadar herhangi bir sayıyı asal çarpanlarına ayırın ve sayının asal olup olmadığını görün. Ücretsiz ve anlık.",
+      "intro": "Bir sayı girin; asal çarpanları üslü gösterimle görün, örneğin 360 = 2^3 × 3^2 × 5."
+    },
+    "angle-converter": {
+      "name": "Açı Dönüştürücü",
+      "desc": "Derece, radyan ve grad arasında anında dönüşüm yapar.",
+      "title": "Açı Dönüştürücü - Dereceyi Radyana Çevirme",
+      "pageDesc": "Açıları derece, radyan ve grad arasında gerçek zamanlı çevirin. Bir birime değer yazın, diğerleri anında güncellensin. Ücretsiz, tarayıcınızda çalışır.",
+      "intro": "Derece, radyan ya da grad alanına değer yazın; diğer iki birim anında güncellensin."
+    },
+    "data-size-converter": {
+      "name": "Veri Boyutu Dönüştürücü",
+      "desc": "Dosya ve depolama boyutlarını byte, KB, MB, GB ve TB arasında çevirir.",
+      "title": "Veri Boyutu Dönüştürücü - Byte ile KB, MB, GB Çevirme",
+      "pageDesc": "B, KB, MB, GB ve TB arasında ondalık (1000) veya ikili (1024) tabana göre dönüşüm yapın. Tüm birimleri aynı anda görün. Ücretsiz ve anlık.",
+      "intro": "Bir boyut yazın, birimini ve tabanını seçin, karşılığını tüm birimlerde aynı anda okuyun."
+    },
+    "fibonacci-generator": {
+      "name": "Fibonacci Üretici",
+      "desc": "Fibonacci dizisini 100 terime kadar üretir; toplam ve son değeri gösterir.",
+      "title": "Fibonacci Üretici - Fibonacci Dizisini Online Oluşturma",
+      "pageDesc": "Fibonacci dizisini 100 terime kadar üretin. Listeyi, toplamı ve n'inci değeri görün. Ücretsiz ve anlık.",
+      "intro": "Kaç terim üretileceğini seçin; diziyi, toplamını ve son değeri tek tıkla elde edin."
     }
   },
   "ToolContent": {
@@ -3612,6 +3682,245 @@
         "h": "Sonuç doğru mu?",
         "p": "Formüller birebir doğrudur; yalnızca görüntüleme için yuvarlama yapılır. Yemek tariflerini, hava durumu tahminlerini ya da laboratuvar değerlerini elle hesap yapmadan dönüştürmek için kullanın."
       }
+    ],
+    "calculator": [
+      {
+        "h": "Bu hesap makinesi neler yapabilir?",
+        "p": "Bu hesap makinesi toplama, çıkarma, çarpma ve bölmenin yanında yüzde ve karekök işlemlerini de yapar. Cep hesap makinesi gibi çalışır ama doğrudan tarayıcınızda çalışır."
+      },
+      {
+        "h": "İşlevler nasıl çalışır?",
+        "list": [
+          "% tuşu mevcut değeri 100'e böler.",
+          "√ tuşu mevcut değerin karekökünü hesaplar.",
+          "⌫ son rakamı siler, C her şeyi temizler."
+        ]
+      },
+      {
+        "h": "İşlemler nasıl zincirlenir?",
+        "p": "Bir işleç tuşuna basın, sonraki sayıyı girin ve sonuç için = tuşuna basın. Klasik basit hesap makinelerinde olduğu gibi işlemler soldan sağa sırayla yapılır."
+      },
+      {
+        "h": "Sıfıra bölününce ne olur?",
+        "p": "Sıfıra bölme, sonuç yerine hata mesajı gösterir. Yeni bir işlem için C tuşuna basın."
+      },
+      {
+        "h": "Klavye kullanabilir miyim?",
+        "p": "Araç tıklama ve dokunma için tasarlandığından telefonlarda da rahatça çalışır. Sonuçlar doğruluk için en fazla on iki anlamlı haneyle gösterilir."
+      }
+    ],
+    "html-to-text-converter": [
+      {
+        "h": "Dönüştürücü ne yapar?",
+        "p": "Bir HTML bloğunu alır ve temiz düz metin olarak döndürür. <div> ve <p> gibi etiketler kaldırılırken içindeki görünür metin korunur."
+      },
+      {
+        "h": "Script ve style blokları neden atlanır?",
+        "p": "JavaScript ve CSS sayfa içeriğinin parçası değildir. Bunları atlamak (varsayılan) gizli kodun metne karışmasını önler ve çıktıyı temiz tutar."
+      },
+      {
+        "h": "Bu araç nerelerde işe yarar?",
+        "list": [
+          "Kopyalanan bir web sayfasından makale metnini çıkarmak.",
+          "E-posta HTML şablonlarını işaretlemesiz okumak.",
+          "HTML içeriği düz metin uygulamaları için hazırlamak."
+        ]
+      },
+      {
+        "h": "Liste ve paragraflar korunur mu?",
+        "p": "Kaynak yapıda olan okunaklı satır sonları korunur ve uzun boş satır blokları sadeleştirilir; böylece sonuç düzenli kalır."
+      },
+      {
+        "h": "Verilerim bir yere gönderilir mi?",
+        "p": "Hayır. Dönüşüm tarayıcınızda yerleşik HTML çözümleyicisiyle yerel olarak gerçekleşir. İçeriğiniz cihazdan çıkmaz."
+      }
+    ],
+    "chmod-calculator": [
+      {
+        "h": "Dosya izinleri ne anlama gelir?",
+        "p": "Unix dosyalarında üç grup için üçer izin türü vardır: okuma (r), yazma (w) ve çalıştırma (x). Gruplar sahip, grup ve diğer herkestir. Her kombinasyon üç haneli bir mod oluşturur."
+      },
+      {
+        "h": "Sayı nasıl hesaplanır?",
+        "p": "Her rwx izin kümesi 0 ile 7 arasında bir değerdir. Okuma 4, yazma 2, çalıştırma 1 değerindedir. Örneğin okuma ve yazma 6, üçünün birden olması 7 eder."
+      },
+      {
+        "h": "Yaygın modlar ne demektir?",
+        "list": [
+          "chmod 755 — sahip okuma, yazma ve çalıştırabilir; diğerleri okuma ve çalıştırabilir.",
+          "chmod 644 — sahip okuma ve yazma yapabilir; diğerleri yalnızca okuyabilir.",
+          "chmod 600 — yalnızca sahip okuma ve yazma yapabilir."
+        ]
+      },
+      {
+        "h": "Sembolik gösterim nedir?",
+        "p": "Sayının yanında rwxr-xr-x gibi sembolik gösterim aynı izinleri on karakterle açıklar: biri tür, dokuzu üç grup için."
+      },
+      {
+        "h": "Hesaplayıcıyı nasıl kullanırım?",
+        "p": "Her izin ve grup için kutuları işaretleyin ya da 755 veya 644 gibi hazır bir düğmeye basın. Sayısal değer anlık güncellenir ve tek tıkla kopyalanabilir."
+      }
+    ],
+    "dice-roller": [
+      {
+        "h": "Kaç zar atabilirim?",
+        "p": "Aynı anda 1 ile 12 arasında zar atabilirsiniz ve her zar 2 ile 100 arasında yüze sahip olabilir. Varsayılan iki adet altı yüzlü zardır."
+      },
+      {
+        "h": "Neden altıdan fazla yüz destekleniyor?",
+        "p": "Birçok masa oyunu d8, d10, d12 ve d20 gibi zarlar kullanır. Bu araç hepsini ve hatta 100 yüzlü d100 gibi sıra dışı zarları bile destekler."
+      },
+      {
+        "h": "Atıştan sonra ne gösterilir?",
+        "p": "En son atış büyük zarlarla her sonuç ve ardından toplam olarak görünür. Önceki atışlar geçmiş tablosunda listelenir."
+      },
+      {
+        "h": "Sonuç gerçekten rastgele mi?",
+        "p": "Sonuçlar tarayıcının rastgele motorundan üretilir ve oyunlar ile testler için yeterince adildir. Her zarın her yüzü eşit şansa sahiptir."
+      },
+      {
+        "h": "Rol yapma oyunları için kullanabilir miyim?",
+        "p": "Evet. Karakter sayfanızın ihtiyacı olan zar sayısını ve yüzünü ayarlayın, bir kez atın ve toplamı okuyun. Kurulum, zar veya indirme gerektirmez."
+      }
+    ],
+    "coin-flipper": [
+      {
+        "h": "Atış nasıl çalışır?",
+        "p": "Her At basışı, tıpkı gerçek para gibi %50 yazı ve %50 tura olasılığıyla sonuç üretir. Taraflar tarayıcı tarafından anında seçilir."
+      },
+      {
+        "h": "Hangi istatistikler takip edilir?",
+        "p": "Araç yazı ve turanın kaç kez geldiğini sayar ve en uzun serinizi — aynı yönün art arda en çok geldiği sayı — gösterir."
+      },
+      {
+        "h": "Geçmiş neden gösterilir?",
+        "p": "Son atışlar küçük parçalar hâlinde gösterilir; böylece bir kararı gözden geçirebilir veya birkaç atışta paranın gerçekten adil geldiğini kontrol edebilirsiniz."
+      },
+      {
+        "h": "Para atma nerelerde işe yarar?",
+        "list": [
+          "Beraberlikte kazananı ya da başlayanı belirlemek.",
+          "Önyargısız olarak iki seçenekten birini seçmek.",
+          "Gerçek deneme sayılarıyla olasılık öğretmek."
+        ]
+      },
+      {
+        "h": "Gerçekten rastgele mi?",
+        "p": "Evet — her atış bağımsızdır ve iki yönü de eşit olasılığa sahiptir. Çok sayıda atışta sayımlar dengeli kalmaya yakın olmalıdır."
+      }
+    ],
+    "word-frequency-counter": [
+      {
+        "h": "Sayaç ne yapar?",
+        "p": "Metninizi kelimelere ayırır, küçük harfe çevirir ve her kelimenin kaç kez geçtiğini sayar. Sonuç, en çok tekrarlanandan en aza sıralanmış bir tablodur."
+      },
+      {
+        "h": "Stop word nedir?",
+        "p": "Stop word'ler 've', 'bir' ya da 'için' gibi tek başına anlam taşımayan çok yaygın kelimelerdir. Bunları atmak (varsayılan) tabloyu anlamlı kelimelere odaklar."
+      },
+      {
+        "h": "Yazımda nasıl işe yarar?",
+        "p": "Yazarlar kelime sıklığını ana fikirlerin tutarlı tekrar edilip edilmediğini kontrol etmek ve metni zayıflatan aşırı kullanılan kelimeleri bulmak için kullanır."
+      },
+      {
+        "h": "SEO açısından ne kadar işe yarar?",
+        "p": "Anahtar kelime araştırması, terimlerin kaç kez geçtiğiyle ilgilidir. Sayfa metnini yapıştırarak hangi terimlerin öne çıktığını görün ve anahtar kelimelerin doğal kullanıldığını doğrulayın."
+      },
+      {
+        "h": "Kelimeler nasıl sayılır?",
+        "p": "Kelimeler harf ve rakam dizileridir. Türkçe karakterler desteklenir, noktalama yok sayılır; kesme işaretleri ve aksanlı harfler doğru ele alınır."
+      }
+    ],
+    "prime-factors-calculator": [
+      {
+        "h": "Asal çarpan nedir?",
+        "p": "Asal çarpan, asal sayı olan bir çarpandır. Çarpanlara ayırma, bir sayıyı en küçük yapı taşlarına bölmektir: 360 = 2 × 2 × 2 × 3 × 3 × 5."
+      },
+      {
+        "h": "Neden üsler kullanılır?",
+        "p": "Tekrar eden çarpanlar üslerle yazılarak sonuç kısa tutulur: 2 × 2 × 2, 2^3 olur. Görüntüleme bu gösterimi kullandığı için uzun sayılar okunaklı kalır."
+      },
+      {
+        "h": "Sayı ne kadar büyük olabilir?",
+        "p": "1 ile 100.000.000 arasındaki sayılar desteklenir. Daha büyük değerler tarayıcıda çok daha ağır bir işlem gerektirir; bu yüzden araç pratik bir sınır koyar."
+      },
+      {
+        "h": "Bir sayının asal olduğuna karar verebilir mi?",
+        "p": "Evet. Tam olarak bir çarpanı olan — kendisi, üssü bir — sayılar asal olarak raporlanır. Diğerleri tam çarpan tablosuyla gösterilir."
+      },
+      {
+        "h": "Çarpanlara ayırma nerelerde kullanılır?",
+        "p": "Çarpanlara ayırma okul matematiği, kriptografi ve kesir sadeleştirmede karşımıza çıkar. Bir sayının başka bir sayıya tam bölünüp bölünmediğini kontrol etmenin de pratik yoludur."
+      }
+    ],
+    "angle-converter": [
+      {
+        "h": "Açılar neden dönüştürülür?",
+        "p": "Derece günlük hayatta, radyan matematik ve programlamada, grad ise haritacılık ve bazı mühendislik alanlarında kullanılır. Aralarında dönüşüm sürekli ihtiyaçtır."
+      },
+      {
+        "h": "Birimler arasındaki ilişki nedir?",
+        "p": "Tam bir daire 360 derece, 2π radyan ya da 400 gradır. Bu araçta kullanılan 180 derece ise π radyan ve 100 grad eder."
+      },
+      {
+        "h": "Programcılar neden radyan kullanır?",
+        "p": "JavaScript ve çoğu matematik kütüphanesi Math.sin ve Math.cos gibi işlevlerde radyan bekler. Değeri buraya yazıp sonucu kopyalamak birim hatalarını önler."
+      },
+      {
+        "h": "Ondalıklı değer yazabilir miyim?",
+        "p": "Evet. 45.5 derece gibi değerler kabul edilir ve diğer iki birim sekiz ondalık basamağa yuvarlanarak anında güncellenir."
+      },
+      {
+        "h": "Dönüşüm tam doğru mu?",
+        "p": "Formüller birebir doğrudur; yuvarlama yalnızca görüntüleme için yapılır. 180 derece her zaman π radyan verir."
+      }
+    ],
+    "data-size-converter": [
+      {
+        "h": "1000 ile 1024 arasındaki fark nedir?",
+        "p": "Ondalık tabanda 1 KB = 1000 bayttır; bunu depolama üreticileri kullanır. İkili tabanda 1 KiB = 1024 bayttır; bunu işletim sistemleri sıkça kullanır. Durumunuza uyan tabanı seçin."
+      },
+      {
+        "h": "Hangi tabanı kullanmalıyım?",
+        "list": [
+          "Disk kapasitesi ve veri tarifeleri için ondalık (1000).",
+          "RAM, bellek ve birçok sistemin gösterdiği dosya boyutları için ikili (1024)."
+        ]
+      },
+      {
+        "h": "Neden tüm birimler aynı anda görünür?",
+        "p": "Bir boyutu tüm birimlerde aynı anda görmek, yükleme limitlerini, disk kullanımını ya da e-posta ek sınırlarını karşılaştırmayı kolaylaştırır."
+      },
+      {
+        "h": "Byte ile TB arasında dönüşüm yapabilir miyim?",
+        "p": "Evet. Byte'tan terabayta her birim tek bir tabloda listelenir; herhangi birine değer girebilir, gerisini görebilirsiniz."
+      },
+      {
+        "h": "Verilerim gizli mi?",
+        "p": "Tamamen. Dönüşüm tarayıcınızda yapılan basit bir çarpmadır — hiçbir şey sunucuda hesaplanmaz ya da saklanmaz."
+      }
+    ],
+    "fibonacci-generator": [
+      {
+        "h": "Fibonacci dizisi nedir?",
+        "p": "Fibonacci dizisi 0 ve 1 ile başlar; sonraki her sayı kendinden önceki iki sayının toplamıdır: 0, 1, 1, 2, 3, 5, 8, 13 ve böyle devam eder."
+      },
+      {
+        "h": "Kaç terim üretebilirim?",
+        "p": "1'den 100'e kadar herhangi bir sayıda terim. Araç listeyi, tüm terimlerin toplamını ve son terimin değerini gösterir; böylece sonuçları kontrol etmek kolaydır."
+      },
+      {
+        "h": "Fibonacci nerelerde karşımıza çıkar?",
+        "p": "Dizi doğada, sanatta ve ticarette görülür. Ayçiçeği ve deniz kabuğu sarmalları, Fibonacci oranlarından türeyen altın oranı izler."
+      },
+      {
+        "h": "Programlamada nasıl işe yarar?",
+        "p": "Fibonacci, döngüler, özyineleme ve dinamik programlama öğrenmek için klasik bir alıştırmadır. Diziyi elle üretmek bir uygulamayı test etmenin hızlı yoludur."
+      },
+      {
+        "h": "Sayılar ne kadar hızlı büyür?",
+        "p": "Sayılar hızla büyür — 100. terim 21 haneli bir sayıdır. Araç 100 terime kadar destekler; bu neredeyse her pratik kullanım için fazlasıyla yeterlidir."
+      }
     ]
   },
   "Rehber": {
@@ -5229,6 +5538,95 @@
       "fahrenheit": "Fahrenheit (°F)",
       "kelvin": "Kelvin (K)",
       "tip": "Üç satırdan herhangi birine değer yazın, diğer ikisi anında güncellensin. Ondalıklı değerler desteklenir; sonuçlar altı haneye yuvarlanır."
+    },
+    "calculator": {
+      "clear": "C",
+      "backspace": "⌫",
+      "error": "Hata",
+      "tip": "İşlemler tarayıcınızda anında yapılır. İşleçler soldan sağa uygulanır; sıfıra bölme hata gösterir."
+    },
+    "htmlToTextConverter": {
+      "inputLabel": "HTML girişi",
+      "inputPlaceholder": "HTML'i buraya yapıştırın...",
+      "outputLabel": "Düz metin",
+      "outputPlaceholder": "Çıkarılan metin burada görünür.",
+      "convert": "Dönüştür",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "removeScripts": "Script ve style bloklarını atla",
+      "tip": "İşaretlemeler tarayıcının kendi HTML çözümleyicisiyle yerel olarak temizlenir. Kaynaktaki satır sonları korunur, fazla boş satırlar sadeleştirilir."
+    },
+    "chmodCalculator": {
+      "target": "Grup",
+      "read": "Okuma",
+      "write": "Yazma",
+      "execute": "Çalıştırma",
+      "owner": "Sahip",
+      "group": "Grup",
+      "others": "Diğerleri",
+      "tip": "Kutuları işaretledikçe sayı güncellenir: okuma = 4, yazma = 2, çalıştırma = 1. Hazır düğmelerle 755 veya 644 gibi yaygın modları uygulayın."
+    },
+    "diceRoller": {
+      "diceCount": "Zar sayısı",
+      "sides": "Zar yüzü",
+      "roll": "Zar At",
+      "total": "Toplam",
+      "rollCol": "Atış",
+      "resultCol": "Sonuç",
+      "totalCol": "Toplam",
+      "tip": "Atışlar yerel ve adil üretilir: her yüzün eşit şansı vardır. Geçmiş son 20 atışı tutar."
+    },
+    "coinFlipper": {
+      "heads": "Yazı",
+      "tails": "Tura",
+      "empty": "At?",
+      "flip": "At",
+      "headsCount": "Yazı",
+      "tailsCount": "Tura",
+      "streak": "En uzun seri",
+      "tip": "Her atış bağımsızdır ve iki yönün de %50 şansı vardır. Sayımlar, seriler ve son atışlar gerçek zamanlı güncellenir."
+    },
+    "wordFrequencyCounter": {
+      "inputLabel": "Metniniz",
+      "inputPlaceholder": "Analiz edilecek metni yazın ya da yapıştırın...",
+      "excludeStopwords": "Sık kullanılan kelimeleri yok say",
+      "analyze": "Analiz Et",
+      "results": "{count} eşsiz kelime · {total} toplam",
+      "wordCol": "Kelime",
+      "countCol": "Sayı",
+      "tip": "En sık kullanılan 40 kelime listelenir. Türkçe harfler desteklenir, noktalama yok sayılır."
+    },
+    "primeFactorsCalculator": {
+      "inputLabel": "Sayı",
+      "rangeHint": "1 ile 100.000.000 arasında bir tam sayı girin.",
+      "resultLabel": "Asal çarpanlara ayırma",
+      "prime": "Bu sayı asaldır.",
+      "showDivides": "Bölme adımlarını göster",
+      "tip": "Sonuçlar üslü gösterim kullanır; örneğin 360, 2^3 × 3^2 × 5 olarak gösterilir. Yüz milyona kadar sayılar desteklenir."
+    },
+    "angleConverter": {
+      "degrees": "Derece (°)",
+      "radians": "Radyan (rad)",
+      "gradians": "Grad (grad)",
+      "tip": "Herhangi bir alana değer yazın, diğerleri anında güncellensin. Araç sonuçları okunabilirlik için sekiz ondalık basamağa yuvarlar."
+    },
+    "dataSizeConverter": {
+      "valueLabel": "Değer",
+      "unitLabel": "Birim",
+      "baseLabel": "Taban",
+      "decimalBase": "Ondalık (1000)",
+      "binaryBase": "İkili (1024)",
+      "unitCol": "Birim",
+      "sizeCol": "Boyut",
+      "source": "kaynak",
+      "tip": "Ondalık taban disk kapasitelerine uyar; ikili taban birçok işletim sisteminin bellek ve dosya sayımıyla eşleşir."
+    },
+    "fibonacciGenerator": {
+      "countLabel": "Terim sayısı",
+      "generate": "Üret",
+      "sum": "Tüm terimlerin toplamı",
+      "nth": "Son terim",
+      "tip": "Her terim kendinden önceki iki terimin toplamıdır. Toplam ve son değerle birlikte 100 terime kadar üretilir."
     }
   }
 }

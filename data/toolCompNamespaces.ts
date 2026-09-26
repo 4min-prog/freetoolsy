@@ -93,6 +93,16 @@ export const TOOL_COMP_NAMESPACE: Record<string, string> = {
   "credit-card-validator": "creditCardValidator",
   "roman-numeral-converter": "romanNumeralConverter",
   "temperature-converter": "temperatureConverter",
+  "calculator": "calculator",
+  "html-to-text-converter": "htmlToTextConverter",
+  "chmod-calculator": "chmodCalculator",
+  "dice-roller": "diceRoller",
+  "coin-flipper": "coinFlipper",
+  "word-frequency-counter": "wordFrequencyCounter",
+  "prime-factors-calculator": "primeFactorsCalculator",
+  "angle-converter": "angleConverter",
+  "data-size-converter": "dataSizeConverter",
+  "fibonacci-generator": "fibonacciGenerator",
 };
 
 export function toolCompNamespace(slug: string): string | undefined {
