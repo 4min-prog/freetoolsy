@@ -23,7 +23,7 @@ export default function RotatingWords({
   const word = words[index % words.length];
 
   return (
-    <span key={word} className="hero-rotating-word">
+    <span key={word} className="hero-rotating-word text-accent">
       {word}
     </span>
   );
