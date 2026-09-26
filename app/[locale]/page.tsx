@@ -11,6 +11,7 @@ import JsonLd from "@/components/JsonLd";
 import RotatingWords from "@/components/RotatingWords";
 import { Link } from "@/i18n/navigation";
 import { displayToolCount, tools } from "@/data/tools";
+import { categoryTheme } from "@/components/categoryTheme";
 import { toolPath } from "@/lib/paths";
 import type { Locale } from "@/i18n/routing";
 
@@ -56,8 +57,10 @@ export default async function Home({ params }: { params: { locale: string } }) {
   const categoryNames = (messages as { Categories?: Record<string, string> })
     .Categories;
   const heroWords = ["text", "developer", "security", "calculation", "image", "seo", "fun"]
-    .map((id) => categoryNames?.[id])
-    .filter((name): name is string => Boolean(name));
+    .map((id) => ({
+      text: categoryNames?.[id] ?? id,
+      color: categoryTheme(id).iconText,
+    }));
 
   return (
     <main className="mx-auto w-full max-w-5xl flex-1 px-4 sm:px-6">

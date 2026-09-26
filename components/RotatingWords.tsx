@@ -2,8 +2,13 @@
 
 import { useEffect, useState } from "react";
 
+type RotatingWord = {
+  text: string;
+  color: string;
+};
+
 type RotatingWordsProps = {
-  words: string[];
+  words: RotatingWord[];
   intervalMs?: number;
 };
 
@@ -23,8 +28,8 @@ export default function RotatingWords({
   const word = words[index % words.length];
 
   return (
-    <span key={word} className="hero-rotating-word text-accent">
-      {word}
+    <span key={word.text} className={`hero-rotating-word ${word.color}`}>
+      {word.text}
     </span>
   );
 }
