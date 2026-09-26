@@ -255,7 +255,7 @@ export default function ColorConverter() {
                     className="h-12 w-12 rounded-lg border border-border"
                     style={{ backgroundColor: rgbToText(color) }}
                   />
-                  <span className="font-mono text-[10px] text-muted">
+                  <span className="font-mono text-xs text-muted">
                     {String(percent)}%
                   </span>
                 </button>
@@ -270,7 +270,7 @@ export default function ColorConverter() {
                 className="h-12 w-12 rounded-lg border-2 border-accent"
                 style={{ backgroundColor: rgbToText(rgb) }}
               />
-              <span className="font-mono text-[10px] text-accent">0%</span>
+              <span className="font-mono text-xs text-accent">0%</span>
             </button>
             {[20, 40, 60, 80].map((percent) => {
               const color = tint(rgb, percent / 100);
@@ -286,7 +286,7 @@ export default function ColorConverter() {
                     className="h-12 w-12 rounded-lg border border-border"
                     style={{ backgroundColor: rgbToText(color) }}
                   />
-                  <span className="font-mono text-[10px] text-muted">
+                  <span className="font-mono text-xs text-muted">
                     +{String(percent)}%
                   </span>
                 </button>

@@ -13,7 +13,7 @@ export default function SampleButton({ onApply }: { onApply: () => void }) {
         onApply();
         showToast("sample");
       }}
-      className="rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-accent hover:text-accent"
+      className="min-h-10 rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-accent hover:text-accent"
     >
       {t("trySample")}
     </button>

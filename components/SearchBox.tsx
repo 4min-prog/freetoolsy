@@ -177,7 +177,7 @@ export default function SearchBox({
           role="listbox"
           id={resultsId}
           aria-label={placeholder}
-          className="fancy-scroll absolute left-0 right-0 top-full z-50 mt-px max-h-72 overflow-y-auto overscroll-contain border border-t-0 border-border bg-surface p-1"
+          className="fancy-scroll absolute left-0 right-0 top-full z-50 mt-px max-h-[min(18rem,55dvh)] overflow-y-auto overscroll-contain border border-t-0 border-border bg-surface p-1"
         >
           {matches.map((match, index) => (
             <li
@@ -212,7 +212,7 @@ export default function SearchBox({
           role="listbox"
           id={resultsId}
           aria-label={placeholder}
-          className="fancy-scroll absolute left-0 right-0 top-full z-50 mt-px max-h-72 overflow-y-auto overscroll-contain border border-t-0 border-border bg-surface p-1"
+          className="fancy-scroll absolute left-0 right-0 top-full z-50 mt-px max-h-[min(18rem,55dvh)] overflow-y-auto overscroll-contain border border-t-0 border-border bg-surface p-1"
         >
           {Boolean(normalized) && (
             <li role="option" aria-selected="false">

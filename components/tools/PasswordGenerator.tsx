@@ -174,7 +174,7 @@ export default function PasswordGenerator() {
               type="button"
               onClick={() => copyPassword(passwords[0], 0)}
               disabled={!noError}
-              className="shrink-0 rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+              className="shrink-0 rounded-lg border border-border bg-surface px-4 py-2 text-xs min-h-10 font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
             >
               {copiedIndex === 0 ? t("copied") : t("copy")}
             </button>

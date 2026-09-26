@@ -11,7 +11,7 @@ import ToolIcon from "./ToolIcon";
 import SearchOverlay from "./SearchOverlay";
 import { categoryTheme } from "./categoryTheme";
 import { categories, displayToolCount, getToolsByCategory, tools } from "@/data/tools";
-import { toolPath } from "@/lib/paths";
+import { categoryPath, toolPath } from "@/lib/paths";
 import type { Locale } from "@/i18n/routing";
 
 type ToolMetaNs = { name?: string };
@@ -30,6 +30,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
+  const menuRef = useRef<HTMLDivElement>(null);
   const t = useTranslations("Header");
   const tc = useTranslations("Categories");
   const tf = useTranslations("Footer");
@@ -41,10 +42,17 @@ export default function Header() {
     function onPointerDown(event: PointerEvent) {
       if (
         headerRef.current &&
-        !headerRef.current.contains(event.target as Node)
+        headerRef.current.contains(event.target as Node)
       ) {
-        setOpenMenu(null);
+        return;
       }
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target as Node)
+      ) {
+        setMobileOpen(false);
+      }
+      setOpenMenu(null);
     }
     function onKeyDown(event: KeyboardEvent) {
       if (event.key !== "Escape") return;
@@ -61,10 +69,12 @@ export default function Header() {
 
   useEffect(() => {
     if (!mobileOpen) return;
-    const previous = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
+    const previous = document.documentElement.style.overflow;
+    const scrollY = window.scrollY;
+    document.documentElement.style.overflow = "hidden";
     return () => {
-      document.body.style.overflow = previous;
+      document.documentElement.style.overflow = previous;
+      window.scrollTo(0, scrollY);
     };
   }, [mobileOpen]);
 
@@ -144,9 +154,12 @@ export default function Header() {
           <div className="ml-auto flex items-center gap-1.5 sm:gap-2">
             <button
               type="button"
-              onClick={() => setSearchOpen(true)}
+              onClick={() => {
+                setMobileOpen(false);
+                setSearchOpen(true);
+              }}
               aria-label={t("searchLabel")}
-              className="grid h-10 w-10 place-items-center border border-border text-muted transition-colors hover:border-foreground hover:text-foreground"
+              className="grid h-12 w-12 place-items-center rounded-lg border border-border bg-surface text-muted transition-colors hover:border-strong hover:text-text"
             >
               <svg
                 viewBox="0 0 24 24"
@@ -163,15 +176,19 @@ export default function Header() {
               </svg>
             </button>
 
-            <LocaleSwitcher />
-            <ThemeToggle />
+            <span className="hidden lg:contents">
+              <LocaleSwitcher />
+            </span>
+            <span className="hidden lg:contents">
+              <ThemeToggle />
+            </span>
 
             <button
               type="button"
               onClick={() => setMobileOpen((value) => !value)}
               aria-expanded={mobileOpen}
               aria-label={t("categories")}
-              className="grid h-10 w-10 place-items-center border border-border text-muted transition-colors hover:border-foreground hover:text-foreground lg:hidden"
+              className="grid h-12 w-12 place-items-center rounded-lg border border-border bg-surface text-muted transition-colors hover:border-strong hover:text-text lg:hidden"
             >
               <svg
                 viewBox="0 0 24 24"
@@ -192,61 +209,70 @@ export default function Header() {
           </div>
         </div>
 
-        {mobileOpen && (
-          <div className="border-t border-border bg-bg lg:hidden">
-            <div className="max-h-[calc(100dvh-3.5rem)] overflow-y-auto overscroll-contain pb-8">
-              <Link
-                href="/#tools-explorer"
-                onClick={closeAll}
-                className="flex min-h-12 items-center justify-between gap-2 border-y border-border px-4 text-sm font-medium text-foreground active:bg-surface-2"
-              >
-                {t("allTools")}
-                <span className="font-mono text-[11px] tabular-nums text-faint">
-                  {displayToolCount(tools.length)}
-                </span>
-              </Link>
+        </header>
 
-              <p className={`${label} px-4 pb-2 pt-5`}>{t("categories")}</p>
-              <ul className="grid grid-cols-2 gap-px border-y border-border bg-border">
-                {categories.map((category) => (
-                  <li key={category.id} className="bg-bg">
-                    <Link
-                      href={`/#${category.id}`}
-                      onClick={closeAll}
-                      className="flex min-h-12 items-center justify-between gap-2 px-4 text-sm text-muted active:bg-surface-2"
-                    >
-                      <span className="flex items-center gap-2">
-                        <CategoryIcon
-                          id={category.id}
-                          className={`h-4 w-4 shrink-0 ${categoryTheme(category.id).iconText}`}
-                        />
-                        {tc(category.id)}
-                      </span>
-                      <span className="font-mono text-[11px] tabular-nums text-faint">
-                        {getToolsByCategory(category.id).length}
-                      </span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+      {mobileOpen && (
+        <div
+          ref={menuRef}
+          className="fixed inset-x-0 bottom-0 top-14 z-50 border-t border-border bg-bg shadow-card sm:top-16 lg:hidden"
+        >
+          <div className="h-full overflow-y-auto overscroll-contain pb-8">
+            <Link
+              href="/#tools-explorer"
+              onClick={closeAll}
+              className="flex min-h-12 items-center justify-between gap-2 border-y border-border px-4 text-sm font-medium text-foreground active:bg-surface-2"
+            >
+              {t("allTools")}
+              <span className="font-mono text-[11px] tabular-nums text-faint">
+                {displayToolCount(tools.length)}
+              </span>
+            </Link>
 
-              <ul className="border-b border-border">
-                {pageLinks.map((link) => (
-                  <li key={link.href} className="border-t border-border first:border-t-0">
-                    <Link
-                      href={link.href}
-                      onClick={closeAll}
-                      className="flex min-h-12 items-center px-4 text-sm text-muted active:bg-surface-2"
-                    >
-                      {tf(link.key)}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+            <p className={`${label} px-4 pb-2 pt-5`}>{t("categories")}</p>
+            <ul className="grid grid-cols-2 gap-px border-y border-border bg-border">
+              {categories.map((category) => (
+                <li key={category.id} className="bg-bg">
+                  <Link
+                    href={categoryPath(locale, category.id)}
+                    onClick={closeAll}
+                    className="flex min-h-12 items-center justify-between gap-2 px-4 text-sm text-muted active:bg-surface-2"
+                  >
+                    <span className="flex items-center gap-2">
+                      <CategoryIcon
+                        id={category.id}
+                        className={`h-4 w-4 shrink-0 ${categoryTheme(category.id).iconText}`}
+                      />
+                      {tc(category.id)}
+                    </span>
+                    <span className="font-mono text-[11px] tabular-nums text-faint">
+                      {getToolsByCategory(category.id).length}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            <ul className="border-b border-border">
+              {pageLinks.map((link) => (
+                <li key={link.href} className="border-t border-border first:border-t-0">
+                  <Link
+                    href={link.href}
+                    onClick={closeAll}
+                    className="flex min-h-12 items-center px-4 text-sm text-muted active:bg-surface-2"
+                  >
+                    {tf(link.key)}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            <div className="flex items-center gap-2 border-b border-border px-4 py-3">
+              <LocaleSwitcher />
+              <ThemeToggle />
             </div>
           </div>
-        )}
-      </header>
+        </div>
+      )}
 
       <SearchOverlay open={searchOpen} onClose={() => setSearchOpen(false)} />
     </>

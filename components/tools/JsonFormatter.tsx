@@ -162,7 +162,7 @@ export default function JsonFormatter() {
                 type="button"
                 onClick={copy}
                 disabled={!rawOutput}
-                className="rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-40"
+                className="rounded-lg border border-border bg-surface px-4 py-2 text-xs min-h-10 font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-40"
               >
                 {copied ? t("copied") : t("copy")}
               </button>
@@ -170,7 +170,7 @@ export default function JsonFormatter() {
                 type="button"
                 onClick={clear}
                 disabled={!input && !rawOutput && !error}
-                className="rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-40"
+                className="rounded-lg border border-border bg-surface px-4 py-2 text-xs min-h-10 font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-40"
               >
                 {t("clear")}
               </button>

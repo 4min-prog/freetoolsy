@@ -10,8 +10,8 @@
   --border: #e2e5eb;
   --border-strong: #c8cdd7;
   --text: #17181c;
-  --muted: #5b6170;
-  --faint: #7c8291;
+  --muted: #4d5464;
+  --faint: #646b7a;
   --accent: #2563eb;
   --on-accent: #ffffff;
   --danger: #b42318;
@@ -50,6 +50,10 @@ html {
   background-color: var(--bg);
   scrollbar-width: thin;
   scrollbar-color: var(--border-strong) transparent;
+}
+html,
+body {
+  overflow-x: clip;
 }
 html::-webkit-scrollbar {
   width: 10px;
@@ -261,6 +265,11 @@ textarea {
   scrollbar-width: thin;
   scrollbar-color: var(--border-strong) transparent;
   scrollbar-gutter: stable;
+}
+@media (pointer: coarse) {
+  .fancy-scroll {
+    scrollbar-gutter: auto;
+  }
 }
 .fancy-scroll:hover {
   scrollbar-color: var(--accent) transparent;

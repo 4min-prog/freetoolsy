@@ -103,7 +103,7 @@ export default async function Home({ params }: { params: { locale: string } }) {
           },
         ]}
       />
-      <section className="fade-in-up relative pb-9 pt-14 sm:pb-10 sm:pt-20">
+      <section className="fade-in-up relative pb-9 pt-10 sm:pb-10 sm:pt-20">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
@@ -118,7 +118,7 @@ export default async function Home({ params }: { params: { locale: string } }) {
               </span>
               <span aria-hidden="true" className="h-px flex-1 bg-border" />
             </div>
-            <h1 className="mt-6 max-w-[20ch] text-4xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-5xl">
+            <h1 className="mt-6 max-w-[20ch] text-3xl font-bold leading-[1.05] tracking-tight text-foreground sm:text-5xl">
           {hasHighlight ? (
             <>
               <span>

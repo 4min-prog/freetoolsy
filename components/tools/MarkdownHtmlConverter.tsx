@@ -293,7 +293,7 @@ export default function MarkdownHtmlConverter() {
         <button
           type="button"
           onClick={() => setInput(sampleMd)}
-          className="rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-strong hover:text-text"
+          className="rounded-lg border border-border bg-surface px-4 py-2 text-xs min-h-10 font-medium text-muted transition-colors hover:border-strong hover:text-text"
         >
           {t("sample")}
         </button>
@@ -301,7 +301,7 @@ export default function MarkdownHtmlConverter() {
           <button
             type="button"
             onClick={() => setShowPreview((current) => !current)}
-            className="rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-strong hover:text-text"
+            className="rounded-lg border border-border bg-surface px-4 py-2 text-xs min-h-10 font-medium text-muted transition-colors hover:border-strong hover:text-text"
           >
             {showPreview ? t("showHtml") : t("preview")}
           </button>
@@ -313,7 +313,7 @@ export default function MarkdownHtmlConverter() {
       </label>
       {showPreview && mode === "md-to-html" ? (
         <div
-          className="prose-sm mt-2 min-h-[180px] w-full whitespace-pre-wrap rounded-lg border border-border bg-bg px-3.5 py-3 text-sm leading-relaxed text-text"
+          className="mt-2 min-h-[180px] w-full overflow-x-auto whitespace-pre-wrap break-words rounded-lg border border-border bg-bg px-3.5 py-3 text-sm leading-relaxed text-text"
           dangerouslySetInnerHTML={{ __html: output }}
         />
       ) : (
@@ -332,7 +332,7 @@ export default function MarkdownHtmlConverter() {
         <button
           type="button"
           onClick={handleCopy}
-          className="mt-3 rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-strong hover:text-text"
+          className="mt-3 rounded-lg border border-border bg-surface px-4 py-2 text-xs min-h-10 font-medium text-muted transition-colors hover:border-strong hover:text-text"
         >
           {copied ? t("copied") : t("copy")}
         </button>

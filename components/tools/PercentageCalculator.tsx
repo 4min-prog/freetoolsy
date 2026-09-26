@@ -150,7 +150,7 @@ export default function PercentageCalculator() {
             role="tab"
             aria-selected={mode === option.id}
             onClick={() => setMode(option.id)}
-            className={`flex-1 whitespace-nowrap rounded-md px-3 py-2 text-sm font-medium transition-colors ${
+            className={`flex-1 whitespace-normal rounded-md px-3 py-2 text-sm font-medium transition-colors sm:whitespace-nowrap ${
               mode === option.id
                 ? "bg-surface text-text shadow-card"
                 : "text-muted hover:text-text"

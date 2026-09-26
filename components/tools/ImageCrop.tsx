@@ -194,7 +194,7 @@ function DialogImagePreview(props: {
       <button
         type="button"
         onClick={onDownload}
-        className="mt-3 rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-strong hover:text-text"
+        className="mt-3 rounded-lg border border-border bg-surface px-4 py-2 text-xs min-h-10 font-medium text-muted transition-colors hover:border-strong hover:text-text"
       >
         {t("download")}
       </button>

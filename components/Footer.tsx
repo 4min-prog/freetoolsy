@@ -127,7 +127,7 @@ export default async function Footer() {
           </div>
         </nav>
       </div>
-      <div className="mx-auto w-full max-w-5xl border-t border-border px-4 pb-10 pt-8 sm:px-6">
+      <div className="mx-auto w-full max-w-5xl border-t border-border px-4 pb-28 pt-8 sm:px-6 sm:pb-10">
         <p className="text-sm font-semibold text-text">{t("tools")}</p>
         <ul className="mt-4 grid grid-cols-1 gap-x-6 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
           {categories.map((category) => {
@@ -138,12 +138,12 @@ export default async function Footer() {
                   <CategoryIcon id={category.id} className="h-4 w-4 shrink-0 text-accent" />
                   {tc(category.id)}
                 </p>
-                <ul className="mt-2.5 space-y-1.5">
+                <ul className="mt-2.5 space-y-0">
                   {categoryTools.slice(0, 5).map((tool) => (
                     <li key={tool.slug}>
                       <Link
                         href={toolPath(locale, tool.slug)}
-                        className="inline-block text-sm text-muted transition-colors hover:text-text"
+                        className="block py-2 text-sm text-muted transition-colors hover:text-text"
                       >
                         {meta?.[tool.slug]?.name ?? tool.slug}
                       </Link>
@@ -152,7 +152,7 @@ export default async function Footer() {
                   <li>
                     <Link
                       href={categoryPath(locale, category.id)}
-                      className="inline-flex items-center gap-1 text-sm font-medium text-accent transition-opacity hover:opacity-80"
+                      className="inline-flex items-center gap-1 py-2 text-sm font-medium text-accent transition-opacity hover:opacity-80"
                     >
                       {t("viewAll")}
                       <span aria-hidden="true">→</span>

@@ -125,7 +125,7 @@ export default function FaviconGenerator() {
   return (
     <div>
       <div className="grid gap-4 sm:grid-cols-2">
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-3">
           <div>
             <label htmlFor="fg-color" className="block text-sm font-medium text-text">
               {t("foregroundLabel")}
@@ -222,7 +222,7 @@ export default function FaviconGenerator() {
             <button
               type="button"
               onClick={() => download(pngUrl, `favicon-${size}.png`)}
-              className="mt-3 rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-strong hover:text-text"
+              className="mt-3 rounded-lg border border-border bg-surface px-4 py-2 text-xs min-h-10 font-medium text-muted transition-colors hover:border-strong hover:text-text"
             >
               {t("downloadPng")}
             </button>
@@ -242,7 +242,7 @@ export default function FaviconGenerator() {
                 <button
                   type="button"
                   onClick={() => download(icoUrl, "favicon.ico")}
-                  className="rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-strong hover:text-text"
+                  className="rounded-lg border border-border bg-surface px-4 py-2 text-xs min-h-10 font-medium text-muted transition-colors hover:border-strong hover:text-text"
                 >
                   {t("downloadIco")}
                 </button>
@@ -251,7 +251,7 @@ export default function FaviconGenerator() {
                 <button
                   type="button"
                   onClick={handleCopy}
-                  className="rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-strong hover:text-text"
+                  className="rounded-lg border border-border bg-surface px-4 py-2 text-xs min-h-10 font-medium text-muted transition-colors hover:border-strong hover:text-text"
                 >
                   {copied ? t("copied") : t("copyBase64")}
                 </button>

@@ -112,7 +112,7 @@ export default function GpaCalculator() {
           <button
             type="button"
             onClick={addRow}
-            className="rounded-lg bg-accent px-3 py-1.5 text-xs font-medium text-on-accent transition-opacity hover:opacity-90"
+            className="rounded-lg bg-accent px-4 py-2 text-xs min-h-10 font-medium text-on-accent transition-opacity hover:opacity-90"
           >
             {t("addRow")}
           </button>
@@ -200,7 +200,7 @@ export default function GpaCalculator() {
             <button
               type="button"
               onClick={handleCopy}
-              className="mt-4 rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-strong hover:text-text"
+              className="mt-4 rounded-lg border border-border bg-surface px-4 py-2 text-xs min-h-10 font-medium text-muted transition-colors hover:border-strong hover:text-text"
             >
               {copied ? t("copied") : t("copy")}
             </button>

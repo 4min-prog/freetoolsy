@@ -196,7 +196,7 @@ export default async function AraclarPage({
         {t("pageDesc")}
       </p>
 
-      <div className="mt-8 rounded-xl border border-border bg-surface p-5 shadow-card sm:p-6">
+      <div className="mt-8 overflow-hidden rounded-xl border border-border bg-surface p-5 shadow-card sm:p-6">
         <NextIntlClientProvider messages={toolMessages}>
           {DYNAMIC_TOOL_SLUGS.has(tool.slug) ? (
             <ToolDynamic slug={tool.slug} />
@@ -213,7 +213,7 @@ export default async function AraclarPage({
       {guideLinks.length > 0 && (
         <section
           aria-label={tRehber("relatedToolsTitle")}
-          className="mt-12 rounded-xl border border-border bg-surface p-6 shadow-card"
+          className="mt-12 rounded-xl border border-border bg-surface p-4 shadow-card sm:p-6"
         >
           <h2 className="text-base font-semibold tracking-tight text-text">
             {tRehber("backToAll")}
@@ -239,7 +239,7 @@ export default async function AraclarPage({
       {similarTools.length > 0 && (
         <section
           aria-label={tPage("similarTitle")}
-          className="mt-12 rounded-xl border border-border bg-surface p-6 shadow-card"
+          className="mt-12 rounded-xl border border-border bg-surface p-4 shadow-card sm:p-6"
         >
           <div className="flex flex-wrap items-center justify-between gap-3">
             <h2 className="text-base font-semibold tracking-tight text-text">
@@ -257,10 +257,12 @@ export default async function AraclarPage({
               <li key={item.slug}>
                 <Link
                   href={toolPath(locale, item.slug)}
-                  className="flex items-center gap-2 rounded-lg border border-border bg-bg px-3 py-2 text-sm text-muted transition-colors hover:border-accent hover:text-accent"
+                  className="flex items-center gap-2 rounded-lg border border-border bg-bg px-2.5 py-2 text-sm text-muted transition-colors hover:border-accent hover:text-accent sm:px-3"
                 >
                   <ToolIcon id={item.slug} className="h-4 w-4 shrink-0 text-accent" />
-                  <span className="truncate">{meta?.[item.slug]?.name ?? item.slug}</span>
+                  <span className="line-clamp-3 leading-snug">
+                    {meta?.[item.slug]?.name ?? item.slug}
+                  </span>
                 </Link>
               </li>
             ))}
@@ -271,7 +273,7 @@ export default async function AraclarPage({
       {popularTools.length > 0 && (
         <section
           aria-label={tPage("otherTitle")}
-          className="mt-12 rounded-xl border border-border bg-surface p-6 shadow-card"
+          className="mt-12 rounded-xl border border-border bg-surface p-4 shadow-card sm:p-6"
         >
           <div className="flex flex-wrap items-center justify-between gap-3">
             <h2 className="text-base font-semibold tracking-tight text-text">
@@ -289,10 +291,12 @@ export default async function AraclarPage({
               <li key={item.slug}>
                 <Link
                   href={toolPath(locale, item.slug)}
-                  className="flex items-center gap-2 rounded-lg border border-border bg-bg px-3 py-2 text-sm text-muted transition-colors hover:border-accent hover:text-accent"
+                  className="flex items-center gap-2 rounded-lg border border-border bg-bg px-2.5 py-2 text-sm text-muted transition-colors hover:border-accent hover:text-accent sm:px-3"
                 >
                   <ToolIcon id={item.slug} className="h-4 w-4 shrink-0 text-accent" />
-                  <span className="truncate">{meta?.[item.slug]?.name ?? item.slug}</span>
+                  <span className="line-clamp-3 leading-snug">
+                    {meta?.[item.slug]?.name ?? item.slug}
+                  </span>
                 </Link>
               </li>
             ))}

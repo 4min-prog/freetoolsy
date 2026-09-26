@@ -52,17 +52,17 @@ export default function ToolCard({ tool }: { tool: Tool }) {
           <path d="M5 12h14M13 6l6 6-6 6" />
         </svg>
         {isNew && (
-          <span className="shrink-0 rounded-full bg-accent px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-on-accent">
+          <span className="shrink-0 rounded-full bg-accent px-2 py-0.5 text-[11px] font-bold uppercase tracking-wide text-on-accent">
             {tCommon("new")}
           </span>
         )}
       </div>
 
-      <span className="relative z-10 mt-2 font-mono text-[10px] uppercase tracking-[0.18em] text-faint">
+      <span className="relative z-10 mt-2 font-mono text-[11px] uppercase tracking-[0.18em] text-faint">
         {tc(tool.category)}
       </span>
 
-      <p className="relative z-10 mt-3 flex-1 text-sm leading-relaxed text-muted">
+      <p className="relative z-10 mt-3 hidden flex-1 text-sm leading-relaxed text-muted sm:block">
         {t("desc")}
       </p>
     </Link>

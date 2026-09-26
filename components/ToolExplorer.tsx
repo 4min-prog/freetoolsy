@@ -98,7 +98,42 @@ export default function ToolExplorer() {
   }
 
   return (
-    <div id="tools-explorer" className="scroll-mt-20 pb-20">
+    <div id="tools-explorer" className="scroll-mt-20 pb-28 sm:pb-20">
+      <nav
+        aria-label={t("categories")}
+        className="-mx-4 mt-6 flex gap-2 overflow-x-auto overflow-y-hidden px-4 py-2 [scrollbar-width:none] lg:hidden"
+      >
+        <button
+          type="button"
+          onClick={() => selectCategory("")}
+          aria-pressed={!cat}
+          className={`min-h-11 shrink-0 rounded-full border px-4 text-sm font-medium transition-colors ${
+            !cat
+              ? "border-transparent bg-accent text-on-accent"
+              : "border-border bg-surface text-muted"
+          }`}
+        >
+          {t("tabAll")}
+        </button>
+        {categories.map((category) => {
+          const active = cat === category.id;
+          return (
+            <button
+              key={category.id}
+              type="button"
+              onClick={() => selectCategory(category.id)}
+              aria-pressed={active}
+              className={`min-h-11 shrink-0 rounded-full border px-4 text-sm font-medium transition-colors ${
+                active
+                  ? "border-transparent bg-accent text-on-accent"
+                  : "border-border bg-surface text-muted"
+              }`}
+            >
+              {tc(category.id)}
+            </button>
+          );
+        })}
+      </nav>
       <div className="mt-6 lg:grid lg:grid-cols-[13rem_minmax(0,1fr)] lg:gap-10">
         <nav className="hidden lg:block" aria-label={t("categories")}>
           <div className="sticky top-24">

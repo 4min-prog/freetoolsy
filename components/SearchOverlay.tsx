@@ -37,7 +37,7 @@ export default function SearchOverlay({
         onClick={onClose}
         className="absolute inset-0 h-full w-full cursor-default bg-black/40 backdrop-blur-md"
       />
-      <div className="relative mx-auto mt-[18vh] w-full max-w-xl px-4">
+      <div className="relative mx-auto mt-[max(1rem,8dvh)] w-full max-w-xl px-4">
         <SearchBox
           large
           autoFocus

@@ -201,7 +201,7 @@ export default function ColorPaletteGenerator() {
               className="h-16 w-full rounded-lg border border-border transition-transform group-hover:scale-105"
               style={{ backgroundColor: hex }}
             />
-            <span className="font-mono text-[10px] text-muted">
+            <span className="font-mono text-xs text-muted">
               {copiedIndex === index ? t("copied") : hex}
             </span>
           </button>

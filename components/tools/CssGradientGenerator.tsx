@@ -170,7 +170,7 @@ export default function CssGradientGenerator() {
                   setAngle(degrees[value]);
                   setDirection(value);
                 }}
-                className={`rounded-lg border px-3 py-1.5 text-xs font-medium transition-colors ${
+                className={`rounded-lg border px-4 py-2 text-xs min-h-10 font-medium transition-colors ${
                   direction === value
                     ? "border-accent bg-accent/10 text-accent"
                     : "border-border bg-surface text-muted hover:border-strong hover:text-text"
@@ -202,7 +202,7 @@ export default function CssGradientGenerator() {
           <button
             type="button"
             onClick={copy}
-            className="rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-accent hover:text-accent"
+            className="rounded-lg border border-border bg-surface px-4 py-2 text-xs min-h-10 font-medium text-muted transition-colors hover:border-accent hover:text-accent"
           >
             {copied ? t("copied") : t("copy")}
           </button>

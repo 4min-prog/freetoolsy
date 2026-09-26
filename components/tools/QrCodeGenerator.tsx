@@ -563,7 +563,7 @@ export default function QrCodeGenerator() {
           <button
             type="button"
             onClick={() => setForm({ ...EMPTY_FORM })}
-            className="rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-strong hover:text-text"
+            className="rounded-lg border border-border bg-surface px-4 py-2 text-xs min-h-10 font-medium text-muted transition-colors hover:border-strong hover:text-text"
           >
             {t("clear")}
           </button>
@@ -573,8 +573,8 @@ export default function QrCodeGenerator() {
       <div className="mt-5 grid gap-5 md:grid-cols-2">
         <div
           id="qr-svg-wrap"
-          className="flex items-center justify-center rounded-lg border border-border"
-          style={{ backgroundColor: background, padding: margin * 6 }}
+          className="flex items-center justify-center overflow-hidden rounded-lg border border-border"
+          style={{ backgroundColor: background, padding: Math.min(margin * 6, 32) }}
         >
           {canGenerate ? (
             <PreviewBoundary
@@ -588,7 +588,7 @@ export default function QrCodeGenerator() {
                 level={level}
                 bgColor={background}
                 fgColor={foreground}
-                style={{ maxWidth: 220, width: "100%", height: "auto" }}
+                style={{ width: "100%", height: "auto" }}
               />
             </PreviewBoundary>
           ) : (
@@ -620,7 +620,7 @@ export default function QrCodeGenerator() {
             <p className="mt-1.5 text-xs text-faint">{t(`level.${level}`)}</p>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div>
               <label htmlFor="qr-fg" className="block text-sm font-medium text-text">
                 {t("fgColor")}
@@ -633,7 +633,7 @@ export default function QrCodeGenerator() {
                   onChange={(event) => setForeground(event.target.value)}
                   className="h-10 w-14 shrink-0 cursor-pointer rounded-lg border border-border bg-bg p-1"
                 />
-                <span className="font-mono text-sm text-text">{foreground.toUpperCase()}</span>
+                <span className="min-w-0 truncate font-mono text-sm text-text">{foreground.toUpperCase()}</span>
               </div>
             </div>
             <div>
@@ -648,7 +648,7 @@ export default function QrCodeGenerator() {
                   onChange={(event) => setBackground(event.target.value)}
                   className="h-10 w-14 shrink-0 cursor-pointer rounded-lg border border-border bg-bg p-1"
                 />
-                <span className="font-mono text-sm text-text">{background.toUpperCase()}</span>
+                <span className="min-w-0 truncate font-mono text-sm text-text">{background.toUpperCase()}</span>
               </div>
             </div>
           </div>
@@ -698,7 +698,7 @@ export default function QrCodeGenerator() {
           <button
             type="button"
             onClick={copyPayload}
-            className="rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-strong hover:text-text"
+            className="rounded-lg border border-border bg-surface px-4 py-2 text-xs min-h-10 font-medium text-muted transition-colors hover:border-strong hover:text-text"
           >
             {copied ? t("copied") : t("copyPayload")}
           </button>

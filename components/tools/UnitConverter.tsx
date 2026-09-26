@@ -246,7 +246,7 @@ export default function UnitConverter() {
             role="tab"
             aria-selected={tab === preset.id}
             onClick={() => setTab(preset.id)}
-            className={`flex-1 whitespace-nowrap rounded-md px-2 py-2 text-sm font-medium transition-colors ${
+            className={`flex-1 whitespace-normal sm:whitespace-nowrap rounded-md px-2 py-2 text-sm font-medium transition-colors ${
               tab === preset.id ? "bg-surface text-text shadow-card" : "text-muted hover:text-text"
             }`}
           >
@@ -258,7 +258,7 @@ export default function UnitConverter() {
           role="tab"
           aria-selected={tab === "food"}
           onClick={() => setTab("food")}
-          className={`flex-1 whitespace-nowrap rounded-md px-2 py-2 text-sm font-medium transition-colors ${
+          className={`flex-1 whitespace-normal sm:whitespace-nowrap rounded-md px-2 py-2 text-sm font-medium transition-colors ${
             tab === "food" ? "bg-surface text-text shadow-card" : "text-muted hover:text-text"
           }`}
         >

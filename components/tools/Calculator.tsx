@@ -117,7 +117,7 @@ export default function Calculator() {
     <div className="mx-auto max-w-sm">
       <div className="rounded-xl border border-border bg-bg px-4 py-3 text-right">
         <div
-          className={`text-2xl font-semibold tabular-nums tracking-tight ${
+          className={`min-w-0 break-all text-2xl font-semibold tabular-nums tracking-tight ${
             error ? "text-danger" : "text-text"
           }`}
         >
