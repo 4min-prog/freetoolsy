@@ -6,7 +6,7 @@ export const SAMPLES: Record<string, string> = {
   "json-formatter":
     '{\n  "name": "freetoolsy",\n  "free": true,\n  "tools": 71,\n  "tags": ["json", "format"]\n}',
   "base64": "FreetoolsY — free tools, in your browser.",
-  "url-encoder": "https://freetoolsy.com/araclar?q=örnek metin&ücret=true",
+  "url-encoder": "https://www.freetoolsy.com/araclar?q=örnek metin&ücret=true",
   "sha-hash-generator": "FreetoolsY örnek metni",
   "md5-hash": "FreetoolsY örnek metni",
   "whitespace-cleaner": "  satır bir  \n\n  satır   iki   \n\n\n satır üç ",
@@ -32,7 +32,7 @@ export const SAMPLES: Record<string, string> = {
     "FreetoolsY, tarayıcınızda çalışan ücretsiz araçlar sunar. Her araç tek bir işi yapar: hızlı, sade ve kurulumsuzdur. Kayıt gerekmez, verileriniz cihazınızdan çıkmaz.",
   "keyword-density-checker":
     "freetoolsy ücretsiz araç ücretsiz araçlar tarayıcı araçları online ücretsiz araçlar",
-  "qr-code-generator": "https://freetoolsy.com",
+  "qr-code-generator": "https://www.freetoolsy.com",
   "ai-token-counter": "Ücretsiz araçlar, tarayıcınızda çalışır. Bu bir örnek token metnidir.",
   "aes-encryption": "FreetoolsY gizli örnek metni",
   "cron-tester": "*/5 * * * *",
@@ -46,5 +46,5 @@ export const SAMPLES: Record<string, string> = {
   "wcag-contrast-checker": "#3b82f6",
   "time-zone-converter": "2026-01-15T14:30",
   "text-extractor":
-    "Merhaba! Bana adres@example.com ve destek@freetoolsy.vercel.test üzerinden ulaşabilirsiniz.\nSiteyi https://freetoolsy.com adresinden ziyaret edin, #ücretsiz #geliştirici etiketlerini kullanın.\nTelefon: +90 555 123 45 67",
+    "Merhaba! Bana adres@example.com ve destek@freetoolsy.vercel.test üzerinden ulaşabilirsiniz.\nSiteyi https://www.freetoolsy.com adresinden ziyaret edin, #ücretsiz #geliştirici etiketlerini kullanın.\nTelefon: +90 555 123 45 67",
 };

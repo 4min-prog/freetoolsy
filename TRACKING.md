@@ -72,4 +72,4 @@ git push             # main = production
 ## Notes
 - BMI result is not medical advice (disclaimer lives inside the component).
 - Everything runs client-side; no server/DB.
-- Domain `freetoolsy.com` intended; site currently lives on `freetoolsy.com` (all URLs updated).
+- Domain `freetoolsy.com` intended; site lives on `www.freetoolsy.com` (Vercel 308 bare→www). Canonical host for SEO must stay `https://www.freetoolsy.com` (paths.ts `siteUrl`). If Vercel is flipped to serve bare, revert all `www.freetoolsy.com` references.

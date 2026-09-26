@@ -16,8 +16,8 @@ export async function generateMetadata({
       alternates: {
         canonical: params.locale === "en" ? "/about" : `/${params.locale}/about`,
         languages: {
-          en: "https://freetoolsy.com/about",
-          tr: "https://freetoolsy.com/tr/about",
+          en: "https://www.freetoolsy.com/about",
+          tr: "https://www.freetoolsy.com/tr/about",
         },
       },
       openGraph: {
@@ -48,7 +48,7 @@ export default async function HakkimizdaPage({
   const tAbout = await getTranslations("Info.about");
   const sections = tAbout.raw("sections") as AboutSection[];
   const environment = isTr ? "tr" : "en";
-  const url = `https://freetoolsy.com${isTr ? "/tr" : ""}/about`;
+  const url = `https://www.freetoolsy.com${isTr ? "/tr" : ""}/about`;
 
   return (
     <main className="mx-auto w-full max-w-2xl flex-1 px-4 py-10 sm:px-6 sm:py-14">
@@ -58,7 +58,7 @@ export default async function HakkimizdaPage({
             "@context": "https://schema.org",
             "@type": "Organization",
             name: "FreetoolsY",
-            url: "https://freetoolsy.com/",
+            url: "https://www.freetoolsy.com/",
             description: tAbout("jsonDesc"),
             email: "support@freetoolsy.com",
           },

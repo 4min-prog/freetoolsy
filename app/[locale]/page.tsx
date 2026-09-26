@@ -26,8 +26,8 @@ export async function generateMetadata({
     alternates: {
       canonical: params.locale === "en" ? "/" : `/${params.locale}`,
       languages: {
-        en: "https://freetoolsy.com/",
-        tr: "https://freetoolsy.com/tr",
+        en: "https://www.freetoolsy.com/",
+        tr: "https://www.freetoolsy.com/tr",
       },
     },
   };
@@ -59,7 +59,7 @@ export default async function Home({ params }: { params: { locale: string } }) {
             "@context": "https://schema.org",
             "@type": "WebSite",
             name: "FreetoolsY",
-            url: "https://freetoolsy.com/",
+            url: "https://www.freetoolsy.com/",
             description: t("jsonldSiteDesc"),
             inLanguage: params.locale === "tr" ? "tr" : "en",
           },
@@ -67,7 +67,7 @@ export default async function Home({ params }: { params: { locale: string } }) {
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
             name: "FreetoolsY",
-            url: "https://freetoolsy.com/",
+            url: "https://www.freetoolsy.com/",
             description: t("jsonldAppDesc"),
             applicationCategory: "UtilityApplication",
             operatingSystem: "Web",

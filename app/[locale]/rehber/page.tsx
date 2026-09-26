@@ -4,7 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { guides } from "@/data/guides";
 import { routing, type Locale } from "@/i18n/routing";
 
-const siteUrl = "https://freetoolsy.com";
+const siteUrl = "https://www.freetoolsy.com";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));

@@ -1,6 +1,6 @@
 import type { Locale } from "@/i18n/routing";
 
-export const siteUrl = "https://freetoolsy.com";
+export const siteUrl = "https://www.freetoolsy.com";
 
 export function toolPath(locale: Locale, slug: string) {
   return locale === "tr" ? `/araclar/${slug}` : `/tools/${slug}`;

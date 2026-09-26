@@ -2,7 +2,7 @@
 
 Günlük işler için sade online araçlar. Metin, güvenlik, geliştirici ve hesaplama araçları — üyelik yok, kurulum yok, hepsi tarayıcıda çalışır.
 
-Domain: [freetoolsy.com](https://freetoolsy.com)
+Domain: [freetoolsy.com](https://www.freetoolsy.com)
 
 ## Teknolojiler
 

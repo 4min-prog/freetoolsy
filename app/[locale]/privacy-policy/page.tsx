@@ -29,8 +29,8 @@ export async function generateMetadata({
           ? "/privacy-policy"
           : `/${params.locale}/privacy-policy`,
       languages: {
-        en: "https://freetoolsy.com/privacy-policy",
-        tr: "https://freetoolsy.com/tr/privacy-policy",
+        en: "https://www.freetoolsy.com/privacy-policy",
+        tr: "https://www.freetoolsy.com/tr/privacy-policy",
       },
     },
     openGraph: {

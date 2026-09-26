@@ -20,7 +20,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const siteUrl = "https://freetoolsy.com";
+const siteUrl = "https://www.freetoolsy.com";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));

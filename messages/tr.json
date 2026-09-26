@@ -3502,7 +3502,7 @@
       "sections": [
         {
           "h": "1. Genel Bilgiler",
-          "p": "FreetoolsY (\"biz\", \"site\"), https://freetoolsy.com adresinde ücretsiz çevrimiçi araçlar sunar. Bu politika, siteyi kullanırken hangi bilgilerin toplandığını ve bu bilgilerin nasıl kullanıldığını açıklar. Siteyi kullanarak bu politikayı kabul etmiş olursunuz."
+          "p": "FreetoolsY (\"biz\", \"site\"), https://www.freetoolsy.com adresinde ücretsiz çevrimiçi araçlar sunar. Bu politika, siteyi kullanırken hangi bilgilerin toplandığını ve bu bilgilerin nasıl kullanıldığını açıklar. Siteyi kullanarak bu politikayı kabul etmiş olursunuz."
         },
         {
           "h": "2. Toplanan Veriler",
@@ -3843,7 +3843,7 @@
         "vPhone": "+90 555 000 00 00",
         "vEmail": "ayse@example.com",
         "vOrg": "FreetoolsY",
-        "vUrl": "freetoolsy.com",
+        "vUrl": "www.freetoolsy.com",
         "emailTo": "merhaba@example.com",
         "emailSubject": "Yarın toplantı",
         "emailBody": "Saat 10:00'da görüşürüz.",

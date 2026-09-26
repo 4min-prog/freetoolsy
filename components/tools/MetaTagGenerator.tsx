@@ -100,7 +100,7 @@ export default function MetaTagGenerator() {
                 setDescription(
                   "FreetoolsY tarayıcınızda çalışan ücretsiz online araçlar sunar. Metin, dönüştürme, hesaplama ve daha fazlası. Kayıt gerekmez, verileriniz cihazınızdan çıkmaz."
                 );
-                setUrl("https://freetoolsy.com");
+                setUrl("https://www.freetoolsy.com");
                 setType("website");
               }}
             />

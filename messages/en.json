@@ -3502,7 +3502,7 @@
       "sections": [
         {
           "h": "1. General Information",
-          "p": "FreetoolsY (\"we\", \"the site\") offers free online tools at https://freetoolsy.com. This policy explains what information is collected while you use the site and how it is used. By using the site you accept this policy."
+          "p": "FreetoolsY (\"we\", \"the site\") offers free online tools at https://www.freetoolsy.com. This policy explains what information is collected while you use the site and how it is used. By using the site you accept this policy."
         },
         {
           "h": "2. Data Collected",
@@ -3843,7 +3843,7 @@
         "vPhone": "+90 555 000 00 00",
         "vEmail": "jane@example.com",
         "vOrg": "FreetoolsY",
-        "vUrl": "freetoolsy.com",
+        "vUrl": "www.freetoolsy.com",
         "emailTo": "hello@example.com",
         "emailSubject": "Meeting tomorrow",
         "emailBody": "See you at 10:00.",

@@ -8,7 +8,7 @@ import { routing, type Locale } from "@/i18n/routing";
 import { localizedUrl, toolPath } from "@/lib/paths";
 import ToolIcon from "@/components/ToolIcon";
 
-const siteUrl = "https://freetoolsy.com";
+const siteUrl = "https://www.freetoolsy.com";
 
 export function generateStaticParams() {
   const params: { locale: string; slug: string }[] = [];

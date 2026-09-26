@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://freetoolsy.com/sitemap.xml
+Sitemap: https://www.freetoolsy.com/sitemap.xml
