@@ -111,6 +111,18 @@ export default async function Footer() {
                   />
                 </a>
               </li>
+              <li className="pt-1.5">
+                <a href="https://openhunts.com" target="_blank" title="OpenHunts Club">
+                  <img
+                    alt="OpenHunts Club Member"
+                    height="105"
+                    src="https://cdn.openhunts.com/badges/club.webp"
+                    style={{ width: "195px", height: "auto" }}
+                    width="486"
+                    className="h-auto rounded-md border border-border bg-surface transition-opacity hover:opacity-80"
+                  />
+                </a>
+              </li>
             </ul>
           </div>
         </nav>
