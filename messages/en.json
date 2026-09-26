@@ -761,6 +761,48 @@
       "title": "Border Radius Generator - Rounded Corners With Live Preview",
       "pageDesc": "Create border-radius CSS visually. Adjust each corner, preview the rounded box live and copy the code into your stylesheet. Free and works entirely in your browser.",
       "intro": "Adjust the corner sliders and watch a live preview change as the radius grows. Link the corners to keep them equal, or style each one separately, then copy the generated CSS."
+    },
+    "text-to-speech": {
+      "name": "Text to Speech",
+      "desc": "Turn typed text into natural speech in your browser with selectable voice and speed.",
+      "title": "Text to Speech - Convert Text Into Audio Online For Free",
+      "pageDesc": "Convert text into spoken audio right in your browser. Pick a voice, adjust the speed and pitch, press Play and listen instantly. Free, no uploads, no sign-up.",
+      "intro": "Type or paste any text, choose a voice and rate, then press Speak to hear it instantly. Everything runs locally on your device."
+    },
+    "pomodoro-timer": {
+      "name": "Pomodoro Timer",
+      "desc": "Stay focused with a work/break countdown timer and track completed sessions.",
+      "title": "Pomodoro Timer - Online Focus Timer With Work-Break Cycles",
+      "pageDesc": "Use the Pomodoro technique with a customizable focus timer. Set work and break durations, run cycles automatically and track how many sessions you finish. Free and works offline.",
+      "intro": "Set your work and break minutes, press Start, and switch automatically through focus sessions with a beep between cycles."
+    },
+    "binary-text-converter": {
+      "name": "Binary Text Converter",
+      "desc": "Convert text to UTF-8 binary and binary back to readable text instantly.",
+      "title": "Binary to Text Converter - Encode and Decode Binary Online",
+      "pageDesc": "Convert plain text into binary ones and zeros and decode binary back to text. UTF-8 based, supports every language and emoji. Free, runs entirely in your browser.",
+      "intro": "Type a message and turn it into binary code, or paste binary groups and read them back as normal text. Works with every language."
+    },
+    "credit-card-validator": {
+      "name": "Credit Card Validator",
+      "desc": "Check if a card number passes the Luhn algorithm and detect the card brand.",
+      "title": "Credit Card Validator - Check Card Number With Luhn Algorithm",
+      "pageDesc": "Verify any card number with the Luhn check-digit algorithm and detect the brand (Visa, Mastercard, Amex and more). Numbers are processed locally and never stored. Free.",
+      "intro": "Enter any card number and instantly see whether it is structurally valid, which brand it belongs to and how it should be grouped."
+    },
+    "roman-numeral-converter": {
+      "name": "Roman Numeral Converter",
+      "desc": "Convert numbers to Roman numerals and Roman numerals back, up to 3999.",
+      "title": "Roman Numeral Converter - Numbers to Roman Numerals Online",
+      "pageDesc": "Convert Arabic numbers (1 to 3999) into Roman numerals and translate Roman numerals back into numbers. Instant, two-way conversion. Free, no sign-up.",
+      "intro": "Type a number to see its Roman form, or enter a Roman numeral like XVII to get the number. Both directions update instantly."
+    },
+    "temperature-converter": {
+      "name": "Temperature Converter",
+      "desc": "Convert between Celsius, Fahrenheit and Kelvin instantly and accurately.",
+      "title": "Temperature Converter - Celsius, Fahrenheit and Kelvin",
+      "pageDesc": "Convert temperatures between Celsius, Fahrenheit and Kelvin in real time. Type in any unit and the other two update instantly. Free and works in your browser.",
+      "intro": "Type a value in Celsius, Fahrenheit or Kelvin and watch the other two units update instantly and accurately."
     }
   },
   "ToolContent": {
@@ -3408,6 +3450,168 @@
         "h": "Is the generated CSS minimal?",
         "p": "Yes. When the corners are linked, the tool writes the short form with a single value. As soon as any corner differs, it switches to four explicit values, so the output stays minimal and readable."
       }
+    ],
+    "text-to-speech": [
+      {
+        "h": "What is text to speech?",
+        "p": "Text to speech converts written words into spoken audio using synthetic voices. The browser reads the text out loud using a locally installed voice, so no files are uploaded to a server and nothing is stored."
+      },
+      {
+        "h": "How do I use it?",
+        "p": "Type or paste your text into the box, choose a voice from the list, and optionally adjust the speed and pitch sliders. Press Speak to hear it and Stop to pause the reading."
+      },
+      {
+        "h": "Which voices are available?",
+        "list": [
+          "The list shows every voice installed on your device or provided by your operating system.",
+          "Voices vary by language; pick one that matches your text for the best pronunciation.",
+          "Some systems download extra voices from the browser's settings page."
+        ]
+      },
+      {
+        "h": "Where can it be useful?",
+        "list": [
+          "Proofreading written content by ear to catch awkward phrasing.",
+          "Listening to articles, notes and study material on your device.",
+          "Practicing pronunciation in a foreign language.",
+          "Accessibility for people who prefer listening over reading."
+        ]
+      },
+      {
+        "h": "Is my text private?",
+        "p": "Yes. Speech synthesis runs entirely on your device through the browser's built-in engine. Your text is never sent to a server, and no account is required."
+      }
+    ],
+    "pomodoro-timer": [
+      {
+        "h": "What is the Pomodoro technique?",
+        "p": "The Pomodoro technique splits work into focused intervals, traditionally 25 minutes, separated by short breaks. Each completed interval is called a pomodoro. Working in blocks keeps concentration high and prevents burnout."
+      },
+      {
+        "h": "How does this timer work?",
+        "p": "Set the work and break minutes you want, then press Start. The timer counts down each phase, plays a short beep when one ends, and moves automatically to the next one. Completed focus sessions are counted on the screen."
+      },
+      {
+        "h": "What cycle should I use?",
+        "list": [
+          "The classic cycle: 25 minutes work, 5 minutes break.",
+          "A longer rhythm: 45 minutes work, 15 minutes break, for deep tasks.",
+          "A sprint: 15 minutes work, 5 minutes break, for shallow or tiring chores."
+        ]
+      },
+      {
+        "h": "Why do short breaks help?",
+        "p": "Stepping away briefly lets your brain consolidate what you learned and return refreshed. Regular small breaks reduce fatigue, making it easier to keep a steady pace for the whole day."
+      },
+      {
+        "h": "Does the timer need internet?",
+        "p": "No. Countdown and the sound signal run entirely in your browser. Close the page and the cycle stops, but as long as the tab stays open the timer is accurate."
+      }
+    ],
+    "binary-text-converter": [
+      {
+        "h": "What is binary code?",
+        "p": "Binary code is the base-2 number system that uses only two digits, 0 and 1. Computers store every character, image and file as long sequences of these bits, and text is encoded into bytes first."
+      },
+      {
+        "h": "How does text become binary?",
+        "p": "This tool encodes your text as UTF-8 bytes, the same encoding used on the web. Each byte is written as 8 bits, so the letter A becomes 01000001 and a Turkish or emoji character becomes several bytes joined together."
+      },
+      {
+        "h": "How do I decode binary back to text?",
+        "p": "Paste the binary groups separated by spaces, switch the direction to Binary to Text and press Convert. Each 8-bit group is decoded as one byte and the bytes are joined back into the original message."
+      },
+      {
+        "h": "Where is binary used?",
+        "list": [
+          "Learning how computers represent data at the lowest level.",
+          "Explaining encoding and bit patterns in lessons and presentations.",
+          "Creating hidden text messages or playful codes between friends."
+        ]
+      },
+      {
+        "h": "Does it support every language?",
+        "p": "Yes. Because the tool uses UTF-8 encoding, Turkish characters, Greek, Arabic and emoji all convert correctly and translate back without losing any information."
+      }
+    ],
+    "credit-card-validator": [
+      {
+        "h": "How does card validation work?",
+        "p": "Card numbers are checked with the Luhn algorithm, a checksum formula. Starting from the right, every second digit is doubled, values above nine are reduced, and the total must end in zero. Most card numbers worldwide follow this rule."
+      },
+      {
+        "h": "What does this tool check?",
+        "p": "A number is reported as valid only when the length looks correct and the Luhn checksum passes. The tool also detects the brand from the first digits, such as Visa, Mastercard, American Express, Discover and JCB."
+      },
+      {
+        "h": "Can it detect an active card?",
+        "p": "No. The Luhn algorithm only proves the number is structurally valid. It cannot tell whether the card is active, has money, or belongs to a real person. Never enter a real card you do not own."
+      },
+      {
+        "h": "Where is it useful?",
+        "list": [
+          "Checking whether a card number was typed correctly in forms and sign-ups.",
+          "Generating and verifying test card numbers while building payment UI.",
+          "Confirming that numbers on old receipts are well-formed."
+        ]
+      },
+      {
+        "h": "Is my card number stored?",
+        "p": "No. Validation happens instantly in your browser with simple arithmetic. The number is never sent anywhere, so it is safe to test even payment cards you own."
+      }
+    ],
+    "roman-numeral-converter": [
+      {
+        "h": "How do Roman numerals work?",
+        "p": "Roman numerals use letters to represent values: I is 1, V is 5, X is 10, L is 50, C is 100, D is 500 and M is 1000. Values are usually written largest to smallest and added together."
+      },
+      {
+        "h": "When is a smaller numeral subtracted?",
+        "p": "When a smaller numeral appears before a larger one, it is subtracted. IV means 4 (5 - 1), IX means 9 and CM means 900. This keeps the notation compact instead of writing four equal symbols."
+      },
+      {
+        "h": "What is the maximum number?",
+        "p": "This tool converts numbers from 1 to 3999. Larger values were written with special bars in antiquity, so the classic system shown here normally stops at MMMCMXCIX."
+      },
+      {
+        "h": "Where are Roman numerals used today?",
+        "list": [
+          "Chapter and volume numbers in books and documents.",
+          "Years on buildings, clock faces and movie credits.",
+          "Rulers, popes and kings like Henry VIII or Louis XIV.",
+          "Outline numbering in essays and official papers."
+        ]
+      },
+      {
+        "h": "How do I use the converter?",
+        "p": "Type any whole number from 1 to 3999 and the Roman form appears instantly. Type a Roman numeral and the number is translated back. Both fields update live in both directions."
+      }
+    ],
+    "temperature-converter": [
+      {
+        "h": "How are the units related?",
+        "p": "Celsius and Fahrenheit are the most common scales, while Kelvin is the scientific absolute scale starting from absolute zero. The converter uses the standard formulas, so all three rows always agree."
+      },
+      {
+        "h": "What are the conversion formulas?",
+        "p": "To convert Celsius to Fahrenheit multiply by 9/5 and add 32. Fahrenheit to Celsius subtracts 32 and multiplies by 5/9. Kelvin is Celsius shifted by 273.15 degrees."
+      },
+      {
+        "h": "Where is each unit used?",
+        "list": [
+          "Celsius is the standard for weather and daily life in most countries.",
+          "Fahrenheit is common in the United States for weather and cooking.",
+          "Kelvin is used in science and engineering for absolute temperatures."
+        ]
+      },
+      {
+        "h": "Can I type decimals?",
+        "p": "Yes. Decimals like 21.5 are accepted, and the other two units are rounded to six digits for readability. Type into any of the three rows and the rest update instantly."
+      },
+      {
+        "h": "Is it accurate?",
+        "p": "The formulas are exact, and the display rounds only for a cleaner result. Use the tool to convert recipes, weather forecasts, or lab values without doing the math by hand."
+      }
     ]
   },
   "Rehber": {
@@ -4960,6 +5164,71 @@
       "copy": "Copy CSS",
       "copied": "Copied",
       "tip": "When all four corners are equal, the CSS uses the short form border-radius: Npx. Otherwise four values are written clockwise starting from the top-left corner."
+    },
+    "textToSpeech": {
+      "textLabel": "Your text",
+      "textPlaceholder": "Type or paste the text you want to hear...",
+      "voiceLabel": "Voice",
+      "rateLabel": "Speed",
+      "pitchLabel": "Pitch",
+      "speak": "Speak",
+      "restart": "Restart",
+      "stop": "Stop",
+      "tip": "Text is read aloud by your browser's built-in speech engine. Nothing is uploaded to a server, so your text stays on your device."
+    },
+    "pomodoroTimer": {
+      "phase": "Phase",
+      "workPhase": "Work",
+      "breakPhase": "Break",
+      "sessionsDone": "Completed sessions",
+      "workMinutes": "Work (minutes)",
+      "breakMinutes": "Break (minutes)",
+      "start": "Start",
+      "pause": "Pause",
+      "resume": "Resume",
+      "reset": "Reset",
+      "tip": "A beep marks the end of every phase, and completed focus sessions are counted at the top. Close the tab and the cycle stops — keep it open to stay on track."
+    },
+    "binaryTextConverter": {
+      "toBinary": "Text to Binary",
+      "toText": "Binary to Text",
+      "textLabel": "Text",
+      "binaryLabel": "Binary",
+      "textPlaceholder": "Type or paste the text...",
+      "binaryPlaceholder": "Paste binary groups (0s and 1s) separated by spaces...",
+      "outputPlaceholder": "The result appears here. Click Convert to generate it.",
+      "convert": "Convert",
+      "swap": "Swap",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "invalidChar": "Binary can only contain the digits 0 and 1.",
+      "invalidByte": "Each group must be 8 bits (between 0 and 255).",
+      "invalid": "Invalid input.",
+      "tip": "Encoding uses UTF-8, so Turkish and emoji characters convert both ways without losing data. Separate 8-bit groups with a space to read binary back as text."
+    },
+    "creditCardValidator": {
+      "inputLabel": "Card number",
+      "inputPlaceholder": "Enter the card number to check",
+      "valid": "This number is structurally valid.",
+      "invalid": "This number is not valid.",
+      "brand": "Brand",
+      "unknownBrand": "Unknown",
+      "length": "Digit count",
+      "grouped": "Grouped",
+      "tip": "The number is checked locally with the Luhn algorithm. It only proves the number is well-formed — it never tells whether the card is active or belongs to someone."
+    },
+    "romanNumeralConverter": {
+      "decimalLabel": "Number (1 - 3999)",
+      "romanLabel": "Roman numeral",
+      "rangeHint": "Numbers from 1 to 3999 are supported.",
+      "invalidRoman": "Not a valid Roman numeral.",
+      "tip": "Conversion is live in both directions. Type a number to get its Roman form, or type a Roman numeral like MCMLIV to read it as a number."
+    },
+    "temperatureConverter": {
+      "celsius": "Celsius (°C)",
+      "fahrenheit": "Fahrenheit (°F)",
+      "kelvin": "Kelvin (K)",
+      "tip": "Type a value in any of the three rows and the other two update instantly. Decimals are supported and results are rounded to six digits."
     }
   }
 }

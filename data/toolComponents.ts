@@ -90,6 +90,12 @@ export const toolComponents: Record<string, ComponentType> = {
   "text-extractor": dynamic(() => import("@/components/tools/TextExtractor")),
   "css-gradient-generator": dynamic(() => import("@/components/tools/CssGradientGenerator")),
   "border-radius-generator": dynamic(() => import("@/components/tools/BorderRadiusGenerator")),
+  "text-to-speech": dynamic(() => import("@/components/tools/TextToSpeech")),
+  "pomodoro-timer": dynamic(() => import("@/components/tools/PomodoroTimer")),
+  "binary-text-converter": dynamic(() => import("@/components/tools/BinaryTextConverter")),
+  "credit-card-validator": dynamic(() => import("@/components/tools/CreditCardValidator")),
+  "roman-numeral-converter": dynamic(() => import("@/components/tools/RomanNumeralConverter")),
+  "temperature-converter": dynamic(() => import("@/components/tools/TemperatureConverter")),
 };
 
 export const TOOL_COMPONENT_SLUGS = Object.keys(toolComponents);

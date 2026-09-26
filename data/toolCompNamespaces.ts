@@ -87,6 +87,12 @@ export const TOOL_COMP_NAMESPACE: Record<string, string> = {
   "text-extractor": "textExtractor",
   "css-gradient-generator": "cssGradientGenerator",
   "border-radius-generator": "borderRadiusGenerator",
+  "text-to-speech": "textToSpeech",
+  "pomodoro-timer": "pomodoroTimer",
+  "binary-text-converter": "binaryTextConverter",
+  "credit-card-validator": "creditCardValidator",
+  "roman-numeral-converter": "romanNumeralConverter",
+  "temperature-converter": "temperatureConverter",
 };
 
 export function toolCompNamespace(slug: string): string | undefined {

@@ -761,6 +761,48 @@
       "title": "Border Radius Üretici - Canlı Önizlemeli Yuvarlatılmış Köşeler",
       "pageDesc": "Border-radius CSS'ini görsel olarak oluşturun. Her köşeyi ayarlayın, yuvarlatılmış kutuyu canlı önizleyin ve kodu still dosyanıza kopyalayın. Ücretsiz ve tamamen tarayıcınızda çalışır.",
       "intro": "Köşe kaydırıcılarını ayarlayın; yarıçap büyüdükçe canlı önizlemenin değiştiğini izleyin. Köşeleri eşit tutmak için birleştirin veya her birini ayrı şekillendirin, ardından üretilen CSS'i kopyalayın."
+    },
+    "text-to-speech": {
+      "name": "Metin Okuyucu",
+      "desc": "Yazdığınız metni tarayıcınızda yapay sesle okutur; ses, hız ve perde ayarlanabilir.",
+      "title": "Metin Okuyucu - Metni Online Sese Çevirme Aracı",
+      "pageDesc": "Yazdığınız metni tarayıcınızda sese çevirin. Ses seçin, hız ve perdeyi ayarlayın, anında dinleyin. Ücretsiz, dosya yüklenmez, kayıt gerekmez.",
+      "intro": "Metni yazın ya da yapıştırın, bir ses ve hız seçin, Konuş'a basarak anında dinleyin. Her şey cihazınızda çalışır."
+    },
+    "pomodoro-timer": {
+      "name": "Pomodoro Zamanlayıcı",
+      "desc": "Çalışma ve mola döngülerini sayarak odaklanmanızı sağlar.",
+      "title": "Pomodoro Zamanlayıcı - Çalışma Molalı Online Odak Sayacı",
+      "pageDesc": "Pomodoro tekniğiyle odaklanın. Çalışma ve mola sürelerini ayarlayın, döngüleri otomatik çalıştırın, biten bölümleri sayın. Ücretsiz, internet gerektirmez.",
+      "intro": "Çalışma ve mola dakikalarını ayarlayın, Başlat'a basın; odak bölümleri arasında otomatik geçiş yapın, her döngüde zil çalar."
+    },
+    "binary-text-converter": {
+      "name": "Binary Metin Dönüştürücü",
+      "desc": "Metni UTF-8 tabanlı binary koda çevirir; binary kodu tekrar metne dönüştürür.",
+      "title": "Binary Metin Dönüştürücü - Metni Binary Koda Çevirme",
+      "pageDesc": "Düz metni 0 ve 1'lerden oluşan binary koda çevirin veya binary kodu tekrar metne dönüştürün. UTF-8 tabanlı, tüm dilleri ve emojileri destekler. Ücretsiz, tarayıcıda çalışır.",
+      "intro": "Bir mesaj yazın ve binary koda çevirin ya da binary gruplarını yapıştırıp normal metin olarak okuyun. Tüm dillerle çalışır."
+    },
+    "credit-card-validator": {
+      "name": "Kredi Kartı Doğrulayıcı",
+      "desc": "Kart numarasını Luhn algoritmasına göre doğrular ve markasını belirler.",
+      "title": "Kredi Kartı Doğrulayıcı - Luhn Algoritması ile Kart Kontrolü",
+      "pageDesc": "Herhangi bir kart numarasını Luhn kontrol basamağı algoritmasına göre doğrulayın ve markayı tespit edin (Visa, Mastercard, Amex ve daha fazlası). Sayılar cihazınızda işlenir, kaydedilmez. Ücretsiz.",
+      "intro": "Bir kart numarası girin; yapısal olarak geçerli olup olmadığını, hangi markaya ait olduğunu ve nasıl gruplanması gerektiğini anında görün."
+    },
+    "roman-numeral-converter": {
+      "name": "Roma Rakamı Dönüştürücü",
+      "desc": "Sayıları Roma rakamlarına ve Roma rakamlarını sayıya çevirir.",
+      "title": "Roma Rakamı Dönüştürücü - Sayıları Roma Rakamına Çevirme",
+      "pageDesc": "Sayıları (1-3999) Roma rakamlarına ve Roma rakamlarını sayılara çevirin. Anlık, çift yönlü dönüşüm. Ücretsiz, kayıt gerekmez.",
+      "intro": "Bir sayı yazın Roma biçimini görün ya da XVII gibi bir Roma rakamı girin sayıyı bulun. Her iki yön de anlık güncellenir."
+    },
+    "temperature-converter": {
+      "name": "Sıcaklık Dönüştürücü",
+      "desc": "Celsius, Fahrenheit ve Kelvin arasında anında dönüşüm yapar.",
+      "title": "Sıcaklık Dönüştürücü - Celsius, Fahrenheit ve Kelvin",
+      "pageDesc": "Sıcaklıkları Celsius, Fahrenheit ve Kelvin arasında gerçek zamanlı çevirin. Bir birime değer yazın, diğer ikisi anında güncellensin. Ücretsiz, tarayıcıda çalışır.",
+      "intro": "Celsius, Fahrenheit ya da Kelvin alanına bir değer yazın; diğer iki birim anında ve doğru şekilde güncellensin."
     }
   },
   "ToolContent": {
@@ -3408,6 +3450,168 @@
         "h": "Üretilen CSS minimum düzeyde mi?",
         "p": "Evet. Köşeler birleştirildiğinde araç tek değerli kısa biçimi yazar. Herhangi bir köşe farklılaştığında dört açık değere geçer; böylece çıktı minimum ve okunaklı kalır."
       }
+    ],
+    "text-to-speech": [
+      {
+        "h": "Metin okuma (text to speech) nedir?",
+        "p": "Text to speech, yazılı metni yapay seslerle konuşmaya dönüştürür. Tarayıcı, cihaza yüklü bir sesle metni yüksek sesle okur; böylece hiçbir dosya sunucuya gönderilmez ve hiçbir şey kaydedilmez."
+      },
+      {
+        "h": "Nasıl kullanılır?",
+        "p": "Metninizi kutuya yazın ya da yapıştırın, listeden bir ses seçin ve isterseniz hız ile perde kaydırıcılarını ayarlayın. Konuş'a basarak dinleyin, Durdur ile okumayı bırakın."
+      },
+      {
+        "h": "Hangi sesler kullanılabilir?",
+        "list": [
+          "Liste, cihazınızda yüklü veya işletim sisteminizin sağladığı tüm sesleri gösterir.",
+          "Sesler dile göre değişir; doğru telaffuz için metninize uygun bir dil seçin.",
+          "Bazı sistemler ek sesleri tarayıcının ayarlar sayfasından indirir."
+        ]
+      },
+      {
+        "h": "Nerelerde işe yarar?",
+        "list": [
+          "Yazılı içerikleri kulakla kontrol ederek akıcılık hatalarını yakalamak.",
+          "Cihazdan makaleleri, notları ve ders çalışma materyallerini dinlemek.",
+          "Yabancı dilde telaffuz pratiği yapmak.",
+          "Okumak yerine dinlemeyi tercih eden kişiler için erişilebilirlik."
+        ]
+      },
+      {
+        "h": "Metnim gizli mi?",
+        "p": "Evet. Konuşma sentezi tamamen cihazınızda, tarayıcının yerleşik motoruyla çalışır. Metniniz hiçbir sunucuya gönderilmez ve hesap açmanız gerekmez."
+      }
+    ],
+    "pomodoro-timer": [
+      {
+        "h": "Pomodoro tekniği nedir?",
+        "p": "Pomodoro tekniği çalışmayı, geleneksel olarak 25 dakikalık odaklanma bölümlerine ve aralarına kısa molalar koyarak böler. Tamamlanan her bölüme bir pomodoro denir. Bloklar halinde çalışmak konsantrasyonu yüksek tutar ve tükenmeyi önler."
+      },
+      {
+        "h": "Bu sayaç nasıl çalışır?",
+        "p": "İstediğiniz çalışma ve mola dakikalarını girin, Başlat'a basın. Sayaç her aşamayı geri sayar, bir aşama bitince kısa bir zil çalar ve otomatik olarak diğerine geçer. Tamamlanan odak bölümleri ekranda sayılır."
+      },
+      {
+        "h": "Hangi döngüyü kullanmalıyım?",
+        "list": [
+          "Klasik döngü: 25 dakika çalışma, 5 dakika mola.",
+          "Uzun ritim: derin işler için 45 dakika çalışma, 15 dakika mola.",
+          "Sprint: sığ ya da yorucu işler için 15 dakika çalışma, 5 dakika mola."
+        ]
+      },
+      {
+        "h": "Kısa molalar neden işe yarar?",
+        "p": "Kısa süreliğine uzaklaşmak beyninizin öğrendiklerini pekiştirmesini ve zinde dönmesini sağlar. Düzenli küçük molalar yorgunluğu azaltır ve gün boyunca sabit bir tempo tutturmayı kolaylaştırır."
+      },
+      {
+        "h": "Sayaç internet ister mi?",
+        "p": "Hayır. Geri sayım ve ses sinyali tamamen tarayıcınızda çalışır. Sayfayı kapatırsanız döngü durur; ancak sekme açık kaldığı sürece sayaç doğrudur."
+      }
+    ],
+    "binary-text-converter": [
+      {
+        "h": "Binary kod nedir?",
+        "p": "Binary kod yalnızca 0 ve 1 rakamlarını kullanan 2 tabanlı sayı sistemidir. Bilgisayarlar her karakteri, görseli ve dosyayı bu bitlerden oluşan uzun diziler olarak saklar; metin önce baytlara dönüştürülür."
+      },
+      {
+        "h": "Metin nasıl binary olur?",
+        "p": "Bu araç metninizi webde kullanılan UTF-8 baytlarıyla kodlar. Her bayt 8 bit olarak yazılır; A harfi 01000001 olur, bir Türkçe ya da emoji karakteri birkaç bayta dönüşüp arka arkaya dizilir."
+      },
+      {
+        "h": "Binary kodu tekrar metne nasıl çeviririm?",
+        "p": "Binary grupları boşlukla ayrılmış şekilde yapıştırın, yönü Binary'den Metne alın ve Dönüştür'e basın. Her 8 bitlik grup bir bayt olarak çözülür ve baytlar orijinal mesajı oluşturur."
+      },
+      {
+        "h": "Binary nerelerde kullanılır?",
+        "list": [
+          "Bilgisayarların veriyi en alt düzeyde nasıl temsil ettiğini öğrenmek.",
+          "Derslerde ve sunumlarda kodlama ile bit düzenlerini anlatmak.",
+          "Arkadaşlar arasında gizli metin mesajları ya da eğlenceli şifreler oluşturmak."
+        ]
+      },
+      {
+        "h": "Her dili destekler mi?",
+        "p": "Evet. Araç UTF-8 kodlamasını kullandığı için Türkçe karakterler, Yunanca, Arapça ve emojiler doğru şekilde dönüşür ve bilgi kaybı olmadan tekrar çevrilir."
+      }
+    ],
+    "credit-card-validator": [
+      {
+        "h": "Kart doğrulama nasıl çalışır?",
+        "p": "Kart numaraları Luhn algoritması adı verilen bir kontrol basamağı yöntemiyle denetlenir. En sağdaki rakamdan başlanarak ikinci her rakam ikiyle çarpılır, dokuzun üzerindeki değerler düşürülür ve toplamın sıfırla bitmesi gerekir. Dünyadaki kart numaralarının büyük çoğunluğu bu kurala uyar."
+      },
+      {
+        "h": "Bu araç neyi kontrol eder?",
+        "p": "Bir numara yalnızca uzunluk uygun ve Luhn toplamı geçerli olduğunda 'geçerli' olarak bildirilir. Araç ayrıca ilk rakamlardan markayı tespit eder: Visa, Mastercard, American Express, Discover ve JCB."
+      },
+      {
+        "h": "Aktif bir kartı tespit edebilir mi?",
+        "p": "Hayır. Luhn algoritması yalnızca numaranın yapısal olarak doğru olduğunu gösterir. Kartın aktif olduğunu, parası olduğunu ya da gerçek bir kişiye ait olduğunu söyleyemez. Size ait olmayan gerçek bir kartı asla girmeyin."
+      },
+      {
+        "h": "Nerelerde işe yarar?",
+        "list": [
+          "Formlarda ve kayıt ekranlarında kart numarasının doğru yazılıp yazılmadığını denetlemek.",
+          "Ödeme arayüzü geliştirirken test kart numaraları oluşturmak ve doğrulamak.",
+          "Eski alışveriş fişlerindeki numaraların yapı olarak tutarlı olup olmadığını kontrol etmek."
+        ]
+      },
+      {
+        "h": "Kart numaram saklanır mı?",
+        "p": "Hayır. Doğrulama tarayıcınızda basit aritmetikle anında gerçekleşir. Numara hiçbir yere gönderilmez; bu yüzden kendi kartlarınızı test etmek bile güvenlidir."
+      }
+    ],
+    "roman-numeral-converter": [
+      {
+        "h": "Roma rakamları nasıl çalışır?",
+        "p": "Roma rakamları sayıları harflerle ifade eder: I 1, V 5, X 10, L 50, C 100, D 500 ve M 1000'dir. Değerler genellikle büyükten küçüğe yazılır ve toplanır."
+      },
+      {
+        "h": "Küçük rakam ne zaman çıkarılır?",
+        "p": "Büyük bir rakamın önüne küçük bir rakam gelirse o değer çıkarılır. IV 4 (5 - 1), IX 9 ve CM 900 anlamına gelir. Böylece dört eşit sembol yazmak yerine daha kısa gösterim sağlanır."
+      },
+      {
+        "h": "En büyük sayı nedir?",
+        "p": "Bu araç 1 ile 3999 arasındaki sayıları çevirir. Antik çağda daha büyük değerler için özel çizgiler kullanılırdı; buradaki klasik sistem normalde MMMCMXCIX'te durur."
+      },
+      {
+        "h": "Roma rakamları bugün nerelerde kullanılır?",
+        "list": [
+          "Kitaplarda ve belgelerde bölüm ile cilt numaraları.",
+          "Binalarda, saat kadranlarında ve film jeneriklerinde yıllar.",
+          "VIII. Henry ya da XIV. Louis gibi yönetici, papa ve krallar.",
+          "Makalelerde ve resmi yazılarda maddeli sıralama."
+        ]
+      },
+      {
+        "h": "Dönüştürücüyü nasıl kullanırım?",
+        "p": "1 ile 3999 arasında bir tam sayı yazın, Roma biçimi anında görünsün. Bir Roma rakamı yazın, sayı olarak çevrilsin. Her iki alan da iki yönde anlık güncellenir."
+      }
+    ],
+    "temperature-converter": [
+      {
+        "h": "Birimler birbiriyle nasıl ilişkilidir?",
+        "p": "Celsius ve Fahrenheit en yaygın ölçeklerdir; Kelvin ise mutlak sıfırdan başlayan bilimsel mutlak ölçektir. Dönüştürücü standart formülleri kullandığı için üç satır her zaman birbiriyle uyumludur."
+      },
+      {
+        "h": "Dönüşüm formülleri nelerdir?",
+        "p": "Celsius'u Fahrenheit'a çevirmek için 9/5 ile çarpıp 32 ekleyin. Fahrenheit'tan Celsius'a 32 çıkarılıp 5/9 ile çarpılır. Kelvin ise Celsius'a 273.15 derece eklenmiş halidir."
+      },
+      {
+        "h": "Hangi birim nerede kullanılır?",
+        "list": [
+          "Celsius, dünyanın çoğunda hava durumu ve günlük yaşamın standardıdır.",
+          "Fahrenheit, Amerika Birleşik Devletleri'nde hava ve yemek tariflerinde yaygındır.",
+          "Kelvin, bilim ve mühendislikte mutlak sıcaklıklar için kullanılır."
+        ]
+      },
+      {
+        "h": "Ondalıklı değer yazabilir miyim?",
+        "p": "Evet. 21.5 gibi ondalık değerler kabul edilir ve diğer iki birim okunabilirlik için altı haneye yuvarlanır. Üç satırın herhangi birine yazın, gerisi anında güncellensin."
+      },
+      {
+        "h": "Sonuç doğru mu?",
+        "p": "Formüller birebir doğrudur; yalnızca görüntüleme için yuvarlama yapılır. Yemek tariflerini, hava durumu tahminlerini ya da laboratuvar değerlerini elle hesap yapmadan dönüştürmek için kullanın."
+      }
     ]
   },
   "Rehber": {
@@ -4960,6 +5164,71 @@
       "copy": "CSS'i kopyala",
       "copied": "Kopyalandı",
       "tip": "Dört köşe eşit olduğunda CSS kısa biçim border-radius: Npx kullanır. Aksi hâlde dört değer sol üstten başlayarak saat yönünde yazılır."
+    },
+    "textToSpeech": {
+      "textLabel": "Metniniz",
+      "textPlaceholder": "Dinlemek istediğiniz metni yazın ya da yapıştırın...",
+      "voiceLabel": "Ses",
+      "rateLabel": "Hız",
+      "pitchLabel": "Perde",
+      "speak": "Konuş",
+      "restart": "Yeniden Başlat",
+      "stop": "Durdur",
+      "tip": "Metin, tarayıcınızın yerleşik ses motoruyla yüksek sesle okunur. Hiçbir şey sunucuya yüklenmez, bu yüzden metniniz cihazınızda kalır."
+    },
+    "pomodoroTimer": {
+      "phase": "Aşama",
+      "workPhase": "Çalışma",
+      "breakPhase": "Mola",
+      "sessionsDone": "Tamamlanan bölüm",
+      "workMinutes": "Çalışma (dakika)",
+      "breakMinutes": "Mola (dakika)",
+      "start": "Başlat",
+      "pause": "Duraklat",
+      "resume": "Devam Et",
+      "reset": "Sıfırla",
+      "tip": "Her aşamanın sonunda bir zil çalar ve biten odak bölümleri üstte sayılır. Sayfayı kapatırsanız döngü durur — açık tutarak zamanlamayı koruyabilirsiniz."
+    },
+    "binaryTextConverter": {
+      "toBinary": "Metinden Binary'ye",
+      "toText": "Binary'den Metne",
+      "textLabel": "Metin",
+      "binaryLabel": "Binary",
+      "textPlaceholder": "Metni yazın ya da yapıştırın...",
+      "binaryPlaceholder": "Boşlukla ayrılmış binary gruplarını (0 ve 1) yapıştırın...",
+      "outputPlaceholder": "Sonuç burada görünür. Üretmek için Dönüştür'e basın.",
+      "convert": "Dönüştür",
+      "swap": "Takas Et",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "invalidChar": "Binary yalnızca 0 ve 1 rakamlarından oluşabilir.",
+      "invalidByte": "Her grup 8 bit olmalıdır (0 ile 255 arasında).",
+      "invalid": "Geçersiz giriş.",
+      "tip": "Kodlama UTF-8 kullandığı için Türkçe ve emoji karakterler iki yönde de veri kaybı olmadan dönüşür. Binary'yi metin olarak okumak için 8 bitlik grupları boşlukla ayırın."
+    },
+    "creditCardValidator": {
+      "inputLabel": "Kart numarası",
+      "inputPlaceholder": "Denetlenecek kart numarasını girin",
+      "valid": "Bu numara yapısal olarak geçerlidir.",
+      "invalid": "Bu numara geçerli değildir.",
+      "brand": "Marka",
+      "unknownBrand": "Bilinmiyor",
+      "length": "Hane sayısı",
+      "grouped": "Gruplu",
+      "tip": "Numara Luhn algoritmasıyla cihazınızda denetlenir. Bu yalnızca numaranın düzgün biçimli olduğunu gösterir; kartın aktif ya da birine ait olduğunu söylemez."
+    },
+    "romanNumeralConverter": {
+      "decimalLabel": "Sayı (1 - 3999)",
+      "romanLabel": "Roma rakamı",
+      "rangeHint": "1 ile 3999 arasındaki sayılar desteklenir.",
+      "invalidRoman": "Geçerli bir Roma rakamı değil.",
+      "tip": "Dönüşüm her iki yönde anlıktır. Sayı yazın Roma biçimini görün ya da MCMLIV gibi bir Roma rakamı yazıp sayı olarak okuyun."
+    },
+    "temperatureConverter": {
+      "celsius": "Celsius (°C)",
+      "fahrenheit": "Fahrenheit (°F)",
+      "kelvin": "Kelvin (K)",
+      "tip": "Üç satırdan herhangi birine değer yazın, diğer ikisi anında güncellensin. Ondalıklı değerler desteklenir; sonuçlar altı haneye yuvarlanır."
     }
   }
 }

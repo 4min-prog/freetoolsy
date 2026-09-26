@@ -672,6 +672,54 @@ export const tools: Tool[] = [
       "Köşeleri görsel olarak yuvarlayıp border-radius CSS kodunu tek tıkla kopyalayın.",
     addedAt: "2026-09-26",
   },
+  {
+    slug: "text-to-speech",
+    name: "Metin Okuyucu",
+    category: "text",
+    description:
+      "Yazdığınız metni tarayıcınızda yapay sesle okutur; ses, hız ve perde ayarlanabilir.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "pomodoro-timer",
+    name: "Pomodoro Zamanlayıcı",
+    category: "fun",
+    description:
+      "Çalışma ve mola döngülerini sayarak odaklanmanızı sağlar.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "binary-text-converter",
+    name: "Binary Metin Dönüştürücü",
+    category: "developer",
+    description:
+      "Metni UTF-8 tabanlı binary koda çevirir; binary kodu tekrar metne dönüştürür.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "credit-card-validator",
+    name: "Kredi Kartı Doğrulayıcı",
+    category: "calculation",
+    description:
+      "Kart numarasını Luhn algoritmasına göre doğrular ve markasını belirler.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "roman-numeral-converter",
+    name: "Roma Rakamı Dönüştürücü",
+    category: "calculation",
+    description:
+      "Sayıları Roma rakamlarına ve Roma rakamlarını sayıya çevirir.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "temperature-converter",
+    name: "Sıcaklık Dönüştürücü",
+    category: "calculation",
+    description:
+      "Celsius, Fahrenheit ve Kelvin arasında anında dönüşüm yapar.",
+    addedAt: "2026-09-26",
+  },
 ];
 
 export function getTool(slug: string): Tool | undefined {

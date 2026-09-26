@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import {
+  faAlarmClock,
   faAlignJustify,
   faAlignLeft,
   faArrowsRotate,
@@ -70,6 +71,7 @@ import {
   faSignature,
   faSortAlphaDown,
   faSquare,
+  faSquareBinary,
   faStamp,
   faStopwatch,
   faSwatchbook,
@@ -77,10 +79,12 @@ import {
   faTags,
   faTextHeight,
   faTextWidth,
+  faThermometerHalf,
   faTicket,
   faToolbox,
   faTrophy,
   faUpRightAndDownLeftFromCenter,
+  faVolumeHigh,
   faWandMagicSparkles,
   faWallet,
   faWeightHanging,
@@ -181,6 +185,12 @@ const ICONS: Record<string, IconDefinition> = {
   "text-extractor": faEnvelope,
   "css-gradient-generator": faPalette,
   "border-radius-generator": faSquare,
+  "text-to-speech": faVolumeHigh,
+  "pomodoro-timer": faAlarmClock,
+  "binary-text-converter": faSquareBinary,
+  "credit-card-validator": faCreditCard,
+  "roman-numeral-converter": faCalculator,
+  "temperature-converter": faThermometerHalf,
 };
 
 export default function ToolIcon({
