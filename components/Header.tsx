@@ -10,7 +10,7 @@ import CategoryIcon from "./CategoryIcon";
 import ToolIcon from "./ToolIcon";
 import SearchOverlay from "./SearchOverlay";
 import { categoryTheme } from "./categoryTheme";
-import { categories, getToolsByCategory, tools } from "@/data/tools";
+import { categories, displayToolCount, getToolsByCategory, tools } from "@/data/tools";
 import { toolPath } from "@/lib/paths";
 import type { Locale } from "@/i18n/routing";
 
@@ -202,7 +202,7 @@ export default function Header() {
               >
                 {t("allTools")}
                 <span className="font-mono text-[11px] tabular-nums text-faint">
-                  {tools.length}
+                  {displayToolCount(tools.length)}
                 </span>
               </Link>
 

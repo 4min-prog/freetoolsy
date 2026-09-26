@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { categories, getToolsByCategory, tools } from "@/data/tools";
+import { categories, displayToolCount, getToolsByCategory, tools } from "@/data/tools";
 import type { Locale } from "@/i18n/routing";
 import {
   categoryPath,
@@ -185,7 +185,7 @@ export default async function CategoryPage({
         href="/"
         className="btn-accent mt-10 inline-flex items-center gap-2 rounded-lg px-5 py-2.5 text-sm font-medium text-on-accent transition-opacity hover:opacity-90"
       >
-        {t("ctaAllTools", { count: tools.length })}
+        {t("ctaAllTools", { count: displayToolCount(tools.length) })}
       </Link>
     </main>
   );

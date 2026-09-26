@@ -9,7 +9,7 @@ import SearchBox from "@/components/SearchBox";
 import PopularStrip from "@/components/PopularStrip";
 import JsonLd from "@/components/JsonLd";
 import { Link } from "@/i18n/navigation";
-import { categories, tools } from "@/data/tools";
+import { categories, displayToolCount, tools } from "@/data/tools";
 import { toolPath } from "@/lib/paths";
 import type { Locale } from "@/i18n/routing";
 
@@ -105,7 +105,7 @@ export default async function Home({ params }: { params: { locale: string } }) {
           <div>
             <div className="flex items-center gap-4">
               <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted">
-                {tools.length} {t("statsTools")} / {categories.length}{" "}
+                {displayToolCount(tools.length)} {t("statsTools")} / {categories.length}{" "}
                 {t("statsCategories")}
               </span>
               <span aria-hidden="true" className="h-px flex-1 bg-border" />
@@ -160,7 +160,7 @@ export default async function Home({ params }: { params: { locale: string } }) {
                 {t("statsTools")}
               </span>
               <span className="font-mono text-[11px] text-faint">
-                {String(tools.length).padStart(3, "0")}
+                {displayToolCount(tools.length)}
               </span>
             </div>
             <div className="hero-marquee-mask mt-4 flex h-[22rem] gap-5 overflow-hidden">

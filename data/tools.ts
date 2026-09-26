@@ -810,6 +810,11 @@ export function getToolsByCategory(category: string): Tool[] {
   return tools.filter((tool) => tool.category === category);
 }
 
+export function displayToolCount(count: number): string {
+  if (count < 100) return String(count);
+  return `${Math.floor(count / 100) * 100}+`;
+}
+
 const NEW_TOOL_DAYS = 30;
 
 export function isToolNew(tool: Tool, now: Date = new Date()): boolean {
