@@ -106,6 +106,23 @@ export const toolComponents: Record<string, ComponentType> = {
   "angle-converter": dynamic(() => import("@/components/tools/AngleConverter")),
   "data-size-converter": dynamic(() => import("@/components/tools/DataSizeConverter")),
   "fibonacci-generator": dynamic(() => import("@/components/tools/FibonacciGenerator")),
+  "mortgage-calculator": dynamic(() => import("@/components/tools/MortgageCalculator")),
+  "hours-calculator": dynamic(() => import("@/components/tools/HoursCalculator")),
+  "income-tax-calculator": dynamic(() => import("@/components/tools/IncomeTaxCalculator")),
+  "inflation-calculator": dynamic(() => import("@/components/tools/InflationCalculator")),
+  "typing-speed-test": dynamic(() => import("@/components/tools/TypingSpeedTest")),
+  "css-units-converter": dynamic(() => import("@/components/tools/CssUnitsConverter")),
+  "css-triangle-generator": dynamic(() => import("@/components/tools/CssTriangleGenerator")),
+  "countdown-timer": dynamic(() => import("@/components/tools/CountdownTimer")),
+  "image-grid-splitter": dynamic(() => import("@/components/tools/ImageGridSplitter")),
+  "ascii-art-generator": dynamic(() => import("@/components/tools/AsciiArtGenerator")),
+  "pixelate-image": dynamic(() => import("@/components/tools/PixelateImage")),
+  "vigenere-cipher": dynamic(() => import("@/components/tools/VigenereCipher")),
+  "punctuation-remover": dynamic(() => import("@/components/tools/PunctuationRemover")),
+  "anagram-solver": dynamic(() => import("@/components/tools/AnagramSolver")),
+  "keyword-combiner": dynamic(() => import("@/components/tools/KeywordCombiner")),
+  "title-length-checker": dynamic(() => import("@/components/tools/TitleLengthChecker")),
+  "magic-8-ball": dynamic(() => import("@/components/tools/Magic8Ball")),
 };
 
 export const TOOL_COMPONENT_SLUGS = Object.keys(toolComponents);

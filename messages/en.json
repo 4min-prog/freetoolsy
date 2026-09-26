@@ -873,6 +873,125 @@
       "title": "Fibonacci Generator - Generate the Fibonacci Sequence Online",
       "pageDesc": "Generate any length of the Fibonacci sequence up to 100 terms. See the list, the sum and the nth value. Free and instant.",
       "intro": "Choose how many terms to print and generate the sequence, its sum and the final value in one click."
+    },
+    "mortgage-calculator": {
+      "name": "Mortgage Calculator",
+      "desc": "Calculate monthly mortgage payments, total interest and the full amortization schedule.",
+      "title": "Mortgage Calculator - Free Mortgage Payment Calculator",
+      "pageDesc": "Calculate your monthly mortgage payment, total interest and full amortization schedule. Enter home price, down payment, rate and term. Free and works entirely in your browser.",
+      "intro": "Enter the home price, down payment, interest rate and term to see your monthly payment plus a complete amortization table."
+    },
+    "hours-calculator": {
+      "name": "Hours Calculator",
+      "desc": "Calculate the time between two clock times in hours, minutes and decimal form.",
+      "title": "Hours Calculator - Calculate Time Duration & Work Hours Online",
+      "pageDesc": "Find the duration between two times in hours and minutes, plus the decimal hours and total minutes. Supports overnight shifts. Free and instant.",
+      "intro": "Pick a start and end time, then read the result as hours and minutes, total minutes or decimal hours."
+    },
+    "income-tax-calculator": {
+      "name": "Income Tax Calculator",
+      "desc": "Estimate US federal income tax using marginal tax brackets and the standard deduction.",
+      "title": "Income Tax Calculator - Federal Tax Estimator Online",
+      "pageDesc": "Estimate your US federal income tax with the 2025 marginal brackets and standard deduction. See taxable income, taxes owed, effective and marginal rate. Free.",
+      "intro": "Enter your annual income and read your estimated federal tax, effective rate and the bracket you fall into."
+    },
+    "inflation-calculator": {
+      "name": "Inflation Calculator",
+      "desc": "See how much a dollar amount was worth in any year using US CPI data.",
+      "title": "Inflation Calculator - US CPI Inflation Rate Calculator",
+      "pageDesc": "Convert an amount between any two years from 1970 to today using the U.S. CPI. See how purchasing power changes over time. Free and private.",
+      "intro": "Enter an amount and two years, and the tool shows the equivalent value adjusted for inflation."
+    },
+    "typing-speed-test": {
+      "name": "Typing Speed Test",
+      "desc": "Measure your typing speed in WPM with accuracy, correct keys and error count.",
+      "title": "Typing Speed Test - Test Your Words Per Minute Online",
+      "pageDesc": "Test your typing speed in 15, 30 or 60 seconds. Get real-time feedback, letter-by-letter highlighting, WPM and accuracy results. Works in English and Turkish. Free.",
+      "intro": "Start the test and type the shown text. After the timer ends you get your WPM, accuracy and error count."
+    },
+    "css-units-converter": {
+      "name": "CSS Units Converter",
+      "desc": "Convert between px, rem, em, %, vw and vh CSS units instantly.",
+      "title": "CSS Units Converter - px, rem, em, vw, vh Online",
+      "pageDesc": "Convert CSS values between px, rem, em, %, vw and vh using a configurable base font size and viewport. See every unit at once. Free for developers.",
+      "intro": "Pick a value and unit, set the base font size and viewport, and read the result in every CSS unit at once."
+    },
+    "css-triangle-generator": {
+      "name": "CSS Triangle Generator",
+      "desc": "Create a pure CSS triangle with a chosen direction, size and color.",
+      "title": "CSS Triangle Generator - Make Triangles Without Images",
+      "pageDesc": "Generate a border-based CSS triangle in eight directions with your size and color. Copy the ready-to-use CSS in one click. Free and no images needed.",
+      "intro": "Choose a direction, size and color, then copy the generated CSS triangle code."
+    },
+    "countdown-timer": {
+      "name": "Countdown Timer",
+      "desc": "Set hours, minutes and seconds and watch the countdown run to zero.",
+      "title": "Countdown Timer - Free Online Timer",
+      "pageDesc": "Start a countdown for any duration from seconds to hours. Pause, reset or restart at any time. Works offline in your browser. Free.",
+      "intro": "Set the hours, minutes and seconds, press Start and watch the big display count down."
+    },
+    "image-grid-splitter": {
+      "name": "Image Grid Splitter",
+      "desc": "Split a photo into an equal grid of slices, perfect for Instagram posts.",
+      "title": "Image Grid Splitter - Slice Photos for Instagram Online",
+      "pageDesc": "Split any image into a grid from 1x1 to 6x6 and download every slice as PNG. Perfect for Instagram grids and print layouts. Runs locally, free.",
+      "intro": "Upload an image, choose the grid size and download each piece of the split image."
+    },
+    "ascii-art-generator": {
+      "name": "ASCII Art Generator",
+      "desc": "Turn any image into blocky text-based ASCII art in your browser.",
+      "title": "ASCII Art Generator - Image to Text Art Online",
+      "pageDesc": "Convert photos and logos into ASCII art instantly. Adjust width, invert tones and copy the result. Everything runs locally in your browser. Free.",
+      "intro": "Upload an image, set the width and generate a character-based ASCII art version."
+    },
+    "pixelate-image": {
+      "name": "Pixelate Image",
+      "desc": "Pixelate any photo with a block size slider and download the result.",
+      "title": "Pixelate Image - Blur Photos Into Pixels Online",
+      "pageDesc": "Turn any photo into a pixelated version in seconds. Adjust the pixel block size with a slider and download the result as PNG. Free and private.",
+      "intro": "Upload an image and use the slider to control the pixel block size, then download the pixelated preview."
+    },
+    "vigenere-cipher": {
+      "name": "Vigenère Cipher",
+      "desc": "Encrypt or decrypt text with the Vigenère cipher using a keyword.",
+      "title": "Vigenère Cipher - Encrypt & Decrypt Text Online",
+      "pageDesc": "Encrypt and decrypt text with the Vigenère cipher using a key phrase. Supports the Turkish alphabet. Runs entirely in your browser with no data sent. Free.",
+      "intro": "Type a message and a keyword, choose encrypt or decrypt, and read the result instantly."
+    },
+    "punctuation-remover": {
+      "name": "Punctuation Remover",
+      "desc": "Remove punctuation marks from text while keeping apostrophes or hyphens if needed.",
+      "title": "Punctuation Remover - Clean Text Without Punctuation",
+      "pageDesc": "Strip punctuation from any text instantly. Optionally keep apostrophes and hyphens, and see how many characters were removed. Free and private.",
+      "intro": "Paste your text and instantly get a version with all punctuation removed."
+    },
+    "anagram-solver": {
+      "name": "Anagram Solver",
+      "desc": "Generate every possible arrangement of your letters, from two-letter words up.",
+      "title": "Anagram Solver - Find All Letter Combinations Online",
+      "pageDesc": "Enter letters and generate every possible anagram and combination in one click. Great for word games like Scrabble. Free and instant.",
+      "intro": "Type your letters and the tool lists every unique arrangement of them."
+    },
+    "keyword-combiner": {
+      "name": "Keyword Combiner",
+      "desc": "Cross two keyword lists to generate every possible combination at once.",
+      "title": "Keyword Combiner - Generate Keyword Combinations Online",
+      "pageDesc": "Paste two keyword lists and instantly generate every product and combination. Essential for SEO research, PPC and content planning. Free.",
+      "intro": "Add two lists of keywords and the combiner creates every left × right pairing."
+    },
+    "title-length-checker": {
+      "name": "Title Length Checker",
+      "desc": "Check how many characters and pixels your title and description use.",
+      "title": "Title Length Checker - SEO Title & Meta Description Checker",
+      "pageDesc": "Measure the character count and estimated pixel width of your title and meta description against Google's SERP limits. Free, fast and private.",
+      "intro": "Paste a title and description to see character counts, pixel widths and whether they stay inside SERP limits."
+    },
+    "magic-8-ball": {
+      "name": "Magic 8 Ball",
+      "desc": "Ask a question and shake the virtual magic 8 ball for a classic answer.",
+      "title": "Magic 8 Ball - Ask a Question and Get an Answer Online",
+      "pageDesc": "Shake the classic magic 8 ball for a random answer to yes or no questions. Free, fun and works on any device.",
+      "intro": "Think of a question, tap Shake, and read the ball's classic answer."
     }
   },
   "ToolContent": {
@@ -3921,6 +4040,380 @@
         "h": "How fast does it grow?",
         "p": "The numbers grow quickly — the 100th term is a 21-digit number. The tool keeps up to 100 terms, which is plenty for almost every practical use."
       }
+    ],
+    "mortgage-calculator": [
+      {
+        "h": "What does this mortgage calculator show?",
+        "p": "It shows the monthly payment (principal and interest), the total amount paid over the full term and the total interest. A complete amortization table lists the principal, interest and remaining balance for every month."
+      },
+      {
+        "h": "How is the monthly payment calculated?",
+        "p": "The standard amortization formula uses the loan amount, the monthly interest rate derived from your annual rate, and the number of months. The result keeps each month's payment level for the whole term."
+      },
+      {
+        "h": "Does it include taxes and insurance?",
+        "p": "No. The payment covers principal and interest only. Property tax, home insurance and HOA fees vary by location, so the estimate is best used to compare terms and rates."
+      },
+      {
+        "h": "Why does the down payment matter?",
+        "p": "A larger down payment reduces the loan amount, which lowers the monthly payment and the total interest you pay. It can also help you avoid private mortgage insurance."
+      },
+      {
+        "h": "Is the calculation accurate?",
+        "p": "The math follows the same amortization method lenders use. Your actual payment can differ slightly because of rate lock timing, fees and rounding, but the estimate is a reliable planning figure."
+      }
+    ],
+    "hours-calculator": [
+      {
+        "h": "What does this calculator compute?",
+        "p": "It computes the time between a start and an end clock time. You get the duration in hours and minutes, the total number of minutes and the decimal hours often used for payroll."
+      },
+      {
+        "h": "How do I use it for an overnight shift?",
+        "p": "Turn on the overnight option when work ends on the next day. The calculator then adds the extra 24 hours and returns the correct duration automatically."
+      },
+      {
+        "h": "What is decimal hours and why use it?",
+        "p": "Decimal hours express time as a fraction of an hour, like 8.5 instead of 8 hours 30 minutes. Payroll systems and timesheets commonly expect this format."
+      },
+      {
+        "h": "Are breaks subtracted automatically?",
+        "p": "No — the tool reports the time between the two clock times. To account for an unpaid break, simply adjust your end time by the break length."
+      },
+      {
+        "h": "Can it handle 24-hour format?",
+        "p": "Yes. The time pickers support a 24-hour day, so start and end can be anywhere between 00:00 and 23:59."
+      }
+    ],
+    "income-tax-calculator": [
+      {
+        "h": "What does this calculator estimate?",
+        "p": "It estimates the US federal income tax on your annual income using the 2025 marginal brackets. It shows taxable income, the tax owed, the effective rate and the marginal bracket your income falls into."
+      },
+      {
+        "h": "What is the standard deduction?",
+        "p": "It is a fixed amount subtracted from gross income before tax. This tool applies the 2025 single-filer standard deduction of $14,600; uncheck the box to ignore it."
+      },
+      {
+        "h": "Marginal vs. effective rate — what's the difference?",
+        "p": "The marginal rate is the tax rate on the last dollar earned. The effective rate is the average rate on the whole taxable income. They are usually different because a US tax bracket only applies to the income within that range."
+      },
+      {
+        "h": "What is not included?",
+        "p": "State and local taxes, FICA/Social Security and Medicare, credits and itemized deductions are excluded. The estimate is useful for planning but not a substitute for tax software."
+      },
+      {
+        "h": "How is the tax computed?",
+        "p": "Each bracket's rate is applied only to the slice of income inside that bracket, then all slices are added together. The table below marks the bracket active for your income."
+      }
+    ],
+    "inflation-calculator": [
+      {
+        "h": "What does the inflation calculator do?",
+        "p": "It converts a dollar amount from one year to its equivalent in another year using the Consumer Price Index (CPI). The result shows what the same money would buy at different times."
+      },
+      {
+        "h": "Which data is used?",
+        "p": "US CPI-U annual averages from 1970 to today. Because it relies on actual price history, results stay faithful to published inflation figures."
+      },
+      {
+        "h": "Why is my 2025 result different from the nominal number?",
+        "p": "Inflation means prices rise over time, so an amount from the past buys less today, and a future amount needs more money to match past purchasing power. The tool only changes the value; it says nothing about interest earned."
+      },
+      {
+        "h": "Is there a limit on years?",
+        "p": "The table starts at 1970. If you pick dates outside the range the result is not computed — this keeps every calculation reliable."
+      },
+      {
+        "h": "Is my data sent anywhere?",
+        "p": "No. All calculations run locally in your browser and the CPI table is bundled with the page."
+      }
+    ],
+    "typing-speed-test": [
+      {
+        "h": "How is WPM measured?",
+        "p": "WPM (words per minute) is computed as correct characters typed divided by five (one average word) and then divided by the test duration in minutes. This matches the standard typing-test convention."
+      },
+      {
+        "h": "What does accuracy mean?",
+        "p": "Accuracy is the percentage of characters you typed correctly. A high speed with low accuracy usually means you should slow down a little and focus on precision."
+      },
+      {
+        "h": "Can I choose the test length?",
+        "p": "Yes — 15, 30 or 60 seconds. The 60-second test is the classic benchmark, while shorter tests are good for quick warm-ups."
+      },
+      {
+        "h": "What do the colors mean while typing?",
+        "p": "Correct characters turn green. Wrong characters are highlighted red. The next letter to type is underlined so your eyes never lose the position."
+      },
+      {
+        "h": "Does it work in Turkish?",
+        "p": "Yes. A Turkish sample text is built in, and you can switch between English and Turkish with one tap without restarting the test."
+      }
+    ],
+    "css-units-converter": [
+      {
+        "h": "Which units does it convert?",
+        "p": "It converts between px, rem, em, %, vw and vh. The base units depend on the base font size (for rem and em), the viewport width (for vw) and the viewport height (for vh)."
+      },
+      {
+        "h": "What is the difference between rem and em?",
+        "p": "Both are relative to font size: rem uses the root font size, and em uses the font size of the current element. This tool assumes both follow the base font size you configure."
+      },
+      {
+        "h": "Why do I need the viewport size?",
+        "p": "vw and vh are percentages of the viewport. Without knowing a concrete viewport, like 1920×1080, those units cannot be converted to a pixel value."
+      },
+      {
+        "h": "How do I set custom base values?",
+        "p": "The default base font size is 16px and the default viewport is 1920×1080 — the most common desktop values. Change them to match your design system or target device."
+      },
+      {
+        "h": "Is the percent unit interpreted correctly?",
+        "p": "Percentages are interpreted relative to the base font size, matching the common pattern for font sizes in CSS. The tool shows every unit side by side so results are easy to compare."
+      }
+    ],
+    "css-triangle-generator": [
+      {
+        "h": "How does a CSS triangle work?",
+        "p": "A triangle is created with borders on an element that has zero width and height. Each edge is a transparent border except one, and the visible border forms the triangle shape."
+      },
+      {
+        "h": "Which directions are supported?",
+        "p": "Eight directions: up, down, left, right and the four diagonals. Every option produces pure CSS — no images, SVG or extra elements needed."
+      },
+      {
+        "h": "Can I change size and color?",
+        "p": "Yes. The size slider sets the base dimension in pixels and the color picker controls the triangle color. The generated code and the preview update in real time."
+      },
+      {
+        "h": "How do I use the generated code?",
+        "p": "Copy the CSS block and paste it into your stylesheet. Apply the .triangle class to an empty element and the triangle appears exactly as previewed."
+      },
+      {
+        "h": "Does it work on all browsers?",
+        "p": "Yes. Border techniques are supported by every modern browser and have been a standard trick in CSS for years — no fallbacks required."
+      }
+    ],
+    "countdown-timer": [
+      {
+        "h": "How do I start a countdown?",
+        "p": "Enter hours, minutes and seconds, then press Start. The big display counts down second by second, and the inputs are locked while the timer runs."
+      },
+      {
+        "h": "Can I pause and resume?",
+        "p": "Yes. Press Pause to stop the countdown at its current position, then press Start again to resume from exactly where it left off."
+      },
+      {
+        "h": "What happens when time runs out?",
+        "p": "The display freezes at 00:00:00 and a 'Time is up' message appears. Use the Restart button to run the same countdown again."
+      },
+      {
+        "h": "Does it keep running in the background?",
+        "p": "The timer counts down while the tab is open. Very long background timing is not guaranteed, so keep the tab visible for exact tracking."
+      },
+      {
+        "h": "Is a sound played at the end?",
+        "p": "No sound is played — the timer ends silently with a visual message, so it is safe to use in quiet rooms and offices."
+      }
+    ],
+    "image-grid-splitter": [
+      {
+        "h": "What is the image grid splitter used for?",
+        "p": "It cuts a photo into equal slices arranged in a grid. The most common use is the three-by-three Instagram profile grid, where nine matching tiles form one large image."
+      },
+      {
+        "h": "How do I choose the grid size?",
+        "p": "Pick any combination of rows and columns from 1 to 6. A 3×3 grid gives nine square slices; a 2×3 grid gives six slices often used for stories and banners."
+      },
+      {
+        "h": "Are the slices cropped or resized?",
+        "p": "Each slice is an exact cut of the original image keeping its proportions. The source is not stretched, so parts may be cropped only where the grid requires it."
+      },
+      {
+        "h": "How do I download the pieces?",
+        "p": "Every slice is rendered as a PNG inside the preview grid. Tap the download link on any tile (or save the image) to store it on your device."
+      },
+      {
+        "h": "Does the image leave my device?",
+        "p": "No. The image is opened and cut locally in your browser with the HTML canvas. Nothing is uploaded to a server."
+      }
+    ],
+    "ascii-art-generator": [
+      {
+        "h": "How is ASCII art created?",
+        "p": "The image is downsized to a tight grid and every cell is turned into its brightness. A ramp of characters, from a space up to the @ sign, replaces each brightness so a picture emerges from text."
+      },
+      {
+        "h": "Why does the output have a fixed width?",
+        "p": "The width slider controls the character columns of the result. A realistic desktop value is 100–160 columns; very small sizes lose detail and very large ones overflow the screen."
+      },
+      {
+        "h": "What does the invert option do?",
+        "p": "Inverting swaps the character ramp, so dark areas become bright and bright areas become dark. It helps when an image has poor contrast."
+      },
+      {
+        "h": "Can I copy the art somewhere?",
+        "p": "The generated text is rendered in a plain pre-block. Select it and copy as keyboard text, then paste it anywhere that accepts plain text."
+      },
+      {
+        "h": "Is any image size supported?",
+        "p": "Any common image format your browser can open works. The source is scaled internally, so large photos are handled just as easily as small icons."
+      }
+    ],
+    "pixelate-image": [
+      {
+        "h": "How does pixelation work?",
+        "p": "The image is first scaled down to a tiny canvas — one block per pixel cell — then scaled back up without smoothing. The result is the classic chunky pixel look."
+      },
+      {
+        "h": "How do I control the effect?",
+        "p": "Drag the pixel size slider. Small values like 4–8 give a subtle blocky texture, while values of 32–64 produce the heavy retro game look."
+      },
+      {
+        "h": "Which file format is exported?",
+        "p": "The output is downloaded as a PNG file, so the pixelated preview keeps full quality no matter how many times it is opened."
+      },
+      {
+        "h": "Does it work with all image types?",
+        "p": "Yes. Any format your browser can display — JPEG, PNG, WebP, GIF and more — can be pixelated. Large images are handled in memory."
+      },
+      {
+        "h": "Is the original image modified?",
+        "p": "No. The original file stays untouched on your device. The tool only creates a new pixelated version you can preview and download."
+      }
+    ],
+    "vigenere-cipher": [
+      {
+        "h": "What is the Vigenère cipher?",
+        "p": "It is a classical polyalphabetic cipher where a keyword shifts each letter by a different amount. The same keyword encrypts and decrypts, so it is called a symmetric cipher."
+      },
+      {
+        "h": "How do I encrypt a message?",
+        "p": "Type the plain text, enter a keyword and keep Encrypt selected. Each letter is shifted by the corresponding keyword letter, repeating the keyword until the message ends."
+      },
+      {
+        "h": "How is text decrypted?",
+        "p": "Select Decrypt and enter the same keyword that was used to encrypt. The process is reversed and the original text is restored."
+      },
+      {
+        "h": "Does it support Turkish characters?",
+        "p": "Yes. The alphabet includes Turkish letters like Ç, Ğ, İ, Ö, Ş and Ü, so Turkish text encrypts and decrypts correctly. Other characters are kept unchanged."
+      },
+      {
+        "h": "Is this secure for real secrets?",
+        "p": "No. The Vigenère cipher is easy to break with modern computers and is used for learning and fun rather than protection. Do not rely on it for sensitive data."
+      }
+    ],
+    "punctuation-remover": [
+      {
+        "h": "What does it remove?",
+        "p": "It strips every punctuation mark — like .,!?;:'\"()[] — from the text and keeps letters, numbers, spaces and line breaks."
+      },
+      {
+        "h": "Can apostrophes stay in words?",
+        "p": "Yes. Tick 'Keep apostrophes' to preserve possessive and contraction apostrophes such as in isn't or John's."
+      },
+      {
+        "h": "What about hyphens?",
+        "p": "Tick 'Keep hyphens' so compound words like well-known or 24-hour stay intact instead of merging into one word."
+      },
+      {
+        "h": "How do I know how much was removed?",
+        "p": "The tool reports the exact number of punctuation characters that were removed from your text, so you can compare input and output."
+      },
+      {
+        "h": "Where is this useful?",
+        "p": "It is handy for cleaning text for machine learning, preparing data for scripts, or producing a simplified plain-text version of a document."
+      }
+    ],
+    "anagram-solver": [
+      {
+        "h": "What is an anagram?",
+        "p": "An anagram is a rearrangement of letters that forms another word or phrase. This tool lists every unique arrangement of the letters you enter, whether or not it is a real word."
+      },
+      {
+        "h": "Is a dictionary included?",
+        "p": "No. The solver generates all letter combinations and lets you scan them yourself. That keeps it fast, offline and unlimited."
+      },
+      {
+        "h": "How many letters can I enter?",
+        "p": "Up to nine letters. Beyond that the number of permutations grows explosively, so the tool caps the input at nine to stay responsive."
+      },
+      {
+        "h": "Are repeated letters handled?",
+        "p": "Yes. Duplicate letters produce only unique results, so a word like 'toot' does not generate identical anagrams over and over."
+      },
+      {
+        "h": "What are the results sorted by?",
+        "p": "Alphabetically. When the result set is very large, the first 2,000 are shown and a marker tells you more exist."
+      }
+    ],
+    "keyword-combiner": [
+      {
+        "h": "How does the keyword combiner work?",
+        "p": "Every line in the first box is paired with every line in the second box. If list A has 5 entries and list B has 4, you get 20 combined keywords."
+      },
+      {
+        "h": "Why are combinations useful?",
+        "p": "Long-tail keywords with real search intent are built from these combinations. They fill content calendars, PPC campaigns and meta tags with fresh ideas."
+      },
+      {
+        "h": "Are duplicates removed?",
+        "p": "Result keys remove duplicate lines, so the same pair never appears twice even if it exists in your source lists."
+      },
+      {
+        "h": "How do I copy the results?",
+        "p": "Press the Copy button or select the output area with your mouse. Each combination sits on its own line, ready for pasting into spreadsheets and tools."
+      },
+      {
+        "h": "Is my data sent anywhere?",
+        "p": "No. Combining happens locally in your browser; nothing is uploaded."
+      }
+    ],
+    "title-length-checker": [
+      {
+        "h": "What limits does it check?",
+        "p": "It compares your title against ~60 characters and ~580 pixels and your meta description against ~160 characters and ~920 pixels — the typical limits Google uses in search results."
+      },
+      {
+        "h": "Why check pixels instead of characters?",
+        "p": "Google truncates titles and descriptions by pixel width rather than character count. Caps, wide letters and punctuation affect width, so char-only tools can lie about truncation."
+      },
+      {
+        "h": "What do the bars mean?",
+        "p": "Each bar fills up to the pixel limit. When it stays in green the snippet is safe; when it turns red the snippet likely gets truncated with ellipsis (…)."
+      },
+      {
+        "h": "Is the pixel estimate exact?",
+        "p": "It is an estimate based on common glyph widths for the default search font. Actual rendering varies slightly by font and language, so treat it as a reliable but approximate guide."
+      },
+      {
+        "h": "Will this help my SEO?",
+        "p": "A well-formed, under-limit title and description are fully displayed, which usually improves click-through from search results — one of the foundations of better SEO."
+      }
+    ],
+    "magic-8-ball": [
+      {
+        "h": "How does the magic 8 ball work?",
+        "p": "Think of a yes-or-no question, press Shake and the ball picks one of the classic 20 answers at random. It is a toy, so treat the outcome as playful rather than serious."
+      },
+      {
+        "h": "What answers can it give?",
+        "p": "The full classic set is included — positive answers like 'It is certain', negative ones like 'Cannot predict now' and vague ones like 'Ask again later'."
+      },
+      {
+        "h": "Is it random each time?",
+        "p": "The answer is chosen with a random pick on every shake, and a small counter shows how many questions have been asked in this session."
+      },
+      {
+        "h": "Can I use it on my phone?",
+        "p": "Yes — the ball and shake button scale to the smallest screens, so it works well as a quick break on mobile."
+      },
+      {
+        "h": "Why is it so popular?",
+        "p": "It solves trivial decisions fast and brings a little fun to everyday questions. The design mirrors the classic toy, so it feels instantly familiar."
+      }
     ]
   },
   "Rehber": {
@@ -5627,6 +6120,225 @@
       "sum": "Sum of all terms",
       "nth": "Last term",
       "tip": "Each term is the sum of the two previous ones. Up to 100 terms are generated, along with the total and the final value."
+    },
+    "mortgageCalculator": {
+      "priceLabel": "Home price ($)",
+      "downLabel": "Down payment ($)",
+      "rateLabel": "Interest rate (% per year)",
+      "termLabel": "Term (years)",
+      "loanAmount": "Loan amount",
+      "monthlyPayment": "Monthly payment",
+      "totalPayment": "Total paid",
+      "totalInterest": "Total interest",
+      "amortTitle": "Amortization schedule",
+      "monthCol": "Month",
+      "paymentCol": "Payment",
+      "principalCol": "Principal",
+      "interestCol": "Interest",
+      "balanceCol": "Balance",
+      "invalid": "Enter a valid home price higher than the down payment to see results.",
+      "tip": "This estimate covers principal and interest only. Taxes, insurance and fees are not included, so treat it as a planning figure."
+    },
+    "hoursCalculator": {
+      "startLabel": "Start time",
+      "endLabel": "End time",
+      "nextDay": "Ends on the next day",
+      "hours": "Duration",
+      "totalMinutes": "Total minutes",
+      "decimalHours": "Decimal hours",
+      "invalid": "The end time must be later than the start time, or use the overnight option.",
+      "tip": "The duration is the time between the two clock times. Decimal hours are the payroll-friendly format like 8.5 instead of 8:30."
+    },
+    "incomeTaxCalculator": {
+      "incomeLabel": "Annual gross income ($)",
+      "standardDeduction": "Apply the 2025 standard deduction ($14,600)",
+      "taxableIncome": "Taxable income",
+      "federalTax": "Estimated federal tax",
+      "effectiveRate": "Effective rate",
+      "marginalRate": "Marginal rate",
+      "bracketTableTitle": "2025 tax brackets (single)",
+      "rateCol": "Rate",
+      "incomeRangeCol": "Income range",
+      "invalid": "Enter a valid annual income to see the estimate.",
+      "tip": "Estimate uses 2025 single-filer brackets and the standard deduction. State tax, FICA and credits are not included."
+    },
+    "inflationCalculator": {
+      "amountLabel": "Amount ($)",
+      "startYear": "Start year",
+      "endYear": "End year",
+      "adjustedValue": "Equivalent value",
+      "cpiChange": "CPI change",
+      "invalid": "Enter a valid amount and pick two years from the table.",
+      "tip": "Values use the US CPI-U annual averages from 1970 to today. The result shows the same purchasing power in the end year."
+    },
+    "typingSpeedTest": {
+      "en": "EN",
+      "tr": "TR",
+      "start": "Start test",
+      "running": "Typing...",
+      "timeLeft": "Time left",
+      "typingPlaceholder": "Start typing here as soon as the test begins...",
+      "readyHint": "Press Start, then type the text above as fast and accurately as you can.",
+      "wpm": "WPM",
+      "accuracy": "Accuracy",
+      "correct": "Correct chars",
+      "errors": "Errors",
+      "tip": "WPM is correct characters divided by five per minute. Aim for accuracy above 95% before pushing speed."
+    },
+    "cssUnitsConverter": {
+      "valueLabel": "Value",
+      "fromUnit": "From",
+      "baseSize": "Base font size (px)",
+      "viewportW": "Viewport width (px)",
+      "viewportH": "Viewport height (px)",
+      "unitCol": "Unit",
+      "valueCol": "Value",
+      "source": "source",
+      "units_px": "Pixels (px)",
+      "units_rem": "Rem",
+      "units_em": "Em",
+      "units_percent": "Percent (%)",
+      "units_vw": "Viewport width (vw)",
+      "units_vh": "Viewport height (vh)",
+      "invalid": "Enter a valid value, base size and viewport dimensions.",
+      "tip": "rem and em use the base font size; vw and vh use the viewport. Adjust them to match your design system."
+    },
+    "cssTriangleGenerator": {
+      "direction": "Direction",
+      "size": "Size (px)",
+      "color": "Color",
+      "cssOutput": "CSS code",
+      "copy": "Copy CSS",
+      "copied": "Copied!",
+      "up": "Up",
+      "down": "Down",
+      "left": "Left",
+      "right": "Right",
+      "topLeft": "Top left",
+      "topRight": "Top right",
+      "bottomLeft": "Bottom left",
+      "bottomRight": "Bottom right",
+      "tip": "The triangle is drawn with CSS borders only — no images or SVG. Paste the code into your stylesheet and apply the .triangle class."
+    },
+    "countdownTimer": {
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds",
+      "start": "Start",
+      "pause": "Pause",
+      "reset": "Reset",
+      "restart": "Restart",
+      "timeUp": "Time is up!",
+      "tip": "Values above 59 are clamped automatically. Pause keeps your position, and Restart runs the same countdown again."
+    },
+    "imageGridSplitter": {
+      "uploadHint": "Click to choose an image",
+      "chosen": "Image ready — set the grid and split",
+      "previewAlt": "Uploaded image preview",
+      "rows": "Rows",
+      "columns": "Columns",
+      "split": "Split image",
+      "slicesTitle": "Slices",
+      "download": "Save",
+      "tip": "Each slice is cut from the original pixels, so quality is preserved. A 3×3 grid is the standard Instagram profile layout."
+    },
+    "asciiArtGenerator": {
+      "uploadHint": "Click to choose an image",
+      "chosen": "Image ready — press Generate",
+      "widthLabel": "Width (characters)",
+      "invert": "Invert tones",
+      "generate": "Generate",
+      "tip": "The image is analyzed locally, cell by cell, and mapped to a character ramp. Larger widths keep more detail."
+    },
+    "pixelateImage": {
+      "uploadHint": "Click to choose an image",
+      "chosen": "Image ready — adjust the slider",
+      "pixelSize": "Pixel block size",
+      "download": "Download PNG",
+      "previewAlt": "Pixelated image preview",
+      "tip": "Low sizes give a subtle effect; high sizes create the heavy retro look. The download is produced from the preview canvas."
+    },
+    "vigenereCipher": {
+      "inputLabel": "Text",
+      "inputPlaceholder": "Type or paste your message...",
+      "keyLabel": "Keyword",
+      "keyPlaceholder": "A secret word...",
+      "modeEncrypt": "Encrypt",
+      "modeDecrypt": "Decrypt",
+      "outputLabel": "Result",
+      "outputPlaceholder": "The result appears here.",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "tip": "The keyword repeats over the text and shifts each letter. The Turkish alphabet is supported; other characters stay unchanged."
+    },
+    "punctuationRemover": {
+      "inputLabel": "Input text",
+      "inputPlaceholder": "Paste text with punctuation...",
+      "outputLabel": "Clean text",
+      "outputPlaceholder": "The cleaned text appears here.",
+      "keepApostrophe": "Keep apostrophes (')",
+      "keepHyphen": "Keep hyphens (-)",
+      "removedCount": "Removed {count} punctuation characters.",
+      "tip": "Letters, numbers and spaces are kept. Enable the keep options to preserve apostrophes and hyphens where they belong."
+    },
+    "anagramSolver": {
+      "lettersLabel": "Letters",
+      "lettersPlaceholder": "Type your letters (up to 9)...",
+      "totalCount": "{count} unique arrangements.",
+      "partial": "Showing first {shown} of {total} arrangements.",
+      "tip": "Every unique permutation of the letters is listed alphabetically. Up to nine letters are supported."
+    },
+    "keywordCombiner": {
+      "listALabel": "List A (one keyword per line)",
+      "listBLabel": "List B (one keyword per line)",
+      "aPlaceholder": "e.g.\nblue\nred",
+      "bPlaceholder": "e.g.\nshoes\ntshirts",
+      "resultCount": "{count} combinations",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "outputPlaceholder": "Combined keywords appear here.",
+      "tip": "Each item in A is paired with every item in B. Skip duplicates in your lists to keep the output useful."
+    },
+    "titleLengthChecker": {
+      "titleLabel": "SEO title",
+      "titlePlaceholder": "Paste your title here...",
+      "descriptionLabel": "Meta description",
+      "descriptionPlaceholder": "Paste your description here...",
+      "titleChars": "{count} chars",
+      "titleWidth": "{px}px",
+      "descChars": "{count} chars",
+      "descWidth": "{px}px",
+      "ok": "OK",
+      "over": "OVER",
+      "tip": "The pixel estimate mirrors how Google truncates with ellipsis. Keep titles under ~60 chars / 580px and descriptions under ~160 chars / 920px."
+    },
+    "magic8Ball": {
+      "hint": "Ask a question… then press Shake",
+      "shake": "Shake",
+      "asked": "{count} questions asked",
+      "answers": [
+        "It is certain",
+        "Without a doubt",
+        "Yes definitely",
+        "Most likely",
+        "Yes",
+        "Outlook good",
+        "Signs point to yes",
+        "Reply hazy, try again",
+        "Ask again later",
+        "Better not tell you now",
+        "Cannot predict now",
+        "Concentrate and ask again",
+        "Don't count on it",
+        "My reply is no",
+        "My sources say no",
+        "Outlook not so good",
+        "Very doubtful",
+        "It is decidedly so",
+        "As I see it, yes",
+        "You may rely on it"
+      ],
+      "tip": "The ball picks one answer at random from the classic set. Use it for fun and quick decisions only."
     }
   }
 }

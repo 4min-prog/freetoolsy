@@ -800,6 +800,142 @@ export const tools: Tool[] = [
       "Fibonacci dizisini üretir; toplam ve son terim değerini gösterir.",
     addedAt: "2026-09-26",
   },
+  {
+    slug: "mortgage-calculator",
+    name: "Konut Kredisi Hesaplayıcı",
+    category: "calculation",
+    description:
+      "Konut kredisi aylık taksidini, toplam faizi ve amortisman tablosunu hesaplar.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "hours-calculator",
+    name: "Saat Hesaplayıcı",
+    category: "calculation",
+    description:
+      "İki saat arasındaki süreyi saat, dakika ve ondalık biçimde hesaplar.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "income-tax-calculator",
+    name: "Gelir Vergisi Hesaplayıcı",
+    category: "calculation",
+    description:
+      "ABD federal gelir vergisini marjinal dilimlere göre hesaplar; etkin ve marjinal oranı gösterir.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "inflation-calculator",
+    name: "Enflasyon Hesaplayıcı",
+    category: "calculation",
+    description:
+      "Bir tutarın belirli yıllar arasında satın alma gücündeki değişimini ABD TÜFE verisiyle hesaplar.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "typing-speed-test",
+    name: "Yazma Hızı Testi",
+    category: "fun",
+    description:
+      "Dakikadaki kelime sayısını (WPM), doğruluğu ve hata sayısını ölçen pratik testi.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "css-units-converter",
+    name: "CSS Birim Dönüştürücü",
+    category: "developer",
+    description:
+      "px, rem, em, %, vw ve vh birimleri arasında anında dönüşüm yapar.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "css-triangle-generator",
+    name: "CSS Üçgen Üretici",
+    category: "developer",
+    description:
+      "Yön ve boyut seçerek kullanıma hazır CSS üçgen kodu üretir.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "countdown-timer",
+    name: "Geri Sayım Zamanlayıcı",
+    category: "fun",
+    description:
+      "Saat, dakika ve saniye belirleyerek istediğiniz süreyi geri sayar.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "image-grid-splitter",
+    name: "Görsel Izgara Bölücü",
+    category: "image",
+    description:
+      "Fotoyu eşit parçalara böler; özellikle Instagram ızgarası için kare parçalar hazırlar.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "ascii-art-generator",
+    name: "ASCII Sanat Üretici",
+    category: "fun",
+    description:
+      "Görseli karakterlere dönüştürerek ASCII sanatı çıkarır; genişlik ve ters çevirme ayarlı.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "pixelate-image",
+    name: "Pikselleştirici",
+    category: "image",
+    description:
+      "Fotoğrafı istenen blok boyutunda pikselleştirir ve sonucu indirmenizi sağlar.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "vigenere-cipher",
+    name: "Vigenère Şifresi",
+    category: "security",
+    description:
+      "Türkçe alfabe destekli anahtar sözcükle Vigenère yöntemiyle şifreler ve çözer.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "punctuation-remover",
+    name: "Noktalama Silici",
+    category: "text",
+    description:
+      "Metinden noktalama işaretlerini temizler; kesme işareti ve tireyi koruma seçenekli.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "anagram-solver",
+    name: "Anagram Çözücü",
+    category: "fun",
+    description:
+      "Harflerden oluşan tüm olası anagram kombinasyonlarını listeleyin.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "keyword-combiner",
+    name: "Anahtar Kelime Birleştirici",
+    category: "seo",
+    description:
+      "İki kelime listesini çaprazlayarak tüm kombinasyonları tek tıkla üretir.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "title-length-checker",
+    name: "Başlık Uzunluğu Kontrolü",
+    category: "seo",
+    description:
+      "Başlık ve açıklamanın karakter ile piksel uzunluğunu Google SERP sınırlarına göre denetler.",
+    addedAt: "2026-09-26",
+  },
+  {
+    slug: "magic-8-ball",
+    name: "Sihirli 8 Top",
+    category: "fun",
+    description:
+      "Soru sorun, topu sallayın; cevabınızı alın. Klasik sihirli 8 top deneyimi.",
+    addedAt: "2026-09-26",
+  },
 ];
 
 export function getTool(slug: string): Tool | undefined {

@@ -873,6 +873,125 @@
       "title": "Fibonacci Üretici - Fibonacci Dizisini Online Oluşturma",
       "pageDesc": "Fibonacci dizisini 100 terime kadar üretin. Listeyi, toplamı ve n'inci değeri görün. Ücretsiz ve anlık.",
       "intro": "Kaç terim üretileceğini seçin; diziyi, toplamını ve son değeri tek tıkla elde edin."
+    },
+    "mortgage-calculator": {
+      "name": "Konut Kredisi Hesaplayıcı",
+      "desc": "Konut kredisi aylık taksidini, toplam faizi ve amortisman tablosunu hesaplar.",
+      "title": "Konut Kredisi Hesaplayıcı - Ücretsiz Kredi Taksiti Hesabı",
+      "pageDesc": "Konut kredisi aylık taksidinizi, toplam faizi ve tam amortisman tablosunu hesaplayın. Konut fiyatı, peşinat, faiz ve vade girin. Ücretsiz, tamamen tarayıcıda çalışır.",
+      "intro": "Konut fiyatı, peşinat, faiz oranı ve vadeyi girin; aylık taksidinizi ve tam amortisman tablosunu görün."
+    },
+    "hours-calculator": {
+      "name": "Saat Hesaplayıcı",
+      "desc": "İki saat arasındaki süreyi saat, dakika ve ondalık biçimde hesaplar.",
+      "title": "Saat Hesaplayıcı - Süre ve Mesai Saati Hesaplama",
+      "pageDesc": "İki saat arasındaki süreyi saat ve dakika, toplam dakika veya ondalık saat olarak bulun. Gece vardiyalarını destekler. Ücretsiz ve anlık.",
+      "intro": "Başlangıç ve bitiş saatini seçin; sonucu saat/dakika, toplam dakika veya ondalık saat olarak okuyun."
+    },
+    "income-tax-calculator": {
+      "name": "Gelir Vergisi Hesaplayıcı",
+      "desc": "Marjinal vergi dilimlerine ve standart kesintiye göre ABD federal gelir vergisini tahmin eder.",
+      "title": "Gelir Vergisi Hesaplayıcı - Federal Vergi Tahmini",
+      "pageDesc": "2025 marjinal dilimleri ve standart kesintiyle ABD federal gelir verginizi tahmin edin. Vergiye tabi gelir, ödenecek vergi, etkin ve marjinal oranı görün. Ücretsiz.",
+      "intro": "Yıllık gelirinizi girin; tahmini federal verginizi, etkin oranınızı ve içinde bulunduğunuz dilimi okuyun."
+    },
+    "inflation-calculator": {
+      "name": "Enflasyon Hesaplayıcı",
+      "desc": "ABD TÜFE verisiyle bir tutarın herhangi bir yılda ne kadar ettiğini hesaplar.",
+      "title": "Enflasyon Hesaplayıcı - ABD TÜFE Enflasyon Hesaplama",
+      "pageDesc": "1970'ten bugüne ABD TÜFE'siyle bir tutarı iki yıl arasında çevirin. Satın alma gücünün zamanla nasıl değiştiğini görün. Ücretsiz ve gizli.",
+      "intro": "Bir tutar ve iki yıl girin; araç enflasyona göre düzeltilmiş eşdeğer değeri gösterir."
+    },
+    "typing-speed-test": {
+      "name": "Yazma Hızı Testi",
+      "desc": "Klavye hızınızı doğruluk, doğru karakter ve hata sayısıyla birlikte WPM olarak ölçer.",
+      "title": "Yazma Hızı Testi - Dakikadaki Kelime Sayınızı Ölçün",
+      "pageDesc": "15, 30 veya 60 saniyede yazma hızınızı test edin. Harf harf vurgulama, WPM ve doğruluk sonuçları. İngilizce ve Türkçe destekli. Ücretsiz.",
+      "intro": "Testi başlatın ve gösterilen metni yazın. Süre bitince WPM, doğruluk ve hata sayınızı alırsınız."
+    },
+    "css-units-converter": {
+      "name": "CSS Birim Dönüştürücü",
+      "desc": "px, rem, em, %, vw ve vh CSS birimleri arasında anında dönüşüm yapar.",
+      "title": "CSS Birim Dönüştürücü - px, rem, em, vw, vh Online",
+      "pageDesc": "Ayarlanabilir taban yazı boyutu ve görünüm alanıyla px, rem, em, %, vw ve vh arasında dönüşüm yapın. Tüm birimleri aynı anda görün. Geliştirici dostu ve ücretsiz.",
+      "intro": "Bir değer ve birim seçin, taban yazı boyutu ile görünüm alanını ayarlayın; sonucu tüm CSS birimlerinde birden okuyun."
+    },
+    "css-triangle-generator": {
+      "name": "CSS Üçgen Üretici",
+      "desc": "Seçilen yön, boyut ve renkle saf CSS üçgeni oluşturur.",
+      "title": "CSS Üçgen Üretici - Görselsiz Üçgen Oluşturma",
+      "pageDesc": "Sekiz yönde, kendi boyut ve renginizle border tabanlı CSS üçgeni üretin. Hazır kodu tek tıkla kopyalayın. Ücretsiz, görsel gerektirmez.",
+      "intro": "Yön, boyut ve renk seçin; üretilen CSS üçgen kodunu kopyalayın."
+    },
+    "countdown-timer": {
+      "name": "Geri Sayım Zamanlayıcı",
+      "desc": "Saat, dakika ve saniye ayarlayın; geri sayımı sıfıra kadar izleyin.",
+      "title": "Geri Sayım Zamanlayıcı - Ücretsiz Çevrimiçi Sayaç",
+      "pageDesc": "Saniyelerden saatlere her süre için geri sayım başlatın. İstediğiniz an durdurun, sıfırlayın veya yeniden başlatın. Tarayıcınızda çalışır. Ücretsiz.",
+      "intro": "Saat, dakika ve saniyeyi ayarlayın, Başlat'a basın ve büyük ekrandaki geri sayımı izleyin."
+    },
+    "image-grid-splitter": {
+      "name": "Görsel Izgara Bölücü",
+      "desc": "Bir fotoğrafı eşit parçalara böler; Instagram gönderileri için idealdir.",
+      "title": "Görsel Izgara Bölücü - Instagram için Fotoğraf Bölme",
+      "pageDesc": "Herhangi bir görseli 1x1'den 6x6'ya bir ızgaraya bölün ve her parçayı PNG olarak indirin. Instagram ızgaraları ve baskı düzenleri için ideal. Yerel çalışır, ücretsiz.",
+      "intro": "Bir görsel yükleyin, ızgara boyutunu seçin ve bölünen her parçayı indirin."
+    },
+    "ascii-art-generator": {
+      "name": "ASCII Sanat Üretici",
+      "desc": "Herhangi bir görseli tarayıcınızda blok biçimli ASCII sanatına dönüştürür.",
+      "title": "ASCII Sanat Üretici - Görselden Metin Sanatı",
+      "pageDesc": "Fotoğraf ve logoları anında ASCII sanatına çevirin. Genişliği ayarlayın, tonları ters çevirin ve sonucu kopyalayın. Her şey tarayıcınızda çalışır. Ücretsiz.",
+      "intro": "Bir görsel yükleyin, genişliği ayarlayın ve karakter tabanlı ASCII sanatı üretin."
+    },
+    "pixelate-image": {
+      "name": "Pikselleştirici",
+      "desc": "Herhangi bir fotoğrafı blok boyutu kaydırıcısıyla pikselleştirir ve sonucu indirir.",
+      "title": "Pikselleştirici - Fotoğrafı Piksele Çevirme",
+      "pageDesc": "Bir fotoğrafı saniyeler içinde piksel sürümüne çevirin. Blok boyutunu kaydırıcıyla ayarlayın ve sonucu PNG olarak indirin. Ücretsiz ve gizli.",
+      "intro": "Bir görsel yükleyin ve kaydırıcıyla piksel boyutunu kontrol edin; ardından piksel önizlemeyi indirin."
+    },
+    "vigenere-cipher": {
+      "name": "Vigenère Şifresi",
+      "desc": "Bir anahtar sözcükle Vigenère yöntemine göre metni şifreler ve çözer.",
+      "title": "Vigenère Şifresi - Metni Online Şifrele ve Çöz",
+      "pageDesc": "Vigenère şifresiyle bir anahtar sözcük kullanarak metni şifreleyin ve çözün. Türkçe alfabe desteklenir. Tamamen tarayıcınızda çalışır, veri gönderilmez. Ücretsiz.",
+      "intro": "Mesajınızı ve anahtar sözcüğü yazın, Şifrele veya Çöz seçin ve sonucu anında okuyun."
+    },
+    "punctuation-remover": {
+      "name": "Noktalama Silici",
+      "desc": "Gerekirse kesme işareti ve tireyi koruyarak metinden noktalama işaretlerini temizler.",
+      "title": "Noktalama Silici - Noktalamasız Metin Temizleme",
+      "pageDesc": "Herhangi bir metinden noktalama işaretlerini anında ayıklayın. İsteğe bağlı olarak kesme işareti ve tireyi koruyun; kaç karakter silindiğini görün. Ücretsiz ve gizli.",
+      "intro": "Metninizi yapıştırın ve tüm noktalamaların kaldırıldığı sürümü anında alın."
+    },
+    "anagram-solver": {
+      "name": "Anagram Çözücü",
+      "desc": "Harflerinizden olası her düzenlemeyi, iki harfli kelimelerden başlayarak üretir.",
+      "title": "Anagram Çözücü - Tüm Harf Kombinasyonlarını Bulma",
+      "pageDesc": "Harfleri girin ve tek tıkla tüm olası anagram ve kombinasyonları üretin. Scrabble gibi kelime oyunları için harika. Ücretsiz ve anlık.",
+      "intro": "Harflerinizi yazın; araç her benzersiz düzenlemeyi listeler."
+    },
+    "keyword-combiner": {
+      "name": "Anahtar Kelime Birleştirici",
+      "desc": "İki anahtar kelime listesini çaprazlayarak tüm kombinasyonları üretir.",
+      "title": "Anahtar Kelime Birleştirici - Kombinasyon Üretme Aracı",
+      "pageDesc": "İki anahtar kelime listesi yapıştırın ve tüm kombinasyonları anında üretin. SEO araştırması, reklam ve içerik planlama için gerekli. Ücretsiz.",
+      "intro": "İki kelime listesi ekleyin; birleştirici tüm sol × sağ eşleşmeleri oluşturur."
+    },
+    "title-length-checker": {
+      "name": "Başlık Uzunluğu Kontrolü",
+      "desc": "Başlık ve açıklamanın kaç karakter ve piksel kullandığını kontrol eder.",
+      "title": "Başlık Uzunluğu Kontrolü - SEO Başlık Kontrolü",
+      "pageDesc": "Başlığınızın ve meta açıklamanızın karakter sayısı ile tahmini piksel genişliğini Google SERP sınırlarına göre ölçün. Ücretsiz, hızlı ve gizli.",
+      "intro": "Bir başlık ve açıklama yapıştırın; karakter sayılarını, piksel genişliklerini ve sınırların içinde kalıp kalmadıklarını görün."
+    },
+    "magic-8-ball": {
+      "name": "Sihirli 8 Top",
+      "desc": "Bir soru sorun ve klasik cevap için sanal sihirli 8 topu sallayın.",
+      "title": "Sihirli 8 Top - Soru Sor ve Cevap Al",
+      "pageDesc": "Evet-hayır sorularına rastgele cevap için klasik sihirli 8 topu sallayın. Ücretsiz, eğlenceli ve her cihazda çalışır.",
+      "intro": "Bir soru düşünün, Salla düğmesine dokunun ve topun klasik cevabını okuyun."
     }
   },
   "ToolContent": {
@@ -3921,6 +4040,380 @@
         "h": "Sayılar ne kadar hızlı büyür?",
         "p": "Sayılar hızla büyür — 100. terim 21 haneli bir sayıdır. Araç 100 terime kadar destekler; bu neredeyse her pratik kullanım için fazlasıyla yeterlidir."
       }
+    ],
+    "mortgage-calculator": [
+      {
+        "h": "Bu hesaplayıcı neleri gösterir?",
+        "p": "Aylık taksidi (anapara ve faiz), tam vade boyunca ödenecek toplam tutarı ve toplam faizi gösterir. Ayrıca her ay için anapara, faiz ve kalan bakiye bilgisini içeren tam bir amortisman tablosu sunar."
+      },
+      {
+        "h": "Aylık taksit nasıl hesaplanır?",
+        "p": "Standart amortisman formülü, kredi tutarını, yıllık faizden türetilen aylık faiz oranını ve ay sayısını kullanır. Sonuç, aylık taksidi tüm vade boyunca sabit tutar."
+      },
+      {
+        "h": "Vergiler ve sigorta dahil mi?",
+        "p": "Hayır. Taksit yalnızca anapara ve faizi kapsar. Emlak vergisi, konut sigortası ve site aidatı bölgeye göre değişir; bu nedenle tahmin en çok vade ve oran karşılaştırmak için uygundur."
+      },
+      {
+        "h": "Peşinat neden önemli?",
+        "p": "Yüksek peşinat kredi tutarını düşürür; bu da aylık taksidi ve ödeyeceğiniz toplam faizi azaltır. Ayrıca özel ipotek sigortasından kaçınmanıza yardımcı olabilir."
+      },
+      {
+        "h": "Hesaplama doğru mu?",
+        "p": "Matematik, kredi kuruluşlarının kullandığı aynı amortisman yöntemini izler. Gerçek taksitiniz faiz sabitleme zamanlaması, ücretler ve yuvarlamalar nedeniyle az fark edebilir; ancak tahmin güvenilir bir planlama değeridir."
+      }
+    ],
+    "hours-calculator": [
+      {
+        "h": "Bu hesap makinesi neyi hesaplar?",
+        "p": "Başlangıç ve bitiş saati arasındaki süreyi hesaplar. Süreyi saat ve dakika, toplam dakika ve bordrolarda sık kullanılan ondalık saat olarak alırsınız."
+      },
+      {
+        "h": "Gece vardiyasında nasıl kullanırım?",
+        "p": "İş ertesi gün bitiyorsa gece seçeneğini açın. Hesap makinesi eksik 24 saati otomatik ekleyerek doğru süreyi verir."
+      },
+      {
+        "h": "Ondalık saat nedir, neden kullanılır?",
+        "p": "Ondalık saat, süreyi saatin kesri olarak ifade eder: 8 saat 30 dakika yerine 8,5 gibi. Bordro sistemleri ve zaman çizelgeleri genellikle bu biçimi bekler."
+      },
+      {
+        "h": "Molalar otomatik düşülür mü?",
+        "p": "Hayır — araç iki saat arasındaki süreyi verir. Ücretsiz bir molayı hesaba katmak için bitiş saatinizi mola süresi kadar geriye çekmeniz yeterlidir."
+      },
+      {
+        "h": "24 saatlik biçimi destekliyor mu?",
+        "p": "Evet. Saat seçiciler 24 saatlik günü destekler; böylece başlangıç ve bitiş 00:00 ile 23:59 arasında herhangi bir yerde olabilir."
+      }
+    ],
+    "income-tax-calculator": [
+      {
+        "h": "Bu hesaplayıcı neyi tahmin eder?",
+        "p": "Yıllık gelirinize göre ABD federal gelir vergisini 2025 marjinal dilimlerine göre tahmin eder. Vergiye tabi gelir, ödenecek vergi, etkin oran ve gelirinizin düştüğü marjinal dilimi gösterir."
+      },
+      {
+        "h": "Standart kesinti nedir?",
+        "p": "Vergi öncesi brüt gelirden düşülen sabit bir tutardır. Bu araç 2025 yılı tek kişi standardı olan 14.600$'ı uygular; kutunun işaretini kaldırarak yoksayabilirsiniz."
+      },
+      {
+        "h": "Marjinal ve etkin oran arasındaki fark nedir?",
+        "p": "Marjinal oran, kazandığınız son doların vergi oranıdır. Etkin oran ise tüm vergiye tabi gelirin ortalama oranıdır. Genelde farklıdırlar çünkü ABD vergi dilimi yalnızca o aralıktaki gelire uygulanır."
+      },
+      {
+        "h": "Neler hariç tutulur?",
+        "p": "Eyalet ve yerel vergiler, FICA/Sosyal Güvenlik ve Medicare, krediler ve detaylı kesintiler hariçtir. Tahmin planlama için yararlıdır ama vergi yazılımının yerini tutmaz."
+      },
+      {
+        "h": "Vergi nasıl hesaplanır?",
+        "p": "Her dilimin oranı yalnızca o dilim içindeki gelir dilimine uygulanır, ardından tüm dilimler toplanır. Aşağıdaki tabloda geliriniz için hangi dilimin aktif olduğu işaretlenir."
+      }
+    ],
+    "inflation-calculator": [
+      {
+        "h": "Enflasyon hesaplayıcı ne yapar?",
+        "p": "Bir tutarı bir yıldan diğerine, Tüketici Fiyat Endeksi'ni (TÜFE) kullanarak eşdeğerine çevirir. Sonuç, aynı paranın farklı zamanlarda ne satın alacağını gösterir."
+      },
+      {
+        "h": "Hangi veri kullanılıyor?",
+        "p": "1970'ten bugüne ABD TÜFE-U yıllık ortalamaları. Gerçek fiyat geçmişine dayandığından sonuçlar yayınlanmış enflasyon rakamlarıyla uyumludur."
+      },
+      {
+        "h": "Sonuç neden nominal değerden farklı?",
+        "p": "Enflasyon fiyatların zamanla yükselmesi anlamına gelir; geçmişteki tutar bugün daha az satın alır, gelecek değer ise geçmiş satın alma gücünü yakalamak için daha fazla para gerektirir. Araç yalnızca değeri değiştirir; kazanılmış faiz hakkında bir şey söylemez."
+      },
+      {
+        "h": "Yıllarda sınır var mı?",
+        "p": "Tablolar 1970'te başlar. Aralık dışında tarih seçerseniz sonuç hesaplanmaz; bu sayede her hesaplama güvenilir kalır."
+      },
+      {
+        "h": "Verilerim bir yere gönderiliyor mu?",
+        "p": "Hayır. Tüm hesaplamalar tarayıcınızda çalışır ve TÜFE tablosu sayfayla birlikte gelir."
+      }
+    ],
+    "typing-speed-test": [
+      {
+        "h": "WPM nasıl ölçülür?",
+        "p": "WPM (dakikadaki kelime sayısı), doğru karakterlerin beşe (bir ortalama kelime) bölünmesi ve test süresine (dakika) bölünmesiyle hesaplanır. Bu, standart yazma testi kuralıdır."
+      },
+      {
+        "h": "Doğruluk ne demek?",
+        "p": "Doğruluk, doğru yazdığınız karakterlerin yüzdesidir. Yüksek hız düşük doğrulukla birleşiyorsa biraz yavaşlayıp hassasiyete odaklanmalısınız."
+      },
+      {
+        "h": "Test süresini seçebilir miyim?",
+        "p": "Evet — 15, 30 veya 60 saniye. 60 saniyelik test klasik standarttır; kısa testler ise hızlı ısınma için iyidir."
+      },
+      {
+        "h": "Yazarken renkler ne anlama gelir?",
+        "p": "Doğru karakterler yeşile döner. Yanlış karakterler kırmızı vurgulanır. Yazılacak sonraki harf altı çizilir; böylece gözünüz konumu asla kaybetmez."
+      },
+      {
+        "h": "Türkçe çalışıyor mu?",
+        "p": "Evet. İngilizce ve Türkçe örnek metinler hazırdır; testi yeniden başlatmadan tek dokunuşla dil değiştirebilirsiniz."
+      }
+    ],
+    "css-units-converter": [
+      {
+        "h": "Hangi birimleri dönüştürür?",
+        "p": "px, rem, em, %, vw ve vh arasında dönüşüm yapar. Taban birimler; taban yazı boyutuna (rem ve em için), görünüm alanı genişliğine (vw için) ve görünüm alanı yüksekliğine (vh için) bağlıdır."
+      },
+      {
+        "h": "rem ile em arasındaki fark nedir?",
+        "p": "İkisi de yazı boyutuna göredir: rem kök yazı boyutunu, em ise geçerli öğenin yazı boyutunu kullanır. Bu araç ikisinin de yapılandırdığınız taban boyutu izlediğini varsayar."
+      },
+      {
+        "h": "Görünüm alanı boyutu neden gerekli?",
+        "p": "vw ve vh, görünüm alanının yüzdeleridir. 1920×1080 gibi somut bir görünüm alanı olmadan bu birimler piksel değerine çevrilemez."
+      },
+      {
+        "h": "Özel taban değerleri nasıl ayarlanır?",
+        "p": "Varsayılan taban yazı boyutu 16px, varsayılan görünüm alanı 1920×1080'dir — en yaygın masaüstü değerleri. Tasarım sisteminize veya hedef cihazınıza göre değiştirin."
+      },
+      {
+        "h": "% birimi neye göre yorumlanır?",
+        "p": "Yüzde, CSS'te yazı boyutlarının yaygın kullanımına uygun olarak taban yazı boyutuna göre yorumlanır. Sonuçların karşılaştırılması kolay olsun diye her birim yan yana gösterilir."
+      }
+    ],
+    "css-triangle-generator": [
+      {
+        "h": "CSS üçgeni nasıl çalışır?",
+        "p": "Üçgen, sıfır genişlik ve yüksekliğe sahip bir öğenin kenarlıklarıyla oluşturulur. Her kenar biri hariç şeffaf olur; görünür kenar üçgen şeklini oluşturur."
+      },
+      {
+        "h": "Hangi yönler destekleniyor?",
+        "p": "Sekiz yön: yukarı, aşağı, sol, sağ ve dört çapraz. Her seçenek saf CSS üretir — görsel, SVG veya ek öğe gerekmez."
+      },
+      {
+        "h": "Boyut ve rengi değiştirebilir miyim?",
+        "p": "Evet. Boyut kaydırıcısı taban boyutu piksel cinsinden, renk seçici ise üçgen rengini ayarlar. Üretilen kod ve önizleme anlık güncellenir."
+      },
+      {
+        "h": "Üretilen kodu nasıl kullanırım?",
+        "p": "CSS bloğunu kopyalayıp stiliinize yapıştırın. Boş bir öğeye .triangle sınıfını verdiğinizde üçgen önizlemedeki gibi görünür."
+      },
+      {
+        "h": "Tüm tarayıcılarda çalışır mı?",
+        "p": "Evet. Kenarlık tekniği tüm modern tarayıcılar tarafından desteklenir ve yıllardır CSS'te standart bir tekniktir — geriye dönük uyumluluk gerekmez."
+      }
+    ],
+    "countdown-timer": [
+      {
+        "h": "Geri sayımı nasıl başlatırım?",
+        "p": "Saat, dakika ve saniyeyi girin, ardından Başlat'a basın. Büyük ekran saniye saniye geri sayar ve sayaç çalışırken girişler kilitlenir."
+      },
+      {
+        "h": "Durdurup yeniden başlatabilir miyim?",
+        "p": "Evet. Durdur'a basınca geri sayım kaldığı yerde durur; Başlat'a tekrar bastığınızda tam kaldığı yerden devam eder."
+      },
+      {
+        "h": "Süre bitince ne olur?",
+        "p": "Ekran 00:00:00'da donar ve 'Süre doldu!' mesajı görünür. Aynı geri sayımı tekrar çalıştırmak için Yeniden Başlat düğmesini kullanın."
+      },
+      {
+        "h": "Arka planda çalışmaya devam eder mi?",
+        "p": "Sayaç, sekme açıkken geri sayar. Çok uzun arka plan zamanlaması garanti edilmez; bu yüzden kesin takip için sekmeyi görünür tutun."
+      },
+      {
+        "h": "Süre bitince ses çalınır mı?",
+        "p": "Ses çalınmaz — sayaç sessizce, görsel mesajla biter. Bu yüzden sessiz odalarda ve ofislerde güvenle kullanılabilir."
+      }
+    ],
+    "image-grid-splitter": [
+      {
+        "h": "Görsel ızgara bölücü ne için kullanılır?",
+        "p": "Bir fotoğrafı bir ızgaraya dizilmiş eşit parçalara böler. En yaygın kullanım, büyük bir görüntüyü dokuz eş parçayla oluşturulan 3×3 Instagram profil ızgarasıdır."
+      },
+      {
+        "h": "Izgara boyutunu nasıl seçerim?",
+        "p": "Satır ve sütun için 1'den 6'ya kadar herhangi bir kombinasyon seçin. 3×3 ızgara dokuz kare parça; 2×3 ızgara ise hikaye ve banner'larda sık kullanılan altı parça verir."
+      },
+      {
+        "h": "Parçalar kırpılır mı, yeniden boyutlandırılır mı?",
+        "p": "Her parça, oranları korunarak orijinal görüntünün tam bir kesimidir. Kaynak gerilmez; bu nedenle yalnızca ızgaranın gerektirdiği yerlerde kırpma olabilir."
+      },
+      {
+        "h": "Parçaları nasıl indiririm?",
+        "p": "Her parça önizleme ızgarasında PNG olarak görünür. Herhangi bir parçanın indirme bağlantısına dokunup dosyayı cihazınıza kaydedebilirsiniz."
+      },
+      {
+        "h": "Görsel cihazımdan çıkıyor mu?",
+        "p": "Hayır. Görsel, HTML canvas ile tamamen tarayıcınızda açılır ve bölünür. Hiçbir şey sunucuya yüklenmez."
+      }
+    ],
+    "ascii-art-generator": [
+      {
+        "h": "ASCII sanatı nasıl oluşturulur?",
+        "p": "Görsel sıkı bir ızgaraya küçültülür ve her hücre parlaklığına dönüştürülür. Boşluktan @ işaretine uzanan bir karakter rampası her parlaklığın yerine geçer; böylece metinden bir resim belirir."
+      },
+      {
+        "h": "Çıktı neden sabit genişlikte?",
+        "p": "Genişlik kaydırıcısı sonucun karakter sütun sayısını kontrol eder. Gerçekçi bir masaüstü değeri 100–160 sütundur; çok küçük boyutlar detay kaybettirir, çok büyük olanlar ekranı taşırır."
+      },
+      {
+        "h": "Ters çevirme seçeneği ne yapar?",
+        "p": "Ters çevirme karakter rampasını değiştirir; koyu alanlar açık, açık alanlar koyu olur. Kontrastı düşük görsellerde yardımcı olur."
+      },
+      {
+        "h": "Sanatı bir yere kopyalayabilir miyim?",
+        "p": "Üretilen metin düz bir pre bloğunda görüntülenir. Fareyle seçip kopyalayın, düz metin kabul eden her yere yapıştırabilirsiniz."
+      },
+      {
+        "h": "Her görsel boyutu destekleniyor mu?",
+        "p": "Tarayıcınızın açabildiği tüm yaygın görsel biçimleri çalışır. Kaynak dahili olarak ölçeklendirilir; böylece büyük fotoğraflar da küçük simgeler kadar kolay işlenir."
+      }
+    ],
+    "pixelate-image": [
+      {
+        "h": "Pikselleştirme nasıl çalışır?",
+        "p": "Görsel önce küçük bir tuval alanına — her piksel bloğu başına bir hücre — küçültülür, ardından yumuşatma kapalıyken yeniden büyütülür. Sonuç klasik iri piksel görünümüdür."
+      },
+      {
+        "h": "Etkiyi nasıl kontrol ederim?",
+        "p": "Piksel boyutu kaydırıcısını sürükleyin. 4–8 gibi küçük değerler hafif bloklu bir doku; 32–64 değerleri ise ağır retro oyun görünümü verir."
+      },
+      {
+        "h": "Hangi dosya biçimine dışa aktarılır?",
+        "p": "Çıktı PNG olarak indirilir; piksel önizleme kaç kez açılırsa açılsın tam kalite korunur."
+      },
+      {
+        "h": "Tüm görsel türleriyle çalışır mı?",
+        "p": "Evet. Tarayıcınızın görüntüleyebildiği JPEG, PNG, WebP, GIF gibi her biçim pikselleştirilebilir. Büyük görseller bellek üzerinde işlenir."
+      },
+      {
+        "h": "Orijinal görsel değişiyor mu?",
+        "p": "Hayır. Orijinal dosya cihazınızda dokunulmadan kalır. Araç yalnızca önizleyip indirebileceğiniz yeni bir piksel sürümü oluşturur."
+      }
+    ],
+    "vigenere-cipher": [
+      {
+        "h": "Vigenère şifresi nedir?",
+        "p": "Bir anahtar sözcüğün her harfi farklı miktarda kaydırdığı klasik bir çok alfabeli şifredir. Aynı anahtar şifreleme ve çözme için kullanılır; bu nedenle simetrik şifre olarak adlandırılır."
+      },
+      {
+        "h": "Bir mesajı nasıl şifrelerim?",
+        "p": "Düz metni yazın, bir anahtar sözcük girin ve Şifrele'yi seçili bırakın. Her harf karşılık gelen anahtar harfiyle kaydırılır; anahtar mesaj bitene kadar tekrarlanır."
+      },
+      {
+        "h": "Metin nasıl çözülür?",
+        "p": "Çöz'ü seçin ve şifrelemede kullanılan aynı anahtarı girin. İşlem tersine döner ve özgün metin geri gelir."
+      },
+      {
+        "h": "Türkçe karakterler destekleniyor mu?",
+        "p": "Evet. Alfabe Ç, Ğ, İ, Ö, Ş ve Ü gibi Türkçe harfleri içerir; böylece Türkçe metin doğru şifrelenir ve çözülür. Diğer karakterler değiştirilmeden korunur."
+      },
+      {
+        "h": "Gerçek sırlar için güvenli mi?",
+        "p": "Hayır. Vigenère şifresi modern bilgisayarlarla kolayca kırılır; öğrenme ve eğlence için kullanılır, koruma için güvenmemelisiniz."
+      }
+    ],
+    "punctuation-remover": [
+      {
+        "h": "Neleri kaldırır?",
+        "p": "Metinden .,!?;:'\"()[] gibi tüm noktalama işaretlerini ayıklar; harfler, sayılar, boşluklar ve satır sonları korunur."
+      },
+      {
+        "h": "Kelimelerdeki kesme işareti kalabilir mi?",
+        "p": "Evet. 'Kesme işaretlerini koru' seçeneğini işaretleyin; böylece isn't veya John's gibi kesme işaretli sözcükler korunur."
+      },
+      {
+        "h": "Peki ya tireler?",
+        "p": "Tireler kalsın seçeneğini işaretleyin; well-known veya 24-hour gibi bileşik kelimeler tek kelimeye birleşmez."
+      },
+      {
+        "h": "Ne kadar kaldırıldığını nasıl bilirim?",
+        "p": "Araç, metninizden kaldırdığı noktalama karakterlerinin tam sayısını bildirir; böylece giriş ve çıkışı karşılaştırabilirsiniz."
+      },
+      {
+        "h": "Nerede işe yarar?",
+        "p": "Makine öğrenmesi için metin temizleme, betiklere veri hazırlama veya bir belgenin sadeleştirilmiş düz metin sürümünü üretme gibi durumlarda pratiktir."
+      }
+    ],
+    "anagram-solver": [
+      {
+        "h": "Anagram nedir?",
+        "p": "Anagram, harflerin başka bir kelime veya ifade oluşturacak biçimde yeniden düzenlenmesidir. Bu araç, girdiğiniz harflerin gerçek kelime olsun ya da olmasın her benzersiz düzenlemesini listeler."
+      },
+      {
+        "h": "Sözlük dahil mi?",
+        "p": "Hayır. Çözücü tüm harf kombinasyonlarını üretir ve taramanızı sağlar. Böylece hızlı, çevrimdışı ve sınırsız kalır."
+      },
+      {
+        "h": "Kaç harf girebilirim?",
+        "p": "En fazla dokuz harf. Ötesinde permütasyon sayısı patlayarak büyür; bu yüzden araç dokuz harfte sınırlar."
+      },
+      {
+        "h": "Tekrarlanan harfler nasıl ele alınır?",
+        "p": "Doğru şekilde ele alınır: yinelenen harfler yalnızca benzersiz sonuçlar üretir; 'toot' gibi bir kelime aynı anagramı tekrar tekrar üretmez."
+      },
+      {
+        "h": "Sonuçlar nasıl sıralanır?",
+        "p": "Alfabetik olarak. Sonuç kümesi çok büyüdüğünde ilk 2.000 gösterilir ve bir işaret daha fazlasının olduğunu söyler."
+      }
+    ],
+    "keyword-combiner": [
+      {
+        "h": "Anahtar kelime birleştirici nasıl çalışır?",
+        "p": "Birinci kutudaki her satır, ikinci kutudaki her satırla eşleştirilir. Liste A'da 5, liste B'de 4 kayıt varsa 20 birleşik kelime elde edersiniz."
+      },
+      {
+        "h": "Kombinasyonlar neden yararlı?",
+        "p": "Gerçek arama niyeti taşıyan uzun kuyruklu anahtar kelimeler bu kombinasyonlardan oluşur. İçerik takvimleri, reklam kampanyaları ve meta etiketleri için yeni fikirler doldururlar."
+      },
+      {
+        "h": "Tekrarlar temizleniyor mu?",
+        "p": "Sonuç satırları benzersizdir; kaynak listenizde olsa bile aynı eşleşme iki kez görünmez."
+      },
+      {
+        "h": "Sonuçları nasıl kopyalarım?",
+        "p": "Kopyala düğmesine basın veya çıktı alanını fareyle seçin. Her kombinasyon kendi satırında olur; tablolara ve araçlara yapıştırmaya hazırdır."
+      },
+      {
+        "h": "Verilerim bir yere gönderiliyor mu?",
+        "p": "Hayır. Birleştirme tarayıcınızda çalışır; hiçbir şey yüklenmez."
+      }
+    ],
+    "title-length-checker": [
+      {
+        "h": "Hangi sınırları kontrol eder?",
+        "p": "Başlığınızı yaklaşık 60 karakter ve 580 piksel, meta açıklamanızı yaklaşık 160 karakter ve 920 piksel sınırına — Google'ın arama sonuçlarında kullandığı tipik limitler — göre karşılaştırır."
+      },
+      {
+        "h": "Neden karakter yerine piksel?",
+        "p": "Google başlık ve açıklamaları karakter değil piksel genişliğine göre keser. Büyük harfler, geniş harfler ve noktalama genişliği etkilediği için yalnızca karaktere bakan araçlar yanıltıcı olabilir."
+      },
+      {
+        "h": "Çubuklar ne anlama gelir?",
+        "p": "Her çubuk piksel sınırına kadar dolar. Yeşilde kaldığında kesinti güvenlidir; kırmızıya döndüğünde sonuç muhtemelen üç noktayla (…) kesilir."
+      },
+      {
+        "h": "Piksel tahmini kesin mi?",
+        "p": "Varsayılan arama yazı tipinin yaygın glif genişliklerine dayanan bir tahmindir. Gerçek çıktı yazı tipine ve dile göre az fark edebilir; güvenilir ama yaklaşık bir kılavuz olarak düşünün."
+      },
+      {
+        "h": "SEO'ma yardımcı olur mu?",
+        "p": "Sınırın altında, düzgün biçimli bir başlık ve açıklama tam görüntülenir; bu da arama sonuçlarından tıklama oranını yükseltir — iyi SEO'nun temellerinden biridir."
+      }
+    ],
+    "magic-8-ball": [
+      {
+        "h": "Sihirli 8 top nasıl çalışır?",
+        "p": "Evet-hayır sorusu düşünün, Salla düğmesine basın; top klasik 20 cevaptan rastgele birini seçer. Bir oyuncaktır; sonucu ciddi değil eğlenceli düşünün."
+      },
+      {
+        "h": "Hangi cevapları verebilir?",
+        "p": "Klasik setin tamamı dahildir — 'Kesinlikle evet' gibi olumlu, 'Şu an tahmin edilemiyor' gibi olumsuz ve 'Sonra tekrar sor' gibi belirsiz cevaplar."
+      },
+      {
+        "h": "Her seferinde rastgele mi?",
+        "p": "Her sallamada cevap rastgele seçilir ve oturumda kaç soru sorulduğunu küçük bir sayaç gösterir."
+      },
+      {
+        "h": "Telefonumda kullanabilir miyim?",
+        "p": "Evet — top ve salla düğmesi en küçük ekranlara uyum sağlar; mobilde hızlı bir mola için idealdir."
+      },
+      {
+        "h": "Neden bu kadar popüler?",
+        "p": "Önemsiz kararları hızla çözer ve günlük sorulara biraz eğlence katar. Tasarım klasik oyuncağı yansıttığı için anında tanıdık gelir."
+      }
     ]
   },
   "Rehber": {
@@ -5627,6 +6120,225 @@
       "sum": "Tüm terimlerin toplamı",
       "nth": "Son terim",
       "tip": "Her terim kendinden önceki iki terimin toplamıdır. Toplam ve son değerle birlikte 100 terime kadar üretilir."
+    },
+    "mortgageCalculator": {
+      "priceLabel": "Konut fiyatı (₺)",
+      "downLabel": "Peşinat (₺)",
+      "rateLabel": "Faiz oranı (yıllık %)",
+      "termLabel": "Vade (yıl)",
+      "loanAmount": "Kredi tutarı",
+      "monthlyPayment": "Aylık taksit",
+      "totalPayment": "Toplam ödeme",
+      "totalInterest": "Toplam faiz",
+      "amortTitle": "Amortisman tablosu",
+      "monthCol": "Ay",
+      "paymentCol": "Taksit",
+      "principalCol": "Anapara",
+      "interestCol": "Faiz",
+      "balanceCol": "Bakiye",
+      "invalid": "Sonuç için peşinattan yüksek ve geçerli bir konut fiyatı girin.",
+      "tip": "Bu tahmin yalnızca anapara ve faizi kapsar. Vergiler, sigorta ve ücretler dahil değildir; planlama değeri olarak düşünün."
+    },
+    "hoursCalculator": {
+      "startLabel": "Başlangıç saati",
+      "endLabel": "Bitiş saati",
+      "nextDay": "Ertesi gün bitiyor",
+      "hours": "Süre",
+      "totalMinutes": "Toplam dakika",
+      "decimalHours": "Ondalık saat",
+      "invalid": "Bitiş saati başlangıç saatinden ileri olmalı veya gece seçeneğini kullanın.",
+      "tip": "Süre, iki saat arasındaki farktır. Ondalık saat; 8:30 yerine 8,5 gibi bordro dostu biçimdir."
+    },
+    "incomeTaxCalculator": {
+      "incomeLabel": "Yıllık brüt gelir (₺)",
+      "standardDeduction": "2025 standart kesintisini uygula (14.600$)",
+      "taxableIncome": "Vergiye tabi gelir",
+      "federalTax": "Tahmini federal vergi",
+      "effectiveRate": "Etkin oran",
+      "marginalRate": "Marjinal oran",
+      "bracketTableTitle": "2025 vergi dilimleri (tek kişi)",
+      "rateCol": "Oran",
+      "incomeRangeCol": "Gelir aralığı",
+      "invalid": "Tahmin için geçerli bir yıllık gelir girin.",
+      "tip": "Tahmin 2025 tek kişi dilimlerini ve standart kesintiyi kullanır. Eyalet vergisi, FICA ve krediler dahil değildir."
+    },
+    "inflationCalculator": {
+      "amountLabel": "Tutar ($)",
+      "startYear": "Başlangıç yılı",
+      "endYear": "Bitiş yılı",
+      "adjustedValue": "Eşdeğer değer",
+      "cpiChange": "TÜFE değişimi",
+      "invalid": "Geçerli bir tutar girin ve tablodan iki yıl seçin.",
+      "tip": "Değerler 1970'ten bugüne ABD TÜFE-U yıllık ortalamalarını kullanır. Sonuç, bitiş yılındaki aynı satın alma gücünü gösterir."
+    },
+    "typingSpeedTest": {
+      "en": "EN",
+      "tr": "TR",
+      "start": "Testi başlat",
+      "running": "Yazıyor...",
+      "timeLeft": "Kalan süre",
+      "typingPlaceholder": "Test başlar başlamaz buraya yazmaya başlayın...",
+      "readyHint": "Başlat'a basın, ardından yukarıdaki metni olabildiğince hızlı ve doğru yazın.",
+      "wpm": "WPM",
+      "accuracy": "Doğruluk",
+      "correct": "Doğru karakter",
+      "errors": "Hata",
+      "tip": "WPM, doğru karakterlerin dakikada beşe bölümüdür. Hızı artırmadan önce doğruluğu %95'in üzerinde tutmayı hedefleyin."
+    },
+    "cssUnitsConverter": {
+      "valueLabel": "Değer",
+      "fromUnit": "Birim",
+      "baseSize": "Taban yazı boyutu (px)",
+      "viewportW": "Görünüm genişliği (px)",
+      "viewportH": "Görünüm yüksekliği (px)",
+      "unitCol": "Birim",
+      "valueCol": "Değer",
+      "source": "kaynak",
+      "units_px": "Piksel (px)",
+      "units_rem": "Rem",
+      "units_em": "Em",
+      "units_percent": "Yüzde (%)",
+      "units_vw": "Görünüm genişliği (vw)",
+      "units_vh": "Görünüm yüksekliği (vh)",
+      "invalid": "Geçerli bir değer, taban boyut ve görünüm boyutu girin.",
+      "tip": "rem ve em taban yazı boyutunu; vw ve vh görünüm alanını kullanır. Tasarım sisteminize göre ayarlayın."
+    },
+    "cssTriangleGenerator": {
+      "direction": "Yön",
+      "size": "Boyut (px)",
+      "color": "Renk",
+      "cssOutput": "CSS kodu",
+      "copy": "CSS'i kopyala",
+      "copied": "Kopyalandı!",
+      "up": "Yukarı",
+      "down": "Aşağı",
+      "left": "Sol",
+      "right": "Sağ",
+      "topLeft": "Sol üst",
+      "topRight": "Sağ üst",
+      "bottomLeft": "Sol alt",
+      "bottomRight": "Sağ alt",
+      "tip": "Üçgen yalnızca CSS kenarlıklarıyla çizilir — görsel veya SVG yok. Kodu stiliinize yapıştırın ve .triangle sınıfını uygulayın."
+    },
+    "countdownTimer": {
+      "hours": "Saat",
+      "minutes": "Dakika",
+      "seconds": "Saniye",
+      "start": "Başlat",
+      "pause": "Durdur",
+      "reset": "Sıfırla",
+      "restart": "Yeniden Başlat",
+      "timeUp": "Süre doldu!",
+      "tip": "59 üzeri değerler otomatik kısılır. Durdur, konumunuzu korur; Yeniden Başlat aynı süreyi tekrar çalıştırır."
+    },
+    "imageGridSplitter": {
+      "uploadHint": "Görsel seçmek için tıklayın",
+      "chosen": "Görsel hazır — ızgarayı ayarlayıp bölün",
+      "previewAlt": "Yüklenen görsel önizlemesi",
+      "rows": "Satır",
+      "columns": "Sütun",
+      "split": "Görseli böl",
+      "slicesTitle": "Parçalar",
+      "download": "Kaydet",
+      "tip": "Her parça özgün piksellerden kesilir, kalite korunur. 3×3 ızgara standart Instagram profil düzenidir."
+    },
+    "asciiArtGenerator": {
+      "uploadHint": "Görsel seçmek için tıklayın",
+      "chosen": "Görsel hazır — Üret'e basın",
+      "widthLabel": "Genişlik (karakter)",
+      "invert": "Tonları ters çevir",
+      "generate": "Üret",
+      "tip": "Görsel hücre hücre yerel analiz edilir ve bir karakter rampasına eşlenir. Daha büyük genişlik daha fazla detay korur."
+    },
+    "pixelateImage": {
+      "uploadHint": "Görsel seçmek için tıklayın",
+      "chosen": "Görsel hazır — kaydırıcıyı ayarlayın",
+      "pixelSize": "Piksel blok boyutu",
+      "download": "PNG İndir",
+      "previewAlt": "Pikselleştirilmiş görsel önizlemesi",
+      "tip": "Düşük boyutlar hafif etki; yüksek boyutlar ağır retro görünüm verir. İndirme, önizleme canvas'ından üretilir."
+    },
+    "vigenereCipher": {
+      "inputLabel": "Metin",
+      "inputPlaceholder": "Mesajınızı yazın veya yapıştırın...",
+      "keyLabel": "Anahtar sözcük",
+      "keyPlaceholder": "Gizli bir kelime...",
+      "modeEncrypt": "Şifrele",
+      "modeDecrypt": "Çöz",
+      "outputLabel": "Sonuç",
+      "outputPlaceholder": "Sonuç burada görünür.",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "tip": "Anahtar sözcük metnin üzerinde tekrarlanır ve her harfi kaydırır. Türkçe alfabe desteklenir; diğer karakterler değişmez."
+    },
+    "punctuationRemover": {
+      "inputLabel": "Giriş metni",
+      "inputPlaceholder": "Noktalamalı metni yapıştırın...",
+      "outputLabel": "Temiz metin",
+      "outputPlaceholder": "Temizlenmiş metin burada görünür.",
+      "keepApostrophe": "Kesme işaretini koru (')",
+      "keepHyphen": "Tireyi koru (-)",
+      "removedCount": "{count} noktalama karakteri kaldırıldı.",
+      "tip": "Harfler, sayılar ve boşluklar korunur. Kesme işareti ve tireyi yerinde tutmak için koruma seçeneklerini açın."
+    },
+    "anagramSolver": {
+      "lettersLabel": "Harfler",
+      "lettersPlaceholder": "Harflerinizi yazın (en fazla 9)...",
+      "totalCount": "{count} benzersiz düzenleme.",
+      "partial": "İlk {shown} / {total} düzenleme gösteriliyor.",
+      "tip": "Harflerin her benzersiz permütasyonu alfabetik listelenir. En fazla dokuz harf desteklenir."
+    },
+    "keywordCombiner": {
+      "listALabel": "Liste A (her satıra bir kelime)",
+      "listBLabel": "Liste B (her satıra bir kelime)",
+      "aPlaceholder": "örn.\nmavi\nkırmızı",
+      "bPlaceholder": "örn.\nayakkabı\ntişört",
+      "resultCount": "{count} kombinasyon",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "outputPlaceholder": "Birleşik kelimeler burada görünür.",
+      "tip": "A'daki her öğe B'deki her öğeyle eşleştirilir. Çıktıyı kullanışlı tutmak için listelerinizdeki tekrarları çıkarın."
+    },
+    "titleLengthChecker": {
+      "titleLabel": "SEO başlığı",
+      "titlePlaceholder": "Başlığınızı buraya yapıştırın...",
+      "descriptionLabel": "Meta açıklama",
+      "descriptionPlaceholder": "Açıklamanızı buraya yapıştırın...",
+      "titleChars": "{count} karakter",
+      "titleWidth": "{px}px",
+      "descChars": "{count} karakter",
+      "descWidth": "{px}px",
+      "ok": "OK",
+      "over": "TAŞIYOR",
+      "tip": "Piksel tahmini, Google'ın üç noktayla kesme biçimini yansıtır. Başlığı ~60 karakter/580px, açıklamayı ~160 karakter/920px altında tutun."
+    },
+    "magic8Ball": {
+      "hint": "Bir soru düşün… sonra Salla'ya bas",
+      "shake": "Salla",
+      "asked": "{count} soru soruldu",
+      "answers": [
+        "Kesinlikle evet",
+        "Şüphesiz",
+        "Evet, kesinlikle",
+        "Büyük ihtimalle",
+        "Evet",
+        "Görünüş iyi",
+        "İşaretler eveti gösteriyor",
+        "Bulanık cevap, tekrar dene",
+        "Sonra tekrar sor",
+        "Şimdi söylememek daha iyi",
+        "Şu an tahmin edilemiyor",
+        "Odaklan ve tekrar sor",
+        "Sayma",
+        "Cevabım hayır",
+        "Kaynaklarım hayır diyor",
+        "Görünüş pek iyi değil",
+        "Çok şüpheli",
+        "Kesinlikle öyle",
+        "Gördüğüm kadarıyla evet",
+        "Güvenebilirsin"
+      ],
+      "tip": "Top, klasik setten rastgele bir cevap seçer. Sadece eğlence ve hızlı kararlar için kullanın."
     }
   }
 }
