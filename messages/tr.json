@@ -4445,7 +4445,6 @@
   "CategoryPage": {
     "breadcrumbAria": "Kategori bağlantı izi",
     "breadcrumbAll": "Tüm araçlar",
-    "toolCount": "{count} araç",
     "relatedTitle": "Diğer kategorilere göz at",
     "ctaAllTools": "Tüm {count} aracı gör",
     "desc": {

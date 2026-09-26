@@ -4445,7 +4445,6 @@
   "CategoryPage": {
     "breadcrumbAria": "Category breadcrumb",
     "breadcrumbAll": "All tools",
-    "toolCount": "{count} tools",
     "relatedTitle": "Browse more categories",
     "ctaAllTools": "View all {count} tools",
     "desc": {

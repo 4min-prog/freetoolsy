@@ -140,9 +140,6 @@ export default async function CategoryPage({
         <h1 className="text-2xl font-semibold tracking-tight text-text sm:text-3xl">
           {tc(category.id)}
         </h1>
-        <span className="rounded-md bg-surface-2 px-2 py-0.5 text-xs font-medium text-muted">
-          {t("toolCount", { count: categoryTools.length })}
-        </span>
       </div>
       <p className="mt-3 max-w-[65ch] text-sm leading-relaxed text-muted sm:text-base">
         {t(`desc.${category.id}`)}
