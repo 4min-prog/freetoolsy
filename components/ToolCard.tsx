@@ -4,7 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import ToolIcon from "@/components/ToolIcon";
 import { categoryTheme } from "@/components/categoryTheme";
-import type { Tool } from "@/data/tools";
+import { isToolNew, type Tool } from "@/data/tools";
 import { toolPath } from "@/lib/paths";
 import type { Locale } from "@/i18n/routing";
 
@@ -12,7 +12,9 @@ export default function ToolCard({ tool }: { tool: Tool }) {
   const t = useTranslations(`ToolMeta.${tool.slug}`);
   const locale = useLocale() as Locale;
   const tc = useTranslations("Categories");
+  const tCommon = useTranslations("Common");
   const theme = categoryTheme(tool.category);
+  const isNew = isToolNew(tool);
 
   return (
     <Link
@@ -34,6 +36,11 @@ export default function ToolCard({ tool }: { tool: Tool }) {
           id={tool.slug}
           className={`mt-0.5 h-5 w-5 shrink-0 ${theme.iconText}`}
         />
+        {isNew && (
+          <span className="shrink-0 rounded-full bg-accent px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-on-accent">
+            {tCommon("new")}
+          </span>
+        )}
         <h3 className="min-w-0 flex-1 text-[15px] font-medium leading-snug tracking-tight text-foreground">
           {t("name")}
         </h3>

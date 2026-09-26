@@ -39,7 +39,8 @@
   },
   "Common": {
     "use": "Kullan",
-    "trySample": "Örnek veriyle dene"
+    "trySample": "Örnek veriyle dene",
+    "new": "Yeni"
   },
   "Header": {
     "categories": "Kategoriler",

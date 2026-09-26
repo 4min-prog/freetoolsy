@@ -3,6 +3,7 @@ export interface Tool {
   name: string;
   category: string;
   description: string;
+  addedAt?: string;
 }
 
 export const categories: { id: string; name: string }[] = [
@@ -645,6 +646,7 @@ export const tools: Tool[] = [
     category: "developer",
     description:
       "Görseldeki QR kodu tarayıcınızda okur; içindeki metni veya bağlantıyı çıkarır.",
+    addedAt: "2026-09-26",
   },
   {
     slug: "text-extractor",
@@ -652,6 +654,7 @@ export const tools: Tool[] = [
     category: "text",
     description:
       "Metinden e-posta adreslerini, telefon numaralarını, URL'leri ve etiketleri ayıklar.",
+    addedAt: "2026-09-26",
   },
   {
     slug: "css-gradient-generator",
@@ -659,6 +662,7 @@ export const tools: Tool[] = [
     category: "developer",
     description:
       "Renk, açı ve yön seçerek kullanıma hazır CSS lineer gradient kodu üretir.",
+    addedAt: "2026-09-26",
   },
   {
     slug: "border-radius-generator",
@@ -666,6 +670,7 @@ export const tools: Tool[] = [
     category: "developer",
     description:
       "Köşeleri görsel olarak yuvarlayıp border-radius CSS kodunu tek tıkla kopyalayın.",
+    addedAt: "2026-09-26",
   },
 ];
 
@@ -675,4 +680,14 @@ export function getTool(slug: string): Tool | undefined {
 
 export function getToolsByCategory(category: string): Tool[] {
   return tools.filter((tool) => tool.category === category);
+}
+
+const NEW_TOOL_DAYS = 30;
+
+export function isToolNew(tool: Tool, now: Date = new Date()): boolean {
+  if (!tool.addedAt) return false;
+  const added = new Date(tool.addedAt).getTime();
+  if (Number.isNaN(added)) return false;
+  const age = now.getTime() - added;
+  return age >= 0 && age <= NEW_TOOL_DAYS * 24 * 60 * 60 * 1000;
 }

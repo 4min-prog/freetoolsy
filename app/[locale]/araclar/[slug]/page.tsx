@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { getTranslations, getMessages, setRequestLocale } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { categories, getTool, tools, type Tool } from "@/data/tools";
+import { categories, getTool, isToolNew, tools, type Tool } from "@/data/tools";
 import type { Locale } from "@/i18n/routing";
 import {
   categoryPath,
@@ -29,6 +29,8 @@ import { categoryTheme } from "@/components/categoryTheme";
 
 
 export const dynamicParams = false;
+
+export const revalidate = 86400;
 
 export function generateStaticParams() {  const params: { locale: string; slug: string }[] = [];
   tools.forEach((tool) => {
@@ -77,6 +79,7 @@ export default async function AraclarPage({
   const tPage = await getTranslations("ToolPage");
   const tRehber = await getTranslations("Rehber");
   const tInfo = await getTranslations("Info");
+  const tCommon = await getTranslations("Common");
   const messages = await getMessages();
   const toolMessages = pickToolMessages(messages, tool.slug);
   const meta = (messages as { ToolMeta?: Record<string, { name?: string }> })
@@ -173,6 +176,11 @@ export default async function AraclarPage({
         <h1 className="text-2xl font-semibold tracking-tight text-text sm:text-3xl">
           {t("name")}
         </h1>
+        {isToolNew(tool) && (
+          <span className="rounded-full bg-accent px-2.5 py-0.5 text-xs font-bold uppercase tracking-wide text-on-accent">
+            {tCommon("new")}
+          </span>
+        )}
         <span
           className="rounded-md border px-2 py-0.5 text-xs font-medium"
           style={{

@@ -39,7 +39,8 @@
   },
   "Common": {
     "use": "Use",
-    "trySample": "Try sample data"
+    "trySample": "Try sample data",
+    "new": "New"
   },
   "Header": {
     "categories": "Categories",

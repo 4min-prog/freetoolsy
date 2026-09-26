@@ -13,6 +13,8 @@ import { categories, tools } from "@/data/tools";
 import { toolPath } from "@/lib/paths";
 import type { Locale } from "@/i18n/routing";
 
+export const revalidate = 86400;
+
 export async function generateMetadata({
   params,
 }: {

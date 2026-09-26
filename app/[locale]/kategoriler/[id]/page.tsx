@@ -18,6 +18,8 @@ import { categoryTheme } from "@/components/categoryTheme";
 
 export const dynamicParams = false;
 
+export const revalidate = 86400;
+
 export function generateStaticParams() {
   return categories.map((category) => ({ locale: "tr", id: category.id }));
 }

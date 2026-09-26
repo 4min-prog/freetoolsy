@@ -8,6 +8,8 @@ import AraclarPage, {
 
 export const dynamicParams = false;
 
+export const revalidate = 86400;
+
 export function generateStaticParams() {
   return tools.map((tool) => ({ locale: "en", slug: tool.slug }));
 }
