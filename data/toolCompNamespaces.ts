@@ -138,6 +138,22 @@ export const TOOL_COMP_NAMESPACE: Record<string, string> = {
   "rock-paper-scissors": "rockPaperScissors",
   "horoscope": "horoscope",
   "text-escape-unescape": "textEscapeUnescape",
+  "emoji-remover": "emojiRemover",
+  "reading-time-calculator": "readingTimeCalculator",
+  "totp-generator": "totpGenerator",
+  "url-parser": "urlParser",
+  "js-minifier": "jsMinifier",
+  "mime-type-finder": "mimeTypeFinder",
+  "percentage-change-calculator": "percentageChangeCalculator",
+  "fuel-economy-calculator": "fuelEconomyCalculator",
+  "electricity-cost-calculator": "electricityCostCalculator",
+  "calories-burned-calculator": "caloriesBurnedCalculator",
+  "image-combiner": "imageCombiner",
+  "image-flipper": "imageFlipper",
+  "sitemap-url-extractor": "sitemapUrlExtractor",
+  "joke-generator": "jokeGenerator",
+  "random-quote-generator": "randomQuoteGenerator",
+  "guess-the-number": "guessTheNumber",
 };
 
 export function toolCompNamespace(slug: string): string | undefined {

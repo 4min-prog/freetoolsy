@@ -1080,6 +1080,134 @@ export const tools: Tool[] = [
       "Metni JSON/JS dizesi gibi kaçış karakterleriyle işaretler veya kaçış kodlarını çözer.",
     addedAt: "2026-09-27",
   },
+  {
+    slug: "emoji-remover",
+    name: "Emoji Kaldırıcı",
+    category: "text",
+    description:
+      "Yapıştırdığınız metindeki tüm emoji ve sembolleri temizleyip düz metin olarak verir.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "reading-time-calculator",
+    name: "Okuma Süresi Hesaplayıcı",
+    category: "text",
+    description:
+      "Kelime sayısı ve okuma hızına göre metnin tahmini okuma süresini hesaplar.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "totp-generator",
+    name: "TOTP Kod Üretici",
+    category: "security",
+    description:
+      "Base32 iki adımlı doğrulama (2FA) sırrından 6 haneli tek kullanımlık kodu hesaplar.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "url-parser",
+    name: "URL Ayrıştırıcı",
+    category: "developer",
+    description:
+      "Bir URL'yi protokol, host, port, yol, sorgu ve hash bileşenlerine ayırarak gösterir.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "js-minifier",
+    name: "JS Küçültücü",
+    category: "developer",
+    description:
+      "JavaScript kodundaki boş satırları ve satır başı boşluklarını temizleyerek boyutu küçültür.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "mime-type-finder",
+    name: "MIME Türü Bulucu",
+    category: "developer",
+    description:
+      "Dosya uzantısından MIME türünü bulur veya türe göre eşleşen uzantıları listeler.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "percentage-change-calculator",
+    name: "Yüzde Değişim Hesaplayıcı",
+    category: "calculation",
+    description:
+      "İki değer arasındaki yüzde artış veya azalışı ve mutlak farkı hesaplar.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "fuel-economy-calculator",
+    name: "Yakıt Tüketimi Çevirici",
+    category: "calculation",
+    description:
+      "L/100 km, MPG ve km/L yakıt tüketim değerlerini birbirine dönüştürür.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "electricity-cost-calculator",
+    name: "Elektrik Tüketimi Hesaplayıcı",
+    category: "calculation",
+    description:
+      "Cihaz gücü ve kullanım süresine göre aylık/yıllık elektrik tüketimini ve maliyetini hesaplar.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "calories-burned-calculator",
+    name: "Yakılan Kalori Hesaplayıcı",
+    category: "calculation",
+    description:
+      "Aktivite türüne göre (yürüyüş, koşu, bisiklet vb.) yakılan kaloriyi tahmin eder.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "image-combiner",
+    name: "Görsel Birleştirici",
+    category: "image",
+    description:
+      "İki görseli yan yana tek bir PNG dosyasında birleştirir; yatay kolaj oluşturur.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "image-flipper",
+    name: "Görsel Çevirici",
+    category: "image",
+    description:
+      "Görseli yatay veya dikey olarak aynalayıp çevrilmiş kopyasını PNG olarak indirir.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "sitemap-url-extractor",
+    name: "Site Haritası URL Çıkarıcı",
+    category: "seo",
+    description:
+      "XML site haritasından (sitemap) tüm URL'leri çıkarır, sayar ve kopyalamanızı sağlar.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "joke-generator",
+    name: "Fıkra Üretici",
+    category: "fun",
+    description:
+      "Programcı temalı birbirinden komik fıkralardan rastgele bir tanesini gösterir.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "random-quote-generator",
+    name: "Rastgele Alıntı",
+    category: "fun",
+    description:
+      "İlham veren sözlerden rastgele bir alıntıyı tek tıkla gösterir.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "guess-the-number",
+    name: "Sayıyı Tahmin Et",
+    category: "fun",
+    description:
+      "1 ile 100 arasındaki gizli sayıyı en az denemeyle bulmaya çalıştığınız oyun.",
+    addedAt: "2026-09-27",
+  },
 ];
 
 export function getTool(slug: string): Tool | undefined {

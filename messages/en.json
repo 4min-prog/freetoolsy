@@ -1135,6 +1135,118 @@
       "title": "Text Escape and Unescape Tool - JSON String Symbols",
       "pageDesc": "Type plain text and escape quotes, backslashes and special characters for use in JSON and JavaScript strings. Or paste escaped text and decode it back to a readable string. All local.",
       "intro": "Paste text, choose escape or unescape and copy the result."
+    },
+    "emoji-remover": {
+      "name": "Emoji Remover",
+      "desc": "Strip every emoji and decorative symbol out of your text in the browser.",
+      "title": "Emoji Remover - Clean Emojis from Text Online",
+      "pageDesc": "Paste any text and this tool deletes emojis, symbols and variation selectors so only plain text remains. Great for cleaning up copy before publishing or for preparing text for scripts and editors that choke on emoji. Everything runs locally in your browser.",
+      "intro": "Paste your text and get a clean, emoji-free version instantly."
+    },
+    "reading-time-calculator": {
+      "name": "Reading Time Calculator",
+      "desc": "Estimate how long any text takes to read, based on your reading speed.",
+      "title": "Reading Time Calculator - Estimate Read Time Online",
+      "pageDesc": "Paste an article, post or chapter and see its word count plus the estimated reading time at any words-per-minute speed. Useful for bloggers, editors and students who need quick length estimates before publishing or submitting. All counting happens in your browser.",
+      "intro": "Paste your text, set a reading speed and copy the estimate."
+    },
+    "totp-generator": {
+      "name": "TOTP Generator",
+      "desc": "Generate the current 6-digit 2FA code from a Base32 secret key, locally.",
+      "title": "TOTP Generator - 2FA Code from Secret Online",
+      "pageDesc": "Enter the Base32 secret of an authenticator app and get the current 6-digit time-based one-time password (RFC 6238). Useful for testing your own keys or apps that cannot install a full authenticator. The code is computed in your browser with the Web Crypto API.",
+      "intro": "Paste your Base32 secret and read the live code."
+    },
+    "url-parser": {
+      "name": "URL Parser",
+      "desc": "Break any URL into protocol, host, path, query, hash and more.",
+      "title": "URL Parser - Break a URL into Its Parts Online",
+      "pageDesc": "Paste a URL and instantly see every component: protocol, host, port, pathname, query string, hash, credentials and origin. Follows the WHATWG URL standard, so odd but valid URLs are handled correctly. Perfect for debugging links and understanding how URLs are structured. Runs entirely in your browser.",
+      "intro": "Type a URL and view each of its parts in a table."
+    },
+    "js-minifier": {
+      "name": "JS Minifier",
+      "desc": "Remove blank lines, indentation and whole-line comments from JavaScript.",
+      "title": "JS Minifier - Clean Up JavaScript Code Online",
+      "pageDesc": "Paste a JavaScript file and this tool strips leading whitespace, empty lines and whole-line comments to shrink the size without touching string literals or template strings. Handy for a quick size cut before pasting code into chat messages or email. Processing is done locally in your browser.",
+      "intro": "Paste your code and copy the cleaned-up version."
+    },
+    "mime-type-finder": {
+      "name": "MIME Type Finder",
+      "desc": "Look up the MIME type for common file extensions or search by type.",
+      "title": "MIME Type Finder - Look Up File Types Online",
+      "pageDesc": "Type a file extension like png or svg and get its MIME type instantly, or search the other way around by typing a type such as image or application to list matching extensions. Handy for server configuration, upload validation and API work. The lookup table is bundled right in your browser.",
+      "intro": "Enter an extension or search by MIME type and copy the result."
+    },
+    "percentage-change-calculator": {
+      "name": "Percentage Change Calculator",
+      "desc": "Work out the percentage increase or decrease between two values.",
+      "title": "Percentage Change Calculator - Rise and Fall Between Values",
+      "pageDesc": "Enter the old and the new value and the calculator shows the percentage change plus the absolute difference. Works for prices, scores, metrics and more. The formula covers both increases and decreases, so you always get the sign right. Calculation runs instantly in your browser.",
+      "intro": "Enter the two values and read the percentage change."
+    },
+    "fuel-economy-calculator": {
+      "name": "Fuel Economy Converter",
+      "desc": "Convert between L/100 km, MPG (US) and km/L instantly.",
+      "title": "Fuel Economy Converter - L/100km, MPG, km/L Online",
+      "pageDesc": "Enter a fuel consumption value in litres per 100 km, miles per US gallon or kilometres per litre and see all three measures at once. Perfect when comparing cars from different regions or specs written in different units. Conversion happens locally in your browser.",
+      "intro": "Type one value and read all three fuel economy units."
+    },
+    "electricity-cost-calculator": {
+      "name": "Electricity Cost Calculator",
+      "desc": "Estimate monthly and yearly power usage and cost for any appliance.",
+      "title": "Electricity Cost Calculator - Power Bill Estimate Online",
+      "pageDesc": "Enter a device's wattage, the hours used per day, days per month and your kWh price. The tool estimates monthly and yearly kilowatt-hours plus the expected cost in both periods. Handy for budgeting and for finding the biggest energy consumers at home.",
+      "intro": "Fill in the four fields and read your usage and cost estimate."
+    },
+    "calories-burned-calculator": {
+      "name": "Calories Burned Calculator",
+      "desc": "Estimate how many calories an activity burns based on MET values.",
+      "title": "Calories Burned Calculator - kcal per Activity Online",
+      "pageDesc": "Choose an activity from walking and running to the gym or jumping rope, enter your weight and the duration, and get an estimate of calories burned. The calculation uses standard MET values, so results are comparable across activities. Ideal for planning workouts and tracking effort.",
+      "intro": "Pick an activity, enter your weight and duration, and read the result."
+    },
+    "image-combiner": {
+      "name": "Image Combiner",
+      "desc": "Join two images side by side into a single PNG, right in your browser.",
+      "title": "Image Combiner - Join Two Images Side by Side Online",
+      "pageDesc": "Pick two images and combine them into one wider PNG with a single click. Great for before-and-after comparisons, collages or simply stitching screenshots together. Both images are drawn onto one canvas and the file downloads automatically. Nothing is uploaded anywhere.",
+      "intro": "Pick two images, then combine and download as one PNG."
+    },
+    "image-flipper": {
+      "name": "Image Flipper",
+      "desc": "Mirror any image horizontally or vertically and download it as PNG.",
+      "title": "Image Flipper - Mirror Images Horizontally or Vertically Online",
+      "pageDesc": "Upload an image, choose horizontal or vertical flip and download the mirrored version as a PNG. Mirrors the image exactly like a physical mirror, which is different from rotating it. Useful for design mockups, thumbnails and quick previews. All processing stays on your device.",
+      "intro": "Pick an image, choose an axis and download the flipped version."
+    },
+    "sitemap-url-extractor": {
+      "name": "Sitemap URL Extractor",
+      "desc": "Pull every URL out of an XML sitemap, count them and copy all at once.",
+      "title": "Sitemap URL Extractor - Pull URLs from XML Sitemaps Online",
+      "pageDesc": "Paste the XML of any sitemap and the tool lists every loc entry as a plain URL. See the total count and copy the whole list with one click. Great for checking how many pages a site has indexed or for building URL lists for audits. Parsing happens entirely in your browser.",
+      "intro": "Paste sitemap XML and copy every extracted URL."
+    },
+    "joke-generator": {
+      "name": "Joke Generator",
+      "desc": "Get a random programming joke in one click. No setup, no logins.",
+      "title": "Joke Generator - Random Programming Jokes Online",
+      "pageDesc": "Press the button and the tool picks a random programmer joke for you. A small hand-picked collection lives directly in the page, so it works offline and nothing is sent anywhere. Perfect for a quick laugh between coding sessions.",
+      "intro": "Tap the button for a random programmer joke."
+    },
+    "random-quote-generator": {
+      "name": "Random Quote Generator",
+      "desc": "Display a random quote about code, work and life in one click.",
+      "title": "Random Quote Generator - Inspirational Quotes Online",
+      "pageDesc": "Press the button and be presented with a thoughtful quote selected from a bundled collection. Every tap fights repetition by skipping the previous one. Works fully offline and never sends your data anywhere.",
+      "intro": "Tap the button for a random quote."
+    },
+    "guess-the-number": {
+      "name": "Guess the Number",
+      "desc": "Find a secret number between 1 and 100 in as few guesses as possible.",
+      "title": "Guess the Number - Classic Number Guessing Game Online",
+      "pageDesc": "A classic logic game: the page picks a secret number between 1 and 100 and you guess, receiving higher or lower hints after every try. Track how many attempts it takes and either sharpen your strategy or just play for fun. The whole game runs instantly in your browser.",
+      "intro": "Beat the secret number using only higher and lower hints."
     }
   },
   "ToolContent": {
@@ -4737,6 +4849,166 @@
         "h": "When is unescaping useful?",
         "p": "API logs, config dumps and database exports often arrive fully escaped and hard to read. Pasting such text here decodes it back to plain, readable content in one click instead of editing it by hand."
       }
+    ],
+    "emoji-remover": [
+      {
+        "h": "What does an emoji remover do?",
+        "p": "It scans your text and deletes every emoji, pictograph, decorative symbol and the invisible variation selectors attached to them. What remains is clean plain text that is safe to paste anywhere, including into strict editors, databases and scripts."
+      },
+      {
+        "h": "When should I clean emojis from my text?",
+        "p": "Use it before publishing copy where emojis are not allowed, when exporting data into systems that reject Unicode pictographs, or simply when you want a neat, symbol-free version of a message to reuse."
+      }
+    ],
+    "reading-time-calculator": [
+      {
+        "h": "How is reading time estimated?",
+        "p": "The tool counts the words in your text and divides by the reading speed you choose, which defaults to 200 words per minute. The result is rounded up to whole minutes so headings are never cut short."
+      },
+      {
+        "h": "Why does reading speed matter?",
+        "p": "A 60 words-per-minute user reads three times slower than a 180 words-per-minute one. Set a realistic speed for your own audience and you will get a far better estimate for blog intros, video scripts or meeting handouts."
+      }
+    ],
+    "totp-generator": [
+      {
+        "h": "Where does the code come from?",
+        "p": "Your Base32 secret is decoded and combined with the current Unix time divided into 30-second steps. A one-way HMAC-SHA1 signature produces a 6-digit code that matches exactly what your authenticator app shows."
+      },
+      {
+        "h": "Is it safe to use?",
+        "p": "The whole calculation uses the Web Crypto API inside your browser page. The secret never leaves your device, which makes this a trustworthy way to test your own 2FA keys on this site."
+      }
+    ],
+    "url-parser": [
+      {
+        "h": "What parts of a URL are shown?",
+        "p": "You get protocol, host, hostname, port, path, query string, hash, username, password and origin. Every part is split exactly the way modern browsers parse it, so the results match what your code actually receives."
+      },
+      {
+        "h": "When is this useful?",
+        "p": "Debugging redirects, validating links in configuration files, reading authorization tokens inside query strings or simply learning how URLs are put together. The normalized URL copy button is handy for sharing a clean version of a messy link."
+      }
+    ],
+    "js-minifier": [
+      {
+        "h": "How does the minifier work?",
+        "p": "It trims the indentation at the start of every line, deletes blank lines and removes lines that are only comments. Because it never touches the inside of strings or template literals, the meaning of your code is preserved exactly."
+      },
+      {
+        "h": "Is this the same as a full minifier?",
+        "p": "No. A full minifier rewrites variables and strips every unnecessary byte. This tool is the safe, readable middle ground: it shrinks code noticeably for casual use without ever risking a syntax break."
+      }
+    ],
+    "mime-type-finder": [
+      {
+        "h": "What is a MIME type?",
+        "p": "A standardized label such as image/png or application/json that tells servers and browsers what kind of content a file contains. Using the right one matters for downloads, uploads, email attachments and API responses."
+      },
+      {
+        "h": "When would I need this tool?",
+        "p": "When configuring a web server's content types, validating file uploads, preparing OpenGraph or link previews, or double-checking an extension you cannot remember. Searching by type is handy for finding every extension a format class uses."
+      }
+    ],
+    "percentage-change-calculator": [
+      {
+        "h": "How is percentage change calculated?",
+        "p": "The change equals (new value - old value) divided by the absolute value of the old value, then multiplied by 100. Dividing by the absolute value means a drop from 100 to 50 is exactly the reverse of a rise from 50 to 100."
+      },
+      {
+        "h": "What about a zero starting point?",
+        "p": "Percentages need a reference point, and division by zero is not defined. When the old value is zero the tool shows the absolute difference instead and clearly warns that a percentage cannot be computed."
+      }
+    ],
+    "fuel-economy-calculator": [
+      {
+        "h": "What are the three units?",
+        "p": "L/100 km is how many litres a car uses per hundred kilometres, the European standard. MPG is miles per US gallon, common in North America. km/L is the simplest: the distance one litre covers."
+      },
+      {
+        "h": "Why convert between them?",
+        "p": "Car specs and reviews use different units depending on their region. Converting helps you compare fuel costs across markets and understand figures from foreign tests or manufacturers. The conversion factor is baked in, so results are instant and correct."
+      }
+    ],
+    "electricity-cost-calculator": [
+      {
+        "h": "How is consumption estimated?",
+        "p": "Watts are converted to kilowatts first, then multiplied by the hours used per day and the days used per month. Yearly figures are simply the monthly ones multiplied by 12. This is the same formula most energy meters use."
+      },
+      {
+        "h": "How do I read the cost results?",
+        "p": "Multiply your monthly kilowatt-hours by the price you pay per kWh. The tool does this for you and shows both monthly and yearly costs, making it easy to compare appliances like fridges, TVs or heaters."
+      }
+    ],
+    "calories-burned-calculator": [
+      {
+        "h": "How does the MET formula work?",
+        "p": "Each activity has a MET value measuring how many times more energy it burns than resting. Calories equal MET multiplied by 3.5, your weight in kilograms and duration in minutes, divided by 200."
+      },
+      {
+        "h": "How accurate is the estimate?",
+        "p": "MET values are averages taken from large population studies, so results are a solid guide for planning, not a medical measurement. Speed, fitness and terrain all shift the real number, usually by ten to twenty percent."
+      }
+    ],
+    "image-combiner": [
+      {
+        "h": "How does combining work?",
+        "p": "Both images are decoded and drawn next to each other onto one canvas whose width is the sum of both widths and whose height matches the taller image. The space left below the shorter image stays white."
+      },
+      {
+        "h": "When is side-by-side combining useful?",
+        "p": "Before-and-after comparisons, simple collages, stitching two halves of a screenshot or pairing a photo with a diagram. The resulting PNG has the exact combined dimensions and is ready to download."
+      }
+    ],
+    "image-flipper": [
+      {
+        "h": "What is the difference between flip and rotate?",
+        "p": "Rotating turns the image around its center. Flipping mirrors it, so text becomes unreadable and the orientation changes relative to a real mirror. Both are useful in design, but they produce very different results."
+      },
+      {
+        "h": "When would I flip an image?",
+        "p": "Fixing mirror images from front cameras, preparing thumbnails, duplicating elements for symmetry in mockups, or just changing the look of an asset. The flip controls are instant and the output downloads as a clean PNG."
+      }
+    ],
+    "sitemap-url-extractor": [
+      {
+        "h": "What does the extractor read?",
+        "p": "It parses the XML of your sitemap and collects the content of every loc tag, which is where search engines look for page URLs. Comments and surrounding markup are ignored, so the output is a clean list of links."
+      },
+      {
+        "h": "Why extract URLs from a sitemap?",
+        "p": "To verify how many pages a site exposes to search engines, to build a full URL inventory for migration or audits, or to check that indexed pages still return valid responses. Copying the whole list takes one click."
+      }
+    ],
+    "joke-generator": [
+      {
+        "h": "Where do the jokes come from?",
+        "p": "The page ships with a small hand-picked selection of programming jokes in both English and Turkish. The generator picks one at random, and the button highlights a new one every time."
+      },
+      {
+        "h": "Can I keep going after the first laugh?",
+        "p": "Certainly. Press the button as many times as you like. The current joke is skipped on the next press, so you keep getting fresh material instead of the same one twice in a row."
+      }
+    ],
+    "random-quote-generator": [
+      {
+        "h": "How are quotes chosen?",
+        "p": "Quotes are stored in a curated list that ships with the page. Every press picks a random entry and deliberately avoids the previous one, which keeps the generator feeling fresh."
+      },
+      {
+        "h": "Where does the tool run?",
+        "p": "Completely in your browser. There is no server request, no tracking and no account, which makes it perfect for a quick dose of inspiration in the middle of a busy day."
+      }
+    ],
+    "guess-the-number": [
+      {
+        "h": "How do I win as fast as possible?",
+        "p": "Always guess the middle of the remaining range. Start at 50, then cut the range in half with every hint. This binary search strategy wins every game in seven guesses at most."
+      },
+      {
+        "h": "What happens after I win?",
+        "p": "The page counts the attempts you used and offers a play again button that picks a brand new secret number. Try to beat your previous score with the same strategy."
+      }
     ]
   },
   "Rehber": {
@@ -6844,6 +7116,173 @@
       "invalid": "The input cannot be unescaped. Check for missing backslashes.",
       "empty": "Type some text and choose escape or unescape.",
       "tip": "Escaping converts quotes and backslashes so a string is valid inside JSON and JavaScript source code."
+    },
+    "emojiRemover": {
+      "inputLabel": "Text with emojis",
+      "outputLabel": "Cleaned text",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "removed": "Removed {count} characters in total.",
+      "empty": "Paste some text above to clean out the emojis.",
+      "tip": "The tool removes emojis and common decorative symbols. All processing happens locally in your browser."
+    },
+    "readingTimeCalculator": {
+      "inputLabel": "Your text",
+      "wpmLabel": "Reading speed (words per minute)",
+      "words": "Words",
+      "time": "Reading time",
+      "underMin": "under 1 min",
+      "minRead": "min read",
+      "hr": "h",
+      "min": "min",
+      "empty": "Paste some text above to estimate its reading time.",
+      "tip": "Counts words in your browser and divides by the speed you choose. Default is 200 words per minute."
+    },
+    "totpGenerator": {
+      "secretLabel": "Base32 secret key",
+      "secretPlaceholder": "e.g. JBSWY3DPEHPK3PXP",
+      "codeLabel": "Current code",
+      "empty": "Enter at least 10 characters from your 2FA secret key.",
+      "tip": "Computes a TOTP (RFC 6238) code locally with the Web Crypto API. Only use keys you trust on this page, although nothing leaves your browser."
+    },
+    "urlParser": {
+      "inputLabel": "URL to parse",
+      "placeholder": "https://example.com/path?query=1#hash",
+      "protocol": "Protocol",
+      "host": "Host",
+      "hostname": "Hostname",
+      "port": "Port",
+      "path": "Path",
+      "query": "Query",
+      "hash": "Hash",
+      "username": "Username",
+      "password": "Password",
+      "origin": "Origin",
+      "copy": "Copy normalized URL",
+      "copied": "Copied!",
+      "invalid": "That does not look like a valid URL.",
+      "empty": "Paste a full URL above to break it into its parts.",
+      "tip": "Parsing follows the WHATWG URL standard and runs locally in your browser."
+    },
+    "jsMinifier": {
+      "inputLabel": "JavaScript code",
+      "outputLabel": "Cleaned output",
+      "bytes": "bytes",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "empty": "Paste JavaScript code above to clean it up.",
+      "tip": "Removes blank lines, leading indentation and whole-line comments. String literals and template strings are left untouched."
+    },
+    "mimeTypeFinder": {
+      "extLabel": "File extension",
+      "extPlaceholder": "png",
+      "resultLabel": "MIME type",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "notFound": "No MIME type found for this extension.",
+      "searchLabel": "Or search by MIME type",
+      "searchPlaceholder": "image, text, application...",
+      "tip": "Finds the MIME type for common file extensions or lists which extensions match a type. Covers the most widely used web and media types."
+    },
+    "percentageChangeCalculator": {
+      "fromLabel": "From (old value)",
+      "toLabel": "To (new value)",
+      "increase": "increase",
+      "decrease": "decrease",
+      "absolute": "Absolute change: {value}",
+      "zeroBase": "A percentage cannot be calculated because the starting value is zero.",
+      "empty": "Enter two numbers to compare them.",
+      "tip": "Percentage change equals (new - old) divided by |old| times 100. A positive result means an increase."
+    },
+    "fuelEconomyCalculator": {
+      "empty": "Enter a consumption value and pick its unit.",
+      "tip": "Compare the three common fuel economy measures: litres per 100 km, miles per US gallon and km per litre."
+    },
+    "electricityCostCalculator": {
+      "wattsLabel": "Power (watts)",
+      "hoursLabel": "Hours per day",
+      "daysLabel": "Days per month",
+      "priceLabel": "Price per kWh",
+      "monthly": "Monthly use",
+      "yearly": "Yearly use",
+      "costMonthly": "Monthly cost",
+      "costYearly": "Yearly cost",
+      "currency": "₺",
+      "empty": "Fill in all four fields to estimate your usage and cost.",
+      "tip": "Consumption = watts divided by 1000 times hours times days. Multiply by your kWh price for the bill estimate."
+    },
+    "caloriesBurnedCalculator": {
+      "weightLabel": "Your weight (kg)",
+      "minutesLabel": "Duration (minutes)",
+      "activityLabel": "Activity",
+      "activity": {
+        "sedentary": "Sitting / resting",
+        "walking": "Walking (5 km/h)",
+        "brisk": "Brisk walking (6 km/h)",
+        "running": "Running (9 km/h)",
+        "cycling": "Cycling (15 km/h)",
+        "swimming": "Swimming",
+        "yoga": "Yoga / stretching",
+        "gym": "Weight training",
+        "basketball": "Basketball",
+        "football": "Football (soccer)",
+        "dancing": "Dancing",
+        "jumpingRope": "Jumping rope"
+      },
+      "resultLabel": "Estimated calories burned",
+      "empty": "Enter your weight and duration to see an estimate.",
+      "tip": "Uses the MET formula: kcal = MET times 3.5 times weight (kg) divided by 200 times minutes. Results are approximate."
+    },
+    "imageCombiner": {
+      "firstSlot": "First image",
+      "secondSlot": "Second image",
+      "pick": "Pick image",
+      "change": "Change",
+      "combine": "Combine and download",
+      "empty": "Pick two images to combine them side by side.",
+      "tip": "Both images are drawn onto one canvas and downloaded as a single PNG. The result uses the taller of the two heights. Nothing is uploaded."
+    },
+    "imageFlipper": {
+      "pick": "Pick image",
+      "change": "Change image",
+      "preview": "Preview",
+      "axis": "Axis: {axis}",
+      "horizontal": "Horizontal",
+      "vertical": "Vertical",
+      "flip": "Flip and download",
+      "empty": "Pick an image and choose how to mirror it.",
+      "tip": "Mirrors your image left-right or top-bottom and downloads it as PNG. All processing is local."
+    },
+    "sitemapUrlExtractor": {
+      "inputLabel": "Sitemap XML",
+      "placeholder": "Paste the XML of your sitemap...",
+      "count": "Found {count} URLs",
+      "copy": "Copy all",
+      "copied": "Copied!",
+      "noLoc": "No loc entries found.",
+      "empty": "Paste sitemap XML above to extract every URL.",
+      "tip": "Extracts every loc value from your XML sitemap. Handy for bulk-checking indexed pages or building URL lists."
+    },
+    "jokeGenerator": {
+      "generate": "Make me laugh",
+      "empty": "Tap the button for a random programmer joke.",
+      "tip": "A hand-picked set of programmer jokes shipped with the page. The button skips the current joke, so the next one is always fresh."
+    },
+    "randomQuoteGenerator": {
+      "generate": "Show a quote",
+      "empty": "Tap the button for a random quote.",
+      "tip": "A curated set of quotes bundled in the page. Tap again for a new one; nothing leaves your device."
+    },
+    "guessTheNumber": {
+      "intro": "I am thinking of a secret number between 1 and 100. Find it in as few guesses as you can.",
+      "guess": "Guess",
+      "won": "Correct! You found it.",
+      "tries": "Solved in {count} tries.",
+      "again": "Play again",
+      "low": "Too low - try a bigger number.",
+      "high": "Too high - try a smaller number.",
+      "empty": "Type a number between 1 and 100, then press Guess.",
+      "tip": "Every guess tells you whether the answer is higher or lower. The best strategy wins in at most 7 tries."
     }
   }
 }

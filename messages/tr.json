@@ -1135,6 +1135,118 @@
       "title": "Metin Kaçış ve Kaçış Kaldırıcı - JSON Dizesi Dönüşümü",
       "pageDesc": "Düz metin yazın; JSON ve JavaScript dizesinde kullanmak üzere tırnak, ters bölü ve özel karakterleri kaçış karakterleriyle işaretleyin. Veya kaçışlı metni yapıştırıp okunabilir hale çözün. Tamamen yerel.",
       "intro": "Metin girin, kaçış veya çözüm seçin ve sonucu kopyalayın."
+    },
+    "emoji-remover": {
+      "name": "Emoji Kaldırıcı",
+      "desc": "Metindeki tüm emoji ve süsleyici sembolleri tarayıcıda temizler.",
+      "title": "Emoji Kaldırıcı - Metinden Emoji Temizleme Aracı",
+      "pageDesc": "Herhangi bir metin yapıştırın; bu araç emojileri, sembolleri ve varyasyon seçicileri siler, geriye yalnızca düz metin kalır. Yayın öncesi metni temizlemek veya emojileri kaldırıp betiklerle kullanmak için idealdir. Her şey tarayıcınızda yerel olarak çalışır.",
+      "intro": "Metninizi yapıştırın ve anında emojisiz haliyle kopyalayın."
+    },
+    "reading-time-calculator": {
+      "name": "Okuma Süresi Hesaplayıcı",
+      "desc": "Bir metnin okunmasının ne kadar sürdüğünü okuma hızına göre tahmin eder.",
+      "title": "Okuma Süresi Hesaplayıcı - Tahmini Okuma Süresi Hesaplama",
+      "pageDesc": "Bir makale, yazı veya bölüm yapıştırın; kelime sayısını ve seçtiğiniz dakikada kelime (dk) hızına göre tahmini okuma süresini görün. Blog yazarları, editörler ve öğrenciler için yayından önce hızlı uzunluk tahmini yapmak idealdir. Tüm sayım tarayıcınızda gerçekleşir.",
+      "intro": "Metninizi girin, okuma hızını seçin ve tahmini süreyi kopyalayın."
+    },
+    "totp-generator": {
+      "name": "TOTP Kod Üretici",
+      "desc": "Base32 gizli anahtarından güncel 6 haneli 2FA kodunu yerel olarak üretir.",
+      "title": "TOTP Kod Üretici - Gizli Anahtardan 2FA Kodu",
+      "pageDesc": "Bir doğrulama uygulamasının Base32 gizli anahtarını girin ve zaman tabanlı tek kullanımlık şifreyi (RFC 6238) görün. Kendi anahtarlarınızı test etmek veya eksiksiz bir doğrulayıcı kuramayan uygulamalar için kullanışlıdır. Kod, Web Crypto API ile tarayıcınızda hesaplanır.",
+      "intro": "Base32 gizli anahtarınızı yapıştırın ve canlı kodu okuyun."
+    },
+    "url-parser": {
+      "name": "URL Ayrıştırıcı",
+      "desc": "Herhangi bir URL'yi protokol, host, yol, sorgu ve hash bileşenlerine ayırır.",
+      "title": "URL Ayrıştırıcı - URL'yi Parçalarına Ayırma Aracı",
+      "pageDesc": "Bir URL yapıştırın ve tüm bileşenleri anında görün: protokol, host, port, yol, sorgu dizesi, hash, kimlik bilgileri ve origin. WHATWG URL standardına uyar; sıra dışı ama geçerli URL'ler doğru işlenir. Bağlantı hatalarını ayıklamak ve URL yapısını anlamak için idealdir. Tamamen tarayıcınızda çalışır.",
+      "intro": "Bir URL girin ve her parçasını tabloda inceleyin."
+    },
+    "js-minifier": {
+      "name": "JS Küçültücü",
+      "desc": "JavaScript kodundan boş satırları ve satır başı boşluklarını temizler.",
+      "title": "JS Küçültücü - JavaScript Temizleme Aracı",
+      "pageDesc": "Bir JavaScript dosyası yapıştırın; bu araç satır başı boşluklarını, boş satırları ve tek satırlık yorum satırlarını kaldırarak boyutu küçültür, dize ve şablon dizelerine dokunmaz. Kodu sohbet mesajına veya e-postaya yapıştırmadan önce hızlı bir küçültme için kullanışlıdır. İşlem tarayıcınızda yerel olarak yapılır.",
+      "intro": "Kodunuzu yapıştırın ve temizlenmiş halini kopyalayın."
+    },
+    "mime-type-finder": {
+      "name": "MIME Türü Bulucu",
+      "desc": "Yaygın dosya uzantılarının MIME türünü bulur veya türe göre arama yapar.",
+      "title": "MIME Türü Bulucu - Dosya Türü Sorgulama Aracı",
+      "pageDesc": "png veya svg gibi bir dosya uzantısı yazın ve MIME türünü anında öğrenin; ya da image veya application gibi bir tür yazarak eşleşen uzantıları listeyin. Sunucu yapılandırması, yükleme doğrulaması ve API işleri için kullanışlıdır. Arama tablosu tarayıcınızda hazır durumdadır.",
+      "intro": "Bir uzantı girin veya MIME türüyle arayın, sonucu kopyalayın."
+    },
+    "percentage-change-calculator": {
+      "name": "Yüzde Değişim Hesaplayıcı",
+      "desc": "İki değer arasındaki yüzde artış veya azalışı ve mutlak farkı hesaplar.",
+      "title": "Yüzde Değişim Hesaplayıcı - Artış ve Azalış Hesaplama",
+      "pageDesc": "Eski ve yeni değeri girin; hesaplayıcı yüzde değişimi ve mutlak farkı gösterir. Fiyatlar, puanlar, metrikler ve daha fazlası için çalışır. Formül hem artışı hem azalışı kapsar; işaret her zaman doğru olur. Hesaplama anında tarayıcınızda gerçekleşir.",
+      "intro": "İki değeri girin ve yüzde değişimini okuyun."
+    },
+    "fuel-economy-calculator": {
+      "name": "Yakıt Tüketimi Çevirici",
+      "desc": "L/100 km, MPG ve km/L yakıt tüketim birimleri arasında anında çevirir.",
+      "title": "Yakıt Tüketimi Çevirici - L/100km, MPG, km/L Dönüştürme",
+      "pageDesc": "100 km'de litre, ABD galonu başına mil veya litre başına km cinsinden bir tüketim değeri girin; üç birimi birden aynı anda görün. Farklı bölgelerden araçları veya farklı birimlerle yazılmış özellikleri karşılaştırırken idealdir. Çevrim tarayıcınızda yerel olarak yapılır.",
+      "intro": "Bir değer girin ve üç yakıt tüketimi birimini birden okuyun."
+    },
+    "electricity-cost-calculator": {
+      "name": "Elektrik Tüketimi Hesaplayıcı",
+      "desc": "Bir cihazın aylık ve yıllık elektrik tüketimini ve maliyetini tahmin eder.",
+      "title": "Elektrik Tüketimi Hesaplayıcı - Fatura Tahmini Hesaplama",
+      "pageDesc": "Cihazın gücünü, günlük kullanım saatini, aylık gün sayısını ve kWh fiyatınızı girin; araç aylık ve yıllık kilovat-saati ve her iki dönem için beklenen maliyeti tahmin eder. Bütçe yapmak ve evdeki en büyük tüketicileri bulmak için kullanışlıdır.",
+      "intro": "Dört alanı doldurun ve tüketim ile maliyet tahmininizi okuyun."
+    },
+    "calories-burned-calculator": {
+      "name": "Yakılan Kalori Hesaplayıcı",
+      "desc": "MET değerlerine göre bir aktivitenin yaktığı kaloriyi tahmin eder.",
+      "title": "Yakılan Kalori Hesaplayıcı - Aktivite Kalori Hesabı",
+      "pageDesc": "Yürüyüş, koşu, salondan ip atlamaya kadar bir aktivite seçin; kilonuzu ve süreyi girin ve yakılan kalori tahminini görün. Hesaplama standart MET değerlerini kullanır; sonuçlar aktiviteler arasında karşılaştırılabilir. Antrenman planlamak ve eforu takip etmek için idealdir.",
+      "intro": "Aktivite seçin, kilonuzu ve sürenizi girin, sonucu okuyun."
+    },
+    "image-combiner": {
+      "name": "Görsel Birleştirici",
+      "desc": "İki görseli yan yana tek bir PNG'de birleştirir; tarayıcıda çalışır.",
+      "title": "Görsel Birleştirici - İki Görseli Yan Yana Birleştirme",
+      "pageDesc": "İki görsel seçin ve tek tıkla daha geniş tek bir PNG olarak birleştirin. Öncesi-sonrası karşılaştırmaları, kolajlar veya ekran görüntülerini yan yana dikmek için harikadır. İki görsel tek bir tuval üzerine çizilir ve dosya otomatik indirilir. Hiçbir şey bir yere yüklenmez.",
+      "intro": "İki görsel seçin, birleştirin ve tek PNG olarak indirin."
+    },
+    "image-flipper": {
+      "name": "Görsel Çevirici",
+      "desc": "Görseli yatay veya dikey aynalayıp PNG olarak indirir.",
+      "title": "Görsel Çevirici - Görseli Yatay veya Dikey Aynalama",
+      "pageDesc": "Bir görsel yükleyin, yatay veya dikey çevirmeyi seçin ve aynalanmış halini PNG olarak indirin. Görseli aynı bir ayna gibi çevirir; döndürmekten farklıdır. Tasarım mizanpajları, küçük resimler ve hızlı önizlemeler için kullanışlıdır. Tüm işlem cihazınızda kalır.",
+      "intro": "Bir görsel seçin, eksen seçin ve çevrilmiş halini indirin."
+    },
+    "sitemap-url-extractor": {
+      "name": "Site Haritası URL Çıkarıcı",
+      "desc": "XML site haritasındaki tüm URL'leri çıkarır, sayar ve kopyalamanızı sağlar.",
+      "title": "Site Haritası URL Çıkarıcı - XML Sitemap'ten URL Çıkarma",
+      "pageDesc": "Herhangi bir site haritasının XML'ini yapıştırın; araç her loc girdisini düz bir URL olarak listeler. Toplam sayıyı görün ve tüm listeyi tek tıkla kopyalayın. Bir sitenin kaç sayfa dizine aldığını kontrol etmek veya denetimler için URL listesi oluşturmak harikadır. Ayrıştırma tamamen tarayıcınızda gerçekleşir.",
+      "intro": "Site haritası XML'ini yapıştırın ve çıkarılan URL'leri kopyalayın."
+    },
+    "joke-generator": {
+      "name": "Fıkra Üretici",
+      "desc": "Tek tıkla rastgele bir programcı fıkrası gösterir.",
+      "title": "Fıkra Üretici - Rastgele Programcı Fıkraları",
+      "pageDesc": "Düğmeye basın; araç sizin için rastgele bir programcı fıkrası seçer. Küçük, özenle seçilmiş bir koleksiyon doğrudan sayfada durur; internetsiz bile çalışır ve hiçbir şey bir yere gönderilmez. Kodlama molaları arasında kısa bir kahkaha için idealdir.",
+      "intro": "Rastgele bir programcı fıkrası için düğmeye basın."
+    },
+    "random-quote-generator": {
+      "name": "Rastgele Alıntı",
+      "desc": "Kod, iş ve yaşam üzerine rastgele bir sözü tek tıkla gösterir.",
+      "title": "Rastgele Alıntı - İlham Veren Sözler",
+      "pageDesc": "Düğmeye basın; yerleşik koleksiyondan seçilen düşündürücü bir söz karşınıza çıkar. Her dokunuş bir önceki alıntıyı atlayarak tekrarı azaltır. Tamamen çevrimdışı çalışır ve verilerinizi asla bir yere göndermez.",
+      "intro": "Rastgele bir alıntı için düğmeye basın."
+    },
+    "guess-the-number": {
+      "name": "Sayıyı Tahmin Et",
+      "desc": "1 ile 100 arasındaki gizli sayıyı en az denemeyle bulmaya çalışın.",
+      "title": "Sayıyı Tahmin Et - Klasik Sayı Tahmin Oyunu",
+      "pageDesc": "Klasik bir mantık oyunu: sayfa 1 ile 100 arasında gizli bir sayı seçer; siz tahmin edersiniz ve her denemenin ardından büyük mü küçük mü ipucu alırsınız. Kaç denemede bulduğunuzu takip edin; stratejinizi geliştirin ya da sadece eğlenin. Oyun tamamen tarayıcınızda çalışır.",
+      "intro": "Yalnızca büyük ve küçük ipuçlarıyla gizli sayıyı yenin."
     }
   },
   "ToolContent": {
@@ -4737,6 +4849,166 @@
         "h": "Kaçışı kaldırmak ne zaman işe yarar?",
         "p": "API günlükleri, yapılandırma kayıtları ve veritabanı dışa aktarımları çoğu zaman tamamen kaçışlı ve okunması zor gelir. Buradaki metni yapıştırmak, elle düzenlemek yerine tek tıkla düz ve okunabilir hale çözer."
       }
+    ],
+    "emoji-remover": [
+      {
+        "h": "Emoji kaldırıcı ne yapar?",
+        "p": "Metninizi tarar ve her emojiyi, piktografı, süsleyici sembolü ve onlara bağlı görünmez varyasyon seçicilerini siler. Geriye kalan, kopyalamak ve sıkı editörlere, veritabanlarına ve betiklere yapıştırmak için güvenli olan temiz düz metindir."
+      },
+      {
+        "h": "Metnimden emojileri ne zaman temizlemeliyim?",
+        "p": "Emojinin istenmediği yayın metinlerini paylaşmadan önce, Unicode piktografları reddeden sistemlere veri aktarırken veya bir mesajın derli toplu, sembolsüz bir kopyasını yeniden kullanmak istediğinizde kullanın."
+      }
+    ],
+    "reading-time-calculator": [
+      {
+        "h": "Okuma süresi nasıl tahmin edilir?",
+        "p": "Araç metninizdeki kelimeleri sayar ve seçtiğiniz okuma hızına böler; varsayılan hız dakikada 200 kelimedir. Sonuç tam dakikaya yuvarlanır, böylece başlıklar asla yarıda kesilmez."
+      },
+      {
+        "h": "Okuma hızı neden önemlidir?",
+        "p": "Dakikada 60 kelime okuyan bir kullanıcı, dakikada 180 kelime okuyandan üç kat yavaştır. Kendi kitleniz için gerçekçi bir hız belirleyin; blog girişleri, video senaryoları veya toplantı notları için çok daha iyi bir tahmin elde edersiniz."
+      }
+    ],
+    "totp-generator": [
+      {
+        "h": "Kod nereden geliyor?",
+        "p": "Base32 gizli anahtarınız çözülür ve 30 saniyelik adımlara bölünmüş güncel Unix zamanıyla birleştirilir. Tek yönlü HMAC-SHA1 imzası, doğrulama uygulamanızın gösterdiğiyle birebir aynı olan 6 haneli bir kod üretir."
+      },
+      {
+        "h": "Kullanmak güvenli mi?",
+        "p": "Tüm hesaplama, tarayıcınızın sayfası içinde Web Crypto API kullanılarak yapılır. Gizli anahtar cihazınızdan asla çıkmaz; bu da kendi 2FA anahtarlarınızı bu sitede test etmenin güvenilir bir yolu olduğunu gösterir."
+      }
+    ],
+    "url-parser": [
+      {
+        "h": "URL'nin hangi parçaları gösterilir?",
+        "p": "Protokol, host, hostname, port, yol, sorgu dizesi, hash, kullanıcı adı, parola ve origin görüntülenir. Her parça, modern tarayıcıların ayrıştırdığı şekilde tam olarak bölünür; sonuçlar kodunuzun gerçekte aldığı değerle birebir eşleşir."
+      },
+      {
+        "h": "Bu ne zaman işe yarar?",
+        "p": "Yönlendirmelerde hata ayıklarken, yapılandırma dosyalarındaki bağlantıları doğrularken, sorgu dizelerinin içindeki yetkilendirme belirteçlerini okurken ya da URL'lerin nasıl kurulduğunu öğrenirken kullanışlıdır. Normalize edilmiş URL kopyalama düğmesi, dağınık bir bağlantının temiz bir sürümünü paylaşmak için idealdir."
+      }
+    ],
+    "js-minifier": [
+      {
+        "h": "Küçültücü nasıl çalışır?",
+        "p": "Her satırın başındaki girintiyi kırpar, boş satırları siler ve yalnızca yorumdan oluşan satırları kaldırır. Dizelerin veya şablon literallerinin içine asla dokunmadığı için kodunuzun anlamı birebir korunur."
+      },
+      {
+        "h": "Bu tam bir küçültücüyle aynı mı?",
+        "p": "Hayır. Tam bir küçültücü değişkenleri yeniden yazar ve gereksiz her baytı atar. Bu araç güvenli, okunabilir orta yoldur: sözdizimini kırma riski olmadan kodu günlük kullanım için belirgin şekilde küçültür."
+      }
+    ],
+    "mime-type-finder": [
+      {
+        "h": "MIME türü nedir?",
+        "p": "image/png veya application/json gibi, sunuculara ve tarayıcılara bir dosyanın içeriğinin ne tür olduğunu söyleyen standart bir etikettir. Doğrusunu kullanmak indirmeler, yüklemeler, e-posta ekleri ve API yanıtları için önemlidir."
+      },
+      {
+        "h": "Bu araca ne zaman ihtiyaç duyarım?",
+        "p": "Bir web sunucusunun içerik türlerini yapılandırırken, dosya yüklemelerini doğrularken, OpenGraph veya bağlantı önizlemeleri hazırlarken ya da hatırlayamadığınız bir uzantıyı kontrol ederken kullanın. Türe göre arama, bir biçim sınıfının kullandığı tüm uzantıları bulmak için kullanışlıdır."
+      }
+    ],
+    "percentage-change-calculator": [
+      {
+        "h": "Yüzde değişim nasıl hesaplanır?",
+        "p": "Değişim, (yeni değer - eski değer) bölü eski değerin mutlak değeri, çarpı 100 olarak hesaplanır. Mutlak değere bölmek, 100'den 50'ye düşüşün, 50'den 100'e çıkışın tam tersi olduğu anlamına gelir."
+      },
+      {
+        "h": "Sıfırdan başlayan durum ne olur?",
+        "p": "Yüzdeler bir referans noktası gerektirir; sıfıra bölme tanımsızdır. Eski değer sıfırken araç bunun yerine mutlak farkı gösterir ve yüzde hesaplanamayacağını açıkça belirtir."
+      }
+    ],
+    "fuel-economy-calculator": [
+      {
+        "h": "Üç birim nedir?",
+        "p": "L/100 km, Avrupa standardı olarak bir aracın yüz kilometrede kaç litre yakıt kullandığını ifade eder. MPG, Kuzey Amerika'da yaygın olan ABD galonu başına mildir. km/L en basitidir: bir litrenin kat ettiği mesafeyi gösterir."
+      },
+      {
+        "h": "Neden birimler arasında çevrim yapılır?",
+        "p": "Araç özellikleri ve incelemeler bölgeye göre farklı birimler kullanır. Çevrim, pazarlar arasında yakıt maliyetlerini karşılaştırmanıza ve yabancı testlerdeki veya üreticilerin rakamlarını anlamanıza yardımcı olur. Dönüşüm faktörü yerleşiktir; sonuçlar anında ve doğrudur."
+      }
+    ],
+    "electricity-cost-calculator": [
+      {
+        "h": "Tüketim nasıl tahmin edilir?",
+        "p": "Watt önce kilovata çevrilir, ardından günlük kullanım saati ve aylık gün sayısıyla çarpılır. Yıllık rakamlar aylık değerlerin 12 ile çarpımıdır. Bu, çoğu enerji sayacının kullandığı formülün aynısıdır."
+      },
+      {
+        "h": "Maliyet sonuçları nasıl okunur?",
+        "p": "Aylık kilovat-saatinizi ödediğiniz kWh fiyatıyla çarpın. Araç bunu sizin için yapar ve hem aylık hem yıllık maliyeti gösterir; böylece buzdolabı, televizyon veya ısıtıcı gibi cihazları kolayca karşılaştırabilirsiniz."
+      }
+    ],
+    "calories-burned-calculator": [
+      {
+        "h": "MET formülü nasıl çalışır?",
+        "p": "Her aktivitenin, dinlenmeye göre kaç kat daha fazla enerji yaktığını ölçen bir MET değeri vardır. Kalori, MET çarpı 3.5, kilonuz (kg) ve dakika cinsinden süre, bölü 200 formülüyle hesaplanır."
+      },
+      {
+        "h": "Tahmin ne kadar doğru?",
+        "p": "MET değerleri büyük nüfus çalışmalarından alınan ortalamalardır; sonuçlar planlama için sağlam bir rehberdir, tıbbi bir ölçüm değildir. Hız, kondisyon ve zemin gerçek sayıyı genellikle yüzde on ila yirmi arasında değiştirir."
+      }
+    ],
+    "image-combiner": [
+      {
+        "h": "Birleştirme nasıl çalışır?",
+        "p": "İki görsel çözülür ve genişliği iki genişliğin toplamı, yüksekliği ise daha uzun görselin yüksekliği olan tek bir tuval üzerine yan yana çizilir. Kısa görselin altında kalan boşluk beyaz kalır."
+      },
+      {
+        "h": "Yan yana birleştirmek ne zaman işe yarar?",
+        "p": "Öncesi-sonrası karşılaştırmaları, basit kolajlar, ekran görüntüsünün iki yarısını birleştirme veya bir fotoğrafı diyagramla eşleştirme gibi durumlarda kullanışlıdır. Ortaya çıkan PNG, tam birleştirilmiş boyutlara sahiptir ve indirilmeye hazırdır."
+      }
+    ],
+    "image-flipper": [
+      {
+        "h": "Çevirme ile döndürme arasındaki fark nedir?",
+        "p": "Döndürme görseli merkez etrafında çevirir. Çevirme ise onu bir ayna gibi yansıtır; metin okunamaz hale gelir ve yön gerçek bir aynaya göre değişir. İkisi de tasarımda kullanışlıdır ama çok farklı sonuçlar üretir."
+      },
+      {
+        "h": "Bir görseli ne zaman çeviririm?",
+        "p": "Ön kameralardan gelen ayna görüntülerini düzeltirken, küçük resimler hazırlarken, mizanpajlarda simetri için öğeleri çoğaltırken veya bir varlığın görünümünü değiştirirken kullanın. Çevirme kontrolleri anlıktır ve çıktı temiz bir PNG olarak indirilir."
+      }
+    ],
+    "sitemap-url-extractor": [
+      {
+        "h": "Çıkarıcı neyi okur?",
+        "p": "Site haritanızın XML'ini ayrıştırır ve arama motorlarının sayfa URL'lerini aradığı her loc etiketinin içeriğini toplar. Yorumlar ve çevreleyen işaretlemeler yok sayılır; çıktı temiz bir bağlantı listesidir."
+      },
+      {
+        "h": "Siteden URL çıkarmak neden faydalı?",
+        "p": "Bir sitenin arama motorlarına kaç sayfa açtığını doğrulamak, geçiş ya da denetimler için eksiksiz bir URL envanteri oluşturmak veya dizine eklenmiş sayfaların hâlâ geçerli yanıtlar döndürdüğünü kontrol etmek için kullanın. Tüm listeyi kopyalamak tek tıkladır."
+      }
+    ],
+    "joke-generator": [
+      {
+        "h": "Fıkralar nereden geliyor?",
+        "p": "Sayfa, hem Türkçe hem İngilizce bir dizi programcı fıkrasından oluşan küçük bir seçkiyle gelir. Üretici rastgele birini seçer ve düğme her seferinde yenisini gösterir."
+      },
+      {
+        "h": "İlk kahkahanın ardından devam edebilir miyim?",
+        "p": "Elbette. Düğmeye dilediğiniz kadar basın. Sonraki basışta güncel fıkra atlanır; böylece aynı fıkrayı üst üste görmek yerine hep taze malzeme alırsınız."
+      }
+    ],
+    "random-quote-generator": [
+      {
+        "h": "Alıntılar nasıl seçilir?",
+        "p": "Alıntılar, sayfayla birlikte gelen derlenmiş bir listede saklanır. Her dokunuş rastgele bir söz seçer ve önceki sözü bilinçli olarak atlar; üretici bu sayede hep taze hissettirir."
+      },
+      {
+        "h": "Araç nerede çalışır?",
+        "p": "Tamamen tarayıcınızda. Sunucu isteği, izleme ve hesap yoktur; yoğun bir günün ortasında kısa bir ilham molası için mükemmeldir."
+      }
+    ],
+    "guess-the-number": [
+      {
+        "h": "En hızlı nasıl kazanırım?",
+        "p": "Her zaman kalan aralığın ortasını tahmin edin. 50 ile başlayın, ardından her ipucuyla aralığı yarıya indirin. Bu ikili arama stratejisi her oyunu en fazla yedi denemede kazandırır."
+      },
+      {
+        "h": "Kazandıktan sonra ne olur?",
+        "p": "Sayfa kullandığınız deneme sayısını gösterir ve yepyeni bir gizli sayı seçen tekrar oyna düğmesi sunar. Aynı stratejiyle önceki skorunuzu geçmeye çalışın."
+      }
     ]
   },
   "Rehber": {
@@ -6844,6 +7116,173 @@
       "invalid": "Giriş metni çözülemiyor. Eksik ters bölü işaretlerini kontrol edin.",
       "empty": "Bir metin yazın ve kaçışla işaretleme veya kaçışı kaldırma seçin.",
       "tip": "Kaçışla işaretleme, tırnakları ve ters bölü işaretlerini dönüştürür; böylece dize JSON ve JavaScript kaynak kodu içinde geçerli olur."
+    },
+    "emojiRemover": {
+      "inputLabel": "Emoji içeren metin",
+      "outputLabel": "Temizlenmiş metin",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "removed": "Toplam {count} karakter temizlendi.",
+      "empty": "Emojileri temizlemek için yukarıya metin yapıştırın.",
+      "tip": "Araç emojileri ve yaygın süsleyici sembolleri kaldırır. Tüm işlem tarayıcınızda yerel olarak gerçekleşir."
+    },
+    "readingTimeCalculator": {
+      "inputLabel": "Metniniz",
+      "wpmLabel": "Okuma hızı (dakikada kelime)",
+      "words": "Kelime",
+      "time": "Okuma süresi",
+      "underMin": "1 dk altı",
+      "minRead": "dk",
+      "hr": "sa",
+      "min": "dk",
+      "empty": "Okuma süresini tahmin etmek için yukarıya metin yapıştırın.",
+      "tip": "Kelime sayısını tarayıcınızda sayar ve seçtiğiniz hıza böler. Varsayılan hız dakikada 200 kelimedir."
+    },
+    "totpGenerator": {
+      "secretLabel": "Base32 gizli anahtar",
+      "secretPlaceholder": "ör. JBSWY3DPEHPK3PXP",
+      "codeLabel": "Güncel kod",
+      "empty": "2FA gizli anahtarınızdan en az 10 karakter girin.",
+      "tip": "TOTP (RFC 6238) kodunu Web Crypto API ile yerel olarak hesaplar. Bu sayfada yalnızca güvendiğiniz anahtarları kullanın; hiçbir şey tarayıcınızdan çıkmaz."
+    },
+    "urlParser": {
+      "inputLabel": "Ayrıştırılacak URL",
+      "placeholder": "https://example.com/path?query=1#hash",
+      "protocol": "Protokol",
+      "host": "Host",
+      "hostname": "Hostname",
+      "port": "Port",
+      "path": "Yol",
+      "query": "Sorgu",
+      "hash": "Hash",
+      "username": "Kullanıcı adı",
+      "password": "Parola",
+      "origin": "Origin",
+      "copy": "Normalize URL'yi kopyala",
+      "copied": "Kopyalandı!",
+      "invalid": "Bu geçerli bir URL gibi görünmüyor.",
+      "empty": "Parçalarına ayırmak için yukarıya tam bir URL yapıştırın.",
+      "tip": "Ayrıştırma, tarayıcınızda WHATWG URL standardına göre yapılır."
+    },
+    "jsMinifier": {
+      "inputLabel": "JavaScript kodu",
+      "outputLabel": "Temizlenmiş çıktı",
+      "bytes": "bayt",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "empty": "Temizlemek için yukarıya JavaScript kodu yapıştırın.",
+      "tip": "Boş satırları, satır başı girintileri ve yalnızca yorumdan oluşan satırları kaldırır. Dize ve şablon literallere dokunulmaz."
+    },
+    "mimeTypeFinder": {
+      "extLabel": "Dosya uzantısı",
+      "extPlaceholder": "png",
+      "resultLabel": "MIME türü",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "notFound": "Bu uzantı için MIME türü bulunamadı.",
+      "searchLabel": "Veya MIME türüyle ara",
+      "searchPlaceholder": "image, text, application...",
+      "tip": "Yaygın dosya uzantılarının MIME türünü bulur veya bir türle eşleşen uzantıları listeler. En sık kullanılan web ve medya türlerini kapsar."
+    },
+    "percentageChangeCalculator": {
+      "fromLabel": "Başlangıç (eski değer)",
+      "toLabel": "Sonuç (yeni değer)",
+      "increase": "artış",
+      "decrease": "azalış",
+      "absolute": "Mutlak fark: {value}",
+      "zeroBase": "Başlangıç değeri sıfır olduğu için yüzde hesaplanamaz.",
+      "empty": "Karşılaştırmak için iki sayı girin.",
+      "tip": "Yüzde değişim, (yeni - eski) bölü |eski| çarpı 100'e eşittir. Pozitif sonuç artış anlamına gelir."
+    },
+    "fuelEconomyCalculator": {
+      "empty": "Bir tüketim değeri girin ve birimini seçin.",
+      "tip": "Üç yaygın yakıt tüketimi birimini karşılaştırın: 100 km'de litre, ABD galonu başına mil ve litre başına km."
+    },
+    "electricityCostCalculator": {
+      "wattsLabel": "Güç (watt)",
+      "hoursLabel": "Günde saat",
+      "daysLabel": "Ayda gün",
+      "priceLabel": "kWh fiyatı",
+      "monthly": "Aylık tüketim",
+      "yearly": "Yıllık tüketim",
+      "costMonthly": "Aylık maliyet",
+      "costYearly": "Yıllık maliyet",
+      "currency": "₺",
+      "empty": "Tüketim ve maliyet tahmini için dört alanı da doldurun.",
+      "tip": "Tüketim = watt bölü 1000 çarpı saat çarpı gün. Fatura tahmini için kWh fiyatınızla çarpın."
+    },
+    "caloriesBurnedCalculator": {
+      "weightLabel": "Kilonuz (kg)",
+      "minutesLabel": "Süre (dakika)",
+      "activityLabel": "Aktivite",
+      "activity": {
+        "sedentary": "Oturma / dinlenme",
+        "walking": "Yürüyüş (5 km/sa)",
+        "brisk": "Hızlı yürüyüş (6 km/sa)",
+        "running": "Koşu (9 km/sa)",
+        "cycling": "Bisiklet (15 km/sa)",
+        "swimming": "Yüzme",
+        "yoga": "Yoga / esneme",
+        "gym": "Ağırlık antrenmanı",
+        "basketball": "Basketbol",
+        "football": "Futbol",
+        "dancing": "Dans",
+        "jumpingRope": "İp atlama"
+      },
+      "resultLabel": "Tahmini yakılan kalori",
+      "empty": "Tahmin için kilonuzu ve sürenizi girin.",
+      "tip": "MET formülünü kullanır: kcal = MET çarpı 3,5 çarpı kilo (kg) bölü 200 çarpı dakika. Sonuçlar yaklaşıktır."
+    },
+    "imageCombiner": {
+      "firstSlot": "İlk görsel",
+      "secondSlot": "İkinci görsel",
+      "pick": "Görsel seç",
+      "change": "Değiştir",
+      "combine": "Birleştir ve indir",
+      "empty": "Yan yana birleştirmek için iki görsel seçin.",
+      "tip": "İki görsel tek bir tuval üzerine çizilir ve tek PNG olarak indirilir. Sonuç, iki yükseklikten uzun olanı kullanır. Hiçbir şey yüklenmez."
+    },
+    "imageFlipper": {
+      "pick": "Görsel seç",
+      "change": "Görsel değiştir",
+      "preview": "Önizleme",
+      "axis": "Eksen: {axis}",
+      "horizontal": "Yatay",
+      "vertical": "Dikey",
+      "flip": "Çevir ve indir",
+      "empty": "Bir görsel seçin ve nasıl aynalanacağını belirleyin.",
+      "tip": "Görseli sağ-sol veya üst-alt şeklinde aynalar ve PNG olarak indirir. Tüm işlem yereldir."
+    },
+    "sitemapUrlExtractor": {
+      "inputLabel": "Site haritası XML",
+      "placeholder": "Site haritanızın XML'ini yapıştırın...",
+      "count": "{count} URL bulundu",
+      "copy": "Tümünü kopyala",
+      "copied": "Kopyalandı!",
+      "noLoc": "loc girdisi bulunamadı.",
+      "empty": "Tüm URL'leri çıkarmak için yukarıya sitemap XML'ini yapıştırın.",
+      "tip": "XML site haritanızdaki her loc değerini çıkarır. Dizine eklenmiş sayfaları topluca kontrol etmek veya URL listeleri oluşturmak için kullanışlıdır."
+    },
+    "jokeGenerator": {
+      "generate": "Güldür beni",
+      "empty": "Rastgele bir programcı fıkrası için düğmeye basın.",
+      "tip": "Sayfayla gelen özenle seçilmiş programcı fıkraları. Düğme güncel fıkrayı atlar, bu yüzden bir sonraki her zaman tazedir."
+    },
+    "randomQuoteGenerator": {
+      "generate": "Alıntı göster",
+      "empty": "Rastgele bir alıntı için düğmeye basın.",
+      "tip": "Sayfayla gelen derlenmiş bir alıntı koleksiyonu. Yeni bir tane için tekrar basın; hiçbir şey cihazınızdan çıkmaz."
+    },
+    "guessTheNumber": {
+      "intro": "Aklımda 1 ile 100 arasında gizli bir sayı var. En az denemeyle bul.",
+      "guess": "Tahmin et",
+      "won": "Doğru! Buldun.",
+      "tries": "{count} denemede çözüldü.",
+      "again": "Tekrar oyna",
+      "low": "Çok küçük - daha büyük bir sayı dene.",
+      "high": "Çok büyük - daha küçük bir sayı dene.",
+      "empty": "1 ile 100 arasında bir sayı yazın, sonra Tahmin et'e basın.",
+      "tip": "Her tahmin, cevabın daha yüksek mi alçak mı olduğunu söyler. En iyi strateji en fazla 7 denemede kazandırır."
     }
   }
 }

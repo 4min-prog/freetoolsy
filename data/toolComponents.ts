@@ -141,6 +141,22 @@ export const toolComponents: Record<string, ComponentType> = {
   "rock-paper-scissors": dynamic(() => import("@/components/tools/RockPaperScissors")),
   "horoscope": dynamic(() => import("@/components/tools/Horoscope")),
   "text-escape-unescape": dynamic(() => import("@/components/tools/TextEscapeUnescape")),
+  "emoji-remover": dynamic(() => import("@/components/tools/EmojiRemover")),
+  "reading-time-calculator": dynamic(() => import("@/components/tools/ReadingTimeCalculator")),
+  "totp-generator": dynamic(() => import("@/components/tools/TotpGenerator")),
+  "url-parser": dynamic(() => import("@/components/tools/UrlParser")),
+  "js-minifier": dynamic(() => import("@/components/tools/JsMinifier")),
+  "mime-type-finder": dynamic(() => import("@/components/tools/MimeTypeFinder")),
+  "percentage-change-calculator": dynamic(() => import("@/components/tools/PercentageChangeCalculator")),
+  "fuel-economy-calculator": dynamic(() => import("@/components/tools/FuelEconomyCalculator")),
+  "electricity-cost-calculator": dynamic(() => import("@/components/tools/ElectricityCostCalculator")),
+  "calories-burned-calculator": dynamic(() => import("@/components/tools/CaloriesBurnedCalculator")),
+  "image-combiner": dynamic(() => import("@/components/tools/ImageCombiner")),
+  "image-flipper": dynamic(() => import("@/components/tools/ImageFlipper")),
+  "sitemap-url-extractor": dynamic(() => import("@/components/tools/SitemapUrlExtractor")),
+  "joke-generator": dynamic(() => import("@/components/tools/JokeGenerator")),
+  "random-quote-generator": dynamic(() => import("@/components/tools/RandomQuoteGenerator")),
+  "guess-the-number": dynamic(() => import("@/components/tools/GuessTheNumber")),
 };
 
 export const TOOL_COMPONENT_SLUGS = Object.keys(toolComponents);
