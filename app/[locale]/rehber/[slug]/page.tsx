@@ -7,6 +7,7 @@ import { getTool } from "@/data/tools";
 import { routing, type Locale } from "@/i18n/routing";
 import { localizedUrl, toolPath } from "@/lib/paths";
 import ToolIcon from "@/components/ToolIcon";
+import JsonLd from "@/components/JsonLd";
 
 const siteUrl = "https://www.freetoolsy.com";
 
@@ -60,6 +61,26 @@ export default async function RehberDetay({
 
   return (
     <main className="mx-auto w-full max-w-2xl flex-1 px-4 py-10 sm:px-6 sm:py-14">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: content.title,
+          description: content.desc,
+          inLanguage: locale,
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": localizedUrl(locale, `/rehber/${guide.slug}`),
+          },
+          author: { "@type": "Organization", name: "FreetoolsY", url: siteUrl },
+          publisher: {
+            "@type": "Organization",
+            name: "FreetoolsY",
+            url: siteUrl,
+            logo: { "@type": "ImageObject", url: `${siteUrl}/icon.svg` },
+          },
+        }}
+      />
       <nav
         aria-label={t("breadcrumbAria")}
         className="flex flex-wrap items-center gap-1.5 text-sm text-muted"

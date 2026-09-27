@@ -13,6 +13,7 @@ import ThemeGuard from "@/components/ThemeGuard";
 import ToastHost from "@/components/ToastHost";
 import PageViewTracker from "@/components/PageViewTracker";
 import CookieBanner from "@/components/CookieBanner";
+import JsonLd from "@/components/JsonLd";
 
 const inter = Inter({
   subsets: ["latin", "latin-ext"],
@@ -108,6 +109,20 @@ export default async function RootLayout({
       <body className={`${inter.variable} flex min-h-screen flex-col antialiased`}>
         <ThemeGuard />
         <NextIntlClientProvider messages={messages}>
+          <JsonLd
+            data={{
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "FreetoolsY",
+              url: siteUrl,
+              logo: `${siteUrl}/icon.svg`,
+              contactPoint: {
+                "@type": "ContactPoint",
+                contactType: "customer support",
+                url: `${siteUrl}/contact`,
+              },
+            }}
+          />
           <PageViewTracker />
           <Header />
           {children}

@@ -53,7 +53,6 @@ export default async function Home({ params }: { params: { locale: string } }) {
   const heroHighlight = t("heroTitleHighlight");
   const titleParts = heroTitle.split(heroHighlight);
   const hasHighlight = titleParts.length === 2;
-  const trustBadges = ["trustBrowser", "trustFree", "trustPrivacy"];
   const categoryNames = (messages as { Categories?: Record<string, string> })
     .Categories;
   const heroWords = ["text", "developer", "security", "calculation", "image", "seo", "fun"]
@@ -73,6 +72,14 @@ export default async function Home({ params }: { params: { locale: string } }) {
             url: "https://www.freetoolsy.com/",
             description: t("jsonldSiteDesc"),
             inLanguage: params.locale === "tr" ? "tr" : "en",
+            potentialAction: {
+              "@type": "SearchAction",
+              target: {
+                "@type": "EntryPoint",
+                urlTemplate: "https://www.freetoolsy.com/?q={search_term_string}",
+              },
+              "query-input": "required name=search_term_string",
+            },
           },
           {
             "@context": "https://schema.org",
@@ -146,26 +153,6 @@ export default async function Home({ params }: { params: { locale: string } }) {
         <div className="relative z-30 mt-8">
           <SearchBox large placeholder={t("searchPlaceholder")} />
         </div>
-
-        <ul className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-border pt-4 font-mono text-[11px] uppercase tracking-[0.15em] text-muted">
-          {trustBadges.map((key) => (
-            <li key={key} className="flex items-center gap-1.5">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                aria-hidden="true"
-                className="h-3 w-3 text-accent"
-              >
-                <path d="M20 6L9 17l-5-5" />
-              </svg>
-              {t(key)}
-            </li>
-          ))}
-        </ul>
           </div>
           <aside className="mt-12 hidden border-l border-border pl-6 lg:mt-2 lg:block">
             <div className="flex items-baseline justify-between gap-3">
@@ -206,6 +193,74 @@ export default async function Home({ params }: { params: { locale: string } }) {
             </div>
           </aside>
         </div>
+      </section>
+
+      <section aria-label={t("valueLabel")} className="border-y border-border bg-surface">
+        <ul className="mx-auto grid w-full max-w-5xl grid-cols-2 gap-px bg-border lg:grid-cols-4">
+          {[
+            {
+              label: t("valueNoSignup.label"),
+              desc: t("valueNoSignup.desc"),
+              icon: (
+                <>
+                  <circle cx="12" cy="7.5" r="4" />
+                  <path d="M4 20c0-4.5 3.6-7 8-7s8 2.5 8 7" />
+                </>
+              ),
+            },
+            {
+              label: t("valueFast.label"),
+              desc: t("valueFast.desc"),
+              icon: (
+                <>
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 2" />
+                </>
+              ),
+            },
+            {
+              label: t("valuePrivate.label"),
+              desc: t("valuePrivate.desc"),
+              icon: (
+                <>
+                  <rect x="5" y="11" width="14" height="10" rx="2" />
+                  <path d="M8 11V7a4 4 0 0 1 8 0v4" />
+                </>
+              ),
+            },
+            {
+              label: t("valueFree.label"),
+              desc: t("valueFree.desc"),
+              icon: <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" />,
+            },
+          ].map((item, index) => (
+            <li
+              key={index}
+              className="flex items-center gap-3 bg-surface p-4 sm:p-5"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+                className="h-6 w-6 shrink-0 text-accent"
+              >
+                {item.icon}
+              </svg>
+              <span className="min-w-0">
+                <span className="block text-sm font-semibold leading-tight text-text">
+                  {item.label}
+                </span>
+                <span className="mt-0.5 block text-xs leading-snug text-muted">
+                  {item.desc}
+                </span>
+              </span>
+            </li>
+          ))}
+        </ul>
       </section>
 
       <PopularStrip />
