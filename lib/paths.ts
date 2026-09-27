@@ -2,16 +2,16 @@ import type { Locale } from "@/i18n/routing";
 
 export const siteUrl = "https://www.freetoolsy.com";
 
-export function toolPath(locale: Locale, slug: string) {
-  return locale === "tr" ? `/araclar/${slug}` : `/tools/${slug}`;
+export function toolPath(_locale: Locale, slug: string) {
+  return `/tools/${slug}`;
 }
 
 export function categoryPath(locale: Locale, id: string) {
   return locale === "tr" ? `/kategoriler/${id}` : `/categories/${id}`;
 }
 
-export function toolUrl(locale: Locale, slug: string) {
-  return locale === "tr" ? `${siteUrl}/tr/araclar/${slug}` : `${siteUrl}/tools/${slug}`;
+export function toolUrl(_locale: Locale, slug: string) {
+  return `${siteUrl}/tools/${slug}`;
 }
 
 export function categoryUrl(locale: Locale, id: string) {

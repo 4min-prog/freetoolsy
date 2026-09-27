@@ -123,6 +123,12 @@ export const toolComponents: Record<string, ComponentType> = {
   "keyword-combiner": dynamic(() => import("@/components/tools/KeywordCombiner")),
   "title-length-checker": dynamic(() => import("@/components/tools/TitleLengthChecker")),
   "magic-8-ball": dynamic(() => import("@/components/tools/Magic8Ball")),
+  "fuel-cost-calculator": dynamic(() => import("@/components/tools/FuelCostCalculator")),
+  "plagiarism-checker": dynamic(() => import("@/components/tools/PlagiarismChecker")),
+  "number-to-words": dynamic(() => import("@/components/tools/NumberToWords")),
+  "image-rotator": dynamic(() => import("@/components/tools/ImageRotator")),
+  "xml-sitemap-generator": dynamic(() => import("@/components/tools/XmlSitemapGenerator")),
+  "email-validator": dynamic(() => import("@/components/tools/EmailValidator")),
 };
 
 export const TOOL_COMPONENT_SLUGS = Object.keys(toolComponents);

@@ -120,6 +120,12 @@ export const TOOL_COMP_NAMESPACE: Record<string, string> = {
   "keyword-combiner": "keywordCombiner",
   "title-length-checker": "titleLengthChecker",
   "magic-8-ball": "magic8Ball",
+  "fuel-cost-calculator": "fuelCostCalculator",
+  "plagiarism-checker": "plagiarismChecker",
+  "number-to-words": "numberToWords",
+  "image-rotator": "imageRotator",
+  "xml-sitemap-generator": "xmlSitemapGenerator",
+  "email-validator": "emailValidator",
 };
 
 export function toolCompNamespace(slug: string): string | undefined {

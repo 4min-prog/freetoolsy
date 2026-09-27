@@ -997,6 +997,48 @@
       "title": "Magic 8 Ball - Ask a Question and Get an Answer Online",
       "pageDesc": "Shake the classic magic 8 ball for a random answer to yes or no questions. Free, fun and works on any device.",
       "intro": "Think of a question, tap Shake, and read the ball's classic answer."
+    },
+    "fuel-cost-calculator": {
+      "name": "Fuel Cost Calculator",
+      "desc": "Calculate the total cost of a trip from distance, average consumption and fuel price.",
+      "title": "Fuel Cost Calculator - Calculate Trip Cost by Distance and Consumption",
+      "pageDesc": "Enter distance, average fuel consumption and fuel price per liter to get the total cost of your trip. The calculation runs in your browser — no signup, no data upload.",
+      "intro": "Enter distance, consumption and fuel price to see the total cost instantly."
+    },
+    "plagiarism-checker": {
+      "name": "Plagiarism Checker",
+      "desc": "Compare two texts and measure the similarity between them as a percentage.",
+      "title": "Plagiarism Checker - Compare Two Texts for Similarity",
+      "pageDesc": "Paste two texts and get an instant similarity score. The comparison happens entirely in your browser, so your content never leaves your device.",
+      "intro": "Paste two texts and the similarity percentage updates as you type."
+    },
+    "number-to-words": {
+      "name": "Number to Words",
+      "desc": "Convert a number into English and Turkish words instantly.",
+      "title": "Number to Words - Number to Text Converter (English & Turkish)",
+      "pageDesc": "Type a number and see it written out in both English and Turkish. Handy for invoices, checks and spelling out amounts. It runs in your browser, even offline.",
+      "intro": "Type a number to see it written out in English and Turkish."
+    },
+    "image-rotator": {
+      "name": "Image Rotator & Flipper",
+      "desc": "Rotate an image by 90 or 180 degrees, or flip it horizontally and vertically.",
+      "title": "Image Rotator and Flipper - Rotate or Flip Photos Online",
+      "pageDesc": "Upload an image, rotate it by 90 or 180 degrees or flip it horizontally and vertically, preview the result and download the edited file. Everything happens in your browser.",
+      "intro": "Upload an image, apply a rotation or flip and download the result."
+    },
+    "xml-sitemap-generator": {
+      "name": "XML Sitemap Generator",
+      "desc": "Generate a clean sitemap.xml from a list of URLs for Google Search Console.",
+      "title": "XML Sitemap Generator - Create a Sitemap for SEO",
+      "pageDesc": "Paste your URLs, choose whether to include lastmod, and generate a valid sitemap.xml you can upload to your server or submit to Google Search Console. Works entirely in your browser.",
+      "intro": "Enter one URL per line, adjust the options and generate your sitemap.xml."
+    },
+    "email-validator": {
+      "name": "Email Validator",
+      "desc": "Check email address format and top-level domains in bulk, in your browser.",
+      "title": "Email Validator - Check Address Format Online",
+      "pageDesc": "Paste one or many email addresses and check their format, top-level domain and role-based prefixes in one pass. The validation is fully client-side and private.",
+      "intro": "Paste email addresses and check them all at once."
     }
   },
   "ToolContent": {
@@ -4419,6 +4461,66 @@
         "h": "Why is it so popular?",
         "p": "It solves trivial decisions fast and brings a little fun to everyday questions. The design mirrors the classic toy, so it feels instantly familiar."
       }
+    ],
+    "fuel-cost-calculator": [
+      {
+        "h": "How is fuel cost calculated?",
+        "p": "Fuel cost = distance ÷ 100 × average consumption × fuel price. Example: 300 km with 7 L/100 km and a fuel price of 45 results in (300 ÷ 100) × 7 × 45 = 945."
+      },
+      {
+        "h": "Which fuel price should I use?",
+        "p": "Use the average price per liter from your region or station. For long trips, enter the round-trip distance so the result covers the whole route."
+      }
+    ],
+    "plagiarism-checker": [
+      {
+        "h": "How does the similarity score work?",
+        "p": "The tool compares two texts using the Dice coefficient on character bigrams. Texts that share many identical two-character sequences score higher, which is a strong sign of copied content."
+      },
+      {
+        "h": "Is my text sent anywhere?",
+        "p": "No. The comparison runs fully in your browser, so the text you paste never leaves your device."
+      }
+    ],
+    "number-to-words": [
+      {
+        "h": "How large a number can I convert?",
+        "p": "The converter supports whole numbers up to 999 trillion, which covers practically every invoice and check amount."
+      },
+      {
+        "h": "Does it handle cents and decimals?",
+        "p": "The tool accepts whole numbers. For amounts with decimals, convert the integer part first and add the fraction manually."
+      }
+    ],
+    "image-rotator": [
+      {
+        "h": "Is the image uploaded to a server?",
+        "p": "No. The image is loaded and edited with the HTML Canvas API in your browser, and the download is generated locally. Nothing is uploaded."
+      },
+      {
+        "h": "In which format can I download?",
+        "p": "The rotated or flipped result is exported as PNG. For photos, PNG keeps full quality."
+      }
+    ],
+    "xml-sitemap-generator": [
+      {
+        "h": "Where do I put the generated sitemap?",
+        "p": "Save the output as sitemap.xml in the root of your site (for example https://www.freetoolsy.com/sitemap.xml), then submit the URL via Google Search Console."
+      },
+      {
+        "h": "How many URLs can a sitemap list?",
+        "p": "A single sitemap can contain up to 50,000 URLs and stay under 50 MB. If you have more, split it into several sitemap files."
+      }
+    ],
+    "email-validator": [
+      {
+        "h": "What does this validator check?",
+        "p": "It checks the format (name@domain.tld), that the top-level domain is a real and common one, and whether the local part looks role-based such as info@ or admin@."
+      },
+      {
+        "h": "Can it prove an email exists?",
+        "p": "No. A server-side check would be needed to confirm a mailbox exists, and this tool stays fully private and local."
+      }
     ]
   },
   "Rehber": {
@@ -6343,6 +6445,61 @@
         "You may rely on it"
       ],
       "tip": "The ball picks one answer at random from the classic set. Use it for fun and quick decisions only."
+    },
+    "fuelCostCalculator": {
+      "distance": "Distance (km)",
+      "consumption": "Consumption (L/100 km)",
+      "fuelPrice": "Fuel price",
+      "totalCost": "Total cost",
+      "totalLiters": "Fuel needed (L)",
+      "costPerKm": "Cost per km",
+      "waiting": "Enter distance, consumption and fuel price to calculate the trip cost.",
+      "tip": "Cost = distance ÷ 100 × consumption × fuel price. Fuel prices vary by station and region, so adjust the price to your local rate."
+    },
+    "plagiarismChecker": {
+      "text1": "Text 1",
+      "text2": "Text 2",
+      "similarity": "Similarity",
+      "waiting": "Paste text into both fields to compare.",
+      "veryHigh": "Very high similarity — text may be copied.",
+      "high": "High similarity — large overlapping passages.",
+      "medium": "Moderate similarity — some shared passages.",
+      "low": "Low similarity — mostly different text.",
+      "tip": "The score uses the Dice coefficient on character bigrams to spot copied passages. It is a helpful indicator, not a legal verdict."
+    },
+    "numberToWords": {
+      "number": "Number",
+      "turkish": "Turkish",
+      "english": "English",
+      "invalid": "Enter a whole number between 0 and 999 trillion.",
+      "tip": "Supports whole numbers up to 999 trillion. For fractional amounts, convert the integer part first."
+    },
+    "imageRotator": {
+      "upload": "Upload an image",
+      "rotateLeft": "Rotate 90° left",
+      "rotate180": "Rotate 180°",
+      "rotateRight": "Rotate 90° right",
+      "flipH": "Flip horizontal",
+      "flipV": "Flip vertical",
+      "reset": "Reset",
+      "download": "Download image",
+      "tip": "Images are edited locally in your browser with Canvas; the original file is never uploaded to a server."
+    },
+    "xmlSitemapGenerator": {
+      "urls": "URLs (one per line)",
+      "lastmod": "Include lastmod",
+      "generate": "Generate sitemap",
+      "output": "sitemap.xml",
+      "copy": "Copy XML",
+      "copied": "Copied!",
+      "tip": "Sitemaps help search engines discover and rank your pages faster. Keep URLs under 50,000 and the file under 50 MB, and submit it in Google Search Console."
+    },
+    "emailValidator": {
+      "emails": "Email addresses (separate by comma or new line)",
+      "valid": "Valid",
+      "invalid": "Invalid",
+      "roleNote": "Role-based address",
+      "tip": "This checks format and top-level domain only. It cannot confirm that an address exists in a mailbox or that mail is received."
     }
   }
 }

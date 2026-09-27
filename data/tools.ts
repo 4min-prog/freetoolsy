@@ -936,6 +936,54 @@ export const tools: Tool[] = [
       "Soru sorun, topu sallayın; cevabınızı alın. Klasik sihirli 8 top deneyimi.",
     addedAt: "2026-09-26",
   },
+  {
+    slug: "fuel-cost-calculator",
+    name: "Yakıt Maliyeti Hesaplayıcı",
+    category: "calculation",
+    description:
+      "Mesafe, ortalama tüketim ve yakıt fiyatına göre toplam yol maliyetini anında hesaplar.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "plagiarism-checker",
+    name: "İntihal Kontrolü",
+    category: "seo",
+    description:
+      "İki metni karşılaştırıp benzerlik oranını yüzde olarak ölçer; tamamı tarayıcınızda çalışır.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "number-to-words",
+    name: "Sayıyı Yazıya Çevirme",
+    category: "text",
+    description:
+      "Bir sayıyı anında Türkçe ve İngilizce yazıyla yazar; fatura ve çeklerde tutar okunuşu için idealdir.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "image-rotator",
+    name: "Resim Döndürücü & Çevirici",
+    category: "image",
+    description:
+      "Görseli 90 veya 180 derece döndürür; yatay ve dikey çevirir; PNG olarak indirin.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "xml-sitemap-generator",
+    name: "XML Sitemap Üretici",
+    category: "seo",
+    description:
+      "URL listesinden Google Search Console'a hazır sitemap.xml içeriği oluşturur.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "email-validator",
+    name: "E-posta Doğrulayıcı",
+    category: "text",
+    description:
+      "E-posta adreslerinin formatını ve üst düzey alan adlarını toplu olarak doğrular.",
+    addedAt: "2026-09-27",
+  },
 ];
 
 export function getTool(slug: string): Tool | undefined {

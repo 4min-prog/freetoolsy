@@ -22,7 +22,6 @@ const urlList = [
     guides.map((guide) => url(locale as Locale, `/rehber/${guide.slug}`))
   ),
   ...tools.map((tool) => url("en", `/tools/${tool.slug}`)),
-  ...tools.map((tool) => url("tr", `/araclar/${tool.slug}`)),
   ...categories.map((category) => url("en", `/categories/${category.id}`)),
   ...categories.map((category) => url("tr", `/kategoriler/${category.id}`)),
 ];

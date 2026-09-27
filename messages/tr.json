@@ -997,6 +997,48 @@
       "title": "Sihirli 8 Top - Soru Sor ve Cevap Al",
       "pageDesc": "Evet-hayır sorularına rastgele cevap için klasik sihirli 8 topu sallayın. Ücretsiz, eğlenceli ve her cihazda çalışır.",
       "intro": "Bir soru düşünün, Salla düğmesine dokunun ve topun klasik cevabını okuyun."
+    },
+    "fuel-cost-calculator": {
+      "name": "Yakıt Maliyeti Hesaplayıcı",
+      "desc": "Mesafe, ortalama tüketim ve yakıt fiyatına göre toplam yol maliyetini hesaplar.",
+      "title": "Yakıt Maliyeti Hesaplayıcı - Mesafeye Göre Yol Masrafı Hesaplama",
+      "pageDesc": "Mesafe, ortalama yakıt tüketimi ve litre fiyatı girerek yolculuğunuzun toplam yakıt maliyetini anında hesaplayın. Hesaplama tarayıcınızda yapılır — kayıt gerekmez, veri yüklenmez.",
+      "intro": "Mesafe, tüketim ve yakıt fiyatını girin; toplam maliyeti anında görün."
+    },
+    "plagiarism-checker": {
+      "name": "İntihal Kontrolü",
+      "desc": "İki metni karşılaştırır ve aralarındaki benzerlik oranını yüzde olarak ölçer.",
+      "title": "İntihal Kontrolü - İki Metnin Benzerlik Oranını Ölçme",
+      "pageDesc": "İki metni yapıştırın ve anında benzerlik skoru alın. Karşılaştırma tamamen tarayıcınızda yapılır; içeriğiniz cihazınızdan çıkmaz.",
+      "intro": "İki metni yapıştırın; benzerlik yüzdesi yazdıkça güncellenir."
+    },
+    "number-to-words": {
+      "name": "Sayıyı Yazıya Çevirme",
+      "desc": "Bir sayıyı anında İngilizce ve Türkçe yazıya çevirir.",
+      "title": "Sayıyı Yazıya Çevirici - Sayı Okunuşu (Türkçe ve İngilizce)",
+      "pageDesc": "Bir sayı yazın; hem Türkçe hem İngilizce okunuşunu anında görün. Faturalarda, çeklerde ve tutar yazarken işinize yarar. Tarayıcınızda, internet bağlantısı olmadan çalışır.",
+      "intro": "Bir sayı yazın; İngilizce ve Türkçe okunuşunu anında görün."
+    },
+    "image-rotator": {
+      "name": "Resim Döndürücü & Çevirici",
+      "desc": "Görseli 90 veya 180 derece döndürür; yatay ve dikey çevirir.",
+      "title": "Resim Döndürücü - Online Foto Döndürme ve Çevirme",
+      "pageDesc": "Bir görsel yükleyin, 90 veya 180 derece döndürün ya da yatay/dikey çevirin; önizleyip düzenlenmiş dosyayı indirin. Her şey tarayıcınızda gerçekleşir.",
+      "intro": "Görsel yükleyin, döndürme veya çevirme uygulayın ve sonucu indirin."
+    },
+    "xml-sitemap-generator": {
+      "name": "XML Sitemap Üretici",
+      "desc": "URL listesinden Google Search Console için hazır, geçerli bir sitemap.xml oluşturur.",
+      "title": "XML Sitemap Üretici - SEO İçin Sitemap Oluşturma",
+      "pageDesc": "URL'lerinizi yapıştırın, lastmod eklemek isteyip istemediğinizi seçin ve sunucunuza yükleyebileceğiniz ya da Google Search Console'a gönderebileceğiniz geçerli bir sitemap.xml üretin. Tamamen tarayıcınızda çalışır.",
+      "intro": "Her satıra bir URL girin, seçenekleri ayarlayın ve sitemap.xml'inizi oluşturun."
+    },
+    "email-validator": {
+      "name": "E-posta Doğrulayıcı",
+      "desc": "E-posta adreslerinin formatını ve üst düzey alan adlarını toplu olarak, tarayıcınızda kontrol eder.",
+      "title": "E-posta Doğrulayıcı - Adres Formatı Kontrolü",
+      "pageDesc": "Bir ya da birden çok e-posta adresini yapıştırın; formatını, üst düzey alan adını ve rol bazlı öneklerini tek geçişte denetleyin. Doğrulama tamamen yerel ve gizlidir.",
+      "intro": "E-posta adreslerini yapıştırın ve hepsini tek seferde kontrol edin."
     }
   },
   "ToolContent": {
@@ -4419,6 +4461,66 @@
         "h": "Neden bu kadar popüler?",
         "p": "Önemsiz kararları hızla çözer ve günlük sorulara biraz eğlence katar. Tasarım klasik oyuncağı yansıttığı için anında tanıdık gelir."
       }
+    ],
+    "fuel-cost-calculator": [
+      {
+        "h": "Yakıt maliyeti nasıl hesaplanır?",
+        "p": "Yakıt maliyeti = mesafe ÷ 100 × ortalama tüketim × yakıt fiyatı. Örnek: 300 km, 7 L/100 km tüketim ve 45 liralık yakıt fiyatıyla (300 ÷ 100) × 7 × 45 = 945 lira."
+      },
+      {
+        "h": "Hangi yakıt fiyatını kullanmalıyım?",
+        "p": "Bölgenizdeki veya istasyonunuzdaki ortalama litre fiyatını kullanın. Uzun yolculuklarda gidiş-dönüş mesafesini girin ki sonuç tüm rotayı kapsasın."
+      }
+    ],
+    "plagiarism-checker": [
+      {
+        "h": "Benzerlik skoru nasıl çalışır?",
+        "p": "Araç, iki metni karakter ikili grupları üzerinde Dice katsayısıyla karşılaştırır. Çok sayıda aynı iki karakterlik diziyi paylaşan metinler daha yüksek puan alır; bu, kopya içeriğin güçlü bir işaretidir."
+      },
+      {
+        "h": "Metnim başka bir yere gönderiliyor mu?",
+        "p": "Hayır. Karşılaştırma tamamen tarayıcınızda yapılır; yapıştırdığınız metin cihazınızdan asla çıkmaz."
+      }
+    ],
+    "number-to-words": [
+      {
+        "h": "Ne kadar büyük bir sayı çevirebilirim?",
+        "p": "Çevirici 999 trilyona kadar tam sayıları destekler; pratikte tüm fatura ve çek tutarlarını kapsar."
+      },
+      {
+        "h": "Kuruş ve ondalıkları işler mi?",
+        "p": "Araç tam sayıları kabul eder. Ondalıklı tutarlarda önce tam kısmı çevirin, kesiri elle ekleyin."
+      }
+    ],
+    "image-rotator": [
+      {
+        "h": "Görsel bir sunucuya yükleniyor mu?",
+        "p": "Hayır. Görsel, HTML Canvas API ile tarayıcınızda yüklenir ve düzenlenir; indirme yerel olarak üretilir. Hiçbir şey yüklenmez."
+      },
+      {
+        "h": "Hangi formatta indirebilirim?",
+        "p": "Döndürülmüş veya çevrilmiş sonuç PNG olarak dışa aktarılır. Fotoğraflar için PNG kaliteyi korur."
+      }
+    ],
+    "xml-sitemap-generator": [
+      {
+        "h": "Üretilen sitemap'i nereye koymalıyım?",
+        "p": "Çıktıyı sitemap.xml adıyla sitenizin köküne kaydedin (örneğin https://www.freetoolsy.com/sitemap.xml), ardından URL'yi Google Search Console'dan gönderin."
+      },
+      {
+        "h": "Bir sitemap en fazla kaç URL içerir?",
+        "p": "Tek bir sitemap en fazla 50.000 URL içerebilir ve 50 MB altında kalmalıdır. Daha fazlası için sitemap'i birkaç dosyaya bölün."
+      }
+    ],
+    "email-validator": [
+      {
+        "h": "Bu doğrulayıcı neyi kontrol eder?",
+        "p": "Formatı (ad@alanadi.tld), üst düzey alan adının gerçek ve yaygın olup olmadığını ve yerel kısmın info@, admin@ gibi rol bazlı olup olmadığını denetler."
+      },
+      {
+        "h": "Bir e-postanın var olduğunu kanıtlayabilir mi?",
+        "p": "Hayır. Mail kutusunun var olduğunu doğrulamak için sunucu tarafı kontrol gerekir; bu araç tamamen gizli ve yereldir."
+      }
     ]
   },
   "Rehber": {
@@ -6343,6 +6445,61 @@
         "Güvenebilirsin"
       ],
       "tip": "Top, klasik setten rastgele bir cevap seçer. Sadece eğlence ve hızlı kararlar için kullanın."
+    },
+    "fuelCostCalculator": {
+      "distance": "Mesafe (km)",
+      "consumption": "Tüketim (L/100 km)",
+      "fuelPrice": "Yakıt fiyatı",
+      "totalCost": "Toplam maliyet",
+      "totalLiters": "Gerekli yakıt (L)",
+      "costPerKm": "Km başına maliyet",
+      "waiting": "Yol maliyetini hesaplamak için mesafe, tüketim ve yakıt fiyatını girin.",
+      "tip": "Maliyet = mesafe ÷ 100 × tüketim × yakıt fiyatı. Yakıt fiyatı istasyona ve bölgeye göre değişir; fiyatı yerel orana göre ayarlayın."
+    },
+    "plagiarismChecker": {
+      "text1": "Metin 1",
+      "text2": "Metin 2",
+      "similarity": "Benzerlik",
+      "waiting": "Karşılaştırmak için iki alana da metin yapıştırın.",
+      "veryHigh": "Çok yüksek benzerlik — metin kopyalanmış olabilir.",
+      "high": "Yüksek benzerlik — büyük ölçüde ortak bölümler var.",
+      "medium": "Orta düzey benzerlik — bazı ortak bölümler var.",
+      "low": "Düşük benzerlik — çoğunlukla farklı metin.",
+      "tip": "Puan, karakter ikili grupları üzerinde Dice katsayısını kullanarak kopya bölümleri tespit eder. Yol gösterici bir ölçüttür, yasal bir sonuç değildir."
+    },
+    "numberToWords": {
+      "number": "Sayı",
+      "turkish": "Türkçe",
+      "english": "İngilizce",
+      "invalid": "0 ile 999 trilyon arasında tam bir sayı girin.",
+      "tip": "999 trilyona kadar tam sayıları destekler. Ondalıklı tutarlarda önce tam kısmı çevirin."
+    },
+    "imageRotator": {
+      "upload": "Görsel yükle",
+      "rotateLeft": "90° sola döndür",
+      "rotate180": "180° döndür",
+      "rotateRight": "90° sağa döndür",
+      "flipH": "Yatay çevir",
+      "flipV": "Dikey çevir",
+      "reset": "Sıfırla",
+      "download": "Görseli indir",
+      "tip": "Görseller Canvas ile tamamen tarayıcınızda düzenlenir; dosya hiçbir sunucuya yüklenmez."
+    },
+    "xmlSitemapGenerator": {
+      "urls": "URL'ler (her satıra bir)",
+      "lastmod": "lastmod ekle",
+      "generate": "Sitemap oluştur",
+      "output": "sitemap.xml",
+      "copy": "XML kopyala",
+      "copied": "Kopyalandı!",
+      "tip": "Sitemap, arama motorlarının sayfalarınızı daha hızlı bulmasını sağlar. URL sayısı 50.000, dosya boyutu 50 MB altında kalsın; Google Search Console'a gönderin."
+    },
+    "emailValidator": {
+      "emails": "E-posta adresleri (virgül veya satır ile ayırın)",
+      "valid": "Geçerli",
+      "invalid": "Geçersiz",
+      "roleNote": "Rol bazlı adres",
+      "tip": "Bu araç yalnızca format ve üst düzey alan adını kontrol eder. Bir adresin gerçekten var olduğunu veya mail aldığını doğrulayamaz."
     }
   }
 }
