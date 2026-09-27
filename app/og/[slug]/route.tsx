@@ -5,6 +5,7 @@ import { categories, getTool, tools } from "@/data/tools";
 import { categoryTheme } from "@/components/categoryTheme";
 import { TOOL_ICONS } from "@/components/ToolIcon";
 import { CATEGORY_ICON_PATHS } from "@/components/CategoryIcon";
+import { LogoBars } from "../_logo";
 import en from "@/messages/en.json";
 
 export const runtime = "edge";
@@ -14,7 +15,7 @@ export const revalidate = 86400;
 export function generateStaticParams() {
   const toolSlugs = tools.map((tool) => ({ slug: tool.slug }));
   const categorySlugs = categories.map((category) => ({ slug: category.id }));
-  return [...toolSlugs, ...categorySlugs];
+  return [{ slug: "home" }, ...toolSlugs, ...categorySlugs];
 }
 
 function hexA(hex: string, alpha: number) {
@@ -79,6 +80,179 @@ export async function GET(
   let hex = categoryTheme("text").hex;
   let icon: ReactNode | null = null;
   let watermark: ReactNode | null = null;
+
+  if (slug === "home") {
+    return new ImageResponse(
+      (
+        <div
+          style={{
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            flexDirection: "column",
+            position: "relative",
+            backgroundColor: "#ffffff",
+            overflow: "hidden",
+          }}
+        >
+          <div
+            style={{
+              position: "absolute",
+              top: -160,
+              right: -140,
+              width: 520,
+              height: 520,
+              borderRadius: 260,
+              backgroundColor: hexA("#2563eb", 0.08),
+              display: "flex",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              left: -120,
+              bottom: -180,
+              width: 380,
+              height: 380,
+              borderRadius: 190,
+              backgroundColor: hexA("#2563eb", 0.06),
+              display: "flex",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              right: 36,
+              bottom: 16,
+              width: 380,
+              height: 380,
+              display: "flex",
+              opacity: 0.06,
+            }}
+          >
+            <LogoBars size={380} />
+          </div>
+
+          <div
+            style={{
+              position: "absolute",
+              top: 56,
+              left: 72,
+              display: "flex",
+              alignItems: "center",
+              gap: 16,
+            }}
+          >
+            <LogoBars size={36} />
+            <div style={{ fontSize: 34, fontWeight: 800, color: "#0f172a" }}>
+              FreetoolsY
+            </div>
+          </div>
+
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              display: "flex",
+              alignItems: "center",
+              paddingLeft: 72,
+              paddingRight: 72,
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                maxWidth: 760,
+              }}
+            >
+              <div
+                style={{
+                  fontSize: 26,
+                  fontWeight: 700,
+                  color: "#2563eb",
+                  letterSpacing: 1.5,
+                }}
+              >
+                FREE ONLINE TOOLS
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  marginTop: 14,
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: 64,
+                    fontWeight: 800,
+                    lineHeight: 1.05,
+                    color: "#0f172a",
+                  }}
+                >
+                  Everyday tools,
+                </div>
+                <div
+                  style={{
+                    fontSize: 64,
+                    fontWeight: 800,
+                    lineHeight: 1.05,
+                    color: "#0f172a",
+                  }}
+                >
+                  zero friction.
+                </div>
+              </div>
+              <div
+                style={{
+                  fontSize: 27,
+                  lineHeight: 1.4,
+                  color: "#475569",
+                  marginTop: 20,
+                }}
+              >
+                Text, converters, calculators, developer, image and SEO tools.
+                Fast, private, in your browser — no signup, no limits.
+              </div>
+            </div>
+          </div>
+
+          <div
+            style={{
+              position: "absolute",
+              left: 72,
+              bottom: 44,
+              display: "flex",
+              alignItems: "center",
+              gap: 12,
+            }}
+          >
+            <div style={{ fontSize: 24, color: "#94a3b8" }}>freetoolsy.com</div>
+            <div
+              style={{
+                width: 5,
+                height: 5,
+                borderRadius: 3,
+                backgroundColor: "#cbd5e1",
+                display: "flex",
+              }}
+            />
+            <div style={{ fontSize: 24, color: "#94a3b8" }}>
+              100+ tools · no signup
+            </div>
+          </div>
+        </div>
+      ),
+      {
+        width: 1200,
+        height: 630,
+      }
+    );
+  }
 
   const tool = getTool(slug);
   if (tool) {
@@ -163,13 +337,13 @@ export async function GET(
         >
           <div
             style={{
-              width: 26,
-              height: 26,
-              borderRadius: 8,
-              backgroundColor: hex,
+              width: 36,
+              height: 36,
               display: "flex",
             }}
-          />
+          >
+            <LogoBars size={36} />
+          </div>
           <div style={{ fontSize: 30, fontWeight: 700, color: "#0f172a" }}>
             FreetoolsY
           </div>

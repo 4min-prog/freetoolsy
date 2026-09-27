@@ -34,6 +34,16 @@ export async function generateMetadata({
         tr: "https://www.freetoolsy.com/tr",
       },
     },
+    openGraph: {
+      images: [
+        {
+          url: "https://www.freetoolsy.com/og/home",
+          width: 1200,
+          height: 630,
+          alt: "FreetoolsY — Free Tools for Everyday Tasks",
+        },
+      ],
+    },
   };
 }
 
