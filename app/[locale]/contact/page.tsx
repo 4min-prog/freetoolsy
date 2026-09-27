@@ -28,9 +28,16 @@ export async function generateMetadata({
           tr: "https://www.freetoolsy.com/tr/contact",
         },
       },
-      openGraph: {
-        url: params.locale === "en" ? "/contact" : `/${params.locale}/contact`,
-      },
+openGraph: {
+          url: params.locale === "en" ? "/contact" : `/${params.locale}/contact`,
+          images: [
+            {
+              url: "https://www.freetoolsy.com/og/home",
+              width: 1200,
+              height: 630,
+            },
+          ],
+        },
     };
   }
 

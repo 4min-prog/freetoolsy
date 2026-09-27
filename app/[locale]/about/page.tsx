@@ -20,9 +20,16 @@ export async function generateMetadata({
           tr: "https://www.freetoolsy.com/tr/about",
         },
       },
-      openGraph: {
-        url: params.locale === "en" ? "/about" : `/${params.locale}/about`,
-      },
+openGraph: {
+          url: params.locale === "en" ? "/about" : `/${params.locale}/about`,
+          images: [
+            {
+              url: "https://www.freetoolsy.com/og/home",
+              width: 1200,
+              height: 630,
+            },
+          ],
+        },
     };
   }
 

@@ -35,6 +35,10 @@ export async function generateMetadata({
       },
     },
     openGraph: {
+      type: "website",
+      url: "https://www.freetoolsy.com/",
+      siteName: "FreetoolsY",
+      locale: params.locale === "tr" ? "tr_TR" : "en_US",
       images: [
         {
           url: "https://www.freetoolsy.com/og/home",
@@ -43,6 +47,12 @@ export async function generateMetadata({
           alt: "FreetoolsY — Free Tools for Everyday Tasks",
         },
       ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+      images: ["https://www.freetoolsy.com/og/home"],
     },
   };
 }

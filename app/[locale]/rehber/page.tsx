@@ -28,9 +28,16 @@ export async function generateMetadata({
           tr: `${siteUrl}/tr/rehber`,
         },
       },
-      openGraph: {
-        url: locale === "en" ? "/rehber" : `/${locale}/rehber`,
-      },
+openGraph: {
+          url: locale === "en" ? "/rehber" : `/${locale}/rehber`,
+          images: [
+            {
+              url: "https://www.freetoolsy.com/og/home",
+              width: 1200,
+              height: 630,
+            },
+          ],
+        },
     };
   }
 
