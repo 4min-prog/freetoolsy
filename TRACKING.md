@@ -3,32 +3,44 @@
 This file tracks where the project stands. Whenever a working session ends, update the **Status** section at the top.
 
 ## Status
-**Last session:** SEO güçlendirme + canlı kur + AdSense tamamlandı (Sep 25, 2026)
+**Güncelleme (Sep 27, 2026):** Tanıtım/bilinirlik planı başladı. Araç ekleme bitti (kullanıcı kararı) — bundan sonra hedef tanınma. İçerik leverninde otonom işler (rehber, iç link) asistan tarafı; hesap gerektirenler (GSC/Bing/sosyal/AdSense env) kullanıcıya ait checklist aşağıda.
 
 Çalışma şubesi **`main` = Vercel production** (hero-iyilestirme main'e merge edildi). Push hep `origin main`'e.
 
-### Bu turda bitenler (hepsi yayında doğrulandı)
-- **Favicon v2** (`6473b67`): `app/icon.svg`, `app/favicon.ico` (16/32/48 şeffaf), `public/apple-touch-icon.png` — ortalanmış çubuklar, şeffaf zemin. `app/apple-touch-icon.png` silindi (Next tarafından servis edilmiyordu).
-- **Canlı kur API'si** (`be26e70`): `app/api/rates/route.ts` (open.er-api.com/v6/latest/USD, anahtarsız, 1 saat modül cache, 8s timeout, FALLBACK_RATES). `CurrencyConverter` artık TRY→EUR vb. gerçek anlık kuru gösteriyor (live:true, TRY/EUR ≈ 55.65). middleware `/api`'yi hariç tutuyor — güvenli.
-- **Rehber kitaplığı 18** (`20275c3`): 8 yeni rehber eklendi. `npm run sitemap` → `public/sitemap.xml` **118 URL** (88 araç + 7 kategori + 18 rehber + ...). Tool/guide ekleyince sitemap YENİDEN ÜRETİLMELİ.
-- **ToolContent 88/88** (`2b70744` + `9d47019`): 60 araç 5 blok, 28 araç 4 blok, 3 bloklu araç kalmadı. Hepsi en+tr.
-- **jwt-generator bug fix** (`eadfbec`): ToolContent'te 71 yamalı blok vardı (stopwatch/salary kalıntıları karışmıştı) → 5 gerçek JWT bloğu. Yabancı içerik taraması yapıldı, başka kontaminasyon yok.
-- **AdSense** (`7499754`): `app/[locale]/layout.tsx` `<head>`'inde sabit script `ca-pub-8880626756482815` (async + crossorigin). Projede `ca-pub-XXXXXXXXXX` placeholder YOK (grep sıfır sonuç). `AdSlot` üniteleri hâlâ env-gated: `NEXT_PUBLIC_ADS_ENABLED=true` + `NEXT_PUBLIC_ADS_SLOT_TOP`/`BOTTOM` Vercel'e girilmeden reklam render olmaz.
-- hreflang + canonical her sayfada doğrulandı (canlı curl).
+### Mevcut durum (doğrulanmış)
+- **160 araç** — veri `data/tools.ts`; kayıt `components/tools/*.tsx` + `toolComponents.ts` + `toolCompNamespaces.ts` + `ToolIcon.tsx`. `npm run check:tools` tutarlılık kontrolü (`npm run build` bunu otomatik çalıştırır).
+- **24 rehber** — `data/guides.ts`. `relatedTools` ile araç ↔ rehber çift yönlü iç link otomatik; sitemap'e otomatik dahil.
+- **URL yapısı:** EN `/tools/[slug]`, TR `/tr/tools/[slug]`; kategori EN `/categories/[id]`, TR `/tr/kategoriler/[id]`; rehber EN `/rehber/[slug]`, TR `/tr/rehber/[slug]`. `lib/paths.ts` tek kaynak — elle string kurma. Route'lar `app/[locale]/tools/[slug]` ve `app/[locale]/rehber/[slug]`. (`araclar` yok — eski TR path kaldırıldı.)
+- **Sitemap:** build-time `app/sitemap.ts` (otomatik, `revalidate = 86400`). `public/sitemap.xml` YOK — oraya yazma. Güncel sayı `/sitemap.xml`'den okunur; rehber ekleyince site otomatik yeniden üretir.
+- **SEO:** JSON-LD (WebSite, SoftwareApplication, FAQPage, BreadcrumbList), hreflang+canonical her sayfada, AdSense sabit script `ca-pub-8880626756482815` (slotlar env-gated), GA `G-6J6JB9SHKZ` + GoatCounter body lazyOnload, favicon v2, canlı kur API'si (`app/api/rates/route.ts`).
+- **Sayı politikası:** `displayToolCount` her yerde **"100+"** döndürür (hero/OG "100+ tools · no signup"). Yalnızca ToolExplorer "All tools" sekmesi gerçek sayıyı gösterir (`tools.length` = 160).
+- **Footer:** e-posta/abone okuru **eklenmedi** (kullanıcı kararı — kapalı konu).
 
-### Diğer terminal (tasarım) için kritik kurallar
-- **Yazım/encode:** Türkçe içerik SADECE Write/Edit/node (UTF-8) ile. PowerShell ile `�?` bozulur — mojibake alarmı display sorunu, dosyalar temiz.
-- **Build:** önce dev node'unu öldür (3000/4100), `.next`'i sil, `npm run build`, sonra `npx tsc --noEmit`. Kurulan build'de `/_document PageNotFoundError` dev-race'i olabilir — gerçek hata değil, tekrar build.
-- **URL yapısı:** EN `/tools/[slug]`, TR `/tr/araclar/[slug]`; kategori EN `/categories/[id]`, TR `/tr/kategoriler/[id]`. `lib/paths.ts` tek kaynak — elle string kurma.
+### Kritik kurallar
+- **Yazım/encode:** Türkçe içerik SADECE Write/Edit/node (UTF-8). PowerShell ile yazma — bozulur.
+- **Build/verify:** önce node'ları öldür (3000/3100), stale `.next`'i sil (arızalı build kalıntısı "Cannot find module for page: /_document" hatası yapar), `npm run build`, sonra `npx tsc --noEmit`. Yayın öncesi: `npx next start -p 3100` + URL 200 + OG PNG (ham buffer magic `89504e47` ile, dize kontrolü false verir) + sitemap sayısı. Push sonrası `npm run indexnow` (sitemap listesi; son: 380 URL → 200).
+- **ES5 target tuzakları:** `\u`/`\p{}` regex yok (TS1501), `matchAll(...)` spread yok, BigInt literal yok, `key.buffer as ArrayBuffer` cast gerekir. ICU güvenliği: message string'lerinde `<tag>` asla (UNCLOSED_TAG).
 - **Kod yorumu yasak** (proje kuralı). `freetoolsy_logo_v3.svg` untracked, dokunma.
-- **Dokunulacak dosyalar (commit çakışması):** `messages/en.json`, `messages/tr.json` (en/tr blok sayıları SENKRON olmalı), `data/tools.ts`, `data/guides.ts`, `app/api/rates/`, `scripts/generate-sitemap.mts`, `app/[locale]/layout.tsx`.
-- **Body scripts:** GA `G-6J6JB9SHKZ` + GoatCounter `freetoolsy.goatcounter.com` zaten body'de lazyOnload.
-- İç linkleme zaten güçlü (similar/popular/guideLinks/breadcrumb). Sayfa HTML 318KB → 134KB yapıldı (`e1c77f3`, client mesaj kesme).
+- **Dokunulacak dosyalar (commit çakışması):** `messages/en.json`, `messages/tr.json` (en/tr blok sayıları SENKRON olmalı), `data/tools.ts`, `data/guides.ts`, `app/api/rates/`, `app/sitemap.ts`, `app/[locale]/layout.tsx`.
+
+### Tanıtım (Promosyon) checklist
+**Asistan run book (her içerik turu sonrası):** tsc → temiz build → local 3100'de URL/OG/sitemap kontrolü → Türkçe commit → push → `npm run indexnow`.
+
+**Kullanıcıya ait (hesap gerektirir, asistan yapamaz):**
+1. Google Search Console: www.freetoolsy.com doğrula → sitemap `https://www.freetoolsy.com/sitemap.xml` gönder; indexleme 1-3 gün.
+2. Bing Webmaster Tools: aynı sitemap (GSC'dan içe aktarma daha hızlı).
+3. Yeni rehberler için gerekirse URL Denetimi → "İndekslenmesini İsten".
+4. AdSense slot env'leri Vercel'e: `NEXT_PUBLIC_ADS_ENABLED=true` + `NEXT_PUBLIC_ADS_SLOT_TOP`/`BOTTOM` (onay sonrası).
+5. Sosyal/forum/dizin paylaşımları (Product Hunt, Reddit, İngilizce/Türkçe topluluklar) — tanıtım içerikleri.
+6. Backlink planı: araç listesi koleksiyonları, dizin siteleri, "tool collection" yazıları.
+
+### Bu turda yayınlananlar
+- `5d769d1`: 16 yeni araç (emoji-remover, reading-time-calculator, totp-generator, url-parser, js-minifier, mime-type-finder, percentage-change-calculator, fuel-economy-calculator, electricity-cost-calculator, calories-burned-calculator, image-combiner, image-flipper, sitemap-url-extractor, joke-generator, random-quote-generator, guess-the-number) → 160 araç; sitemap 380; IndexNow 380→200.
+- `a98a18e`: displayToolCount "100+" + ToolExplorer gerçek sayı; ThemeToggle büyük toggle switch.
 
 ### Bekleyen / isteğe bağlı
-- Search Console: 118 URL sitemap + yeni rehberlerin indexlenmesi 1-3 gün beklenecek; gerekirse URL Denetimi → "İndekslenmesini İsten".
-- AdSense slot env'leri kullanıcıda (AdSense onayı sonrası set edilecek).
-- İsteğe bağlı büyüme: kategori sayfaları açıklama metni, yeni rehber/araç (örn. WHOIS, HTML→Markdown), döviz sayfasının deploy sonrası canlı kontrolü.
+- Rehber/araç eklemek yerine tanıtıma odaklan (kullanıcı kararı). Yeni içerik turları asistan planlar.
+- Gerekirse kategori sayfalarına açıklama metni, döviz sayfası canlı kontrolü.
 
 ## Done
 - [x] Next.js 14 App Router + TypeScript + Tailwind scaffold
@@ -53,19 +65,21 @@ This file tracks where the project stands. Whenever a working session ends, upda
 - Banned: ALL CAPS heading labels, "→" everywhere, cream/terracotta, identical shadows on every card.
 - Color tokens are CSS variables in `app/globals.css`; mapped in `tailwind.config.ts`.
 
-## Adding a new tool (standard workflow)
-1. `data/tools.ts` — add an entry to `tools` (`slug` lowercase, hyphenated)
-2. `components/tools/Xxx.tsx` — write a `"use client"` component (labels via `useTranslations("comp.*")`)
-3. Register the tool: `app/[locale]/tools/[slug]/page.tsx` (EN) + `app/[locale]/araclar/[slug]/page.tsx` (TR) `toolComponents` map + `generateStaticParams` (URL'i elle yazma, `lib/paths.ts`'i kullan)
-4. `messages/en.json` — add `ToolMeta.<slug>` (name/desc), `ToolPage` page title/desc/h1 copy and `ToolContent.<slug>` SEO blocks (en/tr block sayıları aynı olmalı — **5 blok dolu içerik hedefleyin**, 3 blokta bırakmayın)
-5. Verify: `npm run sitemap && npm run build && npx tsc --noEmit` (sitemap ÜRETİLMEK zorunda)
+## Adding a new tool (standard workflow — aktif değil, "araç ekleme bitti")
+1. `data/tools.ts` — `tools` dizisine giriş (`slug` küçük harf, tireli)
+2. `components/tools/Xxx.tsx` — `"use client"` bileşen (etiketler `useTranslations("comp.*")`)
+3. Kayıt: `app/[locale]/tools/[slug]/page.tsx` `toolComponents` map + `toolCompNamespaces.ts` + `ToolIcon.tsx` import + `data/tools.ts` (URL'i elle yazma, `lib/paths.ts`'i kullan)
+4. İçerik: `messages/en.json` + `messages/tr.json` — `ToolMeta.<slug>`, `ToolPage` ve `ToolContent.<slug>` (en/tr blok sayıları AYNI olmalı — 5 blok hedef)
+5. Doğrula: `npm run build` (check:tools dahil) && `npx tsc --noEmit`; sitemap otomatik
 
 ## Install / commands
 ```bash
 npm install
 npm run dev          # http://localhost:3000  (build öncesi durdur, .next çekişmesini önlemek için)
-npm run sitemap      # public/sitemap.xml: 118 URL
-npm run build + npx tsc --noEmit
+npm run build        # check:tools içerir
+npx tsc --noEmit
+npx next start -p 3100   # yayın öncesi URL/OG/sitemap doğrulaması
+npm run indexnow     # push sonrası URL bildirimi (sitemap listesi)
 git push             # main = production
 ```
 

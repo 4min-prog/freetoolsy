@@ -1276,6 +1276,448 @@ export const guides: Guide[] = [
       },
     },
   },
+  {
+    slug: "how-to-remove-emoji-from-text",
+    relatedTools: ["emoji-remover", "punctuation-remover", "text-escape-unescape"],
+    content: {
+      en: {
+        title: "How to remove emojis from any text",
+        desc: "Clean emojis and decorative symbols out of text for publishing, data export or plain copy. Instant, free and entirely in your browser.",
+        intro:
+          "Emojis add personality, but they get in the way when you publish in plain text, push data into old systems or want a clean copy of a message. Removing them by hand is tedious — a one-click remover scans the text, drops every emoji and symbol, and returns pure characters in milliseconds.",
+        blocks: [
+          {
+            h2: "Why would you strip emojis from text?",
+            paragraphs: [
+              "Some content management workflows reject Unicode pictographs, certain databases mis-handle emoji ranges, and print or legacy text renderers replace them with empty boxes. Even simple jobs like submitting form text or formatting a newsletter can benefit from a symbol-free version.",
+              "Beyond publishing, emoji removal helps when you analyze text with scripts that only expect letters, or when you repurpose a captioned photo post as a plain-text caption elsewhere.",
+            ],
+          },
+          {
+            h2: "Remove emojis with FreetoolsY",
+            paragraphs: [
+              "Open the Emoji Remover tool, paste your text and the tool strips emojis, flags, symbols and the invisible variation selectors attached to them. The cleaned output appears instantly and copies with one click.",
+            ],
+            bullets: [
+              "Paste the mixed text (social caption, form field, chat export).",
+              "The tool cleans emoji and decorative ranges automatically.",
+              "Copy the cleaned text and use it anywhere.",
+            ],
+          },
+          {
+            h2: "What counts as an emoji?",
+            paragraphs: [
+              "Emojis live in several Unicode blocks: pictographs such as faces and animals, flags, common symbols and dingbats, plus invisible variation selectors that follow them. A good remover handles all of these, including multi-code-point emojis made with joining characters.",
+              "The FreetoolsY tool treats the whole set as one cleaning pass, so a flag, a skin-tone sequence and a rainbow emoji all disappear and leave normal characters untouched.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "Metinden emojiler nasıl kaldırılır?",
+        desc: "Yayın, veri aktarımı veya düz metin için metinden emojileri ve süsleyici sembolleri temizleyin. Anında, ücretsiz ve tamamen tarayıcınızda.",
+        intro:
+          "Emojiler karakter katar, ancak düz metin yayınlarken, veriyi eski sistemlere aktarırken veya bir mesajın temiz bir kopyasını almak istediğinizde engel olur. Elle temizlemek yorucudur — tek tıkla çalışan bir kaldırıcı metni tarar, her emojiyi ve sembolü atar ve milisaniyeler içinde sadece karakterleri bırakır.",
+        blocks: [
+          {
+            h2: "Metinden emojileri neden kaldırırsınız?",
+            paragraphs: [
+              "Bazı içerik yönetimi akışları Unicode piktografları reddeder, kimi veritabanları emoji aralıklarını yanlış işler ve baskı veya eski metin oluşturucular onları boş kutularla değiştirir. Form metni göndermek veya bülten biçimlendirmek gibi basit işler bile sembolsüz bir sürümden faydalanır.",
+              "Yayıncılığın ötesinde, yalnızca harf bekleyen betiklerle metin analiz ettiğinizde veya altyazılı bir fotoğraf gönderisini başka yerde düz metin başlık olarak yeniden kullandığınızda emoji temizliği yardımcı olur.",
+            ],
+          },
+          {
+            h2: "FreetoolsY ile emojileri kaldırın",
+            paragraphs: [
+              "Emoji Kaldırıcı aracını açın, metninizi yapıştırın; araç emojileri, bayrakları, sembolleri ve onlara bağlı görünmez varyasyon seçicilerini temizler. Temizlenmiş çıktı anında görünür ve tek tıkla kopyalanır.",
+            ],
+            bullets: [
+              "Karışık metni yapıştırın (sosyal başlık, form alanı, sohbet dışa aktarımı).",
+              "Araç emoji ve süsleyici aralıklarını otomatik temizler.",
+              "Temizlenmiş metni kopyalayın ve istediğiniz yerde kullanın.",
+            ],
+          },
+          {
+            h2: "Neler emoji sayılır?",
+            paragraphs: [
+              "Emojiler birkaç Unicode bloğunda bulunur: yüzler ve hayvanlar gibi piktograflar, bayraklar, yaygın semboller ve dingbatlar ile onları izleyen görünmez varyasyon seçicileri. İyi bir kaldırıcı, birleştirme karakterleriyle yapılan çok kod noktalı emojiler dahil tüm bunları ele alır.",
+              "FreetoolsY aracı tüm kümeyi tek bir temizleme geçişi olarak işler; bayrak, ten tonu dizisi ve gökkuşağı emojisi yok olur, normal karakterler olduğu gibi kalır.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "totp-two-factor-authentication-explained",
+    relatedTools: ["totp-generator", "password-generator", "hmac-generator"],
+    content: {
+      en: {
+        title: "TOTP and 2FA: how time-based codes work",
+        desc: "Understand time-based one-time passwords (TOTP), why two-factor authentication protects accounts, and how the code is generated.",
+        intro:
+          "Two-factor authentication (2FA) asks for something beyond your password when you log in. TOTP — time-based one-time password — is the mechanism behind authenticator apps: a six-digit code that changes every thirty seconds and is valid only for that short window.",
+        blocks: [
+          {
+            h2: "Why use two-factor authentication?",
+            paragraphs: [
+              "Passwords leak: phishing pages, reused credentials and data breaches expose them daily. A stolen password is useless when the attacker also needs the six-digit code that exists only on your phone at the moment of login. That single extra factor blocks most account takeovers.",
+              "TOTP codes are generated offline on your device and never travel over the network until you enter them, which makes them harder to intercept than codes sent by SMS.",
+            ],
+            bullets: [
+              "2FA turns a stolen password alone into a failed login.",
+              "TOTP works offline and does not depend on a carrier.",
+              "Codes rotate every 30 seconds and expire quickly.",
+            ],
+          },
+          {
+            h2: "How is the code computed?",
+            paragraphs: [
+              "Your phone and the server share a secret key, usually given as a Base32 string when you scan a QR code. The key is combined with the current 30-second time window and signed with the one-way HMAC-SHA1 algorithm. The signature is truncated into a six-digit number — the code you type.",
+              "Because time is part of the input, both sides generate the same number only during the same few seconds. Any drift, like a wrong phone clock, breaks the match until it is corrected.",
+            ],
+          },
+          {
+            h2: "Generate codes for testing with FreetoolsY",
+            paragraphs: [
+              "The TOTP Generator lets you paste a Base32 secret and see the current six-digit code live. It is handy for testing keys you created yourself, recovering access during development, or simply understanding how the algorithm behaves.",
+            ],
+            bullets: [
+              "Paste the Base32 secret key into the tool.",
+              "Read the current six-digit code and the countdown to the next one.",
+              "Only use secrets you trust — treat keys like passwords.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "TOTP ve 2FA: zamana dayalı kodlar nasıl çalışır?",
+        desc: "Zamana dayalı tek kullanımlık şifreleri (TOTP), iki adımlı doğrulamanın hesapları neden koruduğunu ve kodun nasıl üretildiğini anlayın.",
+        intro:
+          "İki adımlı doğrulama (2FA), giriş yaparken parolanızın ötesinde bir şey daha ister. TOTP — zamana dayalı tek kullanımlık şifre — doğrulama uygulamalarının arkasındaki mekanizmadır: her otuz saniyede değişen ve yalnızca o kısa aralıkta geçerli olan altı haneli kod.",
+        blocks: [
+          {
+            h2: "Neden iki adımlı doğrulama kullanmalı?",
+            paragraphs: [
+              "Parolalar sızar: kimlik avı sayfaları, yeniden kullanılan kimlik bilgileri ve veri ihlalleri onları her gün ele geçirir. Saldırgan, giriş anında yalnızca telefonunuzda bulunan altı haneli koda da ihtiyaç duyuyorsa çalınmış bir parola işe yaramaz. Bu tek ek faktör çoğu hesap ele geçirmeyi engeller.",
+              "TOTP kodları cihazınızda çevrimdışı üretilir ve siz girene kadar ağ üzerinden dolaşmaz; bu onları SMS ile gönderilen kodlardan daha zor ele geçirilir kılar.",
+            ],
+            bullets: [
+              "2FA, tek başına çalınmış bir parolayı başarısız girişe çevirir.",
+              "TOTP çevrimdışı çalışır ve operatöre bağımlı değildir.",
+              "Kodlar her 30 saniyede yenilenir ve hızla geçerliliğini yitirir.",
+            ],
+          },
+          {
+            h2: "Kod nasıl hesaplanır?",
+            paragraphs: [
+              "Telefonunuz ve sunucu, QR kodunu taradığınızda genellikle Base32 dizesi olarak verilen gizli bir anahtarı paylaşır. Anahtar, güncel 30 saniyelik zaman penceresiyle birleştirilir ve tek yönlü HMAC-SHA1 algoritmasıyla imzalanır. İmza, sizin yazdığınız altı haneli sayıya dönüştürülür.",
+              "Zaman girişin bir parçası olduğundan iki taraf aynı sayıyı yalnızca aynı birkaç saniye içinde üretir. Yanlış telefon saati gibi bir kayma, düzeltilene kadar eşleşmeyi bozar.",
+            ],
+          },
+          {
+            h2: "FreetoolsY ile test için kod üretin",
+            paragraphs: [
+              "TOTP Kod Üretici, bir Base32 sırrı yapıştırmanıza ve güncel altı haneli kodu canlı görmenize olanak tanır. Kendi oluşturduğunuz anahtarları test etmek, geliştirme sırasında erişimi kurtarmak veya algoritmanın davranışını anlamak için kullanışlıdır.",
+            ],
+            bullets: [
+              "Base32 gizli anahtarı araca yapıştırın.",
+              "Güncel altı haneli kodu ve bir sonrakine kalan süreyi okuyun.",
+              "Yalnızca güvendiğiniz sırları kullanın — anahtarları parola gibi saklayın.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "what-is-a-mime-type",
+    relatedTools: ["mime-type-finder", "image-to-base64"],
+    content: {
+      en: {
+        title: "What is a MIME type and why does it matter?",
+        desc: "Learn how MIME types label files for browsers and servers, where to find them and how to look one up from any extension.",
+        intro:
+          "A MIME type is a standard label like image/png or application/json that tells software what kind of content a file contains. It is the reason a browser opens a JPG instead of downloading it, the reason a PDF renders inline, and a frequent source of upload errors when it is wrong.",
+        blocks: [
+          {
+            h2: "The anatomy of a MIME type",
+            paragraphs: [
+              "A MIME type has two parts: a main type that groups broad categories — text, image, audio, video, application — and a subtype that names the exact format. The pair is separated by a slash, so image/webp says 'an image in WebP format'.",
+              "Sticking to the registered label matters: a browser checks it when deciding how to handle a file, and mislabeling an upload as application/octet-stream forces a download instead of an inline preview.",
+            ],
+          },
+          {
+            h2: "Common MIME types you will meet",
+            paragraphs: [
+              "The ones that show up most often are text/html and text/css for web pages, text/javascript for scripts, image/png and image/jpeg for graphics, application/pdf for documents and application/json for API data.",
+            ],
+            bullets: [
+              "text/html — web pages.",
+              "text/css, text/javascript — styling and scripts.",
+              "image/jpeg, image/png, image/webp — common image formats.",
+              "application/json — API payloads.",
+            ],
+          },
+          {
+            h2: "Look up any extension with FreetoolsY",
+            paragraphs: [
+              "The MIME Type Finder answers two questions. Enter an extension like svg and get its label instantly, or search the other direction — a type like audio — and see every matching extension. Useful when configuring a server, validating uploads or writing API contracts.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "MIME türü nedir ve neden önemlidir?",
+        desc: "MIME türlerinin tarayıcılar ve sunucular için dosyaları nasıl etiketlediğini, nerede bulunduğunu ve herhangi bir uzantıdan nasıl bulunacağını öğrenin.",
+        intro:
+          "MIME türü, image/png veya application/json gibi, yazılıma bir dosyanın içerik türünü bildiren standart bir etikettir. Tarayıcının bir JPG'yi indirmek yerine açmasının, bir PDF'nin satır içi görüntülenmesinin ve yanlış olduğunda yükleme hatalarının sık görünen nedenidir.",
+        blocks: [
+          {
+            h2: "Bir MIME türünün yapısı",
+            paragraphs: [
+              "MIME türü iki kısımdan oluşur: geniş kategorileri gruplayan ana tür — text, image, audio, video, application — ve tam biçimi adlandıran alt tür. Çift eğik çizgiyle ayrılır; image/webp 'WebP biçiminde bir görsel' der.",
+              "Kayıtlı etikete bağlı kalmak önemlidir: tarayıcı bir dosyayı nasıl ele alacağına karar verirken onu kontrol eder ve bir yüklemeyi application/octet-stream olarak yanlış etiketlemek, satır içi önizleme yerine indirme zorunluluğu yaratır.",
+            ],
+          },
+          {
+            h2: "Karşılaşacağınız yaygın MIME türleri",
+            paragraphs: [
+              "En sık görecekleriniz şunlardır: web sayfaları için text/html ve text/css, betikler için text/javascript, grafikler için image/png ve image/jpeg, belgeler için application/pdf ve API verileri için application/json.",
+            ],
+            bullets: [
+              "text/html — web sayfaları.",
+              "text/css, text/javascript — stil ve betikler.",
+              "image/jpeg, image/png, image/webp — yaygın görsel biçimleri.",
+              "application/json — API yükleri.",
+            ],
+          },
+          {
+            h2: "FreetoolsY ile herhangi bir uzantıyı bulun",
+            paragraphs: [
+              "MIME Türü Bulucu iki soruyu yanıtlar. svg gibi bir uzantı girin ve etiketi anında görün; ya da ters yönde arayın — ses gibi bir tür — tüm eşleşen uzantıları görün. Sunucu yapılandırırken, yüklemeleri doğrularken veya API sözleşmeleri yazarken kullanışlıdır.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "how-to-calculate-electricity-cost",
+    relatedTools: ["electricity-cost-calculator", "fuel-cost-calculator"],
+    content: {
+      en: {
+        title: "How to calculate the electricity cost of an appliance",
+        desc: "Turn wattage and usage hours into monthly and yearly cost. A simple formula, walked through with an energy cost calculator.",
+        intro:
+          "Every appliance carries a power rating in watts, and your bill charges per kilowatt-hour. The cost of a device is simply its kilowatts multiplied by how many hours it runs, multiplied by your price per kWh. That short formula tells you which devices eat your electricity bill.",
+        blocks: [
+          {
+            h2: "The watt-to-cost formula",
+            paragraphs: [
+              "Convert watts to kilowatts by dividing by 1000. A 2000-watt heater is 2 kW. Multiply by the hours you run it in a day, then by the days in the period. That gives consumption in kWh. Multiply by your unit price — for example 2 kW times 3 hours is 6 kWh per day; at a price of 0.30 per kWh that device costs 1.80 per day.",
+              "Small devices mislead because they look harmless: a 60-watt TV on 6 hours a day uses about 10.8 kWh per month, while an idle or old fridge may quietly pass it.",
+            ],
+            bullets: [
+              "Energy (kWh) = watts ÷ 1000 × hours × days.",
+              "Cost = energy × price per kWh.",
+              "Check your bill for the exact rate you pay.",
+            ],
+          },
+          {
+            h2: "Estimate it automatically with FreetoolsY",
+            paragraphs: [
+              "The Electricity Cost Calculator takes the four inputs — wattage, hours per day, days per month and your kWh price — and returns monthly and yearly consumption plus the expected cost for each period. Adjust the hours and watch the annual cost move live.",
+            ],
+          },
+          {
+            h2: "Where to save first",
+            paragraphs: [
+              "Start with high-power, frequently used devices: heaters, irons, kettles and dryers. Cut the hours there before replacing anything, then compare replacement options with the same formula. Small changes in daily usage compound into large annual savings.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "Bir cihazın elektrik maliyeti nasıl hesaplanır?",
+        desc: "Güç (watt) ve kullanım saatlerini aylık ve yıllık maliyete dönüştürün. Elektrik tüketimi hesaplayıcısıyla adım adım basit bir formül.",
+        intro:
+          "Her cihaz watt cinsinden bir güç değeri taşır ve faturanız kilovat-saat üzerinden kesilir. Bir cihazın maliyeti, kilovat değeri çarpı çalıştığı saat sayısı çarpı kWh fiyatınızın toplamıdır. Bu kısa formül, elektrik faturanızı hangi cihazların yediğini söyler.",
+        blocks: [
+          {
+            h2: "Watt'tan maliyete formül",
+            paragraphs: [
+              "Watt'ı 1000'e bölerek kilovata çevirin. 2000 watt'lık bir ısıtıcı 2 kW'dır. Günde çalıştırdığınız saatle, ardından dönemdeki gün sayısıyla çarpın. Bu, kWh cinsinden tüketimi verir. Birim fiyatınızla çarpın — örneğin 2 kW çarpı 3 saat günde 6 kWh eder; kWh başına 0.30 fiyatla bu cihaz günde 1.80 tutar.",
+              "Küçük cihazlar zararsız göründükleri için yanıltır: günde 6 saat açık 60 watt'lık bir TV ayda yaklaşık 10.8 kWh kullanırken, beklemede veya eski bir buzdolabı sessizce onu geçebilir.",
+            ],
+            bullets: [
+              "Enerji (kWh) = watt ÷ 1000 × saat × gün.",
+              "Maliyet = enerji × kWh fiyatı.",
+              "Ödediğiniz tam tarife için faturanızı kontrol edin.",
+            ],
+          },
+          {
+            h2: "FreetoolsY ile otomatik tahmin",
+            paragraphs: [
+              "Elektrik Tüketimi Hesaplayıcı dört girişi — güç, günlük saat, aylık gün ve kWh fiyatınız — alır ve aylık ve yıllık tüketim ile her dönemin beklenen maliyetini döndürür. Saatleri değiştirin ve yıllık maliyetin canlı hareketini izleyin.",
+            ],
+          },
+          {
+            h2: "Önce nereden tasarruf edilir?",
+            paragraphs: [
+              "Yüksek güçlü ve sık kullanılan cihazlarla başlayın: ısıtıcılar, ütüler, su ısıtıcıları ve kurutucular. Bir şeyi değiştirmeden önce buradaki saatleri azaltın; ardından aynı formülle değiştirme seçeneklerini karşılaştırın. Günlük kullanımdaki küçük değişiklikler büyük yıllık tasarruflara dönüşür.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "url-structure-explained",
+    relatedTools: ["url-parser", "url-encoder", "slug-generator"],
+    content: {
+      en: {
+        title: "URL structure explained: every part of a web address",
+        desc: "Break a URL into protocol, host, path, query and hash. Learn what each piece does and how the browser reads them.",
+        intro:
+          "Every link you click is a small instruction set. The scheme says how to talk to the server, the host names where it lives, and the path plus query tell it what to return. Understanding the parts turns confusing links into readable sentences.",
+        blocks: [
+          {
+            h2: "Reading a URL from left to right",
+            paragraphs: [
+              "In https://example.com/blog/post-1?page=2#comments, the scheme https sets a secure connection. The host example.com names the server. /blog/post-1 is the path on that server, ?page=2 is the query, holding extra parameters, and #comments is the fragment, which the browser uses to scroll and never sends to the server.",
+              "Each piece has a job, and URLs mix them freely: sites hide hashes for client-side navigation, APIs encode state in the query string, and redirects often rewrite only the path segment.",
+            ],
+            bullets: [
+              "Scheme — https, http: the protocol.",
+              "Host — the server name and optional port.",
+              "Path — the resource location on the server.",
+              "Query — parameters after the ?.",
+              "Fragment — the # part, browser-only.",
+            ],
+          },
+          {
+            h2: "Why encoding matters",
+            paragraphs: [
+              "Several characters — spaces, #, ?, & — have special meaning inside a URL. To pass one of them as data, it must be percent-encoded, so a space becomes %20 and a # becomes %23. Broken encoding produces links that point elsewhere or fail entirely.",
+              "Keep the slug readable for SEO while encoding inside paths and queries properly — the two goals do not conflict when you use the right tool for each step.",
+            ],
+          },
+          {
+            h2: "Inspect and build URLs with FreetoolsY",
+            paragraphs: [
+              "The URL Parser splits any address into its exact parts using the same parsing rules browsers use, which is great for debugging redirects or reading query parameters. Pair it with the URL Encoder to safely prepare values, and the Slug Generator to create clean paths for content.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "URL yapısı: bir web adresinin her parçası",
+        desc: "Bir URL'yi protokol, host, yol, sorgu ve hash olarak ayırın. Her parçanın ne yaptığını ve tarayıcının onları nasıl okuduğunu öğrenin.",
+        intro:
+          "Tıkladığınız her bağlantı küçük bir talimat kümesidir. Düzen sunucuyla nasıl konuşulacağını, host onun nerede yaşadığını söyler; yol ve sorgu ise ne döndüreceğini belirtir. Parçaları anlamak, kafa karıştırıcı bağlantıları okunabilir cümlelere çevirir.",
+        blocks: [
+          {
+            h2: "URL'yi soldan sağa okumak",
+            paragraphs: [
+              "https://example.com/blog/post-1?page=2#comments içinde https düzeni güvenli bir bağlantı kurar. example.com host'u sunucuyu adlandırır. /blog/post-1 o sunucudaki yoldur, ?page=2 sorgudur ve ekstra parametreleri taşır, #comments ise fragmandır — tarayıcı kaydırmak için kullanır ve sunucuya asla göndermez.",
+              "Her parçanın bir görevi vardır ve URL'ler onları özgürce birleştirir: siteler istemci tarafı gezinme için karma içinde gizler, API'ler durumu sorgu dizesinde kodlar, yönlendirmeler çoğu zaman yalnızca yol bölümünü yeniden yazar.",
+            ],
+            bullets: [
+              "Düzen — https, http: protokol.",
+              "Host — sunucu adı ve isteğe bağlı port.",
+              "Yol — sunucudaki kaynağın konumu.",
+              "Sorgu — ? işaretinden sonraki parametreler.",
+              "Fragman — yalnızca tarayıcının kullandığı # kısmı.",
+            ],
+          },
+          {
+            h2: "Kodlama neden önemlidir?",
+            paragraphs: [
+              "Boşluk, #, ?, & gibi birkaç karakter URL içinde özel anlam taşır. Bunlardan birini veri olarak iletmek için yüzde kodlaması gerekir; boşluk %20, # ise %23 olur. Bozuk kodlama, başka yeri gösteren veya tamamen başarısız bağlantılar üretir.",
+              "SEO için slug'ı okunabilir tutun ve yol ile sorguları uygun şekilde kodlayın — her adımda doğru aracı kullandığınızda iki hedef çatışmaz.",
+            ],
+          },
+          {
+            h2: "FreetoolsY ile URL'leri inceleyin ve oluşturun",
+            paragraphs: [
+              "URL Ayrıştırıcı, tarayıcıların kullandığı kurallarla her adresi kesin parçalarına ayırır; yönlendirme hatalarını ayıklamak veya sorgu parametrelerini okumak için harikadır. Değerleri güvenle hazırlamak için URL Kodlayıcı ile, içerik için temiz yollar oluşturmak üzere Slug Üretici ile birlikte kullanın.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "what-is-reading-time",
+    relatedTools: ["reading-time-calculator", "word-counter", "character-counter"],
+    content: {
+      en: {
+        title: "What is reading time and how is it estimated?",
+        desc: "Why 'X min read' labels exist, how word count becomes a time estimate, and how to compute it for any text.",
+        intro:
+          "Reading time is the estimated minutes it takes a reader to finish a text, usually shown as 'x min read' next to an article. It is computed from two numbers: how many words the text has and how fast the average person reads them.",
+        blocks: [
+          {
+            h2: "Where does the estimate come from?",
+            paragraphs: [
+              "The standard assumption is around 200 to 230 words per minute for comfortably readable prose. Divide the word count by the speed and you get minutes; rounding up to the next whole minute avoids promising a reader more than the article delivers.",
+              "The same formula underlies most 'min read' badges on news and blog sites, and it is why short posts often show one minute while long guides show ten or more.",
+            ],
+            bullets: [
+              "Reading time = word count ÷ reading speed.",
+              "Typical speed: about 200 words per minute.",
+              "Round up, so the label never overpromises.",
+            ],
+          },
+          {
+            h2: "Why sites show reading time",
+            paragraphs: [
+              "An estimated duration sets expectations — readers with little time glance at the label and decide whether to invest. It also makes content feel approachable: a fifteen-minute essay sounds manageable once the badge says the effort involved.",
+            ],
+          },
+          {
+            h2: "Estimate your own text with FreetoolsY",
+            paragraphs: [
+              "The Reading Time Calculator counts words in your pasted text and converts them using a speed you choose, defaulting to 200 words per minute. Use it for blog intros, drafts, scripts or meeting notes, and combine it with the Word Counter for a full breakdown of the text.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "Okuma süresi nedir ve nasıl tahmin edilir?",
+        desc: "'x dk okuma' etiketleri neden var, kelime sayısı nasıl zaman tahminine dönüşür ve her metin için nasıl hesaplanır.",
+        intro:
+          "Okuma süresi, bir okuyucunun metni bitirmesinin beklenen dakika sayısıdır; genellikle makalenin yanında 'x dk okuma' olarak gösterilir. İki sayıdan hesaplanır: metnin kaç kelimesi olduğu ve ortalama bir insanın bunları ne kadar hızlı okuduğu.",
+        blocks: [
+          {
+            h2: "Tahmin nereden gelir?",
+            paragraphs: [
+              "Rahat okunabilir düzyazı için standart varsayım dakikada yaklaşık 200 ila 230 kelimedir. Kelime sayısını hıza bölün ve dakikayı alın; sonraki tam dakikaya yuvarlamak, okuyucuya makalenin sunduğundan fazlasını vaat etmekten kaçınır.",
+              "Aynı formül, haber ve blog sitelerindeki çoğu 'dk okuma' rozetinin de temelidir; kısa yazıların neden tek dakika, uzun rehberlerin ise on veya daha fazla gösterdiğini açıklar.",
+            ],
+            bullets: [
+              "Okuma süresi = kelime sayısı ÷ okuma hızı.",
+              "Tipik hız: dakikada yaklaşık 200 kelime.",
+              "Üst değere yuvarlayın; etiket asla abartmasın.",
+            ],
+          },
+          {
+            h2: "Siteler neden okuma süresi gösterir?",
+            paragraphs: [
+              "Tahmini bir süre beklentiyi netleştirir — vakti az olan okuyucular etikete bakar ve yatırım yapıp yapmayacağına karar verir. Ayrıca içeriği ulaşılır hissettirir: rozet çabanın ne kadar olduğunu söylediğinde on beş dakikalık bir deneme yönetilebilir görünür.",
+            ],
+          },
+          {
+            h2: "FreetoolsY ile kendi metninizi tahmin edin",
+            paragraphs: [
+              "Okuma Süresi Hesaplayıcı, yapıştırdığınız metindeki kelimeleri sayar ve varsayılanı dakikada 200 kelime olan, sizin seçtiğiniz bir hızla süreye dönüştürür. Blog girişleri, taslaklar, senaryolar veya toplantı notları için kullanın; metnin tam dökümü için Kelime Sayacı ile birleştirin.",
+            ],
+          },
+        ],
+      },
+    },
+  },
 ];
 
 export function getGuide(slug: string): Guide | undefined {
