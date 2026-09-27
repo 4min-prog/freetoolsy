@@ -10,8 +10,10 @@ export function categoryPath(locale: Locale, id: string) {
   return locale === "tr" ? `/kategoriler/${id}` : `/categories/${id}`;
 }
 
-export function toolUrl(_locale: Locale, slug: string) {
-  return `${siteUrl}/tools/${slug}`;
+export function toolUrl(locale: Locale, slug: string) {
+  return locale === "tr"
+    ? `${siteUrl}/tr/tools/${slug}`
+    : `${siteUrl}/tools/${slug}`;
 }
 
 export function categoryUrl(locale: Locale, id: string) {

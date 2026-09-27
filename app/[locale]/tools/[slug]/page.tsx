@@ -33,7 +33,9 @@ export const dynamicParams = false;
 export const revalidate = 86400;
 
 export function generateStaticParams() {
-  return tools.map((tool) => ({ locale: "en", slug: tool.slug }));
+  return ["en", "tr"].flatMap((locale) =>
+    tools.map((tool) => ({ locale, slug: tool.slug }))
+  );
 }
 
 export async function generateMetadata({
@@ -46,7 +48,7 @@ export async function generateMetadata({
   const locale = params.locale as Locale;
   setRequestLocale(locale);
   const t = await getTranslations(`ToolMeta.${tool.slug}`);
-  const canonical = toolUrl("en", tool.slug);
+  const canonical = toolUrl(locale, tool.slug);
   return {
     title: t("title"),
     description: t("pageDesc"),

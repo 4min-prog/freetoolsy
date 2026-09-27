@@ -82,9 +82,9 @@ const entries: Entry[] = [
     priority: "0.8",
     lastmod: guideLastMod,
   },
-  // Kategoriler her iki dilde de tek basina indekslenebilir sayfalar, bu yuzden
-  // EN ve TR ayri <url> girdisi olarak yaziliyor. (Rehberler de ayni sekilde
-  // iki girdi aliyor.) Araclar ise sadece EN URL ile yayinlaniyor.
+  // Kategoriler ve araclar her iki dilde de tek basina indekslenebilir sayfalar,
+  // bu yuzden EN ve TR ayri <url> girdisi olarak yaziliyor. (Rehberler de ayni
+  // sekilde iki girdi aliyor.)
   ...categories.flatMap((category) => [
     {
       loc: categoryUrl("en", category.id),
@@ -103,14 +103,24 @@ const entries: Entry[] = [
       lastmod: categoryLastMod,
     },
   ]),
-  ...tools.map((tool) => ({
-    loc: toolUrl("en", tool.slug),
-    en: toolUrl("en", tool.slug),
-    tr: toolUrl("tr", tool.slug),
-    changefreq: "monthly" as const,
-    priority: "0.8",
-    lastmod: toolLastMod,
-  })),
+  ...tools.flatMap((tool) => [
+    {
+      loc: toolUrl("en", tool.slug),
+      en: toolUrl("en", tool.slug),
+      tr: toolUrl("tr", tool.slug),
+      changefreq: "monthly" as const,
+      priority: "0.8",
+      lastmod: toolLastMod,
+    },
+    {
+      loc: toolUrl("tr", tool.slug),
+      en: toolUrl("en", tool.slug),
+      tr: toolUrl("tr", tool.slug),
+      changefreq: "monthly" as const,
+      priority: "0.8",
+      lastmod: toolLastMod,
+    },
+  ]),
   ...guides.flatMap((guide) => [
     {
       loc: `${siteUrl}/rehber/${guide.slug}`,
