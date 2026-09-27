@@ -984,6 +984,102 @@ export const tools: Tool[] = [
       "E-posta adreslerinin formatını ve üst düzey alan adlarını toplu olarak doğrular.",
     addedAt: "2026-09-27",
   },
+  {
+    slug: "word-scrambler",
+    name: "Kelime Karıştırıcı",
+    category: "text",
+    description:
+      "Kelimelerin harflerini karıştırır; ilk ve son harfi sabit tutma veya tam karıştırma seçenekleri.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "hashtag-generator",
+    name: "Hashtag Üretici",
+    category: "text",
+    description:
+      "Kelime veya cümlelerden tek tıkla hazır, boşluksuz hashtag listesi üretir.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "acronym-generator",
+    name: "Kısaltma Üretici",
+    category: "text",
+    description:
+      "Kelime grubundan büyük harfli kısaltma (akronim) çıkarır; noktalı seçenek sunar.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "palindrome-checker",
+    name: "Palindrom Kontrolü",
+    category: "fun",
+    description:
+      "Metnin tersten okunduğunda aynı olup olmadığını kontrol eder; boşluk ve noktalama atlanabilir.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "http-status-codes",
+    name: "HTTP Durum Kodları",
+    category: "developer",
+    description:
+      "Yaygın HTTP durum kodlarının anlamlarını aramaya göre gruplu olarak listeler.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "csv-formatter",
+    name: "CSV Biçimlendirici",
+    category: "developer",
+    description:
+      "Dağınık CSV verisini ayrıştırır, tablo olarak önizler ve TSV olarak kopyalamanızı sağlar.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "days-until-calculator",
+    name: "Geri Sayım Hesaplayıcı",
+    category: "calculation",
+    description:
+      "Bugünden istediğiniz tarihe ne kadar gün, hafta ve ay kaldığını hesaplar.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "running-pace-converter",
+    name: "Koşu Tempo Hesaplayıcı",
+    category: "calculation",
+    description:
+      "Km başına tempodan ortalama hızı ve 5K, 10K, yarı ve tam maraton sürelerini hesaplar.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "savings-goal-calculator",
+    name: "Birikim Hedefi Hesaplayıcı",
+    category: "calculation",
+    description:
+      "Hedef tutara ulaşmak için gereken süreyi veya hedef süre için aylık birikimi hesaplar.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "rock-paper-scissors",
+    name: "Taş Kağıt Makas",
+    category: "fun",
+    description:
+      "Bilgisayara karşı klasik taş kağıt makas oyunu; skor takibi yapılır.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "horoscope",
+    name: "Burç Bulucu",
+    category: "fun",
+    description:
+      "Doğum tarihine göre burcunuzu, elementinizi ve karakter özelliklerini gösterir.",
+    addedAt: "2026-09-27",
+  },
+  {
+    slug: "text-escape-unescape",
+    name: "Metin Kaçış Karakteri",
+    category: "developer",
+    description:
+      "Metni JSON/JS dizesi gibi kaçış karakterleriyle işaretler veya kaçış kodlarını çözer.",
+    addedAt: "2026-09-27",
+  },
 ];
 
 export function getTool(slug: string): Tool | undefined {

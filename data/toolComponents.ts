@@ -129,6 +129,18 @@ export const toolComponents: Record<string, ComponentType> = {
   "image-rotator": dynamic(() => import("@/components/tools/ImageRotator")),
   "xml-sitemap-generator": dynamic(() => import("@/components/tools/XmlSitemapGenerator")),
   "email-validator": dynamic(() => import("@/components/tools/EmailValidator")),
+  "word-scrambler": dynamic(() => import("@/components/tools/WordScrambler")),
+  "hashtag-generator": dynamic(() => import("@/components/tools/HashtagGenerator")),
+  "acronym-generator": dynamic(() => import("@/components/tools/AcronymGenerator")),
+  "palindrome-checker": dynamic(() => import("@/components/tools/PalindromeChecker")),
+  "http-status-codes": dynamic(() => import("@/components/tools/HttpStatusCodes")),
+  "csv-formatter": dynamic(() => import("@/components/tools/CsvFormatter")),
+  "days-until-calculator": dynamic(() => import("@/components/tools/DaysUntilCalculator")),
+  "running-pace-converter": dynamic(() => import("@/components/tools/RunningPaceConverter")),
+  "savings-goal-calculator": dynamic(() => import("@/components/tools/SavingsGoalCalculator")),
+  "rock-paper-scissors": dynamic(() => import("@/components/tools/RockPaperScissors")),
+  "horoscope": dynamic(() => import("@/components/tools/Horoscope")),
+  "text-escape-unescape": dynamic(() => import("@/components/tools/TextEscapeUnescape")),
 };
 
 export const TOOL_COMPONENT_SLUGS = Object.keys(toolComponents);

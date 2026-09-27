@@ -17,10 +17,22 @@
     "trustFree": "Ücretsiz, kayıt yok",
     "trustPrivacy": "Verileriniz asla gönderilmez",
     "valueLabel": "Neden FreeToolsy",
-    "valueNoSignup": { "label": "Kayıt yok", "desc": "Aracı aç, hemen kullan" },
-    "valueFast": { "label": "Hızlı", "desc": "Sonuçlar saniyeler içinde" },
-    "valuePrivate": { "label": "Gizlilik odaklı", "desc": "Her şey tarayıcında çalışır" },
-    "valueFree": { "label": "Sonsuza dek ücretsiz", "desc": "Sınırsız, ödeme duvarı yok" },
+    "valueNoSignup": {
+      "label": "Kayıt yok",
+      "desc": "Aracı aç, hemen kullan"
+    },
+    "valueFast": {
+      "label": "Hızlı",
+      "desc": "Sonuçlar saniyeler içinde"
+    },
+    "valuePrivate": {
+      "label": "Gizlilik odaklı",
+      "desc": "Her şey tarayıcında çalışır"
+    },
+    "valueFree": {
+      "label": "Sonsuza dek ücretsiz",
+      "desc": "Sınırsız, ödeme duvarı yok"
+    },
     "statsTools": "ücretsiz araç",
     "searchPlaceholder": "Araçlarda ara… örn. şifre, JSON, KDV",
     "jsonldSiteDesc": "Metin, güvenlik, geliştirici ve hesaplama için ücretsiz online araçlar. Kayıt yok, kurulum yok.",
@@ -1039,6 +1051,90 @@
       "title": "E-posta Doğrulayıcı - Adres Formatı Kontrolü",
       "pageDesc": "Bir ya da birden çok e-posta adresini yapıştırın; formatını, üst düzey alan adını ve rol bazlı öneklerini tek geçişte denetleyin. Doğrulama tamamen yerel ve gizlidir.",
       "intro": "E-posta adreslerini yapıştırın ve hepsini tek seferde kontrol edin."
+    },
+    "word-scrambler": {
+      "name": "Kelime Karıştırıcı",
+      "desc": "Kelimelerin harflerini karıştırır; ilk ve son harfi sabit tutma veya tam karıştırma seçenekleri sunar.",
+      "title": "Kelime Karıştırıcı - Metin Karıştırma Aracı",
+      "pageDesc": "Metninizi yapıştırın ve her kelimenin harflerini karıştırın. İlk ve son harfi sabit tutarak tanınabilir kelimeler üretebilir veya her şeyi tamamen rastgele karıştırabilirsiniz. Araç tamamen tarayıcınızda çalışır.",
+      "intro": "Metninizi girin, bir mod seçin ve anında karıştırın."
+    },
+    "hashtag-generator": {
+      "name": "Hashtag Üretici",
+      "desc": "Bir cümleyi boşluksuz, paylaşıma hazır hashtaglere dönüştürür.",
+      "title": "Hashtag Üretici - Metinden Hashtag Oluşturma",
+      "pageDesc": "Bir cümle yazın ve tek tıkla temiz, boşluksuz hashtagler elde edin. İsteğe bağlı seçeneklerle kısa ve genel kelimeleri filtreleyin, listeyi kopyalayın. Her şey cihazınızda kalır.",
+      "intro": "Bir cümle girin, seçenekleri ayarlayın ve hashtaglerinizi kopyalayın."
+    },
+    "acronym-generator": {
+      "name": "Kısaltma Üretici",
+      "desc": "Herhangi bir kelime grubundan büyük harfli kısaltma üretir; noktalı stili destekler.",
+      "title": "Kısaltma Üretici - İsim veya Cümleden Akronim Oluşturma",
+      "pageDesc": "Araca istediğiniz kelime dizisini verin; kelimelerin ilk harflerini tek bir kısaltmada toplar. Noktalı seçenek ile T.C. gibi stiller üretebilirsiniz. Tüm işlem tarayıcınızda gerçekleşir.",
+      "intro": "Bir kelime grubu yazın ve oluşan kısaltmayı kopyalayın."
+    },
+    "palindrome-checker": {
+      "name": "Palindrom Kontrolü",
+      "desc": "Bir kelimenin veya cümlenin tersten okunduğunda aynı olup olmadığını kontrol eder.",
+      "title": "Palindrom Kontrolü - Ters Okunuş Testi",
+      "pageDesc": "Herhangi bir metni yazın ve palindrom olup olmadığını anında öğrenin. Boşluk, noktalama ve büyük küçük harf ayrımını yok saymak için yoksay seçeneğini açın. Tamamen gizli ve yerel çalışır.",
+      "intro": "Bir metin girin ve sonucu hemen görün."
+    },
+    "http-status-codes": {
+      "name": "HTTP Durum Kodları",
+      "desc": "Yaygın HTTP durum kodlarını ve anlamlarını sınıflara göre listeler.",
+      "title": "HTTP Durum Kodları - 1xx ile 5xx Arası Anlamları",
+      "pageDesc": "100 ile 511 arasındaki en yaygın HTTP durum kodları için hızlı bir başvuru. Numaraya veya isme göre arayın, ya da bilgi, başarı, yönlendirme, istemci hatası ve sunucu hatası sınıflarına göre gezinebilirsiniz.",
+      "intro": "Bir numara arayın veya aşağıdaki sınıflara göz atın."
+    },
+    "csv-formatter": {
+      "name": "CSV Biçimlendirici",
+      "desc": "Dağınık CSV verisini ayrıştırır, tablo olarak önizler ve TSV olarak kopyalatır.",
+      "title": "CSV Biçimlendirici - CSV Verisini Düzenle ve Önizle",
+      "pageDesc": "Ham CSV verisini yapıştırın, ayırıcıyı seçin ve veriyi temiz bir tablo olarak görün. Araç tırnaklı alanları doğru işler ve sonucu her elektronik tabloya uygun, sekmeyle ayrılmış değerler olarak kopyalamanızı sağlar.",
+      "intro": "CSV verinizi yapıştırın ve tablo olarak önizleyin."
+    },
+    "days-until-calculator": {
+      "name": "Geri Sayım Hesaplayıcı",
+      "desc": "İki takvim tarihi arasında kaç gün, hafta ve ay olduğunu hesaplar.",
+      "title": "Geri Sayım Hesaplayıcı - Tarihler Arası Gün Hesaplama",
+      "pageDesc": "Bir başlangıç ve bir hedef tarih seçin; kaç gün, hafta ve gün kaldığını ya da tarihin ne kadar geçmiş olduğunu görün. Geri sayımlar, teslim tarihleri, seyahatler ve proje planlaması için idealdir.",
+      "intro": "İki tarihi seçin ve sonucu okuyun."
+    },
+    "running-pace-converter": {
+      "name": "Koşu Tempo Hesaplayıcı",
+      "desc": "Km başına tempoyu hıza ve tahmini yarış sürelerine dönüştürür.",
+      "title": "Koşu Tempo Hesaplayıcı - Tempo, Hız ve Yarış Süreleri",
+      "pageDesc": "Dakika ve saniye cinsinden km başına temponuzu girin; ortalama hızı ve 5K, 10K, yarı maraton ile tam maraton için tahmini bitiş sürelerini görün. Sade sayılar, anında sonuçlar.",
+      "intro": "Km başına temponuzu girin, gerisi gelsin."
+    },
+    "savings-goal-calculator": {
+      "name": "Birikim Hedefi Hesaplayıcı",
+      "desc": "Bir birikim hedefine ulaşma süresini veya gereken aylık tutarı hesaplar.",
+      "title": "Birikim Hedefi Hesaplayıcı - Birikiminizi Planlayın",
+      "pageDesc": "Hedefinizi, mevcut birikiminizi ve her ay ayırdığınız tutarı girin. Hesaplayıcı kalan tutarı, gereken ay sayısını ve hedef süre için gereken aylık birikimi gösterir.",
+      "intro": "Hedefinizi ve mevcut birikiminizi girin, plan yapın."
+    },
+    "rock-paper-scissors": {
+      "name": "Taş Kağıt Makas",
+      "desc": "Bilgisayara karşı klasik taş kağıt makas oyunu; canlı skor takibi yapılır.",
+      "title": "Taş Kağıt Makas - Bilgisayara Karşı Oyna",
+      "pageDesc": "Rastgele bir bilgisayar rakibine karşı taş, kağıt, makas oynayın. Her turda galibiyet, beraberlik ve mağlubiyet sayıları güncellenir; skoru istediğiniz zaman sıfırlayabilirsiniz.",
+      "intro": "Taş, kağıt veya makas seçin ve oynamaya başlayın."
+    },
+    "horoscope": {
+      "name": "Burç Bulucu",
+      "desc": "Doğum tarihine göre burcunuzu, elementinizi ve özelliklerinizi gösterir.",
+      "title": "Burç Bulucu - Doğum Tarihine Göre Burç Hesaplama",
+      "pageDesc": "Bir doğum tarihi girin ve eşleşen burcu, elementini, tarih aralığını ve kısa bir karakter özetini anında öğrenin. İsimler, tarihler ve doğum günü karşılaştırmaları için eğlenceli bir rehber.",
+      "intro": "Bir tarih seçin ve burcunuzu keşfedin."
+    },
+    "text-escape-unescape": {
+      "name": "Metin Kaçış Karakteri",
+      "desc": "Metni JSON veya JavaScript dizesine uygun kaçış karakterleriyle işaretler veya çözer.",
+      "title": "Metin Kaçış ve Kaçış Kaldırıcı - JSON Dizesi Dönüşümü",
+      "pageDesc": "Düz metin yazın; JSON ve JavaScript dizesinde kullanmak üzere tırnak, ters bölü ve özel karakterleri kaçış karakterleriyle işaretleyin. Veya kaçışlı metni yapıştırıp okunabilir hale çözün. Tamamen yerel.",
+      "intro": "Metin girin, kaçış veya çözüm seçin ve sonucu kopyalayın."
     }
   },
   "ToolContent": {
@@ -4521,6 +4617,126 @@
         "h": "Bir e-postanın var olduğunu kanıtlayabilir mi?",
         "p": "Hayır. Mail kutusunun var olduğunu doğrulamak için sunucu tarafı kontrol gerekir; bu araç tamamen gizli ve yereldir."
       }
+    ],
+    "word-scrambler": [
+      {
+        "h": "Kelime karıştırıcı nedir?",
+        "p": "Kelime karıştırıcı, metninizdeki her kelimenin harflerini yeniden düzenler. İlk ve son harfi sabit tutarsanız çıktı yine gerçek kelime gibi görünür; bulmaca ve zeka oyunları için her şeyi tamamen rastgele de karıştırabilirsiniz. Sonuç kopyalamaya ve her yere yapıştırmaya hazırdır."
+      },
+      {
+        "h": "Ne zaman işe yarar?",
+        "p": "Arkadaşlarınız için anagram oyunları oluşturun, yeni bir dilde okuma pratiği yapın veya kısa metinlerdeki isimleri gizleyin. Sevdikleriniz için yaratıcı kullanıcı adları ve etiketler üretmenin de hızlı bir yoludur."
+      }
+    ],
+    "hashtag-generator": [
+      {
+        "h": "Hashtag neden otomatik üretilir?",
+        "p": "Hashtagler tutarlı olduğunda sosyal medya paylaşımları daha iyi sonuç verir: boşluk yok, noktalama yok ve konuya göre net biçimde gruplanmış. Bu araç sıradan bir cümleyi kullanıma hazır hashtaglere dönüştürür; bozuk bir etiket paylaşımınıza asla karışmaz."
+      },
+      {
+        "h": "Filtreler ne işe yarar?",
+        "p": "En kısa uzunluk seçeneği küçük ve değersiz etiketleri; genel kelime seçeneği ise her paylaşımda geçen sıradan sözcükleri atlar. Yalnızca güçlü ve belirli hashtagler tutmak, spam yapmadan görünürlüğü artırır."
+      }
+    ],
+    "acronym-generator": [
+      {
+        "h": "Kısaltma üretici nedir?",
+        "p": "Kısaltma üretici, bir kelime grubunu kelime kelime okur ve her kelimenin ilk harfini korur. Sonuç kompakt, büyük harfli bir kısaltmadır. Noktalı seçenek her harften sonra nokta ekler; bu, resmi ve şirket adı stillerine uyar."
+      },
+      {
+        "h": "Nerelerde kullanılır?",
+        "p": "Bir şirket, ürün serisi veya ders adı belirlerken, uzun resmi başlıkları kısaltırken veya formül ve bölüm adları gibi çalışma kısaltmaları üretirken kullanılır. Ayrıca çok kelimeli arama terimlerini akılda kalıcı kodlara çevirir."
+      }
+    ],
+    "palindrome-checker": [
+      {
+        "h": "Palindrom nedir?",
+        "p": "Palindrom, ileri ve geri okunduğunda tamamen aynı olan bir kelime, cümle veya sayıdır. Kontrol aracı metni tersiyle karşılaştırır ve eşleşip eşleşmediğini anında söyler."
+      },
+      {
+        "h": "Yoksay seçeneği nasıl çalışır?",
+        "p": "Yoksay seçeneğini açmak, karşılaştırmadan önce boşlukları, noktalamaları ve büyük küçük harf ayrımını ortadan kaldırır. Bu, okunabilir harflerin önem taşıdığı gerçek palindrom düşüncesiyle uyumludur."
+      }
+    ],
+    "http-status-codes": [
+      {
+        "h": "HTTP durum kodları nasıl çalışır?",
+        "p": "Her web isteği sunucudan üç haneli bir durum koduyla sonuçlanır. İlk hane sınıfı gösterir: 1xx bilgi, 2xx başarı, 3xx yönlendirme, 4xx istemci hatası ve 5xx sunucu hatası. Kodu bilmek neyin yanlış gittiğini tam olarak söyler."
+      },
+      {
+        "h": "Günlük hayatta en çok hangi kodlar önemli?",
+        "p": "404 sayfanın bulunamadığı, 403 erişimin reddedildiği ve 301 kalıcı yönlendirme anlamına gelir. Sunucu tarafında 500 genel bir iç hata; 503 ise genellikle hizmetin geçici olarak kullanılamadığı anlamına gelir."
+      }
+    ],
+    "csv-formatter": [
+      {
+        "h": "CSV neden biçimlendirilir?",
+        "p": "Ham CSV bir metin düzenleyicide zor okunur: alanlar birbirine karışır ve tırnaklı sütunlar gerçek yapıyı gizler. Biçimlendirme her kaydı görünür hücrelere ayırır; böylece hizasız sütunları, eksik değerleri veya yanlış ayırıcıları saniyeler içinde fark edersiniz."
+      },
+      {
+        "h": "Ayrıştırma nasıl çalışır?",
+        "p": "Ayrıştırıcı her satırı okur ve çift tırnakları dikkate alır; böylece ayırıcı veya satır sonu içeren alanlar bozulmadan kalır. Noktalı virgül veya sekme kullanan veri için ayırıcıyı değiştirin, sonucu TSV olarak kopyalayıp her elektronik tabloya yapıştırın."
+      }
+    ],
+    "days-until-calculator": [
+      {
+        "h": "Gün sayısı nasıl hesaplanır?",
+        "p": "Hesap makinesi gerçek takvim tarihleriyle çalışır; ay uzunlukları, artık yıllar ve yıl dönümleri doğru şekilde ele alınır. Bir başlangıç ve bir hedef tarih seçin; sonuç toplam günü, haftayı ve kalan günleri gösterir."
+      },
+      {
+        "h": "Eksi sonuçlar ne anlama gelir?",
+        "p": "Hedef tarih başlangıç tarihinden önceyse sonuç geçmiş işaretiyle gösterilir. Bu, bir olayın ne kadar önce olduğunu veya kayıt sürelerini doğrulamak için kullanışlıdır."
+      }
+    ],
+    "running-pace-converter": [
+      {
+        "h": "Tempo ile hız nasıl ilişkilidir?",
+        "p": "Tempo, bir kilometreyi koşmak için gereken süre; hız ise bir saatte kat edilen mesafedir. Dönüştürücü 3600 saniyeyi temponuza bölerek ortalama hızı verir; km başına 5:00 tempo tam olarak 12 km/s demektir."
+      },
+      {
+        "h": "Hangi yarış süreleri hesaplanır?",
+        "p": "Araç, temponuzu resmi mesafeyle çarparak 5K, 10K, yarı maraton ve tam maraton için bitiş süresi tahmini yapar. Bunlar doğrusal tahminlerdir; yokuş, hava veya yorgunluğu hesaba katmaz."
+      }
+    ],
+    "savings-goal-calculator": [
+      {
+        "h": "Hesap makinesi nasıl çalışır?",
+        "p": "Kalan tutar, hedefinizden mevcut birikiminizin çıkarılmasıyla bulunur. Bu tutarı aylık birikiminize bölmek gereken ay sayısını; hedef ay sayısına bölmek ise ayırmanız gereken aylık tutarı verir."
+      },
+      {
+        "h": "Hedefe daha hızlı nasıl ulaşırım?",
+        "p": "Aylık birikimdeki küçük artışlar süreyi, boyutlarından çok daha fazla kısaltır. Büyük hedefi ara aşamalara bölmek motivasyonu yüksek tutar; otomatik transfer ise planı düzenli hale getirir."
+      }
+    ],
+    "rock-paper-scissors": [
+      {
+        "h": "Nasıl oynanır",
+        "p": "Taş, kağıt veya makas seçin; bilgisayar rastgele birini seçer. Taş makası ezer, makas kağıdı keser, kağıt taşı sarar. Aynı seçimler beraberliktir. Her tur üç skorunuzu günceller."
+      },
+      {
+        "h": "Bilgisayar adil mi?",
+        "p": "Bilgisayar her turda üç seçenekten birini eşit olasılıkla rastgele seçer; öğrenilecek bir düzen veya taraflı bir avantaj yoktur. Sonuç tamamen şansa bağlıdır."
+      }
+    ],
+    "horoscope": [
+      {
+        "h": "Burcunuzu nasıl bulursunuz?",
+        "p": "Tropikal zodyak, yılı her biri bir takımyıldıza bağlı on iki döneme böler. Herhangi bir tarihi girin; araç tarihi doğru dönemle eşleştirir ve burç adını, elementini, tarih aralığını ve kısa bir kişilik özetini gösterir."
+      },
+      {
+        "h": "Ciddiye almak gerekir mi?",
+        "p": "Hayır. Burç betimlemeleri geniş ve eğlence için yazılmıştır. Gerçek astroloji ile astronomi çok farklı alanlardır; bu araç isimler, doğum günleri ve parti oyunları için eğlenceli bir referanstır."
+      }
+    ],
+    "text-escape-unescape": [
+      {
+        "h": "Metin kaçış karakteri nedir?",
+        "p": "JSON ve JavaScript'te bazı karakterlerin özel anlamı vardır: tırnaklar dizeyi açar ve kapatır, ters bölü ise kaçış dizilerini başlatır. Kaçışla işaretleme, bu karakterlerin önüne ters bölü ekler; böylece dize güvenle saklanabilir veya gömülebilir."
+      },
+      {
+        "h": "Kaçışı kaldırmak ne zaman işe yarar?",
+        "p": "API günlükleri, yapılandırma kayıtları ve veritabanı dışa aktarımları çoğu zaman tamamen kaçışlı ve okunması zor gelir. Buradaki metni yapıştırmak, elle düzenlemek yerine tek tıkla düz ve okunabilir hale çözer."
+      }
     ]
   },
   "Rehber": {
@@ -6500,6 +6716,134 @@
       "invalid": "Geçersiz",
       "roleNote": "Rol bazlı adres",
       "tip": "Bu araç yalnızca format ve üst düzey alan adını kontrol eder. Bir adresin gerçekten var olduğunu veya mail aldığını doğrulayamaz."
+    },
+    "wordScrambler": {
+      "inputLabel": "Metniniz",
+      "modeEdges": "İlk ve son harfi koru",
+      "modeFull": "Tam karıştır",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "empty": "Bir metin girin ve bir mod seçin.",
+      "tip": "İlk ve son harfi sabit tutmak hâlâ okunabilir görünen kelimeler üretir; tam karıştırma her harfi gizler. Kelimeler yalnızca boşluklara göre bölünür."
+    },
+    "hashtagGenerator": {
+      "inputLabel": "Cümle veya anahtar kelimeler",
+      "inputPlaceholder": "her satıra bir fikir, örn. yaz tatili",
+      "outputTitle": "Oluşturulan hashtagler",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "empty": "Her satıra bir cümle veya anahtar kelime yazın.",
+      "tip": "Her satır tek bir boşluksuz hashtag olur. Kopyalama, tüm etiketleri boşlukla ayrılmış şekilde bir araya getirir ve paylaşıma hazır hale getirir."
+    },
+    "acronymGenerator": {
+      "phraseLabel": "Kelime grubu",
+      "dots": "Harfler arasına nokta koy",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "empty": "Kısaltmasını oluşturmak için bir kelime grubu yazın.",
+      "tip": "Her kelimenin ilk harfi sırayla alınır. Daha temiz bir kısaltma için ve, ile, için gibi kısa kelimeleri yazmayın."
+    },
+    "palindromeChecker": {
+      "inputLabel": "Kontrol edilecek metin",
+      "ignore": "Boşluk, noktalama ve büyük küçük harf ayrımını yok say",
+      "isPalindrome": "Bu bir palindromdur.",
+      "notPalindrome": "Bu bir palindrom değildir.",
+      "reversed": "Tersinden okunuşu:",
+      "empty": "Kontrol etmek için bir metin yazın.",
+      "tip": "trablusgirgınsualbarı gibi klasik örnekleri deneyin."
+    },
+    "httpStatusCodes": {
+      "searchLabel": "Durum kodlarını ara",
+      "searchPlaceholder": "örn. 404, redirect, sunucu hatası",
+      "group1xx": "Bilgi",
+      "group2xx": "Başarı",
+      "group3xx": "Yönlendirme",
+      "group4xx": "İstemci hatası",
+      "group5xx": "Sunucu hatası",
+      "noResults": "Aramanızla eşleşen durum kodu yok.",
+      "tip": "4xx aralığındaki kodlar bir istemci hatası, 5xx kodları ise sunucunun isteği yerine getiremediği anlamına gelir."
+    },
+    "csvFormatter": {
+      "inputLabel": "CSV verisi",
+      "delimiter": "Ayırıcı",
+      "previewTitle": "Önizleme",
+      "copyTsv": "TSV olarak kopyala",
+      "copied": "Kopyalandı!",
+      "empty": "Tablo olarak önizlemek için CSV verisi yapıştırın.",
+      "tip": "Ayırıcı içeren tırnaklı alanlar doğru işlenir. TSV olarak kopyalamak elektronik tabloya yapıştırmayı kolaylaştırır."
+    },
+    "daysUntilCalculator": {
+      "startLabel": "Başlangıç tarihi",
+      "endLabel": "Hedef tarih",
+      "totalDays": "Toplam gün",
+      "weeksDays": "Hafta ve gün",
+      "weeks": "hafta",
+      "days": "gün",
+      "past": "önce",
+      "direction": "Yön",
+      "sameDay": "Tarihler aynı gün.",
+      "future": "Hedef tarih gelecekte.",
+      "pastNote": "Hedef tarih geçmişte.",
+      "empty": "Gün saymak için iki tarihi de seçin.",
+      "tip": "Fark takvim günüyle hesaplanır; artık günler ve ay uzunlukları dikkate alınır."
+    },
+    "runningPaceConverter": {
+      "paceLabel": "Km başına tempo",
+      "minutes": "Dakika",
+      "seconds": "Saniye",
+      "perKm": "/ km",
+      "speed": "Ortalama hız",
+      "kmh": "km/s",
+      "d5k": "5K",
+      "d10k": "10K",
+      "half": "Yarı maraton",
+      "marathon": "Maraton",
+      "empty": "Hız ve yarış sürelerini hesaplamak için bir tempo girin.",
+      "tip": "Km başına 5:00 tempo tam olarak 12 km/s hıza eşittir. Maraton mesafesi resmi yarış mesafesi olan 42.195 km'dir."
+    },
+    "savingsGoalCalculator": {
+      "goalLabel": "Hedef tutar",
+      "currentLabel": "Mevcut birikim",
+      "monthlyLabel": "Aylık birikim",
+      "monthsTargetLabel": "Hedef ay sayısı",
+      "remaining": "Kalan tutar",
+      "monthsToGoal": "Hedefe ulaşma süresi",
+      "years": "yıl",
+      "monthlyRequired": "Hedef süre için aylık birikim",
+      "perMonth": "/ ay",
+      "tip": "Hesap makinesi faiz hesaba katmaz. Uzun hedeflerde küçük aylık tutarlar bile hızla birikir; en önemlisi düzenliliktir."
+    },
+    "rockPaperScissors": {
+      "rock": "Taş",
+      "paper": "Kağıt",
+      "scissors": "Makas",
+      "you": "Siz",
+      "ties": "Beraberlik",
+      "ai": "Bilgisayar",
+      "resultWin": "Bu turu kazandınız!",
+      "resultTie": "Berabere.",
+      "resultLose": "Bu turu bilgisayar kazandı.",
+      "reset": "Skoru sıfırla",
+      "tip": "Taş makası yener, makas kağıdı yener, kağıt taşı yener. Bilgisayar her turda rastgele seçim yapar."
+    },
+    "horoscope": {
+      "dateLabel": "Doğum tarihi",
+      "sign": "Burcunuz",
+      "element": "Element",
+      "range": "Tarih aralığı",
+      "empty": "Burcu bulmak için bir tarih seçin.",
+      "tip": "Bu yalnızca eğlence amaçlı bir rehberdir: burçlar tropikal zodyaka göre belirlenir, fal anlamı taşımaz."
+    },
+    "textEscapeUnescape": {
+      "inputLabel": "Giriş metni",
+      "escape": "Kaçışla işaretle",
+      "unescape": "Kaçışı kaldır",
+      "outputLabel": "Sonuç",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "invalid": "Giriş metni çözülemiyor. Eksik ters bölü işaretlerini kontrol edin.",
+      "empty": "Bir metin yazın ve kaçışla işaretleme veya kaçışı kaldırma seçin.",
+      "tip": "Kaçışla işaretleme, tırnakları ve ters bölü işaretlerini dönüştürür; böylece dize JSON ve JavaScript kaynak kodu içinde geçerli olur."
     }
   }
 }

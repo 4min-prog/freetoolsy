@@ -17,10 +17,22 @@
     "trustFree": "Free, no signup",
     "trustPrivacy": "Your data is never sent",
     "valueLabel": "Why FreeToolsy",
-    "valueNoSignup": { "label": "No sign-up", "desc": "Open any tool and start" },
-    "valueFast": { "label": "Instant", "desc": "Results in seconds, no install" },
-    "valuePrivate": { "label": "Private by design", "desc": "Everything runs in your browser" },
-    "valueFree": { "label": "Free forever", "desc": "Unlimited use, no paywalls" },
+    "valueNoSignup": {
+      "label": "No sign-up",
+      "desc": "Open any tool and start"
+    },
+    "valueFast": {
+      "label": "Instant",
+      "desc": "Results in seconds, no install"
+    },
+    "valuePrivate": {
+      "label": "Private by design",
+      "desc": "Everything runs in your browser"
+    },
+    "valueFree": {
+      "label": "Free forever",
+      "desc": "Unlimited use, no paywalls"
+    },
     "statsTools": "free tools",
     "searchPlaceholder": "Search tools… e.g. password, JSON, VAT",
     "jsonldSiteDesc": "Free online tools for text, security, developer and calculation. No signup, no install.",
@@ -1039,6 +1051,90 @@
       "title": "Email Validator - Check Address Format Online",
       "pageDesc": "Paste one or many email addresses and check their format, top-level domain and role-based prefixes in one pass. The validation is fully client-side and private.",
       "intro": "Paste email addresses and check them all at once."
+    },
+    "word-scrambler": {
+      "name": "Word Scrambler",
+      "desc": "Scramble the letters of words, keeping first and last letters fixed or fully random.",
+      "title": "Word Scrambler - Shuffle Letters in Text Online",
+      "pageDesc": "Paste any text and scramble the letters of each word. Keep first and last letters fixed for recognizable words or fully randomize everything. This tool runs entirely in your browser.",
+      "intro": "Type or paste your text, pick a mode and scramble instantly."
+    },
+    "hashtag-generator": {
+      "name": "Hashtag Generator",
+      "desc": "Turn a phrase into ready-to-post hashtags without spaces, in your browser.",
+      "title": "Hashtag Generator - Create Hashtags from Text Online",
+      "pageDesc": "Type a phrase and get clean, space-free hashtags in one click. Filter out short or common words with optional toggles and copy the full list. Everything stays on your device.",
+      "intro": "Enter a phrase, adjust the options and copy your hashtags."
+    },
+    "acronym-generator": {
+      "name": "Acronym Generator",
+      "desc": "Create uppercase acronyms from any phrase, with an optional dotted style.",
+      "title": "Acronym Generator - Make an Acronym from a Name or Phrase Online",
+      "pageDesc": "Give the tool any sequence of words and it extracts the first letter of each one into a single acronym. Use the dots option for styles like W.W.W. These initials are ready to copy. All processing stays in your browser.",
+      "intro": "Write a phrase and copy the acronym it creates."
+    },
+    "palindrome-checker": {
+      "name": "Palindrome Checker",
+      "desc": "Check if a word or sentence reads the same forwards and backwards.",
+      "title": "Palindrome Checker - Test Words and Sentences Online",
+      "pageDesc": "Type any text and find out instantly whether it is a palindrome. Toggle the ignore option to skip spaces, punctuation and letter case, just like real palindromes do. Fully private and client-side.",
+      "intro": "Enter some text and see the result right away."
+    },
+    "http-status-codes": {
+      "name": "HTTP Status Codes",
+      "desc": "Browse common HTTP status codes and their meanings, grouped by class.",
+      "title": "HTTP Status Codes - Meanings of 1xx to 5xx Explained",
+      "pageDesc": "A quick reference for the most common HTTP status codes from 100 to 511. Search by number or name, or browse by class: informational, success, redirect, client error and server error.",
+      "intro": "Search a number or browse the classes below."
+    },
+    "csv-formatter": {
+      "name": "CSV Formatter",
+      "desc": "Parse messy CSV, preview it as a table and copy it as TSV.",
+      "title": "CSV Formatter - Pretty Print and Preview CSV Data",
+      "pageDesc": "Paste raw CSV, choose the delimiter and see the data as a clean table. The tool handles quoted fields correctly and lets you copy the result as tab-separated values for any spreadsheet.",
+      "intro": "Paste your CSV and preview it as a table."
+    },
+    "days-until-calculator": {
+      "name": "Days Until Calculator",
+      "desc": "Count the days, weeks and months between two calendar dates.",
+      "title": "Days Until Calculator - Count Days Between Dates Online",
+      "pageDesc": "Pick a start date and a target date to see exactly how many days, weeks and days are left, or how long ago the date was. Useful for countdowns, deadlines, trips and project planning.",
+      "intro": "Choose the two dates and read the result."
+    },
+    "running-pace-converter": {
+      "name": "Running Pace Converter",
+      "desc": "Convert pace per kilometer into speed and projected race times.",
+      "title": "Running Pace Converter - Pace to Speed and Race Times",
+      "pageDesc": "Enter your pace in minutes and seconds per kilometer and see the average speed plus projected finish times for 5K, 10K, half marathon and full marathon. Simple numbers, instant results.",
+      "intro": "Type your per-kilometer pace and get everything else."
+    },
+    "savings-goal-calculator": {
+      "name": "Savings Goal Calculator",
+      "desc": "Find how long it takes to reach a savings target, or the monthly amount needed.",
+      "title": "Savings Goal Calculator - Plan Your Savings Online",
+      "pageDesc": "Enter your goal, what you already have and what you save each month. The calculator shows the remaining amount, how many months are needed, and how much monthly saving a target deadline requires.",
+      "intro": "Fill in your goal and current savings to plan ahead."
+    },
+    "rock-paper-scissors": {
+      "name": "Rock Paper Scissors",
+      "desc": "Play the classic game against the computer with a running score.",
+      "title": "Rock Paper Scissors - Play Against the Computer Online",
+      "pageDesc": "Play rock, paper, scissors against a random computer opponent. Every round updates your wins, ties and losses, and you can reset the score anytime. No setup, no downloads.",
+      "intro": "Pick rock, paper or scissors and start playing."
+    },
+    "horoscope": {
+      "name": "Horoscope Sign Finder",
+      "desc": "Find your zodiac sign, element and traits from your birth date.",
+      "title": "Zodiac Sign Finder - Find Your Horoscope Sign Online",
+      "pageDesc": "Enter a birth date and instantly get the matching zodiac sign, its element, date range and a short character description. A fun reference for names, dates and birthday comparisons.",
+      "intro": "Pick a date and discover the sign."
+    },
+    "text-escape-unescape": {
+      "name": "Text Escape / Unescape",
+      "desc": "Escape text as a JSON or JavaScript string, or decode escaped values.",
+      "title": "Text Escape and Unescape Tool - JSON String Symbols",
+      "pageDesc": "Type plain text and escape quotes, backslashes and special characters for use in JSON and JavaScript strings. Or paste escaped text and decode it back to a readable string. All local.",
+      "intro": "Paste text, choose escape or unescape and copy the result."
     }
   },
   "ToolContent": {
@@ -4521,6 +4617,126 @@
         "h": "Can it prove an email exists?",
         "p": "No. A server-side check would be needed to confirm a mailbox exists, and this tool stays fully private and local."
       }
+    ],
+    "word-scrambler": [
+      {
+        "h": "What is a word scrambler?",
+        "p": "A word scrambler takes every word in your text and rearranges its letters. Keep the first and last letters fixed and the output still looks like real words, or fully randomize everything for puzzles and brain teasers. The result is ready to copy and paste anywhere."
+      },
+      {
+        "h": "When is it useful?",
+        "p": "Create anagram challenges for friends, practice reading in a new language, or briefly anonymize names inside short texts. It is also a quick way to produce playful usernames and captions."
+      }
+    ],
+    "hashtag-generator": [
+      {
+        "h": "Why generate hashtags automatically?",
+        "p": "Social media posts perform better when hashtags are consistent: no spaces, no punctuation and clearly grouped by topic. This tool turns a normal phrase into ready-to-use hashtags so a broken tag never ends up in your post."
+      },
+      {
+        "h": "What do the filters do?",
+        "p": "The minimum length option removes tiny, low-value tags, while the common words option skips generic words every post already contains. Keeping only strong, specific hashtags boosts visibility without spam."
+      }
+    ],
+    "acronym-generator": [
+      {
+        "h": "What is an acronym generator?",
+        "p": "An acronym generator reads a phrase word by word and keeps the first letter of each word. The result is a compact uppercase abbreviation. The dots option adds a period after every letter, which fits many official and company name styles."
+      },
+      {
+        "h": "Where can you use it?",
+        "p": "Naming a company, a product line or a course, shortening long official titles, or building study abbreviations like formula and chapter names. It also helps turn multi-word search terms into memorable codes."
+      }
+    ],
+    "palindrome-checker": [
+      {
+        "h": "What is a palindrome?",
+        "p": "A palindrome is a word, phrase or number that reads exactly the same forwards and backwards. The checker compares the text with its reverse and tells you instantly whether it matches."
+      },
+      {
+        "h": "How does the ignore option work?",
+        "p": "Turning on the ignore option removes spaces, punctuation and letter case before comparing. This follows the spirit of real palindromes, where the readable letters matter more than the exact characters."
+      }
+    ],
+    "http-status-codes": [
+      {
+        "h": "How do HTTP status codes work?",
+        "p": "Every web request ends with a three-digit status code from the server. The first digit shows the class: 1xx informational, 2xx success, 3xx redirect, 4xx client error and 5xx server error. Knowing the code tells you exactly what went wrong."
+      },
+      {
+        "h": "Which codes matter most day to day?",
+        "p": "404 means a page was not found, 403 means access is denied and 301 is a permanent redirect. On the server side, 500 is a general internal error while 503 usually means the service is temporarily unavailable."
+      }
+    ],
+    "csv-formatter": [
+      {
+        "h": "Why format CSV?",
+        "p": "Raw CSV viewed in a text editor is hard to scan: fields run together and quoted columns hide the true structure. Formatting splits each record into visible cells so you can spot misaligned columns, missing values or wrong delimiters in seconds."
+      },
+      {
+        "h": "How does the parsing work?",
+        "p": "The parser reads every line and respects double quotes, so fields that contain the delimiter or line breaks stay intact. Switch the delimiter for data that uses semicolons or tabs, and copy the result as TSV to paste it into any spreadsheet."
+      }
+    ],
+    "days-until-calculator": [
+      {
+        "h": "How is the day count calculated?",
+        "p": "The calculator works with real calendar dates, so month lengths, leap years and year boundaries are all handled correctly. Pick a start date and a target date; the result shows total days plus weeks and remaining days."
+      },
+      {
+        "h": "What do negative results mean?",
+        "p": "When the target date falls before the start date, the result is shown with a past marker. This is handy for checking how long ago an event happened or for verifying record-keeping windows."
+      }
+    ],
+    "running-pace-converter": [
+      {
+        "h": "How does pace relate to speed?",
+        "p": "Pace is the time needed to run one kilometer, and speed is the distance covered in one hour. The converter divides 3600 seconds by your pace to give the average speed, so 5:00 per kilometer equals exactly 12 km/h."
+      },
+      {
+        "h": "Which race times are projected?",
+        "p": "The tool projects finish times for 5K, 10K, half marathon and full marathon by multiplying your pace by the official distance. These are linear estimates and do not account for hills, weather or fatigue during the race."
+      }
+    ],
+    "savings-goal-calculator": [
+      {
+        "h": "How does the calculator work?",
+        "p": "The remaining amount is your goal minus what you already have. Dividing that by your monthly saving gives the number of months needed, and dividing it by a target number of months gives the monthly amount you should save."
+      },
+      {
+        "h": "How can I reach the goal faster?",
+        "p": "Small increases in monthly saving shorten the timeline far more than they cost. Breaking a large goal into milestones also keeps motivation high, and automating the transfer makes the plan consistent."
+      }
+    ],
+    "rock-paper-scissors": [
+      {
+        "h": "How to play",
+        "p": "Pick rock, paper or scissors and the computer picks one at random. Rock crushes scissors, scissors cut paper and paper covers rock. Identical choices are a tie. Every round updates your three scores."
+      },
+      {
+        "h": "Is the computer fair?",
+        "p": "Each round the computer selects randomly from the three options with equal probability, so there is no pattern to learn and no advantage for either side. The result is determined purely by chance."
+      }
+    ],
+    "horoscope": [
+      {
+        "h": "How to find your sign",
+        "p": "The tropical zodiac divides the year into twelve periods, each linked to a constellation. Enter any date and the tool matches it to the correct period, then shows the sign name, element, date range and a short personality summary."
+      },
+      {
+        "h": "Is it meant to be taken seriously?",
+        "p": "No. Sign descriptions are broad and written for entertainment. Real astrology and astronomy are very different fields; this tool is a fun reference for names, birthdays and party games."
+      }
+    ],
+    "text-escape-unescape": [
+      {
+        "h": "What is text escaping?",
+        "p": "In JSON and JavaScript, certain characters have special meaning: quotes open and close strings, and backslashes start escape sequences. Escaping prefixes those characters with a backslash so a string can be stored or embedded safely."
+      },
+      {
+        "h": "When is unescaping useful?",
+        "p": "API logs, config dumps and database exports often arrive fully escaped and hard to read. Pasting such text here decodes it back to plain, readable content in one click instead of editing it by hand."
+      }
     ]
   },
   "Rehber": {
@@ -6500,6 +6716,134 @@
       "invalid": "Invalid",
       "roleNote": "Role-based address",
       "tip": "This checks format and top-level domain only. It cannot confirm that an address exists in a mailbox or that mail is received."
+    },
+    "wordScrambler": {
+      "inputLabel": "Your text",
+      "modeEdges": "Keep first & last letters",
+      "modeFull": "Full shuffle",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "empty": "Type or paste some text and pick a mode.",
+      "tip": "Keeping the first and last letters fixed produces words that still look readable; full shuffle hides every letter. Splitting is done on whitespace only."
+    },
+    "hashtagGenerator": {
+      "inputLabel": "Phrase or keywords",
+      "inputPlaceholder": "one line per idea, e.g. summer vacation",
+      "outputTitle": "Generated hashtags",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "empty": "Type one phrase or keyword per line.",
+      "tip": "Each line becomes a single space-free hashtag. Copying puts all tags together separated by spaces, ready to paste into a post."
+    },
+    "acronymGenerator": {
+      "phraseLabel": "Phrase",
+      "dots": "Add dots between letters",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "empty": "Type a phrase to create its acronym.",
+      "tip": "The first letter of each word is taken in order. Ignore short words like and, of or the if you want a cleaner acronym."
+    },
+    "palindromeChecker": {
+      "inputLabel": "Text to check",
+      "ignore": "Ignore spaces, punctuation and letter case",
+      "isPalindrome": "This is a palindrome.",
+      "notPalindrome": "This is not a palindrome.",
+      "reversed": "Reversed:",
+      "empty": "Type some text to check it.",
+      "tip": "Try classic examples like racecar or a man, a plan, a canal, panama."
+    },
+    "httpStatusCodes": {
+      "searchLabel": "Search status codes",
+      "searchPlaceholder": "e.g. 404, redirect, server error",
+      "group1xx": "Informational",
+      "group2xx": "Success",
+      "group3xx": "Redirect",
+      "group4xx": "Client error",
+      "group5xx": "Server error",
+      "noResults": "No status code matches your search.",
+      "tip": "Codes in the 4xx range mean a client mistake, while 5xx codes mean the server failed to fulfill the request."
+    },
+    "csvFormatter": {
+      "inputLabel": "CSV data",
+      "delimiter": "Delimiter",
+      "previewTitle": "Preview",
+      "copyTsv": "Copy as TSV",
+      "copied": "Copied!",
+      "empty": "Paste CSV data to preview it as a table.",
+      "tip": "Quoted fields containing the delimiter are handled correctly. Copying as TSV makes pasting into spreadsheets just work."
+    },
+    "daysUntilCalculator": {
+      "startLabel": "Start date",
+      "endLabel": "Target date",
+      "totalDays": "Total days",
+      "weeksDays": "Weeks and days",
+      "weeks": "weeks",
+      "days": "days",
+      "past": "ago",
+      "direction": "Direction",
+      "sameDay": "The dates are the same.",
+      "future": "The target date is in the future.",
+      "pastNote": "The target date is in the past.",
+      "empty": "Pick both dates to count the days.",
+      "tip": "The difference uses calendar days, so leap days and month lengths are taken into account."
+    },
+    "runningPaceConverter": {
+      "paceLabel": "Pace per kilometer",
+      "minutes": "Minutes",
+      "seconds": "Seconds",
+      "perKm": "per km",
+      "speed": "Average speed",
+      "kmh": "km/h",
+      "d5k": "5K",
+      "d10k": "10K",
+      "half": "Half marathon",
+      "marathon": "Marathon",
+      "empty": "Enter a pace to calculate speed and race times.",
+      "tip": "A pace of 5:00 per kilometer equals exactly 12 km/h. The marathon distance includes the official race distance of 42.195 km."
+    },
+    "savingsGoalCalculator": {
+      "goalLabel": "Goal amount",
+      "currentLabel": "Current savings",
+      "monthlyLabel": "Monthly saving",
+      "monthsTargetLabel": "Target months",
+      "remaining": "Remaining amount",
+      "monthsToGoal": "Months to reach goal",
+      "years": "years",
+      "monthlyRequired": "Monthly saving for target period",
+      "perMonth": "per month",
+      "tip": "The calculator ignores interest. For long goals, even a small monthly amount adds up quickly and consistency matters most."
+    },
+    "rockPaperScissors": {
+      "rock": "Rock",
+      "paper": "Paper",
+      "scissors": "Scissors",
+      "you": "You",
+      "ties": "Ties",
+      "ai": "Computer",
+      "resultWin": "You win this round!",
+      "resultTie": "It is a tie.",
+      "resultLose": "Computer wins this round.",
+      "reset": "Reset score",
+      "tip": "Rock beats scissors, scissors beat paper, and paper beats rock. The computer picks randomly every round."
+    },
+    "horoscope": {
+      "dateLabel": "Birth date",
+      "sign": "Your sign",
+      "element": "Element",
+      "range": "Date range",
+      "empty": "Pick a date to find the sign.",
+      "tip": "This is a fun reference only: signs follow the tropical zodiac and are not meant as fortune telling."
+    },
+    "textEscapeUnescape": {
+      "inputLabel": "Input text",
+      "escape": "Escape",
+      "unescape": "Unescape",
+      "outputLabel": "Result",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "invalid": "The input cannot be unescaped. Check for missing backslashes.",
+      "empty": "Type some text and choose escape or unescape.",
+      "tip": "Escaping converts quotes and backslashes so a string is valid inside JSON and JavaScript source code."
     }
   }
 }

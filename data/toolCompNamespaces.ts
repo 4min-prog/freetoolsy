@@ -126,6 +126,18 @@ export const TOOL_COMP_NAMESPACE: Record<string, string> = {
   "image-rotator": "imageRotator",
   "xml-sitemap-generator": "xmlSitemapGenerator",
   "email-validator": "emailValidator",
+  "word-scrambler": "wordScrambler",
+  "hashtag-generator": "hashtagGenerator",
+  "acronym-generator": "acronymGenerator",
+  "palindrome-checker": "palindromeChecker",
+  "http-status-codes": "httpStatusCodes",
+  "csv-formatter": "csvFormatter",
+  "days-until-calculator": "daysUntilCalculator",
+  "running-pace-converter": "runningPaceConverter",
+  "savings-goal-calculator": "savingsGoalCalculator",
+  "rock-paper-scissors": "rockPaperScissors",
+  "horoscope": "horoscope",
+  "text-escape-unescape": "textEscapeUnescape",
 };
 
 export function toolCompNamespace(slug: string): string | undefined {
