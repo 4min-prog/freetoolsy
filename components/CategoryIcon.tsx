@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-const ICONS: Record<string, ReactNode> = {
+export const CATEGORY_ICON_PATHS: Record<string, ReactNode> = {
   text: (
     <path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9zM14 3v6h6M8.5 13.5h7M8.5 17.5h4" />
   ),
@@ -60,7 +60,7 @@ export default function CategoryIcon({
       className={className}
       aria-hidden="true"
     >
-      {ICONS[id] ?? ICONS.text}
+      {CATEGORY_ICON_PATHS[id] ?? CATEGORY_ICON_PATHS.text}
     </svg>
   );
 }

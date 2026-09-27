@@ -8,6 +8,7 @@ import {
   categoryPath,
   categoryUrl,
   localizedUrl,
+  siteUrl,
   toolUrl,
 } from "@/lib/paths";
 import ToolCard from "@/components/ToolCard";
@@ -46,7 +47,17 @@ export async function generateMetadata({
           tr: categoryUrl("tr", category.id),
         },
       },
-      openGraph: { url: canonical },
+      openGraph: {
+        url: canonical,
+        images: [
+          {
+            url: `${siteUrl}/og/${category.id}`,
+            width: 1200,
+            height: 630,
+            alt: `${tc(category.id)} ${locale === "en" ? "Tools" : "Araçları"}`,
+          },
+        ],
+      },
     };
   }
 

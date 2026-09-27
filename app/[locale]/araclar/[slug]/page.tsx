@@ -9,6 +9,7 @@ import {
   categoryPath,
   categoryUrl,
   localizedUrl,
+  siteUrl,
   toolPath,
   toolUrl,
 } from "@/lib/paths";
@@ -60,7 +61,17 @@ export async function generateMetadata({
         tr: toolUrl("tr", tool.slug),
       },
     },
-    openGraph: { url: canonical },
+    openGraph: {
+      url: canonical,
+      images: [
+        {
+          url: `${siteUrl}/og/${tool.slug}`,
+          width: 1200,
+          height: 630,
+          alt: t("pageDesc"),
+        },
+      ],
+    },
   };
 }
 

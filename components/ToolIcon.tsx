@@ -116,7 +116,7 @@ faHardDrive,
   faWeightScale,
 } from "@fortawesome/free-solid-svg-icons";
 
-const ICONS: Record<string, IconDefinition> = {
+export const TOOL_ICONS: Record<string, IconDefinition> = {
   "character-counter": faTextWidth,
   "word-counter": faAlignLeft,
   "case-converter": faFont,
@@ -254,7 +254,7 @@ export default function ToolIcon({
 }) {
   return (
     <FontAwesomeIcon
-      icon={ICONS[id] ?? faToolbox}
+      icon={TOOL_ICONS[id] ?? faToolbox}
       className={className}
       aria-hidden="true"
     />
