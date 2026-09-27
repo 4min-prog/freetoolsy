@@ -1090,8 +1090,8 @@ export function getToolsByCategory(category: string): Tool[] {
   return tools.filter((tool) => tool.category === category);
 }
 
-export function displayToolCount(count: number): string {
-  return count.toLocaleString("en-US");
+export function displayToolCount(_count: number): string {
+  return "100+";
 }
 
 const NEW_TOOL_DAYS = 30;

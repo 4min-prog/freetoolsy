@@ -6,7 +6,11 @@ import ToolCard from "@/components/ToolCard";
 import CategoryIcon from "@/components/CategoryIcon";
 import { Link } from "@/i18n/navigation";
 import { categoryTheme } from "@/components/categoryTheme";
-import { categories, displayToolCount, getToolsByCategory, tools } from "@/data/tools";
+import {
+  categories,
+  getToolsByCategory,
+  tools,
+} from "@/data/tools";
 import { categoryPath } from "@/lib/paths";
 import type { Locale } from "@/i18n/routing";
 
@@ -150,7 +154,7 @@ export default function ToolExplorer() {
                 {t("tabAll")}
               </span>
               <span className="font-mono text-[11px] tabular-nums text-faint transition-colors group-hover:text-muted">
-                {displayToolCount(tools.length)}
+                {tools.length}
               </span>
             </button>
             {categories.map((category) => {
