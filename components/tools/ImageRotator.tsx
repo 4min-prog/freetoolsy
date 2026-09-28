@@ -1,5 +1,6 @@
 "use client";
 
+import { exceedsCanvasLimit } from "@/lib/canvasLimit";
 import { useCallback, useState } from "react";
 import { useTranslations } from "next-intl";
 
@@ -30,6 +31,7 @@ function applyTransform(
     const width = swap ? image.height : image.width;
     const height = swap ? image.width : image.height;
     const canvas = document.createElement("canvas");
+    if (exceedsCanvasLimit(width, height)) return;
     canvas.width = width;
     canvas.height = height;
     const ctx = canvas.getContext("2d");

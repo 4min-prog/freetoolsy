@@ -119,6 +119,7 @@ export default async function Footer() {
                     src="https://launchnest.io/brand/badges/listed-dark.svg"
                     alt="Listed on LaunchNest"
                     width="150"
+                    loading="lazy"
                     className="h-auto rounded-md border border-border bg-bg transition-opacity hover:opacity-80"
                   />
                 </a>
@@ -128,6 +129,7 @@ export default async function Footer() {
                   <img
                     alt="OpenHunts Club Member"
                     height="105"
+                    loading="lazy"
                     src="https://cdn.openhunts.com/badges/club.webp"
                     style={{ width: "195px", height: "auto" }}
                     width="486"

@@ -1,5 +1,6 @@
 "use client";
 
+import { exceedsCanvasLimit } from "@/lib/canvasLimit";
 import { useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 
@@ -23,6 +24,7 @@ export default function PixelateImage() {
       if (!canvas) return;
       const context = canvas.getContext("2d");
       if (!context) return;
+      if (exceedsCanvasLimit(image.naturalWidth, image.naturalHeight)) return;
       canvas.width = image.naturalWidth;
       canvas.height = image.naturalHeight;
       context.drawImage(image, 0, 0);

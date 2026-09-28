@@ -5,11 +5,9 @@ import { Link } from "@/i18n/navigation";
 import { guides, getGuide } from "@/data/guides";
 import { getTool } from "@/data/tools";
 import { routing, type Locale } from "@/i18n/routing";
-import { localizedUrl, toolPath } from "@/lib/paths";
+import { localizedUrl, siteUrl, toolPath } from "@/lib/paths";
 import ToolIcon from "@/components/ToolIcon";
 import JsonLd from "@/components/JsonLd";
-
-const siteUrl = "https://www.freetoolsy.com";
 
 export function generateStaticParams() {
   const params: { locale: string; slug: string }[] = [];

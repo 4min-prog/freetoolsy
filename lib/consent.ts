@@ -1,4 +1,4 @@
-export const CONSENT_KEY = "cookie_consent";
+const CONSENT_KEY = "cookie_consent";
 export const CONSENT_EVENT = "cookie-consent-change";
 
 export type Consent = "accepted" | "rejected";

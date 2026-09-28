@@ -3,6 +3,8 @@
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 
+const MAX_RENDERED_URLS = 500;
+
 export default function SitemapUrlExtractor() {
   const [xml, setXml] = useState("");
   const [copied, setCopied] = useState(false);
@@ -21,10 +23,16 @@ export default function SitemapUrlExtractor() {
   }, [xml]);
 
   async function copy() {
-    await navigator.clipboard.writeText(urls.join("\n"));
-    setCopied(true);
-    setTimeout(() => setCopied(false), 1400);
+    try {
+      await navigator.clipboard.writeText(urls.join("\n"));
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1400);
+    } catch {
+      setCopied(false);
+    }
   }
+
+  const visibleUrls = urls.slice(0, MAX_RENDERED_URLS);
 
   return (
     <div>
@@ -60,7 +68,7 @@ export default function SitemapUrlExtractor() {
           </div>
           {urls.length > 0 ? (
             <ul className="mt-3 max-h-64 overflow-auto rounded-lg border border-border bg-bg p-3 font-mono text-xs text-text">
-              {urls.map((url, index) => (
+              {visibleUrls.map((url, index) => (
                 <li key={`${url}-${index}`} className="py-0.5">
                   {url}
                 </li>

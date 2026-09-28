@@ -73,24 +73,25 @@ function Stat(props: { label: string; value: string | number; pulse?: boolean })
 
 export default function AgeCalculator() {
   const [birthValue, setBirthValue] = useState("");
-  const [now, setNow] = useState(() => new Date());
+  const [now, setNow] = useState<Date | null>(null);
   const t = useTranslations("comp.ageCalculator");
 
   const birth = useMemo(() => parseBirthDate(birthValue), [birthValue]);
 
   useEffect(() => {
+    setNow(new Date());
     if (!birth) return;
     const interval = window.setInterval(() => setNow(new Date()), 1000);
     return () => window.clearInterval(interval);
   }, [birth]);
 
   const components = useMemo(
-    () => (birth && birth.getTime() < now.getTime() ? diffComponents(birth, now) : null),
+    () => (birth && now && birth.getTime() < now.getTime() ? diffComponents(birth, now) : null),
     [birth, now]
   );
 
   const birthdayInfo = useMemo(() => {
-    if (!birth) return null;
+    if (!birth || !now) return null;
     if (birth.getTime() > now.getTime()) {
       return { days: null, future: true };
     }
@@ -130,7 +131,7 @@ export default function AgeCalculator() {
       <input
         id="yas-dogum"
         type="date"
-        max={new Date().toISOString().slice(0, 10)}
+        max={now ? now.toISOString().slice(0, 10) : undefined}
         value={birthValue}
         onChange={(event) => setBirthValue(event.target.value)}
         className="mt-2 w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-sm text-text focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"

@@ -1,4 +1,4 @@
-export const TOOL_COMP_NAMESPACE: Record<string, string> = {
+const TOOL_COMP_NAMESPACE: Record<string, string> = {
   "character-counter": "characterCounter",
   "word-counter": "wordCounter",
   "case-converter": "caseConverter",

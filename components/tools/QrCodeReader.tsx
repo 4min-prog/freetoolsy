@@ -2,9 +2,11 @@
 
 import { showToast } from "@/lib/toast";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import jsQR from "jsqr";
+
+const MAX_READ_PIXELS = 4_000_000;
 
 export default function QrCodeReader() {
   const t = useTranslations("comp.qrCodeReader");
@@ -14,6 +16,11 @@ export default function QrCodeReader() {
   const [copied, setCopied] = useState(false);
   const fileRef = useRef<HTMLInputElement>(null);
 
+  useEffect(() => {
+    if (!dataUrl) return;
+    return () => URL.revokeObjectURL(dataUrl);
+  }, [dataUrl]);
+
   function readImage(file: File) {
     const url = URL.createObjectURL(file);
     setDataUrl(url);
@@ -22,6 +29,11 @@ export default function QrCodeReader() {
     setReading(true);
     const image = new Image();
     image.onload = () => {
+      if (image.width * image.height > MAX_READ_PIXELS) {
+        setResult("");
+        setReading(false);
+        return;
+      }
       const scale = Math.min(1, 800 / Math.max(image.width, image.height));
       const canvas = document.createElement("canvas");
       canvas.width = Math.max(1, Math.floor(image.width * scale));

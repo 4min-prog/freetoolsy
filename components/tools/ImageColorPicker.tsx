@@ -1,5 +1,6 @@
 "use client";
 
+import { exceedsCanvasLimit } from "@/lib/canvasLimit";
 import SampleButton from "@/components/SampleButton";
 import { showToast } from "@/lib/toast";
 import { createSampleImageFile } from "@/lib/sampleImage";
@@ -61,6 +62,10 @@ export default function ImageColorPicker() {
     if (!canvas) return;
     const img = new Image();
     img.onload = () => {
+      if (exceedsCanvasLimit(img.naturalWidth, img.naturalHeight)) {
+        setError(t("error"));
+        return;
+      }
       canvas.width = img.naturalWidth;
       canvas.height = img.naturalHeight;
       const ctx = canvas.getContext("2d");

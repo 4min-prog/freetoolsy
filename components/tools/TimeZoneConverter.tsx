@@ -46,22 +46,21 @@ export default function TimeZoneConverter() {
   const [zones, setZones] = useState<string[]>([]);
   const [source, setSource] = useState("Europe/Istanbul");
   const [target, setTarget] = useState("UTC");
-  const [when, setWhen] = useState(() => localInputValue(new Date()));
+  const [when, setWhen] = useState("");
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     setZones(zoneOptions());
+    setWhen(localInputValue(new Date()));
   }, []);
 
   const instant = useMemo(() => {
-    // input type=datetime-local degeri tarayici yerel saatinde; bunu
-    // referans alip secili zaman dilimine ceviriyoruz.
     if (!when) return null;
     const parsed = new Date(when);
     return Number.isNaN(parsed.getTime()) ? null : parsed;
   }, [when]);
 
-  const now = useMemo(() => new Date(), []);
+  const now = useMemo(() => (instant ? new Date(instant.getTime()) : null), [instant]);
 
   async function copy(value: string) {
     try {
@@ -194,7 +193,7 @@ export default function TimeZoneConverter() {
             >
               <span className="truncate text-xs text-muted">{zone.replace(/_/g, " ")}</span>
               <span className="shrink-0 text-xs tabular-nums text-faint">
-                {formatIn(zone, instant ?? now, "en-US")}
+                {now ? formatIn(zone, now, "en-US") : "—"}
               </span>
             </div>
           ))}

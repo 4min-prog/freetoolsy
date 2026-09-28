@@ -1,5 +1,6 @@
 "use client";
 
+import { exceedsCanvasLimit } from "@/lib/canvasLimit";
 import { useEffect, useRef, useState } from "react";
 import type { ChangeEvent } from "react";
 import { useTranslations } from "next-intl";
@@ -68,6 +69,10 @@ export default function ImageConverter() {
     img.onload = () => {
       if (cancelled) return;
       const canvas = document.createElement("canvas");
+      if (exceedsCanvasLimit(img.naturalWidth, img.naturalHeight)) {
+        setError(t("error"));
+        return;
+      }
       canvas.width = img.naturalWidth;
       canvas.height = img.naturalHeight;
       const ctx = canvas.getContext("2d");
