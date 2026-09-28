@@ -27,7 +27,7 @@
     },
     "valuePrivate": {
       "label": "Gizlilik odaklı",
-      "desc": "Her şey tarayıcında çalışır"
+      "desc": "Hiçbir veri yüklenmez, işlem yerelde"
     },
     "valueFree": {
       "label": "Sonsuza dek ücretsiz",
@@ -52,7 +52,11 @@
         "q": "Hangi cihazlar destekleniyor?",
         "a": "Web tarayıcısı olan her cihaz — masaüstü, tablet veya telefon."
       }
-    ]
+    ],
+    "trustLabel": "Gizlilik odaklı",
+    "trustTitle": "Yapıştırdığın hiçbir şey tarayıcınızdan çıkmaz",
+    "trustText": "Her araç cihazınızda yerel olarak çalışır. Metin, dosya ve anahtarlar sayfa içinde işlenir — yüklenmez, kaydedilmez, sunucuda saklanmaz.",
+    "trustShortcut": "Ara"
   },
   "Common": {
     "use": "Kullan",

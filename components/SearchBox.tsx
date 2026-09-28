@@ -31,6 +31,7 @@ export default function SearchBox({
   const [open, setOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   const boxRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
   const resultsId = useId();
   const router = useRouter();
   const t = useTranslations("Header");
@@ -63,6 +64,19 @@ export default function SearchBox({
     document.addEventListener("pointerdown", onPointerDown);
     return () => document.removeEventListener("pointerdown", onPointerDown);
   }, []);
+
+  useEffect(() => {
+    if (!large) return;
+    function onShortcut(event: KeyboardEvent) {
+      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
+        event.preventDefault();
+        inputRef.current?.focus();
+        setOpen(true);
+      }
+    }
+    document.addEventListener("keydown", onShortcut);
+    return () => document.removeEventListener("keydown", onShortcut);
+  }, [large]);
 
   function close() {
     setOpen(false);
@@ -127,6 +141,7 @@ export default function SearchBox({
         <path d="M20 20l-3.2-3.2" />
       </svg>
       <input
+        ref={inputRef}
         type="search"
         value={q}
         autoFocus={autoFocus}

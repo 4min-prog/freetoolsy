@@ -172,6 +172,39 @@ export default async function Home({ params }: { params: { locale: string } }) {
 
         <div className="relative z-30 mt-8">
           <SearchBox large placeholder={t("searchPlaceholder")} />
+          <p className="mt-2.5 flex items-center gap-1.5 text-xs text-faint">
+            <kbd className="rounded border border-border bg-surface px-1.5 py-0.5 font-mono text-[10px] text-muted">
+              Ctrl
+            </kbd>
+            <span aria-hidden="true">+</span>
+            <kbd className="rounded border border-border bg-surface px-1.5 py-0.5 font-mono text-[10px] text-muted">
+              K
+            </kbd>
+            <span>{t("trustShortcut")}</span>
+          </p>
+        </div>
+        <div className="mt-6 flex items-start gap-3 rounded-lg border border-border bg-surface p-4">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+            className="mt-0.5 h-5 w-5 shrink-0 text-accent"
+          >
+            <rect x="5" y="11" width="14" height="10" rx="2" />
+            <path d="M8 11V7a4 4 0 0 1 8 0v4" />
+          </svg>
+          <div>
+            <p className="text-sm font-semibold leading-tight text-text">
+              {t("trustTitle")}
+            </p>
+            <p className="mt-1 text-xs leading-relaxed text-muted">
+              {t("trustText")}
+            </p>
+          </div>
         </div>
           </div>
           <aside className="mt-12 hidden border-l border-border pl-6 lg:mt-2 lg:block">

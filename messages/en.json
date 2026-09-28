@@ -27,7 +27,7 @@
     },
     "valuePrivate": {
       "label": "Private by design",
-      "desc": "Everything runs in your browser"
+      "desc": "Nothing is uploaded — processing is local"
     },
     "valueFree": {
       "label": "Free forever",
@@ -52,7 +52,11 @@
         "q": "Which devices are supported?",
         "a": "Any device with a web browser — desktop, tablet or phone."
       }
-    ]
+    ],
+    "trustLabel": "Private by design",
+    "trustTitle": "Nothing you paste ever leaves your browser",
+    "trustText": "Every tool runs locally on your device. Text, files and keys are processed in the page itself — never uploaded, never logged, never stored on a server.",
+    "trustShortcut": "Search"
   },
   "Common": {
     "use": "Use",
