@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import { copyToClipboard } from "@/lib/clipboard";
 
 function lightMinify(source: string): string {
   const lines = source.split(/\r?\n/);
@@ -20,7 +21,7 @@ export default function JsMinifier() {
   const saved = code.length > 0 ? code.length - output.length : 0;
 
   async function copy() {
-    await navigator.clipboard.writeText(output);
+    await copyToClipboard(output);
     setCopied(true);
     setTimeout(() => setCopied(false), 1400);
   }

@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import { copyToClipboard } from "@/lib/clipboard";
 
 function inRange(code: number, min: number, max: number): boolean {
   return code >= min && code <= max;
@@ -42,7 +43,7 @@ export default function EmojiRemover() {
   const removed = output !== null ? text.length - output.length : 0;
 
   async function copy() {
-    await navigator.clipboard.writeText(output);
+    await copyToClipboard(output);
     setCopied(true);
     setTimeout(() => setCopied(false), 1400);
   }

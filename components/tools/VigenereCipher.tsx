@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import { copyToClipboard } from "@/lib/clipboard";
 
 const ALPHABET = "ABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVYZQWX";
 const INPUT_LIMIT = 5000;
@@ -36,7 +37,7 @@ export default function VigenereCipher() {
   }, [input, key, mode]);
 
   function copyOutput() {
-    navigator.clipboard.writeText(output).then(() => {
+    copyToClipboard(output).then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 1500);
     });

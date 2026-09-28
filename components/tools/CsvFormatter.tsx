@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import { copyToClipboard } from "@/lib/clipboard";
 
 function parseCsv(input: string, delimiter: string): string[][] {
   const rows: string[][] = [];
@@ -70,7 +71,7 @@ export default function CsvFormatter() {
   );
 
   async function copy() {
-    await navigator.clipboard.writeText(toTsv(rows));
+    await copyToClipboard(toTsv(rows));
     setCopied(true);
     setTimeout(() => setCopied(false), 1400);
   }

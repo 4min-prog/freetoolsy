@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import { copyToClipboard } from "@/lib/clipboard";
 
 function initialOf(word: string): string | null {
   const match = /[A-Za-z\u00C0-\u024F\u0400-\u04FF0-9]/.exec(word);
@@ -23,7 +24,7 @@ export default function AcronymGenerator() {
   }, [phrase, dots]);
 
   async function copy() {
-    await navigator.clipboard.writeText(acronym);
+    await copyToClipboard(acronym);
     setCopied(true);
     setTimeout(() => setCopied(false), 1400);
   }

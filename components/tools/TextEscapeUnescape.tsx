@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { copyToClipboard } from "@/lib/clipboard";
 
 export default function TextEscapeUnescape() {
   const [input, setInput] = useState("");
@@ -29,7 +30,7 @@ export default function TextEscapeUnescape() {
   }
 
   async function copy() {
-    await navigator.clipboard.writeText(output);
+    await copyToClipboard(output);
     setCopied(true);
     setTimeout(() => setCopied(false), 1400);
   }

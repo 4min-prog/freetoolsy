@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import { copyToClipboard } from "@/lib/clipboard";
 
 const EXT_TO_MIME: Record<string, string> = {
   html: "text/html",
@@ -99,7 +100,7 @@ export default function MimeTypeFinder() {
   }, [search]);
 
   async function copyValue(value: string) {
-    await navigator.clipboard.writeText(value);
+    await copyToClipboard(value);
     setCopied(true);
     setTimeout(() => setCopied(false), 1400);
   }
