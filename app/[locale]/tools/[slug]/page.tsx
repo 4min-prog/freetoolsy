@@ -16,7 +16,7 @@ import {
 import { pickToolMessages } from "@/lib/clientMessages";
 import { POPULAR_SLUGS } from "@/data/popular";
 import { DYNAMIC_TOOL_SLUGS } from "@/data/dynamicTools";
-import { toolComponents } from "@/data/toolComponents";
+import ToolLoader from "@/components/tools/ToolLoader";
 import ToolDynamic from "@/components/tools/ToolDynamic";
 import { guides } from "@/data/guides";
 import JsonLd from "@/components/JsonLd";
@@ -107,9 +107,6 @@ export default async function ToolPage({
   const guideLinks = guides.filter((guide) =>
     guide.relatedTools.includes(tool.slug)
   );
-
-  const ToolComponent = toolComponents[tool.slug];
-  if (!ToolComponent && !DYNAMIC_TOOL_SLUGS.has(tool.slug)) notFound();
 
   const category = categories.find((item) => item.id === tool.category);
   const categoryId = category ? category.id : tool.category;
@@ -210,7 +207,7 @@ export default async function ToolPage({
           {DYNAMIC_TOOL_SLUGS.has(tool.slug) ? (
             <ToolDynamic slug={tool.slug} />
           ) : (
-            <ToolComponent />
+            <ToolLoader slug={tool.slug} />
           )}
         </NextIntlClientProvider>
       </div>
