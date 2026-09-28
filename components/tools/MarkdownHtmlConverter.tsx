@@ -12,13 +12,27 @@ function escapeHtml(value: string): string {
 }
 
 
-function inlineMd(html: string): string {
-  return html
+function safeUrl(value: string): string {
+  const trimmed = value.trim();
+  if (/^(https?:\/\/|mailto:)/i.test(trimmed)) return trimmed;
+  if (/^[a-z][a-z0-9+.-]*:/i.test(trimmed)) return "";
+  if (trimmed.startsWith("//")) return "";
+  return trimmed;
+}
+
+function inlineMd(value: string): string {
+  return escapeHtml(value)
     .replace(/`([^`]+)`/g, "<code>$1</code>")
     .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
     .replace(/\*([^*]+)\*/g, "<em>$1</em>")
-    .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, '<a href="$2" rel="noopener noreferrer">$1</a>')
-    .replace(/!\[([^\]]*)\]\(([^)\s]+)\)/g, '<img src="$2" alt="$1" />');
+    .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (_match, text: string, url: string) => {
+      const href = safeUrl(url);
+      return href ? `<a href="${href}" rel="noopener noreferrer">${text}</a>` : text;
+    })
+    .replace(/!\[([^\]]*)\]\(([^)\s]+)\)/g, (_match, alt: string, url: string) => {
+      const src = safeUrl(url);
+      return src ? `<img src="${src}" alt="${alt}" />` : alt;
+    });
 }
 
 function mdToHtml(markdown: string): string {

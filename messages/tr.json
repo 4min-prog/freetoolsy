@@ -5009,6 +5009,28 @@
         "h": "Kazandıktan sonra ne olur?",
         "p": "Sayfa kullandığınız deneme sayısını gösterir ve yepyeni bir gizli sayı seçen tekrar oyna düğmesi sunar. Aynı stratejiyle önceki skorunuzu geçmeye çalışın."
       }
+    ],
+    "time-zone-converter": [
+      {
+        "h": "Zaman Dilimi Dönüştürücü nedir?",
+        "p": "Zaman dilimi dönüştürücü, belirli bir tarih ve saati bir dilimden alır ve aynı anın başka bir dilimdeki karşılığını gösterir. Zaman dilimi yalnızca UTC'ye göre bir fark olduğu ve bu fark yaz saatiyle değiştiği için aynı an Tokyo'da 30 Eylül, Los Angeles'ta 29 Eylül olabilir."
+      },
+      {
+        "h": "Zaman dilimleri ve UTC farkları nasıl çalışır?",
+        "p": "Dünya yaklaşık 400 dilime bölünmüştür; her biri UTC+3 veya UTC-5 gibi bir farkla ve çoğu durumda Europe/Istanbul ya da America/New_York gibi bir IANA adıyla tanımlanır. Tek başına fark yeterli değildir: adlar her bölgenin yasal değişikliklerini izler; bu yüzden gerçek dilim verisi kullanan bir dönüştürücü her yaz saati geçişinde doğru sonucu verir."
+      },
+      {
+        "h": "Zaman farkı neden sabit değildir?",
+        "p": "Karşılaştırmaların çoğu farkın sabit olduğu varsayımıyla bozulur. Mart ile Kasım arasında Londra New York'un yedi saat önündedir; ancak taraflardan biri yaz saatine geçmişken diğeri geçmemiş olduğu kısa dönemde fark sekiz ya da altı saate çıkar. Planlama araçlarının neden saati değil tarihi dönüştürdüğü tam olarak budur."
+      },
+      {
+        "h": "Hangi işlerde kullanılır?",
+        "p": "En sık kullanım alanı rezervasyondur: başka bir dilimde yazılmış bir toplantı davetini okumak, bir sürüm penceresi planlamak ya da karşı taraftaki destek ekibinin ne zaman işe başladığını hesaplamak. Uzak ekipler çalışma saatlerini, gezginler ise uçuşun varış saatini ve hedefte akşam yemeğin saatini bu araçla öğrenir."
+      },
+      {
+        "h": "Verilerim güvende mi?",
+        "p": "Evet. Dönüşüm tarayıcınızda, yerleşik zaman dilimi veritabanı kullanılarak yapılır; kontrol ettiğiniz hiçbir tarih gönderilmez veya saklanmaz. Kayıt yok, tamamen ücretsiz."
+      }
     ]
   },
   "Rehber": {

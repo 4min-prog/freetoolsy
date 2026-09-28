@@ -5009,6 +5009,28 @@
         "h": "What happens after I win?",
         "p": "The page counts the attempts you used and offers a play again button that picks a brand new secret number. Try to beat your previous score with the same strategy."
       }
+    ],
+    "time-zone-converter": [
+      {
+        "h": "What is a Time Zone Converter?",
+        "p": "A Time Zone Converter takes a specific date and time in one zone and shows the matching date and time in another. Because a time zone is only an offset from UTC and that offset changes with daylight saving, the same moment can be 30 September in Tokyo and 29 September in Los Angeles."
+      },
+      {
+        "h": "How time zones and offsets work",
+        "p": "The world is divided into roughly 400 zones, each described by a UTC offset such as UTC+3 or UTC-5 and, in most cases, an IANA name like Europe/Istanbul or America/New_York. The offset alone is not enough: names follow the legal changes of each region, so a converter that uses real zone data is correct through every daylight saving transition."
+      },
+      {
+        "h": "When a time difference is not a fixed number",
+        "p": "Most comparisons fail because the offset was assumed constant. Between March and November London sits seven hours ahead of New York, but during the short period when one side has already switched and the other has not, the gap becomes eight or six hours. This is exactly why scheduling tools convert the date, not just the clock time."
+      },
+      {
+        "h": "Practical uses",
+        "p": "The most common job is booking: reading a meeting invitation written in another zone, planning a release window, or working out when a support team on the other side of the Atlantic starts. Remote teams also convert working hours, and travellers use it to check when a flight lands and what time dinner is at the destination."
+      },
+      {
+        "h": "Is my data safe?",
+        "p": "Yes. The conversion happens in your browser using the built-in time zone database, so no date you check is sent or stored. No signup, completely free."
+      }
     ]
   },
   "Rehber": {

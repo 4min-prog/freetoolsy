@@ -1,4 +1,4 @@
-export const TOOL_COMP_NAMESPACE: Record<string, string> = {
+const TOOL_COMP_NAMESPACE: Record<string, string> = {
   "character-counter": "characterCounter",
   "word-counter": "wordCounter",
   "case-converter": "caseConverter",
@@ -154,6 +154,11 @@ export const TOOL_COMP_NAMESPACE: Record<string, string> = {
   "joke-generator": "jokeGenerator",
   "random-quote-generator": "randomQuoteGenerator",
   "guess-the-number": "guessTheNumber",
+  "image-compressor": "imageCompressor",
+  "image-resizer": "imageResizer",
+  "image-converter": "imageConverter",
+  "image-to-base64": "imageToBase64",
+  "image-color-picker": "imageColorPicker",
 };
 
 export function toolCompNamespace(slug: string): string | undefined {

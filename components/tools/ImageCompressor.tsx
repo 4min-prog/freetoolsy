@@ -1,5 +1,6 @@
 "use client";
 
+import { exceedsCanvasLimit } from "@/lib/canvasLimit";
 import { useEffect, useRef, useState } from "react";
 import type { ChangeEvent } from "react";
 import { useTranslations } from "next-intl";
@@ -75,6 +76,10 @@ export default function ImageCompressor() {
         w = limit;
       }
       const canvas = document.createElement("canvas");
+      if (exceedsCanvasLimit(w, h)) {
+        setError(t("error"));
+        return;
+      }
       canvas.width = w;
       canvas.height = h;
       const ctx = canvas.getContext("2d");

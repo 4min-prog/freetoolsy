@@ -18,7 +18,7 @@ This file tracks where the project stands. Whenever a working session ends, upda
 
 ### Kritik kurallar
 - **Yazım/encode:** Türkçe içerik SADECE Write/Edit/node (UTF-8). PowerShell ile yazma — bozulur.
-- **Build/verify:** önce node'ları öldür (3000/3100), stale `.next`'i sil (arızalı build kalıntısı "Cannot find module for page: /_document" hatası yapar), `npm run build`, sonra `npx tsc --noEmit`. Yayın öncesi: `npx next start -p 3100` + URL 200 + OG PNG (ham buffer magic `89504e47` ile, dize kontrolü false verir) + sitemap sayısı. Push sonrası `npm run indexnow` (sitemap listesi; son: 380 URL → 200).
+- **Build/verify:** önce node'ları öldür (3000/3100), stale `.next`'i sil (arızalı build kalıntısı "Cannot find module for page: /_document" hatası yapar), `npm run build`, sonra `npx tsc --noEmit`. Yayın öncesi: `npx next start -p 3100` + URL 200 + OG PNG (ham buffer magic `89504e47` ile, dize kontrolü false verir) + sitemap sayısı. Push sonrası `npm run indexnow` (sitemap listesi; son: 392 URL → 200).
 - **ES5 target tuzakları:** `\u`/`\p{}` regex yok (TS1501), `matchAll(...)` spread yok, BigInt literal yok, `key.buffer as ArrayBuffer` cast gerekir. ICU güvenliği: message string'lerinde `<tag>` asla (UNCLOSED_TAG).
 - **Kod yorumu yasak** (proje kuralı). `freetoolsy_logo_v3.svg` untracked, dokunma.
 - **Dokunulacak dosyalar (commit çakışması):** `messages/en.json`, `messages/tr.json` (en/tr blok sayıları SENKRON olmalı), `data/tools.ts`, `data/guides.ts`, `app/api/rates/`, `app/sitemap.ts`, `app/[locale]/layout.tsx`.
@@ -48,11 +48,11 @@ This file tracks where the project stands. Whenever a working session ends, upda
 - [x] Class-based dark mode + ThemeToggle + FOUC prevention script
 - [x] `data/tools.ts`: 18 tools, 4 categories, helper functions
 - [x] Home page: SEO hero + live-search tool explorer grouped by category with icons and counts
-- [x] `app/araclar/[slug]/page.tsx`: SSG, generateMetadata, 404, breadcrumb
+- [x] `app/[locale]/tools/[slug]/page.tsx`: SSG, generateMetadata, 404, breadcrumb (eski `app/araclar` yolu kaldırıldı; legacy `araclar` → `tools` 301 yönlendirmesi middleware'de)
 - [x] 44 working tools (client components) — see Status list
-- [x] SEO pages for every tool via the consolidated `app/[locale]/araclar/[slug]/page.tsx` (own H1, meta, ad slot, localized SEO copy, linklyhub.com link)
+- [x] SEO pages for every tool via the consolidated `app/[locale]/tools/[slug]/page.tsx` (own H1, meta, ad slot, localized SEO copy)
 - [x] JSON-LD structured data (WebSite, SoftwareApplication per tool, FAQ, Organization, ContactPage) — Rich Results validated
-- [x] `app/not-found.tsx` (localized)
+- [x] `app/[locale]/not-found.tsx` (klasör düzeyinde; `dynamicParams = false` yüzünden Next'in global 404'ü devreye girer)
 - [x] Bilingual sitemap (`xhtml:link` hreflang en/tr)
 - [x] i18n: next-intl v3, `i18n/routing.ts` + `i18n/navigation.ts`, `/` = en, `/tr` = tr (tr.json placeholder pending real translation)
 - [x] Deployed to Vercel, custom domain pending

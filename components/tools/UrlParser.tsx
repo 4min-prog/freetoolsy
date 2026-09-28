@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import { copyToClipboard } from "@/lib/clipboard";
 
 export default function UrlParser() {
   const [url, setUrl] = useState("");
@@ -34,7 +35,7 @@ export default function UrlParser() {
 
   async function copy() {
     if (!parsed) return;
-    await navigator.clipboard.writeText(parsed.toString());
+    await copyToClipboard(parsed.toString());
     setCopied(true);
     setTimeout(() => setCopied(false), 1400);
   }

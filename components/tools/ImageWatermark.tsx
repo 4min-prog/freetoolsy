@@ -1,5 +1,6 @@
 "use client";
 
+import { exceedsCanvasLimit } from "@/lib/canvasLimit";
 import { useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 
@@ -59,6 +60,10 @@ export default function ImageWatermark() {
     setTimeout(() => {
       try {
         const canvas = document.createElement("canvas");
+        if (exceedsCanvasLimit(base.naturalWidth, base.naturalHeight)) {
+          setError(t("error"));
+          return;
+        }
         canvas.width = base.naturalWidth;
         canvas.height = base.naturalHeight;
         const ctx = canvas.getContext("2d");

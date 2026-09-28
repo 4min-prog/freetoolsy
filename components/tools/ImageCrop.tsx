@@ -1,5 +1,6 @@
 "use client";
 
+import { exceedsCanvasLimit } from "@/lib/canvasLimit";
 import { useCallback, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 
@@ -82,6 +83,10 @@ export default function ImageCrop() {
     setExportUrl("");
     if (!crop || crop.width < 1 || crop.height < 1 || !source) return;
     const canvas = document.createElement("canvas");
+    if (exceedsCanvasLimit(Math.round(crop.width), Math.round(crop.height))) {
+      setError(t("error"));
+      return;
+    }
     canvas.width = Math.round(crop.width);
     canvas.height = Math.round(crop.height);
     const ctx = canvas.getContext("2d");

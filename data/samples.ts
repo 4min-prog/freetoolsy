@@ -6,7 +6,7 @@ export const SAMPLES: Record<string, string> = {
   "json-formatter":
     '{\n  "name": "freetoolsy",\n  "free": true,\n  "tools": 71,\n  "tags": ["json", "format"]\n}',
   "base64": "FreetoolsY — free tools, in your browser.",
-  "url-encoder": "https://www.freetoolsy.com/araclar?q=örnek metin&ücret=true",
+  "url-encoder": "https://www.freetoolsy.com/?q=örnek metin&ücretsiz=true",
   "sha-hash-generator": "FreetoolsY örnek metni",
   "md5-hash": "FreetoolsY örnek metni",
   "whitespace-cleaner": "  satır bir  \n\n  satır   iki   \n\n\n satır üç ",

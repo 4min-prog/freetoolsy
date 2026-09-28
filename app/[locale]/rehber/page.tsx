@@ -3,8 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { guides } from "@/data/guides";
 import { routing, type Locale } from "@/i18n/routing";
-
-const siteUrl = "https://www.freetoolsy.com";
+import { siteUrl } from "@/lib/paths";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -32,7 +31,7 @@ openGraph: {
           url: locale === "en" ? "/rehber" : `/${locale}/rehber`,
           images: [
             {
-              url: "https://www.freetoolsy.com/og/home",
+              url: `${siteUrl}/og/home`,
               width: 1200,
               height: 630,
             },

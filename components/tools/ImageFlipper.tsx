@@ -1,5 +1,6 @@
 "use client";
 
+import { exceedsCanvasLimit } from "@/lib/canvasLimit";
 import { useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 
@@ -30,6 +31,7 @@ export default function ImageFlipper() {
     img.src = data;
     img.decode().then(() => {
       const canvas = document.createElement("canvas");
+      if (exceedsCanvasLimit(img.naturalWidth, img.naturalHeight)) return;
       canvas.width = img.naturalWidth;
       canvas.height = img.naturalHeight;
       const ctx = canvas.getContext("2d");

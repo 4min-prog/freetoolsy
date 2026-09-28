@@ -14,14 +14,13 @@ import ToastHost from "@/components/ToastHost";
 import PageViewTracker from "@/components/PageViewTracker";
 import CookieBanner from "@/components/CookieBanner";
 import JsonLd from "@/components/JsonLd";
+import { siteUrl } from "@/lib/paths";
 
 const inter = Inter({
   subsets: ["latin", "latin-ext"],
   variable: "--font-inter",
   display: "swap",
 });
-
-const siteUrl = "https://www.freetoolsy.com";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));

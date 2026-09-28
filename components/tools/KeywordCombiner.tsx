@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import { copyToClipboard } from "@/lib/clipboard";
 
 export default function KeywordCombiner() {
   const [left, setLeft] = useState("");
@@ -30,7 +31,7 @@ export default function KeywordCombiner() {
   }, [leftList, rightList]);
 
   function copyOutput() {
-    navigator.clipboard.writeText(output).then(() => {
+    copyToClipboard(output).then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 1500);
     });

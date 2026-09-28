@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import { copyToClipboard } from "@/lib/clipboard";
 
 type Mode = "edges" | "full";
 
@@ -42,7 +43,7 @@ export default function WordScrambler() {
   );
 
   async function copy() {
-    await navigator.clipboard.writeText(output);
+    await copyToClipboard(output);
     setCopied(true);
     setTimeout(() => setCopied(false), 1400);
   }

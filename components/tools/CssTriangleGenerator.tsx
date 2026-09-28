@@ -2,6 +2,7 @@
 
 import { useState, type CSSProperties } from "react";
 import { useTranslations } from "next-intl";
+import { copyToClipboard } from "@/lib/clipboard";
 
 const DIRECTIONS = [
   "up",
@@ -108,7 +109,7 @@ export default function CssTriangleGenerator() {
   ].join("\n");
 
   function copyCss() {
-    navigator.clipboard.writeText(css).then(() => {
+    copyToClipboard(css).then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 1500);
     });

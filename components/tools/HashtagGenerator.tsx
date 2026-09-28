@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import { copyToClipboard } from "@/lib/clipboard";
 
 function cleanWord(word: string): string {
   return word
@@ -33,7 +34,7 @@ export default function HashtagGenerator() {
   );
 
   async function copy() {
-    await navigator.clipboard.writeText(hashtags.join(" "));
+    await copyToClipboard(hashtags.join(" "));
     setCopied(true);
     setTimeout(() => setCopied(false), 1400);
   }

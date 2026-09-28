@@ -38,18 +38,34 @@ export default function TextExtractor() {
     const phones: string[] = [];
     const urls: string[] = [];
     const hashtags: string[] = [];
+    const seenEmails = new Set<string>();
+    const seenPhones = new Set<string>();
+    const seenUrls = new Set<string>();
+    const seenHashtags = new Set<string>();
 
     for (const item of text.match(EMAIL_RE) ?? []) {
-      if (emails.indexOf(item) === -1) emails.push(item);
+      if (!seenEmails.has(item)) {
+        seenEmails.add(item);
+        emails.push(item);
+      }
     }
     for (const item of text.match(PHONE_RE) ?? []) {
-      if (phones.indexOf(item) === -1) phones.push(item);
+      if (!seenPhones.has(item)) {
+        seenPhones.add(item);
+        phones.push(item);
+      }
     }
     for (const item of text.match(URL_RE) ?? []) {
-      if (urls.indexOf(item) === -1) urls.push(item);
+      if (!seenUrls.has(item)) {
+        seenUrls.add(item);
+        urls.push(item);
+      }
     }
     for (const item of text.match(HASHTAG_RE) ?? []) {
-      if (hashtags.indexOf(item) === -1) hashtags.push(item);
+      if (!seenHashtags.has(item)) {
+        seenHashtags.add(item);
+        hashtags.push(item);
+      }
     }
 
     result.email = emails;

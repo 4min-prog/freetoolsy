@@ -14,7 +14,37 @@ function splitLines(value: string): string[] {
   return value.split(/\r\n|\r|\n/);
 }
 
+const MAX_LCS_LINES = 800;
+
+function simpleAlign(original: string[], changed: string[]): DiffRow[] {
+  const rows: DiffRow[] = [];
+  let start = 0;
+  while (start < original.length && start < changed.length && original[start] === changed[start]) {
+    rows.push({ oldLine: original[start], newLine: changed[start], type: "same" });
+    start++;
+  }
+  let endOriginal = original.length;
+  let endChanged = changed.length;
+  while (endOriginal > start && endChanged > start && original[endOriginal - 1] === changed[endChanged - 1]) {
+    endOriginal--;
+    endChanged--;
+  }
+  for (let i = start; i < endOriginal; i++) {
+    rows.push({ oldLine: original[i], newLine: null, type: "removed" });
+  }
+  for (let j = start; j < endChanged; j++) {
+    rows.push({ oldLine: null, newLine: changed[j], type: "added" });
+  }
+  for (let k = endOriginal; k < original.length; k++) {
+    rows.push({ oldLine: original[k], newLine: changed[k - (endOriginal - start) + (endChanged - start)], type: "same" });
+  }
+  return rows;
+}
+
 function alignLines(original: string[], changed: string[]): DiffRow[] {
+  if (original.length + changed.length > MAX_LCS_LINES * 2) {
+    return simpleAlign(original, changed);
+  }
   const n = original.length;
   const m = changed.length;
   const dp: number[][] = [];

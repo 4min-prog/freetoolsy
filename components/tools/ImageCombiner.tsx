@@ -1,5 +1,6 @@
 "use client";
 
+import { exceedsCanvasLimit } from "@/lib/canvasLimit";
 import { useRef, useState } from "react";
 import type { Ref } from "react";
 import { useTranslations } from "next-intl";
@@ -37,6 +38,7 @@ export default function ImageCombiner() {
       const width = img1.naturalWidth + img2.naturalWidth;
       const height = Math.max(img1.naturalHeight, img2.naturalHeight);
       const canvas = document.createElement("canvas");
+      if (exceedsCanvasLimit(width, height)) return;
       canvas.width = width;
       canvas.height = height;
       const ctx = canvas.getContext("2d");
