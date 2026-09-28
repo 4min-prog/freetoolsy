@@ -46,7 +46,7 @@ const FALLBACK_RATES: Record<string, number> = {
   NZD: 1.55,
 };
 
-let cached: { rates: Record<string, number>; updatedAt: number | null } | null = null;
+let cached: { rates: Record<string, number>; updatedAt: number | null; live: boolean } | null = null;
 let cachedAt = 0;
 
 type Bucket = { count: number; resetAt: number };
@@ -148,7 +148,8 @@ export async function GET(request: Request) {
         base: "USD",
         rates: cached.rates,
         updatedAt: cached.updatedAt,
-        live: true,
+        live: cached.live,
+        ...(cached.live ? {} : { error: "upstream unavailable, serving fallback rates" }),
       },
       { headers: rateHeaders }
     );
@@ -173,12 +174,23 @@ export async function GET(request: Request) {
       throw new Error("rates api returned malformed payload");
     }
 
+    const rates: Record<string, number> = {};
+    for (const [code, value] of Object.entries(data.rates as Record<string, unknown>)) {
+      if (typeof value === "number" && Number.isFinite(value) && value > 0) {
+        rates[code] = value;
+      }
+    }
+    if (Object.keys(rates).length === 0) {
+      throw new Error("rates api returned no usable rates");
+    }
+
     cached = {
-      rates: data.rates,
+      rates,
       updatedAt:
         typeof data.time_last_update_unix === "number"
           ? data.time_last_update_unix
           : null,
+      live: true,
     };
     cachedAt = Date.now();
 
@@ -195,7 +207,7 @@ export async function GET(request: Request) {
     const reason = error instanceof Error ? error.message : "unknown error";
     console.error(`[rates] upstream fetch failed, serving fallback: ${reason}`);
 
-    cached = { rates: FALLBACK_RATES, updatedAt: null };
+    cached = { rates: FALLBACK_RATES, updatedAt: null, live: false };
     cachedAt = Date.now();
 
     return json(
