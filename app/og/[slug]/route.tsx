@@ -95,7 +95,7 @@ export async function GET(
           }}
         >
           <div style={{ display: "flex" }}>
-            <LogoBars size={420} />
+            <LogoBars size={512} />
           </div>
         </div>
       ),

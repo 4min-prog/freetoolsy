@@ -1,9 +1,13 @@
 export function LogoBars({
   size,
-  color = "#2563eb",
+  color = "#3b82f6",
+  boxFill = "#1a1d2e",
+  boxRadius = 14,
 }: {
   size: number;
   color?: string;
+  boxFill?: string;
+  boxRadius?: number;
 }) {
   return (
     <svg
@@ -13,10 +17,11 @@ export function LogoBars({
       fill="none"
       aria-hidden="true"
     >
-      <rect x="12" y="10" width="40" height="6" rx="3" fill={color} />
-      <rect x="18" y="22" width="28" height="6" rx="3" fill={color} opacity="0.5" />
-      <rect x="15" y="34" width="34" height="6" rx="3" fill={color} opacity="0.3" />
-      <rect x="22" y="46" width="20" height="6" rx="3" fill={color} opacity="0.15" />
+      <rect width="64" height="64" rx={boxRadius} fill={boxFill} />
+      <rect x="14" y="18" width="40" height="5" rx="2.5" fill={color} />
+      <rect x="14" y="29" width="28" height="5" rx="2.5" fill={color} opacity="0.6" />
+      <rect x="14" y="40" width="34" height="5" rx="2.5" fill={color} opacity="0.35" />
+      <rect x="14" y="51" width="20" height="5" rx="2.5" fill={color} opacity="0.2" />
     </svg>
   );
 }
