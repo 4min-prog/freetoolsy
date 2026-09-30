@@ -114,7 +114,14 @@ export default async function RootLayout({
               "@type": "Organization",
               name: "FreetoolsY",
               url: siteUrl,
-              logo: `${siteUrl}/icon.svg`,
+              logo: {
+                "@type": "ImageObject",
+                url: `${siteUrl}/og/logo`,
+                width: 512,
+                height: 512,
+                caption: "FreetoolsY",
+              },
+              image: `${siteUrl}/og/logo`,
               contactPoint: {
                 "@type": "ContactPoint",
                 contactType: "customer support",

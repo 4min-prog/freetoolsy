@@ -15,7 +15,7 @@ export const revalidate = 86400;
 export function generateStaticParams() {
   const toolSlugs = tools.map((tool) => ({ slug: tool.slug }));
   const categorySlugs = categories.map((category) => ({ slug: category.id }));
-  return [{ slug: "home" }, ...toolSlugs, ...categorySlugs];
+  return [{ slug: "home" }, { slug: "logo" }, ...toolSlugs, ...categorySlugs];
 }
 
 function hexA(hex: string, alpha: number) {
@@ -80,6 +80,28 @@ export async function GET(
   let hex = categoryTheme("text").hex;
   let icon: ReactNode | null = null;
   let watermark: ReactNode | null = null;
+
+  if (slug === "logo") {
+    return new ImageResponse(
+      (
+        <div
+          style={{
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            backgroundColor: "#ffffff",
+          }}
+        >
+          <div style={{ display: "flex" }}>
+            <LogoBars size={420} />
+          </div>
+        </div>
+      ),
+      { width: 512, height: 512 }
+    );
+  }
 
   if (slug === "home") {
     return new ImageResponse(
