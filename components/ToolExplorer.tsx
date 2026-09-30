@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useLocale, useMessages, useTranslations } from "next-intl";
 import ToolCard from "@/components/ToolCard";
 import CategoryIcon from "@/components/CategoryIcon";
@@ -11,8 +11,11 @@ import {
   getToolsByCategory,
   tools,
 } from "@/data/tools";
+import { getNewestTools, getPopularTools } from "@/data/popular";
 import { categoryPath } from "@/lib/paths";
 import type { Locale } from "@/i18n/routing";
+
+type SortMode = "all" | "popular" | "newest";
 
 interface ToolMetaNs {
   name?: string;
@@ -28,7 +31,9 @@ export default function ToolExplorer() {
   const meta = messages.ToolMeta as Record<string, ToolMetaNs> | undefined;
   const [query, setQuery] = useState("");
   const [cat, setCat] = useState("");
+  const [sort, setSort] = useState<SortMode>("all");
   const firstLoad = useRef(true);
+
 
   useEffect(() => {
     function sync() {
@@ -80,8 +85,16 @@ export default function ToolExplorer() {
     target?.scrollIntoView({ behavior: "smooth", block: "start" });
   }, [cat]);
 
+  const ordered = useMemo<typeof tools>(() => {
+    if (sort === "popular") return getPopularTools();
+    if (sort === "newest") return getNewestTools();
+    return tools;
+  }, [sort]);
+
+  const scoped = cat ? ordered.filter((tool) => tool.category === cat) : ordered;
+
   const filtered = normalized
-    ? tools.filter((tool) => {
+    ? scoped.filter((tool) => {
         const toolMeta = meta ? meta[tool.slug] : undefined;
         const name = toolMeta ? toolMeta.name ?? "" : tool.slug;
         const desc = toolMeta ? toolMeta.desc ?? "" : "";
@@ -101,11 +114,59 @@ export default function ToolExplorer() {
     }
   }
 
+  const sortOptions: { id: SortMode; label: string; count?: number }[] = [
+    { id: "all", label: t("tabAll"), count: tools.length },
+    { id: "popular", label: t("sortPopular"), count: getPopularTools().length },
+    { id: "newest", label: t("sortNewest"), count: getNewestTools().length },
+  ];
+
   return (
     <div id="tools-explorer" className="scroll-mt-20 pb-28 sm:pb-20">
+      <div
+        role="tablist"
+        aria-label={t("sortLabel")}
+        className="-mx-4 mt-6 flex gap-2 overflow-x-auto overflow-y-hidden px-4 py-2 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0"
+      >
+        {sortOptions.map((option) => {
+          const active = sort === option.id;
+          return (
+            <button
+              key={option.id}
+              type="button"
+              role="tab"
+              aria-selected={active}
+              onClick={() => setSort(option.id)}
+              className={`inline-flex min-h-11 shrink-0 items-center gap-2 rounded-full border px-4 text-sm font-medium transition-colors ${
+                active
+                  ? "border-transparent bg-accent text-on-accent"
+                  : "border-border bg-surface text-muted hover:border-foreground hover:text-foreground"
+              }`}
+            >
+              {option.id === "newest" && (
+                <span
+                  aria-hidden="true"
+                  className={`text-[10px] ${active ? "text-on-accent/70" : "text-faint"}`}
+                >
+                  +
+                </span>
+              )}
+              {option.label}
+              {option.count !== undefined && (
+                <span
+                  className={`font-mono text-[11px] tabular-nums ${
+                    active ? "text-on-accent/70" : "text-faint"
+                  }`}
+                >
+                  {option.count}
+                </span>
+              )}
+            </button>
+          );
+        })}
+      </div>
       <nav
         aria-label={t("categories")}
-        className="-mx-4 mt-6 flex gap-2 overflow-x-auto overflow-y-hidden px-4 py-2 [scrollbar-width:none] lg:hidden"
+        className="lg:hidden -mx-4 flex gap-2 overflow-x-auto overflow-y-hidden px-4 py-2 [scrollbar-width:none]"
       >
         <button
           type="button"
@@ -207,7 +268,7 @@ export default function ToolExplorer() {
             <p className="mt-8 text-sm text-muted">{t("noResults", { query })}</p>
           )}
         </section>
-      ) : (
+      ) : sort === "all" ? (
         <div className="space-y-14">
           {(cat ? categories.filter((c) => c.id === cat) : categories).map((category) => {
             const categoryTools = getToolsByCategory(category.id);
@@ -282,7 +343,65 @@ export default function ToolExplorer() {
             );
           })}
         </div>
-        )}
+      ) : (
+        <section className="mt-0" aria-live="polite">
+          <div className="flex items-baseline justify-between gap-4 border-b border-border pb-3">
+            <h2 className="flex items-center gap-2.5">
+              {sort === "popular" ? (
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                  className="h-5 w-5 text-accent"
+                >
+                  <path d="m12 3 2.6 5.6 6.1.8-4.5 4.2 1.2 6.1L12 16.8 6.6 19.7l1.2-6.1L3.3 9.4l6.1-.8Z" />
+                </svg>
+              ) : (
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                  className="h-5 w-5 text-accent"
+                >
+                  <path d="M12 8v8M8 12h8" />
+                  <circle cx="12" cy="12" r="9" />
+                </svg>
+              )}
+              <span className="text-lg font-semibold tracking-tight text-text">
+                {sort === "popular" ? t("sortPopular") : t("sortNewest")}
+              </span>
+            </h2>
+            <span className="font-mono text-[11px] tabular-nums text-faint">
+              {String(scoped.length).padStart(2, "0")}
+            </span>
+          </div>
+          {scoped.length > 0 ? (
+            <ol className="mt-5 grid gap-4 sm:grid-cols-2">
+              {scoped.map((tool, index) => (
+                <li key={tool.slug} className="relative">
+                  <span
+                    aria-hidden="true"
+                    className="pointer-events-none absolute -top-1 left-0 font-mono text-[10px] text-faint"
+                  >
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <ToolCard tool={tool} />
+                </li>
+              ))}
+            </ol>
+          ) : (
+            <p className="mt-8 text-sm text-muted">{t("noSortResults")}</p>
+          )}
+        </section>
+      )}
         </div>
       </div>
     </div>
