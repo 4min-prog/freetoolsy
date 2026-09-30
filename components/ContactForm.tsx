@@ -7,25 +7,44 @@ export default function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [company, setCompany] = useState("");
+  const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const t = useTranslations("comp.contactForm");
 
-  function submit(event: React.FormEvent<HTMLFormElement>) {
+  async function submit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (!name.trim() || !email.trim() || !message.trim()) {
       setError(t("fillError"));
       return;
     }
-    const subject = encodeURIComponent(t("subject"));
-    const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
-    window.location.href = `mailto:support@freetoolsy.com?subject=${subject}&body=${body}`;
+    setSending(true);
     setError(null);
-    setSent(true);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, message, company }),
+      });
+      if (!res.ok) {
+        const data = (await res.json().catch(() => null)) as { error?: string } | null;
+        setError(data?.error === "too_many_requests" ? t("rateError") : t("sendError"));
+        return;
+      }
+      setSent(true);
+      setName("");
+      setEmail("");
+      setMessage("");
+    } catch {
+      setError(t("sendError"));
+    } finally {
+      setSending(false);
+    }
   }
 
   return (
-    <form onSubmit={submit} className="mt-6">
+    <form onSubmit={submit} className="relative mt-6">
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
           <label htmlFor="contact-ad" className="block text-sm font-medium text-text">
@@ -69,6 +88,18 @@ export default function ContactForm() {
         />
       </div>
 
+      <div aria-hidden="true" className="absolute -left-[9999px] h-px w-px overflow-hidden">
+        <label htmlFor="contact-company">Company</label>
+        <input
+          id="contact-company"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          value={company}
+          onChange={(event) => setCompany(event.target.value)}
+        />
+      </div>
+
       {error && (
         <p
           role="alert"
@@ -80,9 +111,10 @@ export default function ContactForm() {
 
       <button
         type="submit"
-        className="mt-4 w-full rounded-lg bg-accent px-4 py-2.5 text-sm font-medium text-on-accent transition-opacity hover:opacity-90"
+        disabled={sending}
+        className="mt-4 w-full rounded-lg bg-accent px-4 py-2.5 text-sm font-medium text-on-accent transition-opacity hover:opacity-90 disabled:opacity-60"
       >
-        {t("submit")}
+        {sending ? t("sending") : t("submit")}
       </button>
 
       <p className="mt-4 text-xs leading-relaxed text-muted">{t("note")}</p>

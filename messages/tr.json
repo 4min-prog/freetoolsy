@@ -5235,11 +5235,13 @@
       "emailPlaceholder": "ad@ornek.com",
       "message": "Mesajınız",
       "messagePlaceholder": "Sorunuzu veya geri bildiriminizi buraya yazın…",
-      "fillError": "Lütfen tüm alanları doldurun.",
-      "submit": "Gönder",
-      "note": "Form, mesajınız support@freetoolsy.com adresine yönelik olacak şekilde e-posta uygulamanızı açar. Verileriniz bu sitede saklanmaz.",
-      "subject": "FreetoolsY iletişim",
-      "sent": "Mesajınız hazır; e-posta uygulamanız açıldı. Teşekkürler! Bize şu adresten de ulaşabilirsiniz:"
+    "fillError": "Lütfen tüm alanları doldurun.",
+    "submit": "Gönder",
+    "sending": "Gönderiliyor…",
+    "sendError": "Mesaj gönderilemedi. Lütfen tekrar dene veya support@freetoolsy.com adresine yaz.",
+    "rateError": "Çok fazla mesaj gönderdin. Biraz sonra tekrar dene.",
+    "note": "Mesajınız support@freetoolsy.com adresine gönderilir. Verileriniz bu sitede saklanmaz.",
+    "sent": "Mesajınız gönderildi. Teşekkürler! Bize şu adresten de ulaşabilirsiniz:"
     },
     "md5Hash": {
       "label": "Metni girin",

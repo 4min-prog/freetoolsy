@@ -5235,11 +5235,13 @@
       "emailPlaceholder": "name@example.com",
       "message": "Your message",
       "messagePlaceholder": "Write your question or feedback here…",
-      "fillError": "Please fill in all fields.",
-      "submit": "Send",
-      "note": "The form opens your email app with the message addressed to support@freetoolsy.com. Your data is not stored on this site.",
-      "subject": "FreetoolsY contact",
-      "sent": "Your message is ready; your email app opened. Thank you! You can also reach us at"
+    "fillError": "Please fill in all fields.",
+    "submit": "Send",
+    "sending": "Sending…",
+    "sendError": "Your message could not be sent. Please try again or email support@freetoolsy.com.",
+    "rateError": "Too many messages sent. Please try again later.",
+    "note": "Your message is delivered to support@freetoolsy.com. Your data is not stored on this site.",
+    "sent": "Your message has been sent. Thank you! You can also reach us at"
     },
     "md5Hash": {
       "label": "Enter text",
