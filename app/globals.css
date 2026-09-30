@@ -19,8 +19,6 @@
   --danger-border: #fecdca;
   --warning: #b54708;
   --success: #067647;
-  --logo-bg: #eff6ff;
-  --logo-stroke: #dbeafe;
   --logo-bar: #2563eb;
 }
 
@@ -41,9 +39,7 @@
   --danger-border: #5c2b28;
   --warning: #fdba74;
   --success: #6ee7b7;
-  --logo-bg: #1a1d2e;
-  --logo-stroke: transparent;
-  --logo-bar: #3b82f6;
+  --logo-bar: #60a5fa;
 }
 
 html {

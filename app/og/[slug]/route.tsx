@@ -91,7 +91,6 @@ export async function GET(
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            backgroundColor: "#ffffff",
           }}
         >
           <div style={{ display: "flex" }}>
