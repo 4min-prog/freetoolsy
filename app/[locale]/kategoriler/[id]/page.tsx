@@ -38,7 +38,10 @@ export async function generateMetadata({
     const tc = await getTranslations("Categories");
     const canonical = localizedUrl(locale, categoryPath(locale, category.id));
     return {
-      title: `${tc(category.id)} ${locale === "en" ? "Tools" : "Araçları"} · FreetoolsY`,
+      title:
+        locale === "en"
+          ? `100% Free ${tc(category.id)} Tools`
+          : `%100 Ücretsiz ${tc(category.id)} Araçları`,
       description: t(`desc.${category.id}`),
       alternates: {
         canonical,

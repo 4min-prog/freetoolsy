@@ -50,7 +50,7 @@ export async function generateMetadata({
   const t = await getTranslations(`ToolMeta.${tool.slug}`);
   const canonical = toolUrl(locale, tool.slug);
   return {
-    title: t("title"),
+    title: `${t("name")} — ${locale === "en" ? "100% Free Online Tool" : "%100 Ücretsiz Araç"}`,
     description: t("pageDesc"),
     alternates: {
       canonical,
