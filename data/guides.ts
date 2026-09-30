@@ -17,7 +17,37 @@ export interface Guide {
   content: { en: GuideLocalized; tr: GuideLocalized };
 }
 
-export const guides: Guide[] = [
+export const GUIDE_ORDER: string[] = [
+  "what-is-a-qr-code",
+  "how-to-create-strong-passwords",
+  "what-is-base64-encoding",
+  "how-to-convert-currency",
+  "what-is-json-formatter",
+  "what-is-meta-tags",
+  "how-to-convert-png-to-jpg",
+  "webp-vs-png-vs-jpg",
+  "what-is-sha-256",
+  "how-to-calculate-bmi",
+  "how-to-convert-color-formats",
+  "how-to-convert-unix-timestamps",
+  "what-is-json-ld",
+  "how-to-calculate-electricity-cost",
+  "what-is-compound-interest",
+  "markdown-to-html-guide",
+  "what-is-a-mime-type",
+  "how-to-write-robots-txt",
+  "how-to-check-color-contrast-wcag",
+  "how-to-format-sql-queries",
+  "json-vs-csv-when-to-use",
+  "what-is-hreflang-multilingual-seo",
+  "url-structure-explained",
+  "what-is-reading-time",
+  "how-to-remove-emoji-from-text",
+  "totp-two-factor-authentication-explained",
+  "wheel-of-names-random-picker-guide",
+];
+
+const GUIDE_LIST: Guide[] = [
   {
     slug: "what-is-json-formatter",
     relatedTools: ["json-formatter", "json-csv-converter", "yaml-json-converter"],
@@ -1718,7 +1748,299 @@ export const guides: Guide[] = [
       },
     },
   },
+  {
+    slug: "how-to-convert-png-to-jpg",
+    relatedTools: ["image-converter", "image-compressor", "image-resizer"],
+    content: {
+      en: {
+        title: "How to Convert PNG to JPG (and When to Keep PNG)",
+        desc: "Learn the difference between PNG and JPG, how to convert PNG to JPG in your browser, and which format to keep for logos, screenshots and photos.",
+        intro:
+          "PNG and JPG solve different problems. PNG stores every pixel exactly, which makes screenshots and logos look sharp but produces large files. JPG throws away detail the eye cannot notice, which shrinks photos dramatically. Converting a PNG to JPG is only the right move for images that do not rely on transparency.",
+        blocks: [
+          {
+            h2: "What actually changes when you convert PNG to JPG",
+            paragraphs: [
+              "PNG is a lossless format. It stores the exact colour of every pixel, so converting a screenshot to JPG and back again would not restore the original file — JPG throws away information on purpose. That loss is what makes the file small.",
+              "JPG also cannot store transparency. Any transparent area in your PNG comes out as solid black or white in the result, unless the tool fills it with a background colour first. If your image has a transparent background, that alone is a reason to stay with PNG.",
+              "A typical photo is roughly 3 to 5 times smaller as JPG than as PNG. A flat-colour logo, on the other hand, is usually smaller as PNG because JPG's compression adds artefacts around hard edges.",
+            ],
+            bullets: [
+              "PNG keeps every pixel exact — best for screenshots, logos, charts, icons.",
+              "JPG discards detail — best for photographs, illustrations with gradients.",
+              "JPG has no transparency — a transparent PNG will lose its background.",
+            ],
+          },
+          {
+            h2: "How to convert a PNG to JPG in your browser",
+            paragraphs: [
+              "No installation is needed. Open the Image Converter, drop your PNG file in, choose JPG as the output format and set a quality level. Around 80 keeps the picture visually identical for most photographs while cutting the file size by more than half.",
+              "Everything happens locally in your browser, so the image never leaves your device. That matters when the file is a screenshot of a private document or a photo you have not published anywhere yet.",
+            ],
+            bullets: [
+              "Open the Image Converter and add your PNG file.",
+              "Select JPG as the target format and pick a quality between 75 and 90.",
+              "Download the result, or run it through the Image Compressor for an extra step down.",
+            ],
+          },
+          {
+            h2: "When you should keep the PNG instead",
+            paragraphs: [
+              "Keep PNG when the image contains text, line art, a screenshot of a user interface, or anything with a transparent background. JPG's compression smears thin dark lines on light backgrounds, which makes UI screenshots look blurry and text harder to read.",
+              "If the file is going into an email signature, a CSS background, or anywhere the background must stay see-through, PNG is the only safe choice. If you need both a photo version and a transparent version, convert twice from the original rather than converting the JPG back to PNG — the second conversion cannot undo the detail that was already discarded.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "PNG'yi JPG'ye Nasıl Çevirirsiniz?",
+        desc: "PNG ile JPG arasındaki farkı, tarayıcınızda PNG'yi JPG'ye çevirmeyi ve logo, ekran görüntüsü ve fotoğraflar için hangi formatı koruyacağını öğrenin.",
+        intro:
+          "PNG ve JPG farklı sorunları çözer. PNG her pikseli birebir saklar; bu yüzden ekran görüntüleri ve logolar keskin görünür ama dosya büyük olur. JPG ise gözün fark etmediği ayrıntıyı atarak fotoğrafları büyük ölçüde küçültür. PNG'yi JPG'ye çevirmek yalnızca saydamlığa ihtiyaç duymayan görseller için doğru karardır.",
+        blocks: [
+          {
+            h2: "PNG'yi JPG'ye çevirdiğinizde tam olarak ne değişir",
+            paragraphs: [
+              "PNG kayıpsız (lossless) bir formattır. Her pikselin tam rengini saklar; yani bir ekran görüntüsünü JPG'ye çevirip geri dönüştürdüğünüzde orijinal dosya geri gelmez, çünkü JPG bilgiyi bilerek atar. Kaybedilen bu bilgi dosyayı küçülten şeydir.",
+              "JPG ayrıca saydamlığı saklayamaz. PNG'deki şeffaf alan, araç arka plan rengini doldurmazsa sonuçta düz siyah ya da beyaz olur. Görselinizde şeffaf arka plan varsa, tek başına bu bile PNG'de kalmanız için yeterli bir neden.",
+              "Tipik bir fotoğraf JPG olarak, PNG'ye göre yaklaşık 3 ila 5 kat daha küçüktür. Düz renkli bir logo ise genellikle PNG olarak daha küçüktür; çünkü JPG sıkıştırması sert kenarların çevresinde bozulmalar bırakır.",
+            ],
+            bullets: [
+              "PNG her pikseli birebir saklar — ekran görüntüsü, logo, grafik, ikon için en iyisi.",
+              "JPG detayı atar — fotoğraf ve gradyanlı çizimler için en iyisi.",
+              "JPG saydamlığı desteklemez — şeffaf PNG arka planını kaybeder.",
+            ],
+          },
+          {
+            h2: "Tarayıcınızda PNG'yi JPG'ye nasıl çevirirsiniz",
+            paragraphs: [
+              "Kurulum gerekmez. Görsel Dönüştürücü'yü açın, PNG dosyanızı bırakın, çıktı formatı olarak JPG'yi seçin ve kalite seviyesini belirleyin. 80 değeri çoğu fotoğrafta görseli aynı tutarken dosyayı yarıdan fazla küçültür.",
+              "Her şey tarayıcınızda yerel olarak çalışır, yani görsel cihazınızdan hiç çıkmaz. Bu, dosya gizli bir belgenin ekran görüntüsü ya da henüz hiçbir yerde yayımlamadığınız bir fotoğraf olduğunda önemlidir.",
+            ],
+            bullets: [
+              "Görsel Dönüştürücü'yü açın ve PNG dosyanızı ekleyin.",
+              "Hedef format olarak JPG'yi seçin, kaliteyi 75 ile 90 arasında bırakın.",
+              "Sonucu indirin veya dosyayı bir ad daha küçültmek için Görsel Sıkıştırıcı'dan geçirin.",
+            ],
+          },
+          {
+            h2: "PNG'yi ne zaman korumalısınız",
+            paragraphs: [
+              "Görsel metin, çizgi sanat, bir arayüz ekran görüntüsü veya saydam arka plan içeriyorsa PNG'yi koruyun. JPG sıkıştırması açık zemin üzerindeki ince koyu çizgileri bulamutlaştırır; bu da arayüz ekran görüntülerini bulanıklaştırır ve metni okunması zor hale getirir.",
+              "Dosya bir e-posta imzasına, CSS arka planına ya da arka planın saydam kalması gereken herhangi bir yere girecekse PNG tek güvenli seçimdir. Hem fotoğraf sürümüne hem şeffaf sürüme ihtiyacınız varsa, JPG'yi geri PNG'ye çevirmek yerine orijinal dosyadan iki kez ayrı ayrı dönüştürme yapın; ikinci dönüşüm, zaten atılmış detayı geri getiremez.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "what-is-sha-256",
+    relatedTools: ["sha-hash-generator", "md5-hash", "password-generator"],
+    content: {
+      en: {
+        title: "What is SHA-256 and why does it matter?",
+        desc: "Understand what a SHA-256 hash does, where developers use it for file integrity and security, and how to verify a download yourself.",
+        intro:
+          "SHA-256 takes any input — a word, a photo, a 4 GB disk image — and produces a fixed 64-character fingerprint. Change one pixel in the image or one letter in the word and the fingerprint changes completely. That property is why it is called a cryptographic hash and why it is used far beyond simple checksums.",
+        blocks: [
+          {
+            h2: "What a SHA-256 hash actually does",
+            paragraphs: [
+              "The output is always 256 bits, written as 64 hexadecimal characters, no matter how big the input is. Hash a short word or an entire operating system image and you still get exactly 64 characters. Because the space of possible outputs is fixed, a hash can only be reversed by trying every possible input.",
+              "The second property is that the function is deterministic and avalanche-fast: a tiny change to the input flips roughly half the output bits. Remove one space from a file and the hash is completely unrelated to the original. This makes it impossible to gradually modify data while keeping a valid-looking hash.",
+              "SHA-256 belongs to the SHA-2 family and has been a standard since 2001. It is not encryption. There is no key and no way to decrypt the result back into the original file — hashing is a one-way summary, not a secret code.",
+            ],
+            bullets: [
+              "Fixed 64-character output regardless of input size.",
+              "A single changed character or pixel changes the entire hash.",
+              "One-way: the original data cannot be recovered from the hash.",
+            ],
+          },
+          {
+            h2: "Where SHA-256 is used in practice",
+            paragraphs: [
+              "The most common everyday use is download verification. Linux distributions, browser extensions and large software releases publish a SHA-256 checksum next to the download. You compute the hash of the file you received and compare the two strings. Identical means the file arrived intact and was not modified in transit.",
+              "Developers also use it inside digital signatures and certificates. The hash summarises a document or executable, that summary is what gets signed, and the signature proves the summary is genuine. The same idea secures Git commits: a commit stores the hash of its content and of its parent, forming a chain that cannot be rewritten without changing every hash after it.",
+              "Password storage is the third major use, but with an important twist. Storing a raw SHA-256 of a password is weak, because password lists can be hashed faster than they can be tried. Real systems run the password through a deliberately slow function such as bcrypt, scrypt or Argon2. SHA-256 is still the building block, not the whole house.",
+            ],
+            bullets: [
+              "Verifying that a downloaded file matches the publisher's checksum.",
+              "Digital signatures, TLS certificates and Git commit integrity.",
+              "As a component inside slow password hashing functions — never alone.",
+            ],
+          },
+          {
+            h2: "How to verify a file with SHA-256 yourself",
+            paragraphs: [
+              "You do not need a command line. Open the SHA Hash Generator, choose SHA-256, and either paste the text you want to fingerprint or load the file. The tool produces the hash in your browser, so private files never leave your device.",
+              "Then compare it with the value published on the official site. Copy it carefully — a single mistyped character produces a completely different hash and a false alarm. If the two match, the file is bit-for-bit identical to the one that was published.",
+              "The same workflow applies to a short text. FreetoolsY can hash any text you paste, which is useful for generating commit signatures or short identifiers where you need a stable, repeatable value.",
+            ],
+            bullets: [
+              "Open the SHA Hash Generator and select SHA-256.",
+              "Paste the text or load the file to fingerprint.",
+              "Compare the result with the checksum from the official source.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "SHA-256 nedir ve neden önemlidir?",
+        desc: "SHA-256 özet algoritmasının ne yaptığını, dosya bütünlüğü ve güvenlik için nerelerde kullanıldığını ve bir indirmeyi nasıl kendiniz doğrulayacağınızı öğrenin.",
+        intro:
+          "SHA-256 her girdiye — bir kelimeye, bir fotoğrafa, 4 GB'lık bir disk imajına — sabit 64 karakterlik bir parmak izi üretir. Görselde tek bir pikseli veya kelimede tek bir harfi değiştirin, parmak izi tamamen değişir. Bu özellik yüzden kriptografik özet denir ve basit sağlama toplamlarının çok ötesinde kullanılır.",
+        blocks: [
+          {
+            h2: "SHA-256 özeti aslında ne yapar",
+            paragraphs: [
+              "Çıktı, girdi ne kadar büyük olursa olsun her zaman 256 bittir ve 64 onaltılık karakter olarak yazılır. Kısa bir kelimeyi de tüm bir işletim sistemi imajını da özetlerseniz yine tam olarak 64 karakter alırsınız. Mümkün çıktıların uzayı sabit olduğu için bir özeti geri çözmek ancak olası tüm girdileri denemekle mümkündür.",
+              "İkinci özellik, fonksiyonun belirleyici olması ve değişime çok hızlı yayılmasıdır: girdideki minik bir değişiklik çıktı bitlerinin yaklaşık yarısını tersine çevirir. Bir dosyadan tek bir boşluk çıkarın, özet özgün olanla hiç ilgisi olmayan bir değere dönüşür. Bu yüzden geçerli görünen bir özeti koruyarak veriyi kademeli olarak değiştirmek imkânsızdır.",
+              "SHA-256, SHA-2 ailesinin bir üyesidir ve 2001'den beri standarttır. Bu şifreleme değildir. Anahtar yoktur ve sonucu çözerek özgün dosyaya geri dönmenin bir yolu yoktur; özetleme tek yönlü bir özettir, gizli bir kod değil.",
+            ],
+            bullets: [
+              "Girdi boyutundan bağımsız olarak sabit 64 karakterlik çıktı.",
+              "Tek bir karakter veya piksel değişimi tüm özeti değiştirir.",
+              "Tek yönlüdür: özgün veri özetten geri elde edilemez.",
+            ],
+          },
+          {
+            h2: "SHA-256 pratikte nerelerde kullanılır",
+            paragraphs: [
+              "En sık görülen günlük kullanım indirme doğrulamadır. Linux dağıtımları, tarayıcı eklentileri ve büyük yazılım sürümleri indirmenin yanında bir SHA-256 sağlama toplamı yayımlar. İndirdiğiniz dosyanın özetini hesaplayıp iki diziyi karşılaştırırsınız. Aynıysa dosya eksiksiz gelmiş ve yolda değiştirilmemiştir.",
+              "Geliştiriciler bunu dijital imzaların ve sertifikaların içinde de kullanır. Özet bir belgeyi veya çalıştırılabilir dosyayı özetler, özetin kendisi imzalanır ve imza bu özetin gerçek olduğunu kanıtlar. Aynı fikir Git commit'lerinin bütünlüğünü de korur: bir commit içeriğinin ve ebeveyninin özetini saklar; bu, sonrasındaki her özet değiştirilmeden yeniden yazılamayan bir zincir oluşturur.",
+              "Üçüncü büyük kullanım parola saklamadır ama önemli bir farkı vardır. Parolanın çızgisel SHA-256 özetini saklamak zayıftır, çünkü parola listeleri denenmeden çok daha hızlı özetlenebilir. Gerçek sistemler parolayı bcrypt, scrypt veya Argon2 gibi bilerek yavaş bir fonksiyondan geçirir. SHA-256 bu yapının bir bileşenidir, tüm yapı değil.",
+            ],
+            bullets: [
+              "İndirilen dosyanın yayımcının sağlama toplamıyla eşleştiğini doğrulamak.",
+              "Dijital imzalar, TLS sertifikaları ve Git commit bütünlüğü.",
+              "Yavaş parola karma fonksiyonlarının içinde bileşen olarak — asla tek başına değil.",
+            ],
+          },
+          {
+            h2: "Bir dosyayı SHA-256 ile nasıl doğrularsınız",
+            paragraphs: [
+              "Komut satırına ihtiyacınız yok. SHA Hash Generator'ı açın, SHA-256'yı seçin ve özetlemek istediğiniz metni yapıştırın ya da dosyayı yükleyin. Araç özeti tarayıcınızda üretir, yani gizli dosyalar cihazınızdan hiç çıkmaz.",
+              "Sonra değeri resmî sitede yayımlanan değerle karşılaştırın. Dikkatlice kopyalayın: yanlış yazılmış tek bir karakter tamamen farklı bir özet üretir ve yanlış alarm verir. İkisi eşleşiyorsa dosya, yayımlanan dosyayla bit bit aynıdır.",
+              "Aynı işlem kısa metinler için de geçerlidir. Yapıştırdığınız her metni özetleyebilirsiniz; bu, commit imzası üretirken veya sabit, tekrarlanabilir bir değere ihtiyacınız olduğunda işe yarar.",
+            ],
+            bullets: [
+              "SHA Hash Generator'ı açın ve SHA-256'yı seçin.",
+              "Metni yapıştırın veya dosyayı yükleyin.",
+              "Sonucu resmî kaynaktaki sağlama toplamıyla karşılaştırın.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "webp-vs-png-vs-jpg",
+    relatedTools: ["image-converter", "image-compressor", "data-size-converter"],
+    content: {
+      en: {
+        title: "WebP vs PNG vs JPG: which image format should you use?",
+        desc: "Compare WebP, PNG and JPG by size, quality, transparency and browser support, and get a clear rule for picking the right format for any image.",
+        intro:
+          "The same photo can be 900 KB as PNG, 180 KB as JPG and 120 KB as WebP, and all three can look identical on screen. Format choice is the single highest-leverage thing you can do for page speed, yet most sites pick one format for everything and apply it to every upload.",
+        blocks: [
+          {
+            h2: "How the three formats actually differ",
+            paragraphs: [
+              "JPG is a lossy format designed for photographs. It analyses an 8x8 block of pixels at a time and keeps the information the eye is most sensitive to, discarding the rest. That is why a photograph looks fine as a 150 KB JPG but a screenshot of a spreadsheet turns to mush.",
+              "PNG is lossless, so it reproduces every pixel exactly and supports full alpha transparency. Screenshots, logos, icons and anything with sharp text or flat colour belong here. The cost is size: photographic content stored as PNG is often three to five times larger than the same image as JPG.",
+              "WebP is Google's format and can do both — lossy and lossless — plus transparency and animation. At a comparable quality setting it typically saves 25 to 35 percent over JPG, and every current browser supports it. Its one weakness is that older design tools and some image pipelines do not read it.",
+            ],
+            bullets: [
+              "JPG: smallest for photos, no transparency, lossy.",
+              "PNG: pixel-perfect and transparent, largest file size.",
+              "WebP: lossy or lossless, transparent, animation, 25–35% smaller than JPG.",
+            ],
+          },
+          {
+            h2: "Which format for which image",
+            paragraphs: [
+              "The decision is not a matter of taste. Look at what the image contains. If it is a photograph of the real world, use JPG or WebP. If it contains text, a chart, a logo or a user interface, use PNG, or WebP in lossless mode.",
+              "For a website that must work everywhere, the safest high-performance setup is to serve WebP with JPG as a fallback, and keep PNG only for images that genuinely need transparency. Browsers that do not understand WebP are old enough that the fallback costs you almost nothing.",
+              "Beware of progressive enhancement in the wrong direction. A CSS background cannot use a <picture> element, so if transparency matters there, ship PNG rather than relying on a format the browser will not be told how to fall back from.",
+            ],
+            bullets: [
+              "Photo of a real scene → WebP, with JPG fallback.",
+              "Screenshot, chart, logo, text → PNG or lossless WebP.",
+              "Needs transparency → PNG, or WebP if you can verify browser support.",
+            ],
+          },
+          {
+            h2: "Getting the size down without visible quality loss",
+            paragraphs: [
+              "Most of the size win comes from choosing the right format, not from aggressive compression. Converting a large PNG screenshot to JPG can make it smaller but will make it look worse. Converting that same screenshot to WebP in lossless mode is usually both smaller and pixel-identical.",
+              "For photographs, quality settings between 75 and 85 are the sweet spot for WebP and JPG: files typically drop by half or more against a camera original, and the difference is invisible at normal viewing size. Below 70 you will start to see blocking around faces and in flat areas like the sky.",
+              "Dimensions matter as much as the format. Serving a 4000-pixel image to a phone that displays 800 pixels wastes megabytes no codec can recover. Resize to roughly twice the largest display size, in CSS pixels, and convert afterwards — the Image Resizer and Image Compressor handle both steps.",
+            ],
+            bullets: [
+              "Right format beats aggressive compression every time.",
+              "Quality 75–85 for photos; higher for text and flat colour.",
+              "Resize to about 2x the display size before converting.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "WebP, PNG, JPG: hangi görsel formatını kullanmalısınız?",
+        desc: "WebP, PNG ve JPG'yi boyut, kalite, saydamlık ve tarayıcı desteği açısından karşılaştırın; her görsel için doğru formatı seçmenin net bir kuralını öğrenin.",
+        intro:
+          "Aynı fotoğraf PNG olarak 900 KB, JPG olarak 180 KB, WebP olarak 120 KB olabilir ve üçü de ekranda birebir aynı görünebilir. Format seçimi sayfa hızı için yapabileceğiniz en yüksek etkili iş, ancak çoğu site tek bir formatı seçip her yüklemeye uygular.",
+        blocks: [
+          {
+            h2: "Üç format aslında nasıl farklılaşıyor",
+            paragraphs: [
+              "JPG, fotoğraflar için tasarlanmış kayıplı bir formattır. 8x8 piksellik blokları teker teker analiz eder, gözün en duyarlı olduğu bilgiyi korur ve kalanını atar. Bu yüzden bir fotoğraf 150 KB'lık JPG olarak gayet iyi görünürken bir hesap tablosu ekran görüntüsü lahana gibi olur.",
+              "PNG kayıpsızdır; her pikseli birebir yeniden üretir ve tam alfa saydamlığı destekler. Ekran görüntüleri, logolar, ikonlar ve keskin metin ya da düz renk içeren her şey buraya aittir. Bedeli dosya boyutudur: fotoğraf içerikli bir görsel PNG olarak çoğu zaman JPG'nin üç ila beş katı büyüktür.",
+              "WebP, Google'ın formatıdır; hem kayıplı hem kayıpsız çalışabilir, ayrıca saydamlık ve animasyon destekler. Karşılaştırılabilir kalite ayarında JPG'ye göre tipik olarak yüzde 25 ile 35 arasında tasarruf sağlar ve güncel tüm tarayıcılar destekler. Tek zayıf yanı, eski tasarım araçlarının ve bazı görsel işleme hatlarının okuyamamasıdır.",
+            ],
+            bullets: [
+              "JPG: fotoğrafta en küçük, saydamlık yok, kayıplı.",
+              "PNG: piksel birebir ve saydam, dosya boyutu en büyük.",
+              "WebP: kayıplı veya kayıpsız, saydam, animasyonlu, JPG'den yüzde 25–35 daha küçük.",
+            ],
+          },
+          {
+            h2: "Hangi görsel için hangi format",
+            paragraphs: [
+              "Karar zevk meselesi değil. Görselin içinde ne olduğuna bakın. Gerçek dünyadan bir fotoğrafsa JPG ya da WebP kullanın. Metin, grafik, logo veya arayüz içeriyorsa PNG ya da kayıpsız modda WebP kullanın.",
+              "Her yerde çalışması gereken bir site için en güvenli yüksek performanslı kurulum, WebP'i JPG yedeğiyle servis etmek ve yalnızca gerçekten saydamlık gerektiren görsellerde PNG tutmaktır. WebP'i anlamayan tarayıcılar yeterince eski olduğundan yedek size neredeyse hiç maliyet getirmez.",
+              "Yanlış yönde ilerlemeye dikkat edin. CSS arka planı <picture> öğesi kullanamaz; dolayısıyla orada saydamlık önemliyse tarayıcıya bir yedek bildiremeyeceğiniz bir formata güvenmek yerine PNG servis edin.",
+            ],
+            bullets: [
+              "Gerçek sahne fotoğrafı → WebP, JPG yedeğiyle.",
+              "Ekran görüntüsü, grafik, logo, metin → PNG veya kayıpsız WebP.",
+              "Saydamlık gerekiyor → PNG ya da tarayıcı desteğini doğruladıysanız WebP.",
+            ],
+          },
+          {
+            h2: "Görünür kalite kaybı olmadan boyutu düşürmek",
+            paragraphs: [
+              "Boyuttaki kazancın büyük kısmı agresif sıkıştırmadan değil, doğru formatı seçmekten gelir. Büyük bir PNG ekran görüntüsünü JPG'ye çevirmek dosyayı küçültebilir ama daha kötü gösterir. Aynı ekran görüntüsünü kayıpsız modda WebP'ye çevirmek genellikle hem daha küçük hem piksel birebir aynıdır.",
+              "Fotoğraflarda WebP ve JPG için 75 ile 85 arasındaki kalite ayarları ideal noktadır: dosyalar bir kamera orijinaline göre tipellikle yarıya veya daha fazla düşer ve normal görüntüleme boyutunda fark görünmez. 70'in altına indiğinizde yüzlerde ve gökyüzü gibi düz alanlarda bloklaşma görmeye başlarsınız.",
+              "Format kadar ölçüler de önemlidir. 4000 piksellik bir görseli 800 piksel gösteren bir telefona servis etmek, hiçbir kodek’in geri kazandıramayacağı megabaytlık israftır. En büyük gösterim boyutunun kabaca iki katına, CSS pikseli cinsinden küçültün ve sonra dönüştürün — Görsel Yeniden Boyutlandırıcı ve Görsel Sıkıştırıcı her iki adımı da halleder.",
+            ],
+            bullets: [
+              "Doğru format, agresif sıkıştırmadan her zaman üstündür.",
+              "Fotoğrafta kalite 75–85; metin ve düz renkte daha yüksek.",
+              "Dönüştürmeden önce gösterim boyutunun yaklaşık 2 katına küçültün.",
+            ],
+          },
+        ],
+      },
+    },
+  },
 ];
+
+export const guides: Guide[] = GUIDE_ORDER.map((slug) => {
+  const guide = GUIDE_LIST.find((item) => item.slug === slug);
+  if (!guide) throw new Error(`GUIDE_ORDER refers to a missing guide: ${slug}`);
+  return guide;
+});
 
 export function getGuide(slug: string): Guide | undefined {
   return guides.find((guide) => guide.slug === slug);
