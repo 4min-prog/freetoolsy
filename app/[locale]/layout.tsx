@@ -47,11 +47,15 @@ export async function generateMetadata({
     applicationName: "FreetoolsY",
     icons: {
       icon: [
+        { url: "/icon-v2.svg", type: "image/svg+xml" },
+        { url: "/favicon-v2.ico", sizes: "16x16 32x32 48x48", type: "image/x-icon" },
+        { url: "/og/logo-v2", sizes: "512x512", type: "image/png" },
         { url: "/og/logo", sizes: "512x512", type: "image/png" },
-        { url: "/icon.svg", type: "image/svg+xml" },
-        { url: "/favicon.ico", sizes: "16x16 32x32 48x48", type: "image/x-icon" },
       ],
-      apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+      apple: [
+        { url: "/apple-touch-icon-v2.png", sizes: "180x180", type: "image/png" },
+        { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+      ],
     },
     alternates: {
       canonical: canonicalPath,
@@ -117,12 +121,12 @@ export default async function RootLayout({
               url: siteUrl,
               logo: {
                 "@type": "ImageObject",
-                url: `${siteUrl}/og/logo`,
+                url: `${siteUrl}/og/logo-v2`,
                 width: 512,
                 height: 512,
                 caption: "FreetoolsY",
               },
-              image: `${siteUrl}/og/logo`,
+              image: `${siteUrl}/og/logo-v2`,
               contactPoint: {
                 "@type": "ContactPoint",
                 contactType: "customer support",

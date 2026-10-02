@@ -81,7 +81,7 @@ export async function GET(
   let icon: ReactNode | null = null;
   let watermark: ReactNode | null = null;
 
-  if (slug === "logo") {
+  if (slug === "logo" || slug === "logo-v2") {
     return new ImageResponse(
       (
         <div
@@ -94,7 +94,7 @@ export async function GET(
           }}
         >
           <div style={{ display: "flex" }}>
-            <LogoBars size={512} />
+            <LogoBars size={512} boxFill="none" boxRadius={0} />
           </div>
         </div>
       ),
