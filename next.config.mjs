@@ -24,8 +24,8 @@ const nextConfig = {
   async redirects() {
     return [
       { source: "/tools", destination: "/", permanent: true },
-      { source: "/kategoriler", destination: "/tr", permanent: true },
-      { source: "/araclar", destination: "/tr", permanent: true },
+      { source: "/kategoriler", destination: "/", permanent: true },
+      { source: "/araclar", destination: "/", permanent: true },
       { source: "/blog", destination: "/rehber", permanent: true },
     ];
   },

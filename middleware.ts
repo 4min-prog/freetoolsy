@@ -5,6 +5,7 @@ import { routing } from "./i18n/routing";
 const intlMiddleware = createMiddleware(routing);
 
 const LEGACY_EN_PATHS: [RegExp, (slug: string) => string][] = [
+  [/^\/tr\/kategoriler\/([^/]+)\/?$/, (id) => `/tr/categories/${id}`],
   [/^\/tr\/araclar\/([^/]+)\/?$/, (slug) => `/tr/tools/${slug}`],
   [/^\/araclar\/([^/]+)\/?$/, (slug) => `/tools/${slug}`],
   [/^\/kategoriler\/([^/]+)\/?$/, (id) => `/categories/${id}`],
