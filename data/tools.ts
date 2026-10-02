@@ -1219,7 +1219,7 @@ export function getToolsByCategory(category: string): Tool[] {
 }
 
 export function displayToolCount(_count: number): string {
-  return "100+";
+  return "150+";
 }
 
 const NEW_TOOL_DAYS = 30;

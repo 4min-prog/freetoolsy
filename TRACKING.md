@@ -13,7 +13,7 @@ This file tracks where the project stands. Whenever a working session ends, upda
 - **URL yapısı:** EN `/tools/[slug]`, TR `/tr/tools/[slug]`; kategori EN `/categories/[id]`, TR `/tr/kategoriler/[id]`; rehber EN `/rehber/[slug]`, TR `/tr/rehber/[slug]`. `lib/paths.ts` tek kaynak — elle string kurma. Route'lar `app/[locale]/tools/[slug]` ve `app/[locale]/rehber/[slug]`. (`araclar` yok — eski TR path kaldırıldı.)
 - **Sitemap:** build-time `app/sitemap.ts` (otomatik, `revalidate = 86400`). `public/sitemap.xml` YOK — oraya yazma. Güncel sayı `/sitemap.xml`'den okunur; rehber ekleyince site otomatik yeniden üretir.
 - **SEO:** JSON-LD (WebSite, SoftwareApplication, FAQPage, BreadcrumbList), hreflang+canonical her sayfada, AdSense sabit script `ca-pub-8880626756482815` (slotlar env-gated), GA `G-6J6JB9SHKZ` + GoatCounter body lazyOnload, favicon v2, canlı kur API'si (`app/api/rates/route.ts`).
-- **Sayı politikası:** `displayToolCount` her yerde **"100+"** döndürür (hero/OG "100+ tools · no signup"). Yalnızca ToolExplorer "All tools" sekmesi gerçek sayıyı gösterir (`tools.length` = 160).
+- **Sayı politikası:** `displayToolCount` her yerde **"150+"** döndürür (hero/OG "150+ tools · no signup"). Yalnızca ToolExplorer "All tools" sekmesi gerçek sayıyı gösterir (`tools.length` = 160).
 - **Footer:** e-posta/abone okuru **eklenmedi** (kullanıcı kararı — kapalı konu).
 
 ### Kritik kurallar

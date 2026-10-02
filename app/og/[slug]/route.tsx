@@ -263,7 +263,7 @@ export async function GET(
               }}
             />
             <div style={{ fontSize: 24, color: "#94a3b8" }}>
-              100+ tools · no signup
+              150+ tools · no signup
             </div>
           </div>
         </div>

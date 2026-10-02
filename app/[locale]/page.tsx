@@ -9,10 +9,9 @@ import SearchBox from "@/components/SearchBox";
 import PopularStrip from "@/components/PopularStrip";
 import JsonLd from "@/components/JsonLd";
 import RotatingWords from "@/components/RotatingWords";
-import { Link } from "@/i18n/navigation";
+import HeroMarquee from "@/components/HeroMarquee";
 import { displayToolCount, tools } from "@/data/tools";
 import { categoryTheme } from "@/components/categoryTheme";
-import { toolPath } from "@/lib/paths";
 import type { Locale } from "@/i18n/routing";
 
 export const revalidate = 86400;
@@ -216,34 +215,11 @@ export default async function Home({ params }: { params: { locale: string } }) {
                 {displayToolCount(tools.length)}
               </span>
             </div>
-            <div className="hero-marquee-mask mt-4 flex h-[22rem] gap-5 overflow-hidden">
-              {indexColumns.map((column, columnIndex) => (
-                <ul
-                  key={columnIndex}
-                  className={
-                    columnIndex === 0
-                      ? "hero-marquee w-1/2 shrink-0 space-y-2.5"
-                      : "hero-marquee-reverse w-1/2 shrink-0 space-y-2.5"
-                  }
-                >
-                  {[...column, ...column].map((tool, index) => (
-                    <li key={`${tool.slug}-${index}`}>
-                      <Link
-                        href={toolPath(locale, tool.slug)}
-                        className="group flex items-baseline gap-2 font-mono text-xs text-muted transition-colors hover:text-foreground"
-                      >
-                        <span className="w-6 shrink-0 text-right text-[10px] text-faint">
-                          {String(index + 1).padStart(2, "0")}
-                        </span>
-                        <span className="truncate group-hover:underline">
-                          {toolMeta?.[tool.slug]?.name ?? tool.name}
-                        </span>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              ))}
-            </div>
+            <HeroMarquee
+              columns={indexColumns}
+              locale={locale}
+              names={toolMeta}
+            />
           </aside>
         </div>
       </section>

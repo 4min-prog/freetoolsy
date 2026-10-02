@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import { useLocale, useMessages, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import ToolIcon from "@/components/ToolIcon";
@@ -30,6 +31,24 @@ export default function PopularStrip() {
     track("popular_click", { tool_slug: slug });
   }
 
+  const tickerRef = useRef<HTMLUListElement>(null);
+
+  useEffect(() => {
+    const el = tickerRef.current;
+    if (!el) return;
+    const source = Array.from(el.children) as HTMLElement[];
+    for (const li of source) {
+      const clone = li.cloneNode(true) as HTMLElement;
+      clone.setAttribute("aria-hidden", "true");
+      clone.setAttribute("data-ticker-clone", "");
+      clone.querySelectorAll("a").forEach((a) => a.setAttribute("tabindex", "-1"));
+      el.appendChild(clone);
+    }
+    return () => {
+      el.querySelectorAll("[data-ticker-clone]").forEach((n) => n.remove());
+    };
+  }, []);
+
   return (
     <section aria-label={t("popularTitle")} className="mt-10 border-y border-border">
       <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 py-4">
@@ -39,17 +58,15 @@ export default function PopularStrip() {
         <p className="text-xs text-muted">{t("popularSubtitle")}</p>
       </div>
       <div className="popular-ticker-track popular-ticker-mask overflow-hidden border-t border-border">
-        <ul className="popular-ticker">
-          {[...items, ...items].map((tool, index) => {
+        <ul className="popular-ticker" ref={tickerRef}>
+          {items.map((tool, index) => {
             const toolName = meta?.[tool.slug]?.name ?? tool.slug;
             const theme = categoryTheme(tool.category);
             return (
               <li key={`${tool.slug}-${index}`} className="shrink-0">
                 <Link
                   href={toolPath(locale, tool.slug)}
-                  onClick={
-                    index < items.length ? () => onClick(tool.slug) : undefined
-                  }
+                  onClick={() => onClick(tool.slug)}
                   className="group relative mr-4 flex min-h-14 items-center gap-3 overflow-hidden border-r border-border px-5 py-3 transition-colors hover:bg-surface-2 active:bg-surface-2"
                 >
                   <span
