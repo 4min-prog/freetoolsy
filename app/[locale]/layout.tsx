@@ -47,7 +47,9 @@ export async function generateMetadata({
     applicationName: "FreetoolsY",
     icons: {
       icon: [
+        { url: "/favicon-v3.ico", sizes: "any", type: "image/x-icon" },
         { url: "/favicon-v2.ico", sizes: "any", type: "image/x-icon" },
+        { url: "/favicon.ico", sizes: "any", type: "image/x-icon" },
         { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
         { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
         { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
