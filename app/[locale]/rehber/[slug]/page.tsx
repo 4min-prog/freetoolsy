@@ -9,6 +9,8 @@ import { localizedUrl, siteUrl, toolPath } from "@/lib/paths";
 import ToolIcon from "@/components/ToolIcon";
 import JsonLd from "@/components/JsonLd";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   const params: { locale: string; slug: string }[] = [];
   routing.locales.forEach((locale) => {
