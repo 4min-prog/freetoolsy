@@ -6,6 +6,7 @@ import { categoryTheme } from "@/components/categoryTheme";
 import { TOOL_ICONS } from "@/components/ToolIcon";
 import { CATEGORY_ICON_PATHS } from "@/components/CategoryIcon";
 import { LogoBars } from "../_logo";
+import { siteUrl } from "@/lib/paths";
 import en from "@/messages/en.json";
 
 export const runtime = "edge";
@@ -81,25 +82,40 @@ export async function GET(
   let icon: ReactNode | null = null;
   let watermark: ReactNode | null = null;
 
-  if (slug === "logo" || slug === "logo-v2") {
-    return new ImageResponse(
-      (
-        <div
-          style={{
-            width: "100%",
-            height: "100%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <div style={{ display: "flex" }}>
-            <LogoBars size={512} boxFill="none" boxRadius={0} />
+  if (slug === "logo" || slug === "logo-v2" || slug === "logo-v3") {
+    try {
+      const logoBuf = await fetch(new URL("/og-logo-v2-new.png", siteUrl)).then((res) => res.arrayBuffer());
+      const logoData = Buffer.from(logoBuf).toString("base64");
+      return new ImageResponse(
+        (
+          <div
+            style={{
+              width: "100%",
+              height: "100%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              backgroundColor: "#ffffff",
+            }}
+          >
+            <img
+              src={`data:image/png;base64,${logoData}`}
+              width={512}
+              height={512}
+              style={{ objectFit: "contain" }}
+            />
           </div>
-        </div>
-      ),
-      { width: 512, height: 512 }
-    );
+        ),
+        { width: 512, height: 512 }
+      );
+    } catch {
+      return new ImageResponse(
+        <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: "#ffffff" }}>
+          <LogoBars size={512} boxFill="none" boxRadius={0} />
+        </div>,
+        { width: 512, height: 512 }
+      );
+    }
   }
 
   if (slug === "home") {
