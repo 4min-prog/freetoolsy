@@ -75,10 +75,10 @@ export async function generateMetadata({
       description: t("description"),
       images: [
         {
-          url: `${siteUrl}/og/home`,
+          url: "/og-image.png",
           width: 1200,
           height: 630,
-          alt: t("ogImageAlt"),
+          alt: "FreetoolsY - Free Online Tools",
         },
       ],
     },
@@ -86,7 +86,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: t("ogTitle"),
       description: t("description"),
-      images: [`${siteUrl}/og/home`],
+      images: ["/og-image.png"],
     },
   };
 }
