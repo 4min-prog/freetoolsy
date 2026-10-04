@@ -3,12 +3,37 @@ import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import { categories, getTool, tools } from "@/data/tools";
 import { categoryTheme } from "@/components/categoryTheme";
-import { TOOL_ICONS } from "@/components/ToolIcon";
-import { CATEGORY_ICON_PATHS } from "@/components/CategoryIcon";
 import { LogoBars } from "../_logo";
 import { siteUrl } from "@/lib/paths";
-import en from "@/messages/en.json";
-import tr from "@/messages/tr.json";
+import ogMessages from "@/data/og-messages.json";
+
+const CATEGORY_ICON_PATHS: Record<string, string[]> = {
+  text: [
+    "M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9z",
+    "M14 3v6h6M8.5 13.5h7M8.5 17.5h4",
+  ],
+  security: [
+    "M12 3l7 2.8V11c0 4.4-3.1 7.8-7 9-3.9-1.2-7-4.6-7-9V5.8z",
+    "M9.2 11.2l2 2 3.6-3.9",
+  ],
+  developer: ["M8 9.5L4.5 12 8 14.5M16 9.5L19.5 12 16 14.5M13.5 7L10.5 17"],
+  calculation: [
+    "M8 3.5h8a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-13a2 2 0 0 1 2-2z",
+    "M9 7.5h6M9 12.5h.01M12 12.5h.01M15 12.5h.01M9 15.5h.01M12 15.5h.01M15 15.5h.01M9 18.5h.01M12 18.5h.01M15 18.5h.01",
+  ],
+  image: [
+    "M5.5 5h13a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z",
+    "M8.5 8.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM20.5 15.5L16 11l-4.5 4.5-3-3-5 5",
+  ],
+  seo: [
+    "M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zM20 20l-3.2-3.2",
+    "M11 7.5v3.5l2.5 1.5",
+  ],
+  fun: [
+    "M12 3.5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17z",
+    "M12 8.5V12l2.5 1.5M9.5 5V3.5M14.5 5V3.5M12 20.5V15M8.5 9.5H7M16.5 9.5H15",
+  ],
+};
 
 export const runtime = "edge";
 export const dynamicParams = false;
@@ -28,25 +53,6 @@ function hexA(hex: string, alpha: number) {
   return `rgba(${r}, ${g}, ${b}, ${alpha})`;
 }
 
-function toolIconMark(slug: string, hex: string, size = 80): ReactNode {
-  const def = TOOL_ICONS[slug];
-  if (!def) return null;
-  const paths = Array.isArray(def.icon[4]) ? def.icon[4] : [def.icon[4]];
-  return (
-    <svg
-      viewBox={`0 0 ${def.icon[0]} ${def.icon[1]}`}
-      width={size}
-      height={size}
-      fill={hex}
-      aria-hidden="true"
-    >
-      {paths.map((d, i) => (
-        <path key={i} d={d} />
-      ))}
-    </svg>
-  );
-}
-
 function categoryIconMark(id: string, hex: string, size = 80): ReactNode {
   return (
     <svg
@@ -60,7 +66,9 @@ function categoryIconMark(id: string, hex: string, size = 80): ReactNode {
       strokeLinejoin="round"
       aria-hidden="true"
     >
-      {CATEGORY_ICON_PATHS[id] ?? CATEGORY_ICON_PATHS.text}
+      {(CATEGORY_ICON_PATHS[id] ?? CATEGORY_ICON_PATHS.text).map((d, i) => (
+        <path key={i} d={d} />
+      ))}
     </svg>
   );
 }
@@ -72,7 +80,7 @@ export async function GET(
   const slug = params.slug;
   const locale = new URL(request.url).searchParams.get("locale") === "tr" ? "tr" : "en";
   const isTurkish = locale === "tr";
-  const msgs = (isTurkish ? tr : en) as {
+  const msgs = ogMessages[locale] as {
     ToolMeta?: Record<string, { name?: string; pageDesc?: string }>;
     Categories?: Record<string, string>;
     CategoryPage?: {
@@ -304,8 +312,8 @@ export async function GET(
     name = msgs.ToolMeta?.[slug]?.name ?? tool.name;
     label = msgs.Categories?.[tool.category] ?? tool.category;
     desc = msgs.ToolMeta?.[slug]?.pageDesc ?? "";
-    icon = toolIconMark(slug, hex);
-    watermark = toolIconMark(slug, hex, 400);
+    icon = categoryIconMark(tool.category, hex);
+    watermark = categoryIconMark(tool.category, hex, 400);
   } else if (categories.some((category) => category.id === slug)) {
     hex = categoryTheme(slug).hex;
     name = msgs.Categories?.[slug] ?? slug;

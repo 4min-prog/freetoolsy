@@ -4,11 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run check:tools && next build",
+    "predev": "npm run generate:og-messages",
+    "build": "npm run check:tools && npm run generate:og-messages && next build",
     "start": "next start",
     "lint": "next lint",
     "indexnow": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/indexnow.mts",
-    "check:tools": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/check-tools.mts"
+    "check:tools": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/check-tools.mts",
+    "generate:og-messages": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/generate-og-messages.mts"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.3.1",
