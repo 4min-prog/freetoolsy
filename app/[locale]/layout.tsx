@@ -47,20 +47,16 @@ export async function generateMetadata({
     applicationName: "FreetoolsY",
     icons: {
       icon: [
-        { url: "/favicon-v5.ico", sizes: "any", type: "image/x-icon" },
-        { url: "/favicon-v4.ico", sizes: "any", type: "image/x-icon" },
-        { url: "/favicon-v3.ico", sizes: "any", type: "image/x-icon" },
-        { url: "/favicon-v2.ico", sizes: "any", type: "image/x-icon" },
-        { url: "/favicon.ico", sizes: "any", type: "image/x-icon" },
+        { url: "/favicon.ico", sizes: "any" },
         { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
         { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
-        { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+        { url: "/icon.svg", type: "image/svg+xml" },
         { url: "/icon.png", sizes: "512x512", type: "image/png" },
         { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
-        { url: "/icon-v2.svg", type: "image/svg+xml" },
+        { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
       ],
       apple: [
-        { url: "/apple-touch-icon-v2.png", sizes: "180x180", type: "image/png" },
+        { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
       ],
     },
     alternates: {
