@@ -50,7 +50,9 @@ export async function generateMetadata({
   const t = await getTranslations(`ToolMeta.${tool.slug}`);
   const canonical = toolUrl(locale, tool.slug);
   return {
-    title: `${t("name")} — ${locale === "en" ? "100% Free Online Tool" : "%100 Ücretsiz Araç"}`,
+    title: t.has("seoTitle")
+      ? { absolute: t("seoTitle") }
+      : `${t("name")} — ${locale === "en" ? "100% Free Online Tool" : "%100 Ücretsiz Araç"}`,
     description: t("pageDesc"),
     alternates: {
       canonical,

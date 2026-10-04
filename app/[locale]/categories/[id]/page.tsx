@@ -1,10 +1,18 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
-import { categories, displayToolCount, getToolsByCategory, tools } from "@/data/tools";
+import {
+  categories,
+  displayToolCount,
+  getTool,
+  getToolsByCategory,
+  tools,
+  type Tool,
+} from "@/data/tools";
 import type { Locale } from "@/i18n/routing";
+import { POPULAR_SLUGS } from "@/data/popular";
 import {
   categoryPath,
   categoryUrl,
@@ -79,8 +87,28 @@ export default async function CategoryPage({
   const t = await getTranslations("CategoryPage");
   const tc = await getTranslations("Categories");
   const tInfo = await getTranslations("Info");
+  const messages = await getMessages();
   const theme = categoryTheme(category.id);
   const categoryTools = getToolsByCategory(category.id);
+  const popularTools = POPULAR_SLUGS.map((slug) => getTool(slug)).filter(
+    (tool): tool is Tool => tool !== undefined && tool.category === category.id
+  );
+  const featuredTools = [
+    ...popularTools,
+    ...categoryTools.filter(
+      (tool) => !popularTools.some((popularTool) => popularTool.slug === tool.slug)
+    ),
+  ].slice(0, 3);
+  const seoContent = t.raw(`seoContent.${category.id}`) as {
+    description: string;
+    useCases: string[];
+    faq: { question: string; answer: string }[];
+  };
+  const toolMeta = (
+    messages as {
+      ToolMeta?: Record<string, { name?: string }>;
+    }
+  ).ToolMeta;
   const related = categories.filter((item) => item.id !== category.id);
 
   const homeUrl = localizedUrl(locale, "/");
@@ -116,7 +144,10 @@ export default async function CategoryPage({
           {
             "@context": "https://schema.org",
             "@type": "CollectionPage",
-            name: `${tc(category.id)} tools`,
+            name:
+              locale === "tr"
+                ? `${tc(category.id)} Araçları`
+                : `${tc(category.id)} Tools`,
             url: categoryUrl(locale, category.id),
             inLanguage: locale,
             mainEntity: {
@@ -124,10 +155,22 @@ export default async function CategoryPage({
               itemListElement: categoryTools.map((tool, index) => ({
                 "@type": "ListItem",
                 position: index + 1,
-                name: tool.name,
+                name: toolMeta?.[tool.slug]?.name ?? tool.name,
                 url: toolUrl(locale, tool.slug),
               })),
             },
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: seoContent.faq.map((item) => ({
+              "@type": "Question",
+              name: item.question,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: item.answer,
+              },
+            })),
           },
         ]}
       />
@@ -157,14 +200,88 @@ export default async function CategoryPage({
         </h1>
       </div>
       <p className="mt-3 max-w-[65ch] text-sm leading-relaxed text-muted sm:text-base">
-        {t(`desc.${category.id}`)}
+        {seoContent.description}
       </p>
 
-      <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {categoryTools.map((tool) => (
-          <ToolCard key={tool.slug} tool={tool} />
-        ))}
-      </div>
+      <section
+        aria-labelledby="popular-tools-title"
+        className="mt-8"
+      >
+        <h2
+          id="popular-tools-title"
+          className="text-lg font-semibold tracking-tight text-text"
+        >
+          {t("mostPopularTitle")}
+        </h2>
+        <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {featuredTools.map((tool) => (
+            <ToolCard key={tool.slug} tool={tool} />
+          ))}
+        </div>
+      </section>
+
+      <section
+        aria-labelledby="use-cases-title"
+        className="mt-10 rounded-xl border border-border bg-surface p-6 shadow-card"
+      >
+        <h2
+          id="use-cases-title"
+          className="text-lg font-semibold tracking-tight text-text"
+        >
+          {t("useCasesTitle")}
+        </h2>
+        <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+          {seoContent.useCases.map((useCase) => (
+            <li
+              key={useCase}
+              className="rounded-lg border border-border bg-bg p-4 text-sm leading-relaxed text-muted"
+            >
+              {useCase}
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section aria-labelledby="all-category-tools-title" className="mt-10">
+        <h2
+          id="all-category-tools-title"
+          className="text-lg font-semibold tracking-tight text-text"
+        >
+          {t("allToolsTitle", { category: tc(category.id) })}
+        </h2>
+        <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {categoryTools.map((tool) => (
+            <ToolCard key={tool.slug} tool={tool} />
+          ))}
+        </div>
+      </section>
+
+      <section
+        aria-labelledby="category-faq-title"
+        className="mt-12 rounded-xl border border-border bg-surface p-6 shadow-card"
+      >
+        <h2
+          id="category-faq-title"
+          className="text-lg font-semibold tracking-tight text-text"
+        >
+          {t("faqTitle")}
+        </h2>
+        <ul className="mt-4 space-y-3">
+          {seoContent.faq.map((item) => (
+            <li
+              key={item.question}
+              className="rounded-lg border border-border bg-bg px-4 py-3"
+            >
+              <h3 className="text-sm font-medium text-text">
+                {item.question}
+              </h3>
+              <p className="mt-1 text-sm leading-relaxed text-muted">
+                {item.answer}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </section>
 
       <section
         aria-label={t("relatedTitle")}

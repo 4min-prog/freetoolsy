@@ -135,26 +135,36 @@
     "isFree": "{name} ücretsiz mi?",
     "isFreeAnswer": "Evet, {name} tamamen ücretsizdir. Kayıt, indirme ve kullanım limiti yoktur."
   },
+  "ToolSeoSections": {
+    "howToTitle": "{name} nasıl kullanılır?",
+    "howToStep": "Yukarıdaki kontrollerden girdinizi sağlayın veya seçenekleri belirleyin, ardından sonucu sayfada inceleyin.",
+    "whyUseTitle": "{name} aracımızı neden kullanmalısınız?",
+    "whyUseWorkflow": "Uygulamalar arasında geçiş yapmak yerine işinizi bu özel {name} akışıyla tamamlayın.",
+    "whyUseNoSignup": "Tarayıcınızda açıp hemen başlayın; hesap veya kurulum gerekmez."
+  },
   "ToolMeta": {
     "json-formatter": {
       "name": "JSON Biçimlendirici",
       "desc": "JSON kodunu biçimlendirir, doğrular ve süsler; sözdizimi hatalarını satır numaralarıyla bildirir.",
       "title": "JSON Biçimlendirici — Ücretsiz Çevrimiçi Araç",
-      "pageDesc": "Sözdizimi vurgulama ve satır numaralarıyla JSON'u anında biçimlendirin, doğrulayın ve küçültün. Tamamen tarayıcı tarafında ve gizli.",
+      "seoTitle": "Ücretsiz JSON Biçimlendirici Online | JSON'u Biçimlendirin ve Doğrulayın",
+      "pageDesc": "JSON verisini bu ücretsiz JSON biçimlendiriciyle biçimlendirin, doğrulayın ve küçültün. Sözdizimi hatalarını görün; kayıt gerekmez, veriniz tarayıcınızda kalır.",
       "intro": "JSON'unuzu biçimlendirin, sözdizimini doğrulayın ve hataları gösterin — hepsi temiz bir vurgulamayla."
     },
     "base64": {
       "name": "Base64 Kodlayıcı/Çözücü",
       "desc": "Metni Base64'e dönüştürür veya Base64 verisini orijinal içeriğine geri çözer.",
       "title": "Base64 Kodlayıcı/Çözücü — Ücretsiz Çevrimiçi Araç",
-      "pageDesc": "Metni Base64'e kodlayın veya Base64'ü orijinal içeriğine geri çözün. Unicode ve Türkçe karakter için güvenli; tamamen tarayıcınızda çalışır.",
+      "seoTitle": "Ücretsiz Base64 Kodlayıcı/Çözücü Online | Metni Kodlayın veya Çözün",
+      "pageDesc": "Metni Base64 biçimine kodlayın veya Base64 verisini bu ücretsiz Base64 kodlayıcı ve çözücüyle açın. Anında sonuç alın; kayıt gerekmez, tarayıcınızda çalışır.",
       "intro": "Metni Base64 olarak kodlayın veya Base64 verisini orijinal değerine geri çözün."
     },
     "url-encoder": {
       "name": "URL Kodlayıcı/Çözücü",
       "desc": "Metni URL için güvenli biçime kodlar veya kodlanmış URL parametrelerini okunabilir biçime çözer.",
       "title": "URL Kodlayıcı/Çözücü — Ücretsiz Çevrimiçi Araç",
-      "pageDesc": "Metni URL için güvenli gösterime kodlayın veya yüzde kodlu URL parametrelerini çözün. UTF-8 ve Türkçe karakter dostu; tamamen tarayıcı tarafında.",
+      "seoTitle": "Ücretsiz URL Kodlayıcı/Çözücü Online | URL'leri ve Parametreleri Kodlayın",
+      "pageDesc": "URL metnini kodlayın veya yüzde kodlu parametreleri bu ücretsiz URL kodlayıcı ve çözücüyle açın. Anında sonuç alın; kayıt gerekmez, tarayıcınızda çalışır.",
       "intro": "URL'ler için özel karakterleri kodlayın veya kodlanmış parametreleri okunabilir metne geri çözün."
     },
     "md5-hash": {
@@ -196,49 +206,56 @@
       "name": "Karakter Sayacı",
       "desc": "Metninizdeki karakterleri, boşluksuz karakterleri, satırları ve paragrafları anında sayar.",
       "title": "Karakter Sayacı — Ücretsiz Çevrimiçi Araç",
-      "pageDesc": "Karakterleri boşluklu ve boşluksuz, kelimeleri, satırları ve paragrafları anında sayın. Ücretsiz ve gizli; metniniz asla tarayıcınızdan çıkmaz.",
+      "seoTitle": "Ücretsiz Karakter Sayacı Online | Metni Anında Sayın",
+      "pageDesc": "Karakter, kelime, satır ve paragraf sayılarını bu ücretsiz karakter sayacıyla anında öğrenin. Kayıt gerekmez; metniniz tarayıcınızda gizli ve güvenli kalır.",
       "intro": "Boşluklu ve boşluksuz karakterleri, kelimeleri, satırları, cümleleri ve paragrafları sayın — hepsi anında güncellenir."
     },
     "word-counter": {
       "name": "Kelime Sayacı",
       "desc": "Kelime, cümle ve karakterleri sayar; okuma süresini tahmin eder ve en çok kullandığınız kelimeleri vurgular.",
       "title": "Kelime Sayacı — Ücretsiz Çevrimiçi Araç",
-      "pageDesc": "Kelime, karakter, cümle ve paragraf sayın; okuma süresini tahmin edin ve tekrarlanan kelimeleri bulun. Ücretsiz, gizli ve tamamen tarayıcınızda çalışır.",
+      "seoTitle": "Ücretsiz Kelime Sayacı Online | Kelimeleri ve Okuma Süresini Bulun",
+      "pageDesc": "Kelime, karakter, cümle ve paragraf sayısını bu ücretsiz kelime sayacıyla hesaplayın. Okuma süresini görün; kayıt gerekmez, metniniz gizli kalır, hızla.",
       "intro": "Kelime, karakter, cümle ve paragraf istatistikleri, tahmini okuma süresi ve en çok tekrarladığınız kelimeler."
     },
     "case-converter": {
       "name": "Harf Dönüştürücü",
       "desc": "Metni tek tıkla büyük harfe, küçük harfe veya başlık biçimine çevirir ve harf durumunu tersine çevirir.",
       "title": "Harf Dönüştürücü — Ücretsiz Çevrimiçi Araç",
-      "pageDesc": "Metni tek tıkla büyük harfe, küçük harfe veya başlık biçimine çevirin ve harf durumunu tersine çevirin. Tam Türkçe karakter desteği; hiçbir şey yüklenmez.",
+      "seoTitle": "Ücretsiz Harf Dönüştürücü Online | Metin Biçimini Tek Tıkla Değiştirin",
+      "pageDesc": "Metni bu ücretsiz harf dönüştürücüyle büyük harfe, küçük harfe veya başlık biçimine çevirin. Anında sonuç alın; kayıt gerekmez, tarayıcınızda çalışır.",
       "intro": "Metninizi tek tıkla büyük harfe, küçük harfe, başlık biçimine çevirin veya ters çevirin ve anında kopyalayın."
     },
     "password-generator": {
       "name": "Şifre Oluşturucu",
       "desc": "Tarayıcınızda, seçtiğiniz uzunluk ve karakter türleriyle güçlü rastgele şifreler oluşturur.",
       "title": "Şifre Oluşturucu — Ücretsiz Çevrimiçi Araç",
-      "pageDesc": "Kendi uzunluk ve karakter türü seçimlerinizle güçlü, rastgele şifreler oluşturun. Kriptografik olarak güvenli; tarayıcınızı asla terk etmez.",
+      "seoTitle": "Ücretsiz Şifre Oluşturucu Online | Güçlü Rastgele Şifreler Üretin",
+      "pageDesc": "Bu ücretsiz şifre oluşturucuyla güçlü, rastgele parolalar üretin. Uzunluğu ve karakter türlerini seçin; kayıt gerekmez, her şey tarayıcınızda çalışır.",
       "intro": "Tercih ettiğiniz uzunluk ve karakter türleriyle güçlü, rastgele şifreler oluşturun."
     },
     "bmi-calculator": {
       "name": "BMI Hesaplayıcı",
       "desc": "Boy ve kilodan vücut kitle endeksinizi hesaplar ve sonucu net bir şekilde yorumlar.",
       "title": "BMI Hesaplayıcı — Ücretsiz Çevrimiçi Araç",
-      "pageDesc": "Vücut kitle endeksinizi boy ve kilonuzdan hesaplayın, kategorinizi görün ve aralıkları bir ölçekte karşılaştırın. Ücretsiz ve tamamen tarayıcı tarafında.",
+      "seoTitle": "Ücretsiz BMI Hesaplayıcı Online | Vücut Kitle İndeksinizi Hesaplayın",
+      "pageDesc": "Vücut kitle indeksinizi bu ücretsiz BMI hesaplayıcıyla boy ve kilonuza göre hesaplayın. Kategorinizi görün; kayıt gerekmez, hiçbir veri yüklenmez, hemen.",
       "intro": "Vücut kitle endeksinizi boy ve kilonuzdan hesaplayın ve net bir yorum okuyun."
     },
     "vat-calculator": {
       "name": "KDV Hesaplayıcı",
       "desc": "Tutarınız ve KDV oranınız için vergi tutarını ve toplam fiyatı anında hesaplar.",
       "title": "KDV Hesaplayıcı — Ücretsiz Çevrimiçi Araç",
-      "pageDesc": "%1, %8, %10, %18 ve %20 gibi oranlar için KDV tutarını, net fiyatı ve toplam fiyatı anında hesaplayın. Tamamen tarayıcınızda çalışır.",
+      "seoTitle": "Ücretsiz KDV Hesaplayıcı Online | KDV'yi ve Toplam Fiyatı Hesaplayın",
+      "pageDesc": "KDV tutarını, net ve toplam fiyatı bu ücretsiz KDV hesaplayıcıyla bulun. Vergi oranını seçip anında sonuç alın; kayıt gerekmez, kurulum gerekmez, şimdi.",
       "intro": "Vergi tutarını ve toplam fiyatı tek seferde görmek için bir tutar ve KDV oranı seçin."
     },
     "percentage-calculator": {
       "name": "Yüzde Hesaplayıcı",
       "desc": "Bir sayının yüzdesini, yüzde değişimini ve bir bütünün payını tek ekranda hesaplar.",
       "title": "Yüzde Hesaplayıcı — Ücretsiz Çevrimiçi Araç",
-      "pageDesc": "Tek ekranda bir sayının yüzdesini, yüzde değişimini ve bir bütünün parçasını hesaplayın. Ücretsiz ve gizlilik dostu.",
+      "seoTitle": "Ücretsiz Yüzde Hesaplayıcı Online | Yüzdeleri Anında Hesaplayın",
+      "pageDesc": "Yüzdeyi, yüzde değişimini ve bütünün payını bu ücretsiz yüzde hesaplayıcıyla bulun. Net sonuçları anında alın; kayıt gerekmez, tarayıcınızda hızlıca çalışır.",
       "intro": "Bir sayının yüzdesi, yüzde değişimi ve bir bütünün parçası — hepsi tek ekranda."
     },
     "age-calculator": {
@@ -5072,6 +5089,10 @@
     "breadcrumbAll": "Tüm araçlar",
     "relatedTitle": "Diğer kategorilere göz at",
     "ctaAllTools": "Tüm {count} aracı gör",
+    "mostPopularTitle": "En Popüler Araçlar",
+    "useCasesTitle": "Kullanım Alanları",
+    "allToolsTitle": "Tüm {category} Araçları",
+    "faqTitle": "Sıkça Sorulan Sorular",
     "desc": {
       "seo": "Slug üretici, meta tag üretici, SERP önizleme, anahtar kelime yoğunluğu ve okunabilirlik analizi araçları.",
       "text": "Karakter sayacı, kelime sayacı, harf dönüştürücü, satır sıralayıcı ve daha fazlası. Hepsi tarayıcınızda çalışır, kayıt gerekmez.",
@@ -5080,6 +5101,169 @@
       "calculation": "KDV, yüzde, BMI, yaş, indirim, bahşiş, kredi ve ideal kilo hesaplayıcılar — anında sonuç.",
       "image": "Görselleri tarayıcınızda sıkıştırın, boyutlandırın, dönüştürün ve analiz edin; yükleme gerekmez.",
       "fun": "İsim çarkıyla rastgele kazanan seçin, sayı çekin veya kronometre ve zamanlayıcı kullanın — hepsi tarayıcınızda."
+    },
+    "seoContent": {
+      "text": {
+        "description": "Çevrimiçi metin araçları, masaüstü programı kurmadan yazılı içeriği saymanıza, temizlemenize, dönüştürmenize ve düzenlemenize yardımcı olur. Bu kategoride karakter ve kelime sayaçları, harf biçimi dönüştürme, satır sıralama, yinelenen satırları kaldırma, metin karşılaştırma ve örnek metin üretme araçları bulunur. Yazarlar yayımlamadan önce uzunluk sınırlarını kontrol edebilir, öğrenciler ödevlerini gözden geçirebilir, editörler kopyalanan listeleri temizleyebilir. Geliştiriciler ve içerik ekipleri de metinden bilgi çıkarabilir veya özel biçimlendirme işlemleri yapabilir. Her araç tek bir işe odaklanır: metninizi girin, uygun işlemi seçin ve sonucu kopyalayın. İşlemlerin çoğu tarayıcıda gerçekleştiği için bu araçları bilgisayar veya telefonda hızlı günlük düzenlemeler için kullanabilirsiniz. Farklı araçları aynı yerde bulmanız, tekrarlanan düzenleme adımlarını azaltır ve içerik üretim sürecini düzenli tutar.",
+        "useCases": [
+          "Sosyal medya paylaşımı, başvuru, makale veya arama açıklaması göndermeden önce karakter ve kelime sınırlarını kontrol edin.",
+          "Kopyalanan isim, anahtar kelime ve veri listelerindeki yinelenen satırları kaldırın, sıralama yapın veya fazla boşlukları temizleyin.",
+          "İçerik düzenlerken büyük-küçük harfleri değiştirin, iki taslağı karşılaştırın ya da metni ters çevirin.",
+          "Bir tasarım hazırlarken yer tutucu paragraflar üretin veya makalenin tahmini okuma süresini öğrenin."
+        ],
+        "faq": [
+          {
+            "question": "Ücretsiz çevrimiçi metin araçları nedir?",
+            "answer": "Metni saymak, temizlemek, dönüştürmek, karşılaştırmak veya üretmek için tarayıcıda çalışan küçük yardımcı araçlardır. İhtiyacınıza uygun aracı açın, metni girin ve sonucu inceleyip kopyalayın."
+          },
+          {
+            "question": "Hesap oluşturmam gerekiyor mu?",
+            "answer": "Hayır. Bu metin araçlarını kullanmak için hesap açmanız gerekmez. Araç sayfasını açıp kayıt olmadan veya uygulama kurmadan çalışmaya başlayabilirsiniz."
+          },
+          {
+            "question": "Bu araçları kullanmak güvenli mi?",
+            "answer": "Bu araçlarda metin işleme tarayıcınızda yapılır; girdiğiniz metin işlem için araç tarafından yüklenmez. Yine de ortak veya güvenmediğiniz cihazlarda hassas bilgi girmekten kaçının."
+          }
+        ]
+      },
+      "security": {
+        "description": "Çevrimiçi güvenlik araçları, güvenlikle ilgili değerler oluşturmak, kontrol etmek ve işlemek için pratik yardımcılar sunar. Bu kategoride parola üretimi ve güç kontrolü, kriptografik özetler, şifreleme yardımcıları, dosya sağlama toplamları ve benzeri araçlar bulunur. Bireyler daha güçlü parolalar hazırlayabilir, geliştiriciler test verilerini doğrulayabilir, yöneticiler rutin işlerde bir özeti veya dosya parmak izini inceleyebilir. Araçlar hızlı kullanım için tasarlanmıştır ve ürettikleri çıktıyı açıklar; ancak kapsamlı bir güvenlik incelemesinin, parola yöneticisinin veya uzman kriptografi danışmanlığının yerini tutmaz. Öğrenme, hazırlık ve hassas olmayan verileri kontrol etme amacıyla kullanın. Özel anahtarları, gerçek sistem sırlarını ve gizli bilgileri kurumunuzun güvenlik kurallarına göre koruyun. İşlem öncesinde aracın desteklediği algoritma ve seçenekleri ayrıca kontrol edin.",
+        "useCases": [
+          "Yeni bir hesap için uzun ve benzersiz parola üretin; örnek bir parolanın güçlendirilmesi gerekip gerekmediğini kontrol edin.",
+          "Test metni için özet oluşturun veya indirdiğiniz dosyanın sağlama toplamını güvenilir bir değerle karşılaştırın.",
+          "Bir şifreleme iş akışının nasıl davrandığını öğrenirken örnek metni şifreleyin ya da çözün.",
+          "Geliştirme, dokümantasyon veya sorun giderme için üretim dışı test değerleri hazırlayın."
+        ],
+        "faq": [
+          {
+            "question": "Çevrimiçi güvenlik araçlarıyla neler yapabilirim?",
+            "answer": "Parola üretebilir, parola gücünü tahmin edebilir, özet oluşturabilir, dosya bütünlüğünü kontrol edebilir veya desteklenen şifreleme işlemlerini yapabilirsiniz. Her aracı yalnızca açıklanan işlem için kullanın."
+          },
+          {
+            "question": "Gerçek parolalarımı veya özel anahtarlarımı girmeli miyim?",
+            "answer": "Davranışını incelemediğiniz ve kurumunuz izin vermediği sürece gizli bilgileri hiçbir araca girmeyin. Gerçek sistem parolaları ve hassas anahtarlar için onaylı yerel güvenlik yazılımlarını tercih edin."
+          },
+          {
+            "question": "Bu araçlar profesyonel güvenlik yazılımlarının yerini tutar mı?",
+            "answer": "Hayır. Tekil işler için kullanışlı yardımcılardır; denetlenmiş güvenlik ürünlerinin, güvenli anahtar yönetiminin veya kapsamlı güvenlik değerlendirmesinin yerine geçmezler."
+          }
+        ]
+      },
+      "developer": {
+        "description": "Geliştirici araçları, küçük yardımcıları tarayıcıda bir araya getirerek sık yapılan kodlama ve veri işlerini hızlandırır. Bu kategoride JSON, XML, YAML, CSV, Base64, URL, JWT ve sayı dönüştürme araçlarının yanı sıra düzenli ifade testi, UUID üretimi, renk ve CSS yardımcıları ile ağ hesaplayıcıları bulunur. Yazılım geliştiriciler API yanıtlarını inceleyebilir, yapılandırma dosyalarını biçimlendirebilir, test değerleri hazırlayabilir ve farklı masaüstü uygulamaları arasında geçiş yapmadan dönüşümleri kontrol edebilir. Öğrenciler ve teknik yazarlar da biçimleri anlamak veya örnek hazırlamak için bu araçlardan yararlanabilir. Çoğu araç anında girdi ve çıktı sunar; sonuçları kolayca kopyalayabilirsiniz. Özellikle kimlik bilgileri veya gizli proje verileri söz konusuysa, üretilen kodu ve çözülen veriyi gerçek sistemlerde kullanmadan önce mutlaka gözden geçirin.",
+        "useCases": [
+          "Bir API yanıtında veya yapılandırma dosyasında hata ararken JSON, XML, YAML ya da CSV verisini biçimlendirin ve doğrulayın.",
+          "Bir entegrasyonu incelerken URL parametresini kodlayın, JWT'nin okunabilir alanlarını görüntüleyin veya Base64 verisini dönüştürün.",
+          "Arayüz geliştirirken UUID üretin, düzenli ifadeyi test edin ya da renkleri ve CSS birimlerini dönüştürün.",
+          "Bir hata raporu, ders veya teknik doküman için alt ağ bilgilerini kontrol edin ya da örnek değerler hazırlayın."
+        ],
+        "faq": [
+          {
+            "question": "Bu geliştirici araçları hangi işlerde yardımcı olur?",
+            "answer": "Kod, metin ve web verilerinde biçimlendirme, doğrulama, kodlama, dönüştürme, test ve değer üretme gibi yaygın işleri destekler. Girdi biçiminize veya görevinize uygun aracı seçin."
+          },
+          {
+            "question": "Üretilen çıktıyı canlı sistemde kullanabilir miyim?",
+            "answer": "Yayımlamadan önce çıktıyı projenizde inceleyip test edin. Bu araçlar belirli işleri kolaylaştırır; kod incelemesi, uygulama testleri veya güvenlik kontrollerinin yerini almaz."
+          },
+          {
+            "question": "Kodum veya verim yükleniyor mu?",
+            "answer": "Bu kategorideki araçların çoğu girdiyi tarayıcınızda işler. Güvenlik gereksinimleriniz izin vermediği sürece parola, özel erişim anahtarı veya gizli kaynak kodu girmeyin."
+          }
+        ]
+      },
+      "calculation": {
+        "description": "Hesaplama araçları günlük sayıları, tarihleri, ölçüleri ve oranları anlaşılır sonuçlara dönüştürür. Bu kategoride yüzde, KDV, BMI, yaş, tarih farkı, indirim, bahşiş, kredi, birim ve başka pratik hesaplayıcılar yer alır. Alışveriş yapanlar indirimli fiyatı tahmin edebilir, serbest çalışanlar vergi dâhil toplamı bulabilir, ev halkı hesabı paylaşabilir veya ölçü birimlerini karşılaştırabilir. Öğrenciler ve profesyoneller de işlemleri kontrol etmek ya da bir girdinin sonucu nasıl değiştirdiğini anlamak için bu araçları kullanabilir. İstenen değerleri girip sonucu karar vermeden önce inceleyin. Hesaplayıcılar kolaylık ve genel bilgi sağlar; finans, vergi, sağlık veya hukukla ilgili önemli kararlar için güncel yerel kurallar ve uzman görüşü gerekebilir. Sonuçları farklı senaryoları karşılaştırmak ve varsayımları görünür kılmak için kullanın.",
+        "useCases": [
+          "Ürünleri karşılaştırırken veya bütçe hazırlarken yüzde artışını, indirim tutarını ya da son fiyatı hesaplayın.",
+          "Fatura hazırlarken KDV'yi veya bahşişi bulun; restoranda hesabın kişi başına düşen payını hesaplayın.",
+          "Seyahat, okul veya proje planı için ölçü birimlerini dönüştürün, iki tarih arasındaki farkı veya yaşı bulun.",
+          "Bir kredi taksidini veya BMI tahminini ilk fikir olarak inceleyin; önemli kararları uzmanla doğrulayın."
+        ],
+        "faq": [
+          {
+            "question": "Bu hesaplayıcılar finans veya sağlık kararları için uygun mu?",
+            "answer": "Girilen değerlere göre hesaplama yaparlar; profesyonel finans, vergi, tıp veya hukuk danışmanlığı sunmazlar. Önemli kararları uzmanla ve güncel yerel bilgilerle doğrulayın."
+          },
+          {
+            "question": "Bir hesaplayıcıyı kullanmak için hangi bilgiler gerekir?",
+            "answer": "Gereken bilgiler işleme göre değişir. Araç; tutar ve oran, iki tarih, boy ve kilo ya da bir ölçü ve birim gibi girdileri açıkça belirtir."
+          },
+          {
+            "question": "Hesaplayıcıları telefonumda kullanabilir miyim?",
+            "answer": "Evet. Hesaplayıcılar web tarayıcısında açılır; ayrıca uygulama kurmadan telefon, tablet veya bilgisayardan kullanılabilir."
+          }
+        ]
+      },
+      "image": {
+        "description": "Görsel araçları; web siteleri, sosyal medya paylaşımları, belgeler ve tasarım projeleri için dosyaları hazırlamaya yardımcı olur. Bu kategoride görsel sıkıştırma, boyutlandırma, dönüştürme, kırpma, döndürme, bölme ve inceleme araçlarının yanı sıra renk yardımcıları bulunur. İçerik üreticileri yayımlamadan önce dosya boyutunu küçültebilir, tasarımcılar tutarlı görseller hazırlayabilir, küçük işletmeler ürün veya e-posta görsellerini uygun ölçüye getirebilir. Birçok araç indirmeden önce sonucu önizlemenizi sağlar. Biçim ve kalite ayarları görünümü ve dosya boyutunu etkileyebileceğinden, dışa aktarılan görseli kullanılacağı yerde kontrol edin. Bu tarayıcı araçları hızlı düzenlemeler için kullanışlıdır; ayrıntılı rötuş veya katmanlı kompozisyon gereken projelerde kapsamlı görsel düzenleme yazılımlarının yerini tutmaz. Böylece günlük içerik hazırlığında farklı uygulamalar arasında geçiş ihtiyacı azalır.",
+        "useCases": [
+          "Bir fotoğrafı web banner'ına, profil görseline, ürün listesine veya sosyal medya tasarımına uyacak şekilde boyutlandırın ya da kırpın.",
+          "Büyük bir görseli sayfaya eklemeden veya e-postayla göndermeden önce sıkıştırıp kalitesini kontrol edin.",
+          "Görseli içerik yönetim sistemi, tasarım uygulaması veya belge iş akışının desteklediği biçime dönüştürün.",
+          "Bir görselden renk seçin veya tasarımı planlarken çalışmayı eşit boyutlu parçalara bölün."
+        ],
+        "faq": [
+          {
+            "question": "Bu görsel araçları hangi işlemleri yapabilir?",
+            "answer": "Seçtiğiniz araca göre görselleri boyutlandırabilir, sıkıştırabilir, kırpabilir, döndürebilir, dönüştürebilir, bölebilir veya inceleyebilirsiniz. İşlemden önce desteklenen biçimleri ve seçenekleri kontrol edin."
+          },
+          {
+            "question": "Sıkıştırma görsel kalitesini düşürür mü?",
+            "answer": "Bazı sıkıştırma ayarları görsel kaliteyi değiştirebilir. Dışa aktardığınız dosyayı kullanmadan veya paylaşmadan önce önizleyip orijinaliyle karşılaştırın."
+          },
+          {
+            "question": "Görsel düzenleme programı kurmam gerekir mi?",
+            "answer": "Bu hızlı tarayıcı işlemleri için kurulum gerekmez. Gelişmiş rötuş, katmanlı çalışma veya profesyonel renk yönetimi için özel düzenleme yazılımları daha uygun olabilir."
+          }
+        ]
+      },
+      "seo": {
+        "description": "SEO araçları, site sahiplerinin ve içerik ekiplerinin sayfaların aramada nasıl görünebileceğini incelemesine ve sayfa içi ayrıntıları iyileştirmesine yardımcı olur. Bu kategoride slug ve meta etiketi üreticileri, SERP önizlemeleri, anahtar kelime yoğunluğu kontrolleri, okunabilirlik analizleri ve başka pratik yardımcılar bulunur. Blog yazarları daha anlaşılır arama açıklamaları hazırlayabilir, pazarlamacılar kelime kullanımını gözden geçirebilir, geliştiriciler yayımdan önce sayfa metaverisini düzenleyebilir. Sonuçları başlangıç noktası olarak değerlendirin: arama motorları başlık ve açıklamaları değiştirebilir, sıralama sistemleri zamanla değişir ve tek bir puan daha iyi konum garantisi vermez. Araçları özgün içerik, erişilebilir sayfalar, iyi performans ve arama analitiği verileriyle birlikte kullanın. Amaç rutin kontrolleri kolaylaştırmaktır; sıralama vaadi veya kapsamlı SEO incelemesinin yerine geçmezler.",
+        "useCases": [
+          "Yeni bir makale veya açılış sayfası yayımlamadan önce kısa bir başlık ve meta açıklama taslağı hazırlayın.",
+          "Arama sonucu önizlemesini inceleyin ve anlaşılması güç ya da odağı belirsiz metni iyileştirin.",
+          "Belirli bir kitleye yönelik rehberi düzenlerken anahtar kelime kullanımını ve okunabilirliği kontrol edin.",
+          "İçerik denetimi sırasında temiz bir URL slug'ı oluşturun veya sayfa metaverisini inceleyin."
+        ],
+        "faq": [
+          {
+            "question": "Bir SEO aracı daha üst sıraları garanti edebilir mi?",
+            "answer": "Hayır. Araçlar sayfa öğelerini kontrol etmeye ve hazırlamaya yardımcı olur; sıralamalar alaka, kalite, rekabet, teknik erişilebilirlik ve arama motoru sistemleri gibi birçok etkene bağlıdır."
+          },
+          {
+            "question": "SERP önizlemesi Google'ın göstereceğiyle birebir aynı mı?",
+            "answer": "Önizleme görsel bir tahmindir. Arama motorları sorguya ve sayfa içeriğine göre farklı bir açıklama seçebilir veya başlık ve açıklamayı yeniden yazabilir."
+          },
+          {
+            "question": "Anahtar kelime ve okunabilirlik puanlarını nasıl kullanmalıyım?",
+            "answer": "Puanları yükseltilmesi gereken hedefler değil, düzenleme işaretleri olarak görün. Okuyucuya yararlı ve doğal içerik yazın; iyileştirmeleri analiz ve arama performansı verileriyle yönlendirin."
+          }
+        ]
+      },
+      "fun": {
+        "description": "Eğlence araçları seçim yapmanın, kısa bir etkinlik düzenlemenin veya grup ya da bireysel işlere küçük bir oyun havası katmanın kolay yollarını sunar. Bu kategoride rastgele isim ve sayı seçiciler, zar ve yazı-tura araçları, zamanlayıcılar ve diğer basit etkileşimli yardımcılar bulunur. Öğretmenler sınıfta söz alacak kişiyi seçebilir, arkadaşlar düşük riskli bir konuda karar verebilir, ekipler toplantıya kısa bir mola ekleyebilir. Birçok etkinlik birkaç tıklamayla çalışır ve ayrı uygulama gerektirmeden sonucu hemen gösterir. Bu araçlar eğlence ve günlük kolaylık için tasarlanmıştır; resmî çekiliş, kumar veya yüksek riskli seçim süreçlerinin yerine geçmez. Resmî yarışmalarda kuralları belgelenmiş ve rastgeleliği bağımsız biçimde doğrulanabilen yöntemler kullanın.",
+        "useCases": [
+          "Sınıf etkinliğinde veya ekip toplantısında gönüllü birini ya da konuşma sırasını belirleyin.",
+          "Günlük bir oyunda sanal zar atın veya düşük riskli bir seçim için yazı-tura kullanın.",
+          "Ders çalışma oturumu, sunum provası ya da kısa bir meydan okuma için zamanlayıcı veya kronometre başlatın.",
+          "Sınıf çalışması, samimi bir çekiliş veya oyun sorusu için rastgele sayı seçin."
+        ],
+        "faq": [
+          {
+            "question": "Çevrimiçi eğlence araçları ne için kullanılır?",
+            "answer": "Rastgele seçim, zar atma, yazı-tura ve kısa etkinlikleri zamanlama gibi gündelik aktivitelerde kullanılır. Yapmak istediğiniz etkinliğe uygun aracı seçebilirsiniz."
+          },
+          {
+            "question": "Rastgele seçiciyi resmî ödül çekilişinde kullanabilir miyim?",
+            "answer": "Bu araçlar gündelik kullanım içindir ve denetlenebilir bir çekiliş süreci sunmaz. Resmî promosyonlarda geçerli kuralları izleyin ve belgelenmiş, bağımsız doğrulanabilir bir yöntem kullanın."
+          },
+          {
+            "question": "Bu araçlar için uygulama veya hesap gerekir mi?",
+            "answer": "Hayır. Aracı web tarayıcınızda açıp kontrollerini kullanabilirsiniz. Ayrı bir uygulama veya hesap gerekmez."
+          }
+        ]
+      }
     }
   },
   "Info": {
