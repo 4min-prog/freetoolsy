@@ -8,6 +8,7 @@ import { CATEGORY_ICON_PATHS } from "@/components/CategoryIcon";
 import { LogoBars } from "../_logo";
 import { siteUrl } from "@/lib/paths";
 import en from "@/messages/en.json";
+import tr from "@/messages/tr.json";
 
 export const runtime = "edge";
 export const dynamicParams = false;
@@ -65,14 +66,19 @@ function categoryIconMark(id: string, hex: string, size = 80): ReactNode {
 }
 
 export async function GET(
-  _request: Request,
+  request: Request,
   { params }: { params: { slug: string } }
 ) {
   const slug = params.slug;
-  const msgs = en as {
+  const locale = new URL(request.url).searchParams.get("locale") === "tr" ? "tr" : "en";
+  const isTurkish = locale === "tr";
+  const msgs = (isTurkish ? tr : en) as {
     ToolMeta?: Record<string, { name?: string; pageDesc?: string }>;
     Categories?: Record<string, string>;
-    CategoryPage?: { desc?: Record<string, string> };
+    CategoryPage?: {
+      desc?: Record<string, string>;
+      seoContent?: Record<string, { description?: string }>;
+    };
   };
 
   let name = "";
@@ -214,7 +220,7 @@ export async function GET(
                   letterSpacing: 1.5,
                 }}
               >
-                FREE ONLINE TOOLS
+                {isTurkish ? "ÜCRETSİZ ÇEVRİMİÇİ ARAÇLAR" : "FREE ONLINE TOOLS"}
               </div>
               <div
                 style={{
@@ -231,7 +237,7 @@ export async function GET(
                     color: "#0f172a",
                   }}
                 >
-                  Everyday tools,
+                  {isTurkish ? "Günlük işler," : "Everyday tools,"}
                 </div>
                 <div
                   style={{
@@ -241,7 +247,7 @@ export async function GET(
                     color: "#0f172a",
                   }}
                 >
-                  zero friction.
+                  {isTurkish ? "kolayca hallolsun." : "zero friction."}
                 </div>
               </div>
               <div
@@ -252,8 +258,9 @@ export async function GET(
                   marginTop: 20,
                 }}
               >
-                Text, converters, calculators, developer, image and SEO tools.
-                Fast, private, in your browser — no signup, no limits.
+                {isTurkish
+                  ? "Metin, dönüştürme, hesaplama, geliştirici, görsel ve SEO araçları. Hızlı, gizli, tarayıcınızda — kayıt yok, sınır yok."
+                  : "Text, converters, calculators, developer, image and SEO tools. Fast, private, in your browser — no signup, no limits."}
               </div>
             </div>
           </div>
@@ -279,7 +286,7 @@ export async function GET(
               }}
             />
             <div style={{ fontSize: 24, color: "#94a3b8" }}>
-              150+ tools · no signup
+              {isTurkish ? "150+ araç · kayıt yok" : "150+ tools · no signup"}
             </div>
           </div>
         </div>
@@ -302,8 +309,11 @@ export async function GET(
   } else if (categories.some((category) => category.id === slug)) {
     hex = categoryTheme(slug).hex;
     name = msgs.Categories?.[slug] ?? slug;
-    label = "Category";
-    desc = msgs.CategoryPage?.desc?.[slug] ?? "";
+    label = isTurkish ? "Kategori" : "Category";
+    desc =
+      msgs.CategoryPage?.seoContent?.[slug]?.description ??
+      msgs.CategoryPage?.desc?.[slug] ??
+      "";
     icon = categoryIconMark(slug, hex);
     watermark = categoryIconMark(slug, hex, 400);
   } else {
@@ -420,7 +430,7 @@ export async function GET(
             </div>
             <div
               style={{
-                fontSize: 72,
+                fontSize: name.length > 20 ? 56 : 72,
                 fontWeight: 700,
                 lineHeight: 1.05,
                 color: "#0f172a",
@@ -432,13 +442,13 @@ export async function GET(
             {desc && (
               <div
                 style={{
-                  fontSize: 29,
+                  fontSize: 25,
                   lineHeight: 1.35,
                   color: "#475569",
                   marginTop: 22,
                 }}
               >
-                {desc}
+                  {desc.length > 185 ? `${desc.slice(0, 182).trimEnd()}…` : desc}
               </div>
             )}
           </div>
@@ -489,7 +499,9 @@ export async function GET(
               display: "flex",
             }}
           />
-          <div style={{ fontSize: 24, color: "#94a3b8" }}>free tools · no signup</div>
+          <div style={{ fontSize: 24, color: "#94a3b8" }}>
+            {isTurkish ? "ücretsiz araçlar · kayıt yok" : "free tools · no signup"}
+          </div>
         </div>
       </div>
     ),

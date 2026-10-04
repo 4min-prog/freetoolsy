@@ -23,6 +23,8 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   setRequestLocale(params.locale);
   const t = await getTranslations("Home");
+  const canonicalPath = params.locale === "en" ? "/" : `/${params.locale}`;
+  const imageUrl = "/og-image.png";
   return {
     title: t("title"),
     description: t("description"),
@@ -35,12 +37,14 @@ export async function generateMetadata({
     },
     openGraph: {
       type: "website",
-      url: "https://www.freetoolsy.com/",
+      url: `https://www.freetoolsy.com${canonicalPath}`,
       siteName: "FreetoolsY",
       locale: params.locale === "tr" ? "tr_TR" : "en_US",
+      title: t("title"),
+      description: t("description"),
       images: [
         {
-          url: "https://www.freetoolsy.com/og/home",
+          url: imageUrl,
           width: 1200,
           height: 630,
           alt: "FreetoolsY — Free Tools for Everyday Tasks",
@@ -51,7 +55,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: t("title"),
       description: t("description"),
-      images: ["https://www.freetoolsy.com/og/home"],
+      images: [imageUrl],
     },
   };
 }

@@ -47,12 +47,14 @@ export async function generateMetadata({
   const t = await getTranslations("CategoryPage");
   const tc = await getTranslations("Categories");
   const canonical = localizedUrl(locale, categoryPath(locale, category.id));
+  const description = t(`desc.${category.id}`);
+  const title =
+    locale === "en"
+      ? `100% Free ${tc(category.id)} Tools`
+      : `%100 Ücretsiz ${tc(category.id)} Araçları`;
   return {
-    title:
-      locale === "en"
-        ? `100% Free ${tc(category.id)} Tools`
-        : `%100 Ücretsiz ${tc(category.id)} Araçları`,
-    description: t(`desc.${category.id}`),
+    title,
+    description,
     alternates: {
       canonical,
       languages: {
@@ -61,15 +63,26 @@ export async function generateMetadata({
       },
     },
     openGraph: {
+      type: "website",
+      siteName: "FreetoolsY",
+      locale: locale === "tr" ? "tr_TR" : "en_US",
       url: canonical,
+      title,
+      description,
       images: [
         {
-          url: `${siteUrl}/og/${category.id}`,
+          url: `${siteUrl}/og/${category.id}?locale=${locale}`,
           width: 1200,
           height: 630,
           alt: `${tc(category.id)} ${locale === "en" ? "Tools" : "Araçları"}`,
         },
       ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [`${siteUrl}/og/${category.id}?locale=${locale}`],
     },
   };
 }

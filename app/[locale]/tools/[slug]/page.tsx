@@ -49,6 +49,9 @@ export async function generateMetadata({
   setRequestLocale(locale);
   const t = await getTranslations(`ToolMeta.${tool.slug}`);
   const canonical = toolUrl(locale, tool.slug);
+  const shareTitle = t.has("seoTitle")
+    ? t("seoTitle")
+    : `${t("name")} — ${locale === "en" ? "100% Free Online Tool" : "%100 Ücretsiz Araç"}`;
   return {
     title: t.has("seoTitle")
       ? { absolute: t("seoTitle") }
@@ -62,15 +65,26 @@ export async function generateMetadata({
       },
     },
     openGraph: {
+      type: "website",
+      siteName: "FreetoolsY",
+      locale: locale === "tr" ? "tr_TR" : "en_US",
       url: canonical,
+      title: shareTitle,
+      description: t("pageDesc"),
       images: [
         {
-          url: `${siteUrl}/og/${tool.slug}`,
+          url: `${siteUrl}/og/${tool.slug}?locale=${locale}`,
           width: 1200,
           height: 630,
           alt: t("pageDesc"),
         },
       ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: shareTitle,
+      description: t("pageDesc"),
+      images: [`${siteUrl}/og/${tool.slug}?locale=${locale}`],
     },
   };
 }
