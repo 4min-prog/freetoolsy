@@ -6691,6 +6691,7 @@
     "imageCrop": {
       "replace": "Görseli değiştir",
       "dropHint": "Bir görsel bırakın veya göz atmak için tıklayın",
+      "browse": "Görsel seç",
       "tooltip": "Kırpma alanını seçmek için görselin üzerine sürükleyin.",
       "altImage": "Kaynak görsel",
       "size": "{width} × {height} px",

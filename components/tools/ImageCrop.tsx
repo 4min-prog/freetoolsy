@@ -980,8 +980,7 @@ export default function ImageCrop() {
 
   return (
     <div className="min-w-0 space-y-5">
-      <label
-        htmlFor="image-crop-upload"
+      <div
         onDragOver={(event) => event.preventDefault()}
         onDrop={(event) => {
           event.preventDefault();
@@ -1004,17 +1003,25 @@ export default function ImageCrop() {
             <span className="mt-1 block text-xs text-muted">{t("dropSupport")}</span>
           </span>
         </span>
-        <input
-          id="image-crop-upload"
-          type="file"
-          accept="image/*"
-          onChange={(event) => {
-            handleFile(event.currentTarget.files?.[0]);
-            event.currentTarget.value = "";
-          }}
-          className="mt-4 block w-full max-w-xs cursor-pointer rounded-lg border border-border bg-bg px-3 py-2 text-xs text-muted file:mr-3 file:cursor-pointer file:rounded-md file:border-0 file:bg-accent/10 file:px-3 file:py-1.5 file:text-xs file:font-semibold file:text-accent sm:mt-0 sm:w-auto"
-        />
-      </label>
+        <div className="flex flex-col items-center gap-3 sm:flex-row">
+          <input
+            id="image-crop-upload"
+            type="file"
+            accept="image/*"
+            onChange={(event) => {
+              handleFile(event.currentTarget.files?.[0]);
+              event.currentTarget.value = "";
+            }}
+            className="peer sr-only"
+          />
+          <label
+            htmlFor="image-crop-upload"
+            className="cursor-pointer rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-accent/90 peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-accent"
+          >
+            {t("browse")}
+          </label>
+        </div>
+      </div>
 
       {source ? (
         <div className="space-y-4">

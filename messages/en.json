@@ -6691,6 +6691,7 @@
     "imageCrop": {
       "replace": "Replace image",
       "dropHint": "Drop an image here or click to browse",
+      "browse": "Choose image",
       "tooltip": "Drag on the image to select the crop area.",
       "altImage": "Source image",
       "size": "{width} × {height} px",
