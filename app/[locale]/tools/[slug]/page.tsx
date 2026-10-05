@@ -130,7 +130,11 @@ export default async function ToolPage({
 
   return (
     <main
-      className="mx-auto w-full max-w-2xl flex-1 px-4 py-10 sm:px-6 sm:py-14"
+      className={
+        tool.slug === "image-crop"
+          ? "w-full flex-1 px-3 py-6 sm:px-5 sm:py-8 lg:px-8"
+          : "mx-auto w-full max-w-2xl flex-1 px-4 py-10 sm:px-6 sm:py-14"
+      }
       style={{ "--cat-accent": theme.hex } as React.CSSProperties}
     >
       <ToolViewTracker slug={tool.slug} />
@@ -162,61 +166,63 @@ export default async function ToolPage({
           ],
         }}
       />
-      <nav
-        aria-label={tPage("breadcrumbAria")}
-        className="flex flex-wrap items-center gap-1.5 text-sm text-muted"
-      >
-        <Link href="/" className="transition-colors hover:text-text">
-          {tInfo("breadcrumbHome")}
-        </Link>
-        <span aria-hidden="true" className="text-faint">
-          /
-        </span>
-        <Link
-          href={categoryPath(locale, categoryId)}
-          className="transition-colors hover:text-text"
+      <div className={tool.slug === "image-crop" ? "mx-auto w-full max-w-2xl" : ""}>
+        <nav
+          aria-label={tPage("breadcrumbAria")}
+          className="flex flex-wrap items-center gap-1.5 text-sm text-muted"
         >
-          {tc(tool.category)}
-        </Link>
-        <span aria-hidden="true" className="text-faint">
-          /
-        </span>
-        <span className="text-text">{t("name")}</span>
-      </nav>
-
-      <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2">
-        <span
-          className={`grid h-11 w-11 shrink-0 place-items-center rounded-lg ${
-            categoryTheme(tool.category).iconBg
-          }`}
-        >
-          <ToolIcon
-            id={tool.slug}
-            className={`h-6 w-6 ${categoryTheme(tool.category).iconText}`}
-          />
-        </span>
-        <h1 className="text-2xl font-semibold tracking-tight text-text sm:text-3xl">
-          {t("name")}
-        </h1>
-        {isToolNew(tool) && (
-          <span className="rounded-full bg-accent px-2.5 py-0.5 text-xs font-bold uppercase tracking-wide text-on-accent">
-            {tCommon("new")}
+          <Link href="/" className="transition-colors hover:text-text">
+            {tInfo("breadcrumbHome")}
+          </Link>
+          <span aria-hidden="true" className="text-faint">
+            /
           </span>
-        )}
-        <span
-          className="rounded-md border px-2 py-0.5 text-xs font-medium"
-          style={{
-            color: theme.hex,
-            backgroundColor: `${theme.hex}14`,
-            borderColor: `${theme.hex}33`,
-          }}
-        >
-          {tc(tool.category)}
-        </span>
+          <Link
+            href={categoryPath(locale, categoryId)}
+            className="transition-colors hover:text-text"
+          >
+            {tc(tool.category)}
+          </Link>
+          <span aria-hidden="true" className="text-faint">
+            /
+          </span>
+          <span className="text-text">{t("name")}</span>
+        </nav>
+
+        <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2">
+          <span
+            className={`grid h-11 w-11 shrink-0 place-items-center rounded-lg ${
+              categoryTheme(tool.category).iconBg
+            }`}
+          >
+            <ToolIcon
+              id={tool.slug}
+              className={`h-6 w-6 ${categoryTheme(tool.category).iconText}`}
+            />
+          </span>
+          <h1 className="text-2xl font-semibold tracking-tight text-text sm:text-3xl">
+            {t("name")}
+          </h1>
+          {isToolNew(tool) && (
+            <span className="rounded-full bg-accent px-2.5 py-0.5 text-xs font-bold uppercase tracking-wide text-on-accent">
+              {tCommon("new")}
+            </span>
+          )}
+          <span
+            className="rounded-md border px-2 py-0.5 text-xs font-medium"
+            style={{
+              color: theme.hex,
+              backgroundColor: `${theme.hex}14`,
+              borderColor: `${theme.hex}33`,
+            }}
+          >
+            {tc(tool.category)}
+          </span>
+        </div>
+        <p className="mt-3 max-w-[65ch] text-sm leading-relaxed text-muted sm:text-base">
+          {t("pageDesc")}
+        </p>
       </div>
-      <p className="mt-3 max-w-[65ch] text-sm leading-relaxed text-muted sm:text-base">
-        {t("pageDesc")}
-      </p>
 
       <div className="mt-8 overflow-hidden rounded-xl border border-border bg-surface p-5 shadow-card sm:p-6">
         <NextIntlClientProvider messages={toolMessages}>
@@ -228,6 +234,7 @@ export default async function ToolPage({
         </NextIntlClientProvider>
       </div>
 
+      <div className={tool.slug === "image-crop" ? "mx-auto w-full max-w-2xl" : ""}>
       <ToolSeoContent slug={tool.slug} />
 
       <ToolFaq slug={tool.slug} />
@@ -325,7 +332,6 @@ export default async function ToolPage({
           </ul>
         </section>
       )}
-
       <p className="mt-10 text-center text-sm text-muted">
         {tPage("linklyPre")}{" "}
         <a
@@ -338,6 +344,7 @@ export default async function ToolPage({
         </a>{" "}
         {tPage("linklyPost")}
       </p>
+      </div>
     </main>
   );
 }

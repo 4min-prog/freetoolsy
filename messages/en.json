@@ -715,10 +715,10 @@
     },
     "image-crop": {
       "name": "Image Cropper",
-      "desc": "Crops any image to the area you select by dragging directly in your browser.",
+      "desc": "Crop, rotate, flip, and export images with aspect-ratio presets directly in your browser.",
       "title": "Image Cropper — Free Online Tool",
-      "pageDesc": "Crop images online free: drag to select the area, adjust the crop box and download the result as PNG. Private by design — your image never leaves your browser.",
-      "intro": "Drag over the image to choose the area you want and download the cropped result."
+      "pageDesc": "Crop images online free with social aspect-ratio presets, rotate and flip controls, zoom, and PNG, JPEG, or WebP export. Private by design — your image never leaves your browser.",
+      "intro": "Select an area, choose an aspect ratio and output format, then download your cropped image."
     },
     "image-watermark": {
       "name": "Image Watermark",
@@ -3603,19 +3603,21 @@
         "h": "How to crop",
         "list": [
           "Drop or select an image file.",
-          "Drag the handles to frame the part you want to keep.",
-          "Download the cropped image as PNG or JPEG."
+          "Choose an aspect-ratio preset and drag over the area you want to keep.",
+          "Optionally rotate, flip, or zoom the preview; choose an output format and quality.",
+          "Download the cropped image as PNG, JPEG, or WebP."
         ]
       },
       {
-        "h": "Original pixels are respected",
-        "p": "The crop removes everything outside the selection without recompressing the rest, so the sharpness of the kept area is preserved for web use."
+        "h": "Use the original image resolution",
+        "p": "The preview is scaled only for display on large images. Cropping uses the selected area at the source resolution, while JPEG and WebP quality can be adjusted before export."
       },
       {
         "h": "FAQ",
         "list": [
           "Can I set an exact pixel size? Crop visually first, then optionally resize the result with the site's image resizer.",
-          "What formats are supported? Common image formats including JPEG, PNG and WebP.",
+          "Can I lock the crop to a preset ratio? Yes, choose a square, portrait, story, landscape, classic, or photo ratio before selecting the area.",
+          "What formats can I export? PNG, JPEG, and WebP. Quality can be adjusted for JPEG and WebP.",
           "Is my photo uploaded? No — all processing happens locally in your browser."
         ]
       }
@@ -6696,6 +6698,59 @@
       "reset": "Reset",
       "altResult": "Cropped result",
       "download": "Download cropped",
+      "ratio": "Crop ratio",
+      "ratioFree": "Free",
+      "ratioSquare": "Square",
+      "ratioPortrait": "Portrait post",
+      "ratioStory": "Story / Reel",
+      "ratioLandscape": "Landscape post",
+      "ratioClassic": "Classic",
+      "ratioPhoto": "Photo",
+      "ratioLinkPreview": "Link preview",
+      "ratioFacebookCover": "Facebook cover",
+      "ratioLinkedinCover": "LinkedIn cover",
+      "format": "Output format",
+      "quality": "Quality",
+      "rotateLeft": "Rotate left",
+      "rotateRight": "Rotate right",
+      "flipH": "Flip horizontal",
+      "flipV": "Flip vertical",
+      "zoom": "Zoom",
+      "zoomHint": "Ctrl + mouse wheel or pinch to zoom",
+      "zoomOut": "Zoom out",
+      "zoomIn": "Zoom in",
+      "selectMode": "Select area",
+      "moveMode": "Move image",
+      "centerImage": "Center image",
+      "clearSelection": "Clear selection",
+      "exactDimensions": "Exact crop size",
+      "widthPx": "Width (px)",
+      "heightPx": "Height (px)",
+      "ratioLocked": "Aspect ratio locked",
+      "undo": "Undo",
+      "redo": "Redo",
+      "resizeCropHandle": "Resize crop from {position}",
+      "handleNW": "top left",
+      "handleN": "top",
+      "handleNE": "top right",
+      "handleE": "right",
+      "handleSE": "bottom right",
+      "handleS": "bottom",
+      "handleSW": "bottom left",
+      "handleW": "left",
+      "dropSupport": "JPG, PNG, WebP · processed only on your device",
+      "workspaceTitle": "Adjust your crop",
+      "workspaceSubtitle": "Choose a ratio, then drag over the image to select the area.",
+      "originalSize": "Original · {width} × {height} px",
+      "chooseCropHint": "Drag to select an area",
+      "transform": "Transform",
+      "outputSettings": "Export settings",
+      "selectionReady": "Crop area selected",
+      "outputPreview": "Ready to download",
+      "openPreview": "Open enlarged preview",
+      "closePreview": "Close preview",
+      "storageError": "Could not save or restore this image editor in your browser storage.",
+      "formatError": "This browser could not export that format. Choose PNG or another format.",
       "note": "Everything runs in your browser — the image never leaves your device.",
       "error": "Could not process that image. Please try another file."
     },

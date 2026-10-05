@@ -582,7 +582,7 @@ export const tools: Tool[] = [
     name: "Resim Kırpma",
     category: "image",
     description:
-      "Görseli tarayıcınızda sürükleyerek seçtiğiniz alana göre kırpar ve PNG olarak indirir.",
+      "Görseli oran presetleriyle kırpar, döndürür veya aynalar; PNG, JPEG ve WebP olarak indirir.",
   },
   {
     slug: "image-watermark",

@@ -715,10 +715,10 @@
     },
     "image-crop": {
       "name": "Resim Kırpma",
-      "desc": "Sürükleyerek seçtiğiniz alana göre görseli tarayıcınızda kırpar.",
+      "desc": "Görselleri en-boy oranı presetleriyle kırpar, döndürür veya aynalar; PNG, JPEG ve WebP olarak dışa aktarır.",
       "title": "Resim Kırpma — Ücretsiz Online Araç",
-      "pageDesc": "Çevrimiçi görsel kırpın: alanı sürükleyerek seçin, kırpma kutusunu ayarlayın ve sonucu PNG olarak indirin. Görseliniz cihazınızdan asla çıkmaz.",
-      "intro": "Görselin üzerine sürükleyerek saklamak istediğiniz alanı seçin ve kırpılmış sonucu indirin."
+      "pageDesc": "Görselleri çevrimiçi kırpın: sosyal medya oran presetleri, döndürme ve aynalama kontrolleri, yakınlaştırma ve PNG, JPEG veya WebP çıktısı. Görseliniz cihazınızdan asla çıkmaz.",
+      "intro": "Bir alan seçin, en-boy oranı ve çıktı biçimini belirleyin, ardından kırpılmış görselinizi indirin."
     },
     "image-watermark": {
       "name": "Resime Filigran Ekleme",
@@ -3603,19 +3603,21 @@
         "h": "Kırpma adımları",
         "list": [
           "Görseli seçin veya bırakın.",
-          "Tutacakları sürükleyerek koruyacağınız bölgeyi çerçeveleyin.",
-          "Kırpılan görseli PNG veya JPEG olarak indirin."
+          "En-boy oranı presetini seçin ve koruyacağınız alanın üzerinde sürükleyin.",
+          "İsterseniz önizlemeyi döndürün, aynalayın veya yakınlaştırın; çıktı biçimini ve kaliteyi seçin.",
+          "Kırpılan görseli PNG, JPEG veya WebP olarak indirin."
         ]
       },
       {
-        "h": "Orijinal pikseller korunur",
-        "p": "Kırpma, seçimin dışındaki her şeyi kaldırır; kalan alan yeniden sıkıştırılmaz, böylece web kullanımında keskinlik korunur."
+        "h": "Kaynak görselin çözünürlüğünü kullanın",
+        "p": "Büyük görsellerin önizlemesi yalnızca ekranda gösterilirken ölçeklenir. Kırpma kaynak çözünürlükte yapılır; dışa aktarmadan önce JPEG ve WebP kalitesi ayarlanabilir."
       },
       {
         "h": "SSS",
         "list": [
           "Tam piksel boyutu verebilir miyim? Önce görsel olarak kırpın, gerekirse sitenin görsel yeniden boyutlandırıcısıyla ebadı ayarlayın.",
-          "Hangi biçimler destekleniyor? JPEG, PNG ve WebP dahil yaygın görsel biçimleri.",
+          "Kırpmayı hazır bir orana sabitleyebilir miyim? Evet; kare, dikey, hikâye, yatay, klasik veya fotoğraf oranını seçin.",
+          "Hangi biçimlerde dışa aktarabilirim? PNG, JPEG ve WebP. JPEG ve WebP için kalite ayarlanabilir.",
           "Fotoğrafım yüklenir mi? Hayır — tüm işlem tarayıcınızda yerel yapılır."
         ]
       }
@@ -6696,6 +6698,59 @@
       "reset": "Sıfırla",
       "altResult": "Kırpılmış sonuç",
       "download": "Kırpılmışı indir",
+      "ratio": "Kırpma oranı",
+      "ratioFree": "Serbest",
+      "ratioSquare": "Kare",
+      "ratioPortrait": "Dikey gönderi",
+      "ratioStory": "Hikâye / Reels",
+      "ratioLandscape": "Yatay gönderi",
+      "ratioClassic": "Klasik",
+      "ratioPhoto": "Fotoğraf",
+      "ratioLinkPreview": "Bağlantı önizlemesi",
+      "ratioFacebookCover": "Facebook kapak görseli",
+      "ratioLinkedinCover": "LinkedIn kapak görseli",
+      "format": "Çıktı formatı",
+      "quality": "Kalite",
+      "rotateLeft": "Sola döndür",
+      "rotateRight": "Sağa döndür",
+      "flipH": "Yatay aynala",
+      "flipV": "Dikey aynala",
+      "zoom": "Yakınlaştırma",
+      "zoomHint": "Yakınlaştırmak için Ctrl + fare tekerleğini veya iki parmağınızı kullanın",
+      "zoomOut": "Uzaklaştır",
+      "zoomIn": "Yakınlaştır",
+      "selectMode": "Alan seç",
+      "moveMode": "Görseli taşı",
+      "centerImage": "Görseli ortala",
+      "clearSelection": "Seçimi temizle",
+      "exactDimensions": "Kesin kırpma boyutu",
+      "widthPx": "Genişlik (px)",
+      "heightPx": "Yükseklik (px)",
+      "ratioLocked": "En-boy oranı sabit",
+      "undo": "Geri al",
+      "redo": "Yinele",
+      "resizeCropHandle": "Kırpmayı {position} noktasından boyutlandır",
+      "handleNW": "sol üst",
+      "handleN": "üst",
+      "handleNE": "sağ üst",
+      "handleE": "sağ",
+      "handleSE": "sağ alt",
+      "handleS": "alt",
+      "handleSW": "sol alt",
+      "handleW": "sol",
+      "dropSupport": "JPG, PNG, WebP · işlem yalnızca cihazınızda yapılır",
+      "workspaceTitle": "Kırpma alanını düzenle",
+      "workspaceSubtitle": "Bir oran seçin, ardından görselde tutmak istediğiniz alanı sürükleyin.",
+      "originalSize": "Orijinal · {width} × {height} px",
+      "chooseCropHint": "Alan seçmek için sürükleyin",
+      "transform": "Dönüştür",
+      "outputSettings": "Dışa aktarma ayarları",
+      "selectionReady": "Kırpma alanı seçildi",
+      "outputPreview": "İndirmeye hazır",
+      "openPreview": "Büyük önizlemeyi aç",
+      "closePreview": "Önizlemeyi kapat",
+      "storageError": "Görsel düzenleyici tarayıcı depolamasına kaydedilemedi veya geri yüklenemedi.",
+      "formatError": "Bu tarayıcı bu formatı dışa aktaramadı. PNG veya başka bir format seçin.",
       "note": "Her şey tarayıcınızda çalışır — görsel cihazınızdan asla çıkmaz.",
       "error": "Görsel işlenemedi. Lütfen başka bir dosya deneyin."
     },
