@@ -6498,9 +6498,13 @@
       "originalSize": "Original size",
       "newSize": "New size",
       "saved": "Saved",
+      "original": "Original",
+      "compressed": "Compressed",
+      "comparison": "Before / after comparison",
       "download": "Download compressed",
       "note": "Runs entirely in your browser — your image never leaves your device.",
-      "error": "That file type is not supported. Please choose an image file."
+      "error": "That file type is not supported. Please choose an image file.",
+      "sampleError": "Could not load the sample image. Please try again."
     },
     "imageResizer": {
       "upload": "Choose an image",

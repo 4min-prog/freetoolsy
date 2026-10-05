@@ -2,11 +2,9 @@
 
 import { exceedsCanvasLimit } from "@/lib/canvasLimit";
 import { useEffect, useRef, useState } from "react";
-import type { ChangeEvent } from "react";
 import { useTranslations } from "next-intl";
 import SampleButton from "@/components/SampleButton";
 import { showToast } from "@/lib/toast";
-import { createSampleImageFile } from "@/lib/sampleImage";
 
 function kb(bytes: number): string {
   return (bytes / 1024).toFixed(1);
@@ -21,6 +19,7 @@ export default function ImageCompressor() {
   const [natural, setNatural] = useState({ w: 0, h: 0 });
   const [quality, setQuality] = useState(0.7);
   const [maxWidth, setMaxWidth] = useState("");
+  const [comparePosition, setComparePosition] = useState(50);
   const [resultUrl, setResultUrl] = useState<string | null>(null);
   const [resultSize, setResultSize] = useState(0);
   const [error, setError] = useState<string | null>(null);
@@ -38,8 +37,7 @@ export default function ImageCompressor() {
     urlsRef.current = urlsRef.current.filter((item) => item !== url);
   }
 
-  function handleFile(event: ChangeEvent<HTMLInputElement>) {
-    const selected = event.target.files && event.target.files[0];
+  function handleFile(selected: File | undefined) {
     if (!selected) return;
     if (!selected.type.startsWith("image/")) {
       setError(t("error"));
@@ -60,6 +58,17 @@ export default function ImageCompressor() {
     probe.onload = () => setNatural({ w: probe.naturalWidth, h: probe.naturalHeight });
     probe.onerror = () => setError(t("error"));
     probe.src = url;
+  }
+
+  async function handleSample() {
+    try {
+      const response = await fetch("/og-image.png");
+      if (!response.ok) throw new Error("Failed to load the Open Graph sample image.");
+      const image = await response.blob();
+      handleFile(new File([image], "freetoolsy-og.png", { type: image.type }));
+    } catch {
+      setError(t("sampleError"));
+    }
   }
 
   useEffect(() => {
@@ -130,17 +139,11 @@ export default function ImageCompressor() {
         id="sikistirici-dosya"
         type="file"
         accept="image/*"
-        onChange={handleFile}
+        onChange={(event) => handleFile(event.currentTarget.files?.[0])}
         className="mt-2 block w-full text-sm text-muted file:mr-3 file:rounded-lg file:border file:border-border file:bg-surface file:px-3 file:py-2 file:text-sm file:font-medium file:text-text hover:file:border-strong"
       />
       <div className="mt-3">
-        <SampleButton
-          onApply={() =>
-            handleFile({
-              target: { files: [createSampleImageFile()] },
-            } as unknown as ChangeEvent<HTMLInputElement>)
-          }
-        />
+        <SampleButton onApply={handleSample} />
       </div>
 
       <div className="mt-5">
@@ -191,12 +194,58 @@ export default function ImageCompressor() {
 
       {previewUrl ? (
         <div className="mt-5 overflow-hidden rounded-lg border border-border bg-surface">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={previewUrl}
-            alt=""
-            className="max-h-56 w-full object-contain"
-          />
+          {resultUrl ? (
+            <>
+              <div className="relative h-72 sm:h-80">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={resultUrl}
+                  alt={t("compressed")}
+                  className="absolute inset-0 h-full w-full object-contain"
+                />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={previewUrl}
+                  alt={t("original")}
+                  className="absolute inset-0 h-full w-full object-contain"
+                  style={{ clipPath: `inset(0 ${100 - comparePosition}% 0 0)` }}
+                />
+                <span
+                  aria-hidden="true"
+                  className="pointer-events-none absolute inset-y-0 w-0.5 bg-white shadow"
+                  style={{ left: `${comparePosition}%` }}
+                />
+                <span className="absolute left-2 top-2 rounded bg-black/65 px-2 py-1 text-xs font-medium text-white">
+                  {t("original")}
+                </span>
+                <span className="absolute right-2 top-2 rounded bg-black/65 px-2 py-1 text-xs font-medium text-white">
+                  {t("compressed")}
+                </span>
+              </div>
+              <div className="px-3 py-2">
+                <label
+                  htmlFor="sikistirici-karsilastirma"
+                  className="flex items-center justify-between text-xs font-medium text-text"
+                >
+                  {t("comparison")}
+                  <span className="tabular-nums text-muted">{comparePosition}%</span>
+                </label>
+                <input
+                  id="sikistirici-karsilastirma"
+                  type="range"
+                  min={0}
+                  max={100}
+                  step={1}
+                  value={comparePosition}
+                  onChange={(event) => setComparePosition(Number(event.target.value))}
+                  className="mt-2 w-full accent-accent"
+                />
+              </div>
+            </>
+          ) : (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={previewUrl} alt="" className="max-h-72 w-full object-contain sm:max-h-80" />
+          )}
         </div>
       ) : null}
 

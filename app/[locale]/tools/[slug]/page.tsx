@@ -120,6 +120,7 @@ export default async function ToolPage({
     .slice(0, 6);
 
   const theme = categoryTheme(tool.category);
+  const isWideTool = tool.slug === "image-crop" || tool.slug === "image-compressor";
   const guideLinks = guides.filter((guide) =>
     guide.relatedTools.includes(tool.slug)
   );
@@ -131,7 +132,7 @@ export default async function ToolPage({
   return (
     <main
       className={
-        tool.slug === "image-crop"
+        isWideTool
           ? "w-full flex-1 px-3 py-6 sm:px-5 sm:py-8 lg:px-8"
           : "mx-auto w-full max-w-2xl flex-1 px-4 py-10 sm:px-6 sm:py-14"
       }
@@ -166,7 +167,7 @@ export default async function ToolPage({
           ],
         }}
       />
-      <div className={tool.slug === "image-crop" ? "mx-auto w-full max-w-2xl" : ""}>
+      <div className={isWideTool ? "mx-auto w-full max-w-2xl" : ""}>
         <nav
           aria-label={tPage("breadcrumbAria")}
           className="flex flex-wrap items-center gap-1.5 text-sm text-muted"
@@ -224,7 +225,11 @@ export default async function ToolPage({
         </p>
       </div>
 
-      <div className="mt-8 overflow-hidden rounded-xl border border-border bg-surface p-5 shadow-card sm:p-6">
+      <div
+        className={`mt-8 overflow-hidden rounded-xl border border-border bg-surface p-5 shadow-card sm:p-6 ${
+          tool.slug === "image-compressor" ? "mx-auto w-full max-w-3xl" : ""
+        }`}
+      >
         <NextIntlClientProvider messages={toolMessages}>
           {DYNAMIC_TOOL_SLUGS.has(tool.slug) ? (
             <ToolDynamic slug={tool.slug} />
@@ -234,7 +239,7 @@ export default async function ToolPage({
         </NextIntlClientProvider>
       </div>
 
-      <div className={tool.slug === "image-crop" ? "mx-auto w-full max-w-2xl" : ""}>
+      <div className={isWideTool ? "mx-auto w-full max-w-2xl" : ""}>
       <ToolSeoContent slug={tool.slug} />
 
       <ToolFaq slug={tool.slug} />

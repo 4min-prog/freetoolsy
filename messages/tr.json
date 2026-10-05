@@ -6498,9 +6498,13 @@
       "originalSize": "Orijinal boyut",
       "newSize": "Yeni boyut",
       "saved": "Kazanç",
+      "original": "Orijinal",
+      "compressed": "Sıkıştırılmış",
+      "comparison": "Önce / sonra karşılaştırması",
       "download": "Sıkıştırılmışı indir",
       "note": "Tamamen tarayıcınızda çalışır — görseliniz cihazınızdan hiç çıkmaz.",
-      "error": "Bu dosya türü desteklenmiyor. Lütfen bir görsel dosyası seçin."
+      "error": "Bu dosya türü desteklenmiyor. Lütfen bir görsel dosyası seçin.",
+      "sampleError": "Örnek görsel yüklenemedi. Lütfen tekrar deneyin."
     },
     "imageResizer": {
       "upload": "Bir görsel seçin",
