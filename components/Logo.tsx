@@ -12,14 +12,14 @@ export default function Logo({ size = "md" }: { size?: "md" | "lg" }) {
       <span aria-hidden="true" className={`relative ${icon}`}>
         <Image
           src="/logo-black.png"
-          alt=""
+          alt="FreetoolsY"
           fill
           className="object-contain dark:hidden"
           priority={false}
         />
         <Image
           src="/logo-white.png"
-          alt=""
+          alt="FreetoolsY"
           fill
           className="hidden object-contain dark:block"
           priority={false}

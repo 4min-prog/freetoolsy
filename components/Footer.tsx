@@ -95,7 +95,7 @@ export default async function Footer() {
                   <span aria-hidden="true">→</span>
                   <Image
                     src="/linklyhub-logo.png"
-                    alt=""
+                    alt="LinklyHub"
                     width={1080}
                     height={1350}
                     loading="lazy"
