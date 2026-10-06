@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Link } from "@/i18n/navigation";
 import { useLocale, useMessages, useTranslations } from "next-intl";
 import ThemeToggle from "./ThemeToggle";
@@ -25,18 +25,45 @@ const pageLinks = [
 
 const label = "font-mono text-[11px] uppercase tracking-[0.2em] text-faint";
 
+const HOVER_OPEN_DELAY = 150;
+const HOVER_CLOSE_DELAY = 250;
+
+function supportsHover() {
+  return (
+    typeof window !== "undefined" &&
+    window.matchMedia("(hover: hover) and (pointer: fine)").matches
+  );
+}
+
 export default function Header() {
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
+  const openTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const pinnedRef = useRef<string | null>(null);
+  const pointerFocusRef = useRef(false);
   const t = useTranslations("Header");
   const tc = useTranslations("Categories");
   const tf = useTranslations("Footer");
   const locale = useLocale() as Locale;
   const messages = useMessages() as { ToolMeta?: Record<string, ToolMetaNs> };
   const meta = messages.ToolMeta;
+
+  const closeMenus = useCallback(() => {
+    if (openTimerRef.current) {
+      clearTimeout(openTimerRef.current);
+      openTimerRef.current = null;
+    }
+    if (closeTimerRef.current) {
+      clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = null;
+    }
+    pinnedRef.current = null;
+    setOpenMenu(null);
+  }, []);
 
   useEffect(() => {
     function onPointerDown(event: PointerEvent) {
@@ -52,20 +79,27 @@ export default function Header() {
       ) {
         setMobileOpen(false);
       }
-      setOpenMenu(null);
+      closeMenus();
+    }
+    function onPointerUp() {
+      pointerFocusRef.current = false;
     }
     function onKeyDown(event: KeyboardEvent) {
       if (event.key !== "Escape") return;
-      setOpenMenu(null);
+      closeMenus();
       setMobileOpen(false);
     }
     document.addEventListener("pointerdown", onPointerDown);
+    document.addEventListener("pointerup", onPointerUp);
     document.addEventListener("keydown", onKeyDown);
     return () => {
       document.removeEventListener("pointerdown", onPointerDown);
+      document.removeEventListener("pointerup", onPointerUp);
       document.removeEventListener("keydown", onKeyDown);
+      if (openTimerRef.current) clearTimeout(openTimerRef.current);
+      if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
     };
-  }, []);
+  }, [closeMenus]);
 
   useEffect(() => {
     if (!mobileOpen) return;
@@ -78,12 +112,69 @@ export default function Header() {
     };
   }, [mobileOpen]);
 
+  function clearTimers() {
+    if (openTimerRef.current) {
+      clearTimeout(openTimerRef.current);
+      openTimerRef.current = null;
+    }
+    if (closeTimerRef.current) {
+      clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = null;
+    }
+  }
+
   function toggleMenu(id: string) {
-    setOpenMenu((value) => (value === id ? null : id));
+    clearTimers();
+    if (openMenu === id) {
+      pinnedRef.current = null;
+      setOpenMenu(null);
+      return;
+    }
+    pinnedRef.current = id;
+    setOpenMenu(id);
+  }
+
+  function hoverOpen(id: string) {
+    if (!supportsHover()) return;
+    if (closeTimerRef.current) {
+      clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = null;
+    }
+    if (openTimerRef.current) clearTimeout(openTimerRef.current);
+    openTimerRef.current = setTimeout(() => {
+      openTimerRef.current = null;
+      if (pinnedRef.current !== id) pinnedRef.current = null;
+      setOpenMenu(id);
+    }, HOVER_OPEN_DELAY);
+  }
+
+  function hoverClose(id: string) {
+    if (openTimerRef.current) {
+      clearTimeout(openTimerRef.current);
+      openTimerRef.current = null;
+    }
+    if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
+    closeTimerRef.current = setTimeout(() => {
+      closeTimerRef.current = null;
+      if (pinnedRef.current === id) return;
+      setOpenMenu((current) => (current === id ? null : current));
+    }, HOVER_CLOSE_DELAY);
+  }
+
+  function focusOpen(id: string) {
+    clearTimers();
+    pinnedRef.current = null;
+    setOpenMenu(id);
+  }
+
+  function focusClose(id: string) {
+    clearTimers();
+    if (pinnedRef.current === id) return;
+    setOpenMenu((current) => (current === id ? null : current));
   }
 
   function closeAll() {
-    setOpenMenu(null);
+    closeMenus();
     setMobileOpen(false);
   }
 
@@ -100,7 +191,28 @@ export default function Header() {
 
           <nav className="hidden flex-1 items-center lg:flex">
             {categories.map((category) => (
-              <div key={category.id} className="relative">
+              <div
+                key={category.id}
+                className="relative"
+                onPointerDown={() => {
+                  pointerFocusRef.current = true;
+                }}
+                onMouseEnter={() => hoverOpen(category.id)}
+                onMouseLeave={() => hoverClose(category.id)}
+                onFocus={(event) => {
+                  if (pointerFocusRef.current) return;
+                  if (!event.currentTarget.contains(event.target as Node))
+                    return;
+                  focusOpen(category.id);
+                }}
+                onBlur={(event) => {
+                  if (
+                    event.currentTarget.contains(event.relatedTarget as Node)
+                  )
+                    return;
+                  focusClose(category.id);
+                }}
+              >
                 <button
                   type="button"
                   onClick={() => toggleMenu(category.id)}
