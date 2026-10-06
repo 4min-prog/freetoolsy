@@ -12,6 +12,7 @@ import RotatingWords from "@/components/RotatingWords";
 import HeroMarquee from "@/components/HeroMarquee";
 import { displayToolCount, tools } from "@/data/tools";
 import { categoryTheme } from "@/components/categoryTheme";
+import { clampDescription } from "@/lib/seo";
 import type { Locale } from "@/i18n/routing";
 
 export const revalidate = 86400;
@@ -23,11 +24,12 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   setRequestLocale(params.locale);
   const t = await getTranslations("Home");
+  const homeDescription = clampDescription(t("description"));
   const canonicalPath = params.locale === "en" ? "/" : `/${params.locale}`;
   const imageUrl = "/og-image.png";
   return {
     title: t("title"),
-    description: t("description"),
+    description: homeDescription,
     alternates: {
       canonical: params.locale === "en" ? "/" : `/${params.locale}`,
       languages: {
@@ -41,7 +43,7 @@ export async function generateMetadata({
       siteName: "FreetoolsY",
       locale: params.locale === "tr" ? "tr_TR" : "en_US",
       title: t("title"),
-      description: t("description"),
+      description: homeDescription,
       images: [
         {
           url: imageUrl,
@@ -54,7 +56,7 @@ export async function generateMetadata({
     twitter: {
       card: "summary_large_image",
       title: t("title"),
-      description: t("description"),
+      description: homeDescription,
       images: [imageUrl],
     },
   };

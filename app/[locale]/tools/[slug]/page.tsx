@@ -14,6 +14,7 @@ import {
   toolUrl,
 } from "@/lib/paths";
 import { pickToolMessages } from "@/lib/clientMessages";
+import { clampDescription } from "@/lib/seo";
 import { POPULAR_SLUGS } from "@/data/popular";
 import { DYNAMIC_TOOL_SLUGS } from "@/data/dynamicTools";
 import ToolLoader from "@/components/tools/ToolLoader";
@@ -49,6 +50,7 @@ export async function generateMetadata({
   setRequestLocale(locale);
   const t = await getTranslations(`ToolMeta.${tool.slug}`);
   const canonical = toolUrl(locale, tool.slug);
+  const pageDesc = clampDescription(t("pageDesc"));
   const shareTitle = t.has("seoTitle")
     ? t("seoTitle")
     : `${t("name")} — ${locale === "en" ? "100% Free Online Tool" : "%100 Ücretsiz Araç"}`;
@@ -56,7 +58,7 @@ export async function generateMetadata({
     title: t.has("seoTitle")
       ? { absolute: t("seoTitle") }
       : `${t("name")} — ${locale === "en" ? "100% Free Online Tool" : "%100 Ücretsiz Araç"}`,
-    description: t("pageDesc"),
+    description: pageDesc,
     alternates: {
       canonical,
       languages: {
@@ -70,7 +72,7 @@ export async function generateMetadata({
       locale: locale === "tr" ? "tr_TR" : "en_US",
       url: canonical,
       title: shareTitle,
-      description: t("pageDesc"),
+      description: pageDesc,
       images: [
         {
           url: `${siteUrl}/og/${tool.slug}?locale=${locale}`,
@@ -83,7 +85,7 @@ export async function generateMetadata({
     twitter: {
       card: "summary_large_image",
       title: shareTitle,
-      description: t("pageDesc"),
+      description: pageDesc,
       images: [`${siteUrl}/og/${tool.slug}?locale=${locale}`],
     },
   };
