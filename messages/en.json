@@ -87,7 +87,8 @@
     "contact": "Contact",
     "guides": "Guides",
     "partner": "Partner",
-    "linkly": "Shorten links with → LinklyhHub",
+    "linklyLabel": "Shorten links with",
+      "linkly": "LinklyHub",
     "tools": "Tools",
     "viewAll": "View all",
     "rights": "© 2026 FreetoolsY."

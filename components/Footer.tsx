@@ -4,6 +4,7 @@ import { categoryPath, toolPath } from "@/lib/paths";
 import type { Locale } from "@/i18n/routing";
 import CategoryIcon from "@/components/CategoryIcon";
 import { categoryTheme } from "@/components/categoryTheme";
+import Image from "next/image";
 import Logo from "@/components/Logo";
 import { categories, getToolsByCategory } from "@/data/tools";
 
@@ -87,9 +88,21 @@ export default async function Footer() {
                   href="https://linklyhub.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex min-h-9 items-center text-sm text-muted transition-colors hover:text-text"
+                  title="LinklyHub"
+                  className="flex min-h-9 flex-wrap items-center gap-x-1.5 gap-y-1 text-sm text-muted transition-colors hover:text-text"
                 >
-                  {t("linkly")}
+                  <span>{t("linklyLabel")}</span>
+                  <span aria-hidden="true">→</span>
+                  <Image
+                    src="/linklyhub-logo.png"
+                    alt=""
+                    width={1080}
+                    height={1350}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-6 w-auto shrink-0 self-center"
+                  />
+                  <span>{t("linkly")}</span>
                 </a>
               </li>
               <li>
