@@ -4,8 +4,6 @@ import { showToast } from "@/lib/toast";
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
-import { SAMPLES } from "@/data/samples";
 
 function caesar(value: string, shift: number, decrypt: boolean): string {
   const amount = decrypt ? (26 - shift) % 26 : shift % 26;
@@ -103,7 +101,6 @@ export default function CaesarCipher() {
       />
 
       <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton onApply={() => setText(SAMPLES["caesar-cipher"])} />
       </div>
 
       <label

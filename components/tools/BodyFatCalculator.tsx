@@ -4,7 +4,6 @@ import { showToast } from "@/lib/toast";
 
 import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
 
 const MALE_CATEGORIES = [
   { key: "essential", min: 2, max: 5 },
@@ -192,7 +191,6 @@ export default function BodyFatCalculator() {
       </div>
 
       <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton onApply={() => { setHeight("175"); setNeck("38"); setWaist("90"); setWeight("70"); }} />
       </div>
 
       <p className="mt-3 text-xs leading-relaxed text-muted">{t("note")}</p>

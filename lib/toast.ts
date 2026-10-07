@@ -1,4 +1,4 @@
-export type ToastAction = "copy" | "download" | "sample";
+export type ToastAction = "copy" | "download";
 
 export function showToast(action: ToastAction = "copy"): void {
   if (typeof window === "undefined") return;

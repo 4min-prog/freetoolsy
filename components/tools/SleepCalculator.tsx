@@ -4,7 +4,6 @@ import { showToast } from "@/lib/toast";
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
 
 const CYCLE_MIN = 90;
 const FALL_ASLEEP_MIN = 15;
@@ -126,7 +125,6 @@ export default function SleepCalculator() {
       />
 
       <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton onApply={() => { setMode("wake"); setTime("07:30"); }} />
       </div>
 
       <p className="mt-3 text-xs leading-relaxed text-muted">{t("note")}</p>

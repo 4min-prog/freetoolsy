@@ -4,7 +4,6 @@ import { showToast } from "@/lib/toast";
 
 import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
 
 const ACTIVITIES = [
   { value: "sed", factor: 1.2 },
@@ -164,7 +163,6 @@ export default function CalorieBmrCalculator() {
       </div>
 
       <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton onApply={() => { setAge("30"); setHeight("175"); setWeight("70"); }} />
       </div>
 
       <label htmlFor="kalori-bmr-aktivite" className="mt-5 block text-sm font-medium text-text">

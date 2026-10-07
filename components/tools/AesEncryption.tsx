@@ -4,8 +4,6 @@ import { showToast } from "@/lib/toast";
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
-import { SAMPLES } from "@/data/samples";
 
 const ITERATIONS = 100000;
 
@@ -210,7 +208,6 @@ export default function AesEncryption() {
       />
 
       <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton onApply={() => setInput(SAMPLES["aes-encryption"])} />
       </div>
 
       <button

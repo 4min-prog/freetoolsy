@@ -2,8 +2,6 @@
 
 import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
-import { SAMPLES } from "@/data/samples";
 
 export default function WordCounter() {
   const [text, setText] = useState("");
@@ -60,7 +58,6 @@ export default function WordCounter() {
       />
 
       <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton onApply={() => setText(SAMPLES["word-counter"])} />
       </div>
 
       <dl className="mt-5 grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-3">

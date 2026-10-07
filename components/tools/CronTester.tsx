@@ -4,7 +4,6 @@ import { showToast } from "@/lib/toast";
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
 
 type FieldKey = "minute" | "hour" | "dom" | "month" | "dow";
 
@@ -349,7 +348,6 @@ export default function CronTester() {
       </div>
 
       <div className="mt-4 flex flex-wrap gap-2">
-        <SampleButton onApply={() => setExpr({ minute: "*/5", hour: "*", dom: "*", month: "*", dow: "*" })} />
       </div>
 
       <button

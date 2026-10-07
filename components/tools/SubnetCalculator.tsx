@@ -2,7 +2,6 @@
 
 import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
 
 function parseIPv4(value: string): number | null {
   const parts = value.trim().split(".");
@@ -132,7 +131,6 @@ export default function SubnetCalculator() {
       </div>
 
       <div className="mt-4 flex flex-wrap gap-2">
-        <SampleButton onApply={() => { setIp("192.168.1.0"); setPrefix("24"); }} />
       </div>
 
       <button

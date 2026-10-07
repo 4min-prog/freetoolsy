@@ -2,7 +2,6 @@
 
 import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
 
 type Frequency = "annually" | "semiannually" | "quarterly" | "monthly" | "daily";
 
@@ -132,15 +131,6 @@ export default function CompoundInterestCalculator() {
             className="mt-2 w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-sm text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
           />
           <div className="mt-2 flex flex-wrap gap-2">
-            <SampleButton
-              onApply={() => {
-                setPrincipal("100000");
-                setContribution("5000");
-                setRate("10");
-                setYears("10");
-                setFrequency("monthly");
-              }}
-            />
           </div>
         </div>
       </div>

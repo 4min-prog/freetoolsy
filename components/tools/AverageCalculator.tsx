@@ -2,7 +2,6 @@
 
 import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
 
 function parseNumber(value: string): number {
   const normalized = value.trim().replace(",", ".");
@@ -102,7 +101,6 @@ export default function AverageCalculator() {
       />
 
       <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton onApply={() => setInput("12, 18, 24, 30")} />
       </div>
 
       <button

@@ -4,8 +4,6 @@ import { showToast } from "@/lib/toast";
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
-import { SAMPLES } from "@/data/samples";
 
 type StyleBases = { upper: number; lower: number; digit: number | null };
 
@@ -82,7 +80,6 @@ export default function FancyTextGenerator() {
       />
 
       <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton onApply={() => setText(SAMPLES["fancy-text-generator"])} />
       </div>
 
       <div className="mt-5 space-y-3">

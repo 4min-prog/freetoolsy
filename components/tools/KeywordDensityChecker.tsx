@@ -2,8 +2,6 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
-import { SAMPLES } from "@/data/samples";
 
 type Row = { word: string; count: number; density: number; bar: number };
 
@@ -59,7 +57,6 @@ export default function KeywordDensityChecker() {
       />
 
       <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton onApply={() => setText(SAMPLES["keyword-density-checker"])} />
       </div>
 
       <label

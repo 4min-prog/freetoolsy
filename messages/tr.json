@@ -60,7 +60,6 @@
   },
   "Common": {
     "use": "Kullan",
-    "trySample": "Örnek veriyle dene",
     "new": "Yeni"
   },
   "Header": {
@@ -5081,8 +5080,7 @@
   },
   "Toast": {
     "copied": "Kopyalandı ✓",
-    "downloaded": "İndirildi ✓",
-    "sampleLoaded": "Örnek veri yüklendi"
+    "downloaded": "İndirildi ✓"
   },
   "Brand": {
     "tagline": "Ücretsiz araçlar, tarayıcınızda."
@@ -6155,11 +6153,6 @@
       "readingTimeLabel": "Tahmini okuma süresi",
       "targetAudienceLabel": "Önerilen hedef kitle",
       "minutesLabel": "dk okuma",
-      "simpleSample": "Basit metin",
-      "complexSample": "Karmaşık metin",
-      "sampleText": "FreetoolsY, tarayıcınızda çalışan ücretsiz araçlar sunar. Her araç tek bir işi yapar: hızlı, sade ve kurulumsuzdur. Kayıt gerekmez, verileriniz cihazınızdan çıkmaz.",
-      "simpleSampleText": "Kediler küçük hayvanlardır. Çoğu zaman uyurlar. Kedi güneşte oturmayı sever. Kaseler her sabah temizlenir. Çocuklar kedi bakmayı öğrenebilir. Akşam kedinizle oynayın. Kedi koşar ve zıplar. Mutlu bir kedi mırıldar. Ev kışın ısıtılır. Evde kedinize iyi bakın.",
-      "complexSampleText": "Çağdaş nitel yöntemlerin doğasında var olan epistemolojik sınırlar bir yana bırakılsa bile, boylamsal sosyoekonomik eşitsizliklerin kapsamlı biçimde incelenmesi kurumsal hesap verilebilirliği çerçevelerinin baştan değerlendirilmesini gerektirmektedir. Çok boyutlu sistemik kırılganlıkların fenomenolojik incelemeleri, kurumsallaşmış ayrımcılığın farklı demografik gruplar arasında yapısal olarak eşitsiz sonuçlar doğurduğunu göstermektedir. Ayrıca, temsilî demokratik mekanizmaların yaygın biçimde kurumsallaştırılmasına karşın, çağdaş makroekonomik dalgalanmalar politika yapıcıların tarihsel olarak eşitlikçi adalet yöntemlerinin temeli saydığı kapsamlı sosyoekonomik istikrar stratejilerini temelden sarsmıştır.",
       "levelVeryEasy": "Okuması çok kolay",
       "levelEasy": "Okuması kolay",
       "levelFairlyDifficult": "Oldukça zor",
@@ -6504,8 +6497,7 @@
       "comparison": "Önce / sonra karşılaştırması",
       "download": "Sıkıştırılmışı indir",
       "note": "Tamamen tarayıcınızda çalışır — görseliniz cihazınızdan hiç çıkmaz.",
-      "error": "Bu dosya türü desteklenmiyor. Lütfen bir görsel dosyası seçin.",
-      "sampleError": "Örnek görsel yüklenemedi. Lütfen tekrar deneyin."
+      "error": "Bu dosya türü desteklenmiyor. Lütfen bir görsel dosyası seçin."
     },
     "imageResizer": {
       "upload": "Bir görsel seçin",
@@ -6636,7 +6628,6 @@
       "modeHtmlToMd": "HTML'den Markdown'a",
       "label": "Girdi",
       "placeholder": "Markdown veya HTML yazın ya da yapıştırın…",
-      "sample": "Örnek",
       "showHtml": "HTML'i göster",
       "preview": "Önizleme",
       "outputLabel": "Çıktı",
@@ -6667,7 +6658,6 @@
       "colsLabel": "Sütun",
       "dataLabel": "Veri",
       "dataPlaceholder": "Ayrılmış değerler — sekme, virgül, noktalı virgül veya dikey çizgi…",
-      "sample": "Örnek",
       "generate": "Oluştur",
       "showCode": "Kodu göster",
       "preview": "Önizleme",
@@ -6819,7 +6809,6 @@
       "namesLabel": "Adlar",
       "namesPlaceholder": "Satır başına bir ad…",
       "count": "{count, plural, one {1 ad} other {{count} ad}} çarkta",
-      "sample": "Örnek",
       "spinning": "Dönüyor…",
       "spin": "Çevir",
       "reset": "Sıfırla"

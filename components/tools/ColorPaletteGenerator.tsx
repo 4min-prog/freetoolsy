@@ -4,7 +4,6 @@ import { showToast } from "@/lib/toast";
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
 
 type Rgb = { r: number; g: number; b: number };
 
@@ -140,7 +139,6 @@ export default function ColorPaletteGenerator() {
             <span className="font-mono text-sm text-text">{base.toUpperCase()}</span>
           </div>
           <div className="mt-2 flex flex-wrap gap-2">
-            <SampleButton onApply={() => setBase("#3b82f6")} />
           </div>
         </div>
         <div>

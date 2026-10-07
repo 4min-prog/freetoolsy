@@ -4,9 +4,7 @@ import { exceedsCanvasLimit } from "@/lib/canvasLimit";
 import { useEffect, useRef, useState } from "react";
 import type { ChangeEvent } from "react";
 import { useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
 import { showToast } from "@/lib/toast";
-import { createSampleImageFile } from "@/lib/sampleImage";
 
 function kb(bytes: number): string {
   return (bytes / 1024).toFixed(1);
@@ -122,13 +120,6 @@ export default function ImageConverter() {
         className="mt-2 block w-full text-sm text-muted file:mr-3 file:rounded-lg file:border file:border-border file:bg-surface file:px-3 file:py-2 file:text-sm file:font-medium file:text-text hover:file:border-strong"
       />
       <div className="mt-3">
-        <SampleButton
-          onApply={() =>
-            handleFile({
-              target: { files: [createSampleImageFile()] },
-            } as unknown as ChangeEvent<HTMLInputElement>)
-          }
-        />
       </div>
 
       <div className="mt-5">

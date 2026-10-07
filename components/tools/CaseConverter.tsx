@@ -4,8 +4,6 @@ import { showToast } from "@/lib/toast";
 
 import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
-import { SAMPLES } from "@/data/samples";
 
 export default function CaseConverter() {
   const [text, setText] = useState("");
@@ -80,7 +78,6 @@ export default function CaseConverter() {
       />
 
       <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton onApply={() => setText(SAMPLES["case-converter"])} />
       </div>
 
       <div className="mt-4 flex flex-wrap gap-2">

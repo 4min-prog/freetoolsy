@@ -2,7 +2,6 @@
 
 import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
 
 const RATES = [1, 8, 10, 18, 20];
 
@@ -72,7 +71,6 @@ export default function VatCalculator() {
       />
 
       <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton onApply={() => { setAmount("250"); setRate(20); }} />
       </div>
 
       <fieldset className="mt-5">

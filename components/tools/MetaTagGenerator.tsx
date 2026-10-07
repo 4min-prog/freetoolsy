@@ -4,7 +4,6 @@ import { showToast } from "@/lib/toast";
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
 
 export default function MetaTagGenerator() {
   const [title, setTitle] = useState("");
@@ -94,16 +93,6 @@ export default function MetaTagGenerator() {
             className={inputClass}
           />
           <div className="mt-2 flex flex-wrap gap-2">
-            <SampleButton
-              onApply={() => {
-                setTitle("FreetoolsY – Ücretsiz Online Araçlar");
-                setDescription(
-                  "FreetoolsY tarayıcınızda çalışan ücretsiz online araçlar sunar. Metin, dönüştürme, hesaplama ve daha fazlası. Kayıt gerekmez, verileriniz cihazınızdan çıkmaz."
-                );
-                setUrl("https://www.freetoolsy.com");
-                setType("website");
-              }}
-            />
           </div>
         </div>
         <div className="sm:col-span-2">

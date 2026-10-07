@@ -3,7 +3,6 @@
 import { exceedsCanvasLimit } from "@/lib/canvasLimit";
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
 import { showToast } from "@/lib/toast";
 
 function kb(bytes: number): string {
@@ -58,17 +57,6 @@ export default function ImageCompressor() {
     probe.onload = () => setNatural({ w: probe.naturalWidth, h: probe.naturalHeight });
     probe.onerror = () => setError(t("error"));
     probe.src = url;
-  }
-
-  async function handleSample() {
-    try {
-      const response = await fetch("/og-image.png");
-      if (!response.ok) throw new Error("Failed to load the Open Graph sample image.");
-      const image = await response.blob();
-      handleFile(new File([image], "freetoolsy-og.png", { type: image.type }));
-    } catch {
-      setError(t("sampleError"));
-    }
   }
 
   useEffect(() => {
@@ -143,7 +131,6 @@ export default function ImageCompressor() {
         className="mt-2 block w-full text-sm text-muted file:mr-3 file:rounded-lg file:border file:border-border file:bg-surface file:px-3 file:py-2 file:text-sm file:font-medium file:text-text hover:file:border-strong"
       />
       <div className="mt-3">
-        <SampleButton onApply={handleSample} />
       </div>
 
       <div className="mt-5">

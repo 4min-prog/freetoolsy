@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
-
 
 const PRESETS = [
   {
@@ -38,7 +36,6 @@ export default function RobotsTxtGenerator() {
   const [customLines, setCustomLines] = useState<string[]>([]);
   const [copied, setCopied] = useState(false);
   const t = useTranslations("comp.robotsTxtGenerator");
-
 
   const preset = selectPreset(activePreset);
 
@@ -172,12 +169,6 @@ export default function RobotsTxtGenerator() {
       ) : null}
 
       <div className="mt-4 flex items-center gap-2">
-        <SampleButton
-          onApply={() => {
-            setActivePreset("strict");
-            setSiteName("https://example.com");
-          }}
-        />
       </div>
 
       <div className="mt-5 rounded-lg border border-border bg-bg">

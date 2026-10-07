@@ -146,15 +146,6 @@ export default function HtmlTableGenerator() {
       <div className="mt-2 flex flex-wrap gap-2">
         <button
           type="button"
-          onClick={() =>
-            setData("Name\tAge\tCity\nAda\t30\tIstanbul\nLeo\t25\tAnkara")
-          }
-          className="rounded-lg border border-border bg-surface px-4 py-2 text-xs min-h-10 font-medium text-muted transition-colors hover:border-strong hover:text-text"
-        >
-          {t("sample")}
-        </button>
-        <button
-          type="button"
           onClick={generate}
           className="rounded-lg bg-accent px-4 py-1.5 text-sm font-medium text-on-accent transition-opacity hover:opacity-90"
         >

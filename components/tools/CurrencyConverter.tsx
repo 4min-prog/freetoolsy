@@ -2,7 +2,6 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
 
 const CURRENCIES = [
   "USD",
@@ -269,14 +268,6 @@ export default function CurrencyConverter() {
       )}
 
       <div className="mt-4 flex flex-wrap gap-2">
-        <SampleButton
-          onApply={() => {
-            setAmount("100");
-            setFrom("USD");
-            setTo("TRY");
-            setRateOverride("");
-          }}
-        />
       </div>
     </div>
   );

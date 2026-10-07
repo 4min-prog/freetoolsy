@@ -2,7 +2,6 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
 
 const WORDS_PER_MINUTE = 238;
 const GRADE_SCALE_MAX = 18;
@@ -375,27 +374,7 @@ export default function ReadabilityScore() {
         rows={10}
         placeholder={t("placeholder")}
         className="mt-2 w-full resize-y rounded-lg border border-border bg-bg px-3.5 py-3 text-sm leading-relaxed text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
-      />
-
-      <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton onApply={() => setText(t("sampleText"))} />
-        <button
-          type="button"
-          onClick={() => setText(t("simpleSampleText"))}
-          className="min-h-10 rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-accent hover:text-accent"
-        >
-          {t("simpleSample")}
-        </button>
-        <button
-          type="button"
-          onClick={() => setText(t("complexSampleText"))}
-          className="min-h-10 rounded-lg border border-border bg-surface px-3 py-1.5 text-xs font-medium text-muted transition-colors hover:border-accent hover:text-accent"
-        >
-          {t("complexSample")}
-        </button>
-      </div>
-
-      {result ? (
+      />      {result ? (
         <div className="mt-5">
           <div className="rounded-lg border border-border bg-surface p-4">
             <div className="flex flex-wrap items-center justify-between gap-3">

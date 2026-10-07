@@ -4,8 +4,6 @@ import { showToast } from "@/lib/toast";
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
-import { SAMPLES } from "@/data/samples";
 
 export default function DuplicateLineRemover() {
   const [text, setText] = useState("");
@@ -61,7 +59,6 @@ export default function DuplicateLineRemover() {
       />
 
       <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton onApply={() => setText(SAMPLES["duplicate-line-remover"])} />
       </div>
 
       <button

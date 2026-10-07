@@ -14,13 +14,7 @@ export default function ToastHost() {
     function handler(event: Event) {
       const detail = (event as CustomEvent<{ action?: string }>).detail;
       const action = detail?.action ?? "copy";
-      setMessage(
-        action === "download"
-          ? t("downloaded")
-          : action === "sample"
-            ? t("sampleLoaded")
-            : t("copied")
-      );
+      setMessage(action === "download" ? t("downloaded") : t("copied"));
       const slug = getActiveTool();
       if (slug) toolUse(slug, action);
       setVisible(true);

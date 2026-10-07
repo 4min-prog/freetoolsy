@@ -2,7 +2,6 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
 
 const STARTER_KEYWORDS = new Set([
   "SELECT", "FROM", "WHERE", "GROUP", "ORDER", "HAVING", "LIMIT", "OFFSET",
@@ -190,11 +189,6 @@ export default function SqlFormatter() {
         className="mt-2 w-full resize-y rounded-lg border border-border bg-bg px-3.5 py-3 font-mono text-xs leading-relaxed text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
       <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton
-          onApply={() =>
-            setSql("SELECT u.name, o.total FROM users u LEFT JOIN orders o ON o.user_id = u.id WHERE u.active = 1 AND o.total > 100 ORDER BY o.total DESC")
-          }
-        />
       </div>
 
       <div className="mt-4 flex flex-wrap items-center gap-3">

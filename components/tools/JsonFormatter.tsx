@@ -5,8 +5,6 @@ import { showToast } from "@/lib/toast";
 import { useMemo, useRef, useState } from "react";
 import type { ChangeEvent, DragEvent, KeyboardEvent, ReactNode } from "react";
 import { useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
-import { SAMPLES } from "@/data/samples";
 
 type Indent = "2" | "4" | "tab";
 type View = "pretty" | "minified";
@@ -539,13 +537,6 @@ export default function JsonFormatter() {
             }`}
           />
           <div className="mt-2 flex flex-wrap gap-2">
-            <SampleButton
-              onApply={() => {
-                setInput(SAMPLES["json-formatter"]);
-                setError(null);
-                setErrorLocation(null);
-              }}
-            />
           </div>
           <div className="mt-3 flex flex-wrap gap-2">
             <button

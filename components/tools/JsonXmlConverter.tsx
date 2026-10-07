@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
 
 function escapeXml(value: string): string {
   return value
@@ -117,11 +116,6 @@ export default function JsonXmlConverter() {
       .catch(() => undefined);
   }
 
-  const sampleJson =
-    '{\n  "user": {\n    "id": 1,\n    "name": "Ada",\n    "roles": ["admin", "editor"],\n    "active": true\n  }\n}';
-  const sampleXml =
-    '<?xml version="1.0" encoding="UTF-8"?>\n<user>\n  <id>1</id>\n  <name>Ada</name>\n  <roles>\n    <role>admin</role>\n    <role>editor</role>\n  </roles>\n  <active>true</active>\n</user>';
-
   return (
     <div>
       <div className="flex flex-wrap gap-2">
@@ -162,9 +156,6 @@ export default function JsonXmlConverter() {
         className="mt-2 w-full resize-y rounded-lg border border-border bg-bg px-3.5 py-3 font-mono text-xs leading-relaxed text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
       <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton
-          onApply={() => setInput(mode === "json-to-xml" ? sampleJson : sampleXml)}
-        />
         <button
           type="button"
           onClick={convert}

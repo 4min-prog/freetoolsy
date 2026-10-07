@@ -3,7 +3,6 @@
 import { useMemo, useState } from "react";
 import type { ReactNode } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
 
 function parseNumber(value: string): number {
   const normalized = value.trim().replace(",", ".");
@@ -183,7 +182,6 @@ export default function PercentageCalculator() {
       </div>
 
       <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton onApply={() => { setMode("percent"); setValue("200"); setPercent("15"); }} />
       </div>
 
       {result ? (

@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
 
 const ALGORITHMS = ["SHA-256", "SHA-512"] as const;
 type Algorithm = (typeof ALGORITHMS)[number];
@@ -138,12 +137,6 @@ export default function HmacGenerator() {
       </select>
 
       <div className="mt-4 flex flex-wrap items-center gap-2">
-        <SampleButton
-          onApply={() => {
-            setText("The quick brown fox jumps over the lazy dog");
-            setSecret("s3cr3t-key");
-          }}
-        />
         <button
           type="button"
           onClick={generate}

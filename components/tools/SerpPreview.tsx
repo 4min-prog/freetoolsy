@@ -2,7 +2,6 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
 
 const TITLE_MAX = 60;
 const DESC_MAX = 160;
@@ -48,14 +47,6 @@ export default function SerpPreview() {
           className={inputClass}
         />
         <div className="mt-2 flex flex-wrap gap-2">
-          <SampleButton
-            onApply={() => {
-              setTitle("FreetoolsY – Ücretsiz Online Araçlar");
-              setDescription(
-                "FreetoolsY tarayıcınızda çalışan ücretsiz online araçlar sunar. Metin, dönüştürme, hesaplama ve daha fazlası. Kayıt gerekmez, verileriniz cihazınızdan çıkmaz."
-              );
-            }}
-          />
         </div>
         <p className="mt-1.5 flex flex-wrap items-center justify-between gap-2 text-xs">
           <span className={titleOk ? "text-success" : "text-warning"}>

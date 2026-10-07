@@ -4,8 +4,6 @@ import { showToast } from "@/lib/toast";
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
-import { SAMPLES } from "@/data/samples";
 
 function encodeBase64(text: string): string {
   const bytes = new TextEncoder().encode(text);
@@ -77,7 +75,6 @@ export default function Base64Encoder() {
       />
 
       <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton onApply={() => setInput(SAMPLES["base64"])} />
       </div>
 
       <div className="mt-3 flex flex-wrap gap-2">

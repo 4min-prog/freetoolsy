@@ -4,8 +4,6 @@ import { showToast } from "@/lib/toast";
 
 import { Component, useMemo, useState, type ReactNode } from "react";
 import { useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
-import { SAMPLES } from "@/data/samples";
 import QRCode from "react-qr-code";
 
 type QrType = "url" | "text" | "wifi" | "vcard" | "email" | "phone" | "sms" | "location";
@@ -549,16 +547,6 @@ export default function QrCodeGenerator() {
       </div>
 
       <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton
-          onApply={() => {
-            setType("url");
-            setForm({ ...EMPTY_FORM, url: SAMPLES["qr-code-generator"] });
-            setLevel("M");
-            setForeground("#000000");
-            setBackground("#ffffff");
-            setMargin(4);
-          }}
-        />
         {payload && (
           <button
             type="button"

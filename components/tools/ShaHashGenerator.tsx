@@ -4,8 +4,6 @@ import { showToast } from "@/lib/toast";
 
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
-import { SAMPLES } from "@/data/samples";
 
 const ALGORITHMS = ["SHA-1", "SHA-256", "SHA-512"];
 
@@ -63,7 +61,6 @@ export default function ShaHashGenerator() {
       />
 
       <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton onApply={() => setText(SAMPLES["sha-hash-generator"])} />
       </div>
 
       <label

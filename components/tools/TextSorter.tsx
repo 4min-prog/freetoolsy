@@ -4,8 +4,6 @@ import { showToast } from "@/lib/toast";
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
-import { SAMPLES } from "@/data/samples";
 
 type SortMode = "sortAz" | "sortZa" | "byLength" | "numeric" | "shuffle";
 
@@ -91,7 +89,6 @@ export default function TextSorter() {
       />
 
       <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton onApply={() => setInput(SAMPLES["text-sorter"])} />
       </div>
 
       <div className="mt-4 flex flex-wrap gap-2">

@@ -2,8 +2,6 @@
 
 import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
-import { SAMPLES } from "@/data/samples";
 import { showToast } from "@/lib/toast";
 
 const WORDS_PER_MINUTE = 200;
@@ -144,7 +142,6 @@ export default function CharacterCounter() {
       />
 
       <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton onApply={() => setText(SAMPLES["character-counter"])} />
       </div>
 
       <div className="mt-5">

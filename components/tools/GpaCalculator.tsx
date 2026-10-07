@@ -4,7 +4,6 @@ import { showToast } from "@/lib/toast";
 
 import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
 
 const GRADES = [
   { value: "A+", points: 4.0, percent: 96 },
@@ -100,15 +99,6 @@ export default function GpaCalculator() {
       <div className="flex items-center justify-between gap-3">
         <p className="text-sm font-medium text-text">{t("courseLabel")}</p>
         <div className="flex items-center gap-2">
-          <SampleButton
-            onApply={() =>
-              setRows([
-                { id: 1, credits: "3", grade: "A" },
-                { id: 2, credits: "4", grade: "B+" },
-                { id: 3, credits: "2", grade: "C" },
-              ])
-            }
-          />
           <button
             type="button"
             onClick={addRow}

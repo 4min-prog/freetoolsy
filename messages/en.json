@@ -60,7 +60,6 @@
   },
   "Common": {
     "use": "Use",
-    "trySample": "Try sample data",
     "new": "New"
   },
   "Header": {
@@ -5081,8 +5080,7 @@
   },
   "Toast": {
     "copied": "Copied ✓",
-    "downloaded": "Downloaded ✓",
-    "sampleLoaded": "Sample data loaded"
+    "downloaded": "Downloaded ✓"
   },
   "Brand": {
     "tagline": "Free tools, in your browser."
@@ -6155,11 +6153,6 @@
       "readingTimeLabel": "Estimated reading time",
       "targetAudienceLabel": "Suggested audience",
       "minutesLabel": "min read",
-      "simpleSample": "Simple text",
-      "complexSample": "Complex text",
-      "sampleText": "FreetoolsY offers free tools that run right in your browser. Each tool does one job: fast, simple, and ad-free. No sign-up required, and your data never leaves your device.",
-      "simpleSampleText": "Cats are small animals. They sleep a lot. A cat likes to sit in the sun. The bowls are cleaned every morning. Kids can learn to care for a cat. Play with your cat in the evening. The cat runs and jumps. A happy cat purrs. The house is heated in winter. Take care of your cat at home.",
-      "complexSampleText": "Notwithstanding the epistemological limitations inherent in contemporary qualitative methodologies, the comprehensive investigation of longitudinal socioeconomic disparities necessitates a comprehensive reconsideration of institutional accountability frameworks. Phenomenological investigations concerning the characterization of multidimensional systemic vulnerabilities demonstrate that institutionalized discrimination perpetuates structurally inequitable outcomes across heterogeneous demographic cohorts, thereby fundamentally destabilizing conventional epistemological paradigms. Furthermore, notwithstanding the predominant institutionalization of deliberative democratic mechanisms, contemporary macroeconomic fluctuations have consequentially destabilized comprehensive socioeconomic stabilization strategies that policymakers have historically considered foundational to equitable distributive justice methodologies.",
       "levelVeryEasy": "Very easy to read",
       "levelEasy": "Easy to read",
       "levelFairlyDifficult": "Fairly difficult",
@@ -6504,8 +6497,7 @@
       "comparison": "Before / after comparison",
       "download": "Download compressed",
       "note": "Runs entirely in your browser — your image never leaves your device.",
-      "error": "That file type is not supported. Please choose an image file.",
-      "sampleError": "Could not load the sample image. Please try again."
+      "error": "That file type is not supported. Please choose an image file."
     },
     "imageResizer": {
       "upload": "Choose an image",
@@ -6636,7 +6628,6 @@
       "modeHtmlToMd": "HTML to Markdown",
       "label": "Input",
       "placeholder": "Type or paste Markdown or HTML here…",
-      "sample": "Sample",
       "showHtml": "Show rendered HTML",
       "preview": "Preview",
       "outputLabel": "Output",
@@ -6667,7 +6658,6 @@
       "colsLabel": "Columns",
       "dataLabel": "Data",
       "dataPlaceholder": "Separated values — tab, comma, semicolon or pipe divided…",
-      "sample": "Sample",
       "generate": "Generate",
       "showCode": "Show code",
       "preview": "Preview",
@@ -6819,7 +6809,6 @@
       "namesLabel": "Names",
       "namesPlaceholder": "One name per line…",
       "count": "{count, plural, one {1 name} other {{count} names}} on the wheel",
-      "sample": "Sample",
       "spinning": "Spinning…",
       "spin": "Spin",
       "reset": "Reset"

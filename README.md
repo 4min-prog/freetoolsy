@@ -62,7 +62,7 @@ data/
   toolComponents.ts        Client registry — her sayfada tek araç yüklenir
   toolCompNamespaces.ts    Araç → i18n namespace eşlemesi
   dynamicTools.ts          5 dinamik import gerektiren ağır araç
-  popular.ts, samples.ts
+  popular.ts
 
 lib/
   paths.ts                 Merkezî URL kuralları (siteUrl, toolUrl, guidePath)

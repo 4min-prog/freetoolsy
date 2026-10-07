@@ -4,8 +4,6 @@ import { showToast } from "@/lib/toast";
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
-import { SAMPLES } from "@/data/samples";
 
 function encodeUrl(text: string): string {
   return encodeURIComponent(text);
@@ -72,7 +70,6 @@ export default function UrlEncoder() {
       />
 
       <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton onApply={() => setInput(SAMPLES["url-encoder"])} />
       </div>
 
       <div className="mt-3 flex flex-wrap gap-2">

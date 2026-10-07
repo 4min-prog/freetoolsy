@@ -256,8 +256,6 @@ export default function MarkdownHtmlConverter() {
       .catch(() => undefined);
   }
 
-  const sampleMd = `# Title\n\nThis is **bold** and *italic* text with \`inline code\`.\n\n- First item\n- Second item\n\n[Link](https://example.com)\n\n\`\`\`js\nconst x = 1;\n\`\`\`\n\n| Name | Age |\n| ---- | --- |\n| Ada  | 30  |`;
-
   return (
     <div>
       <div className="flex flex-wrap gap-2">
@@ -304,13 +302,6 @@ export default function MarkdownHtmlConverter() {
         className="mt-2 w-full resize-y rounded-lg border border-border bg-bg px-3.5 py-3 font-mono text-xs leading-relaxed text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
       <div className="mt-2 flex flex-wrap items-center gap-2">
-        <button
-          type="button"
-          onClick={() => setInput(sampleMd)}
-          className="rounded-lg border border-border bg-surface px-4 py-2 text-xs min-h-10 font-medium text-muted transition-colors hover:border-strong hover:text-text"
-        >
-          {t("sample")}
-        </button>
         {mode === "md-to-html" ? (
           <button
             type="button"

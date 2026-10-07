@@ -4,7 +4,6 @@ import { showToast } from "@/lib/toast";
 
 import { useEffect, useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
 
 const inputClass =
   "w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-sm text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30";
@@ -128,13 +127,6 @@ export default function TimeZoneConverter() {
       </div>
 
       <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton
-          onApply={() => {
-            setSource("Europe/Istanbul");
-            setTarget("America/New_York");
-            setWhen(localInputValue(new Date()));
-          }}
-        />
         <button
           type="button"
           onClick={() => setWhen(localInputValue(new Date()))}

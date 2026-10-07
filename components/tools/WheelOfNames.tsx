@@ -149,13 +149,6 @@ export default function WheelOfNames() {
           <div className="mt-3 flex flex-wrap gap-2">
             <button
               type="button"
-              onClick={() => setNames("Ada\nLeo\nMira\nEfe\nZara\nKaan")}
-              className="rounded-lg border border-border bg-surface px-4 py-2 text-xs min-h-10 font-medium text-muted transition-colors hover:border-strong hover:text-text"
-            >
-              {t("sample")}
-            </button>
-            <button
-              type="button"
               onClick={spin}
               disabled={spinning || list.length === 0}
               className="rounded-lg bg-accent px-4 py-1.5 text-sm font-medium text-on-accent transition-opacity hover:opacity-90 disabled:opacity-50"

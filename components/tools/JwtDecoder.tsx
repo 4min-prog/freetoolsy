@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
-import { SAMPLES } from "@/data/samples";
 
 function base64UrlDecode(value: string): string {
   let base64 = value.replace(/-/g, "+").replace(/_/g, "/");
@@ -72,7 +70,6 @@ export default function JwtDecoder() {
       />
 
       <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton onApply={() => setToken(SAMPLES["jwt-decoder"])} />
       </div>
 
       <button

@@ -7,7 +7,7 @@
  * Build bunu yakalamaz. Bu betik yakalar.
  *
  * Kapsam: tool kaydi, bilesen registry'si (statik + dinamik), ToolMeta alanlari,
- * ToolContent blogu, ceviri ad alani, ikon, ornek veri, kategori ikonu, rehber
+ * ToolContent blogu, ceviri ad alani, ikon, kategori ikonu, rehber
  * blok esitligi ve rehber relatedTools baglantilari.
  *
  * Kullanim: npm run check:tools
@@ -27,7 +27,6 @@ const META_KEYS = ["name", "desc", "title", "pageDesc", "intro"] as const;
 const LOCALES = ["en", "tr"] as const;
 const errors: string[] = [];
 const warnings: string[] = [];
-const withoutSample: string[] = [];
 
 function read(file: string) {
   return readFileSync(resolve(root, file), "utf8");
@@ -44,9 +43,6 @@ const namespaceMap = new Map(
   [...read("data/toolCompNamespaces.ts").matchAll(/"([a-z0-9-]+)":\s*"([A-Za-z0-9_]+)"/g)].map(
     (match) => [match[1], match[2]]
   )
-);
-const sampleKeys = new Set(
-  keysFrom(read("data/samples.ts"), /^ {2}"([a-z0-9-]+)":/gm)
 );
 const iconKeys = new Set(
   keysFrom(read("components/ToolIcon.tsx"), /^\s*"?([a-z0-9-]+)"?:\s*fa[A-Za-z]+/gm)
@@ -145,7 +141,6 @@ for (const tool of tools) {
   }
 
   if (!iconKeys.has(slug)) errors.push(`${slug}: ToolIcon tablosunda ikon yok`);
-  if (!sampleKeys.has(slug)) withoutSample.push(slug);
 }
 
 const namespaceOwners = new Map<string, string>();
@@ -166,9 +161,6 @@ for (const slug of DYNAMIC_TOOL_SLUGS) {
 }
 for (const slug of namespaceMap.keys()) {
   if (!seen.has(slug)) errors.push(`${slug}: toolCompNamespaces.ts'te var ama data/tools.ts'te yok`);
-}
-for (const slug of sampleKeys) {
-  if (!seen.has(slug)) errors.push(`${slug}: data/samples.ts icinde var ama data/tools.ts'te yok`);
 }
 for (const slug of iconKeys) {
   if (!seen.has(slug)) warnings.push(`${slug}: ToolIcon tablosunda ama data/tools.ts'te yok`);
@@ -252,7 +244,6 @@ for (const guide of guides) {
 
 console.log(`tools.ts: ${tools.length} tool  |  bilesen: ${registeredComponents.size}  |  ssr:false: ${DYNAMIC_TOOL_SLUGS.size}  |  ikon: ${iconKeys.size}`);
 console.log(`kategori: ${categories.length}  |  rehber: ${guides.length}  |  ad alani: ${namespaceMap.size}`);
-console.log(`ornek veri: ${sampleKeys.size}/${tools.length} tool'de var (kalan ${withoutSample.length} icin opsiyonel)`);
 
 if (warnings.length) {
   console.log(`\nUYARILAR (${warnings.length}):`);

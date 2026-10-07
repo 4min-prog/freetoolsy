@@ -1,8 +1,6 @@
 "use client";
 
-import SampleButton from "@/components/SampleButton";
 import { showToast } from "@/lib/toast";
-import { createSampleImageFile } from "@/lib/sampleImage";
 
 import { useEffect, useRef, useState } from "react";
 import type { ChangeEvent } from "react";
@@ -69,13 +67,6 @@ export default function ImageToBase64() {
         className="mt-2 block w-full text-sm text-muted file:mr-3 file:rounded-lg file:border file:border-border file:bg-surface file:px-3 file:py-2 file:text-sm file:font-medium file:text-text hover:file:border-strong"
       />
       <div className="mt-3">
-        <SampleButton
-          onApply={() =>
-            handleFile({
-              target: { files: [createSampleImageFile()] },
-            } as unknown as ChangeEvent<HTMLInputElement>)
-          }
-        />
       </div>
 
       {error ? (

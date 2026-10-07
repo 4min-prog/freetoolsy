@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
 
 type Unit = { id: string; symbol: string; factor: number };
 
@@ -163,7 +162,6 @@ function UnitPanel(props: { pre: Pre; isFoodPanel?: boolean; showSample?: boolea
 
       {showSample ? (
         <div className="mt-2 flex flex-wrap gap-2">
-          <SampleButton onApply={() => setAmountValue("10")} />
         </div>
       ) : null}
 

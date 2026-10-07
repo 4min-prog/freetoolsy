@@ -4,7 +4,6 @@ import { showToast } from "@/lib/toast";
 
 import { useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
 
 function parseNumber(value: string): number {
   const normalized = value.trim().replace(",", ".");
@@ -100,7 +99,6 @@ export default function IdealWeightCalculator() {
       </div>
 
       <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton onApply={() => { setSex("male"); setHeight("175"); }} />
       </div>
 
       <label htmlFor="ideal-kilo-guncel" className="mt-5 block text-sm font-medium text-text">

@@ -4,8 +4,6 @@ import { showToast } from "@/lib/toast";
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import SampleButton from "@/components/SampleButton";
-import { SAMPLES } from "@/data/samples";
 
 const MODES = ["trim", "spaces", "empty", "all"] as const;
 
@@ -96,7 +94,6 @@ export default function WhitespaceCleaner() {
       />
 
       <div className="mt-2 flex flex-wrap gap-2">
-        <SampleButton onApply={() => setInput(SAMPLES["whitespace-cleaner"])} />
       </div>
 
       <div className="mt-4 flex flex-wrap items-center gap-2">
