@@ -1527,7 +1527,7 @@
         "p": "Evet. Her şey tarayıcınızda çalışır; metniniz hiçbir zaman gönderilmez, yüklenmez veya saklanmaz. Kayıt olmadan ve ödeme yapmadan kod parçacıkları, özel notlar ve hassas metinleri güvenle kontrol edebilirsiniz."
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "\"Boşluksuz\" ne demektir? Boşlukları yok sayan karakter sayımı.",
           "Mobilde çalışır mı? Evet — her cihazdaki her tarayıcıda çalışır.",
@@ -1735,7 +1735,7 @@
         "p": "Evet. Kod tamamen tarayıcınızda üretilir; metniniz hiçbir zaman gönderilmez veya saklanmaz. Kişisel bağlantılarınızı, notlarınızı ve iş bilgilerinizi güvenle kodlara dönüştürebilirsiniz."
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "QR kodu nasıl tararım? Telefon kameranızı kodun üzerine tutun.",
           "Kodun süresi dolar mı? Hayır — üretilen kodlar kalıcıdır.",
@@ -1757,7 +1757,7 @@
         "p": "Evet. Hash işleme, tarayıcınızın crypto kütüphanesinde tamamen cihazınızda çalışır; metniniz hiçbir yere gönderilmez. Özel anahtarlar, şifreler ve hassas veriler burada güvenle hash'lenebilir."
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Hash'i özgün metne geri çevirebilir miyim? Hayır — SHA tek yönlüdür.",
           "Aynı metin farklı hash'ler verir mi? Hayır — SHA deterministiktir.",
@@ -1779,7 +1779,7 @@
         "p": "Evet. Hesaplama tamamen tarayıcınızda gerçekleşir; tarihleriniz hiçbir zaman gönderilmez veya saklanmaz. Kayıt yok, kurulum yok, tamamen ücretsiz."
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Tarih sırası önemli mi? Hayır — mutlak fark gösterilir.",
           "Başlangıç tarihi bugün olabilir mi? Evet — alanlar bugün olarak varsayılan gelir.",
@@ -1805,7 +1805,7 @@
         "p": "Evet. Tüm dönüşümler tarayıcınızda çalışır; renginiz hiçbir yere gönderilmez. Ücret, üyelik veya reklam filtresi olmadan hızlı erişim."
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "HEX için # ön eki gerekli mi? İkisi de çalışır — 6 haneli her iki biçim de kabul edilir.",
           "Hangi alan rengi günceller? Son geçerli giriş uygulanır; geçersiz girişler mevcut rengi korur.",
@@ -1832,7 +1832,7 @@
         "p": "Evet. Değerler cihazınızda tarayıcının kriptografik rastgele kaynağı kullanılarak üretilir; hiçbir şey gönderilmez. Tanımlayıcılar tamamen size aittir."
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "UUID ve GUID aynı mı? Evet — GUID, Microsoft'un UUID için kullandığı addır.",
           "Tanımlayıcılar değiştirilebilir mi? Her tıklama yeni rastgele değerler üretir; üretilen listeler kopyalandıktan sonra size ait olur.",
@@ -1860,7 +1860,7 @@
         "p": "Evet. Tüm dönüşümler tarayıcınızda çalışır; değerleriniz hiçbir zaman gönderilmez veya saklanmaz. Ücretsiz ve hesap gerektirmez."
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Hangi ondalık ayracını kullanabilirim? Hem virgül hem nokta kabul edilir (örneğin 1,5 veya 1.5).",
           "Sonuçlar yuvarlanır mı? Değerler altı haneye yuvarlanır — günlük ölçüm için yeterince hassas.",
@@ -1882,7 +1882,7 @@
         "p": "Evet. Test tamamen tarayıcınızda çalışır; şifreniz hiçbir zaman gönderilmez, saklanmaz veya kaydedilmez. Gerçek şifrelerinizi bile gönül rahatlığıyla test edin."
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Hangi uzunluk yeterlidir? En az 12 karakteri hedefleyin; 16+ daha güvenlidir.",
           "Yaygın şifre listesini çevrimiçi kontrol eder misiniz? Hayır — liste cihazınıza gömülüdür.",
@@ -2678,7 +2678,7 @@
         ]
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Slug'lar neden küçük harfli olmalı? Küçük harfli slug'lar büyük/küçük harf farkından doğan yinelenen URL'leri önler ve paylaşması, hatırlaması daha kolaydır.",
           "Hangi ayraç en iyisi? Tireler SEO için en yaygın tercihtir, ancak sisteminiz bekliyorsa alt çizgi de işinizi görür.",
@@ -2714,7 +2714,7 @@
         ]
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Başlığım ne kadar uzun olmalı? Arama motorları kesmesin diye yaklaşık 50-60 karakter hedefleyin.",
           "İdeal açıklama uzunluğu nedir? 140-160 karakter arası, mesajı tam olarak iletmek için yeterli alan sağlar.",
@@ -2750,7 +2750,7 @@
         ]
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Sağlıklı anahtar kelime yoğunluğu nedir? Sabit bir sayı yoktur, ancak bir anahtar terimi metnin yüzde bir-iki kadarı kadar tekrarlamak genelde doğal okunur.",
           "Noktalama işaretleri sayımı etkiler mi? Evet, araç noktalamayı temizler; böylece kelime ve kelime. aynı terim olarak sayılır.",
@@ -2781,7 +2781,7 @@
         ]
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Google her zaman benim title etiketimi kullanır mı? Her zaman değil; çok uzun, çok kısa veya anahtar kelimeyle dolu gördüğü başlıkları yeniden yazabilir.",
           "Yeşil ve turuncu sayaçlar ne anlama geliyor? Yeşil, önerilen uzunluk içindesiniz demektir; turuncu ise metnin kesilme ihtimali olduğunu gösterir.",
@@ -2817,7 +2817,7 @@
         ]
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Bu araç Türkçe metinlerde de çalışır mı? Evet, hece sayacı Türkçe sesli harfleri doğru işleyen bir ünlü-grubu yöntemi kullanır.",
           "Hangi sınıf seviyesini hedeflemeliyim? Çoğu web içeriği 7-9. sınıf seviyesinde en iyi okunur.",
@@ -2847,7 +2847,7 @@
         ]
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Metnim bir yere yükleniyor mu? Hayır — karşılaştırma tamamen tarayıcınızda çalışır, metniniz cihazınızdan asla çıkmaz.",
           "Karşılaştırma büyük/küçük harfe duyarlı mı? Evet, satırlar birebir karşılaştırılır; yalnızca büyük/küçük harf farkı olan satır değişmiş sayılır.",
@@ -2877,7 +2877,7 @@
         ]
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Verilerim bir yere gönderiliyor mu? Hayır — kodlama ve çözme tamamen tarayıcınızda çalışır.",
           "Neden ' karakteri &#39; oluyor? Kesme işareti, tek tırnaklı attribute'lar içinde güvenli olduğu için sayısal entity olarak kodlanır.",
@@ -2912,7 +2912,7 @@
         ]
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Türkçe harfler çevrilebilir mi? Hayır — ç ve ş gibi Türkçe karakterler standart Mors'da olmadığından aynen bırakılır.",
           "Kelimeler neden / ile ayrılıyor? Bu, Mors metninde kelimeler arası boşluğu göstermek için yaygın kullanılan kuraldır.",
@@ -2947,7 +2947,7 @@
         ]
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Boşlukları ve noktalamayı koruyor mu? Evet, boşluklar, noktalama ve satır geçişleri mümkün olduğunca yerinde kalır.",
           "Metnim bir yere gönderiliyor mu? Hayır, her şey tarayıcınızda yerel olarak çalışır.",
@@ -2977,7 +2977,7 @@
         ]
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Bazı uygulamalarda stil neden kayboluyor? Karakterler gerçek Unicode sembollerdir ancak glif desteği olmayan uygulamalar düz görünüme döner.",
           "Tüm karakterler dönüştürülüyor mu? Yalnızca A–Z, a–z ve 0–9 için stilli karşılıklar vardır; Türkçe aksanlar ve semboller aynen kalır.",
@@ -3007,7 +3007,7 @@
         ]
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Hangi karakterler değişir? Yalnızca A–Z ve a–z kaydırılır; sayılar, aksanlar, Türkçe harfler ve semboller aynen kalır.",
           "ROT13 güvenli mi? Hayır, gerçek bir şifreleme değildir — tüm Caesar kaydırmaları gibi kolayca çözülür.",
@@ -3038,7 +3038,7 @@
         ]
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "A+ notu A'dan daha mı değerli? Standart 4.0 ölçeğinde A+ ve A ikisi de 4.0 puandır. Bazı üniversiteler A+'ya fazladan ağırlık veren 4.3 ölçeğini kullanır; ancak bu hesap makinesi yaygın 4.0 kuralını izler.",
           "Ağırlıklı ne demek? Ortalama alınmadan önce tüm notlar dersin kredi miktarıyla çarpılır. Yüksek kredili bir dersteki iyi not, düşük kredili dersteki nottan GPA'nızı daha çok etkiler.",
@@ -3069,7 +3069,7 @@
         ]
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Aylık oran nasıl hesaplanır? Yıllık faiz oranı 12'ye bölünerek aylık oran bulunur. Örneğin yıllık %24 oran, EMI formülü uygulanmadan önce aylık %2 olur.",
           "Toplam faiz neden anaparaya yakın çıkıyor? Faiz her ay kalan bakiye üzerinden işlenir. İlk ödemeler çoğunlukla faize gider; bu nedenle uzun vade veya yüksek faizde toplam faiz çok yüksek olabilir.",
@@ -3105,7 +3105,7 @@
         ]
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Hangi aktivite düzeyini seçmeliyim? Gerçek haftanız konusunda dürüst olun. Hareketsiz az egzersiz, hafif haftada 1-3 gün, orta 3-5 gün, aktif 6-7 gün, çok aktif ise ağır antrenman veya fiziksel bir iş demektir. Düzeyi olduğundan yüksek seçmek genellikle harcamayı fazla tahmin eder.",
           "Neden -500 kalori öneriliyor? Bir kilogram vücut yağı yaklaşık 7.700 kcal içerir; günde yaklaşık 500 kcal azaltmak haftada yaklaşık -0,5 kg'ye denk gelir ve yaygın, sürdürülebilir bir kilo verme hedefidir.",
@@ -3136,7 +3136,7 @@
         ]
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "ABD Donanması formülü ne kadar doğrudur? Ölçümler dikkatli yapıldığında hata payı, su altı tartımı gibi laboratuvar yöntemlerine kıyasla genellikle %3-4 civarındadır. En iyi sonuç için ölçüleri tutarlı ve çok sıkı olmadan alın.",
           "ACE kategorileri ne anlama gelir? American Council on Exercise aralıklarını izler: temel yağ, sporcular, fitness, ortalama ve obez. Bunlar genel rehberdir; ideal aralığınız yaşa, spor dallarına ve kişisel hedeflere göre değişir.",
@@ -3172,7 +3172,7 @@
         ]
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Hangi ideal kiloya güvenmeliyim? Formüller yetişkin popülasyonlar için boy tabanlı tahminlerdir, bu yüzden aralarındaki küçük farklar normaldir. Sağlıklı BMI aralığı, sağlıklı kilolardan oluşan bir bant sunduğu için genellikle daha pratik bir hedeftir.",
           "Erkek ve kadın sonuçları neden farklı? Aynı boyda kadınlar ortalama olarak daha az yağsız kütleye ve daha fazla temel vücut yağına sahiptir; bu yüzden her iki formül de kadınlar için daha düşük bir tabandan başlar (50-52 kg yerine 45,5-49 kg) ve Robinson'un eğimi daha küçüktür.",
@@ -3203,7 +3203,7 @@
         ]
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Neden 5 veya 6 döngü öneriliyor? Derin uykunun ortasında uyanmak sersemleticidir; döngü aralarında uyanmak ise daha zinde kalmayı sağlar. 5 döngüde yaklaşık 7,5 saat, 6 döngüde yaklaşık 9 saat uyursunuz; üstüne uykuya dalmak için yaklaşık 15 dakika eklenir.",
           "Yatağa tam önerilen saatte mi girmeliyim? Hayır. Önerilen yatma saati, yaklaşık 15 dakika sonra uykuya dalmayı hedeflediğiniz andır. Birkaç dakika farkla uykuya dalmak sorun değildir — dakika hassasiyetinden çok düzenlilik önemlidir.",
@@ -3379,7 +3379,7 @@
         ]
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Kuru güncelleyebilir miyim? Evet — çevirmeden önce temel kur alanını düzenleyin.",
           "İnternet gerekiyor mu? Hayır, her şey tarayıcınızda çalışır.",
@@ -3405,7 +3405,7 @@
         "p": "Yıllık döküm, her yıl ne kadarının birikiminizden, ne kadarının kazanılan faizden geldiğini tam gösterir. Ayda daha çok biriktirmek ile daha yüksek oran elde etmek gibi senaryoları karşılaştırın."
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Bileşiklenme sıklığı nasıl değişir? Ayarlardan günlük, aylık veya yıllık seçin; tablo yeniden hesplanır.",
           "Vergi düşer mi? Hayır — sonuç, vergi ve ücretler öncesi kaba büyümedir.",
@@ -3431,7 +3431,7 @@
         "p": "Brüt maaşınızı girin ve net tutarı anında görün. Teklifleri karşılaştırın ya da bir zam kararından önce elinize geçecek tutarı kontrol edin."
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Bu tutar tam olarak doğru mu? Bir tahmindir; kesin rakam kendi durumunuza ve işveren tercihlerine göre değişir.",
           "Ek ödemeleri içerir mi? Fazla mesai, prim ve diğer yan haklar kapsam dışıdır.",
@@ -3457,7 +3457,7 @@
         "p": "Girinti için boşluk sayısını ve anahtar sözcüklerin büyük, küçük ya da olduğu gibi yazılmasını seçin. Minify seçeneği tek satırlık çıktı için boşlukları ayıklar."
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "SQL Server, MySQL ve Postgres için çalışır mı? Evet — biçimleyici geneldir ve yaygın diyalektleri işler.",
           "Sorgum sunucuya gönderilir mi? Hayır, her şey tarayıcınızda yerel çalışır.",
@@ -3483,7 +3483,7 @@
         "p": "Öznitelikli belgeler @öznitelik sözleşmesiyle gidiş-geliş yapar; tekrarlanan öğeler diziye dönüşür. Belge geçersizse araç sorunu gösterir; düzeltip yeniden çevirebilirsiniz."
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Verilerim saklanır mı? Hayır — her şey tarayıcınızda işlenir.",
           "Öznitelik sırası korunur mu? Geri çevirirken öznitelik sırası korunur.",
@@ -3509,7 +3509,7 @@
         "p": "Evet. Dönüşüm tamamen tarayıcınızda gerçekleşir; yapıştırılan içerik cihazınızdan çıkmaz — taslaklar ve iç dokümanlar için güvenlidir."
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Hangi Markdown desteklenir? Yaygın söz dizimi: başlıklar, listeler, kod, tablolar ve bağlantılar.",
           "HTML'den Markdown'a karmaşık yerleşimleri işler mi? Standart biçimlendirmeyi çevirir; çok karmaşık iç içe işaretlemeler kısmen HTML kalabilir.",
@@ -3535,7 +3535,7 @@
         "p": "İmza, mesajınızın birebir baytlarına bağlıdır. Görüştüğünüz hizmetle aynı imzalama ayarlarını kullanın ve üretim anahtarlarını güvenilmeyen makinelere asla yapıştırmayın — bu araç tamamen tarayıcınızda çalışır."
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "HMAC basit karmalama ile aynı mı? Hayır — HMAC karmayı bir sırla anahtarlar; yalnızca bütünlüğü değil, gerçekliği de doğrular.",
           "Dosya üzerinde çalışır mı? Doğrudan değil; önce dosya içeriğini karma hale getirin, sonra bu karmayı imzalayın.",
@@ -3561,7 +3561,7 @@
         "p": "Tabloyu elle yazmak sıkıcıdır. Bu araç, bir CMS, editör veya e-posta şablonuna bırakabileceğiniz temiz, kopyalamaya hazır kod üretir; sonra kendi CSS'inizle şekillendirirsiniz."
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Başlık satırı ekleyebilir miyim? Evet — ilk satır tablo başlığı olarak işaretlenebilir.",
           "Birleşik hücreler desteklenir mi? Otomatik değil; üretici yaygın düz tabloları kapsar.",
@@ -3587,7 +3587,7 @@
         "p": "Faviconlar küçüktür — metni kısa, renkleri yüksek kontrastlı tutun. Hem açık hem koyu sekmede test ederek simgenin görünür kaldığını doğrulayın."
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "ICO ile PNG farkı ne? ICO eski tarayıcılar için çoklu boyut tutar; PNG daha basittir ve yeniler destekler.",
           "Logo dosyamı okur mu? Üretici metinden çizer; özel logo için görsel düzenleyici kullanın.",
@@ -3614,7 +3614,7 @@
         "p": "Büyük görsellerin önizlemesi yalnızca ekranda gösterilirken ölçeklenir. Kırpma kaynak çözünürlükte yapılır; dışa aktarmadan önce JPEG ve WebP kalitesi ayarlanabilir."
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Tam piksel boyutu verebilir miyim? Önce görsel olarak kırpın, gerekirse sitenin görsel yeniden boyutlandırıcısıyla ebadı ayarlayın.",
           "Kırpmayı hazır bir orana sabitleyebilir miyim? Evet; kare, dikey, hikâye, yatay, klasik veya fotoğraf oranını seçin.",
@@ -3641,7 +3641,7 @@
         "p": "Düşük saydamlık ve köşe konumu, fotoğrafı temiz tutar ama kaynağı yine de gösterir. Gerektiğinde şeffaf zemin için PNG olarak dışa aktarın."
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Logo yerine metin ekleyebilir miyim? Filigranı görsel olarak kaydedip bu aracı kullanın.",
           "Orijinali yeniden boyutlandırır mı? Çıktı boyutu orijinal görseli takip eder.",
@@ -3667,7 +3667,7 @@
         "p": "Yapılandırılmış veri, arama motorlarının içeriğinizi anlamasına yardımcı olur; yıldız puanları, SSS ve etkinlik listeleri gibi zengin sonuçları açabilir — küçük bir snippet, gerçek bir görünürlük kazancı."
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Geliştirici olmam gerekir mi? Hayır — alanlar sade dille etiketlenmiştir.",
           "Geçerli JSON üretir mi? Evet, çıktı her zaman geçerli JSON'dur; Google'ın sonuç test araçlarıyla doğrulayın.",
@@ -3693,7 +3693,7 @@
         "p": "Her dil sürümü, tüm karşılıklarını listelemeli ve eşleşen bir x-default eklemeli. Üretici x-default'u dahil eder; böylece arama motorları tam ve tutarlı bir sinyal görür."
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Her sayfada hreflang mı olmalı? Her yerelleştirilmiş URL'e ekleyin ve etiketleri her sürümde aynalayın.",
           "URL'leri doğrular mısınız? Araç girişleri biçimlendirir; son kodu Search Console'da doğrulayın.",
@@ -3719,7 +3719,7 @@
         "p": "robots.txt iyi huylu tarayıcıları yönlendirir; güvenlik engeli değildir. Engelleme kurallarını arama sonuçlarında kalmaması gereken yollarla sınırlı tutun ve değişiklikleri Search Console'da test edin."
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Hangi adres için üretmeliyim? Hizmet verdiğiniz ana adresin köküne tek bir robots.txt koyun.",
           "Sitemap gösterebilir mi? Evet — üretilen metinde bir sitemap satırı bulunur.",
@@ -3745,7 +3745,7 @@
         "p": "Dönüş rastgeledir, sonuç tarafsızdır — üstelik renkli çark, projeksiyon veya büyük ekranda heyecanı artıran şık bir sunum sunar."
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Resim yerine isim kullanabilir miyim? Çark metin girişlerini destekler.",
           "Birden çok kazanan seçilebilir mi? Evet — kazananı listeden çıkarıp yeniden çevirin.",
@@ -3771,7 +3771,7 @@
         "p": "Üretici, tarayıcının kriptografik rastgelelik kaynağını kullanır; her çekim bağımsızdır ve önceden kestirilemez."
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Tekrarlar kapatılabilir mi? Evet — her sayı bir kez görülmeli ise tekrarsız moda geçin.",
           "Negatif sayıları destekler mi? Evet, her aralığı seçebilirsiniz.",
@@ -3797,7 +3797,7 @@
         "p": "Süreler gerçek saat zamanına dayanır; sekme gizlenmiş olsa bile ölçümler doğru kalır."
       },
       {
-        "h": "SSS",
+        "h": "FAQ",
         "list": [
           "Tur kaydedebilir miyim? Evet — tur ve toplam süreleriyle kaydırılabilir listeye yeteri kadar kayıt düşer.",
           "Bitince çalar mı? Sayaç sıfıra ulaştığında kısa bir bip sesi verir.",
