@@ -9,6 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "indexnow": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/indexnow.mts",
+    "send": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/send.mts",
     "check:tools": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/check-tools.mts",
     "generate:og-messages": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/generate-og-messages.mts"
   },
