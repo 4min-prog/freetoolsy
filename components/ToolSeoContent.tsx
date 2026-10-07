@@ -1,18 +1,13 @@
 import { getMessages, getTranslations } from "next-intl/server";
 import { getTool } from "@/data/tools";
-
-interface ToolContentBlock {
-  h?: string;
-  p?: string;
-  list?: string[];
-}
+import { isFaqBlock, type ToolContentBlock } from "@/lib/faq";
 
 function normalizeHeading(heading: string) {
   return heading
     .toLocaleLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
-    .replace(/\u0131/g, "i");
+    .replace(/[\u0131]/g, "i");
 }
 
 export default async function ToolSeoContent({ slug }: { slug: string }) {
@@ -20,7 +15,7 @@ export default async function ToolSeoContent({ slug }: { slug: string }) {
   const toolContents = messages.ToolContent as unknown as
     | Record<string, ToolContentBlock[]>
     | undefined;
-  const blocks = toolContents?.[slug] ?? [];
+  const blocks = (toolContents?.[slug] ?? []).filter((block) => !isFaqBlock(block));
   const tool = getTool(slug);
   const shouldAddSeoSections =
     tool?.category === "text" || tool?.category === "developer";
