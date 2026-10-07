@@ -138,8 +138,6 @@ export default function ColorPaletteGenerator() {
             />
             <span className="font-mono text-sm text-text">{base.toUpperCase()}</span>
           </div>
-          <div className="mt-2 flex flex-wrap gap-2">
-          </div>
         </div>
         <div>
           <label

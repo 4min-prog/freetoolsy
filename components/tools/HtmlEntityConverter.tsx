@@ -108,9 +108,6 @@ export default function HtmlEntityConverter() {
         className="mt-2 w-full resize-y rounded-lg border border-border bg-bg px-3.5 py-3 font-mono text-sm leading-relaxed text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
 
-      <div className="mt-2 flex flex-wrap gap-2">
-      </div>
-
       <div className="mt-4 flex items-center justify-between gap-2">
         <p className="text-sm font-medium text-text">
           {mode === "encode" ? t("outputEncode") : t("outputDecode")}

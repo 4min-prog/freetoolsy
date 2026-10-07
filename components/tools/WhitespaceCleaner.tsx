@@ -89,12 +89,10 @@ export default function WhitespaceCleaner() {
         id="bosluk-girdi"
         value={input}
         onChange={(event) => setInput(event.target.value)}
+        placeholder={t("placeholder")}
         rows={6}
         className="mt-2 w-full resize-y rounded-lg border border-border bg-bg px-3.5 py-3 text-sm leading-relaxed text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
-
-      <div className="mt-2 flex flex-wrap gap-2">
-      </div>
 
       <div className="mt-4 flex flex-wrap items-center gap-2">
         <button

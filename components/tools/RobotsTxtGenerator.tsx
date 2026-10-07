@@ -168,9 +168,6 @@ export default function RobotsTxtGenerator() {
         </div>
       ) : null}
 
-      <div className="mt-4 flex items-center gap-2">
-      </div>
-
       <div className="mt-5 rounded-lg border border-border bg-bg">
         <pre className="max-h-72 overflow-auto p-3 font-mono text-xs leading-relaxed text-text">
           {fullOutput}

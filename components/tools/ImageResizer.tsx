@@ -115,8 +115,6 @@ export default function ImageResizer() {
         onChange={handleFile}
         className="mt-2 block w-full text-sm text-muted file:mr-3 file:rounded-lg file:border file:border-border file:bg-surface file:px-3 file:py-2 file:text-sm file:font-medium file:text-text hover:file:border-strong"
       />
-      <div className="mt-3">
-      </div>
 
       <div className="mt-5 grid gap-4 sm:grid-cols-2">
         <div>

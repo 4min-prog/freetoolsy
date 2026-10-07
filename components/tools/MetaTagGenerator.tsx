@@ -92,8 +92,6 @@ export default function MetaTagGenerator() {
             placeholder={t("titlePlaceholder")}
             className={inputClass}
           />
-          <div className="mt-2 flex flex-wrap gap-2">
-          </div>
         </div>
         <div className="sm:col-span-2">
           <label htmlFor="meta-aciklama" className="block text-sm font-medium text-text">

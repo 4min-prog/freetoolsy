@@ -42,6 +42,7 @@ export default function AcronymGenerator() {
         type="text"
         value={phrase}
         onChange={(event) => setPhrase(event.target.value)}
+        placeholder={t("placeholder")}
         className="mt-2 w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-sm text-text focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
 

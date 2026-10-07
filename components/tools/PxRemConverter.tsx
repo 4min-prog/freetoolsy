@@ -96,8 +96,6 @@ export default function PxRemConverter() {
         </div>
       </div>
 
-      <div className="mt-4 flex flex-wrap gap-2">
-      </div>
     </div>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import { copyToClipboard } from "@/lib/clipboard";
 
 const PUNCTUATION = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
 
@@ -9,6 +10,7 @@ export default function PunctuationRemover() {
   const [input, setInput] = useState("");
   const [keepApostrophe, setKeepApostrophe] = useState(false);
   const [keepHyphen, setKeepHyphen] = useState(false);
+  const [copied, setCopied] = useState(false);
   const t = useTranslations("comp.punctuationRemover");
 
   const { output, removed } = useMemo(() => {
@@ -31,6 +33,12 @@ export default function PunctuationRemover() {
     }
     return { output: result, removed: count };
   }, [input, keepApostrophe, keepHyphen]);
+
+  async function copy() {
+    await copyToClipboard(output);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1400);
+  }
 
   return (
     <div>
@@ -72,9 +80,19 @@ export default function PunctuationRemover() {
         </p>
       ) : null}
 
-      <label htmlFor="pr-output" className="mt-4 block text-xs font-medium text-muted">
-        {t("outputLabel")}
-      </label>
+      <div className="mt-4 flex items-center justify-between gap-3">
+        <label htmlFor="pr-output" className="block text-xs font-medium text-muted">
+          {t("outputLabel")}
+        </label>
+        <button
+          type="button"
+          onClick={copy}
+          disabled={!output}
+          className="rounded-lg bg-accent px-4 py-1.5 text-sm font-medium text-on-accent transition-opacity hover:opacity-90 disabled:opacity-50"
+        >
+          {copied ? t("copied") : t("copy")}
+        </button>
+      </div>
       <textarea
         id="pr-output"
         readOnly

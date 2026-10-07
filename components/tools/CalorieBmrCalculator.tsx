@@ -162,9 +162,6 @@ export default function CalorieBmrCalculator() {
         </div>
       </div>
 
-      <div className="mt-2 flex flex-wrap gap-2">
-      </div>
-
       <label htmlFor="kalori-bmr-aktivite" className="mt-5 block text-sm font-medium text-text">
         {t("activityLabel")}
       </label>

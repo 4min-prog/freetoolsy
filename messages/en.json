@@ -5870,6 +5870,7 @@
       "note": "Testing runs entirely in your browser as you type."
     },
     "whitespaceCleaner": {
+      "placeholder": "Paste the text with extra spaces or line breaks",
       "modeLabel": "Cleaning options",
       "modeTrim": "Trim lines",
       "modeSpaces": "Collapse multiple spaces",
@@ -7219,6 +7220,8 @@
       "tip": "The keyword repeats over the text and shifts each letter. The Turkish alphabet is supported; other characters stay unchanged."
     },
     "punctuationRemover": {
+      "copied": "Copied",
+      "copy": "Copy",
       "inputLabel": "Input text",
       "inputPlaceholder": "Paste text with punctuation...",
       "outputLabel": "Clean text",
@@ -7336,6 +7339,7 @@
       "tip": "Sitemaps help search engines discover and rank your pages faster. Keep URLs under 50,000 and the file under 50 MB, and submit it in Google Search Console."
     },
     "emailValidator": {
+      "placeholder": "Add one email address per line",
       "emails": "Email addresses (separate by comma or new line)",
       "valid": "Valid",
       "invalid": "Invalid",
@@ -7343,6 +7347,7 @@
       "tip": "This checks format and top-level domain only. It cannot confirm that an address exists in a mailbox or that mail is received."
     },
     "wordScrambler": {
+      "placeholder": "Type the words you want to scramble",
       "inputLabel": "Your text",
       "modeEdges": "Keep first & last letters",
       "modeFull": "Full shuffle",
@@ -7361,6 +7366,7 @@
       "tip": "Each line becomes a single space-free hashtag. Copying puts all tags together separated by spaces, ready to paste into a post."
     },
     "acronymGenerator": {
+      "placeholder": "Type a phrase, e.g. Hypertext Markup Language",
       "phraseLabel": "Phrase",
       "dots": "Add dots between letters",
       "copy": "Copy",
@@ -7471,6 +7477,7 @@
       "tip": "Escaping converts quotes and backslashes so a string is valid inside JSON and JavaScript source code."
     },
     "emojiRemover": {
+      "placeholder": "Paste the text that contains emoji",
       "inputLabel": "Text with emojis",
       "outputLabel": "Cleaned text",
       "copy": "Copy",
@@ -7480,6 +7487,7 @@
       "tip": "The tool removes emojis and common decorative symbols. All processing happens locally in your browser."
     },
     "readingTimeCalculator": {
+      "placeholder": "Type or paste text to see the reading time",
       "inputLabel": "Your text",
       "wpmLabel": "Reading speed (words per minute)",
       "words": "Words",

@@ -130,9 +130,6 @@ export default function SubnetCalculator() {
         </div>
       </div>
 
-      <div className="mt-4 flex flex-wrap gap-2">
-      </div>
-
       <button
         type="button"
         onClick={calculate}

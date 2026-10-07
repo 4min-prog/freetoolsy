@@ -130,8 +130,6 @@ export default function CompoundInterestCalculator() {
             placeholder={t("contributionPlaceholder")}
             className="mt-2 w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-sm text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
           />
-          <div className="mt-2 flex flex-wrap gap-2">
-          </div>
         </div>
       </div>
 

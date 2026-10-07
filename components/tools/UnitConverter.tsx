@@ -119,7 +119,7 @@ function formatNumber(value: number, locale: string): string {
 }
 
 function UnitPanel(props: { pre: Pre; isFoodPanel?: boolean; showSample?: boolean }) {
-  const { pre, showSample } = props;
+  const { pre } = props;
   const [fromIndex, setFromIndex] = useState(0);
   const [toIndex, setToIndex] = useState(Math.min(1, pre.units.length - 1));
   const [amountValue, setAmountValue] = useState("1");
@@ -159,11 +159,6 @@ function UnitPanel(props: { pre: Pre; isFoodPanel?: boolean; showSample?: boolea
         placeholder="e.g. 120"
         className="mt-2 w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-sm text-text placeholder:text-faint focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
-
-      {showSample ? (
-        <div className="mt-2 flex flex-wrap gap-2">
-        </div>
-      ) : null}
 
       <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-[1fr_auto_1fr]">
         <div>

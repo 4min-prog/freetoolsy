@@ -100,9 +100,6 @@ export default function WcagContrastChecker() {
         </div>
       </div>
 
-      <div className="mt-4 flex flex-wrap gap-2">
-      </div>
-
       <div
         className="mt-5 rounded-lg border border-border bg-bg py-8 text-center"
         style={{ backgroundColor: bg, color: fg }}

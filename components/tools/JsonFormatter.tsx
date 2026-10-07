@@ -536,8 +536,6 @@ export default function JsonFormatter() {
               errorLocation ? "border-danger" : "border-border focus:border-accent"
             }`}
           />
-          <div className="mt-2 flex flex-wrap gap-2">
-          </div>
           <div className="mt-3 flex flex-wrap gap-2">
             <button
               type="button"

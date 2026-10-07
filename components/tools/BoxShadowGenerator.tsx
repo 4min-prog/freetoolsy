@@ -172,9 +172,6 @@ export default function BoxShadowGenerator() {
         </div>
       </div>
 
-      <div className="mt-2 flex flex-wrap gap-2">
-      </div>
-
       <div className="mt-6 flex h-48 items-center justify-center rounded-lg border border-border bg-bg">
         <div
           className="h-24 w-44 rounded-xl border border-border bg-surface"

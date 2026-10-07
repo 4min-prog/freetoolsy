@@ -98,9 +98,6 @@ export default function IdealWeightCalculator() {
         </div>
       </div>
 
-      <div className="mt-2 flex flex-wrap gap-2">
-      </div>
-
       <label htmlFor="ideal-kilo-guncel" className="mt-5 block text-sm font-medium text-text">
         {t("currentWeightLabel")}
       </label>

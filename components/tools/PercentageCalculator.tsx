@@ -181,9 +181,6 @@ export default function PercentageCalculator() {
         )}
       </div>
 
-      <div className="mt-2 flex flex-wrap gap-2">
-      </div>
-
       {result ? (
         <div className="mt-5 rounded-lg border border-border bg-bg p-5">
           <p className="text-xs font-medium uppercase tracking-wide text-muted">

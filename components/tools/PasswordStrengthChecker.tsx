@@ -130,9 +130,6 @@ export default function PasswordStrengthChecker() {
         </button>
       </div>
 
-      <div className="mt-2 flex flex-wrap gap-2">
-      </div>
-
       <div
         className="mt-4 h-2 overflow-hidden rounded-full bg-border"
         role="progressbar"

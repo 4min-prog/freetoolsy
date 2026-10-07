@@ -46,8 +46,6 @@ export default function SerpPreview() {
           placeholder={t("titlePlaceholder")}
           className={inputClass}
         />
-        <div className="mt-2 flex flex-wrap gap-2">
-        </div>
         <p className="mt-1.5 flex flex-wrap items-center justify-between gap-2 text-xs">
           <span className={titleOk ? "text-success" : "text-warning"}>
             {titleOk ? t("ok") : t("over")}

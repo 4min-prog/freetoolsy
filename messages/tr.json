@@ -5870,6 +5870,7 @@
       "note": "Test, yazdığınız anda tamamen tarayıcınızda çalışır."
     },
     "whitespaceCleaner": {
+      "placeholder": "Fazla boşluk veya satır sonu içeren metni yapıştırın",
       "modeLabel": "Temizleme seçenekleri",
       "modeTrim": "Satırları kırp",
       "modeSpaces": "Ardışık boşlukları tek boşluğa indir",
@@ -7219,6 +7220,8 @@
       "tip": "Anahtar sözcük metnin üzerinde tekrarlanır ve her harfi kaydırır. Türkçe alfabe desteklenir; diğer karakterler değişmez."
     },
     "punctuationRemover": {
+      "copied": "Kopyalandı",
+      "copy": "Kopyala",
       "inputLabel": "Giriş metni",
       "inputPlaceholder": "Noktalamalı metni yapıştırın...",
       "outputLabel": "Temiz metin",
@@ -7336,6 +7339,7 @@
       "tip": "Sitemap, arama motorlarının sayfalarınızı daha hızlı bulmasını sağlar. URL sayısı 50.000, dosya boyutu 50 MB altında kalsın; Google Search Console'a gönderin."
     },
     "emailValidator": {
+      "placeholder": "Her satıra bir e-posta adresi ekleyin",
       "emails": "E-posta adresleri (virgül veya satır ile ayırın)",
       "valid": "Geçerli",
       "invalid": "Geçersiz",
@@ -7343,6 +7347,7 @@
       "tip": "Bu araç yalnızca format ve üst düzey alan adını kontrol eder. Bir adresin gerçekten var olduğunu veya mail aldığını doğrulayamaz."
     },
     "wordScrambler": {
+      "placeholder": "Karıştırılacak kelimeleri yazın",
       "inputLabel": "Metniniz",
       "modeEdges": "İlk ve son harfi koru",
       "modeFull": "Tam karıştır",
@@ -7361,6 +7366,7 @@
       "tip": "Her satır tek bir boşluksuz hashtag olur. Kopyalama, tüm etiketleri boşlukla ayrılmış şekilde bir araya getirir ve paylaşıma hazır hale getirir."
     },
     "acronymGenerator": {
+      "placeholder": "Bir ifade yazın, örn. Hypertext Markup Language",
       "phraseLabel": "Kelime grubu",
       "dots": "Harfler arasına nokta koy",
       "copy": "Kopyala",
@@ -7471,6 +7477,7 @@
       "tip": "Kaçışla işaretleme, tırnakları ve ters bölü işaretlerini dönüştürür; böylece dize JSON ve JavaScript kaynak kodu içinde geçerli olur."
     },
     "emojiRemover": {
+      "placeholder": "Emoji içeren metni yapıştırın",
       "inputLabel": "Emoji içeren metin",
       "outputLabel": "Temizlenmiş metin",
       "copy": "Kopyala",
@@ -7480,6 +7487,7 @@
       "tip": "Araç emojileri ve yaygın süsleyici sembolleri kaldırır. Tüm işlem tarayıcınızda yerel olarak gerçekleşir."
     },
     "readingTimeCalculator": {
+      "placeholder": "Okuma süresini görmek için metin yazın veya yapıştırın",
       "inputLabel": "Metniniz",
       "wpmLabel": "Okuma hızı (dakikada kelime)",
       "words": "Kelime",

@@ -190,9 +190,6 @@ export default function BodyFatCalculator() {
         </div>
       </div>
 
-      <div className="mt-2 flex flex-wrap gap-2">
-      </div>
-
       <p className="mt-3 text-xs leading-relaxed text-muted">{t("note")}</p>
 
       {result ? (
