@@ -96,9 +96,22 @@ export default function TextExtractor() {
 
   return (
     <div>
-      <label htmlFor="ext-metin" className="block text-sm font-medium text-text">
-        {t("inputLabel")}
-      </label>
+      <div className="flex items-center justify-between gap-3">
+        <label htmlFor="ext-metin" className="block text-sm font-medium text-text">
+          {t("inputLabel")}
+        </label>
+        <button
+          type="button"
+          onClick={() => {
+            setText("");
+            setCopied(false);
+          }}
+          disabled={!text}
+          className="shrink-0 rounded-lg border border-border bg-surface px-4 py-2 text-xs min-h-10 font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-40"
+        >
+          {t("clear")}
+        </button>
+      </div>
       <textarea
         id="ext-metin"
         value={text}

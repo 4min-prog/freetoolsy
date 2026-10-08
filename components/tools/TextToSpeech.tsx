@@ -154,6 +154,17 @@ export default function TextToSpeech() {
         >
           {t("stop")}
         </button>
+        <button
+          type="button"
+          onClick={() => {
+            stop();
+            setText("");
+          }}
+          disabled={!text}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {t("clear")}
+        </button>
       </div>
 
       <p className="mt-4 text-xs leading-relaxed text-muted">{t("tip")}</p>

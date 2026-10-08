@@ -1,5 +1,7 @@
 "use client";
 
+import { showToast } from "@/lib/toast";
+
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 
@@ -15,6 +17,7 @@ export default function WordFrequencyCounter() {
   const [input, setInput] = useState("");
   const [entries, setEntries] = useState<Entry[]>([]);
   const [excludeStopwords, setExcludeStopwords] = useState(true);
+  const [copied, setCopied] = useState(false);
   const t = useTranslations("comp.wordFrequencyCounter");
 
   function analyze() {
@@ -35,6 +38,20 @@ export default function WordFrequencyCounter() {
   }
 
   const totalWords = Array.from(entries).reduce((sum, entry) => sum + entry.count, 0);
+
+  async function copyResults() {
+    if (!entries.length) return;
+    try {
+      await navigator.clipboard.writeText(
+        entries.map((entry) => `${entry.word}: ${entry.count}`).join("\n")
+      );
+      setCopied(true);
+      showToast();
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      setCopied(false);
+    }
+  }
 
   return (
     <div>
@@ -62,7 +79,7 @@ export default function WordFrequencyCounter() {
         {t("excludeStopwords")}
       </label>
 
-      <div className="mt-4">
+      <div className="mt-4 flex flex-wrap gap-2">
         <button
           type="button"
           onClick={analyze}
@@ -71,12 +88,31 @@ export default function WordFrequencyCounter() {
         >
           {t("analyze")}
         </button>
+        <button
+          type="button"
+          onClick={() => {
+            setInput("");
+            setEntries([]);
+            setCopied(false);
+          }}
+          disabled={!input && !entries.length}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {t("clear")}
+        </button>
       </div>
 
       {entries.length > 0 ? (
         <div className="mt-6 overflow-hidden rounded-lg border border-border">
-          <div className="bg-surface-2 px-3 py-2 text-sm text-muted">
-            {t("results", { count: entries.length, total: totalWords })}
+          <div className="flex items-center justify-between gap-2 bg-surface-2 px-3 py-2 text-sm text-muted">
+            <span>{t("results", { count: entries.length, total: totalWords })}</span>
+            <button
+              type="button"
+              onClick={copyResults}
+              className="shrink-0 rounded-lg border border-border bg-surface px-3 py-1 text-xs font-medium text-muted transition-colors hover:border-strong hover:text-text"
+            >
+              {copied ? t("copied") : t("copy")}
+            </button>
           </div>
           <table className="w-full text-left text-sm">
             <thead className="bg-bg text-xs text-muted">

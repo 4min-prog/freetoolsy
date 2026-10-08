@@ -170,14 +170,29 @@ export default function Md5FileChecksum() {
                   {digest || "…"}
                 </p>
               )}
-              <button
-                type="button"
-                onClick={copy}
-                disabled={!canCopy}
-                className="shrink-0 rounded-lg border border-border bg-surface px-4 py-2 text-xs min-h-10 font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
-              >
-                {copied ? t("copied") : t("copy")}
-              </button>
+              <span className="flex shrink-0 gap-2">
+                <button
+                  type="button"
+                  onClick={copy}
+                  disabled={!canCopy}
+                  className="shrink-0 rounded-lg border border-border bg-surface px-4 py-2 text-xs min-h-10 font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+                >
+                  {copied ? t("copied") : t("copy")}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setFileName("");
+                    setSizeText("");
+                    setDigest("");
+                    setCopied(false);
+                  }}
+                  disabled={hashing}
+                  className="shrink-0 rounded-lg border border-border bg-surface px-4 py-2 text-xs min-h-10 font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+                >
+                  {t("clear")}
+                </button>
+              </span>
             </div>
           </div>
         </div>

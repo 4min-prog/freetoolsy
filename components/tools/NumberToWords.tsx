@@ -1,5 +1,7 @@
 "use client";
 
+import { showToast } from "@/lib/toast";
+
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 
@@ -147,6 +149,7 @@ const MAX_VALUE = 999_000_000_000_000;
 
 export default function NumberToWords() {
   const [input, setInput] = useState("");
+  const [copied, setCopied] = useState<"tr" | "en" | null>(null);
   const t = useTranslations("comp.numberToWords");
 
   const parsed = Number(input.trim());
@@ -160,11 +163,37 @@ export default function NumberToWords() {
   const turkish = useMemo(() => (valid ? trBlock(parsed) : ""), [valid, parsed]);
   const english = useMemo(() => (valid ? enBlock(parsed) : ""), [valid, parsed]);
 
+  async function copyResult(which: "tr" | "en") {
+    const value = which === "tr" ? turkish : english;
+    if (!value) return;
+    try {
+      await navigator.clipboard.writeText(value);
+      setCopied(which);
+      showToast();
+      setTimeout(() => setCopied(null), 1500);
+    } catch {
+      setCopied(null);
+    }
+  }
+
   return (
     <div>
-      <label htmlFor="ntw-input" className="block text-sm font-medium text-text">
-        {t("number")}
-      </label>
+      <div className="flex items-center justify-between gap-3">
+        <label htmlFor="ntw-input" className="block text-sm font-medium text-text">
+          {t("number")}
+        </label>
+        <button
+          type="button"
+          onClick={() => {
+            setInput("");
+            setCopied(null);
+          }}
+          disabled={!input}
+          className="shrink-0 rounded-lg border border-border bg-surface px-4 py-2 text-xs min-h-10 font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-40"
+        >
+          {t("clear")}
+        </button>
+      </div>
       <input
         id="ntw-input"
         type="text"
@@ -178,13 +207,31 @@ export default function NumberToWords() {
       {valid ? (
         <div className="mt-6 grid gap-3 sm:grid-cols-2">
           <div className="rounded-lg border border-border bg-surface p-3">
-            <p className="text-xs text-muted">{t("turkish")}</p>
+            <div className="flex items-center justify-between gap-2">
+              <p className="text-xs text-muted">{t("turkish")}</p>
+              <button
+                type="button"
+                onClick={() => copyResult("tr")}
+                className="shrink-0 rounded-lg border border-border bg-bg px-2.5 py-1 text-xs font-medium text-muted transition-colors hover:border-strong hover:text-text"
+              >
+                {copied === "tr" ? t("copied") : t("copy")}
+              </button>
+            </div>
             <p className="mt-1 text-base font-medium leading-snug text-text">
               {turkish}
             </p>
           </div>
           <div className="rounded-lg border border-border bg-surface p-3">
-            <p className="text-xs text-muted">{t("english")}</p>
+            <div className="flex items-center justify-between gap-2">
+              <p className="text-xs text-muted">{t("english")}</p>
+              <button
+                type="button"
+                onClick={() => copyResult("en")}
+                className="shrink-0 rounded-lg border border-border bg-bg px-2.5 py-1 text-xs font-medium text-muted transition-colors hover:border-strong hover:text-text"
+              >
+                {copied === "en" ? t("copied") : t("copy")}
+              </button>
+            </div>
             <p className="mt-1 text-base font-medium leading-snug text-text">
               {english}
             </p>

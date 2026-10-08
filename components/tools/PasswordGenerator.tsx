@@ -218,13 +218,26 @@ export default function PasswordGenerator() {
         </ol>
       )}
 
-      <button
-        type="button"
-        onClick={regenerate}
-        className="mt-4 w-full rounded-lg bg-accent px-4 py-2.5 text-sm font-medium text-on-accent transition-opacity hover:opacity-90"
-      >
-        {count > 1 ? t("generateMany", { count }) : t("generate")}
-      </button>
+      <div className="mt-4 flex flex-wrap gap-2">
+        <button
+          type="button"
+          onClick={regenerate}
+          className="flex-1 rounded-lg bg-accent px-4 py-2.5 text-sm font-medium text-on-accent transition-opacity hover:opacity-90"
+        >
+          {count > 1 ? t("generateMany", { count }) : t("generate")}
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            setLength(16);
+            setEnabled(["lower", "upper", "digits", "symbols"]);
+            setCount(1);
+          }}
+          className="rounded-lg border border-border bg-surface px-4 py-2.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text"
+        >
+          {t("clear")}
+        </button>
+      </div>
     </div>
   );
 }

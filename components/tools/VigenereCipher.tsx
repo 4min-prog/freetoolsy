@@ -102,14 +102,28 @@ export default function VigenereCipher() {
           <label htmlFor="vc-output" className="block text-xs font-medium text-muted">
             {t("outputLabel")}
           </label>
-          <button
-            type="button"
-            onClick={copyOutput}
-            disabled={!output}
-            className="rounded-md border border-border px-3 py-1 text-xs text-muted transition-colors hover:border-foreground hover:text-foreground disabled:opacity-40"
-          >
-            {copied ? t("copied") : t("copy")}
-          </button>
+          <span className="flex flex-wrap gap-2">
+            <button
+              type="button"
+              onClick={copyOutput}
+              disabled={!output}
+              className="rounded-md border border-border px-3 py-1 text-xs text-muted transition-colors hover:border-foreground hover:text-foreground disabled:opacity-40"
+            >
+              {copied ? t("copied") : t("copy")}
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setInput("");
+                setKey("");
+                setCopied(false);
+              }}
+              disabled={!input && !key}
+              className="rounded-md border border-border px-3 py-1 text-xs text-muted transition-colors hover:border-foreground hover:text-foreground disabled:opacity-40"
+            >
+              {t("clear")}
+            </button>
+          </span>
         </div>
         <textarea
           id="vc-output"

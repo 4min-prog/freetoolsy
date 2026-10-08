@@ -5571,7 +5571,8 @@
       "weak": "Weak",
       "medium": "Medium",
       "strong": "Strong",
-      "veryStrong": "Very strong"
+      "veryStrong": "Very strong",
+      "clear": "Clear"
     },
     "urlEncoder": {
       "input": "Input",
@@ -5936,7 +5937,8 @@
       "generate": "Generate",
       "outputLabel": "Output",
       "copy": "Copy",
-      "copied": "Copied!"
+      "copied": "Copied!",
+      "clear": "Clear"
     },
     "tipCalculator": {
       "billLabel": "Bill amount (₺)",
@@ -6061,7 +6063,8 @@
       "hashing": "Hashing…",
       "copy": "Copy",
       "copied": "Copied!",
-      "tip": "The result is computed entirely in your browser; the file is never sent anywhere."
+      "tip": "The result is computed entirely in your browser; the file is never sent anywhere.",
+      "clear": "Clear"
     },
     "slugGenerator": {
       "label": "Text to convert",
@@ -6881,7 +6884,8 @@
       "copyAll": "Copy all",
       "copy": "Copy",
       "copied": "Copied",
-      "tip": "Extraction happens only in your browser. Phone numbers use a common international pattern, so unusual formats may be skipped."
+      "tip": "Extraction happens only in your browser. Phone numbers use a common international pattern, so unusual formats may be skipped.",
+      "clear": "Clear"
     },
     "cssGradientGenerator": {
       "colorA": "First color",
@@ -6924,7 +6928,8 @@
       "speak": "Speak",
       "restart": "Restart",
       "stop": "Stop",
-      "tip": "Text is read aloud by your browser's built-in speech engine. Nothing is uploaded to a server, so your text stays on your device."
+      "tip": "Text is read aloud by your browser's built-in speech engine. Nothing is uploaded to a server, so your text stays on your device.",
+      "clear": "Clear"
     },
     "pomodoroTimer": {
       "phase": "Phase",
@@ -6995,7 +7000,8 @@
       "copy": "Copy",
       "copied": "Copied!",
       "removeScripts": "Skip script and style blocks",
-      "tip": "Markup is stripped locally using the browser's own HTML parser. Line breaks from the source are kept and extra blank lines are collapsed."
+      "tip": "Markup is stripped locally using the browser's own HTML parser. Line breaks from the source are kept and extra blank lines are collapsed.",
+      "clear": "Clear"
     },
     "chmodCalculator": {
       "target": "Group",
@@ -7035,7 +7041,10 @@
       "results": "{count} unique words · {total} total",
       "wordCol": "Word",
       "countCol": "Count",
-      "tip": "The top 40 most frequent words are listed. Turkish letters are supported and punctuation is ignored."
+      "tip": "The top 40 most frequent words are listed. Turkish letters are supported and punctuation is ignored.",
+      "clear": "Clear",
+      "copy": "Copy",
+      "copied": "Copied"
     },
     "primeFactorsCalculator": {
       "inputLabel": "Number",
@@ -7217,7 +7226,8 @@
       "outputPlaceholder": "The result appears here.",
       "copy": "Copy",
       "copied": "Copied!",
-      "tip": "The keyword repeats over the text and shifts each letter. The Turkish alphabet is supported; other characters stay unchanged."
+      "tip": "The keyword repeats over the text and shifts each letter. The Turkish alphabet is supported; other characters stay unchanged.",
+      "clear": "Clear"
     },
     "punctuationRemover": {
       "copied": "Copied",
@@ -7316,7 +7326,10 @@
       "turkish": "Turkish",
       "english": "English",
       "invalid": "Enter a whole number between 0 and 999 trillion.",
-      "tip": "Supports whole numbers up to 999 trillion. For fractional amounts, convert the integer part first."
+      "tip": "Supports whole numbers up to 999 trillion. For fractional amounts, convert the integer part first.",
+      "clear": "Clear",
+      "copy": "Copy",
+      "copied": "Copied"
     },
     "imageRotator": {
       "upload": "Upload an image",
@@ -7363,7 +7376,8 @@
       "copy": "Copy",
       "copied": "Copied!",
       "empty": "Type one phrase or keyword per line.",
-      "tip": "Each line becomes a single space-free hashtag. Copying puts all tags together separated by spaces, ready to paste into a post."
+      "tip": "Each line becomes a single space-free hashtag. Copying puts all tags together separated by spaces, ready to paste into a post.",
+      "clear": "Clear"
     },
     "acronymGenerator": {
       "placeholder": "Type a phrase, e.g. Hypertext Markup Language",

@@ -5571,7 +5571,8 @@
       "weak": "Zayıf",
       "medium": "Orta",
       "strong": "Güçlü",
-      "veryStrong": "Çok güçlü"
+      "veryStrong": "Çok güçlü",
+      "clear": "Temizle"
     },
     "urlEncoder": {
       "input": "Girdi",
@@ -5936,7 +5937,8 @@
       "generate": "Üret",
       "outputLabel": "Çıktı",
       "copy": "Kopyala",
-      "copied": "Kopyalandı!"
+      "copied": "Kopyalandı!",
+      "clear": "Temizle"
     },
     "tipCalculator": {
       "billLabel": "Hesap tutarı (₺)",
@@ -6061,7 +6063,8 @@
       "hashing": "Hesaplanıyor…",
       "copy": "Kopyala",
       "copied": "Kopyalandı!",
-      "tip": "Sonuç tamamen tarayıcınızda hesaplanır; dosya hiçbir yere gönderilmez."
+      "tip": "Sonuç tamamen tarayıcınızda hesaplanır; dosya hiçbir yere gönderilmez.",
+      "clear": "Temizle"
     },
     "slugGenerator": {
       "label": "Dönüştürülecek metin",
@@ -6881,7 +6884,8 @@
       "copyAll": "Tümünü kopyala",
       "copy": "Kopyala",
       "copied": "Kopyalandı",
-      "tip": "Çıkarma işlemi yalnızca tarayıcınızda yapılır. Telefon numaraları yaygın uluslararası biçime göre eşleştirilir; alışılmadık biçimler atlanabilir."
+      "tip": "Çıkarma işlemi yalnızca tarayıcınızda yapılır. Telefon numaraları yaygın uluslararası biçime göre eşleştirilir; alışılmadık biçimler atlanabilir.",
+      "clear": "Temizle"
     },
     "cssGradientGenerator": {
       "colorA": "Birinci renk",
@@ -6924,7 +6928,8 @@
       "speak": "Konuş",
       "restart": "Yeniden Başlat",
       "stop": "Durdur",
-      "tip": "Metin, tarayıcınızın yerleşik ses motoruyla yüksek sesle okunur. Hiçbir şey sunucuya yüklenmez, bu yüzden metniniz cihazınızda kalır."
+      "tip": "Metin, tarayıcınızın yerleşik ses motoruyla yüksek sesle okunur. Hiçbir şey sunucuya yüklenmez, bu yüzden metniniz cihazınızda kalır.",
+      "clear": "Temizle"
     },
     "pomodoroTimer": {
       "phase": "Aşama",
@@ -6995,7 +7000,8 @@
       "copy": "Kopyala",
       "copied": "Kopyalandı!",
       "removeScripts": "Script ve style bloklarını atla",
-      "tip": "İşaretlemeler tarayıcının kendi HTML çözümleyicisiyle yerel olarak temizlenir. Kaynaktaki satır sonları korunur, fazla boş satırlar sadeleştirilir."
+      "tip": "İşaretlemeler tarayıcının kendi HTML çözümleyicisiyle yerel olarak temizlenir. Kaynaktaki satır sonları korunur, fazla boş satırlar sadeleştirilir.",
+      "clear": "Temizle"
     },
     "chmodCalculator": {
       "target": "Grup",
@@ -7035,7 +7041,10 @@
       "results": "{count} eşsiz kelime · {total} toplam",
       "wordCol": "Kelime",
       "countCol": "Sayı",
-      "tip": "En sık kullanılan 40 kelime listelenir. Türkçe harfler desteklenir, noktalama yok sayılır."
+      "tip": "En sık kullanılan 40 kelime listelenir. Türkçe harfler desteklenir, noktalama yok sayılır.",
+      "clear": "Temizle",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı"
     },
     "primeFactorsCalculator": {
       "inputLabel": "Sayı",
@@ -7217,7 +7226,8 @@
       "outputPlaceholder": "Sonuç burada görünür.",
       "copy": "Kopyala",
       "copied": "Kopyalandı!",
-      "tip": "Anahtar sözcük metnin üzerinde tekrarlanır ve her harfi kaydırır. Türkçe alfabe desteklenir; diğer karakterler değişmez."
+      "tip": "Anahtar sözcük metnin üzerinde tekrarlanır ve her harfi kaydırır. Türkçe alfabe desteklenir; diğer karakterler değişmez.",
+      "clear": "Temizle"
     },
     "punctuationRemover": {
       "copied": "Kopyalandı",
@@ -7316,7 +7326,10 @@
       "turkish": "Türkçe",
       "english": "İngilizce",
       "invalid": "0 ile 999 trilyon arasında tam bir sayı girin.",
-      "tip": "999 trilyona kadar tam sayıları destekler. Ondalıklı tutarlarda önce tam kısmı çevirin."
+      "tip": "999 trilyona kadar tam sayıları destekler. Ondalıklı tutarlarda önce tam kısmı çevirin.",
+      "clear": "Temizle",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı"
     },
     "imageRotator": {
       "upload": "Görsel yükle",
@@ -7363,7 +7376,8 @@
       "copy": "Kopyala",
       "copied": "Kopyalandı!",
       "empty": "Her satıra bir cümle veya anahtar kelime yazın.",
-      "tip": "Her satır tek bir boşluksuz hashtag olur. Kopyalama, tüm etiketleri boşlukla ayrılmış şekilde bir araya getirir ve paylaşıma hazır hale getirir."
+      "tip": "Her satır tek bir boşluksuz hashtag olur. Kopyalama, tüm etiketleri boşlukla ayrılmış şekilde bir araya getirir ve paylaşıma hazır hale getirir.",
+      "clear": "Temizle"
     },
     "acronymGenerator": {
       "placeholder": "Bir ifade yazın, örn. Hypertext Markup Language",

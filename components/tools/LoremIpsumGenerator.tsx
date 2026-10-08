@@ -130,14 +130,27 @@ export default function LoremIpsumGenerator() {
           <label htmlFor="lorem-cikti" className="text-sm font-medium text-text">
             {t("outputLabel")}
           </label>
-          <button
-            type="button"
-            onClick={copy}
-            disabled={!output}
-            className="rounded-lg border border-border bg-surface px-4 py-2 text-xs min-h-10 font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-40"
-          >
-            {copied ? t("copied") : t("copy")}
-          </button>
+          <div className="flex flex-wrap gap-2">
+            <button
+              type="button"
+              onClick={copy}
+              disabled={!output}
+              className="rounded-lg border border-border bg-surface px-4 py-2 text-xs min-h-10 font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-40"
+            >
+              {copied ? t("copied") : t("copy")}
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setOutput("");
+                setCopied(false);
+              }}
+              disabled={!output}
+              className="rounded-lg border border-border bg-surface px-4 py-2 text-xs min-h-10 font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-40"
+            >
+              {t("clear")}
+            </button>
+          </div>
         </div>
         <textarea
           id="lorem-cikti"
