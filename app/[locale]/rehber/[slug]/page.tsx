@@ -86,7 +86,7 @@ export default async function RehberDetay({
             "@type": "Organization",
             name: "FreetoolsY",
             url: siteUrl,
-            logo: { "@type": "ImageObject", url: `${siteUrl}/icon.svg` },
+            logo: { "@type": "ImageObject", url: `${siteUrl}/favicon-180.png` },
           },
         }}
       />
