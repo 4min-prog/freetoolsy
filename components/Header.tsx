@@ -189,7 +189,7 @@ export default function Header() {
             <Logo />
           </Link>
 
-          <nav className="hidden flex-1 items-center lg:flex">
+          <nav className="hidden flex-1 items-center justify-center lg:flex">
             {categories.map((category) => (
               <div
                 key={category.id}
@@ -221,7 +221,7 @@ export default function Header() {
                 >
                   <CategoryIcon
                     id={category.id}
-                    className={`h-4 w-4 shrink-0 ${categoryTheme(category.id).iconText}`}
+                    className={`h-5 w-5 shrink-0 ${categoryTheme(category.id).iconText}`}
                   />
                   {tc(category.id)}
                   <svg

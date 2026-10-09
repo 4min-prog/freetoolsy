@@ -29,7 +29,7 @@ export default async function Footer() {
 
   return (
     <footer className="mt-auto border-t border-border bg-surface">
-      <div className="mx-auto grid w-full max-w-5xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-[1fr_auto] md:items-start md:justify-between">
+      <div className="mx-auto grid w-full max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-[1fr_auto] md:items-start md:justify-between">
         <div className="flex flex-col gap-3">
           <Link href="/" className="flex items-center">
             <Logo />
@@ -154,7 +154,7 @@ export default async function Footer() {
           </div>
         </nav>
       </div>
-      <div className="mx-auto w-full max-w-5xl px-4 pb-28 pt-2 sm:px-6 sm:pb-10">
+      <div className="mx-auto w-full max-w-7xl px-4 pb-28 pt-2 sm:px-6 sm:pb-10">
         <Label>{t("tools")}</Label>
         <ul className="mt-6 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
           {categories.map((category) => {
@@ -195,7 +195,7 @@ export default async function Footer() {
         </ul>
       </div>
       <div className="border-t border-border">
-        <p className="mx-auto w-full max-w-5xl px-4 py-4 text-xs text-muted sm:px-6">
+        <p className="mx-auto w-full max-w-7xl px-4 py-4 text-xs text-muted sm:px-6">
           {t("rights")}
         </p>
       </div>

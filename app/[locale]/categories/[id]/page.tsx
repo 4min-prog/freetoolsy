@@ -127,7 +127,7 @@ export default async function CategoryPage({
   const homeUrl = localizedUrl(locale, "/");
 
   return (
-    <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-10 sm:px-6 sm:py-14">
+    <main className="mx-auto w-full max-w-7xl flex-1 px-4 py-10 sm:px-6 sm:py-14">
       <JsonLd
         data={[
           {
@@ -200,6 +200,36 @@ export default async function CategoryPage({
         </span>
         <span className="text-text">{tc(category.id)}</span>
       </nav>
+
+      <div className="lg:mt-8 lg:grid lg:grid-cols-[16rem_minmax(0,1fr)] lg:items-start lg:gap-8">
+        <aside className="lg:sticky lg:top-24">
+          <ul className="flex flex-wrap gap-2 lg:flex-col lg:gap-1">
+            {categories.map((item) => {
+              const itemTheme = categoryTheme(item.id);
+              const active = item.id === category.id;
+              return (
+                <li key={item.id}>
+                  <Link
+                    href={categoryPath(locale, item.id)}
+                    className={`flex items-center gap-2 rounded-lg border px-3 py-2 text-sm transition-colors ${
+                      active
+                        ? "border-accent/40 bg-accent/10 font-medium text-accent"
+                        : "border-border bg-bg text-muted hover:border-accent/40 hover:text-accent"
+                    }`}
+                  >
+                    <CategoryIcon
+                      id={item.id}
+                      className={`h-4 w-4 ${itemTheme.iconText}`}
+                    />
+                    {tc(item.id)}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </aside>
+
+        <div className="mt-8 lg:mt-0">
 
       <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-2">
         <span
@@ -329,6 +359,8 @@ export default async function CategoryPage({
       >
         {t("ctaAllTools", { count: displayToolCount(tools.length) })}
       </Link>
+        </div>
+      </div>
     </main>
   );
 }

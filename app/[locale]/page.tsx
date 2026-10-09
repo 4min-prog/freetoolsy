@@ -87,7 +87,7 @@ export default async function Home({ params }: { params: { locale: string } }) {
     }));
 
   return (
-    <main className="mx-auto w-full max-w-5xl flex-1 px-4 sm:px-6">
+    <main className="mx-auto w-full max-w-7xl flex-1 px-4 sm:px-6">
       <JsonLd
         data={[
           {
@@ -231,7 +231,7 @@ export default async function Home({ params }: { params: { locale: string } }) {
       </section>
 
       <section aria-label={t("valueLabel")} className="border-y border-border bg-surface">
-        <ul className="mx-auto grid w-full max-w-5xl grid-cols-2 gap-px bg-border lg:grid-cols-4">
+        <ul className="mx-auto grid w-full max-w-7xl grid-cols-2 gap-px bg-border lg:grid-cols-4">
           {[
             {
               label: t("valueNoSignup.label"),

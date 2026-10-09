@@ -65,7 +65,7 @@ export default function CookieBanner({
           aria-label={t("title")}
           className="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-bg/95 backdrop-blur"
         >
-          <div className="mx-auto flex w-full max-w-5xl flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+          <div className="mx-auto flex w-full max-w-7xl flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6">
             <p className="text-sm leading-relaxed text-muted">{t("text")}</p>
             <div className="flex shrink-0 gap-2">
               <button

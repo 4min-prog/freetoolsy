@@ -1,10 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { useTranslations } from "next-intl";
 
 export default function Logo({ size = "md" }: { size?: "md" | "lg" }) {
-  const t = useTranslations("Brand");
   const icon = size === "lg" ? "h-12 w-12" : "h-11 w-11";
 
   return (
@@ -25,13 +23,12 @@ export default function Logo({ size = "md" }: { size?: "md" | "lg" }) {
           priority={false}
         />
       </span>
-      <span className="hidden leading-tight min-[420px]:block">
-        <span className="block text-[15px] tracking-tight">
-          <span className="font-semibold text-text">freetools</span>
-          <span className="font-extrabold text-accent">Y</span>
+      <span className="hidden leading-none min-[420px]:block">
+        <span className="block text-[13px] font-semibold uppercase tracking-[0.08em] text-text">
+          free
         </span>
-        <span className="hidden text-[9px] font-medium uppercase tracking-[0.18em] text-faint sm:block">
-          {t("tagline")}
+        <span className="mt-1 block text-[13px] font-extrabold uppercase tracking-[0.08em] text-accent">
+          toolsY
         </span>
       </span>
     </span>

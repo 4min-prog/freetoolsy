@@ -46,7 +46,7 @@ export default async function RehberIndex({ params }: { params: { locale: string
   const t = await getTranslations("Rehber");
 
   return (
-    <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-10 sm:px-6 sm:py-14">
+    <main className="mx-auto w-full max-w-7xl flex-1 px-4 py-10 sm:px-6 sm:py-14">
       <h1 className="max-w-[22ch] text-3xl font-semibold leading-tight tracking-tight text-text sm:text-4xl">
         {t("title")}
       </h1>
@@ -54,7 +54,7 @@ export default async function RehberIndex({ params }: { params: { locale: string
         {t("pageDesc")}
       </p>
 
-      <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+      <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {guides.map((guide) => {
           const content = guide.content[locale];
           return (
