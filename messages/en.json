@@ -6977,12 +6977,18 @@
       "romanLabel": "Roman numeral",
       "rangeHint": "Numbers from 1 to 3999 are supported.",
       "invalidRoman": "Not a valid Roman numeral.",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
       "tip": "Conversion is live in both directions. Type a number to get its Roman form, or type a Roman numeral like MCMLIV to read it as a number."
     },
     "temperatureConverter": {
       "celsius": "Celsius (°C)",
       "fahrenheit": "Fahrenheit (°F)",
       "kelvin": "Kelvin (K)",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
       "tip": "Type a value in any of the three rows and the other two update instantly. Decimals are supported and results are rounded to six digits."
     },
     "calculator": {
@@ -7011,6 +7017,9 @@
       "owner": "Owner",
       "group": "Group",
       "others": "Others",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
       "tip": "The number updates as you tick boxes: read = 4, write = 2, execute = 1. Use the presets to apply common modes such as 755 or 644."
     },
     "diceRoller": {
@@ -7021,6 +7030,9 @@
       "rollCol": "Roll",
       "resultCol": "Result",
       "totalCol": "Total",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
       "tip": "Rolls are produced locally and fairly: every side has an equal chance. History keeps the last 20 throws."
     },
     "coinFlipper": {
@@ -7031,6 +7043,9 @@
       "headsCount": "Heads",
       "tailsCount": "Tails",
       "streak": "Longest streak",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
       "tip": "Each flip is independent with a 50% chance either way. Counts, streaks and the last throws update in real time."
     },
     "wordFrequencyCounter": {
@@ -7058,6 +7073,9 @@
       "degrees": "Degrees (°)",
       "radians": "Radians (rad)",
       "gradians": "Gradians (grad)",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
       "tip": "Type a value into any field and the others update instantly. This tool rounds results to eight decimal places for readability."
     },
     "dataSizeConverter": {
@@ -7069,6 +7087,9 @@
       "unitCol": "Unit",
       "sizeCol": "Size",
       "source": "source",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
       "tip": "Decimal base matches drive capacities; binary base matches how many operating systems count memory and files."
     },
     "fibonacciGenerator": {
@@ -7158,6 +7179,9 @@
       "units_vw": "Viewport width (vw)",
       "units_vh": "Viewport height (vh)",
       "invalid": "Enter a valid value, base size and viewport dimensions.",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
       "tip": "rem and em use the base font size; vw and vh use the viewport. Adjust them to match your design system."
     },
     "cssTriangleGenerator": {
@@ -7298,7 +7322,10 @@
         "As I see it, yes",
         "You may rely on it"
       ],
-      "tip": "The ball picks one answer at random from the classic set. Use it for fun and quick decisions only."
+      "tip": "The ball picks one answer at random from the classic set. Use it for fun and quick decisions only.",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear"
     },
     "fuelCostCalculator": {
       "distance": "Distance (km)",
@@ -7395,6 +7422,10 @@
       "notPalindrome": "This is not a palindrome.",
       "reversed": "Reversed:",
       "empty": "Type some text to check it.",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
+      "chars": "{count} characters",
       "tip": "Try classic examples like racecar or a man, a plan, a canal, panama."
     },
     "httpStatusCodes": {

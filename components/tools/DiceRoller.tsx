@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { showToast } from "@/lib/toast";
 
 type Roll = { values: number[]; total: number; id: number };
 
@@ -9,7 +10,21 @@ export default function DiceRoller() {
   const [count, setCount] = useState("2");
   const [sides, setSides] = useState("6");
   const [history, setHistory] = useState<Roll[]>([]);
+  const [copied, setCopied] = useState(false);
   const t = useTranslations("comp.diceRoller");
+
+  async function copyLatest() {
+    const latest = history[0];
+    if (!latest) return;
+    try {
+      await navigator.clipboard.writeText(`${latest.values.join(" · ")} = ${latest.total}`);
+      setCopied(true);
+      showToast();
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      setCopied(false);
+    }
+  }
 
   function roll() {
     const dice = Math.min(Math.max(Number(count) || 1, 1), 12);
@@ -80,6 +95,25 @@ export default function DiceRoller() {
           <p className="mt-3 text-center text-sm text-muted">
             {t("total")}: <span className="font-semibold text-text">{history[0].total}</span>
           </p>
+          <div className="mt-3 flex justify-center gap-2">
+            <button
+              type="button"
+              onClick={copyLatest}
+              className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text"
+            >
+              {copied ? t("copied") : t("copy")}
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setHistory([]);
+                setCopied(false);
+              }}
+              className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text"
+            >
+              {t("clear")}
+            </button>
+          </div>
         </div>
       ) : null}
 

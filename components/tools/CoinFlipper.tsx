@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { showToast } from "@/lib/toast";
 
 type Side = "heads" | "tails";
 
@@ -19,7 +20,21 @@ function longestStreak(history: Side[]): number {
 
 export default function CoinFlipper() {
   const [history, setHistory] = useState<Side[]>([]);
+  const [copied, setCopied] = useState(false);
   const t = useTranslations("comp.coinFlipper");
+
+  async function copyLast() {
+    const last = history[0];
+    if (!last) return;
+    try {
+      await navigator.clipboard.writeText(last === "heads" ? t("heads") : t("tails"));
+      setCopied(true);
+      showToast();
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      setCopied(false);
+    }
+  }
 
   function flip() {
     const result: Side = Math.random() < 0.5 ? "heads" : "tails";
@@ -51,6 +66,28 @@ export default function CoinFlipper() {
       >
         {t("flip")}
       </button>
+
+      <div className="mt-3 flex gap-2">
+        <button
+          type="button"
+          onClick={copyLast}
+          disabled={!history[0]}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {copied ? t("copied") : t("copy")}
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            setHistory([]);
+            setCopied(false);
+          }}
+          disabled={history.length === 0}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {t("clear")}
+        </button>
+      </div>
 
       {history.length > 0 ? (
         <div className="mt-6 w-full max-w-sm">

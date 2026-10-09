@@ -6977,12 +6977,18 @@
       "romanLabel": "Roma rakamı",
       "rangeHint": "1 ile 3999 arasındaki sayılar desteklenir.",
       "invalidRoman": "Geçerli bir Roma rakamı değil.",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "tip": "Dönüşüm her iki yönde anlıktır. Sayı yazın Roma biçimini görün ya da MCMLIV gibi bir Roma rakamı yazıp sayı olarak okuyun."
     },
     "temperatureConverter": {
       "celsius": "Celsius (°C)",
       "fahrenheit": "Fahrenheit (°F)",
       "kelvin": "Kelvin (K)",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "tip": "Üç satırdan herhangi birine değer yazın, diğer ikisi anında güncellensin. Ondalıklı değerler desteklenir; sonuçlar altı haneye yuvarlanır."
     },
     "calculator": {
@@ -7011,6 +7017,9 @@
       "owner": "Sahip",
       "group": "Grup",
       "others": "Diğerleri",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "tip": "Kutuları işaretledikçe sayı güncellenir: okuma = 4, yazma = 2, çalıştırma = 1. Hazır düğmelerle 755 veya 644 gibi yaygın modları uygulayın."
     },
     "diceRoller": {
@@ -7021,6 +7030,9 @@
       "rollCol": "Atış",
       "resultCol": "Sonuç",
       "totalCol": "Toplam",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "tip": "Atışlar yerel ve adil üretilir: her yüzün eşit şansı vardır. Geçmiş son 20 atışı tutar."
     },
     "coinFlipper": {
@@ -7031,6 +7043,9 @@
       "headsCount": "Yazı",
       "tailsCount": "Tura",
       "streak": "En uzun seri",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "tip": "Her atış bağımsızdır ve iki yönün de %50 şansı vardır. Sayımlar, seriler ve son atışlar gerçek zamanlı güncellenir."
     },
     "wordFrequencyCounter": {
@@ -7058,6 +7073,9 @@
       "degrees": "Derece (°)",
       "radians": "Radyan (rad)",
       "gradians": "Grad (grad)",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "tip": "Herhangi bir alana değer yazın, diğerleri anında güncellensin. Araç sonuçları okunabilirlik için sekiz ondalık basamağa yuvarlar."
     },
     "dataSizeConverter": {
@@ -7069,6 +7087,9 @@
       "unitCol": "Birim",
       "sizeCol": "Boyut",
       "source": "kaynak",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "tip": "Ondalık taban disk kapasitelerine uyar; ikili taban birçok işletim sisteminin bellek ve dosya sayımıyla eşleşir."
     },
     "fibonacciGenerator": {
@@ -7158,6 +7179,9 @@
       "units_vw": "Görünüm genişliği (vw)",
       "units_vh": "Görünüm yüksekliği (vh)",
       "invalid": "Geçerli bir değer, taban boyut ve görünüm boyutu girin.",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "tip": "rem ve em taban yazı boyutunu; vw ve vh görünüm alanını kullanır. Tasarım sisteminize göre ayarlayın."
     },
     "cssTriangleGenerator": {
@@ -7298,7 +7322,10 @@
         "Gördüğüm kadarıyla evet",
         "Güvenebilirsin"
       ],
-      "tip": "Top, klasik setten rastgele bir cevap seçer. Sadece eğlence ve hızlı kararlar için kullanın."
+      "tip": "Top, klasik setten rastgele bir cevap seçer. Sadece eğlence ve hızlı kararlar için kullanın.",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle"
     },
     "fuelCostCalculator": {
       "distance": "Mesafe (km)",
@@ -7395,6 +7422,10 @@
       "notPalindrome": "Bu bir palindrom değildir.",
       "reversed": "Tersinden okunuşu:",
       "empty": "Kontrol etmek için bir metin yazın.",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
+      "chars": "{count} karakter",
       "tip": "trablusgirgınsualbarı gibi klasik örnekleri deneyin."
     },
     "httpStatusCodes": {

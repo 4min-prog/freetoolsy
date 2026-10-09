@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { showToast } from "@/lib/toast";
 
 type Perm = { read: boolean; write: boolean; execute: boolean };
 type Preset = [boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean, boolean];
@@ -35,6 +36,7 @@ export default function ChmodCalculator() {
     { read: true, write: false, execute: true },
     { read: true, write: false, execute: false },
   ]);
+  const [copied, setCopied] = useState(false);
   const t = useTranslations("comp.chmodCalculator");
 
   function toggle(groupIndex: number, perm: keyof Perm) {
@@ -57,7 +59,20 @@ export default function ChmodCalculator() {
   const textValue = symbolic(groups);
 
   function handleCopy() {
-    navigator.clipboard.writeText(String(numericValue)).catch(() => undefined);
+    if (typeof window === "undefined" || !navigator.clipboard) return;
+    navigator.clipboard
+      .writeText(String(numericValue))
+      .then(() => {
+        setCopied(true);
+        showToast();
+        setTimeout(() => setCopied(false), 1500);
+      })
+      .catch(() => undefined);
+  }
+
+  function handleReset() {
+    applyPreset(PRESETS[1][1]);
+    setCopied(false);
   }
 
   const groupLabels = [t("owner"), t("group"), t("others")];
@@ -107,6 +122,13 @@ export default function ChmodCalculator() {
           {numericValue}
         </button>
         <span className="text-lg font-medium tabular-nums text-text">{textValue}</span>
+        <button
+          type="button"
+          onClick={handleCopy}
+          className="rounded-lg border border-border bg-surface px-4 py-2 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text"
+        >
+          {copied ? t("copied") : t("copy")}
+        </button>
       </div>
 
       <div className="mt-4 flex flex-wrap gap-2">
@@ -120,6 +142,13 @@ export default function ChmodCalculator() {
             chmod {label}
           </button>
         ))}
+        <button
+          type="button"
+          onClick={handleReset}
+          className="rounded-lg border border-border bg-surface px-3 py-1.5 text-sm font-medium text-muted transition-colors hover:border-accent hover:text-text"
+        >
+          {t("clear")}
+        </button>
       </div>
 
       <p className="mt-4 text-xs leading-relaxed text-muted">{t("tip")}</p>

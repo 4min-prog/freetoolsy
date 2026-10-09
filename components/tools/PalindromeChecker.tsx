@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import { showToast } from "@/lib/toast";
 
 function normalize(value: string, ignore: boolean): string {
   const text = value.toLowerCase();
@@ -26,7 +27,25 @@ function normalize(value: string, ignore: boolean): string {
 export default function PalindromeChecker() {
   const [text, setText] = useState("");
   const [ignore, setIgnore] = useState(true);
+  const [copied, setCopied] = useState(false);
   const t = useTranslations("comp.palindromeChecker");
+
+  async function copy() {
+    if (!text) return;
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopied(true);
+      showToast();
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      setCopied(false);
+    }
+  }
+
+  function clearAll() {
+    setText("");
+    setCopied(false);
+  }
 
   const normalized = normalize(text, ignore);
   const reversed = useMemo(
@@ -49,6 +68,7 @@ export default function PalindromeChecker() {
         onChange={(event) => setText(event.target.value)}
         className="mt-2 h-32 w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-sm text-text focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
       />
+      <p className="mt-1 text-right text-xs text-muted">{t("chars", { count: text.length })}</p>
 
       <label className="mt-4 flex items-center gap-2 text-sm text-muted">
         <input
@@ -85,6 +105,25 @@ export default function PalindromeChecker() {
           {t("empty")}
         </p>
       )}
+
+      {text.length > 0 ? (
+        <div className="mt-3 flex gap-2">
+          <button
+            type="button"
+            onClick={copy}
+            className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text"
+          >
+            {copied ? t("copied") : t("copy")}
+          </button>
+          <button
+            type="button"
+            onClick={clearAll}
+            className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text"
+          >
+            {t("clear")}
+          </button>
+        </div>
+      ) : null}
 
       <p className="mt-4 text-xs leading-relaxed text-muted">{t("tip")}</p>
     </div>

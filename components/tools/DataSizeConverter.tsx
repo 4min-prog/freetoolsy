@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { showToast } from "@/lib/toast";
 
 const UNITS = ["B", "KB", "MB", "GB", "TB"] as const;
 type UnitName = (typeof UNITS)[number];
@@ -15,7 +16,19 @@ export default function DataSizeConverter() {
   const [raw, setRaw] = useState("");
   const [unit, setUnit] = useState<UnitName>("MB");
   const [base, setBase] = useState<"1000" | "1024">("1000");
+  const [copied, setCopied] = useState<number | null>(null);
   const t = useTranslations("comp.dataSizeConverter");
+
+  async function copy(value: string, index: number) {
+    try {
+      await navigator.clipboard.writeText(value);
+      setCopied(index);
+      showToast();
+      setTimeout(() => setCopied(null), 1500);
+    } catch {
+      setCopied(null);
+    }
+  }
 
   const parsed = Number(raw);
   const valid = /^[0-9]*\.?[0-9]+$/.test(raw.trim()) && Number.isFinite(parsed);
@@ -96,8 +109,17 @@ export default function DataSizeConverter() {
                       <span className="ml-2 text-xs text-accent">{t("source")}</span>
                     ) : null}
                   </td>
-                  <td className="px-3 py-1.5 text-right tabular-nums text-muted">
-                    {formatNumber(row.size)}
+                  <td className="px-3 py-1.5 text-right tabular-nums">
+                    <div className="flex items-center justify-end gap-2">
+                      <span className="text-muted">{formatNumber(row.size)}</span>
+                      <button
+                        type="button"
+                        onClick={() => copy(`${formatNumber(row.size)} ${row.name}`, index)}
+                        className="text-xs font-medium text-muted transition-colors hover:text-text"
+                      >
+                        {copied === index ? t("copied") : t("copy")}
+                      </button>
+                    </div>
                   </td>
                 </tr>
               ))}
@@ -105,6 +127,20 @@ export default function DataSizeConverter() {
           </table>
         </div>
       ) : null}
+
+      <div className="mt-4 flex justify-end">
+        <button
+          type="button"
+          onClick={() => {
+            setRaw("");
+            setCopied(null);
+          }}
+          disabled={!raw.trim()}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {t("clear")}
+        </button>
+      </div>
 
       <p className="mt-4 text-xs leading-relaxed text-muted">{t("tip")}</p>
     </div>

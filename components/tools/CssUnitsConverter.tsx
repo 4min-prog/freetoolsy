@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import { showToast } from "@/lib/toast";
 
 const UNITS = ["px", "rem", "em", "%", "vw", "vh"] as const;
 type Unit = (typeof UNITS)[number];
@@ -31,7 +32,19 @@ export default function CssUnitsConverter() {
   const [baseSize, setBaseSize] = useState("16");
   const [viewportW, setViewportW] = useState("1920");
   const [viewportH, setViewportH] = useState("1080");
+  const [copied, setCopied] = useState<number | null>(null);
   const t = useTranslations("comp.cssUnitsConverter");
+
+  async function copy(value: string, index: number) {
+    try {
+      await navigator.clipboard.writeText(value);
+      setCopied(index);
+      showToast();
+      setTimeout(() => setCopied(null), 1500);
+    } catch {
+      setCopied(null);
+    }
+  }
 
   const result = useMemo(() => {
     const value = toNumber(raw);
@@ -166,8 +179,24 @@ export default function CssUnitsConverter() {
                       <span className="ml-2 text-xs text-accent">{t("source")}</span>
                     ) : null}
                   </td>
-                  <td className="px-3 py-1.5 text-right tabular-nums text-muted">
-                    {formatValue(unit === "%" ? result.percent : unit === "vw" ? result.vw : unit === "vh" ? result.vh : result[unit])} {unit}
+                  <td className="px-3 py-1.5 text-right tabular-nums">
+                    <div className="flex items-center justify-end gap-2">
+                      <span className="text-muted">
+                        {formatValue(unit === "%" ? result.percent : unit === "vw" ? result.vw : unit === "vh" ? result.vh : result[unit])} {unit}
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() =>
+                          copy(
+                            `${formatValue(unit === "%" ? result.percent : unit === "vw" ? result.vw : unit === "vh" ? result.vh : result[unit])} ${unit}`,
+                            UNITS.indexOf(unit)
+                          )
+                        }
+                        className="text-xs font-medium text-muted transition-colors hover:text-text"
+                      >
+                        {copied === UNITS.indexOf(unit) ? t("copied") : t("copy")}
+                      </button>
+                    </div>
                   </td>
                 </tr>
               ))}
@@ -177,6 +206,20 @@ export default function CssUnitsConverter() {
       ) : (
         <p className="mt-6 text-sm text-muted">{t("invalid")}</p>
       )}
+
+      <div className="mt-4 flex justify-end">
+        <button
+          type="button"
+          onClick={() => {
+            setRaw("");
+            setCopied(null);
+          }}
+          disabled={raw === ""}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {t("clear")}
+        </button>
+      </div>
 
       <p className="mt-4 text-xs leading-relaxed text-muted">{t("tip")}</p>
     </div>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { showToast } from "@/lib/toast";
 
 const ROMAN_SYMBOLS: [number, string][] = [
   [1000, "M"],
@@ -63,7 +64,27 @@ export default function RomanNumeralConverter() {
   const [decimal, setDecimal] = useState("");
   const [roman, setRoman] = useState("");
   const [error, setError] = useState("");
+  const [copied, setCopied] = useState(false);
   const t = useTranslations("comp.romanNumeralConverter");
+
+  async function copyRoman() {
+    if (!roman) return;
+    try {
+      await navigator.clipboard.writeText(roman);
+      setCopied(true);
+      showToast();
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      setCopied(false);
+    }
+  }
+
+  function clearAll() {
+    setDecimal("");
+    setRoman("");
+    setError("");
+    setCopied(false);
+  }
 
   function updateFromDecimal(value: string) {
     if (value === "") {
@@ -139,6 +160,26 @@ export default function RomanNumeralConverter() {
         <p className="mt-3 text-sm text-muted">
           {decimal} = <span className="font-semibold text-accent">{roman}</span>
         </p>
+      ) : null}
+
+      {decimal || roman ? (
+        <div className="mt-4 flex gap-2">
+          <button
+            type="button"
+            onClick={copyRoman}
+            disabled={!roman}
+            className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+          >
+            {copied ? t("copied") : t("copy")}
+          </button>
+          <button
+            type="button"
+            onClick={clearAll}
+            className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text"
+          >
+            {t("clear")}
+          </button>
+        </div>
       ) : null}
 
       <p className="mt-4 text-xs leading-relaxed text-muted">{t("tip")}</p>

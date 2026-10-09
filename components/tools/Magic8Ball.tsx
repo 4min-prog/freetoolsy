@@ -2,11 +2,31 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { showToast } from "@/lib/toast";
 
 export default function Magic8Ball() {
   const [answer, setAnswer] = useState("");
   const [count, setCount] = useState(0);
+  const [copied, setCopied] = useState(false);
   const t = useTranslations("comp.magic8Ball");
+
+  async function copyAnswer() {
+    if (!answer) return;
+    try {
+      await navigator.clipboard.writeText(answer);
+      setCopied(true);
+      showToast();
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      setCopied(false);
+    }
+  }
+
+  function clearAll() {
+    setAnswer("");
+    setCount(0);
+    setCopied(false);
+  }
 
   const answers = (t.raw("answers") as unknown as string[]) ?? [];
 
@@ -34,6 +54,25 @@ export default function Magic8Ball() {
       >
         {t("shake")}
       </button>
+
+      <div className="mt-3 flex gap-2">
+        <button
+          type="button"
+          onClick={copyAnswer}
+          disabled={!answer}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {copied ? t("copied") : t("copy")}
+        </button>
+        <button
+          type="button"
+          onClick={clearAll}
+          disabled={count === 0}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {t("clear")}
+        </button>
+      </div>
 
       {count > 0 ? (
         <p className="mt-3 text-sm text-muted">{t("asked", { count })}</p>
