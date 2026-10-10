@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
+import { showToast } from "@/lib/toast";
 
 const BASE32 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567";
 
@@ -41,6 +42,7 @@ export default function TotpGenerator() {
   const [secret, setSecret] = useState("");
   const [code, setCode] = useState("------");
   const [remaining, setRemaining] = useState(0);
+  const [copied, setCopied] = useState(false);
   const t = useTranslations("comp.totpGenerator");
 
   useEffect(() => {
@@ -84,6 +86,23 @@ export default function TotpGenerator() {
       clearInterval(timer);
     };
   }, [secret]);
+
+  async function copyCode() {
+    if (code === "------") return;
+    try {
+      await navigator.clipboard.writeText(code);
+      setCopied(true);
+      showToast();
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      setCopied(false);
+    }
+  }
+
+  function clear() {
+    setSecret("");
+    setCopied(false);
+  }
 
   const progress = (remaining / 30) * 100;
 
@@ -129,6 +148,25 @@ export default function TotpGenerator() {
           {t("empty")}
         </p>
       )}
+
+      <div className="mt-4 flex flex-wrap justify-end gap-2">
+        <button
+          type="button"
+          onClick={copyCode}
+          disabled={code === "------"}
+          className="rounded-lg bg-accent px-5 py-2.5 text-sm font-medium text-on-accent transition-opacity hover:opacity-90 disabled:opacity-40"
+        >
+          {copied ? t("copied") : t("copy")}
+        </button>
+        <button
+          type="button"
+          onClick={clear}
+          disabled={!secret}
+          className="rounded-lg border border-border bg-surface px-5 py-2.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-40"
+        >
+          {t("clear")}
+        </button>
+      </div>
 
       <p className="mt-4 text-xs leading-relaxed text-muted">{t("tip")}</p>
     </div>

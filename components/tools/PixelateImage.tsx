@@ -56,6 +56,13 @@ export default function PixelateImage() {
     setResultUrl(canvas.toDataURL("image/png"));
   }
 
+  function clear() {
+    setImageUrl(null);
+    setResultUrl("");
+    setReady(false);
+    setPixelSize(12);
+  }
+
   function changeSize(value: number) {
     setPixelSize(value);
     if (ready) pixelate(sourceSize.current.width, sourceSize.current.height, value);
@@ -106,6 +113,13 @@ export default function PixelateImage() {
               {t("download")}
             </a>
           ) : null}
+          <button
+            type="button"
+            onClick={clear}
+            className="rounded-lg border border-border bg-surface px-6 py-2.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text"
+          >
+            {t("clear")}
+          </button>
         </div>
       ) : null}
 

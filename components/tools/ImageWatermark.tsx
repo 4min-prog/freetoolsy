@@ -104,6 +104,15 @@ export default function ImageWatermark() {
     }, 0);
   }
 
+  function clear() {
+    setSource("");
+    setWatermark("");
+    setPosition("bottom-right");
+    setOpacity("70");
+    setOutput("");
+    setError("");
+  }
+
   function download() {
     if (!output) return;
     const link = document.createElement("a");
@@ -178,6 +187,14 @@ export default function ImageWatermark() {
           className="rounded-lg bg-accent px-4 py-1.5 text-sm font-medium text-on-accent transition-opacity hover:opacity-90 disabled:opacity-50"
         >
           {busy ? t("working") : t("apply")}
+        </button>
+      <button
+          type="button"
+          onClick={clear}
+          disabled={!source && !watermark}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {t("clear")}
         </button>
       </div>
 

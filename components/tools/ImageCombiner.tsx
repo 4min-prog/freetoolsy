@@ -59,6 +59,13 @@ export default function ImageCombiner() {
     });
   }
 
+  function clear() {
+    setFirst(null);
+    setSecond(null);
+    setFirstMeta("");
+    setSecondMeta("");
+  }
+
   const slot = (
     meta: string,
     onPick: () => void,
@@ -101,13 +108,20 @@ export default function ImageCombiner() {
       </div>
 
       {first && second ? (
-        <div className="mt-6">
+        <div className="mt-6 flex flex-wrap items-center gap-2">
           <button
             type="button"
             onClick={combine}
             className="rounded-lg bg-accent px-5 py-2.5 text-sm font-medium text-on-accent transition-opacity hover:opacity-90"
           >
             {t("combine")}
+          </button>
+          <button
+            type="button"
+            onClick={clear}
+            className="rounded-lg border border-border bg-surface px-5 py-2.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text"
+          >
+            {t("clear")}
           </button>
         </div>
       ) : (

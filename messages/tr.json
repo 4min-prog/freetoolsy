@@ -6773,7 +6773,8 @@
       "altOverlay": "Kaplama görseli önizlemesi",
       "altResult": "Filigranlı sonuç",
       "download": "Sonucu indir",
-      "note": "Birleştirme tamamen tarayıcınızda olur — görselleriniz asla yüklenmez."
+      "note": "Birleştirme tamamen tarayıcınızda olur — görselleriniz asla yüklenmez.",
+      "clear": "Temizle"
     },
     "jsonLdGenerator": {
       "nameLabel": "Ad",
@@ -7254,6 +7255,7 @@
       "split": "Görseli böl",
       "slicesTitle": "Parçalar",
       "download": "Kaydet",
+      "clear": "Temizle",
       "tip": "Her parça özgün piksellerden kesilir, kalite korunur. 3×3 ızgara standart Instagram profil düzenidir."
     },
     "asciiArtGenerator": {
@@ -7273,6 +7275,7 @@
       "pixelSize": "Piksel blok boyutu",
       "download": "PNG İndir",
       "previewAlt": "Pikselleştirilmiş görsel önizlemesi",
+      "clear": "Temizle",
       "tip": "Düşük boyutlar hafif etki; yüksek boyutlar ağır retro görünüm verir. İndirme, önizleme canvas'ından üretilir."
     },
     "vigenereCipher": {
@@ -7607,6 +7610,9 @@
       "secretPlaceholder": "ör. JBSWY3DPEHPK3PXP",
       "codeLabel": "Güncel kod",
       "empty": "2FA gizli anahtarınızdan en az 10 karakter girin.",
+      "copy": "Kodu kopyala",
+      "copied": "Kopyalandı",
+      "clear": "Temizle",
       "tip": "TOTP (RFC 6238) kodunu Web Crypto API ile yerel olarak hesaplar. Bu sayfada yalnızca güvendiğiniz anahtarları kullanın; hiçbir şey tarayıcınızdan çıkmaz."
     },
     "urlParser": {
@@ -7716,6 +7722,7 @@
       "change": "Değiştir",
       "combine": "Birleştir ve indir",
       "empty": "Yan yana birleştirmek için iki görsel seçin.",
+      "clear": "Temizle",
       "tip": "İki görsel tek bir tuval üzerine çizilir ve tek PNG olarak indirilir. Sonuç, iki yükseklikten uzun olanı kullanır. Hiçbir şey yüklenmez."
     },
     "imageFlipper": {

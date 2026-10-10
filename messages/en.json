@@ -6773,7 +6773,8 @@
       "altOverlay": "Overlay image preview",
       "altResult": "Watermarked result",
       "download": "Download result",
-      "note": "The composition happens entirely in your browser — your images are never uploaded."
+      "note": "The composition happens entirely in your browser — your images are never uploaded.",
+      "clear": "Clear"
     },
     "jsonLdGenerator": {
       "nameLabel": "Name",
@@ -7254,6 +7255,7 @@
       "split": "Split image",
       "slicesTitle": "Slices",
       "download": "Save",
+      "clear": "Clear",
       "tip": "Each slice is cut from the original pixels, so quality is preserved. A 3×3 grid is the standard Instagram profile layout."
     },
     "asciiArtGenerator": {
@@ -7273,6 +7275,7 @@
       "pixelSize": "Pixel block size",
       "download": "Download PNG",
       "previewAlt": "Pixelated image preview",
+      "clear": "Clear",
       "tip": "Low sizes give a subtle effect; high sizes create the heavy retro look. The download is produced from the preview canvas."
     },
     "vigenereCipher": {
@@ -7607,6 +7610,9 @@
       "secretPlaceholder": "e.g. JBSWY3DPEHPK3PXP",
       "codeLabel": "Current code",
       "empty": "Enter at least 10 characters from your 2FA secret key.",
+      "copy": "Copy code",
+      "copied": "Copied",
+      "clear": "Clear",
       "tip": "Computes a TOTP (RFC 6238) code locally with the Web Crypto API. Only use keys you trust on this page, although nothing leaves your browser."
     },
     "urlParser": {
@@ -7716,6 +7722,7 @@
       "change": "Change",
       "combine": "Combine and download",
       "empty": "Pick two images to combine them side by side.",
+      "clear": "Clear",
       "tip": "Both images are drawn onto one canvas and downloaded as a single PNG. The result uses the taller of the two heights. Nothing is uploaded."
     },
     "imageFlipper": {

@@ -48,6 +48,12 @@ export default function ImageGridSplitter() {
     image.src = imageUrl;
   }
 
+  function clear() {
+    if (imageUrl) URL.revokeObjectURL(imageUrl);
+    setImageUrl(null);
+    setSlices([]);
+  }
+
   return (
     <div>
       <canvas ref={canvasRef} className="hidden" />
@@ -126,6 +132,13 @@ export default function ImageGridSplitter() {
             className="rounded-lg bg-accent px-6 py-2.5 text-sm font-medium text-on-accent transition-opacity hover:opacity-90"
           >
             {t("split")}
+          </button>
+          <button
+            type="button"
+            onClick={clear}
+            className="rounded-lg border border-border bg-surface px-6 py-2.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text"
+          >
+            {t("clear")}
           </button>
         </div>
       ) : null}
