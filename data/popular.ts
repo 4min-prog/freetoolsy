@@ -13,6 +13,7 @@ export const POPULAR_SLUGS: string[] = [
   "percentage-calculator",
   "sha-hash-generator",
   "text-sorter",
+  "remove-bg",
 ];
 
 export function getPopularTools(): Tool[] {
