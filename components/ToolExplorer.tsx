@@ -14,6 +14,8 @@ import {
 import { getNewestTools, getPopularTools } from "@/data/popular";
 import { categoryPath } from "@/lib/paths";
 import type { Locale } from "@/i18n/routing";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 type SortMode = "all" | "popular" | "newest";
 
@@ -298,18 +300,11 @@ export default function ToolExplorer() {
                     <span className="underline decoration-border underline-offset-4 group-hover:decoration-accent">
                       {tf("viewAll")}
                     </span>
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
+                    <FontAwesomeIcon
+                      icon={faArrowRight}
                       aria-hidden="true"
                       className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"
-                    >
-                      <path d="M5 12h14M13 6l6 6-6 6" />
-                    </svg>
+                    />
                   </Link>
                 </div>
                 <div className="mt-5 grid gap-4 sm:grid-cols-2">
@@ -324,18 +319,11 @@ export default function ToolExplorer() {
                       className="group inline-flex min-h-11 items-center gap-2 border border-border px-5 text-sm text-muted transition-colors hover:border-foreground hover:bg-surface-2 hover:text-foreground"
                     >
                       {t("viewAll", { count: categoryTools.length })}
-                      <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
+                      <FontAwesomeIcon
+                        icon={faArrowRight}
                         aria-hidden="true"
                         className="h-4 w-4 transition-transform group-hover:translate-x-0.5"
-                      >
-                        <path d="M5 12h14M13 6l6 6-6 6" />
-                      </svg>
+                      />
                     </Link>
                   </div>
                 )}

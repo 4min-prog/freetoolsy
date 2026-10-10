@@ -10,6 +10,8 @@ import { getTool } from "@/data/tools";
 import { track } from "@/lib/analytics";
 import { toolPath } from "@/lib/paths";
 import type { Locale } from "@/i18n/routing";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 interface ToolMetaNs {
   name?: string;
@@ -90,18 +92,11 @@ export default function PopularStrip() {
                   <span className="relative z-10 font-mono text-[11px] uppercase tracking-[0.18em] text-faint">
                     {tc(tool.category)}
                   </span>
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
+                  <FontAwesomeIcon
+                    icon={faArrowRight}
                     aria-hidden="true"
                     className="relative z-10 h-3.5 w-3.5 shrink-0 text-faint opacity-0 transition-all group-hover:translate-x-0.5 group-hover:text-accent group-hover:opacity-100"
-                  >
-                    <path d="M5 12h14M13 6l6 6-6 6" />
-                  </svg>
+                  />
                 </Link>
               </li>
             );

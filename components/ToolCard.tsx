@@ -7,6 +7,8 @@ import { categoryTheme } from "@/components/categoryTheme";
 import { isToolNew, type Tool } from "@/data/tools";
 import { toolPath } from "@/lib/paths";
 import type { Locale } from "@/i18n/routing";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function ToolCard({ tool }: { tool: Tool }) {
   const t = useTranslations(`ToolMeta.${tool.slug}`);
@@ -39,18 +41,11 @@ export default function ToolCard({ tool }: { tool: Tool }) {
         <h3 className="min-w-0 flex-1 text-[15px] font-medium leading-snug tracking-tight text-foreground">
           {t("name")}
         </h3>
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
+        <FontAwesomeIcon
+          icon={faArrowRight}
           aria-hidden="true"
           className="mt-0.5 h-4 w-4 shrink-0 text-faint opacity-0 transition-all group-hover:translate-x-0.5 group-hover:text-accent group-hover:opacity-100"
-        >
-          <path d="M5 12h14M13 6l6 6-6 6" />
-        </svg>
+        />
         {isNew && (
           <span className="shrink-0 rounded-full bg-accent px-2 py-0.5 text-[11px] font-bold uppercase tracking-wide text-on-accent">
             {tCommon("new")}
