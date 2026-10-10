@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
+import { showToast } from "@/lib/toast";
 
 const QUOTES: Record<string, string[]> = {
   en: [
@@ -38,6 +39,7 @@ export default function RandomQuoteGenerator() {
   const locale = useLocale();
   const t = useTranslations("comp.randomQuoteGenerator");
   const [quote, setQuote] = useState<string | null>(null);
+  const [copied, setCopied] = useState(false);
 
   function next() {
     const list = QUOTES[locale] ?? QUOTES.en;
@@ -47,6 +49,18 @@ export default function RandomQuoteGenerator() {
       index = (index + 1) % list.length;
     }
     setQuote(list[index]);
+  }
+
+  async function copy() {
+    if (!quote) return;
+    try {
+      await navigator.clipboard.writeText(quote);
+      setCopied(true);
+      showToast();
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      setCopied(false);
+    }
   }
 
   return (
@@ -68,6 +82,19 @@ export default function RandomQuoteGenerator() {
           {t("empty")}
         </p>
       )}
+
+      {quote ? (
+        <div className="mt-4 flex justify-end">
+          <button
+            type="button"
+            onClick={copy}
+            disabled={!quote}
+            className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+          >
+            {copied ? t("copied") : t("copy")}
+          </button>
+        </div>
+      ) : null}
 
       <p className="mt-4 text-xs leading-relaxed text-muted">{t("tip")}</p>
     </div>

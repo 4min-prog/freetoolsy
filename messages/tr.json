@@ -6847,7 +6847,9 @@
       "lapCol": "Tur",
       "splitCol": "Bölüm",
       "totalCol": "Toplam",
-      "note": "Zamanlama tamamen bu cihazda çalışır. Zamanlayıcı bitince kısa bir zil çalar."
+      "note": "Zamanlama tamamen bu cihazda çalışır. Zamanlayıcı bitince kısa bir zil çalar.",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!"
     },
     "timeZoneConverter": {
       "field": {
@@ -6945,6 +6947,8 @@
       "pause": "Duraklat",
       "resume": "Devam Et",
       "reset": "Sıfırla",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
       "tip": "Her aşamanın sonunda bir zil çalar ve biten odak bölümleri üstte sayılır. Sayfayı kapatırsanız döngü durur — açık tutarak zamanlamayı koruyabilirsiniz."
     },
     "binaryTextConverter": {
@@ -7185,6 +7189,9 @@
       "accuracy": "Doğruluk",
       "correct": "Doğru karakter",
       "errors": "Hata",
+      "reset": "Sıfırla",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
       "tip": "WPM, doğru karakterlerin dakikada beşe bölümüdür. Hızı artırmadan önce doğruluğu %95'in üzerinde tutmayı hedefleyin."
     },
     "cssUnitsConverter": {
@@ -7234,6 +7241,8 @@
       "reset": "Sıfırla",
       "restart": "Yeniden Başlat",
       "timeUp": "Süre doldu!",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
       "tip": "59 üzeri değerler otomatik kısılır. Durdur, konumunuzu korur; Yeniden Başlat aynı süreyi tekrar çalıştırır."
     },
     "imageGridSplitter": {
@@ -7253,6 +7262,9 @@
       "widthLabel": "Genişlik (karakter)",
       "invert": "Tonları ters çevir",
       "generate": "Üret",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "tip": "Görsel hücre hücre yerel analiz edilir ve bir karakter rampasına eşlenir. Daha büyük genişlik daha fazla detay korur."
     },
     "pixelateImage": {
@@ -7294,6 +7306,9 @@
       "lettersPlaceholder": "Harflerinizi yazın (en fazla 9)...",
       "totalCount": "{count} benzersiz düzenleme.",
       "partial": "İlk {shown} / {total} düzenleme gösteriliyor.",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "tip": "Harflerin her benzersiz permütasyonu alfabetik listelenir. En fazla dokuz harf desteklenir."
     },
     "keywordCombiner": {
@@ -7550,6 +7565,7 @@
       "element": "Element",
       "range": "Tarih aralığı",
       "empty": "Burcu bulmak için bir tarih seçin.",
+      "clear": "Temizle",
       "tip": "Bu yalnızca eğlence amaçlı bir rehberdir: burçlar tropikal zodyaka göre belirlenir, fal anlamı taşımaz."
     },
     "textEscapeUnescape": {
@@ -7726,11 +7742,15 @@
     "jokeGenerator": {
       "generate": "Güldür beni",
       "empty": "Rastgele bir programcı fıkrası için düğmeye basın.",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
       "tip": "Sayfayla gelen özenle seçilmiş programcı fıkraları. Düğme güncel fıkrayı atlar, bu yüzden bir sonraki her zaman tazedir."
     },
     "randomQuoteGenerator": {
       "generate": "Alıntı göster",
       "empty": "Rastgele bir alıntı için düğmeye basın.",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
       "tip": "Sayfayla gelen derlenmiş bir alıntı koleksiyonu. Yeni bir tane için tekrar basın; hiçbir şey cihazınızdan çıkmaz."
     },
     "guessTheNumber": {

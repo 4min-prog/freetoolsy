@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
+import { showToast } from "@/lib/toast";
 
 const EN_TEXT =
   "The quick brown fox jumps over the lazy dog while the wind blows gently through the tall trees. Practice makes perfect, so keep typing without looking at the keyboard and let your fingers find the keys naturally.";
@@ -19,6 +20,7 @@ export default function TypingSpeedTest() {
   const [input, setInput] = useState("");
   const [remaining, setRemaining] = useState<number | null>(null);
   const [result, setResult] = useState<Result | null>(null);
+  const [copied, setCopied] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const startRef = useRef(0);
   const t = useTranslations("comp.typingSpeedTest");
@@ -68,6 +70,31 @@ export default function TypingSpeedTest() {
     setRemaining(0);
     setResult({ wpm, accuracy, correct, errors });
     setInput("");
+  }
+
+  function reset() {
+    if (timerRef.current) clearInterval(timerRef.current);
+    setInput("");
+    setResult(null);
+    setRemaining(null);
+  }
+
+  async function copyResult() {
+    if (!result) return;
+    const value = [
+      `${t("wpm")}: ${result.wpm}`,
+      `${t("accuracy")}: %${result.accuracy}`,
+      `${t("correct")}: ${result.correct}`,
+      `${t("errors")}: ${result.errors}`,
+    ].join("\n");
+    try {
+      await navigator.clipboard.writeText(value);
+      setCopied(true);
+      showToast();
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      setCopied(false);
+    }
   }
 
   return (
@@ -178,6 +205,25 @@ export default function TypingSpeedTest() {
       ) : !running ? (
         <p className="mt-4 text-sm text-muted">{t("readyHint")}</p>
       ) : null}
+
+      <div className="mt-4 flex flex-wrap justify-end gap-2">
+        <button
+          type="button"
+          onClick={copyResult}
+          disabled={!result}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {copied ? t("copied") : t("copy")}
+        </button>
+        <button
+          type="button"
+          onClick={reset}
+          disabled={!result && !running}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {t("reset")}
+        </button>
+      </div>
 
       <p className="mt-4 text-xs leading-relaxed text-muted">{t("tip")}</p>
     </div>

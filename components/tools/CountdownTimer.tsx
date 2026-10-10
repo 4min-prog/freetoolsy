@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
+import { showToast } from "@/lib/toast";
 
 export default function CountdownTimer() {
   const [hours, setHours] = useState("0");
@@ -9,6 +10,7 @@ export default function CountdownTimer() {
   const [seconds, setSeconds] = useState("0");
   const [total, setTotal] = useState<number | null>(null);
   const [remaining, setRemaining] = useState(0);
+  const [copied, setCopied] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const t = useTranslations("comp.countdownTimer");
 
@@ -56,6 +58,17 @@ export default function CountdownTimer() {
     if (timerRef.current) clearInterval(timerRef.current);
     setTotal(null);
     setRemaining(0);
+  }
+
+  async function copy() {
+    try {
+      await navigator.clipboard.writeText(display);
+      setCopied(true);
+      showToast();
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      setCopied(false);
+    }
   }
 
   const display = (() => {
@@ -158,6 +171,17 @@ export default function CountdownTimer() {
             {t("reset")}
           </button>
         ) : null}
+      </div>
+
+      <div className="mt-4 flex justify-end">
+        <button
+          type="button"
+          onClick={copy}
+          disabled={total === null}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {copied ? t("copied") : t("copy")}
+        </button>
       </div>
 
       <p className="mt-4 text-xs leading-relaxed text-muted">{t("tip")}</p>

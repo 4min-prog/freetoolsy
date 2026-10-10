@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import { useTranslations } from "next-intl";
+import { showToast } from "@/lib/toast";
 
 const CHARS = " .:-=+*#%@";
 
@@ -10,6 +11,7 @@ export default function AsciiArtGenerator() {
   const [width, setWidth] = useState("120");
   const [invert, setInvert] = useState(false);
   const [art, setArt] = useState("");
+  const [copied, setCopied] = useState(false);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const t = useTranslations("comp.asciiArtGenerator");
 
@@ -78,6 +80,26 @@ export default function AsciiArtGenerator() {
     }
   }
 
+  async function copy() {
+    if (!art) return;
+    try {
+      await navigator.clipboard.writeText(art);
+      setCopied(true);
+      showToast();
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      setCopied(false);
+    }
+  }
+
+  function clear() {
+    setImageUrl(null);
+    setArt("");
+    setWidth("120");
+    setInvert(false);
+    setCopied(false);
+  }
+
   return (
     <div>
       <canvas ref={canvasRef} className="hidden" />
@@ -134,9 +156,27 @@ export default function AsciiArtGenerator() {
       ) : null}
 
       {art ? (
-        <div className="mt-6 overflow-auto rounded-lg border border-border bg-bg p-3">
-          <pre className="text-[7px] leading-[7px] text-text">{art}</pre>
-        </div>
+        <>
+          <div className="mt-6 flex flex-wrap justify-end gap-2">
+            <button
+              type="button"
+              onClick={copy}
+              className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text"
+            >
+              {copied ? t("copied") : t("copy")}
+            </button>
+            <button
+              type="button"
+              onClick={clear}
+              className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text"
+            >
+              {t("clear")}
+            </button>
+          </div>
+          <div className="mt-6 overflow-auto rounded-lg border border-border bg-bg p-3">
+            <pre className="text-[7px] leading-[7px] text-text">{art}</pre>
+          </div>
+        </>
       ) : null}
 
       <p className="mt-4 text-xs leading-relaxed text-muted">{t("tip")}</p>

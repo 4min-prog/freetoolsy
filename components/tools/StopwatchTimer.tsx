@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
+import { showToast } from "@/lib/toast";
 
 type Mode = "stopwatch" | "timer";
 
@@ -28,6 +29,7 @@ export default function StopwatchTimer() {
   const [minInput, setMinInput] = useState("5");
   const [secInput, setSecInput] = useState("0");
   const [finished, setFinished] = useState(false);
+  const [copied, setCopied] = useState(false);
   const startRef = useRef(0);
   const elapsedRef = useRef(0);
   const lastLapRef = useRef(0);
@@ -112,6 +114,25 @@ export default function StopwatchTimer() {
     setLaps([]);
     lastLapRef.current = 0;
     setFinished(false);
+  }
+
+  async function copy() {
+    const value =
+      laps.length > 0
+        ? laps
+            .map((item, index) =>
+              `${laps.length - index}. ${formatTime(item.split)} / ${formatTime(item.total)}`
+            )
+            .join("\n")
+        : formatTime(displayMs);
+    try {
+      await navigator.clipboard.writeText(value);
+      setCopied(true);
+      showToast();
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      setCopied(false);
+    }
   }
 
   function lap() {
@@ -239,6 +260,14 @@ export default function StopwatchTimer() {
               {t("lap")}
             </button>
           ) : null}
+          <button
+            type="button"
+            onClick={copy}
+            disabled={now === 0 && laps.length === 0}
+            className="rounded-lg border border-border bg-surface px-5 py-2 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+          >
+            {copied ? t("copied") : t("copy")}
+          </button>
         </div>
       </div>
 

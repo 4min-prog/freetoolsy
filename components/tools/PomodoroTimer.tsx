@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
+import { showToast } from "@/lib/toast";
 
 type Phase = "work" | "break";
 
@@ -45,6 +46,7 @@ export default function PomodoroTimer() {
   const [running, setRunning] = useState(false);
   const [elapsed, setElapsed] = useState(0);
   const [sessions, setSessions] = useState(0);
+  const [copied, setCopied] = useState(false);
   const [workInput, setWorkInput] = useState("25");
   const [breakInput, setBreakInput] = useState("5");
   const startRef = useRef(0);
@@ -110,6 +112,17 @@ export default function PomodoroTimer() {
     elapsedRef.current = 0;
     startRef.current = 0;
     setElapsed(0);
+  }
+
+  async function copy() {
+    try {
+      await navigator.clipboard.writeText(formatMs(remaining));
+      setCopied(true);
+      showToast();
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      setCopied(false);
+    }
   }
 
   const remaining = Math.max(totalRef.current - elapsed, 0);
@@ -183,6 +196,13 @@ export default function PomodoroTimer() {
           className="rounded-lg border border-border bg-surface px-5 py-2 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text"
         >
           {t("reset")}
+        </button>
+        <button
+          type="button"
+          onClick={copy}
+          className="rounded-lg border border-border bg-surface px-5 py-2 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text"
+        >
+          {copied ? t("copied") : t("copy")}
         </button>
       </div>
 
