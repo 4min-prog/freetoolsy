@@ -1247,6 +1247,13 @@
       "pageDesc": "Upload an image, choose horizontal or vertical flip and download the mirrored version as a PNG. Mirrors the image exactly like a physical mirror, which is different from rotating it. Useful for design mockups, thumbnails and quick previews. All processing stays on your device.",
       "intro": "Pick an image, choose an axis and download the flipped version."
     },
+    "remove-bg": {
+      "name": "Remove Background",
+      "desc": "Remove an image background by color and download it as transparent PNG.",
+      "title": "Remove Background From Image Online - Free Transparent PNG Maker",
+      "pageDesc": "Upload a photo or graphic, click the background to sample its color and remove it in one click. Adjust the tolerance to fine-tune how much is erased, or use connected-area mode to erase only a single region. The result exports as a transparent PNG. Everything is processed entirely in your browser.",
+      "intro": "Upload an image, pick the background color and download a transparent PNG."
+    },
     "sitemap-url-extractor": {
       "name": "Sitemap URL Extractor",
       "desc": "Pull every URL out of an XML sitemap, count them and copy all at once.",
@@ -4999,6 +5006,16 @@
         "p": "Fixing mirror images from front cameras, preparing thumbnails, duplicating elements for symmetry in mockups, or just changing the look of an asset. The flip controls are instant and the output downloads as a clean PNG."
       }
     ],
+    "remove-bg": [
+      {
+        "h": "How does this background remover work?",
+        "p": "It samples the color behind the subject and makes every pixel close to that color transparent. The tolerance slider controls how close a pixel must be: lower values remove less, higher values remove more."
+      },
+      {
+        "h": "When should I use connected-area mode?",
+        "p": "When the background is not perfectly uniform. Connected mode only removes the region you click that touches the sampled color, so details inside the subject are preserved even when they fall into the same color family."
+      }
+    ],
     "sitemap-url-extractor": [
       {
         "h": "What does the extractor read?",
@@ -7737,6 +7754,24 @@
       "flip": "Flip and download",
       "empty": "Pick an image and choose how to mirror it.",
       "tip": "Mirrors your image left-right or top-bottom and downloads it as PNG. All processing is local."
+    },
+    "removeBg": {
+      "uploadHint": "Click to choose an image",
+      "chosen": "Image ready — click the background and adjust the sliders",
+      "clickHint": "Click any point on the image to sample the background color, or choose one from the color picker below. Matching pixels become transparent.",
+      "seedHint": "Connected mode: click the background region you want removed.",
+      "colorLabel": "Background color",
+      "toleranceLabel": "Tolerance: {value}%",
+      "modeLabel": "Removal mode",
+      "modeGlobal": "By color (whole image)",
+      "modeContiguous": "Connected area only",
+      "previewAlt": "Uploaded image preview",
+      "resultAlt": "Result with transparent background",
+      "download": "Download PNG",
+      "clear": "Clear",
+      "empty": "Adjust the background color and tolerance to preview the result.",
+      "working": "Processing…",
+      "tip": "Removes pixels matching the sampled color and exports a transparent PNG. Works best on uniform backgrounds. Everything is processed locally — nothing is uploaded."
     },
     "sitemapUrlExtractor": {
       "inputLabel": "Sitemap XML",

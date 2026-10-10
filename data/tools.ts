@@ -1177,6 +1177,14 @@ export const tools: Tool[] = [
     addedAt: "2026-09-27",
   },
   {
+    slug: "remove-bg",
+    name: "Arka Plan Kaldırma",
+    category: "image",
+    description:
+      "Görselin arka planını renge göre kaldırır ve şeffaf PNG olarak indirir, tamamen tarayıcıda.",
+    addedAt: "2026-10-10",
+  },
+  {
     slug: "sitemap-url-extractor",
     name: "Site Haritası URL Çıkarıcı",
     category: "seo",

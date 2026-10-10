@@ -154,6 +154,7 @@ const TOOL_COMP_NAMESPACE: Record<string, string> = {
   "joke-generator": "jokeGenerator",
   "random-quote-generator": "randomQuoteGenerator",
   "guess-the-number": "guessTheNumber",
+  "remove-bg": "removeBg",
   "image-compressor": "imageCompressor",
   "image-resizer": "imageResizer",
   "image-converter": "imageConverter",

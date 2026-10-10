@@ -159,6 +159,7 @@ export const toolComponents: Record<string, ComponentType> = {
   "joke-generator": dynamic(() => import("@/components/tools/JokeGenerator")),
   "random-quote-generator": dynamic(() => import("@/components/tools/RandomQuoteGenerator")),
   "guess-the-number": dynamic(() => import("@/components/tools/GuessTheNumber")),
+  "remove-bg": dynamic(() => import("@/components/tools/RemoveBg")),
 };
 
 export const TOOL_COMPONENT_SLUGS = Object.keys(toolComponents);

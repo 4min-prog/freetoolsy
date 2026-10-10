@@ -1247,6 +1247,13 @@
       "pageDesc": "Bir görsel yükleyin, yatay veya dikey çevirmeyi seçin ve aynalanmış halini PNG olarak indirin. Görseli aynı bir ayna gibi çevirir; döndürmekten farklıdır. Tasarım mizanpajları, küçük resimler ve hızlı önizlemeler için kullanışlıdır. Tüm işlem cihazınızda kalır.",
       "intro": "Bir görsel seçin, eksen seçin ve çevrilmiş halini indirin."
     },
+    "remove-bg": {
+      "name": "Arka Plan Kaldırma",
+      "desc": "Görselin arka planını renge göre kaldırır ve şeffaf PNG olarak indirir.",
+      "title": "Görsel Arka Plan Kaldırma - Online Ücretsiz Şeffaf PNG Oluşturucu",
+      "pageDesc": "Bir fotoğraf veya grafik yükleyin, arka plan rengini örneklemek için arka plana tıklayın ve tek tıkla kaldırın. Toleransı ayarlayarak ne kadar silineceğini hassaslaştırın veya yalnızca tek bir bölgeyi silmek için bağlantılı alan modunu kullanın. Sonuç şeffaf PNG olarak dışa aktarılır. Tüm işlem tamamen tarayıcınızda yapılır.",
+      "intro": "Bir görsel yükleyin, arka plan rengini seçin ve şeffaf PNG indirin."
+    },
     "sitemap-url-extractor": {
       "name": "Site Haritası URL Çıkarıcı",
       "desc": "XML site haritasındaki tüm URL'leri çıkarır, sayar ve kopyalamanızı sağlar.",
@@ -4999,6 +5006,16 @@
         "p": "Ön kameralardan gelen ayna görüntülerini düzeltirken, küçük resimler hazırlarken, mizanpajlarda simetri için öğeleri çoğaltırken veya bir varlığın görünümünü değiştirirken kullanın. Çevirme kontrolleri anlıktır ve çıktı temiz bir PNG olarak indirilir."
       }
     ],
+    "remove-bg": [
+      {
+        "h": "Bu arka plan kaldırıcı nasıl çalışır?",
+        "p": "Nesnenin arkasındaki rengi örnekler ve bu renge yakın tüm pikselleri şeffaf yapar. Tolerans kaydırıcısı bir pikselin ne kadar yakın olması gerektiğini kontrol eder: düşük değerler daha az, yüksek değerler daha fazla kaldırır."
+      },
+      {
+        "h": "Bağlantılı alan modunu ne zaman kullanmalıyım?",
+        "p": "Arka plan tamamen tek renkli olmadığında. Bağlantılı mod yalnızca tıkladığınız ve seçilen renge temas eden bölgeyi kaldırır; nesnedeki ayrıntılar aynı renk ailesinde olsa bile korunur."
+      }
+    ],
     "sitemap-url-extractor": [
       {
         "h": "Çıkarıcı neyi okur?",
@@ -7737,6 +7754,24 @@
       "flip": "Çevir ve indir",
       "empty": "Bir görsel seçin ve nasıl aynalanacağını belirleyin.",
       "tip": "Görseli sağ-sol veya üst-alt şeklinde aynalar ve PNG olarak indirir. Tüm işlem yereldir."
+    },
+    "removeBg": {
+      "uploadHint": "Görsel seçmek için tıklayın",
+      "chosen": "Görsel hazır — arka plana tıklayın ve kaydırıcıları ayarlayın",
+      "clickHint": "Arka plan rengini örneklemek için görselde herhangi bir noktaya tıklayın veya aşağıdaki renk seçiciden seçin. Eşleşen pikseller şeffaflaşır.",
+      "seedHint": "Bağlantılı mod: kaldırmak istediğiniz arka plan bölgesine görselde tıklayın.",
+      "colorLabel": "Arka plan rengi",
+      "toleranceLabel": "Tolerans: {value}%",
+      "modeLabel": "Kaldırma modu",
+      "modeGlobal": "Renk eşleştir (tüm görsel)",
+      "modeContiguous": "Yalnızca bağlantılı alan",
+      "previewAlt": "Yüklenen görsel önizlemesi",
+      "resultAlt": "Şeffaf arka planlı sonuç",
+      "download": "PNG İndir",
+      "clear": "Temizle",
+      "empty": "Önizleme için arka plan rengini ve toleransı ayarlayın.",
+      "working": "İşleniyor…",
+      "tip": "Seçilen renge eşleşen pikselleri kaldırır ve şeffaf PNG dışa aktarır. En iyi sonuç tek renkli arka planlarda alınır. Her şey yerelde işlenir — hiçbir şey yüklenmez."
     },
     "sitemapUrlExtractor": {
       "inputLabel": "Site haritası XML",

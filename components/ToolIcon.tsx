@@ -295,6 +295,7 @@ export const TOOL_ICONS: Record<string, IconDefinition> = {
   "joke-generator": faFaceLaughSquint,
   "random-quote-generator": faQuoteRight,
   "guess-the-number": faGamepad,
+  "remove-bg": faWandMagicSparkles,
 };
 
 export default function ToolIcon({
