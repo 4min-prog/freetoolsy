@@ -6787,6 +6787,9 @@
       "note": "Output is ready to paste into your page inside a script tag with LD+JSON type. Overrides defaults to a safe example when a field is empty."
     },
     "hreflangGenerator": {
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
       "urlLabel": "Page URL",
       "langLabel": "Languages",
       "generate": "Generate tags",
@@ -7109,6 +7112,9 @@
       "tip": "Each term is the sum of the two previous ones. Up to 100 terms are generated, along with the total and the final value."
     },
     "mortgageCalculator": {
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
       "priceLabel": "Home price ($)",
       "downLabel": "Down payment ($)",
       "rateLabel": "Interest rate (% per year)",
@@ -7140,6 +7146,9 @@
       "tip": "The duration is the time between the two clock times. Decimal hours are the payroll-friendly format like 8.5 instead of 8:30."
     },
     "incomeTaxCalculator": {
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
       "incomeLabel": "Annual gross income ($)",
       "standardDeduction": "Apply the 2025 standard deduction ($14,600)",
       "taxableIncome": "Taxable income",
@@ -7299,6 +7308,7 @@
       "tip": "Each item in A is paired with every item in B. Skip duplicates in your lists to keep the output useful."
     },
     "titleLengthChecker": {
+      "clear": "Clear",
       "titleLabel": "SEO title",
       "titlePlaceholder": "Paste your title here...",
       "descriptionLabel": "Meta description",
@@ -7356,6 +7366,7 @@
       "tip": "Cost = distance ÷ 100 × consumption × fuel price. Fuel prices vary by station and region, so adjust the price to your local rate."
     },
     "plagiarismChecker": {
+      "clear": "Clear",
       "text1": "Text 1",
       "text2": "Text 2",
       "similarity": "Similarity",
@@ -7489,6 +7500,9 @@
       "tip": "The difference uses calendar days, so leap days and month lengths are taken into account."
     },
     "runningPaceConverter": {
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
       "paceLabel": "Pace per kilometer",
       "minutes": "Minutes",
       "seconds": "Seconds",
@@ -7503,6 +7517,9 @@
       "tip": "A pace of 5:00 per kilometer equals exactly 12 km/h. The marathon distance includes the official race distance of 42.195 km."
     },
     "savingsGoalCalculator": {
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
       "goalLabel": "Goal amount",
       "currentLabel": "Current savings",
       "monthlyLabel": "Monthly saving",
@@ -7629,10 +7646,16 @@
       "tip": "Percentage change equals (new - old) divided by |old| times 100. A positive result means an increase."
     },
     "fuelEconomyCalculator": {
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
       "empty": "Enter a consumption value and pick its unit.",
       "tip": "Compare the three common fuel economy measures: litres per 100 km, miles per US gallon and km per litre."
     },
     "electricityCostCalculator": {
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
       "wattsLabel": "Power (watts)",
       "hoursLabel": "Hours per day",
       "daysLabel": "Days per month",
@@ -7646,6 +7669,9 @@
       "tip": "Consumption = watts divided by 1000 times hours times days. Multiply by your kWh price for the bill estimate."
     },
     "caloriesBurnedCalculator": {
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
       "weightLabel": "Your weight (kg)",
       "minutesLabel": "Duration (minutes)",
       "activityLabel": "Activity",

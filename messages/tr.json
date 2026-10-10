@@ -6787,6 +6787,9 @@
       "note": "Çıktı, LD+JSON türünde bir script etiketi içinde sayfanıza yapıştırılmaya hazırdır. Bir alan boşken güvenli örneğe varsayılan değer kullanılır."
     },
     "hreflangGenerator": {
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "urlLabel": "Sayfa URL'si",
       "langLabel": "Diller",
       "generate": "Etiketleri Üret",
@@ -7109,6 +7112,9 @@
       "tip": "Her terim kendinden önceki iki terimin toplamıdır. Toplam ve son değerle birlikte 100 terime kadar üretilir."
     },
     "mortgageCalculator": {
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "priceLabel": "Konut fiyatı (₺)",
       "downLabel": "Peşinat (₺)",
       "rateLabel": "Faiz oranı (yıllık %)",
@@ -7140,6 +7146,9 @@
       "tip": "Süre, iki saat arasındaki farktır. Ondalık saat; 8:30 yerine 8,5 gibi bordro dostu biçimdir."
     },
     "incomeTaxCalculator": {
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "incomeLabel": "Yıllık brüt gelir (₺)",
       "standardDeduction": "2025 standart kesintisini uygula (14.600$)",
       "taxableIncome": "Vergiye tabi gelir",
@@ -7299,6 +7308,7 @@
       "tip": "A'daki her öğe B'deki her öğeyle eşleştirilir. Çıktıyı kullanışlı tutmak için listelerinizdeki tekrarları çıkarın."
     },
     "titleLengthChecker": {
+      "clear": "Temizle",
       "titleLabel": "SEO başlığı",
       "titlePlaceholder": "Başlığınızı buraya yapıştırın...",
       "descriptionLabel": "Meta açıklama",
@@ -7356,6 +7366,7 @@
       "tip": "Maliyet = mesafe ÷ 100 × tüketim × yakıt fiyatı. Yakıt fiyatı istasyona ve bölgeye göre değişir; fiyatı yerel orana göre ayarlayın."
     },
     "plagiarismChecker": {
+      "clear": "Temizle",
       "text1": "Metin 1",
       "text2": "Metin 2",
       "similarity": "Benzerlik",
@@ -7489,6 +7500,9 @@
       "tip": "Fark takvim günüyle hesaplanır; artık günler ve ay uzunlukları dikkate alınır."
     },
     "runningPaceConverter": {
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "paceLabel": "Km başına tempo",
       "minutes": "Dakika",
       "seconds": "Saniye",
@@ -7503,6 +7517,9 @@
       "tip": "Km başına 5:00 tempo tam olarak 12 km/s hıza eşittir. Maraton mesafesi resmi yarış mesafesi olan 42.195 km'dir."
     },
     "savingsGoalCalculator": {
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "goalLabel": "Hedef tutar",
       "currentLabel": "Mevcut birikim",
       "monthlyLabel": "Aylık birikim",
@@ -7629,10 +7646,16 @@
       "tip": "Yüzde değişim, (yeni - eski) bölü |eski| çarpı 100'e eşittir. Pozitif sonuç artış anlamına gelir."
     },
     "fuelEconomyCalculator": {
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "empty": "Bir tüketim değeri girin ve birimini seçin.",
       "tip": "Üç yaygın yakıt tüketimi birimini karşılaştırın: 100 km'de litre, ABD galonu başına mil ve litre başına km."
     },
     "electricityCostCalculator": {
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "wattsLabel": "Güç (watt)",
       "hoursLabel": "Günde saat",
       "daysLabel": "Ayda gün",
@@ -7646,6 +7669,9 @@
       "tip": "Tüketim = watt bölü 1000 çarpı saat çarpı gün. Fatura tahmini için kWh fiyatınızla çarpın."
     },
     "caloriesBurnedCalculator": {
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "weightLabel": "Kilonuz (kg)",
       "minutesLabel": "Süre (dakika)",
       "activityLabel": "Aktivite",

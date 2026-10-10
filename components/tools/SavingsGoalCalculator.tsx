@@ -2,13 +2,34 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import { showToast } from "@/lib/toast";
 
 export default function SavingsGoalCalculator() {
   const [goal, setGoal] = useState("100000");
   const [current, setCurrent] = useState("15000");
   const [monthly, setMonthly] = useState("2000");
   const [monthsTarget, setMonthsTarget] = useState("36");
+  const [copied, setCopied] = useState(false);
   const t = useTranslations("comp.savingsGoalCalculator");
+
+  async function copy(value: string) {
+    try {
+      await navigator.clipboard.writeText(value);
+      setCopied(true);
+      showToast();
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      setCopied(false);
+    }
+  }
+
+  function clear() {
+    setGoal("");
+    setCurrent("");
+    setMonthly("");
+    setMonthsTarget("");
+    setCopied(false);
+  }
 
   const goalNum = Number(goal) || 0;
   const currentNum = Number(current) || 0;
@@ -123,6 +144,25 @@ export default function SavingsGoalCalculator() {
               : formatMoney(monthlyRequired) + " " + t("perMonth")}
           </p>
         </div>
+      </div>
+
+      <div className="mt-4 flex flex-wrap justify-end gap-2">
+        <button
+          type="button"
+          onClick={() => copy(monthsToGoal === null ? "" : String(monthsToGoal))}
+          disabled={monthsToGoal === null}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {copied ? t("copied") : t("copy")}
+        </button>
+        <button
+          type="button"
+          onClick={clear}
+          disabled={!goal && !current && !monthly && !monthsTarget}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {t("clear")}
+        </button>
       </div>
 
       <p className="mt-4 text-xs leading-relaxed text-muted">{t("tip")}</p>

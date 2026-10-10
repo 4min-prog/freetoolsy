@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import { showToast } from "@/lib/toast";
 
 type AmortRow = {
   month: number;
@@ -24,7 +25,27 @@ export default function MortgageCalculator() {
   const [down, setDown] = useState("70000");
   const [rate, setRate] = useState("6.5");
   const [years, setYears] = useState("30");
+  const [copied, setCopied] = useState(false);
   const t = useTranslations("comp.mortgageCalculator");
+
+  async function copy(value: string) {
+    try {
+      await navigator.clipboard.writeText(value);
+      setCopied(true);
+      showToast();
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      setCopied(false);
+    }
+  }
+
+  function clear() {
+    setPrice("");
+    setDown("");
+    setRate("");
+    setYears("");
+    setCopied(false);
+  }
 
   const result = useMemo(() => {
     const home = toNumber(price);
@@ -176,6 +197,25 @@ export default function MortgageCalculator() {
       ) : (
         <p className="mt-6 text-sm text-muted">{t("invalid")}</p>
       )}
+
+      <div className="mt-4 flex flex-wrap justify-end gap-2">
+        <button
+          type="button"
+          onClick={() => copy(result ? money(result.payment) : "")}
+          disabled={!result}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {copied ? t("copied") : t("copy")}
+        </button>
+        <button
+          type="button"
+          onClick={clear}
+          disabled={!price && !down && !rate && !years}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {t("clear")}
+        </button>
+      </div>
 
       <p className="mt-4 text-xs leading-relaxed text-muted">{t("tip")}</p>
     </div>

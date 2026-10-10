@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { showToast } from "@/lib/toast";
 
 type Unit = "l100" | "mpg" | "kml";
 
@@ -10,7 +11,25 @@ const M_PER_GAL = 1.609344 / 3.785411784;
 export default function FuelEconomyCalculator() {
   const [value, setValue] = useState("");
   const [unit, setUnit] = useState<Unit>("l100");
+  const [copied, setCopied] = useState(false);
   const t = useTranslations("comp.fuelEconomyCalculator");
+
+  async function copy(text: string) {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopied(true);
+      showToast();
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      setCopied(false);
+    }
+  }
+
+  function clear() {
+    setValue("");
+    setUnit("l100");
+    setCopied(false);
+  }
 
   const num = Number(value);
   const valid = value !== "" && !Number.isNaN(num) && num > 0;
@@ -69,6 +88,31 @@ export default function FuelEconomyCalculator() {
           {t("empty")}
         </p>
       )}
+
+      <div className="mt-4 flex flex-wrap justify-end gap-2">
+        <button
+          type="button"
+          onClick={() =>
+            copy(
+              valid
+                ? `${l100.toFixed(2)} L/100km · ${mpg.toFixed(1)} MPG · ${kml.toFixed(2)} km/L`
+                : ""
+            )
+          }
+          disabled={!valid}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {copied ? t("copied") : t("copy")}
+        </button>
+        <button
+          type="button"
+          onClick={clear}
+          disabled={!value && unit === "l100"}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {t("clear")}
+        </button>
+      </div>
 
       <p className="mt-4 text-xs leading-relaxed text-muted">{t("tip")}</p>
     </div>

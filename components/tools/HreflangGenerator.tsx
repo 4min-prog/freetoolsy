@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { showToast } from "@/lib/toast";
 
 const LANGS = [
   "en",
@@ -39,8 +40,28 @@ export default function HreflangGenerator() {
   const [selected, setSelected] = useState<string[]>(["en", "tr"]);
   const [output, setOutput] = useState("");
   const [error, setError] = useState("");
+  const [copied, setCopied] = useState(false);
 
   const t = useTranslations("comp.hreflangGenerator");
+
+  async function copy(value: string) {
+    try {
+      await navigator.clipboard.writeText(value);
+      setCopied(true);
+      showToast();
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      setCopied(false);
+    }
+  }
+
+  function clear() {
+    setUrl("");
+    setSelected(["en", "tr"]);
+    setOutput("");
+    setError("");
+    setCopied(false);
+  }
 
   function toggleLang(lang: string) {
     setSelected((current) =>
@@ -153,6 +174,25 @@ export default function HreflangGenerator() {
           {output}
         </pre>
       ) : null}
+
+      <div className="mt-4 flex flex-wrap justify-end gap-2">
+        <button
+          type="button"
+          onClick={() => copy(output)}
+          disabled={!output}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {copied ? t("copied") : t("copy")}
+        </button>
+        <button
+          type="button"
+          onClick={clear}
+          disabled={!url && !output}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {t("clear")}
+        </button>
+      </div>
 
       <p className="mt-4 text-xs leading-relaxed text-muted">{t("note")}</p>
     </div>

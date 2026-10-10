@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import { showToast } from "@/lib/toast";
 
 function formatTime(seconds: number): string {
   const safe = Math.max(0, Math.round(seconds));
@@ -24,7 +25,25 @@ const DISTANCES_KM = [
 export default function RunningPaceConverter() {
   const [minutes, setMinutes] = useState("5");
   const [seconds, setSeconds] = useState("30");
+  const [copied, setCopied] = useState(false);
   const t = useTranslations("comp.runningPaceConverter");
+
+  async function copy(value: string) {
+    try {
+      await navigator.clipboard.writeText(value);
+      setCopied(true);
+      showToast();
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      setCopied(false);
+    }
+  }
+
+  function clear() {
+    setMinutes("");
+    setSeconds("");
+    setCopied(false);
+  }
 
   const paceSeconds = useMemo(() => {
     const min = Number(minutes) || 0;
@@ -101,6 +120,25 @@ export default function RunningPaceConverter() {
           {t("empty")}
         </p>
       )}
+
+      <div className="mt-4 flex flex-wrap justify-end gap-2">
+        <button
+          type="button"
+          onClick={() => copy(speed === null ? "" : `${speed.toFixed(1)} ${t("kmh")}`)}
+          disabled={speed === null}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {copied ? t("copied") : t("copy")}
+        </button>
+        <button
+          type="button"
+          onClick={clear}
+          disabled={!minutes && !seconds}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {t("clear")}
+        </button>
+      </div>
 
       <p className="mt-4 text-xs leading-relaxed text-muted">{t("tip")}</p>
     </div>

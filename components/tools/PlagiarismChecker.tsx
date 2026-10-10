@@ -34,6 +34,11 @@ export default function PlagiarismChecker() {
   const [text2, setText2] = useState("");
   const t = useTranslations("comp.plagiarismChecker");
 
+  function clear() {
+    setText1("");
+    setText2("");
+  }
+
   const similarity = useMemo(() => diceSimilarity(text1, text2), [text1, text2]);
   const percent = Math.round(similarity * 100);
 
@@ -106,6 +111,17 @@ export default function PlagiarismChecker() {
       ) : (
         <p className="mt-6 text-sm text-muted">{t("waiting")}</p>
       )}
+
+      <div className="mt-4 flex justify-end">
+        <button
+          type="button"
+          onClick={clear}
+          disabled={!text1 && !text2}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {t("clear")}
+        </button>
+      </div>
 
       <p className="mt-4 text-xs leading-relaxed text-muted">{t("tip")}</p>
     </div>
