@@ -37,3 +37,6 @@ next-env.d.ts
 
 # local build logs
 build*.log
+
+# generated at build time (scripts/generate-og-messages.mts)
+/data/og-messages.json
