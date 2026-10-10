@@ -6962,6 +6962,9 @@
       "tip": "Encoding uses UTF-8, so Turkish and emoji characters convert both ways without losing data. Separate 8-bit groups with a space to read binary back as text."
     },
     "creditCardValidator": {
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
       "inputLabel": "Card number",
       "inputPlaceholder": "Enter the card number to check",
       "valid": "This number is structurally valid.",
@@ -7062,6 +7065,9 @@
       "copied": "Copied"
     },
     "primeFactorsCalculator": {
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
       "inputLabel": "Number",
       "rangeHint": "Enter a whole number from 1 to 100,000,000.",
       "resultLabel": "Prime factorization",
@@ -7093,6 +7099,9 @@
       "tip": "Decimal base matches drive capacities; binary base matches how many operating systems count memory and files."
     },
     "fibonacciGenerator": {
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
       "countLabel": "Number of terms",
       "generate": "Generate",
       "sum": "Sum of all terms",
@@ -7118,6 +7127,9 @@
       "tip": "This estimate covers principal and interest only. Taxes, insurance and fees are not included, so treat it as a planning figure."
     },
     "hoursCalculator": {
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
       "startLabel": "Start time",
       "endLabel": "End time",
       "nextDay": "Ends on the next day",
@@ -7141,6 +7153,9 @@
       "tip": "Estimate uses 2025 single-filer brackets and the standard deduction. State tax, FICA and credits are not included."
     },
     "inflationCalculator": {
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
       "amountLabel": "Amount ($)",
       "startYear": "Start year",
       "endYear": "End year",
@@ -7328,6 +7343,9 @@
       "clear": "Clear"
     },
     "fuelCostCalculator": {
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
       "distance": "Distance (km)",
       "consumption": "Consumption (L/100 km)",
       "fuelPrice": "Fuel price",
@@ -7429,6 +7447,9 @@
       "tip": "Try classic examples like racecar or a man, a plan, a canal, panama."
     },
     "httpStatusCodes": {
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
       "searchLabel": "Search status codes",
       "searchPlaceholder": "e.g. 404, redirect, server error",
       "group1xx": "Informational",
@@ -7440,6 +7461,7 @@
       "tip": "Codes in the 4xx range mean a client mistake, while 5xx codes mean the server failed to fulfill the request."
     },
     "csvFormatter": {
+      "clear": "Clear",
       "inputLabel": "CSV data",
       "delimiter": "Delimiter",
       "previewTitle": "Preview",
@@ -7449,6 +7471,9 @@
       "tip": "Quoted fields containing the delimiter are handled correctly. Copying as TSV makes pasting into spreadsheets just work."
     },
     "daysUntilCalculator": {
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
       "startLabel": "Start date",
       "endLabel": "Target date",
       "totalDays": "Total days",
@@ -7591,6 +7616,9 @@
       "tip": "Finds the MIME type for common file extensions or lists which extensions match a type. Covers the most widely used web and media types."
     },
     "percentageChangeCalculator": {
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
       "fromLabel": "From (old value)",
       "toLabel": "To (new value)",
       "increase": "increase",

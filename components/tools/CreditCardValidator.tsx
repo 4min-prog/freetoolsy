@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { showToast } from "@/lib/toast";
 
 const BRAND_RULES: [RegExp, string][] = [
   [/^4[0-9]{12,18}$/, "Visa"],
@@ -40,19 +41,29 @@ function groupDigits(digits: string): string {
 
 export default function CreditCardValidator() {
   const [input, setInput] = useState("");
-  const [checked, setChecked] = useState(false);
-  const [digits, setDigits] = useState("");
+  const [copied, setCopied] = useState(false);
   const t = useTranslations("comp.creditCardValidator");
 
-  function validate() {
-    const cleaned = input.replace(/[\s.-]/g, "");
-    const numeric = /^[0-9]{13,19}$/.test(cleaned);
-    setDigits(cleaned);
-    setChecked(true);
-    return numeric && luhnValid(cleaned);
+  const digits = input.replace(/[\s.-]/g, "");
+  const numeric = /^[0-9]{13,19}$/.test(digits);
+  const isValid = numeric && luhnValid(digits);
+  const grouped = groupDigits(digits);
+
+  async function copy(value: string) {
+    try {
+      await navigator.clipboard.writeText(value);
+      setCopied(true);
+      showToast();
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      setCopied(false);
+    }
   }
 
-  const isValid = checked ? validate() : false;
+  function clear() {
+    setInput("");
+    setCopied(false);
+  }
 
   return (
     <div>
@@ -65,16 +76,13 @@ export default function CreditCardValidator() {
           type="text"
           inputMode="numeric"
           value={input}
-          onChange={(event) => {
-            setInput(event.target.value);
-            setChecked(false);
-          }}
+          onChange={(event) => setInput(event.target.value)}
           placeholder={t("inputPlaceholder")}
           className="mt-2 w-full max-w-md rounded-lg border border-border bg-bg px-3.5 py-2.5 text-sm text-text focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
         />
       </div>
 
-      {checked ? (
+      {numeric ? (
         <div
           className={`mt-5 rounded-lg border p-4 ${
             isValid ? "border-success/40 bg-success/10" : "border-danger/40 bg-danger/10"
@@ -92,12 +100,31 @@ export default function CreditCardValidator() {
                 {t("length")}: {digits.length}
               </li>
               <li>
-                {t("grouped")}: {groupDigits(digits)}
+                {t("grouped")}: {grouped}
               </li>
             </ul>
           ) : null}
         </div>
       ) : null}
+
+      <div className="mt-4 flex flex-wrap justify-end gap-2">
+        <button
+          type="button"
+          onClick={() => copy(grouped)}
+          disabled={!numeric}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {copied ? t("copied") : t("copy")}
+        </button>
+        <button
+          type="button"
+          onClick={clear}
+          disabled={!input}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {t("clear")}
+        </button>
+      </div>
 
       <p className="mt-4 text-xs leading-relaxed text-muted">{t("tip")}</p>
     </div>

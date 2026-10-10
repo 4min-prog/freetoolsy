@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import { showToast } from "@/lib/toast";
 
 type StatusGroup = "1xx" | "2xx" | "3xx" | "4xx" | "5xx";
 
@@ -69,7 +70,23 @@ const GROUP_ORDER: StatusGroup[] = ["1xx", "2xx", "3xx", "4xx", "5xx"];
 
 export default function HttpStatusCodes() {
   const [query, setQuery] = useState("");
+  const [copied, setCopied] = useState<number | null>(null);
   const t = useTranslations("comp.httpStatusCodes");
+
+  async function copy(code: number) {
+    try {
+      await navigator.clipboard.writeText(String(code));
+      setCopied(code);
+      showToast();
+      setTimeout(() => setCopied(null), 1500);
+    } catch {
+      setCopied(null);
+    }
+  }
+
+  function clear() {
+    setQuery("");
+  }
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -89,14 +106,24 @@ export default function HttpStatusCodes() {
       >
         {t("searchLabel")}
       </label>
-      <input
-        id="status-search"
-        type="search"
-        value={query}
-        onChange={(event) => setQuery(event.target.value)}
-        placeholder={t("searchPlaceholder")}
-        className="mt-2 w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-sm text-text focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
-      />
+      <div className="mt-2 flex items-center gap-2">
+        <input
+          id="status-search"
+          type="search"
+          value={query}
+          onChange={(event) => setQuery(event.target.value)}
+          placeholder={t("searchPlaceholder")}
+          className="w-full rounded-lg border border-border bg-bg px-3.5 py-2.5 text-sm text-text focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30"
+        />
+        <button
+          type="button"
+          onClick={clear}
+          disabled={!query}
+          className="shrink-0 rounded-lg border border-border bg-surface px-4 py-2.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {t("clear")}
+        </button>
+      </div>
 
       <div className="mt-6 space-y-5">
         {GROUP_ORDER.map((group) => {
@@ -116,7 +143,14 @@ export default function HttpStatusCodes() {
                     <span className="w-12 shrink-0 font-semibold tabular-nums text-accent">
                       {entry.code}
                     </span>
-                    <span className="text-text">{entry.title}</span>
+                    <span className="flex-1 text-text">{entry.title}</span>
+                    <button
+                      type="button"
+                      onClick={() => copy(entry.code)}
+                      className="shrink-0 text-xs font-medium text-muted transition-colors hover:text-text"
+                    >
+                      {copied === entry.code ? t("copied") : t("copy")}
+                    </button>
                   </li>
                 ))}
               </ul>

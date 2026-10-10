@@ -76,6 +76,12 @@ export default function CsvFormatter() {
     setTimeout(() => setCopied(false), 1400);
   }
 
+  function clear() {
+    setInput("");
+    setDelimiter(",");
+    setCopied(false);
+  }
+
   return (
     <div>
       <label
@@ -153,6 +159,17 @@ export default function CsvFormatter() {
           {t("empty")}
         </p>
       )}
+
+      <div className="mt-4 flex justify-end">
+        <button
+          type="button"
+          onClick={clear}
+          disabled={!input}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {t("clear")}
+        </button>
+      </div>
 
       <p className="mt-4 text-xs leading-relaxed text-muted">{t("tip")}</p>
     </div>

@@ -2,11 +2,30 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { showToast } from "@/lib/toast";
 
 export default function PercentageChangeCalculator() {
   const [from, setFrom] = useState("");
   const [to, setTo] = useState("");
+  const [copied, setCopied] = useState(false);
   const t = useTranslations("comp.percentageChangeCalculator");
+
+  async function copy(value: string) {
+    try {
+      await navigator.clipboard.writeText(value);
+      setCopied(true);
+      showToast();
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      setCopied(false);
+    }
+  }
+
+  function clear() {
+    setFrom("");
+    setTo("");
+    setCopied(false);
+  }
 
   const a = Number(from);
   const b = Number(to);
@@ -88,6 +107,27 @@ export default function PercentageChangeCalculator() {
           {t("empty")}
         </p>
       )}
+
+      <div className="mt-4 flex flex-wrap justify-end gap-2">
+        <button
+          type="button"
+          onClick={() =>
+            copy(change === null ? "" : `${change > 0 ? "+" : ""}${change.toFixed(2)}%`)
+          }
+          disabled={change === null}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {copied ? t("copied") : t("copy")}
+        </button>
+        <button
+          type="button"
+          onClick={clear}
+          disabled={from === "" && to === ""}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {t("clear")}
+        </button>
+      </div>
 
       <p className="mt-4 text-xs leading-relaxed text-muted">{t("tip")}</p>
     </div>

@@ -6962,6 +6962,9 @@
       "tip": "Kodlama UTF-8 kullandığı için Türkçe ve emoji karakterler iki yönde de veri kaybı olmadan dönüşür. Binary'yi metin olarak okumak için 8 bitlik grupları boşlukla ayırın."
     },
     "creditCardValidator": {
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "inputLabel": "Kart numarası",
       "inputPlaceholder": "Denetlenecek kart numarasını girin",
       "valid": "Bu numara yapısal olarak geçerlidir.",
@@ -7062,6 +7065,9 @@
       "copied": "Kopyalandı"
     },
     "primeFactorsCalculator": {
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "inputLabel": "Sayı",
       "rangeHint": "1 ile 100.000.000 arasında bir tam sayı girin.",
       "resultLabel": "Asal çarpanlara ayırma",
@@ -7093,6 +7099,9 @@
       "tip": "Ondalık taban disk kapasitelerine uyar; ikili taban birçok işletim sisteminin bellek ve dosya sayımıyla eşleşir."
     },
     "fibonacciGenerator": {
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "countLabel": "Terim sayısı",
       "generate": "Üret",
       "sum": "Tüm terimlerin toplamı",
@@ -7118,6 +7127,9 @@
       "tip": "Bu tahmin yalnızca anapara ve faizi kapsar. Vergiler, sigorta ve ücretler dahil değildir; planlama değeri olarak düşünün."
     },
     "hoursCalculator": {
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "startLabel": "Başlangıç saati",
       "endLabel": "Bitiş saati",
       "nextDay": "Ertesi gün bitiyor",
@@ -7141,6 +7153,9 @@
       "tip": "Tahmin 2025 tek kişi dilimlerini ve standart kesintiyi kullanır. Eyalet vergisi, FICA ve krediler dahil değildir."
     },
     "inflationCalculator": {
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "amountLabel": "Tutar ($)",
       "startYear": "Başlangıç yılı",
       "endYear": "Bitiş yılı",
@@ -7328,6 +7343,9 @@
       "clear": "Temizle"
     },
     "fuelCostCalculator": {
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "distance": "Mesafe (km)",
       "consumption": "Tüketim (L/100 km)",
       "fuelPrice": "Yakıt fiyatı",
@@ -7429,6 +7447,9 @@
       "tip": "trablusgirgınsualbarı gibi klasik örnekleri deneyin."
     },
     "httpStatusCodes": {
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "searchLabel": "Durum kodlarını ara",
       "searchPlaceholder": "örn. 404, redirect, sunucu hatası",
       "group1xx": "Bilgi",
@@ -7440,6 +7461,7 @@
       "tip": "4xx aralığındaki kodlar bir istemci hatası, 5xx kodları ise sunucunun isteği yerine getiremediği anlamına gelir."
     },
     "csvFormatter": {
+      "clear": "Temizle",
       "inputLabel": "CSV verisi",
       "delimiter": "Ayırıcı",
       "previewTitle": "Önizleme",
@@ -7449,6 +7471,9 @@
       "tip": "Ayırıcı içeren tırnaklı alanlar doğru işlenir. TSV olarak kopyalamak elektronik tabloya yapıştırmayı kolaylaştırır."
     },
     "daysUntilCalculator": {
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "startLabel": "Başlangıç tarihi",
       "endLabel": "Hedef tarih",
       "totalDays": "Toplam gün",
@@ -7591,6 +7616,9 @@
       "tip": "Yaygın dosya uzantılarının MIME türünü bulur veya bir türle eşleşen uzantıları listeler. En sık kullanılan web ve medya türlerini kapsar."
     },
     "percentageChangeCalculator": {
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "clear": "Temizle",
       "fromLabel": "Başlangıç (eski değer)",
       "toLabel": "Sonuç (yeni değer)",
       "increase": "artış",

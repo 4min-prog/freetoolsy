@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import { showToast } from "@/lib/toast";
 
 function dayDiff(from: Date, to: Date): number {
   const msPerDay = 24 * 60 * 60 * 1000;
@@ -18,7 +19,25 @@ function today(): string {
 export default function DaysUntilCalculator() {
   const [start, setStart] = useState(today());
   const [end, setEnd] = useState(today());
+  const [copied, setCopied] = useState(false);
   const t = useTranslations("comp.daysUntilCalculator");
+
+  async function copy(value: string) {
+    try {
+      await navigator.clipboard.writeText(value);
+      setCopied(true);
+      showToast();
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      setCopied(false);
+    }
+  }
+
+  function clear() {
+    setStart("");
+    setEnd("");
+    setCopied(false);
+  }
 
   const totalDays = useMemo(() => {
     const from = new Date(`${start}T00:00:00`);
@@ -95,6 +114,25 @@ export default function DaysUntilCalculator() {
           {t("empty")}
         </p>
       )}
+
+      <div className="mt-4 flex flex-wrap justify-end gap-2">
+        <button
+          type="button"
+          onClick={() => copy(totalDays === null ? "" : String(Math.abs(totalDays)))}
+          disabled={totalDays === null}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {copied ? t("copied") : t("copy")}
+        </button>
+        <button
+          type="button"
+          onClick={clear}
+          disabled={!start && !end}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {t("clear")}
+        </button>
+      </div>
 
       <p className="mt-4 text-xs leading-relaxed text-muted">{t("tip")}</p>
     </div>

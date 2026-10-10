@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import { showToast } from "@/lib/toast";
 
 function toNumber(raw: string): number | null {
   const value = Number(raw.trim());
@@ -12,7 +13,26 @@ export default function FuelCostCalculator() {
   const [distance, setDistance] = useState("");
   const [consumption, setConsumption] = useState("");
   const [price, setPrice] = useState("");
+  const [copied, setCopied] = useState(false);
   const t = useTranslations("comp.fuelCostCalculator");
+
+  async function copy(value: string) {
+    try {
+      await navigator.clipboard.writeText(value);
+      setCopied(true);
+      showToast();
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      setCopied(false);
+    }
+  }
+
+  function clear() {
+    setDistance("");
+    setConsumption("");
+    setPrice("");
+    setCopied(false);
+  }
 
   const result = useMemo(() => {
     const d = toNumber(distance);
@@ -96,6 +116,25 @@ export default function FuelCostCalculator() {
       ) : (
         <p className="mt-6 text-sm text-muted">{t("waiting")}</p>
       )}
+
+      <div className="mt-4 flex flex-wrap justify-end gap-2">
+        <button
+          type="button"
+          onClick={() => copy(result ? String(result.cost) : "")}
+          disabled={result === null}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {copied ? t("copied") : t("copy")}
+        </button>
+        <button
+          type="button"
+          onClick={clear}
+          disabled={!distance && !consumption && !price}
+          className="rounded-lg border border-border bg-surface px-4 py-1.5 text-sm font-medium text-muted transition-colors hover:border-strong hover:text-text disabled:opacity-50"
+        >
+          {t("clear")}
+        </button>
+      </div>
 
       <p className="mt-4 text-xs leading-relaxed text-muted">{t("tip")}</p>
     </div>
