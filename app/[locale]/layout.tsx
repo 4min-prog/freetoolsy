@@ -12,7 +12,6 @@ import Footer from "@/components/Footer";
 import ThemeGuard from "@/components/ThemeGuard";
 import ToastHost from "@/components/ToastHost";
 import PageViewTracker from "@/components/PageViewTracker";
-import AdsterraAds from "@/components/AdsterraAds";
 import CookieBanner from "@/components/CookieBanner";
 import JsonLd from "@/components/JsonLd";
 import { siteUrl } from "@/lib/paths";
@@ -137,9 +136,7 @@ export default async function RootLayout({
           />
           <PageViewTracker />
           <Header />
-          <AdsterraAds placement="top" />
           {children}
-          <AdsterraAds placement="bottom" />
           <Footer />
           <ToastHost />
           <CookieBanner adsClient={ADS_CLIENT} adsEnabled={ADS_ENABLED} />
