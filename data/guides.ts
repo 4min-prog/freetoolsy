@@ -45,6 +45,11 @@ export const GUIDE_ORDER: string[] = [
   "how-to-remove-emoji-from-text",
   "totp-two-factor-authentication-explained",
   "wheel-of-names-random-picker-guide",
+  "how-to-compress-images",
+  "how-to-decode-a-jwt",
+  "how-to-generate-a-uuid",
+  "how-to-calculate-a-tip",
+  "what-is-typing-speed-wpm",
 ];
 
 const GUIDE_LIST: Guide[] = [
@@ -2028,6 +2033,368 @@ const GUIDE_LIST: Guide[] = [
               "Doğru format, agresif sıkıştırmadan her zaman üstündür.",
               "Fotoğrafta kalite 75–85; metin ve düz renkte daha yüksek.",
               "Dönüştürmeden önce gösterim boyutunun yaklaşık 2 katına küçültün.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "how-to-compress-images",
+    relatedTools: ["image-compressor", "image-resizer", "image-converter"],
+    content: {
+      en: {
+        title: "How to compress images without losing quality",
+        desc: "Learn how image compression works, when to use JPG, PNG or WebP, and how to shrink image file sizes in your browser for free.",
+        intro:
+          "Large images are the number one reason web pages feel slow. Compressing them cuts file size — and load time — without a visible drop in quality if you pick the right format and settings.",
+        blocks: [
+          {
+            h2: "Lossy vs lossless compression",
+            paragraphs: [
+              "Lossy compression (JPG, WebP) permanently discards some detail to shrink a file dramatically. At quality settings between 75 and 85 the difference is invisible on screen but the savings are 50–80%. Lossless compression (PNG, lossless WebP) preserves every pixel and gives a smaller, safer win.",
+              "The right choice depends on the content. Photographs and gradients tolerate lossy compression well. Screenshots, logos, text and flat colours look blurry or banded when compressed too hard, so keep them lossless or use a high quality setting.",
+            ],
+          },
+          {
+            h2: "How to compress an image with FreetoolsY",
+            paragraphs: [
+              "Open the Image Compressor, drop in your JPG, PNG or WebP file and choose a quality level. Everything runs locally in your browser using the Canvas API, so your file never leaves your device.",
+            ],
+            bullets: [
+              "Drag and drop one or more images into the tool.",
+              "Pick a quality setting — around 80% is a good starting point.",
+              "Download the compressed file and compare the size before and after.",
+            ],
+          },
+          {
+            h2: "Resize before you compress",
+            paragraphs: [
+              "Compression only removes so much. If you are serving a 4000px image to a phone, resizing it to roughly twice the display size first saves more than any quality slider. Use the Image Resizer to scale down, then the Image Compressor to optimise the result.",
+              "Finally, choose a modern format. Converting to WebP with the Image Converter typically gives 25–35% smaller files than JPG at the same visual quality, and every current browser supports it.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "Kalite kaybı olmadan görsel nasıl sıkıştırılır?",
+        desc: "Görsel sıkıştırmanın nasıl çalıştığını, JPG, PNG ve WebP'nin ne zaman kullanılacağını ve dosya boyutunun tarayıcıda ücretsiz nasıl küçültüleceğini öğrenin.",
+        intro:
+          "Büyük görseller, web sayfalarının yavaş hissettirmesinin bir numaralı nedenidir. Doğru format ve ayarları seçtiğinizde sıkıştırma, görünür bir kalite kaybı olmadan dosya boyutunu — ve yükleme süresini — kısaltır.",
+        blocks: [
+          {
+            h2: "Kayıplı ve kayıpsız sıkıştırma",
+            paragraphs: [
+              "Kayıplı sıkıştırma (JPG, WebP) dosyayı büyük ölçüde küçültmek için kalıcı olarak bir miktar detayı atar. Kaliteyi 75 ile 85 arasında tuttuğunuzda ekranda fark görünmez, ama kazanç %50-80'e ulaşır. Kayıpsız sıkıştırma (PNG, kayıpsız WebP) her pikseli korur ve daha küçük, daha güvenli bir kazanç sağlar.",
+              "Doğru seçim içeriğe bağlıdır. Fotoğraflar ve gradyanlar kayıplı sıkıştırmayı iyi kaldırır. Ekran görüntüleri, logolar, metin ve düz renkler aşırı sıkıştırıldığında bulanık veya bantlı görünür; bu yüzden onları kayıpsız tutun ya da kaliteyi yüksek seçin.",
+            ],
+          },
+          {
+            h2: "FreetoolsY ile görsel nasıl sıkıştırılır?",
+            paragraphs: [
+              "Görsel Sıkıştırıcı'yı açın, JPG, PNG veya WebP dosyanızı bırakın ve kalite düzeyini seçin. Her şey Canvas API ile tarayıcınızda yerel çalışır; dosyanız cihazınızdan hiç çıkmaz.",
+            ],
+            bullets: [
+              "Bir veya birden fazla görseli araca sürükleyip bırakın.",
+              "Kalite ayarını seçin — %80 civarı iyi bir başlangıçtır.",
+              "Sıkıştırılmış dosyayı indirin ve önceki/sonraki boyutu karşılaştırın.",
+            ],
+          },
+          {
+            h2: "Sıkıştırmadan önce yeniden boyutlandırın",
+            paragraphs: [
+              "Sıkıştırma ancak bir yere kadar küçültür. Bir telefona 4000 piksellik görsel servis ediyorsanız, önce gösterim boyutunun yaklaşık iki katına küçültmek herhangi bir kalite kaydırıcısından daha çok kazandırır. Küçültmek için Görsel Yeniden Boyutlandırıcı'yı, sonucu optimize etmek için Görsel Sıkıştırıcı'yı kullanın.",
+              "Son olarak modern bir format seçin. Görsel Dönüştürücü ile WebP'ye çevirmek, aynı görsel kalitede JPG'den tipik olarak %25-35 daha küçük dosyalar verir ve güncel tüm tarayıcılar bunu destekler.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "how-to-decode-a-jwt",
+    relatedTools: ["jwt-decoder", "base64", "json-formatter"],
+    content: {
+      en: {
+        title: "How to decode a JWT (JSON Web Token)",
+        desc: "Understand what a JWT is, what its three parts mean, and how to decode the header and payload safely in your browser without sending the token anywhere.",
+        intro:
+          "A JWT — JSON Web Token — is a compact, URL-safe way to pass signed information between two parties. Decoding one simply means reading its contents, which are not encrypted.",
+        blocks: [
+          {
+            h2: "The three parts of a JWT",
+            paragraphs: [
+              "Every JWT has three Base64URL-encoded parts separated by dots: the header, the payload and the signature. The header names the signing algorithm, the payload holds the claims (who the token is for, when it expires), and the signature lets the receiver verify nothing was tampered with.",
+              "The header and payload are only encoded, not encrypted. Anyone holding the token can read them, which is why you should never put passwords or secrets inside a JWT payload.",
+            ],
+          },
+          {
+            h2: "How to decode a JWT with FreetoolsY",
+            paragraphs: [
+              "Paste the token into the JWT Decoder. It splits the three parts, Base64URL-decodes the header and payload and prints them as readable JSON. The decoding runs entirely in your browser — the token is never uploaded to a server.",
+            ],
+            bullets: [
+              "Paste the full token (all three dot-separated parts).",
+              "Read the alg value in the header and the claims (iss, sub, exp) in the payload.",
+              "Check the exp claim to see exactly when the token expires.",
+            ],
+          },
+          {
+            h2: "Decoding is not verifying",
+            paragraphs: [
+              "Decoding shows you what a token claims; it does not prove the token is genuine. Always verify the signature on the server with the correct secret or public key before trusting a JWT. A decoded payload can be forged just as easily as any other JSON.",
+              "If you need to inspect the Base64 parts by hand, the Base64 Encoder/Decoder is handy, and the Json Formatter will pretty-print the decoded payload for easier reading.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "JWT (JSON Web Token) nasıl çözülür?",
+        desc: "JWT'nin ne olduğunu, üç bölümünün ne anlama geldiğini ve header ile payload'ı token'ı hiçbir yere göndermeden tarayıcıda nasıl güvenle çözeceğinizi öğrenin.",
+        intro:
+          "JWT — JSON Web Token — iki taraf arasında imzalı bilgi taşımanın kompakt, URL-güvenli bir yoludur. Bir token'ı çözmek, içeriğini okumak demektir; içerik şifreli değildir.",
+        blocks: [
+          {
+            h2: "Bir JWT'nin üç bölümü",
+            paragraphs: [
+              "Her JWT noktalarla ayrılmış üç Base64URL kodlu bölümden oluşur: header, payload ve imza. Header imzalama algoritmasını belirtir, payload talepleri (claim) taşır (token kimin için, ne zaman sona erer), imza ise alıcının verinin değiştirilmediğini doğrulamasını sağlar.",
+              "Header ve payload yalnızca kodlanmıştır, şifrelenmemiştir. Token'ı elinde tutan herkes okuyabilir; bu yüzden JWT payload'ına asla parola veya sır koymamalısınız.",
+            ],
+          },
+          {
+            h2: "FreetoolsY ile JWT nasıl çözülür?",
+            paragraphs: [
+              "Token'ı JWT Çözücü'ye yapıştırın. Araç üç bölümü ayırır, header ve payload'ı Base64URL çözer ve okunabilir JSON olarak gösterir. Çözme tamamen tarayıcınızda çalışır — token hiçbir sunucuya yüklenmez.",
+            ],
+            bullets: [
+              "Tam token'ı (noktayla ayrılmış üç bölümü) yapıştırın.",
+              "Header'daki alg değerini ve payload'daki claim'leri (iss, sub, exp) okuyun.",
+              "Token'ın tam olarak ne zaman sona erdiğini görmek için exp claim'ine bakın.",
+            ],
+          },
+          {
+            h2: "Çözmek doğrulamak değildir",
+            paragraphs: [
+              "Çözme, token'ın ne iddia ettiğini gösterir; token'ın gerçek olduğunu kanıtlamaz. Bir JWT'ye güvenmeden önce imzayı sunucuda doğru secret veya açık anahtarla doğrulayın. Çözülmüş bir payload, herhangi bir JSON kadar kolayca sahte olabilir.",
+              "Base64 bölümlerini elle incelemek isterseniz Base64 Kodlayıcı/Çözücü işinize yarar, Json Biçimlendirici ise çözülen payload'ı daha kolay okumak için güzel biçimde yazdırır.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "how-to-generate-a-uuid",
+    relatedTools: ["uuid-generator", "random-string-generator"],
+    content: {
+      en: {
+        title: "What is a UUID and how do you generate one?",
+        desc: "Learn what a UUID is, what the versions mean, and how to generate random UUID v4 identifiers instantly in your browser for free.",
+        intro:
+          "A UUID (Universally Unique Identifier) is a 128-bit value used to identify records, files, sessions and API requests without any central coordination. The most common version is UUID v4, generated from random numbers.",
+        blocks: [
+          {
+            h2: "Why UUIDs instead of auto-increment IDs?",
+            paragraphs: [
+              "Sequential IDs leak information — anyone can guess how many users you have or fetch a neighbouring record. UUIDs are unpredictable and can be generated by any client or server independently, which is essential in distributed systems and offline-first apps.",
+              "The trade-off is size: a UUID is 36 characters as a string, larger than a 64-bit integer. For most applications the convenience and collision resistance are worth it.",
+            ],
+          },
+          {
+            h2: "How to generate a UUID with FreetoolsY",
+            paragraphs: [
+              "Open the UUID Generator and click generate. The tool creates RFC 4122 version-4 UUIDs using the browser's crypto.randomUUID or crypto.getRandomValues, so the values are cryptographically random and never leave your device.",
+            ],
+            bullets: [
+              "Generate one UUID or a batch of them at once.",
+              "Choose the format (lowercase, uppercase or without hyphens).",
+              "Copy with a single click and paste it into your database or code.",
+            ],
+          },
+          {
+            h2: "UUID v4 vs other versions",
+            paragraphs: [
+              "Version 4 UUIDs are random and are the right default for identifiers. Version 3 and 5 are deterministic — they are hashed from a name and namespace, useful when you need the same UUID for the same input. Version 1 and 7 embed a timestamp and are better when sortable, time-ordered IDs matter.",
+              "When a random string rather than a structured ID is what you need, the Random String Generator creates tokens of any length and charset.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "UUID nedir ve nasıl oluşturulur?",
+        desc: "UUID'nin ne olduğunu, sürümlerin ne anlama geldiğini ve tarayıcıda ücretsiz, anında rastgele UUID v4 nasıl üretileceğini öğrenin.",
+        intro:
+          "UUID (Universally Unique Identifier), kayıtları, dosyaları, oturumları ve API isteklerini merkezi bir koordinasyon olmadan tanımlamak için kullanılan 128 bitlik bir değerdir. En yaygın sürüm, rastgele sayılardan üretilen UUID v4'tür.",
+        blocks: [
+          {
+            h2: "Neden artan ID yerine UUID?",
+            paragraphs: [
+              "Sıralı ID'ler bilgi sızdırır — herkes kaç kullanıcınız olduğunu tahmin edebilir veya komşu bir kaydı çekebilir. UUID'ler tahmin edilemez ve her istemci ya da sunucu tarafından bağımsız üretilebilir; bu dağıtık sistemler ve çevrimdışı çalışan uygulamalar için kritiktir.",
+              "Karşılığında boyut vardır: bir UUID dize olarak 36 karakterdir ve 64 bitlik bir tam sayıdan büyüktür. Çoğu uygulama için kolaylık ve çakışma direnci buna değer.",
+            ],
+          },
+          {
+            h2: "FreetoolsY ile UUID nasıl üretilir?",
+            paragraphs: [
+              "UUID Üretici'yi açın ve oluştur'a tıklayın. Araç, tarayıcının crypto.randomUUID veya crypto.getRandomValues özelliğini kullanarak RFC 4122 sürüm-4 UUID'ler üretir; değerler kriptografik olarak rastgeledir ve cihazınızdan hiç çıkmaz.",
+            ],
+            bullets: [
+              "Tek bir UUID veya bir seferde bir grup üretin.",
+              "Biçimi seçin (küçük harf, büyük harf veya tire olmadan).",
+              "Tek tıkla kopyalayıp veritabanınıza ya da kodunuza yapıştırın.",
+            ],
+          },
+          {
+            h2: "UUID v4 diğer sürümlerden farkı",
+            paragraphs: [
+              "Sürüm 4 UUID'ler rastgeledir ve tanımlayıcılar için doğru varsayılandır. Sürüm 3 ve 5 belirleyicidir — bir ad ve namespace'ten hashlenir; aynı girdi için aynı UUID gerektiğinde kullanışlıdır. Sürüm 1 ve 7 zaman damgası içerir; sıralanabilir, zamana göre sıralı ID'ler gerektiğinde daha iyidir.",
+              "Yapılandırılmış ID yerine rastgele bir dize gerektiğinde, Rastgele Dize Üretici her uzunluk ve karakter kümesinde token üretir.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "how-to-calculate-a-tip",
+    relatedTools: ["tip-calculator", "percentage-calculator", "discount-calculator"],
+    content: {
+      en: {
+        title: "How to calculate a tip and split the bill",
+        desc: "Learn how to work out a tip percentage, split a bill between any number of people, and use a tip calculator for fast, accurate results.",
+        intro:
+          "Working out a tip is simple mental arithmetic once you know the percentage, but splitting an uneven bill between a group is where mistakes happen. A tip calculator removes the guesswork.",
+        blocks: [
+          {
+            h2: "How to calculate a tip by hand",
+            paragraphs: [
+              "The quickest method is to move the decimal point. A 10% tip is the bill divided by ten; a 20% tip is that number doubled. For 15%, take 10% and add half of it again.",
+              "On a $48.00 bill, 10% is $4.80, so 20% is $9.60 and 15% is $7.20. Always round up if you are paying cash and want to leave a clean amount.",
+            ],
+          },
+          {
+            h2: "How to split a bill fairly",
+            paragraphs: [
+              "To split evenly, add the tip to the total and divide by the number of people. Splitting unevenly — one person had the steak, another only a salad — is easier with a calculator that shows each person's share.",
+            ],
+            bullets: [
+              "Enter the bill amount and tip percentage.",
+              "Set the number of people splitting the bill.",
+              "Read the total, the tip and the per-person amount instantly.",
+            ],
+          },
+          {
+            h2: "Related everyday maths",
+            paragraphs: [
+              "The same percentage skills come up constantly: sale discounts, sales tax, and price increases. The Discount Calculator finds the final price after a percentage reduction, and the Percentage Calculator handles increases, decreases and 'what is X% of Y' questions.",
+              "When you are eating out abroad, remember that tipping customs differ — 15–20% is standard in the US, while in many European countries a service charge is already included and 5–10% is a polite extra.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "Bahşiş nasıl hesaplanır ve hesap nasıl bölüşülür?",
+        desc: "Bahşiş yüzdesini hesaplamayı, hesabı istenen kişi sayısına bölmeyi ve hızlı, doğru sonuç için bahşiş hesaplayıcıyı kullanmayı öğrenin.",
+        intro:
+          "Yüzdeyi bildiğinizde bahşiş hesaplamak basit bir zihinsel aritmetiktir; asıl hatalar bir grupta eşit olmayan hesabı bölerken olur. Bahşiş hesaplayıcı bu tahmini ortadan kaldırır.",
+        blocks: [
+          {
+            h2: "Bahşiş elle nasıl hesaplanır?",
+            paragraphs: [
+              "En hızlı yöntem ondalık noktayı kaydırmaktır. %10 bahşiş, hesabın ona bölünmesidir; %20 bunun iki katıdır. %15 için %10'u alıp yarısını ekleyin.",
+              "48.00 TL'lik bir hesapta %10 = 4.80 TL, yani %20 = 9.60 TL ve %15 = 7.20 TL. Nakit ödüyorsanız ve temiz bir tutar bırakmak istiyorsanız her zaman yukarı yuvarlayın.",
+            ],
+          },
+          {
+            h2: "Hesap adil nasıl bölüşülür?",
+            paragraphs: [
+              "Eşit bölmek için bahşişi toplama ekleyip kişi sayısına bölün. Eşit olmayan bölme — biri biftek, diğeri sadece salata yedi — her kişinin payını gösteren bir hesaplayıcıyla kolaylaşır.",
+            ],
+            bullets: [
+              "Hesap tutarını ve bahşiş yüzdesini girin.",
+              "Hesabı bölecek kişi sayısını ayarlayın.",
+              "Toplam, bahşiş ve kişi başı tutarı anında okuyun.",
+            ],
+          },
+          {
+            h2: "İlgili günlük matematik",
+            paragraphs: [
+              "Aynı yüzde becerileri sürekli karşımıza çıkar: indirimler, satış vergisi ve zamlar. İndirim Hesaplayıcı, yüzde indirimden sonraki son fiyatı bulur; Yüzde Hesaplayıcı ise artış, azalış ve 'Y'nin %X'i kaçtır' sorularını yanıtlar.",
+              "Yurt dışında yemek yerken bahşiş adetlerinin farklı olduğunu unutmayın — ABD'de %15-20 standarttır; birçok Avrupa ülkesinde servis ücreti zaten dahildir ve %5-10 nazik bir ekstradır.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "what-is-typing-speed-wpm",
+    relatedTools: ["typing-speed-test", "word-counter"],
+    content: {
+      en: {
+        title: "What is WPM? Understanding your typing speed",
+        desc: "Learn what words per minute (WPM) means, what counts as a good typing speed, and how to measure and improve your own WPM for free.",
+        intro:
+          "WPM — words per minute — is the standard measure of typing speed. It tells you how fast you can type accurately, and it is the number employers, schools and typing tutors use to grade skill.",
+        blocks: [
+          {
+            h2: "How WPM is measured",
+            paragraphs: [
+              "The standard definition counts five characters (including spaces) as one 'word'. So gross WPM is your total characters typed divided by five, then divided by the minutes elapsed. Net WPM subtracts your errors, so it reflects usable output rather than raw speed.",
+              "These two numbers matter. Someone typing 90 WPM with twenty mistakes per minute is far less productive than someone typing 70 WPM almost perfectly.",
+            ],
+          },
+          {
+            h2: "What is a good typing speed?",
+            paragraphs: [
+              "The average person types around 40 WPM. A competent office worker sits between 50 and 70. Professional typists, programmers and transcriptionists often reach 80–100 WPM, and competitive typists exceed 120.",
+            ],
+            bullets: [
+              "0–30 WPM: beginner, still searching for keys.",
+              "40–60 WPM: average, comfortable for everyday work.",
+              "70–100 WPM: fast, typical of professionals.",
+              "120+ WPM: competitive typing.",
+            ],
+          },
+          {
+            h2: "How to measure and improve your speed",
+            paragraphs: [
+              "Open the Typing Speed Test and type the sample text. The tool reports your WPM, accuracy, correct keys and error count, so you can see precisely where you lose speed. Retest regularly to track progress.",
+              "To improve, focus on accuracy first — speed follows — and learn to touch type without looking at the keyboard. Track how much text you produce over time with the Word Counter; writing volume and typing speed improve together with regular practice.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "WPM nedir? Yazma hızınızı anlamak",
+        desc: "Kelime/dakika (WPM) ne demek, iyi bir yazma hızı nedir ve kendi WPM'inizi ücretsiz nasıl ölçüp geliştireceğinizi öğrenin.",
+        intro:
+          "WPM — dakikadaki kelime sayısı — yazma hızının standart ölçüsüdür. Doğru şekilde ne kadar hızlı yazabildiğinizi gösterir ve işverenlerin, okulların ve yazma eğitmenlerinin beceri ölçmek için kullandığı sayıdır.",
+        blocks: [
+          {
+            h2: "WPM nasıl ölçülür?",
+            paragraphs: [
+              "Standart tanım beş karakteri (boşluklar dahil) bir 'kelime' sayar. Yani brüt WPM, yazdığınız toplam karakterin beşe, sonra geçen dakikaya bölünmesiyle bulunur. Net WPM hatalarınızı çıkarır; bu yüzden ham hız yerine kullanılabilir çıktıyı yansıtır.",
+              "Bu iki sayı önemlidir. Dakikada yirmi hata yaparak 90 WPM yazan biri, neredeyse hatasız 70 WPM yazan birinden çok daha az üretkendir.",
+            ],
+          },
+          {
+            h2: "İyi bir yazma hızı nedir?",
+            paragraphs: [
+              "Ortalama bir insan dakikada yaklaşık 40 kelime yazar. Yetkin bir ofis çalışanı 50-70 arasındadır. Profesyonel yazıcılar, programcılar ve transkripsiyoncular sıklıkla 80-100 WPM'e ulaşır; yarışmacı yazıcılar 120'yi geçer.",
+            ],
+            bullets: [
+              "0–30 WPM: yeni başlayan, hâlâ tuşları arıyor.",
+              "40–60 WPM: ortalama, günlük işler için rahat.",
+              "70–100 WPM: hızlı, profesyonellerin tipik hızı.",
+              "120+ WPM: yarışmacı düzeyi.",
+            ],
+          },
+          {
+            h2: "Hızınızı nasıl ölçersiniz ve geliştirirsiniz?",
+            paragraphs: [
+              "Yazma Hızı Testi'ni açın ve örnek metni yazın. Araç WPM'inizi, doğruluğunuzu, doğru tuş ve hata sayınızı gösterir; böylece hızı tam olarak nerede kaybettiğinizi görürsünüz. İlerlemeyi takip etmek için düzenli olarak yeniden test edin.",
+              "Gelişmek için önce doğruluğa odaklanın — hız onu izler — ve klavyeye bakmadan yazmayı öğrenin. Zaman içinde ne kadar metin ürettiğinizi Kelime Sayacı ile takip edin; düzenli pratikle yazma hacmi ve hızı birlikte artar.",
             ],
           },
         ],
