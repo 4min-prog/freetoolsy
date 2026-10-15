@@ -264,6 +264,7 @@
       "name": "Yaş Hesaplayıcı",
       "desc": "Doğum tarihinizden itibaren yaşınızı yıl, ay, gün, saat, dakika ve saniye olarak canlı gösterir.",
       "title": "Yaş Hesaplayıcı — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz Yaş Hesaplayıcı | Tam Yaşınızı Hesaplayın",
       "pageDesc": "Canlı bir sayaçla tam yaşınızı yıl, ay, gün, saat, dakika ve saniye olarak hesaplayın. Ücretsiz ve tamamen tarayıcı tarafında.",
       "intro": "Canlı bir sayaçla yaşınızı yıl, ay, gün, saat, dakika ve saniye olarak tam olarak görün."
     },
@@ -271,6 +272,7 @@
       "name": "QR Kod Oluşturucu",
       "desc": "Bağlantı, metin, Wi-Fi şifresi, kartvizit, e-posta, telefon veya konumu özel QR koda dönüştür. PNG veya SVG olarak indir.",
       "title": "QR Kod Oluşturucu - Ücretsiz Özel QR Kod",
+      "seoTitle": "Ücretsiz QR Kod Oluşturucu | Özel QR Kodlar Yapın",
       "pageDesc": "Bağlantı, metin, Wi-Fi, kartvizit, e-posta, telefon, SMS ve konum için özel QR kod oluştur. Rengi, sessiz bölgeyi ve hata düzeltmeyi seç, PNG veya SVG olarak indir.",
       "intro": "Bağlantı, metin, Wi-Fi ağı, kartvizit, e-posta, telefon, SMS veya konum için QR kod oluştur, PNG veya SVG olarak indir."
     },
@@ -278,6 +280,7 @@
       "name": "SHA Hash Üretici",
       "desc": "Metninizin SHA-1, SHA-256 veya SHA-512 özetini tarayıcıda hesaplar; tek tıkla kopyalayın.",
       "title": "SHA Hash Üretici — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz SHA Hash Üretici | SHA-256, SHA-1 ve SHA-512",
       "pageDesc": "Herhangi bir metnin SHA-1, SHA-256 veya SHA-512 özetini tarayıcınızda hesaplayın. Tasarım gereği gizli; girdiniz cihazınızı asla terk etmez.",
       "intro": "Metninizin SHA-1, SHA-256 veya SHA-512 özetini hesaplayın ve anında kopyalayın."
     },
@@ -285,6 +288,7 @@
       "name": "Tarih Farkı Hesaplayıcı",
       "desc": "İki tarih arasındaki farkı yıl, ay, gün, saat ve hafta olarak anında hesaplar.",
       "title": "Tarih Farkı Hesaplayıcı — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz Tarih Farkı Hesaplayıcı | İki Tarih Arası Gün",
       "pageDesc": "İki tarih arasındaki farkı yıl, ay, gün, saat, dakika ve hafta olarak bulun. Ücretsiz, doğru ve tamamen tarayıcı tarafında.",
       "intro": "İki tarih seçin ve farkı yıl, ay, gün, saat ve hafta olarak görün."
     },
@@ -292,6 +296,7 @@
       "name": "Renk Dönüştürücü",
       "desc": "Canlı önizleme ve tek tıkla kopyalama ile HEX, RGB ve HSL arasında anında dönüştürür.",
       "title": "Renk Dönüştürücü (HEX, RGB, HSL) — Ücretsiz Araç",
+      "seoTitle": "Ücretsiz Renk Dönüştürücü | HEX, RGB ve HSL Çevirin",
       "pageDesc": "HEX, RGB ve HSL renk değerleri arasında anında dönüştürün, sonucu önizleyin ve ihtiyacınız olan biçimi kopyalayın. Ücretsiz ve gizli.",
       "intro": "HEX, RGB ve HSL değerleri arasında dönüştürün, rengi önizleyin ve ihtiyacınız olan biçimi kopyalayın."
     },
@@ -299,6 +304,7 @@
       "name": "UUID Üretici",
       "desc": "Tek tıkla rastgele UUID v4 (GUID) tanımlayıcıları üretir; birkaç tanesini birden kopyalayın.",
       "title": "UUID Üretici (GUID) — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz UUID Üretici | Rastgele UUID v4 Oluşturun",
       "pageDesc": "Tek tıkla rastgele UUID v4 tanımlayıcıları üretin ve birkaç tanesini birden kopyalayın. Kriptografik olarak rastgele ve tamamen tarayıcı tarafında.",
       "intro": "Rastgele UUID v4 (GUID) tanımlayıcıları üretin ve birkaç değeri aynı anda kopyalayın."
     },
@@ -306,6 +312,7 @@
       "name": "Birim Dönüştürücü",
       "desc": "Uzunluk, ağırlık, hacim, alan ve sıcaklık birimleri arasında hızlıca dönüştürür.",
       "title": "Birim Dönüştürücü — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz Birim Dönüştürücü | Uzunluk, Ağırlık, Hacim",
       "pageDesc": "Anında sonuçlarla uzunluk, ağırlık, hacim, alan ve sıcaklık birimleri arasında dönüştürün. Ücretsiz, doğru ve tamamen tarayıcı tarafında.",
       "intro": "Uzunluk, ağırlık, hacim, alan ve sıcaklık birimleri arasında anında dönüştürün."
     },
@@ -383,6 +390,7 @@
       "name": "Bahşiş Hesaplayıcı",
       "desc": "Herhangi bir hesap ve bahşiş oranı için bahşiş tutarını, toplam tutarı ve kişi başı payı anında hesaplar.",
       "title": "Bahşiş Hesaplayıcı — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz Bahşiş Hesaplayıcı | Bahşiş ve Hesap Bölüşme",
       "pageDesc": "%5 ile %25 arası bahşiş oranları için bahşiş tutarını, toplamı ve kişi başı payı hesaplayın. Ücretsiz ve tamamen tarayıcı tarafında; tutarlarınız tarayıcınızdan asla çıkmaz.",
       "intro": "Hesabınızı girin, bir bahşiş oranı seçin ve bahşişi, toplamı ve kişi başı payı tek seferde görün."
     },
@@ -390,6 +398,7 @@
       "name": "İndirim Hesaplayıcı",
       "desc": "Orijinal fiyat ve indirim oranından indirim tutarını, indirimli fiyatı ve tasarruf yüzdesini hesaplar.",
       "title": "İndirim Hesaplayıcı — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz İndirim Hesaplayıcı | İndirimli Fiyat ve Kazanç",
       "pageDesc": "Herhangi bir orijinal fiyat ve indirim oranı için indirim tutarını, indirimli fiyatı ve kazanılan yüzdeyi hesaplayın. Ücretsiz, doğru ve tamamen tarayıcınızda çalışır.",
       "intro": "Orijinal fiyat ve indirim yüzdesi girin; indirim tutarını ve indirimli fiyatı anında görün."
     },
@@ -446,6 +455,7 @@
       "name": "Metin Sıralayıcı",
       "desc": "Metninizin satırlarını alfabetik, uzunluğa veya sayısal değere göre sıralar ya da karıştırır.",
       "title": "Metin Sıralayıcı — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz Metin Sıralayıcı | Satırları Alfabetik Sıralayın",
       "pageDesc": "Herhangi bir metnin satırlarını tek tıkla alfabetik sıraya, uzunluğa veya sayısal değere göre dizin veya karıştırın. Ücretsiz ve gizli; her şey tarayıcınızda çalışır.",
       "intro": "Satırlarınızı yapıştırın, bir mod seçin ve A→Z, Z→A, uzunluğa, sayısal olarak veya karışık şekilde sıralayın."
     },
@@ -474,6 +484,7 @@
       "name": "Resim Sıkıştırıcı",
       "desc": "JPG, PNG ve WebP görsellerinizi kalite kaydırıcısıyla online sıkıştırın — daha küçük dosyalar, aynı görünüm.",
       "title": "Resim Sıkıştırıcı — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Resim Sıkıştırıcı | JPG, PNG ve WebP Küçültme",
       "pageDesc": "Görsellerinizi ücretsiz online sıkıştırın. Kalite kaydırıcısıyla JPG, PNG ve WebP dosya boyutunu azaltın — tarayıcınızda çalışır, yükleme gerekmez.",
       "intro": "Ayarlayabileceğiniz bir kalite kaydırıcısıyla ağır görselleri saniyeler içinde küçültün."
     },
@@ -481,6 +492,7 @@
       "name": "Resim Boyutlandırıcı",
       "desc": "Görselleri ücretsiz online boyutlandırın — en-boy oranını koruyarak tam genişlik ve yükseklik ayarlayın.",
       "title": "Resim Boyutlandırıcı — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Resim Boyutlandırıcı | JPG, PNG ve WebP",
       "pageDesc": "Görselleri ücretsiz online boyutlandırın. Piksel genişlik ve yükseklik girin, en-boy oranını koruyup PNG veya JPEG indirin — tarayıcınızda çalışır.",
       "intro": "Kaliteyi bozmadan fotoğrafları tam istediğiniz piksel boyuta ölçekleyin."
     },
@@ -488,6 +500,7 @@
       "name": "Resim Dönüştürücü",
       "desc": "Görselleri JPEG, PNG ve WebP arasında ayarlanabilir kaliteyle ücretsiz online dönüştürün.",
       "title": "Resim Dönüştürücü — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Resim Dönüştürücü | JPG, PNG ve WebP Çevirin",
       "pageDesc": "Görselleri ücretsiz online dönüştürün — JPEG, PNG ve WebP arasında geçiş yapın, kaliteyi ayarlayın ve yeni dosyayı indirin; dönüşüm tarayıcınızda olur.",
       "intro": "Herhangi bir görseli tek tıkla ihtiyacınız olan formata dönüştürün."
     },
@@ -656,6 +669,7 @@
       "name": "Döviz Çevirici",
       "desc": "Düzenleyebildiğiniz sabit referans kurlarıyla para birimleri arasında anında dönüşüm yapar.",
       "title": "Döviz Çevirici — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Döviz Çevirici | USD, EUR, TL ve Fazlası",
       "pageDesc": "Dolar, Euro, TL ve daha fazlası arasında, düzenlenebilir kurlarla çevrimiçi döviz dönüşümü yapın. Ücretsiz ve tamamen tarayıcıda — paralarınız hiçbir yere gönderilmez.",
       "intro": "Miktarı yazın, para birimlerini seçin ve dönüşüm sonucunu görün — isterseniz kendi kurunuzla."
     },
@@ -1251,6 +1265,7 @@
       "name": "Arka Plan Kaldırma",
       "desc": "Görselin arka planını renge göre kaldırır ve şeffaf PNG olarak indirir.",
       "title": "Görsel Arka Plan Kaldırma - Online Ücretsiz Şeffaf PNG Oluşturucu",
+      "seoTitle": "Ücretsiz Arka Plan Kaldırıcı | Resim Arka Planını Silin",
       "pageDesc": "Bir fotoğraf veya grafik yükleyin, arka plan rengini örneklemek için arka plana tıklayın ve tek tıkla kaldırın. Toleransı ayarlayarak ne kadar silineceğini hassaslaştırın veya yalnızca tek bir bölgeyi silmek için bağlantılı alan modunu kullanın. Sonuç şeffaf PNG olarak dışa aktarılır. Tüm işlem tamamen tarayıcınızda yapılır.",
       "intro": "Bir görsel yükleyin, arka plan rengini seçin ve şeffaf PNG indirin."
     },

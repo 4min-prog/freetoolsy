@@ -264,6 +264,7 @@
       "name": "Age Calculator",
       "desc": "Shows your age in years, months, days, hours, minutes and seconds live from your birth date.",
       "title": "Age Calculator — Free Online Tool",
+      "seoTitle": "Free Age Calculator Online | Calculate Your Exact Age",
       "pageDesc": "Calculate your exact age in years, months, days, hours, minutes and seconds with a live counter. Free and fully client-side.",
       "intro": "See your precise age in years, months, days, hours, minutes and seconds with a live counter."
     },
@@ -271,6 +272,7 @@
       "name": "QR Code Generator",
       "desc": "Turn a link, text, Wi-Fi password, contact card, e-mail, phone number or location into a custom QR code. Download as PNG or SVG.",
       "title": "QR Code Generator - Free Custom QR Code Creator",
+      "seoTitle": "Free QR Code Generator Online | Create Custom QR Codes",
       "pageDesc": "Create custom QR codes for links, text, Wi-Fi, contact cards, e-mail, phone, SMS and location. Choose colours, quiet zone and error correction, then download as PNG or SVG.",
       "intro": "Create a QR code for a link, text, Wi-Fi network, contact card, e-mail, phone number, SMS or location, then download it as PNG or SVG."
     },
@@ -278,6 +280,7 @@
       "name": "SHA Hash Generator",
       "desc": "Computes the SHA-1, SHA-256 or SHA-512 digest of your text in the browser; copy it with one click.",
       "title": "SHA Hash Generator — Free Online Tool",
+      "seoTitle": "Free SHA Hash Generator Online | SHA-256, SHA-1 & SHA-512",
       "pageDesc": "Compute the SHA-1, SHA-256 or SHA-512 digest of any text in your browser. Private by design; your input never leaves your device.",
       "intro": "Compute a SHA-1, SHA-256 or SHA-512 digest of your text and copy it instantly."
     },
@@ -285,6 +288,7 @@
       "name": "Date Difference",
       "desc": "Calculates the difference between two dates in years, months, days, hours and weeks instantly.",
       "title": "Date Difference Calculator — Free Online Tool",
+      "seoTitle": "Free Date Difference Calculator | Days Between Two Dates",
       "pageDesc": "Find the difference between two dates in years, months, days, hours, minutes and weeks. Free, accurate and fully client-side.",
       "intro": "Pick two dates and see the difference in years, months, days, hours and weeks."
     },
@@ -292,6 +296,7 @@
       "name": "Color Converter",
       "desc": "Converts between HEX, RGB and HSL instantly with a live preview and one-click copying.",
       "title": "Color Converter (HEX, RGB, HSL) — Free Tool",
+      "seoTitle": "Free Color Converter Online | HEX, RGB & HSL Converter",
       "pageDesc": "Convert between HEX, RGB and HSL color values instantly, preview the result and copy the format you need. Free and private.",
       "intro": "Convert between HEX, RGB and HSL values, preview the color and copy the format you need."
     },
@@ -299,6 +304,7 @@
       "name": "UUID Generator",
       "desc": "Generates random UUID v4 (GUID) identifiers in one click; copy several at once.",
       "title": "UUID Generator (GUID) — Free Online Tool",
+      "seoTitle": "Free UUID Generator Online | Generate Random UUID v4",
       "pageDesc": "Generate random UUID v4 identifiers in one click and copy several at once. Cryptographically random and completely client-side.",
       "intro": "Generate random UUID v4 (GUID) identifiers and copy several values at once."
     },
@@ -306,6 +312,7 @@
       "name": "Unit Converter",
       "desc": "Converts between length, weight, volume, area and temperature units quickly.",
       "title": "Unit Converter — Free Online Tool",
+      "seoTitle": "Free Unit Converter Online | Length, Weight, Volume & More",
       "pageDesc": "Convert between length, weight, volume, area and temperature units with instant results. Free, accurate and fully client-side.",
       "intro": "Convert between length, weight, volume, area and temperature units instantly."
     },
@@ -383,6 +390,7 @@
       "name": "Tip Calculator",
       "desc": "Calculates tip amount, total bill and per-person share instantly for any bill and tip percentage.",
       "title": "Tip Calculator — Free Online Tool",
+      "seoTitle": "Free Tip Calculator Online | Calculate Tips & Split a Bill",
       "pageDesc": "Calculate tip amount, total bill and per-person share for tip percentages of 5% to 25%. Free and fully client-side; your amounts never leave your browser.",
       "intro": "Enter your bill, pick a tip percentage and see the tip, total and per-person share at once."
     },
@@ -390,6 +398,7 @@
       "name": "Discount Calculator",
       "desc": "Computes discount amount, final price and savings percentage from original price and discount rate.",
       "title": "Discount Calculator — Free Online Tool",
+      "seoTitle": "Free Discount Calculator Online | Find Sale Price & Savings",
       "pageDesc": "Calculate the discount amount, final price and saved percentage for any original price and discount rate. Free, accurate and runs entirely in your browser.",
       "intro": "Enter an original price and discount percent to see the discount amount and the final price instantly."
     },
@@ -446,6 +455,7 @@
       "name": "Line Sorter",
       "desc": "Sorts the lines of your text by alphabet, length, numeric value or shuffled order.",
       "title": "Line Sorter — Free Online Tool",
+      "seoTitle": "Free Line Sorter Online | Sort & Alphabetize Text Lines",
       "pageDesc": "Alphabetize, sort by length or numeric value, or shuffle the lines of any text in one click. Free and private; everything runs in your browser.",
       "intro": "Paste your lines, pick a mode and get them sorted A→Z, Z→A, by length, numerically or shuffled."
     },
@@ -474,6 +484,7 @@
       "name": "Image Compressor",
       "desc": "Compress JPG, PNG and WebP images online with a quality slider — smaller files, same look.",
       "title": "Image Compressor — Free Online Tool",
+      "seoTitle": "Free Image Compressor Online | Compress JPG, PNG & WebP",
       "pageDesc": "Compress images online for free. Reduce JPG, PNG and WebP file sizes with a quality slider — everything runs in your browser, no upload needed.",
       "intro": "Shrink heavy images in seconds with a quality slider you control."
     },
@@ -481,6 +492,7 @@
       "name": "Image Resizer",
       "desc": "Resize images online for free — set exact width and height while keeping the aspect ratio.",
       "title": "Image Resizer — Free Online Tool",
+      "seoTitle": "Free Image Resizer Online | Resize JPG, PNG & WebP",
       "pageDesc": "Resize images online free. Enter exact pixel width and height, keep the aspect ratio locked and download a PNG or JPEG — it runs in your browser.",
       "intro": "Scale photos to the exact pixel size you need without losing quality."
     },
@@ -488,6 +500,7 @@
       "name": "Image Converter",
       "desc": "Convert images between JPEG, PNG and WebP online for free with adjustable quality.",
       "title": "Image Converter — Free Online Tool",
+      "seoTitle": "Free Image Converter Online | Convert JPG, PNG & WebP",
       "pageDesc": "Convert images online free — switch between JPEG, PNG and WebP, adjust quality and download the new file. Conversion runs privately in your browser.",
       "intro": "Turn any image into the format you need in one click."
     },
@@ -656,6 +669,7 @@
       "name": "Currency Converter",
       "desc": "Converts money between currencies instantly using fixed reference rates you can override.",
       "title": "Currency Converter — Free Online Tool",
+      "seoTitle": "Free Currency Converter | Convert USD, EUR, TRY & More",
       "pageDesc": "Convert currency online instantly between USD, EUR, TRY, GBP and more, with editable exchange rates. Free and fully client-side; amounts never leave your browser.",
       "intro": "Type an amount, pick the currencies and see the converted result — optionally with your own rate."
     },
@@ -1251,6 +1265,7 @@
       "name": "Remove Background",
       "desc": "Remove an image background by color and download it as transparent PNG.",
       "title": "Remove Background From Image Online - Free Transparent PNG Maker",
+      "seoTitle": "Free Background Remover Online | Remove Image Background",
       "pageDesc": "Upload a photo or graphic, click the background to sample its color and remove it in one click. Adjust the tolerance to fine-tune how much is erased, or use connected-area mode to erase only a single region. The result exports as a transparent PNG. Everything is processed entirely in your browser.",
       "intro": "Upload an image, pick the background color and download a transparent PNG."
     },
