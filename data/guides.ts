@@ -50,6 +50,11 @@ export const GUIDE_ORDER: string[] = [
   "how-to-generate-a-uuid",
   "how-to-calculate-a-tip",
   "what-is-typing-speed-wpm",
+  "how-to-remove-image-background",
+  "how-to-check-password-strength",
+  "url-encoding-explained",
+  "how-to-calculate-loan-emi",
+  "how-to-create-a-favicon",
 ];
 
 const GUIDE_LIST: Guide[] = [
@@ -2395,6 +2400,366 @@ const GUIDE_LIST: Guide[] = [
             paragraphs: [
               "Yazma Hızı Testi'ni açın ve örnek metni yazın. Araç WPM'inizi, doğruluğunuzu, doğru tuş ve hata sayınızı gösterir; böylece hızı tam olarak nerede kaybettiğinizi görürsünüz. İlerlemeyi takip etmek için düzenli olarak yeniden test edin.",
               "Gelişmek için önce doğruluğa odaklanın — hız onu izler — ve klavyeye bakmadan yazmayı öğrenin. Zaman içinde ne kadar metin ürettiğinizi Kelime Sayacı ile takip edin; düzenli pratikle yazma hacmi ve hızı birlikte artar.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "how-to-remove-image-background",
+    relatedTools: ["remove-bg", "image-crop", "image-converter"],
+    content: {
+      en: {
+        title: "How to remove an image background for free",
+        desc: "Learn how background removal works, when to use it, and how to erase an image background online in your browser without uploading your photo anywhere.",
+        intro:
+          "Removing the background from a product photo, logo or portrait is one of the most common image-editing tasks. Modern browser-based tools do it in seconds — and keep your files on your own device.",
+        blocks: [
+          {
+            h2: "What background removal actually does",
+            paragraphs: [
+              "Background removal separates the foreground subject from everything behind it, leaving transparency. The result is usually a PNG or WebP file, because JPG cannot store a transparent background.",
+              "There are two broad approaches: manual masking, where you trace the edges yourself, and automatic segmentation, where an algorithm detects the subject. Manual gives the most control on tricky edges like hair; automatic is faster for clean, high-contrast subjects.",
+            ],
+          },
+          {
+            h2: "How to remove a background with FreetoolsY",
+            paragraphs: [
+              "Open the Background Remover and drop in your image. The tool processes it in your browser and returns a cut-out with a transparent background that you can download instantly.",
+            ],
+            bullets: [
+              "Choose a photo where the subject is clearly separated from the background.",
+              "Let the tool detect and erase the background automatically.",
+              "Download the transparent PNG and place it on any colour or design.",
+            ],
+          },
+          {
+            h2: "Tips for clean cut-outs",
+            paragraphs: [
+              "Good lighting and a contrasting background give the best results. If the automatic result misses a detail, crop tightly with the Image Crop tool first so the algorithm has less to analyse.",
+              "If the final file needs to be smaller or a different format for the web, run it through the Image Converter. For product photos, a transparent PNG plus a clean white background is the safest combination for online stores.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "Görsel arka planı ücretsiz nasıl kaldırılır?",
+        desc: "Arka plan kaldırmanın nasıl çalıştığını, ne zaman kullanılacağını ve fotoğrafı hiçbir yere yüklemeden tarayıcıda bir görselin arka planının nasıl silineceğini öğrenin.",
+        intro:
+          "Bir ürün fotoğrafı, logo veya portrenin arka planını kaldırmak en yaygın görsel düzenleme işlerinden biridir. Modern tarayıcı tabanlı araçlar bunu saniyeler içinde yapar — ve dosyalarınızı kendi cihazınızda tutar.",
+        blocks: [
+          {
+            h2: "Arka plan kaldırma gerçekte ne yapar?",
+            paragraphs: [
+              "Arka plan kaldırma, ön plandaki özneyi arkasındaki her şeyden ayırır ve saydamlık bırakır. Sonuç genellikle PNG veya WebP dosyasıdır; çünkü JPG saydam arka plan saklayamaz.",
+              "İki temel yaklaşım vardır: kenarları elle çizdiğiniz manuel maskeleme ve algoritmanın özneyi algıladığı otomatik segmentasyon. Manuel, saç gibi zor kenarlarda en fazla kontrolü verir; otomatik, temiz ve yüksek kontrastlı öznelerde daha hızlıdır.",
+            ],
+          },
+          {
+            h2: "FreetoolsY ile arka plan nasıl kaldırılır?",
+            paragraphs: [
+              "Arka Plan Kaldırıcı'yı açın ve görselinizi bırakın. Araç görseli tarayıcınızda işler ve anında indirebileceğiniz saydam arka planlı bir kesik döndürür.",
+            ],
+            bullets: [
+              "Öznenin arka plandan net ayrıldığı bir fotoğraf seçin.",
+              "Araç arka planı otomatik algılayıp silsin.",
+              "Saydam PNG'yi indirin ve herhangi bir renk ya da tasarım üzerine yerleştirin.",
+            ],
+          },
+          {
+            h2: "Temiz kesikler için ipuçları",
+            paragraphs: [
+              "İyi aydınlatma ve kontrast oluşturan bir arka plan en iyi sonucu verir. Otomatik sonuç bir detayı kaçırırsa, önce Görsel Kırpma ile dar kırpın; böylece algoritmanın çözümleyeceği alan azalır.",
+              "Nihai dosyanın web için daha küçük ya da farklı bir formatta olması gerekiyorsa Görsel Dönüştürücü'den geçirin. Ürün fotoğraflarında saydam PNG ile temiz beyaz arka plan, çevrimiçi mağazalar için en güvenli kombinasyondur.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "how-to-check-password-strength",
+    relatedTools: ["password-strength-checker", "password-generator", "sha-hash-generator"],
+    content: {
+      en: {
+        title: "How to check the strength of a password",
+        desc: "Understand what makes a password strong, why length beats complexity, and how to test your password strength for free without sending it over the internet.",
+        intro:
+          "A strong password is the single most effective protection for an online account. But strong is not about adding a random symbol — it is mainly about length and unpredictability.",
+        blocks: [
+          {
+            h2: "What makes a password strong?",
+            paragraphs: [
+              "Strength comes from entropy — the number of guesses an attacker needs. Every extra character multiplies that number, which is why a long passphrase beats a short, complex password. The phrase 'correct-horse-battery-staple' is far stronger than 'P@ssw0rd!'.",
+              "Reused passwords are the biggest risk. If one site is breached, attackers try the same credentials everywhere. A unique password per account and a password manager are far more valuable than an exotic symbol.",
+            ],
+          },
+          {
+            h2: "How to test a password with FreetoolsY",
+            paragraphs: [
+              "Open the Password Strength Checker and type or paste the password you want to evaluate. The analysis runs locally in your browser, so the password is never transmitted.",
+            ],
+            bullets: [
+              "Enter a candidate password and read the strength score.",
+              "Follow the suggestions to add length or remove predictable patterns.",
+              "Generate a fresh, unique password with the Password Generator and store it safely.",
+            ],
+          },
+          {
+            h2: "Storing and generating passwords",
+            paragraphs: [
+              "Use a password manager to generate and remember a different long password for every account. Then you only need to memorise one strong master passphrase.",
+              "If you need to fingerprint a file or string, the SHA Hash Generator produces a SHA-256 digest. Note that for storing passwords you should use a slow, salted algorithm such as bcrypt or Argon2 rather than a plain SHA hash.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "Bir şifrenin gücü nasıl ölçülür?",
+        desc: "Bir şifreyi güçlü yapan şeyi, uzunluğun neden karmaşıklıktan üstün olduğunu ve şifrenizi internete göndermeden ücretsiz nasıl test edeceğinizi öğrenin.",
+        intro:
+          "Güçlü bir şifre, çevrimiçi bir hesabı korumanın en etkili yoludur. Ancak güç, rastgele bir sembol eklemekle ilgili değildir — esas olarak uzunluk ve tahmin edilemezlikle ilgilidir.",
+        blocks: [
+          {
+            h2: "Bir şifreyi güçlü yapan nedir?",
+            paragraphs: [
+              "Güç entropiden — saldırganın ihtiyaç duyduğu tahmin sayısından — gelir. Her ek karakter bu sayıyı çarpar; bu yüzden uzun bir parola, kısa ve karmaşık bir şifreyi yener. 'correct-horse-battery-staple' ifadesi 'P@ssw0rd!' ifadesinden çok daha güçlüdür.",
+              "Tekrar kullanılan şifreler en büyük risktir. Bir site ihlal edilirse saldırganlar aynı kimlik bilgilerini her yerde dener. Her hesap için benzersiz bir şifre ve bir şifre yöneticisi, süslü bir sembolden çok daha değerlidir.",
+            ],
+          },
+          {
+            h2: "FreetoolsY ile şifre nasıl test edilir?",
+            paragraphs: [
+              "Şifre Gücü Testi'ni açın ve değerlendirmek istediğiniz şifreyi yazın veya yapıştırın. Analiz tarayıcınızda yerel çalışır; şifre hiçbir zaman iletilmez.",
+            ],
+            bullets: [
+              "Bir şifre girin ve güç puanını okuyun.",
+              "Uzunluk eklemek veya tahmin edilebilir kalıpları kaldırmak için önerileri izleyin.",
+              "Şifre Üretici ile yeni ve benzersiz bir şifre üretip güvenle saklayın.",
+            ],
+          },
+          {
+            h2: "Şifreleri saklamak ve üretmek",
+            paragraphs: [
+              "Her hesap için farklı ve uzun bir şifre üretip hatırlamak üzere bir şifre yöneticisi kullanın. Böylece yalnızca tek bir güçlü ana parolayı ezberlemeniz yeter.",
+              "Bir dosyanın veya metnin parmak izini çıkarmanız gerekiyorsa SHA Hash Üretici bir SHA-256 özeti üretir. Şifre saklamak için ise düz bir SHA yerine bcrypt veya Argon2 gibi yavaş ve tuzlanmış bir algoritma kullanmanız gerektiğini unutmayın.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "url-encoding-explained",
+    relatedTools: ["url-encoder", "url-parser", "base64"],
+    content: {
+      en: {
+        title: "URL encoding explained: what %20 and %2F mean",
+        desc: "Learn what percent-encoding (URL encoding) is, which characters must be escaped, and how to encode and decode URLs online for free.",
+        intro:
+          "URLs can only contain a limited set of characters. Any other character — a space, a slash inside a query value, or a non-English letter — has to be converted into a percent-escape like %20 before it can travel safely across the web.",
+        blocks: [
+          {
+            h2: "Why URLs need encoding",
+            paragraphs: [
+              "The URL standard reserves characters such as ?, &, =, / and # with special meaning. If one of them appears inside a parameter value instead, the server would misread the address. Percent-encoding replaces the character with a % followed by its two-digit hexadecimal byte.",
+              "A space becomes %20 (or + in form submissions), a slash becomes %2F, and the Turkish letter 'ş' becomes %C5%9F because it is encoded as its UTF-8 bytes.",
+            ],
+          },
+          {
+            h2: "How to encode and decode URLs with FreetoolsY",
+            paragraphs: [
+              "Paste a URL or text into the URL Encoder/Decoder and choose encode or decode. The tool escapes only the characters that need it and leaves the URL structure intact.",
+            ],
+            bullets: [
+              "Encode a full URL to build a safe query string or redirect parameter.",
+              "Decode a messy URL to read what it actually contains.",
+              "Use the URL Parser to break an address into scheme, host, path and query parts.",
+            ],
+          },
+          {
+            h2: "Encoding vs Base64",
+            paragraphs: [
+              "URL encoding keeps a string readable and is meant for transport inside a URL. Base64 is a different scheme that can represent any binary data using 64 printable characters; it is more compact for data but not human-readable. They solve different problems.",
+              "A common mistake is double-encoding a URL. If a link already contains %20, encoding it again turns the % into %25 and breaks the value. Encode once, at the point where the value is inserted.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "URL kodlaması nedir? %20 ve %2F ne anlama gelir?",
+        desc: "Yüzde kodlamasının (URL kodlaması) ne olduğunu, hangi karakterlerin kaçış gerektirdiğini ve URL'leri çevrimiçi ücretsiz nasıl kodlayıp çözeceğinizi öğrenin.",
+        intro:
+          "URL'ler yalnızca sınırlı bir karakter kümesi içerebilir. Diğer her karakter — bir boşluk, sorgu değeri içindeki bir eğik çizgi ya da Türkçe bir harf — web üzerinde güvenle taşınabilmesi için %20 gibi bir yüzde kaçışına dönüştürülmelidir.",
+        blocks: [
+          {
+            h2: "URL'ler neden kodlama gerektirir?",
+            paragraphs: [
+              "URL standardı ?, &, =, / ve # gibi karakterleri özel anlamlarla ayırır. Bunlardan biri bir parametre değerinin içinde geçerse sunucu adresi yanlış okur. Yüzde kodlaması, karakteri % ve ardından iki haneli onaltılık bayt ile değiştirir.",
+              "Boşluk %20 (form gönderimlerinde +), eğik çizgi %2F olur ve 'ş' harfi UTF-8 baytları olarak kodlandığı için %C5%9F hâline gelir.",
+            ],
+          },
+          {
+            h2: "FreetoolsY ile URL nasıl kodlanır ve çözülür?",
+            paragraphs: [
+              "Bir URL veya metni URL Kodlayıcı/Çözücü'ye yapıştırın ve kodla ya da çöz seçin. Araç yalnızca gereken karakterleri kaçırır ve URL yapısını bozmadan bırakır.",
+            ],
+            bullets: [
+              "Güvenli bir sorgu dizesi veya yönlendirme parametresi oluşturmak için tam bir URL kodlayın.",
+              "Okunaksız bir URL'yi çözüp gerçekte ne içerdiğini görün.",
+              "Adresi şema, host, yol ve sorgu parçalarına ayırmak için URL Ayrıştırıcı'yı kullanın.",
+            ],
+          },
+          {
+            h2: "Kodlama ve Base64 farkı",
+            paragraphs: [
+              "URL kodlaması dizeyi okunabilir tutar ve bir URL içinde taşımak için tasarlanmıştır. Base64, herhangi bir ikili veriyi 64 yazdırılabilir karakterle gösterebilen farklı bir şemadır; veri için daha kompakttır ama insan tarafından okunamaz. Farklı sorunları çözerler.",
+              "Yaygın bir hata bir URL'yi iki kez kodlamaktır. Bir bağlantı zaten %20 içeriyorsa tekrar kodlamak yüzde işaretini %25 yapar ve değeri bozar. Değerin eklendiği noktada yalnızca bir kez kodlayın.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "how-to-calculate-loan-emi",
+    relatedTools: ["loan-emi-calculator", "compound-interest-calculator", "percentage-calculator"],
+    content: {
+      en: {
+        title: "How to calculate a loan EMI (monthly payment)",
+        desc: "Learn the EMI formula, how interest rate and loan term affect your monthly payment, and how to estimate a loan payment quickly with a free calculator.",
+        intro:
+          "EMI stands for Equated Monthly Instalment — the fixed amount you pay every month to repay a loan plus its interest. Knowing the formula helps you compare offers and understand where your money goes.",
+        blocks: [
+          {
+            h2: "The EMI formula",
+            paragraphs: [
+              "EMI = P x r x (1+r)^n / ((1+r)^n - 1), where P is the principal, r is the monthly interest rate (annual rate divided by 12, then by 100) and n is the number of monthly payments. You do not need to compute it by hand — but understanding each term tells you why a longer term lowers the payment yet raises the total interest.",
+              "At the start of the loan most of each payment is interest; over time the balance shifts toward principal. That is why paying extra early saves more than paying extra late.",
+            ],
+          },
+          {
+            h2: "How to estimate a payment with FreetoolsY",
+            paragraphs: [
+              "Open the Loan EMI Calculator, enter the amount, the annual interest rate and the term in years or months, and read the monthly payment plus the total interest.",
+            ],
+            bullets: [
+              "Enter the loan amount, annual interest rate and term.",
+              "See the fixed monthly instalment and the total interest over the life of the loan.",
+              "Compare two scenarios by changing the term to see the trade-off.",
+            ],
+          },
+          {
+            h2: "EMI versus other ways to borrow",
+            paragraphs: [
+              "A fixed EMI is predictable, which makes budgeting easy. The alternative — paying only interest and repaying the principal at the end — has lower monthly cost but far higher total cost and more risk.",
+              "To see how savings grow by the same compounding maths, the Compound Interest Calculator applies the same formula in reverse, and the Percentage Calculator is handy for quick rate comparisons between offers.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "Kredi taksiti (EMI) nasıl hesaplanır?",
+        desc: "EMI formülünü, faiz oranı ve vadenin aylık ödemeyi nasıl etkilediğini ve ücretsiz bir hesaplayıcıyla kredi taksitinin hızlı nasıl tahmin edileceğini öğrenin.",
+        intro:
+          "EMI, Eşit Aylık Taksit anlamına gelir — bir krediyi faiziyle birlikte geri ödemek için her ay ödediğiniz sabit tutar. Formülü bilmek teklifleri karşılaştırmanıza ve paranızın nereye gittiğini anlamanıza yardımcı olur.",
+        blocks: [
+          {
+            h2: "EMI formülü",
+            paragraphs: [
+              "EMI = P x r x (1+r)^n / ((1+r)^n - 1) formülünde P anapara, r aylık faiz oranı (yıllık oranın 12'ye bölünüp 100'e bölünmesi) ve n aylık ödeme sayısıdır. Elle hesaplamanız gerekmez — ama her terimi anlamak, uzun vadenin ödemeyi neden düşürürken toplam faizi neden artırdığını gösterir.",
+              "Kredinin başında her ödemenin çoğu faizdir; zamanla bakiye anaparaya kayar. Bu yüzden erken ek ödeme yapmak, geç yapmaktan daha çok tasarruf sağlar.",
+            ],
+          },
+          {
+            h2: "FreetoolsY ile taksit nasıl tahmin edilir?",
+            paragraphs: [
+              "Kredi Taksit Hesaplayıcı'yı açın; tutarı, yıllık faiz oranını ve vadeyi yıl ya da ay olarak girin; aylık ödemeyi ve toplam faizi okuyun.",
+            ],
+            bullets: [
+              "Kredi tutarını, yıllık faiz oranını ve vadeyi girin.",
+              "Sabit aylık taksiti ve kredi boyunca ödenecek toplam faizi görün.",
+              "Vadeyi değiştirerek iki senaryoyu karşılaştırın ve dengeyi görün.",
+            ],
+          },
+          {
+            h2: "EMI ve diğer borçlanma biçimleri",
+            paragraphs: [
+              "Sabit bir EMI öngörülebilirdir; bütçelemeyi kolaylaştırır. Alternatif — yalnızca faiz ödeyip anaparayı sonda geri ödemek — aylık maliyeti düşürür ama toplam maliyeti ve riski çok artırır.",
+              "Tasarrufun aynı bileşik faiz matematiğiyle nasıl büyüdüğünü görmek için Bileşik Faiz Hesaplayıcı aynı formülü tersine uygular; Yüzde Hesaplayıcı ise teklifler arasındaki oran karşılaştırmalarında işe yarar.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "how-to-create-a-favicon",
+    relatedTools: ["favicon-generator", "image-converter", "color-converter"],
+    content: {
+      en: {
+        title: "How to create a favicon for your website",
+        desc: "Learn what a favicon is, which sizes and formats you need, and how to generate a favicon from text or an image and add it to your site for free.",
+        intro:
+          "A favicon is the small icon shown in a browser tab, bookmark list and search results. It is a tiny detail that makes a site look finished and helps users recognise it among many open tabs.",
+        blocks: [
+          {
+            h2: "What files a favicon needs",
+            paragraphs: [
+              "Modern sites usually need a 32x32 PNG, a 180x180 Apple touch icon, and an SVG or ICO for older browsers. Browsers pick the best match automatically when the files are declared in the HTML head.",
+              "SVG is ideal because it stays sharp at any size, but a simple PNG set covers every current device. Keeping the artwork minimal — a bold letter or simple shape — reads better at tab size than a detailed logo.",
+            ],
+          },
+          {
+            h2: "How to make a favicon with FreetoolsY",
+            paragraphs: [
+              "Open the Favicon Generator, choose a letter or short text, pick foreground and background colours, and download the result as PNG or ICO.",
+            ],
+            bullets: [
+              "Type one or two characters and choose a background colour.",
+              "Download the PNG and ICO files.",
+              "Upload them to your site and link them in your HTML head.",
+            ],
+          },
+          {
+            h2: "Using favicons correctly",
+            paragraphs: [
+              "Reference the icon in every page's head with a link tag, and keep the file at the site root so crawlers and browsers can find a default favicon.ico. Missing favicons cause 404 requests that clutter your server logs.",
+              "If you are starting from an existing logo image instead of text, resize it to a square with the Image Resizer and convert it to PNG with the Image Converter. Pick colours that match your brand using the Color Converter.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "Web siteniz için favicon nasıl oluşturulur?",
+        desc: "Favicon'un ne olduğunu, hangi boyut ve formatlara ihtiyacınız olduğunu ve metin ya da görselden ücretsiz favicon üretip sitenize nasıl ekleyeceğinizi öğrenin.",
+        intro:
+          "Favicon, tarayıcı sekmesinde, yer imleri listesinde ve arama sonuçlarında gösterilen küçük simgedir. Sitenin tamamlanmış görünmesini sağlayan ve kullanıcıların sayısız açık sekme arasında sitenizi tanımasına yardımcı olan küçük bir ayrıntıdır.",
+        blocks: [
+          {
+            h2: "Favicon'un gerektirdiği dosyalar",
+            paragraphs: [
+              "Modern siteler genellikle 32x32 PNG, 180x180 Apple touch icon ve eski tarayıcılar için bir SVG ya da ICO gerektirir. Dosyalar HTML head'de tanımlandığında tarayıcılar en uygun eşleşmeyi otomatik seçer.",
+              "SVG idealdir çünkü her boyutta keskin kalır, ancak basit bir PNG seti güncel tüm cihazları kapsar. Görseli sade tutmak — kalın bir harf veya basit bir şekil — sekme boyutunda detaylı bir logodan daha iyi okunur.",
+            ],
+          },
+          {
+            h2: "FreetoolsY ile favicon nasıl yapılır?",
+            paragraphs: [
+              "Favicon Üretici'yi açın, bir harf veya kısa metin seçin, ön plan ve arka plan renklerini belirleyin ve sonucu PNG ya da ICO olarak indirin.",
+            ],
+            bullets: [
+              "Bir veya iki karakter yazın ve arka plan rengini seçin.",
+              "PNG ve ICO dosyalarını indirin.",
+              "Sitenize yükleyin ve HTML head'de bağlayın.",
+            ],
+          },
+          {
+            h2: "Favicon'ları doğru kullanmak",
+            paragraphs: [
+              "Simgeyi her sayfanın head'inde bir link etiketiyle referanslayın ve dosyayı sitenin kök dizininde tutun ki tarayıcılar ve tarayıcı botları varsayılan bir favicon.ico bulabilsin. Eksik favicon'lar sunucu günlüklerini dolduran 404 isteklere yol açar.",
+              "Metin yerine mevcut bir logo görselinden başlıyorsanız, Görsel Yeniden Boyutlandırıcı ile kare hâle getirip Görsel Dönüştürücü ile PNG'ye çevirin. Markanızla uyumlu renkleri Renk Dönüştürücü ile seçin.",
             ],
           },
         ],
