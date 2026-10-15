@@ -95,7 +95,13 @@
     "rights": "© 2026 FreetoolsY."
   },
   "PartnerBar": {
-    "text": "Her şey için tek link: LinklyHub"
+    "texts": [
+      "Her şey için tek link: LinklyHub",
+      "Tüm linklerin tek sayfada",
+      "Biyon tek bir linkte",
+      "Linklerini kolayca paylaş",
+      "Ücretsiz link-in-bio: LinklyHub"
+    ]
   },
   "ThemeToggle": {
     "toLight": "Açık moda geç",

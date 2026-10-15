@@ -95,7 +95,13 @@
     "rights": "© 2026 FreetoolsY."
   },
   "PartnerBar": {
-    "text": "One link for everything: LinklyHub"
+    "texts": [
+      "One link for everything: LinklyHub",
+      "All your links in one page",
+      "Your bio as a single link",
+      "Share your links the easy way",
+      "Free link-in-bio: LinklyHub"
+    ]
   },
   "ThemeToggle": {
     "toLight": "Switch to light mode",
