@@ -205,6 +205,7 @@
       "name": "HTML Biçimlendirici",
       "desc": "HTML'i düzenli iki boşluklu girintiyle biçimlendirir; pre, script ve style bloklarını aynen korur.",
       "title": "HTML Biçimlendirici — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz HTML Biçimlendirici | HTML Düzenle",
       "pageDesc": "HTML'i tarayıcınızda ücretsiz biçimlendirin: işaretlemeyi yapıştırın ve anında temiz, tutarlı iki boşluklu girinti elde edin. pre, script ve style bloklarındaki kod aynen ve gizli kalır.",
       "intro": "Dağınık veya sıkıştırılmış HTML'i okunur işaretlemeye dönüştürün; kod blokları aynen korunur."
     },
@@ -348,6 +349,7 @@
       "name": "Boşluk Temizleyici",
       "desc": "Satırları kırpar, tekrarlanan boşlukları birleştirir ve metninizdeki boş satırları kaldırır.",
       "title": "Boşluk Temizleyici — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz Boşluk Temizleyici | Fazla Boşlukları Sil",
       "pageDesc": "Metni kırpın, birden fazla boşluğu birleştirin, boş satırları kaldırın veya tek tıkla tüm boşlukları temizleyin. Ücretsiz ve gizli.",
       "intro": "Herhangi bir metindeki sondaki boşlukları, fazla boşlukları ve boş satırları tek tıkla temizleyin."
     },
@@ -379,6 +381,7 @@
       "name": "Tekrar Satır Temizleyici",
       "desc": "Tekrarlanan satırları kaldırır ve her satırın yalnızca ilk geçtiği haliyle kalmasını sağlar.",
       "title": "Tekrar Satır Temizleyici — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz Yinelenen Satır Silici | Tekrar Satırları Sil",
       "pageDesc": "Listelerdeki tekrar eden satırları ilk görülme sırasını koruyarak anında kaldırın. Ücretsiz, gizli ve tamamen tarayıcı tarafında.",
       "intro": "Bir liste yapıştırın ve tekrar eden satırları, ilk geçtikleri sırayı koruyarak temizleyin."
     },
@@ -386,6 +389,7 @@
       "name": "AI Token Hesaplayıcı",
       "desc": "Metninizin AI ve LLM bağlam sınırları için tahmini token sayısını hesaplar.",
       "title": "AI Token Hesaplayıcı — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz AI Token Sayacı | ChatGPT ve LLM Token",
       "pageDesc": "ChatGPT, Claude ve diğer LLM sınırları için metninizin tahmini token sayısını; karakter, kelime ve satır sayısıyla birlikte hesaplayın. Tarayıcınızda çalışır; veri gönderilmez.",
       "intro": "Metninizi yapıştırın; karakter, kelime ve satır istatistikleriyle birlikte tahmini token sayısını görün."
     },
@@ -417,6 +421,7 @@
       "name": "Ortalama Hesaplayıcı",
       "desc": "Bir sayı listesinin ortalama, toplam, adet, minimum ve maksimumunu anında bulur.",
       "title": "Ortalama Hesaplayıcı — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz Ortalama Hesaplayıcı | Ortalama ve Toplam",
       "pageDesc": "Herhangi bir sayı listesinin ortalama, toplam, adet, minimum ve maksimum değerlerini saniyeler içinde hesaplayın. Ücretsiz ve tamamen tarayıcı tarafında; sayılarınız hiçbir zaman gönderilmez veya saklanmaz.",
       "intro": "Bir sayı listesi yapıştırın veya yazın ve ortalama, toplam, adet, minimum ve maksimum değerlerini görün."
     },
@@ -424,6 +429,7 @@
       "name": "Köpek Yaşı Hesaplayıcı",
       "desc": "Köpeğin yaşını ve cins boyutunu kullanarak insan yaşı karşılığını tahmin eder.",
       "title": "Köpek Yaşı Hesaplayıcı — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz Köpek Yaşı Hesaplayıcı | Köpek Yaşını Hesapla",
       "pageDesc": "Köpeğinizin yaşını, küçük, orta ve büyük ırklar için boyuta duyarlı bir formülle insan yaşına çevirin. Ücretsiz ve gizli; her şey tarayıcınızda çalışır.",
       "intro": "Köpeğinizin yaşını ve boyutunu girin; yaklaşık insan yaşı karşılığını görün."
     },
@@ -431,6 +437,7 @@
       "name": "Subnet Hesaplayıcı",
       "desc": "Bir IPv4 alt ağının ağ adresini, broadcast'ini, maskesini ve ana bilgisayar sayılarını hesaplar.",
       "title": "Subnet Hesaplayıcı — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz Subnet Hesaplayıcı | IPv4 Ağ Maskesi",
       "pageDesc": "/0 ile /32 arasındaki herhangi bir IPv4 alt ağı için ağ adresini, broadcast'i, maskeyi ve kullanılabilir ana bilgisayar sayısını hesaplayın. Ücretsiz ve tamamen tarayıcı tarafında; adresler tarayıcınızdan asla çıkmaz.",
       "intro": "Bir IPv4 adresi ve prefix girin; ağ adresini, broadcast'i, maskeyi ve ana bilgisayar sayılarını alın."
     },
@@ -446,6 +453,7 @@
       "name": "WCAG Kontrast Denetleyici",
       "desc": "İki renk arasındaki kontrast oranını tüm WCAG AA ve AAA gerekliliklerine karşı denetler.",
       "title": "WCAG Kontrast Denetleyici — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz WCAG Kontrast Testi | Renk Kontrast Oranı",
       "pageDesc": "Herhangi iki rengi normal ve büyük metin için tüm WCAG kontrast gereklilikleriyle (AA'dan AAA'ya) karşılaştırın. Ücretsiz ve gizli; renkler tarayıcınızdan asla çıkmaz.",
       "intro": "Bir metin ve arka plan rengi seçin; kontrast oranını ve hangi WCAG seviyelerini geçtiğini görün."
     },
@@ -461,6 +469,7 @@
       "name": "Box Shadow Üretici",
       "desc": "Kayma, bulanıklık, yayılma ve opaklık için kaydırıcılarla, canlı önizlemeli box-shadow CSS'i üretir.",
       "title": "Box Shadow Üretici — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz CSS Box Shadow Üretici | Gölge Oluştur",
       "pageDesc": "Kayma, bulanıklık, yayılma, opaklık ve renk kontrolleriyle canlı önizlemeli box-shadow CSS'i oluşturun. Ücretsiz ve gizli; CSS tarayıcınızda üretilir.",
       "intro": "Kayma, bulanıklık, yayılma, opaklık ve rengi ayarlayıp gölgeyi canlı görün ve CSS'i kopyalayın."
     },
@@ -476,6 +485,7 @@
       "name": "Liste Karıştırıcı",
       "desc": "Bir listenin öğelerini tarayıcınızda adilce karıştırır veya içinden tek bir rastgele öğe çeker.",
       "title": "Liste Karıştırıcı — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz Liste Karıştırıcı | Rastgele Sırala ve Seç",
       "pageDesc": "Herhangi bir listeyi adil bir rastgeleleştiriciyle karıştırın veya içinden tek bir rastgele öğe çekin. Ücretsiz ve gizli; listeniz tarayıcınızdan asla çıkmaz.",
       "intro": "Listenizi karıştırın veya içinden tek bir rastgele öğe çekin — sonuç size ait."
     },
@@ -491,6 +501,7 @@
       "name": "MD5 Dosya Checksum",
       "desc": "Bir dosyanın MD5 checksum'unu yüklemeden, tamamen tarayıcınızda hesaplar.",
       "title": "MD5 Dosya Checksum — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz MD5 Dosya Checksum | Dosya Hash Doğrula",
       "pageDesc": "Bütünlüğü doğrulamak için herhangi bir dosyanın MD5 özetini doğrudan tarayıcınızda hesaplayın. Tasarım gereği gizli — dosya hiçbir yere yüklenmez.",
       "intro": "MD5 checksum'unu yerel olarak hesaplamak için bir dosya seçin ve özeti tek tıkla kopyalayın."
     },
@@ -530,6 +541,7 @@
       "name": "Resimden Renk Seçici",
       "desc": "Görselden herhangi bir rengi online seçin — canlı HEX ve RGB değerleriyle kayıtlı bir palet.",
       "title": "Resimden Renk Seçici — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Görsel Renk Seçici | Görselden HEX Renk",
       "pageDesc": "Herhangi bir görselden ücretsiz online renk seçin. Üzerine gelerek canlı HEX ve RGB değerlerini görün, tıklayarak paletinize ekleyin ve kopyalayın.",
       "intro": "Herhangi bir pikseli örnekleyin ve kendi görsellerinizden palet oluşturun."
     },
@@ -593,6 +605,7 @@
       "name": "Morse Çevirici",
       "desc": "Metni Mors koduna ve Mors kodunu okunabilir metne çevirir.",
       "title": "Morse Çevirici — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Mors Çevirici | Metni Mors Koduna Çevir",
       "pageDesc": "Metni ücretsiz olarak Mors koduna çevirin veya Mors kodunu metne dönüştürün. A–Z, 0–9 ve yaygın noktalama işaretleri tarayıcınızda desteklenir.",
       "intro": "Bir mesaj yazın ve nokta-çizgi karşılığını görün ya da Mors kodunu yapıştırıp düz metni okuyun."
     },
@@ -608,6 +621,7 @@
       "name": "Kalın ve İtalik Metin Üretici",
       "desc": "Metninizi Unicode kalın, italik, kalın-italik ve monospace stillerine dönüştürür.",
       "title": "Kalın ve İtalik Metin Üretici — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Süslü Yazı Üretici | Kalın ve Eğik Metin",
       "pageDesc": "Kalın, italik, kalın-italik ve monospace Unicode metin oluşturun. Adınızı, biyografinizi veya gönderinizi stilize edip tarayıcıdan anında kopyalayın.",
       "intro": "Metninizi yazın; sosyal medyada kullanabileceğiniz dört farklı stil elde edin."
     },
@@ -615,6 +629,7 @@
       "name": "Caesar Şifre & ROT13",
       "desc": "Metni 1–25 arası kaydırmayla şifreler veya çözer; tek tıkla ROT13 yapar.",
       "title": "Caesar Şifre & ROT13 — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Sezar Şifresi ve ROT13 Çözücü",
       "pageDesc": "Metni Caesar şifresiyle ücretsiz şifreleyin veya çözün. 1–25 arası kaydırma seçip yönü belirleyin veya tarayıcınızda tek tıkla ROT13'e geçin.",
       "intro": "Mesajınızı birkaç harf ileri veya geri kaydırın; bir bakışta okunamaz hale gelir."
     },
@@ -638,6 +653,7 @@
       "name": "Kalori & BMR Hesaplayıcı",
       "desc": "Mifflin-St Jeor formülüyle günlük kalori ihtiyacınızı tahmin edin.",
       "title": "Kalori & BMR Hesaplayıcı — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz BMR ve TDEE Hesaplayıcı | Günlük Kalori",
       "pageDesc": "Ücretsiz kalori ve BMR hesaplayıcı: Mifflin-St Jeor formülüyle günlük kalori ihtiyacınızı tahmin edin; kilo verme, koruma ve alma hedeflerini anında görün.",
       "intro": "Kilo verme, koruma veya alma için günlük kalori bütçenizi öğrenin."
     },
@@ -645,6 +661,7 @@
       "name": "Vücut Yağ Oranı Hesaplayıcı",
       "desc": "ABD Donanması yöntemiyle vücut yağ oranınızı tahmin edin.",
       "title": "Vücut Yağ Oranı Hesaplayıcı — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Vücut Yağ Oranı Hesaplayıcı | Donanma Yöntemi",
       "pageDesc": "Ücretsiz vücut yağ oranı hesaplayıcı: ABD Donanması yöntemiyle yağ yüzdenizin, ACE kategorinizin ve yağ kütlenizin hesabını tarayıcıda anında görün.",
       "intro": "Basit mezura ölçüleriyle vücut yağ oranınızı öğrenin."
     },
@@ -652,6 +669,7 @@
       "name": "İdeal Kilo Hesaplayıcı",
       "desc": "Devine, Robinson ve BMI aralıklarıyla ideal kilonuzu bulun.",
       "title": "İdeal Kilo Hesaplayıcı — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz İdeal Kilo Hesaplayıcı | Sağlıklı Kilo",
       "pageDesc": "Ücretsiz ideal kilo hesaplayıcı: Devine ve Robinson formülleriyle ideal kilonuzu ve sağlıklı BMI kilo aralığını tarayıcınızda anında hesaplayıp öğrenin.",
       "intro": "Devine ve Robinson formüllerini sağlıklı BMI aralığıyla karşılaştırın."
     },
@@ -659,6 +677,7 @@
       "name": "Uyku Hesaplayıcı",
       "desc": "Uyku döngüleriyle en iyi yatma ve uyanma saatini bulun.",
       "title": "Uyku Hesaplayıcı — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Uyku Hesaplayıcı | En İyi Uyku Saati",
       "pageDesc": "Ücretsiz uyku hesaplayıcı: uyanma veya yatma saatinizi girin; 5 ve 6 uyku döngüsüne göre önerilen saatleri tarayıcınızda anında hesaplayıp görün.",
       "intro": "Tam uyku döngüleriyle dinlenmiş uyanın."
     },
@@ -674,6 +693,7 @@
       "name": "AES Şifreleme/Çözme",
       "desc": "Şifre tabanlı PBKDF2 anahtarıyla AES-GCM 256 kullanarak metni şifreler ve çözer — tamamen tarayıcınızda.",
       "title": "AES Şifreleme/Çözme — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz AES Şifreleme | AES-256 Şifrele ve Çöz",
       "pageDesc": "Metni tarayıcınızda ücretsiz AES-GCM 256 ile şifreleyin ve çözün. Şifre tabanlı PBKDF2 anahtarı her şeyi özel tutar — verileriniz cihazınızdan asla çıkmaz.",
       "intro": "Metninizi AES-GCM 256 ve şifreden türetilen bir anahtarla şifreleyin veya geri çözün — hepsi yerel olarak."
     },
@@ -689,6 +709,7 @@
       "name": "JWT Üretici",
       "desc": "Kendi header, payload ve gizli anahtarınızla imzalı HS256 JWT token'ları oluşturun — anında, tarayıcınızda.",
       "title": "JWT Üretici — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz JWT Üretici | İmzalı JWT Token Oluştur",
       "pageDesc": "Tarayıcınızda ücretsiz imzalı JWT token oluşturun. Header ve payload JSON'unu düzenleyin, gizli anahtarınızı girin ve anında HS256 imzalı token kopyalayın.",
       "intro": "Kendi header, payload ve gizli anahtarınızla imzalı bir HS256 JSON Web Token oluşturun — doğrudan tarayıcıda."
     },
@@ -728,6 +749,7 @@
       "name": "JSON ↔ XML Dönüştürücü",
       "desc": "JSON'u XML'e ve XML'i JSON'a iki yönde dönüştürür; diziler ve öznitelikler korunur.",
       "title": "JSON ↔ XML Dönüştürücü — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz JSON XML Dönüştürücü | XML'den JSON",
       "pageDesc": "JSON'u XML'e veya XML'i JSON'a çevrimiçi iki yönde dönüştürün. Diziler ve öznitelikler korunur, hatalar açıkça bildirilir. Ücretsiz ve gizli.",
       "intro": "Verilerinizi tek tıkla iki yönde JSON ve XML arasında değiştirin."
     },
@@ -743,6 +765,7 @@
       "name": "HMAC Üretici",
       "desc": "HMAC-SHA256 veya HMAC-SHA512 imzası hesaplar; hex ve Base64 gösterir.",
       "title": "HMAC Üretici — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz HMAC Üretici | HMAC-SHA256 ve SHA512",
       "pageDesc": "Web Crypto API ile çevrimiçi ücretsiz HMAC-SHA256 veya HMAC-SHA512 imzası üretin. Hex ve Base64 formlarını anında alın; her şey tarayıcınızda çalışır.",
       "intro": "Herhangi bir mesajı gizli anahtarla imzalayın ve HMAC özetini hex veya Base64 olarak okuyun."
     },
@@ -750,6 +773,7 @@
       "name": "HTML Tablo Üretici",
       "desc": "Satır, sütun ve yapıştırılmış veriden kullanıma hazır HTML tablo kodu üretir; önizleme sunar.",
       "title": "HTML Tablo Üretici — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz HTML Tablo Üretici | Tablo Kodu Oluştur",
       "pageDesc": "Çevrimiçi HTML tablo kodu üretin: satır ve sütun sayısını ayarlayın, sekmeli veya virgüllü veri yapıştırın, sonucu önizleyip kopyalayın. Tarayıcınızda çalışır.",
       "intro": "Verilerinizden temiz bir HTML tablo oluşturun ve kodu doğrudan sayfanıza yapıştırın."
     },
@@ -765,6 +789,7 @@
       "name": "Resim Kırpma",
       "desc": "Görselleri en-boy oranı presetleriyle kırpar, döndürür veya aynalar; PNG, JPEG ve WebP olarak dışa aktarır.",
       "title": "Resim Kırpma — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Görsel Kırpma | Fotoğraf Kırp ve Döndür",
       "pageDesc": "Görselleri çevrimiçi kırpın: sosyal medya oran presetleri, döndürme ve aynalama kontrolleri, yakınlaştırma ve PNG, JPEG veya WebP çıktısı. Görseliniz cihazınızdan asla çıkmaz.",
       "intro": "Bir alan seçin, en-boy oranı ve çıktı biçimini belirleyin, ardından kırpılmış görselinizi indirin."
     },
@@ -772,6 +797,7 @@
       "name": "Resime Filigran Ekleme",
       "desc": "Seçtiğiniz konum ve opaklıkta görsele logo veya filigran ekler.",
       "title": "Filigran Ekleme — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Görsel Filigran | Fotoğrafa Filigran Ekle",
       "pageDesc": "Çevrimiçi filigran ekleyin: ana görsel ve logo yükleyin, konum ile opaklığı seçin, sonucu PNG olarak indirin. Tamamen tarayıcınızda çalışır.",
       "intro": "İstediğiniz konum ve güçte logo filigranı ekleyerek fotoğraflarınızı koruyun."
     },
@@ -779,6 +805,7 @@
       "name": "JSON-LD Üretici",
       "desc": "Article, Product, FAQPage ve daha fazlası için schema.org JSON-LD yapılandırılmış verisi üretir.",
       "title": "JSON-LD Üretici — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz JSON-LD Üretici | Schema.org Yapılandırılmış Veri",
       "pageDesc": "Article, Product, Person, FAQPage ve daha fazlası için çevrimiçi schema.org JSON-LD üretin, sayfanıza yapıştırmaya hazır. Tamamen tarayıcınızda çalışır.",
       "intro": "İçerik türünüz için yapılandırılmış veri oluşturun ve JSON-LD'yi sayfanıza kopyalayın."
     },
@@ -786,6 +813,7 @@
       "name": "Hreflang Üretici",
       "desc": "Çok dilli siteler için hreflang etiketleri ve sitemap bloğu üretir.",
       "title": "Hreflang Üretici — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Hreflang Üretici | Çok Dilli SEO Etiketleri",
       "pageDesc": "Çok dilli siteniz için çevrimiçi hreflang etiketleri üretin: yerelleşitleri seçin, link etiketleri ve XML sitemap bloğunu anında alın. Tarayıcınızda çalışır.",
       "intro": "Hreflang etiketleri ve sitemap bloğu oluşturun; arama motorları dil sürümlerinizi doğru ilişkilendirsin."
     },
@@ -793,6 +821,7 @@
       "name": "Robots.txt Üretici",
       "desc": "Hazır şablonlar ve kendi kurallarınızla robots.txt içeriği oluşturur.",
       "title": "Robots.txt Üretici — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Robots.txt Üretici | Robots.txt Oluştur",
       "pageDesc": "Denenmiş şablonlar veya kendi allow/disallow kurallarınızla, sitemap URL'niz de dahil çevrimiçi robots.txt oluşturun. Sonucu anında kopyalayın — tarayıcınızda çalışır.",
       "intro": "Arama motorlarına neyi tarayacaklarını tam olarak söyleyen bir robots.txt oluşturun."
     },
@@ -816,6 +845,7 @@
       "name": "Kronometre ve Zamanlayıcı",
       "desc": "Tur kayıtlı süre ölçer ya da istediğiniz süreden geri sayar.",
       "title": "Kronometre ve Zamanlayıcı — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Kronometre ve Zamanlayıcı | Geri Sayım",
       "pageDesc": "Tur süreli kronometre veya geri sayım sayacı — uygulama gerekmez, çevrimiçi ücretsiz. Saniyenin yüzde birini hassasiyetle ölçer, tamamen tarayıcınızda çalışır.",
       "intro": "Bir şeyi zamanlayın: kronometreyi başlatıp turları kaydedin veya geri sayım kurup zili bekleyin."
     },
@@ -823,6 +853,7 @@
       "name": "Zaman Dilimi Dönüştürücü",
       "desc": "İki zaman dilimi arasında tarih ve saat dönüşümü yapar; yaz saati otomatik hesaplanır.",
       "title": "Zaman Dilimi Dönüştürücü - Saat Dilimi Çevirici",
+      "seoTitle": "Ücretsiz Saat Dilimi Çevirici | Dünya Saatleri",
       "pageDesc": "İki zaman dilimi arasında tarih ve saat dönüşümü yapın. Yüzlerce şehrin güncel saatini ve her dilimin UTC farkını görün.",
       "intro": "Herhangi bir tarih ve saati bir zaman diliminden diğerine dönüştürün; yaz saati uygulaması otomatik olarak hesaplanır."
     },
@@ -830,6 +861,7 @@
       "name": "QR Kod Okuyucu",
       "desc": "Bir görseldeki QR kodu tarayıcınızda okur; yükleme veya kayıt gerektirmez.",
       "title": "QR Kod Okuyucu - Görselden QR Kod Okuma",
+      "seoTitle": "Ücretsiz QR Kod Okuyucu | Görselden QR Tara",
       "pageDesc": "QR kodları resimden anında ve gizli şekilde okuyun. QR kod içeren bir ekran görüntüsünü veya fotoğrafı yükleyin; içindeki metni, bağlantıyı veya veriyi görün — her şey tarayıcınızda çalışır.",
       "intro": "QR kod içeren bir görsel yükleyin; bu araç kodu cihazınızda okur. Çözümleme jsQR motoruyla tarayıcınızda yapılır, görseliniz bilgisayarınızdan asla çıkmaz."
     },
@@ -837,6 +869,7 @@
       "name": "Metin Çıkarıcı",
       "desc": "Bir metinden e-posta adreslerini, telefon numaralarını, URL'leri ve etiketleri tek tıkla ayıklar.",
       "title": "Metin Çıkarıcı - E-posta, Telefon, URL ve Etiket Çıkarma",
+      "seoTitle": "Ücretsiz Metin Çıkarıcı | E-posta, Link ve Numara",
       "pageDesc": "Herhangi bir metinden e-posta adreslerini, telefon numaralarını, URL'leri ve etiketleri anında çıkarın. Tamamen tarayıcınızda çalışır — hiçbir şey yüklenmez.",
       "intro": "Bir metin yapıştırın; bu araç içindeki her e-posta adresini, telefon numarasını, URL'yi ve etiketi toplar. Çıkarma işlemi cihazınızda yapılır, metin bilgisayarınızdan çıkmaz."
     },
@@ -844,6 +877,7 @@
       "name": "CSS Gradient Üretici",
       "desc": "Lineer gradientleri görsel olarak tasarlayıp kullanıma hazır CSS kodunu kopyalayın.",
       "title": "CSS Gradient Üretici - Canlı Önizlemeli Lineer Gradient Aracı",
+      "seoTitle": "Ücretsiz CSS Gradient Üretici | Renk Geçişi Oluştur",
       "pageDesc": "CSS lineer gradientlerini görsel olarak tasarlayın. İki veya üç renk seçin, açıyı belirleyin, sonucu canlı önizleyin ve kullanıma hazır CSS'i kopyalayın. Ücretsiz, kayıtsız ve tarayıcınızda çalışır.",
       "intro": "İki veya üç renk seçin, açıyı ayarlayın ve canlı önizlemenin nasıl değiştiğini izleyin. Yapıştırmaya hazır CSS her zaman tek tık uzakta."
     },
@@ -851,6 +885,7 @@
       "name": "Border Radius Üretici",
       "desc": "Köşeleri görsel olarak yuvarlayıp border-radius CSS kodunu tek tıkla kopyalayın.",
       "title": "Border Radius Üretici - Canlı Önizlemeli Yuvarlatılmış Köşeler",
+      "seoTitle": "Ücretsiz Border Radius Üretici | Yuvarlak Köşe CSS",
       "pageDesc": "Border-radius CSS'ini görsel olarak oluşturun. Her köşeyi ayarlayın, yuvarlatılmış kutuyu canlı önizleyin ve kodu still dosyanıza kopyalayın. Ücretsiz ve tamamen tarayıcınızda çalışır.",
       "intro": "Köşe kaydırıcılarını ayarlayın; yarıçap büyüdükçe canlı önizlemenin değiştiğini izleyin. Köşeleri eşit tutmak için birleştirin veya her birini ayrı şekillendirin, ardından üretilen CSS'i kopyalayın."
     },
@@ -874,6 +909,7 @@
       "name": "Binary Metin Dönüştürücü",
       "desc": "Metni UTF-8 tabanlı binary koda çevirir; binary kodu tekrar metne dönüştürür.",
       "title": "Binary Metin Dönüştürücü - Metni Binary Koda Çevirme",
+      "seoTitle": "Ücretsiz İkili Metin Dönüştürücü | Metin ve Binary",
       "pageDesc": "Düz metni 0 ve 1'lerden oluşan binary koda çevirin veya binary kodu tekrar metne dönüştürün. UTF-8 tabanlı, tüm dilleri ve emojileri destekler. Ücretsiz, tarayıcıda çalışır.",
       "intro": "Bir mesaj yazın ve binary koda çevirin ya da binary gruplarını yapıştırıp normal metin olarak okuyun. Tüm dillerle çalışır."
     },
@@ -881,6 +917,7 @@
       "name": "Kredi Kartı Doğrulayıcı",
       "desc": "Kart numarasını Luhn algoritmasına göre doğrular ve markasını belirler.",
       "title": "Kredi Kartı Doğrulayıcı - Luhn Algoritması ile Kart Kontrolü",
+      "seoTitle": "Ücretsiz Kredi Kartı Doğrulayıcı | Luhn Kontrolü",
       "pageDesc": "Herhangi bir kart numarasını Luhn kontrol basamağı algoritmasına göre doğrulayın ve markayı tespit edin (Visa, Mastercard, Amex ve daha fazlası). Sayılar cihazınızda işlenir, kaydedilmez. Ücretsiz.",
       "intro": "Bir kart numarası girin; yapısal olarak geçerli olup olmadığını, hangi markaya ait olduğunu ve nasıl gruplanması gerektiğini anında görün."
     },
@@ -904,6 +941,7 @@
       "name": "Hesap Makinesi",
       "desc": "Toplama, çıkarma, çarpma ve bölmeyi tarayıcıda çözen basit hesap makinesi.",
       "title": "Hesap Makinesi - Ücretsiz Online Basit Hesap Makinesi",
+      "seoTitle": "Ücretsiz Online Hesap Makinesi | Basit Hesap",
       "pageDesc": "Toplama, çıkarma, çarpma, bölme, yüzde ve karekök içeren basit hesap makinesini kullanın. Ücretsiz, hızlı ve kurulum gerektirmeden tamamen tarayıcınızda çalışır.",
       "intro": "Rakamlara ve işleçlere tıklayarak anında hesap yapın. +, −, ×, ÷, % ve √ desteklenir."
     },
@@ -919,6 +957,7 @@
       "name": "CHMOD Hesaplayıcı",
       "desc": "Unix dosya izinlerini görsel olarak kurar; sayısal ve sembolik gösterimi üretir.",
       "title": "CHMOD Hesaplayıcı - Unix İzinlerini Sayıya Çevirme",
+      "seoTitle": "Ücretsiz CHMOD Hesaplayıcı | Unix Dosya İzinleri",
       "pageDesc": "Sahip, grup ve diğerleri için okuma, yazma ve çalıştırma izinlerini seçin; 755 gibi sekizlik değeri ve rwxr-xr-x gibi sembolik biçimi anında görün. Ücretsiz.",
       "intro": "İzin kutularını işaretleyerek modu oluşturun. Sekizlik değer ve rwx gösterimi anlık güncellenir; hazır düğmelerle yaygın modlar uygulanır."
     },
@@ -942,6 +981,7 @@
       "name": "Kelime Frekansı Sayacı",
       "desc": "Metindeki her kelimenin kaç kez geçtiğini sayar ve en çok tekrarlananları gösterir.",
       "title": "Kelime Frekansı Sayacı - Metinde Kelime Kullanımını Analiz Edin",
+      "seoTitle": "Ücretsiz Kelime Frekansı Sayacı | Kelime Tekrarı",
       "pageDesc": "Herhangi bir metni yapıştırın ve sıklığa göre sıralanmış kelime tablosu elde edin. İsteğe bağlı olarak sık kullanılan kelimeler atlanır. SEO analizi ve makaleler için uygundur. Ücretsiz.",
       "intro": "Metninizi yapıştırın ve Analiz Et'e basın. Eşsiz kelimeler sayılarıyla birlikte en çoktan en aza sıralanır."
     },
@@ -949,6 +989,7 @@
       "name": "Asal Çarpan Hesaplayıcı",
       "desc": "Bir sayıyı asal çarpanlarına ayırır ve üslü gösterimle sonuç verir.",
       "title": "Asal Çarpan Hesaplayıcı - Sayıları Asal Çarpanlarına Ayırma",
+      "seoTitle": "Ücretsiz Asal Çarpan Hesaplayıcı | Asal Çarpanlar",
       "pageDesc": "100.000.000'a kadar herhangi bir sayıyı asal çarpanlarına ayırın ve sayının asal olup olmadığını görün. Ücretsiz ve anlık.",
       "intro": "Bir sayı girin; asal çarpanları üslü gösterimle görün, örneğin 360 = 2^3 × 3^2 × 5."
     },
@@ -956,6 +997,7 @@
       "name": "Açı Dönüştürücü",
       "desc": "Derece, radyan ve grad arasında anında dönüşüm yapar.",
       "title": "Açı Dönüştürücü - Dereceyi Radyana Çevirme",
+      "seoTitle": "Ücretsiz Açı Dönüştürücü | Derece, Radyan, Grad",
       "pageDesc": "Açıları derece, radyan ve grad arasında gerçek zamanlı çevirin. Bir birime değer yazın, diğerleri anında güncellensin. Ücretsiz, tarayıcınızda çalışır.",
       "intro": "Derece, radyan ya da grad alanına değer yazın; diğer iki birim anında güncellensin."
     },
@@ -963,6 +1005,7 @@
       "name": "Veri Boyutu Dönüştürücü",
       "desc": "Dosya ve depolama boyutlarını byte, KB, MB, GB ve TB arasında çevirir.",
       "title": "Veri Boyutu Dönüştürücü - Byte ile KB, MB, GB Çevirme",
+      "seoTitle": "Ücretsiz Veri Boyutu Çevirici | Bayt, KB, MB, GB",
       "pageDesc": "B, KB, MB, GB ve TB arasında ondalık (1000) veya ikili (1024) tabana göre dönüşüm yapın. Tüm birimleri aynı anda görün. Ücretsiz ve anlık.",
       "intro": "Bir boyut yazın, birimini ve tabanını seçin, karşılığını tüm birimlerde aynı anda okuyun."
     },
@@ -970,6 +1013,7 @@
       "name": "Fibonacci Üretici",
       "desc": "Fibonacci dizisini 100 terime kadar üretir; toplam ve son değeri gösterir.",
       "title": "Fibonacci Üretici - Fibonacci Dizisini Online Oluşturma",
+      "seoTitle": "Ücretsiz Fibonacci Dizisi Üretici | Sayı Üret",
       "pageDesc": "Fibonacci dizisini 100 terime kadar üretin. Listeyi, toplamı ve n'inci değeri görün. Ücretsiz ve anlık.",
       "intro": "Kaç terim üretileceğini seçin; diziyi, toplamını ve son değeri tek tıkla elde edin."
     },
@@ -985,6 +1029,7 @@
       "name": "Saat Hesaplayıcı",
       "desc": "İki saat arasındaki süreyi saat, dakika ve ondalık biçimde hesaplar.",
       "title": "Saat Hesaplayıcı - Süre ve Mesai Saati Hesaplama",
+      "seoTitle": "Ücretsiz Saat Hesaplayıcı | İki Saat Arası Süre",
       "pageDesc": "İki saat arasındaki süreyi saat ve dakika, toplam dakika veya ondalık saat olarak bulun. Gece vardiyalarını destekler. Ücretsiz ve anlık.",
       "intro": "Başlangıç ve bitiş saatini seçin; sonucu saat/dakika, toplam dakika veya ondalık saat olarak okuyun."
     },
@@ -1016,6 +1061,7 @@
       "name": "CSS Birim Dönüştürücü",
       "desc": "px, rem, em, %, vw ve vh CSS birimleri arasında anında dönüşüm yapar.",
       "title": "CSS Birim Dönüştürücü - px, rem, em, vw, vh Online",
+      "seoTitle": "Ücretsiz CSS Birim Çevirici | px, rem, em, vw, vh",
       "pageDesc": "Ayarlanabilir taban yazı boyutu ve görünüm alanıyla px, rem, em, %, vw ve vh arasında dönüşüm yapın. Tüm birimleri aynı anda görün. Geliştirici dostu ve ücretsiz.",
       "intro": "Bir değer ve birim seçin, taban yazı boyutu ile görünüm alanını ayarlayın; sonucu tüm CSS birimlerinde birden okuyun."
     },
@@ -1023,6 +1069,7 @@
       "name": "CSS Üçgen Üretici",
       "desc": "Seçilen yön, boyut ve renkle saf CSS üçgeni oluşturur.",
       "title": "CSS Üçgen Üretici - Görselsiz Üçgen Oluşturma",
+      "seoTitle": "Ücretsiz CSS Üçgen Üretici | Üçgen Oluştur",
       "pageDesc": "Sekiz yönde, kendi boyut ve renginizle border tabanlı CSS üçgeni üretin. Hazır kodu tek tıkla kopyalayın. Ücretsiz, görsel gerektirmez.",
       "intro": "Yön, boyut ve renk seçin; üretilen CSS üçgen kodunu kopyalayın."
     },
@@ -1038,6 +1085,7 @@
       "name": "Görsel Izgara Bölücü",
       "desc": "Bir fotoğrafı eşit parçalara böler; Instagram gönderileri için idealdir.",
       "title": "Görsel Izgara Bölücü - Instagram için Fotoğraf Bölme",
+      "seoTitle": "Ücretsiz Görsel Grid Bölücü | Fotoğrafı Izgaraya Böl",
       "pageDesc": "Herhangi bir görseli 1x1'den 6x6'ya bir ızgaraya bölün ve her parçayı PNG olarak indirin. Instagram ızgaraları ve baskı düzenleri için ideal. Yerel çalışır, ücretsiz.",
       "intro": "Bir görsel yükleyin, ızgara boyutunu seçin ve bölünen her parçayı indirin."
     },
@@ -1045,6 +1093,7 @@
       "name": "ASCII Sanat Üretici",
       "desc": "Herhangi bir görseli tarayıcınızda blok biçimli ASCII sanatına dönüştürür.",
       "title": "ASCII Sanat Üretici - Görselden Metin Sanatı",
+      "seoTitle": "Ücretsiz ASCII Sanat Üretici | Görseli ASCII Yap",
       "pageDesc": "Fotoğraf ve logoları anında ASCII sanatına çevirin. Genişliği ayarlayın, tonları ters çevirin ve sonucu kopyalayın. Her şey tarayıcınızda çalışır. Ücretsiz.",
       "intro": "Bir görsel yükleyin, genişliği ayarlayın ve karakter tabanlı ASCII sanatı üretin."
     },
@@ -1052,6 +1101,7 @@
       "name": "Pikselleştirici",
       "desc": "Herhangi bir fotoğrafı blok boyutu kaydırıcısıyla pikselleştirir ve sonucu indirir.",
       "title": "Pikselleştirici - Fotoğrafı Piksele Çevirme",
+      "seoTitle": "Ücretsiz Görsel Pikselleştir | Fotoğrafı Pikselle",
       "pageDesc": "Bir fotoğrafı saniyeler içinde piksel sürümüne çevirin. Blok boyutunu kaydırıcıyla ayarlayın ve sonucu PNG olarak indirin. Ücretsiz ve gizli.",
       "intro": "Bir görsel yükleyin ve kaydırıcıyla piksel boyutunu kontrol edin; ardından piksel önizlemeyi indirin."
     },
@@ -1059,6 +1109,7 @@
       "name": "Vigenère Şifresi",
       "desc": "Bir anahtar sözcükle Vigenère yöntemine göre metni şifreler ve çözer.",
       "title": "Vigenère Şifresi - Metni Online Şifrele ve Çöz",
+      "seoTitle": "Ücretsiz Vigenère Şifresi | Metin Şifrele ve Çöz",
       "pageDesc": "Vigenère şifresiyle bir anahtar sözcük kullanarak metni şifreleyin ve çözün. Türkçe alfabe desteklenir. Tamamen tarayıcınızda çalışır, veri gönderilmez. Ücretsiz.",
       "intro": "Mesajınızı ve anahtar sözcüğü yazın, Şifrele veya Çöz seçin ve sonucu anında okuyun."
     },
@@ -1066,6 +1117,7 @@
       "name": "Noktalama Silici",
       "desc": "Gerekirse kesme işareti ve tireyi koruyarak metinden noktalama işaretlerini temizler.",
       "title": "Noktalama Silici - Noktalamasız Metin Temizleme",
+      "seoTitle": "Ücretsiz Noktalama Silici | Noktalama İşaretlerini Kaldır",
       "pageDesc": "Herhangi bir metinden noktalama işaretlerini anında ayıklayın. İsteğe bağlı olarak kesme işareti ve tireyi koruyun; kaç karakter silindiğini görün. Ücretsiz ve gizli.",
       "intro": "Metninizi yapıştırın ve tüm noktalamaların kaldırıldığı sürümü anında alın."
     },
@@ -1073,6 +1125,7 @@
       "name": "Anagram Çözücü",
       "desc": "Harflerinizden olası her düzenlemeyi, iki harfli kelimelerden başlayarak üretir.",
       "title": "Anagram Çözücü - Tüm Harf Kombinasyonlarını Bulma",
+      "seoTitle": "Ücretsiz Anagram Çözücü | Harflerden Kelime Bul",
       "pageDesc": "Harfleri girin ve tek tıkla tüm olası anagram ve kombinasyonları üretin. Scrabble gibi kelime oyunları için harika. Ücretsiz ve anlık.",
       "intro": "Harflerinizi yazın; araç her benzersiz düzenlemeyi listeler."
     },
@@ -1080,6 +1133,7 @@
       "name": "Anahtar Kelime Birleştirici",
       "desc": "İki anahtar kelime listesini çaprazlayarak tüm kombinasyonları üretir.",
       "title": "Anahtar Kelime Birleştirici - Kombinasyon Üretme Aracı",
+      "seoTitle": "Ücretsiz Anahtar Kelime Birleştirici | Liste Birleştir",
       "pageDesc": "İki anahtar kelime listesi yapıştırın ve tüm kombinasyonları anında üretin. SEO araştırması, reklam ve içerik planlama için gerekli. Ücretsiz.",
       "intro": "İki kelime listesi ekleyin; birleştirici tüm sol × sağ eşleşmeleri oluşturur."
     },
@@ -1087,6 +1141,7 @@
       "name": "Başlık Uzunluğu Kontrolü",
       "desc": "Başlık ve açıklamanın kaç karakter ve piksel kullandığını kontrol eder.",
       "title": "Başlık Uzunluğu Kontrolü - SEO Başlık Kontrolü",
+      "seoTitle": "Ücretsiz Başlık Uzunluğu Kontrolü | SEO Başlık",
       "pageDesc": "Başlığınızın ve meta açıklamanızın karakter sayısı ile tahmini piksel genişliğini Google SERP sınırlarına göre ölçün. Ücretsiz, hızlı ve gizli.",
       "intro": "Bir başlık ve açıklama yapıştırın; karakter sayılarını, piksel genişliklerini ve sınırların içinde kalıp kalmadıklarını görün."
     },
@@ -1094,6 +1149,7 @@
       "name": "Sihirli 8 Top",
       "desc": "Bir soru sorun ve klasik cevap için sanal sihirli 8 topu sallayın.",
       "title": "Sihirli 8 Top - Soru Sor ve Cevap Al",
+      "seoTitle": "Ücretsiz Sihirli 8 Top | Soru Sor ve Salla",
       "pageDesc": "Evet-hayır sorularına rastgele cevap için klasik sihirli 8 topu sallayın. Ücretsiz, eğlenceli ve her cihazda çalışır.",
       "intro": "Bir soru düşünün, Salla düğmesine dokunun ve topun klasik cevabını okuyun."
     },
@@ -1101,6 +1157,7 @@
       "name": "Yakıt Maliyeti Hesaplayıcı",
       "desc": "Mesafe, ortalama tüketim ve yakıt fiyatına göre toplam yol maliyetini hesaplar.",
       "title": "Yakıt Maliyeti Hesaplayıcı - Mesafeye Göre Yol Masrafı Hesaplama",
+      "seoTitle": "Ücretsiz Yakıt Maliyeti Hesaplayıcı | Yol Yakıtı",
       "pageDesc": "Mesafe, ortalama yakıt tüketimi ve litre fiyatı girerek yolculuğunuzun toplam yakıt maliyetini anında hesaplayın. Hesaplama tarayıcınızda yapılır — kayıt gerekmez, veri yüklenmez.",
       "intro": "Mesafe, tüketim ve yakıt fiyatını girin; toplam maliyeti anında görün."
     },
@@ -1108,6 +1165,7 @@
       "name": "İntihal Kontrolü",
       "desc": "İki metni karşılaştırır ve aralarındaki benzerlik oranını yüzde olarak ölçer.",
       "title": "İntihal Kontrolü - İki Metnin Benzerlik Oranını Ölçme",
+      "seoTitle": "Ücretsiz İntihal Kontrolü | İki Metin Benzerliği",
       "pageDesc": "İki metni yapıştırın ve anında benzerlik skoru alın. Karşılaştırma tamamen tarayıcınızda yapılır; içeriğiniz cihazınızdan çıkmaz.",
       "intro": "İki metni yapıştırın; benzerlik yüzdesi yazdıkça güncellenir."
     },
@@ -1123,6 +1181,7 @@
       "name": "Resim Döndürücü & Çevirici",
       "desc": "Görseli 90 veya 180 derece döndürür; yatay ve dikey çevirir.",
       "title": "Resim Döndürücü - Online Foto Döndürme ve Çevirme",
+      "seoTitle": "Ücretsiz Görsel Döndürücü | Fotoğrafı Döndür",
       "pageDesc": "Bir görsel yükleyin, 90 veya 180 derece döndürün ya da yatay/dikey çevirin; önizleyip düzenlenmiş dosyayı indirin. Her şey tarayıcınızda gerçekleşir.",
       "intro": "Görsel yükleyin, döndürme veya çevirme uygulayın ve sonucu indirin."
     },
@@ -1130,6 +1189,7 @@
       "name": "XML Sitemap Üretici",
       "desc": "URL listesinden Google Search Console için hazır, geçerli bir sitemap.xml oluşturur.",
       "title": "XML Sitemap Üretici - SEO İçin Sitemap Oluşturma",
+      "seoTitle": "Ücretsiz XML Site Haritası Üretici | sitemap.xml",
       "pageDesc": "URL'lerinizi yapıştırın, lastmod eklemek isteyip istemediğinizi seçin ve sunucunuza yükleyebileceğiniz ya da Google Search Console'a gönderebileceğiniz geçerli bir sitemap.xml üretin. Tamamen tarayıcınızda çalışır.",
       "intro": "Her satıra bir URL girin, seçenekleri ayarlayın ve sitemap.xml'inizi oluşturun."
     },
@@ -1145,6 +1205,7 @@
       "name": "Kelime Karıştırıcı",
       "desc": "Kelimelerin harflerini karıştırır; ilk ve son harfi sabit tutma veya tam karıştırma seçenekleri sunar.",
       "title": "Kelime Karıştırıcı - Metin Karıştırma Aracı",
+      "seoTitle": "Ücretsiz Kelime Karıştırıcı | Kelimeleri Karıştır",
       "pageDesc": "Metninizi yapıştırın ve her kelimenin harflerini karıştırın. İlk ve son harfi sabit tutarak tanınabilir kelimeler üretebilir veya her şeyi tamamen rastgele karıştırabilirsiniz. Araç tamamen tarayıcınızda çalışır.",
       "intro": "Metninizi girin, bir mod seçin ve anında karıştırın."
     },
@@ -1152,6 +1213,7 @@
       "name": "Hashtag Üretici",
       "desc": "Bir cümleyi boşluksuz, paylaşıma hazır hashtaglere dönüştürür.",
       "title": "Hashtag Üretici - Metinden Hashtag Oluşturma",
+      "seoTitle": "Ücretsiz Hashtag Üretici | Metinden Hashtag Oluştur",
       "pageDesc": "Bir cümle yazın ve tek tıkla temiz, boşluksuz hashtagler elde edin. İsteğe bağlı seçeneklerle kısa ve genel kelimeleri filtreleyin, listeyi kopyalayın. Her şey cihazınızda kalır.",
       "intro": "Bir cümle girin, seçenekleri ayarlayın ve hashtaglerinizi kopyalayın."
     },
@@ -1159,6 +1221,7 @@
       "name": "Kısaltma Üretici",
       "desc": "Herhangi bir kelime grubundan büyük harfli kısaltma üretir; noktalı stili destekler.",
       "title": "Kısaltma Üretici - İsim veya Cümleden Akronim Oluşturma",
+      "seoTitle": "Ücretsiz Kısaltma Üretici | İfadeden Kısaltma Oluştur",
       "pageDesc": "Araca istediğiniz kelime dizisini verin; kelimelerin ilk harflerini tek bir kısaltmada toplar. Noktalı seçenek ile T.C. gibi stiller üretebilirsiniz. Tüm işlem tarayıcınızda gerçekleşir.",
       "intro": "Bir kelime grubu yazın ve oluşan kısaltmayı kopyalayın."
     },
@@ -1166,6 +1229,7 @@
       "name": "Palindrom Kontrolü",
       "desc": "Bir kelimenin veya cümlenin tersten okunduğunda aynı olup olmadığını kontrol eder.",
       "title": "Palindrom Kontrolü - Ters Okunuş Testi",
+      "seoTitle": "Ücretsiz Palindrom Kontrolü | Kelime ve Cümle",
       "pageDesc": "Herhangi bir metni yazın ve palindrom olup olmadığını anında öğrenin. Boşluk, noktalama ve büyük küçük harf ayrımını yok saymak için yoksay seçeneğini açın. Tamamen gizli ve yerel çalışır.",
       "intro": "Bir metin girin ve sonucu hemen görün."
     },
@@ -1173,6 +1237,7 @@
       "name": "HTTP Durum Kodları",
       "desc": "Yaygın HTTP durum kodlarını ve anlamlarını sınıflara göre listeler.",
       "title": "HTTP Durum Kodları - 1xx ile 5xx Arası Anlamları",
+      "seoTitle": "HTTP Durum Kodları | Anlamları ve Referans",
       "pageDesc": "100 ile 511 arasındaki en yaygın HTTP durum kodları için hızlı bir başvuru. Numaraya veya isme göre arayın, ya da bilgi, başarı, yönlendirme, istemci hatası ve sunucu hatası sınıflarına göre gezinebilirsiniz.",
       "intro": "Bir numara arayın veya aşağıdaki sınıflara göz atın."
     },
@@ -1180,6 +1245,7 @@
       "name": "CSV Biçimlendirici",
       "desc": "Dağınık CSV verisini ayrıştırır, tablo olarak önizler ve TSV olarak kopyalatır.",
       "title": "CSV Biçimlendirici - CSV Verisini Düzenle ve Önizle",
+      "seoTitle": "Ücretsiz CSV Biçimlendirici | Tablo ve TSV",
       "pageDesc": "Ham CSV verisini yapıştırın, ayırıcıyı seçin ve veriyi temiz bir tablo olarak görün. Araç tırnaklı alanları doğru işler ve sonucu her elektronik tabloya uygun, sekmeyle ayrılmış değerler olarak kopyalamanızı sağlar.",
       "intro": "CSV verinizi yapıştırın ve tablo olarak önizleyin."
     },
@@ -1187,6 +1253,7 @@
       "name": "Geri Sayım Hesaplayıcı",
       "desc": "İki takvim tarihi arasında kaç gün, hafta ve ay olduğunu hesaplar.",
       "title": "Geri Sayım Hesaplayıcı - Tarihler Arası Gün Hesaplama",
+      "seoTitle": "Ücretsiz Gün Sayacı | İki Tarih Arası Gün",
       "pageDesc": "Bir başlangıç ve bir hedef tarih seçin; kaç gün, hafta ve gün kaldığını ya da tarihin ne kadar geçmiş olduğunu görün. Geri sayımlar, teslim tarihleri, seyahatler ve proje planlaması için idealdir.",
       "intro": "İki tarihi seçin ve sonucu okuyun."
     },
@@ -1194,6 +1261,7 @@
       "name": "Koşu Tempo Hesaplayıcı",
       "desc": "Km başına tempoyu hıza ve tahmini yarış sürelerine dönüştürür.",
       "title": "Koşu Tempo Hesaplayıcı - Tempo, Hız ve Yarış Süreleri",
+      "seoTitle": "Ücretsiz Koşu Tempo Çevirici | Tempo ve Hız",
       "pageDesc": "Dakika ve saniye cinsinden km başına temponuzu girin; ortalama hızı ve 5K, 10K, yarı maraton ile tam maraton için tahmini bitiş sürelerini görün. Sade sayılar, anında sonuçlar.",
       "intro": "Km başına temponuzu girin, gerisi gelsin."
     },
@@ -1201,6 +1269,7 @@
       "name": "Birikim Hedefi Hesaplayıcı",
       "desc": "Bir birikim hedefine ulaşma süresini veya gereken aylık tutarı hesaplar.",
       "title": "Birikim Hedefi Hesaplayıcı - Birikiminizi Planlayın",
+      "seoTitle": "Ücretsiz Tasarruf Hedefi Hesaplayıcı | Hedefe Ulaş",
       "pageDesc": "Hedefinizi, mevcut birikiminizi ve her ay ayırdığınız tutarı girin. Hesaplayıcı kalan tutarı, gereken ay sayısını ve hedef süre için gereken aylık birikimi gösterir.",
       "intro": "Hedefinizi ve mevcut birikiminizi girin, plan yapın."
     },
@@ -1208,6 +1277,7 @@
       "name": "Taş Kağıt Makas",
       "desc": "Bilgisayara karşı klasik taş kağıt makas oyunu; canlı skor takibi yapılır.",
       "title": "Taş Kağıt Makas - Bilgisayara Karşı Oyna",
+      "seoTitle": "Ücretsiz Taş Kağıt Makas | Bilgisayara Karşı Oyna",
       "pageDesc": "Rastgele bir bilgisayar rakibine karşı taş, kağıt, makas oynayın. Her turda galibiyet, beraberlik ve mağlubiyet sayıları güncellenir; skoru istediğiniz zaman sıfırlayabilirsiniz.",
       "intro": "Taş, kağıt veya makas seçin ve oynamaya başlayın."
     },
@@ -1215,6 +1285,7 @@
       "name": "Burç Bulucu",
       "desc": "Doğum tarihine göre burcunuzu, elementinizi ve özelliklerinizi gösterir.",
       "title": "Burç Bulucu - Doğum Tarihine Göre Burç Hesaplama",
+      "seoTitle": "Ücretsiz Burç Bulucu | Doğum Tarihine Göre Burç",
       "pageDesc": "Bir doğum tarihi girin ve eşleşen burcu, elementini, tarih aralığını ve kısa bir karakter özetini anında öğrenin. İsimler, tarihler ve doğum günü karşılaştırmaları için eğlenceli bir rehber.",
       "intro": "Bir tarih seçin ve burcunuzu keşfedin."
     },
@@ -1222,6 +1293,7 @@
       "name": "Metin Kaçış Karakteri",
       "desc": "Metni JSON veya JavaScript dizesine uygun kaçış karakterleriyle işaretler veya çözer.",
       "title": "Metin Kaçış ve Kaçış Kaldırıcı - JSON Dizesi Dönüşümü",
+      "seoTitle": "Ücretsiz Metin Kaçış ve Çözme | JSON ve JS Dizeleri",
       "pageDesc": "Düz metin yazın; JSON ve JavaScript dizesinde kullanmak üzere tırnak, ters bölü ve özel karakterleri kaçış karakterleriyle işaretleyin. Veya kaçışlı metni yapıştırıp okunabilir hale çözün. Tamamen yerel.",
       "intro": "Metin girin, kaçış veya çözüm seçin ve sonucu kopyalayın."
     },
@@ -1229,6 +1301,7 @@
       "name": "Emoji Kaldırıcı",
       "desc": "Metindeki tüm emoji ve süsleyici sembolleri tarayıcıda temizler.",
       "title": "Emoji Kaldırıcı - Metinden Emoji Temizleme Aracı",
+      "seoTitle": "Ücretsiz Emoji Silici | Metinden Emoji Kaldır",
       "pageDesc": "Herhangi bir metin yapıştırın; bu araç emojileri, sembolleri ve varyasyon seçicileri siler, geriye yalnızca düz metin kalır. Yayın öncesi metni temizlemek veya emojileri kaldırıp betiklerle kullanmak için idealdir. Her şey tarayıcınızda yerel olarak çalışır.",
       "intro": "Metninizi yapıştırın ve anında emojisiz haliyle kopyalayın."
     },
@@ -1252,6 +1325,7 @@
       "name": "URL Ayrıştırıcı",
       "desc": "Herhangi bir URL'yi protokol, host, yol, sorgu ve hash bileşenlerine ayırır.",
       "title": "URL Ayrıştırıcı - URL'yi Parçalarına Ayırma Aracı",
+      "seoTitle": "Ücretsiz URL Ayrıştırıcı | URL Bileşenlerini Çöz",
       "pageDesc": "Bir URL yapıştırın ve tüm bileşenleri anında görün: protokol, host, port, yol, sorgu dizesi, hash, kimlik bilgileri ve origin. WHATWG URL standardına uyar; sıra dışı ama geçerli URL'ler doğru işlenir. Bağlantı hatalarını ayıklamak ve URL yapısını anlamak için idealdir. Tamamen tarayıcınızda çalışır.",
       "intro": "Bir URL girin ve her parçasını tabloda inceleyin."
     },
@@ -1259,6 +1333,7 @@
       "name": "JS Küçültücü",
       "desc": "JavaScript kodundan boş satırları ve satır başı boşluklarını temizler.",
       "title": "JS Küçültücü - JavaScript Temizleme Aracı",
+      "seoTitle": "Ücretsiz JavaScript Küçültücü | JS Sıkıştır",
       "pageDesc": "Bir JavaScript dosyası yapıştırın; bu araç satır başı boşluklarını, boş satırları ve tek satırlık yorum satırlarını kaldırarak boyutu küçültür, dize ve şablon dizelerine dokunmaz. Kodu sohbet mesajına veya e-postaya yapıştırmadan önce hızlı bir küçültme için kullanışlıdır. İşlem tarayıcınızda yerel olarak yapılır.",
       "intro": "Kodunuzu yapıştırın ve temizlenmiş halini kopyalayın."
     },
@@ -1266,6 +1341,7 @@
       "name": "MIME Türü Bulucu",
       "desc": "Yaygın dosya uzantılarının MIME türünü bulur veya türe göre arama yapar.",
       "title": "MIME Türü Bulucu - Dosya Türü Sorgulama Aracı",
+      "seoTitle": "Ücretsiz MIME Türü Bulucu | Dosya Uzantısı",
       "pageDesc": "png veya svg gibi bir dosya uzantısı yazın ve MIME türünü anında öğrenin; ya da image veya application gibi bir tür yazarak eşleşen uzantıları listeyin. Sunucu yapılandırması, yükleme doğrulaması ve API işleri için kullanışlıdır. Arama tablosu tarayıcınızda hazır durumdadır.",
       "intro": "Bir uzantı girin veya MIME türüyle arayın, sonucu kopyalayın."
     },
@@ -1273,6 +1349,7 @@
       "name": "Yüzde Değişim Hesaplayıcı",
       "desc": "İki değer arasındaki yüzde artış veya azalışı ve mutlak farkı hesaplar.",
       "title": "Yüzde Değişim Hesaplayıcı - Artış ve Azalış Hesaplama",
+      "seoTitle": "Ücretsiz Yüzde Değişim Hesaplayıcı | Artış ve Azalış",
       "pageDesc": "Eski ve yeni değeri girin; hesaplayıcı yüzde değişimi ve mutlak farkı gösterir. Fiyatlar, puanlar, metrikler ve daha fazlası için çalışır. Formül hem artışı hem azalışı kapsar; işaret her zaman doğru olur. Hesaplama anında tarayıcınızda gerçekleşir.",
       "intro": "İki değeri girin ve yüzde değişimini okuyun."
     },
@@ -1280,6 +1357,7 @@
       "name": "Yakıt Tüketimi Çevirici",
       "desc": "L/100 km, MPG ve km/L yakıt tüketim birimleri arasında anında çevirir.",
       "title": "Yakıt Tüketimi Çevirici - L/100km, MPG, km/L Dönüştürme",
+      "seoTitle": "Ücretsiz Yakıt Tüketimi Çevirici | MPG ve L/100km",
       "pageDesc": "100 km'de litre, ABD galonu başına mil veya litre başına km cinsinden bir tüketim değeri girin; üç birimi birden aynı anda görün. Farklı bölgelerden araçları veya farklı birimlerle yazılmış özellikleri karşılaştırırken idealdir. Çevrim tarayıcınızda yerel olarak yapılır.",
       "intro": "Bir değer girin ve üç yakıt tüketimi birimini birden okuyun."
     },
@@ -1287,6 +1365,7 @@
       "name": "Elektrik Tüketimi Hesaplayıcı",
       "desc": "Bir cihazın aylık ve yıllık elektrik tüketimini ve maliyetini tahmin eder.",
       "title": "Elektrik Tüketimi Hesaplayıcı - Fatura Tahmini Hesaplama",
+      "seoTitle": "Ücretsiz Elektrik Maliyeti Hesaplayıcı | Cihaz Tüketimi",
       "pageDesc": "Cihazın gücünü, günlük kullanım saatini, aylık gün sayısını ve kWh fiyatınızı girin; araç aylık ve yıllık kilovat-saati ve her iki dönem için beklenen maliyeti tahmin eder. Bütçe yapmak ve evdeki en büyük tüketicileri bulmak için kullanışlıdır.",
       "intro": "Dört alanı doldurun ve tüketim ile maliyet tahmininizi okuyun."
     },
@@ -1294,6 +1373,7 @@
       "name": "Yakılan Kalori Hesaplayıcı",
       "desc": "MET değerlerine göre bir aktivitenin yaktığı kaloriyi tahmin eder.",
       "title": "Yakılan Kalori Hesaplayıcı - Aktivite Kalori Hesabı",
+      "seoTitle": "Ücretsiz Yakılan Kalori Hesaplayıcı | Aktivite",
       "pageDesc": "Yürüyüş, koşu, salondan ip atlamaya kadar bir aktivite seçin; kilonuzu ve süreyi girin ve yakılan kalori tahminini görün. Hesaplama standart MET değerlerini kullanır; sonuçlar aktiviteler arasında karşılaştırılabilir. Antrenman planlamak ve eforu takip etmek için idealdir.",
       "intro": "Aktivite seçin, kilonuzu ve sürenizi girin, sonucu okuyun."
     },
@@ -1301,6 +1381,7 @@
       "name": "Görsel Birleştirici",
       "desc": "İki görseli yan yana tek bir PNG'de birleştirir; tarayıcıda çalışır.",
       "title": "Görsel Birleştirici - İki Görseli Yan Yana Birleştirme",
+      "seoTitle": "Ücretsiz Görsel Birleştirici | İki Görseli Birleştir",
       "pageDesc": "İki görsel seçin ve tek tıkla daha geniş tek bir PNG olarak birleştirin. Öncesi-sonrası karşılaştırmaları, kolajlar veya ekran görüntülerini yan yana dikmek için harikadır. İki görsel tek bir tuval üzerine çizilir ve dosya otomatik indirilir. Hiçbir şey bir yere yüklenmez.",
       "intro": "İki görsel seçin, birleştirin ve tek PNG olarak indirin."
     },
@@ -1308,6 +1389,7 @@
       "name": "Görsel Çevirici",
       "desc": "Görseli yatay veya dikey aynalayıp PNG olarak indirir.",
       "title": "Görsel Çevirici - Görseli Yatay veya Dikey Aynalama",
+      "seoTitle": "Ücretsiz Görsel Çevirici | Fotoğrafı Aynala",
       "pageDesc": "Bir görsel yükleyin, yatay veya dikey çevirmeyi seçin ve aynalanmış halini PNG olarak indirin. Görseli aynı bir ayna gibi çevirir; döndürmekten farklıdır. Tasarım mizanpajları, küçük resimler ve hızlı önizlemeler için kullanışlıdır. Tüm işlem cihazınızda kalır.",
       "intro": "Bir görsel seçin, eksen seçin ve çevrilmiş halini indirin."
     },
@@ -1323,6 +1405,7 @@
       "name": "Site Haritası URL Çıkarıcı",
       "desc": "XML site haritasındaki tüm URL'leri çıkarır, sayar ve kopyalamanızı sağlar.",
       "title": "Site Haritası URL Çıkarıcı - XML Sitemap'ten URL Çıkarma",
+      "seoTitle": "Ücretsiz Site Haritası Link Çıkarıcı | Sitemap URL",
       "pageDesc": "Herhangi bir site haritasının XML'ini yapıştırın; araç her loc girdisini düz bir URL olarak listeler. Toplam sayıyı görün ve tüm listeyi tek tıkla kopyalayın. Bir sitenin kaç sayfa dizine aldığını kontrol etmek veya denetimler için URL listesi oluşturmak harikadır. Ayrıştırma tamamen tarayıcınızda gerçekleşir.",
       "intro": "Site haritası XML'ini yapıştırın ve çıkarılan URL'leri kopyalayın."
     },
@@ -1330,6 +1413,7 @@
       "name": "Fıkra Üretici",
       "desc": "Tek tıkla rastgele bir programcı fıkrası gösterir.",
       "title": "Fıkra Üretici - Rastgele Programcı Fıkraları",
+      "seoTitle": "Ücretsiz Şaka Üretici | Rastgele Programcı Şakaları",
       "pageDesc": "Düğmeye basın; araç sizin için rastgele bir programcı fıkrası seçer. Küçük, özenle seçilmiş bir koleksiyon doğrudan sayfada durur; internetsiz bile çalışır ve hiçbir şey bir yere gönderilmez. Kodlama molaları arasında kısa bir kahkaha için idealdir.",
       "intro": "Rastgele bir programcı fıkrası için düğmeye basın."
     },
@@ -1337,6 +1421,7 @@
       "name": "Rastgele Alıntı",
       "desc": "Kod, iş ve yaşam üzerine rastgele bir sözü tek tıkla gösterir.",
       "title": "Rastgele Alıntı - İlham Veren Sözler",
+      "seoTitle": "Ücretsiz Rastgele Söz Üretici | İlham Veren Sözler",
       "pageDesc": "Düğmeye basın; yerleşik koleksiyondan seçilen düşündürücü bir söz karşınıza çıkar. Her dokunuş bir önceki alıntıyı atlayarak tekrarı azaltır. Tamamen çevrimdışı çalışır ve verilerinizi asla bir yere göndermez.",
       "intro": "Rastgele bir alıntı için düğmeye basın."
     },
@@ -1344,6 +1429,7 @@
       "name": "Sayıyı Tahmin Et",
       "desc": "1 ile 100 arasındaki gizli sayıyı en az denemeyle bulmaya çalışın.",
       "title": "Sayıyı Tahmin Et - Klasik Sayı Tahmin Oyunu",
+      "seoTitle": "Ücretsiz Sayı Tahmin Oyunu | Online Tahmin",
       "pageDesc": "Klasik bir mantık oyunu: sayfa 1 ile 100 arasında gizli bir sayı seçer; siz tahmin edersiniz ve her denemenin ardından büyük mü küçük mü ipucu alırsınız. Kaç denemede bulduğunuzu takip edin; stratejinizi geliştirin ya da sadece eğlenin. Oyun tamamen tarayıcınızda çalışır.",
       "intro": "Yalnızca büyük ve küçük ipuçlarıyla gizli sayıyı yenin."
     }

@@ -205,6 +205,7 @@
       "name": "HTML Formatter",
       "desc": "Beautify HTML with clean two-space indentation while preserving raw pre, script and style blocks.",
       "title": "HTML Formatter — Free Online Tool",
+      "seoTitle": "Free HTML Formatter Online | Beautify & Indent HTML",
       "pageDesc": "Format HTML for free in your browser: paste your markup and get clean two-space indentation while pre, script and style blocks stay untouched.",
       "intro": "Turn messy or minified HTML into readable markup while keeping code blocks safe."
     },
@@ -348,6 +349,7 @@
       "name": "Whitespace Cleaner",
       "desc": "Trims lines, collapses repeated spaces and removes blank lines from your text.",
       "title": "Whitespace Cleaner — Free Online Tool",
+      "seoTitle": "Free Whitespace Remover | Clean Up Text & Extra Spaces",
       "pageDesc": "Trim lines, collapse multiple spaces, remove empty lines or strip all whitespace from any text in one click. Free and private.",
       "intro": "Clean trailing spaces, extra gaps and blank lines from any text in one click."
     },
@@ -379,6 +381,7 @@
       "name": "Duplicate Line Remover",
       "desc": "Removes duplicate lines and keeps only the first occurrence of each line.",
       "title": "Duplicate Line Remover — Free Online Tool",
+      "seoTitle": "Free Duplicate Line Remover | Remove Repeated Lines",
       "pageDesc": "Remove duplicate lines from any list instantly, keeping them in first-seen order. Free, private and fully client-side.",
       "intro": "Paste a list and remove duplicate lines while keeping the original order of first occurrences."
     },
@@ -386,6 +389,7 @@
       "name": "AI Token Calculator",
       "desc": "Estimates the token count of your text for AI and LLM context limits.",
       "title": "AI Token Calculator — Free Online Tool",
+      "seoTitle": "Free AI Token Counter | Count Tokens for ChatGPT & LLMs",
       "pageDesc": "Estimate the token count of any text for ChatGPT, Claude and other LLM limits, plus characters, words and lines. Runs in your browser; data never leaves it.",
       "intro": "Paste your text to see an estimated token count together with character, word and line stats."
     },
@@ -417,6 +421,7 @@
       "name": "Average Calculator",
       "desc": "Finds the average, sum, count, minimum and maximum of a list of numbers instantly.",
       "title": "Average Calculator — Free Online Tool",
+      "seoTitle": "Free Average Calculator | Mean, Sum & Count Online",
       "pageDesc": "Compute the average, sum, count, minimum and maximum of any list of numbers in seconds. Free and fully client-side; your numbers are never sent or stored.",
       "intro": "Paste or type a list of numbers and see their average, sum, count, minimum and maximum."
     },
@@ -424,6 +429,7 @@
       "name": "Dog Age Calculator",
       "desc": "Estimates a dog's age in human years using its age and breed size.",
       "title": "Dog Age Calculator — Free Online Tool",
+      "seoTitle": "Free Dog Age Calculator | Convert Dog Years to Human",
       "pageDesc": "Convert your dog's age to human years with a size-aware formula for small, medium and large breeds. Free and private; everything runs in your browser.",
       "intro": "Enter your dog's age and size to see the approximate equivalent age in human years."
     },
@@ -431,6 +437,7 @@
       "name": "Subnet Calculator",
       "desc": "Calculates network, broadcast, netmask and host counts for an IPv4 subnet.",
       "title": "Subnet Calculator — Free Online Tool",
+      "seoTitle": "Free Subnet Calculator | IPv4 Netmask & Host Range",
       "pageDesc": "Calculate the network address, broadcast, netmask and usable host count for any IPv4 subnet /0 to /32. Free and fully client-side; addresses never leave your browser.",
       "intro": "Enter an IPv4 address and prefix to get the network, broadcast, netmask and host counts."
     },
@@ -446,6 +453,7 @@
       "name": "WCAG Contrast Checker",
       "desc": "Checks the contrast ratio between two colors against all WCAG AA and AAA requirements.",
       "title": "WCAG Contrast Checker — Free Online Tool",
+      "seoTitle": "Free WCAG Contrast Checker | Color Contrast Ratio Test",
       "pageDesc": "Compare any two colors against every WCAG contrast requirement for normal and large text, from AA to AAA. Free and private; colors never leave your browser.",
       "intro": "Pick a text and background color to see the contrast ratio and which WCAG levels it passes."
     },
@@ -461,6 +469,7 @@
       "name": "Box Shadow Generator",
       "desc": "Builds box-shadow CSS with sliders for offset, blur, spread and opacity, and a live preview.",
       "title": "Box Shadow Generator — Free Online Tool",
+      "seoTitle": "Free CSS Box Shadow Generator | Make box-shadow Online",
       "pageDesc": "Create box-shadow CSS visually with offset, blur, spread, opacity and color controls and a live preview. Free and private; CSS is generated in your browser.",
       "intro": "Adjust offset, blur, spread, opacity and color to see the shadow live and copy the CSS."
     },
@@ -476,6 +485,7 @@
       "name": "List Randomizer",
       "desc": "Shuffles a list of items or draws one random item from it in your browser.",
       "title": "List Randomizer — Free Online Tool",
+      "seoTitle": "Free List Randomizer | Shuffle a List & Pick Random",
       "pageDesc": "Shuffle any list with a fair randomizer or draw a single random winner from it. Free and private; your list never leaves your browser.",
       "intro": "Shuffle your list or pick one random item from it — the result is yours to copy."
     },
@@ -491,6 +501,7 @@
       "name": "MD5 File Checksum",
       "desc": "Computes the MD5 checksum of a file entirely in your browser without uploading it.",
       "title": "MD5 File Checksum — Free Online Tool",
+      "seoTitle": "Free MD5 File Checksum Online | Verify File Hash",
       "pageDesc": "Compute the MD5 digest of any file right in your browser to verify integrity. Private by design — the file is never uploaded anywhere.",
       "intro": "Pick a file to compute its MD5 checksum locally and copy the digest with one click."
     },
@@ -530,6 +541,7 @@
       "name": "Image Color Picker",
       "desc": "Pick any color from an image online — live HEX and RGB values with a saved palette.",
       "title": "Image Color Picker — Free Online Tool",
+      "seoTitle": "Free Image Color Picker | Pick HEX Color from Image",
       "pageDesc": "Pick colors from any image free online. Hover to read live HEX and RGB values, click to save colors to a palette and copy them — runs in your browser.",
       "intro": "Sample any pixel and build a palette from your own images."
     },
@@ -593,6 +605,7 @@
       "name": "Morse Code Translator",
       "desc": "Translates text into Morse code and Morse code back into readable text.",
       "title": "Morse Code Translator — Free Online Tool",
+      "seoTitle": "Free Morse Code Translator | Text to Morse Converter",
       "pageDesc": "Translate text to Morse code or decode Morse code back to text for free online. Supports A–Z, 0–9 and common punctuation right in your browser.",
       "intro": "Type a message and see it in dots and dashes, or paste Morse and read the plain text back."
     },
@@ -608,6 +621,7 @@
       "name": "Bold & Italic Text Generator",
       "desc": "Converts your text into Unicode bold, italic, bold-italic and monospace styles.",
       "title": "Bold & Italic Text Generator — Free Online Tool",
+      "seoTitle": "Free Fancy Text Generator | Bold & Italic Unicode Text",
       "pageDesc": "Generate Unicode bold, italic, bold-italic and monospace text for free online. Style your name, bio or post and copy it instantly in your browser.",
       "intro": "Type your text and get four styled versions you can copy straight into social media."
     },
@@ -615,6 +629,7 @@
       "name": "Caesar Cipher & ROT13",
       "desc": "Encrypts or decrypts text with a Caesar shift from 1 to 25, plus one-click ROT13.",
       "title": "Caesar Cipher & ROT13 — Free Online Tool",
+      "seoTitle": "Free Caesar Cipher & ROT13 Decoder Online",
       "pageDesc": "Encrypt or decrypt text with the Caesar cipher free online. Pick a shift from 1 to 25, choose a direction, or jump instantly to ROT13 in your browser.",
       "intro": "Shift your message a few letters forward or backward to make it unreadable at a glance."
     },
@@ -638,6 +653,7 @@
       "name": "BMR & TDEE Calculator",
       "desc": "Estimate your daily calories with the Mifflin-St Jeor formula.",
       "title": "BMR & TDEE Calculator — Free Online Tool",
+      "seoTitle": "Free BMR & TDEE Calculator | Daily Calorie Needs",
       "pageDesc": "Free BMR and TDEE calculator: estimate daily calorie needs with the Mifflin-St Jeor formula and get weight loss, maintenance and gain targets instantly.",
       "intro": "Know your daily calorie budget for losing, keeping or gaining weight."
     },
@@ -645,6 +661,7 @@
       "name": "Body Fat Calculator",
       "desc": "Estimate body fat percentage with the U.S. Navy method.",
       "title": "Body Fat Calculator — Free Online Tool",
+      "seoTitle": "Free Body Fat Calculator | US Navy Method Online",
       "pageDesc": "Free body fat calculator with the U.S. Navy method: get your body fat percentage, ACE category and fat mass in kilograms instantly in your browser.",
       "intro": "Find your body fat percentage from simple tape measurements."
     },
@@ -652,6 +669,7 @@
       "name": "Ideal Weight Calculator",
       "desc": "Find your ideal weight using Devine, Robinson and BMI ranges.",
       "title": "Ideal Weight Calculator — Free Online Tool",
+      "seoTitle": "Free Ideal Weight Calculator | Healthy Weight Range",
       "pageDesc": "Free ideal weight calculator: get your ideal weight with the Devine and Robinson formulas plus the healthy BMI weight range — all in your browser.",
       "intro": "Compare Devine and Robinson formulas with a healthy BMI range."
     },
@@ -659,6 +677,7 @@
       "name": "Sleep Calculator",
       "desc": "Find the best bedtime and wake-up time with sleep cycles.",
       "title": "Sleep Calculator — Free Online Tool",
+      "seoTitle": "Free Sleep Calculator | Best Bedtime & Wake-Up Time",
       "pageDesc": "Free sleep calculator: enter your wake-up time or bedtime and get schedules built on 5 and 6 sleep cycles, computed instantly in your browser.",
       "intro": "Wake up refreshed by using complete sleep cycles."
     },
@@ -674,6 +693,7 @@
       "name": "AES Encrypt/Decrypt",
       "desc": "Encrypt and decrypt text with AES-GCM 256 using a password-derived PBKDF2 key — entirely in your browser.",
       "title": "AES Encrypt/Decrypt — Free Online Tool",
+      "seoTitle": "Free AES Encryption Online | AES-256 Encrypt & Decrypt",
       "pageDesc": "Encrypt and decrypt text with AES-GCM 256 right in your browser, using a password-based PBKDF2 key so your data stays private and local on your device.",
       "intro": "Encrypt your text with AES-GCM 256 and a password-derived key, or decrypt it back — all locally."
     },
@@ -689,6 +709,7 @@
       "name": "JWT Generator",
       "desc": "Create signed HS256 JWT tokens from your own header, payload and secret — instantly, in your browser.",
       "title": "JWT Generator — Free Online Tool",
+      "seoTitle": "Free JWT Generator Online | Create Signed JWT Tokens",
       "pageDesc": "Create signed JWT tokens free in your browser: edit the header and payload JSON, enter your secret and copy an HS256 token with visible parts.",
       "intro": "Build a signed HS256 JSON Web Token from your own header, payload and secret — right in the browser."
     },
@@ -728,6 +749,7 @@
       "name": "JSON ↔ XML Converter",
       "desc": "Converts JSON to XML and XML to JSON in both directions with arrays and attributes supported.",
       "title": "JSON ↔ XML Converter — Free Online Tool",
+      "seoTitle": "Free JSON to XML Converter | Convert XML to JSON",
       "pageDesc": "Convert JSON to XML or XML to JSON online in either direction. Arrays and attributes are preserved, and errors are reported clearly. Free and private.",
       "intro": "Switch between JSON and XML for your data in one click in either direction."
     },
@@ -743,6 +765,7 @@
       "name": "HMAC Generator",
       "desc": "Computes HMAC-SHA256 or HMAC-SHA512 signatures and shows them in hex and Base64.",
       "title": "HMAC Generator — Free Online Tool",
+      "seoTitle": "Free HMAC Generator Online | HMAC-SHA256 & SHA512",
       "pageDesc": "Generate HMAC-SHA256 or HMAC-SHA512 signatures online free using the Web Crypto API. Get both hex and Base64 forms instantly; everything runs in your browser.",
       "intro": "Sign any message with a secret key and read the HMAC digest in hex or Base64."
     },
@@ -750,6 +773,7 @@
       "name": "HTML Table Generator",
       "desc": "Generates ready-to-paste HTML table code from rows, columns and pasted data with a live preview.",
       "title": "HTML Table Generator — Free Online Tool",
+      "seoTitle": "Free HTML Table Generator | Create Table Code Online",
       "pageDesc": "Generate HTML table code online free: set the row and column count, paste tab- or comma-separated data and preview or copy the result. Runs in your browser.",
       "intro": "Build a clean HTML table from your data and paste the code straight into your page."
     },
@@ -765,6 +789,7 @@
       "name": "Image Cropper",
       "desc": "Crop, rotate, flip, and export images with aspect-ratio presets directly in your browser.",
       "title": "Image Cropper — Free Online Tool",
+      "seoTitle": "Free Image Cropper Online | Crop & Rotate Photos",
       "pageDesc": "Crop images online free with social aspect-ratio presets, rotate and flip controls, zoom, and PNG, JPEG, or WebP export. Private by design — your image never leaves your browser.",
       "intro": "Select an area, choose an aspect ratio and output format, then download your cropped image."
     },
@@ -772,6 +797,7 @@
       "name": "Image Watermark",
       "desc": "Adds a logo or image watermark at the position and opacity you choose.",
       "title": "Image Watermark — Free Online Tool",
+      "seoTitle": "Free Image Watermark Tool | Add Watermark to Photos",
       "pageDesc": "Watermark images online free: upload a base image and a logo, pick the position and opacity, and download the result as PNG. Runs entirely in your browser.",
       "intro": "Protect your photos by adding a logo watermark at your preferred position and strength."
     },
@@ -779,6 +805,7 @@
       "name": "JSON-LD Generator",
       "desc": "Creates schema.org JSON-LD structured data for Article, Product, FAQPage, Events and more.",
       "title": "JSON-LD Generator — Free Online Tool",
+      "seoTitle": "Free JSON-LD Generator | Schema.org Structured Data",
       "pageDesc": "Generate schema.org JSON-LD online free for Article, Product, Person, FAQPage and more, ready to paste into your page. Runs entirely in your browser.",
       "intro": "Build structured data for your content type and copy the JSON-LD script into your page."
     },
@@ -786,6 +813,7 @@
       "name": "Hreflang Generator",
       "desc": "Builds hreflang link tags and sitemap blocks for multilingual sites in one click.",
       "title": "Hreflang Generator — Free Online Tool",
+      "seoTitle": "Free Hreflang Generator | Multilingual SEO Tags",
       "pageDesc": "Generate hreflang tags online free for your multilingual site: pick the locales and get link tags plus an XML sitemap block instantly. Runs in your browser.",
       "intro": "Create hreflang tags and a sitemap block so search engines link your language versions."
     },
@@ -793,6 +821,7 @@
       "name": "Robots.txt Generator",
       "desc": "Creates robots.txt content from presets and your own allow and disallow rules.",
       "title": "Robots.txt Generator — Free Online Tool",
+      "seoTitle": "Free Robots.txt Generator | Create Robots.txt Online",
       "pageDesc": "Generate robots.txt online free from tried presets or your own allow/disallow rules, with your sitemap URL included. Copy the result instantly — runs in your browser.",
       "intro": "Build a robots.txt that tells search engines exactly what to crawl."
     },
@@ -816,6 +845,7 @@
       "name": "Stopwatch & Timer",
       "desc": "Measures elapsed time with laps, or counts down from any time you set.",
       "title": "Stopwatch & Timer — Free Online Tool",
+      "seoTitle": "Free Stopwatch & Timer Online | Count Down & Laps",
       "pageDesc": "Use a stopwatch with lap times or a countdown timer online free — no app needed. Precisely tracks hundredths of a second and works entirely in your browser.",
       "intro": "Time anything: start the stopwatch and record laps, or set a countdown and wait for the beep."
     },
@@ -823,6 +853,7 @@
       "name": "Time Zone Converter",
       "desc": "Convert a date and time between any two time zones with daylight saving handled automatically.",
       "title": "Time Zone Converter - Convert Between Time Zones",
+      "seoTitle": "Free Time Zone Converter | Convert Times Worldwide",
       "pageDesc": "Convert a date and time between any two time zones. See the current time in hundreds of cities and get the UTC offset for each zone.",
       "intro": "Convert any date and time from one time zone to another, with daylight saving time handled automatically."
     },
@@ -830,6 +861,7 @@
       "name": "QR Code Reader",
       "desc": "Decode a QR code from any image right in your browser — no upload required.",
       "title": "QR Code Reader - Scan QR Codes From Images Online",
+      "seoTitle": "Free QR Code Reader Online | Scan QR from Image",
       "pageDesc": "Decode QR codes from images instantly and privately. Upload a screenshot or photo of a QR code and read the text, link or data it contains — everything runs in your browser.",
       "intro": "Upload an image containing a QR code and this tool reads it on your device. Decoding runs with the jsQR engine in your browser, so the image never leaves your computer."
     },
@@ -837,6 +869,7 @@
       "name": "Text Extractor",
       "desc": "Pull email addresses, phone numbers, URLs and hashtags out of any text in one click.",
       "title": "Text Extractor - Emails, Phone Numbers, URLs and Hashtags",
+      "seoTitle": "Free Text Extractor | Extract Emails, URLs & Numbers",
       "pageDesc": "Extract email addresses, phone numbers, URLs and hashtags from any text instantly. Works fully in your browser — nothing is uploaded.",
       "intro": "Paste any text and this tool collects every email address, phone number, URL and hashtag in it. Extraction runs on your device, so the text never leaves your computer."
     },
@@ -844,6 +877,7 @@
       "name": "CSS Gradient Generator",
       "desc": "Create linear gradients visually and copy the ready-to-use CSS code.",
       "title": "CSS Gradient Generator - Linear Gradient Maker With Live Preview",
+      "seoTitle": "Free CSS Gradient Generator | Create Linear Gradients",
       "pageDesc": "Design CSS linear gradients visually. Pick two or three colors, choose the direction and angle, preview the result live and copy the ready-to-use CSS. Free, no sign-up, works in your browser.",
       "intro": "Choose two or three colors, set the angle and watch a live preview update as you go. The ready-to-paste CSS is always one click away."
     },
@@ -851,6 +885,7 @@
       "name": "Border Radius Generator",
       "desc": "Round box corners visually and copy the border-radius CSS in one click.",
       "title": "Border Radius Generator - Rounded Corners With Live Preview",
+      "seoTitle": "Free Border Radius Generator | Rounded Corners CSS",
       "pageDesc": "Create border-radius CSS visually. Adjust each corner, preview the rounded box live and copy the code into your stylesheet. Free and works entirely in your browser.",
       "intro": "Adjust the corner sliders and watch a live preview change as the radius grows. Link the corners to keep them equal, or style each one separately, then copy the generated CSS."
     },
@@ -874,6 +909,7 @@
       "name": "Binary Text Converter",
       "desc": "Convert text to UTF-8 binary and binary back to readable text instantly.",
       "title": "Binary to Text Converter - Encode and Decode Binary Online",
+      "seoTitle": "Free Binary to Text Converter | Text to Binary Online",
       "pageDesc": "Convert plain text into binary ones and zeros and decode binary back to text. UTF-8 based, supports every language and emoji. Free, runs entirely in your browser.",
       "intro": "Type a message and turn it into binary code, or paste binary groups and read them back as normal text. Works with every language."
     },
@@ -881,6 +917,7 @@
       "name": "Credit Card Validator",
       "desc": "Check if a card number passes the Luhn algorithm and detect the card brand.",
       "title": "Credit Card Validator - Check Card Number With Luhn Algorithm",
+      "seoTitle": "Free Credit Card Validator | Luhn Check & Card Type",
       "pageDesc": "Verify any card number with the Luhn check-digit algorithm and detect the brand (Visa, Mastercard, Amex and more). Numbers are processed locally and never stored. Free.",
       "intro": "Enter any card number and instantly see whether it is structurally valid, which brand it belongs to and how it should be grouped."
     },
@@ -904,6 +941,7 @@
       "name": "Calculator",
       "desc": "Add, subtract, multiply and divide with a simple in-browser calculator.",
       "title": "Calculator - Free Online Basic Calculator App",
+      "seoTitle": "Free Online Calculator | Simple Basic Calculator",
       "pageDesc": "Use a simple calculator with addition, subtraction, multiplication, division, percentage and square root. Free, fast and works entirely in your browser with no install.",
       "intro": "Click the digits and operators to calculate instantly. Supports +, −, ×, ÷, % and √ with a running result."
     },
@@ -919,6 +957,7 @@
       "name": "CHMOD Calculator",
       "desc": "Build Unix file permissions visually and copy the numeric or symbolic mode.",
       "title": "CHMOD Calculator - Convert Unix Permissions to Numbers Online",
+      "seoTitle": "Free CHMOD Calculator | Unix File Permissions",
       "pageDesc": "Set read, write and execute permissions for owner, group and others and see the octal value (like 755) plus the symbolic form (rwxr-xr-x). Free and instant.",
       "intro": "Tick the permission boxes to build a mode. The octal value and rwx notation update live, and preset buttons apply common modes."
     },
@@ -942,6 +981,7 @@
       "name": "Word Frequency Counter",
       "desc": "Count how often each word appears in your text and spot repeated terms.",
       "title": "Word Frequency Counter - Analyze Word Usage in Text",
+      "seoTitle": "Free Word Frequency Counter | Count Word Occurrences",
       "pageDesc": "Paste any text and get a word frequency table sorted by count. Optionally ignore common stop words. Good for SEO analysis and essays. Free.",
       "intro": "Paste your text and press Analyze. Unique words with their counts are listed from most to least frequent."
     },
@@ -949,6 +989,7 @@
       "name": "Prime Factor Calculator",
       "desc": "Break any number into prime factors and read the result in power notation.",
       "title": "Prime Factor Calculator - Factorization of Numbers Online",
+      "seoTitle": "Free Prime Factorization Calculator | Prime Factors",
       "pageDesc": "Factor any number up to 100,000,000 into its prime factors with exponents, and see whether the number is prime. Free and instant.",
       "intro": "Enter a number and its prime factors appear in power notation, like 360 = 2^3 × 3^2 × 5."
     },
@@ -956,6 +997,7 @@
       "name": "Angle Converter",
       "desc": "Convert angles between degrees, radians and gradians instantly.",
       "title": "Angle Converter - Degrees to Radians Online Calculator",
+      "seoTitle": "Free Angle Converter | Degrees, Radians & Gradians",
       "pageDesc": "Convert angles between degrees, radians and gradians in real time. Type in any unit and the others update instantly. Free, works in your browser.",
       "intro": "Type a value in degrees, radians or gradians and see the other two units update instantly."
     },
@@ -963,6 +1005,7 @@
       "name": "Data Size Converter",
       "desc": "Convert file and storage sizes between bytes, KB, MB, GB and TB.",
       "title": "Data Size Converter - Bytes to KB, MB, GB Online",
+      "seoTitle": "Free Data Size Converter | Bytes, KB, MB, GB & TB",
       "pageDesc": "Convert data sizes between B, KB, MB, GB and TB with decimal (1000) or binary (1024) base. See every unit at once. Free and instant.",
       "intro": "Type a size, pick its unit and base, and read the equivalent in every unit at the same time."
     },
@@ -970,6 +1013,7 @@
       "name": "Fibonacci Generator",
       "desc": "Generate the Fibonacci sequence up to 100 terms with sum and last value.",
       "title": "Fibonacci Generator - Generate the Fibonacci Sequence Online",
+      "seoTitle": "Free Fibonacci Sequence Generator | Numbers Online",
       "pageDesc": "Generate any length of the Fibonacci sequence up to 100 terms. See the list, the sum and the nth value. Free and instant.",
       "intro": "Choose how many terms to print and generate the sequence, its sum and the final value in one click."
     },
@@ -985,6 +1029,7 @@
       "name": "Hours Calculator",
       "desc": "Calculate the time between two clock times in hours, minutes and decimal form.",
       "title": "Hours Calculator - Calculate Time Duration & Work Hours Online",
+      "seoTitle": "Free Hours Calculator | Time Duration Between Times",
       "pageDesc": "Find the duration between two times in hours and minutes, plus the decimal hours and total minutes. Supports overnight shifts. Free and instant.",
       "intro": "Pick a start and end time, then read the result as hours and minutes, total minutes or decimal hours."
     },
@@ -1016,6 +1061,7 @@
       "name": "CSS Units Converter",
       "desc": "Convert between px, rem, em, %, vw and vh CSS units instantly.",
       "title": "CSS Units Converter - px, rem, em, vw, vh Online",
+      "seoTitle": "Free CSS Units Converter | px, rem, em, vw & vh",
       "pageDesc": "Convert CSS values between px, rem, em, %, vw and vh using a configurable base font size and viewport. See every unit at once. Free for developers.",
       "intro": "Pick a value and unit, set the base font size and viewport, and read the result in every CSS unit at once."
     },
@@ -1023,6 +1069,7 @@
       "name": "CSS Triangle Generator",
       "desc": "Create a pure CSS triangle with a chosen direction, size and color.",
       "title": "CSS Triangle Generator - Make Triangles Without Images",
+      "seoTitle": "Free CSS Triangle Generator | Create Triangles Online",
       "pageDesc": "Generate a border-based CSS triangle in eight directions with your size and color. Copy the ready-to-use CSS in one click. Free and no images needed.",
       "intro": "Choose a direction, size and color, then copy the generated CSS triangle code."
     },
@@ -1038,6 +1085,7 @@
       "name": "Image Grid Splitter",
       "desc": "Split a photo into an equal grid of slices, perfect for Instagram posts.",
       "title": "Image Grid Splitter - Slice Photos for Instagram Online",
+      "seoTitle": "Free Image Grid Splitter | Split Photo into Grid",
       "pageDesc": "Split any image into a grid from 1x1 to 6x6 and download every slice as PNG. Perfect for Instagram grids and print layouts. Runs locally, free.",
       "intro": "Upload an image, choose the grid size and download each piece of the split image."
     },
@@ -1045,6 +1093,7 @@
       "name": "ASCII Art Generator",
       "desc": "Turn any image into blocky text-based ASCII art in your browser.",
       "title": "ASCII Art Generator - Image to Text Art Online",
+      "seoTitle": "Free ASCII Art Generator | Convert Image to ASCII",
       "pageDesc": "Convert photos and logos into ASCII art instantly. Adjust width, invert tones and copy the result. Everything runs locally in your browser. Free.",
       "intro": "Upload an image, set the width and generate a character-based ASCII art version."
     },
@@ -1052,6 +1101,7 @@
       "name": "Pixelate Image",
       "desc": "Pixelate any photo with a block size slider and download the result.",
       "title": "Pixelate Image - Blur Photos Into Pixels Online",
+      "seoTitle": "Free Pixelate Image Online | Blur & Pixelate Photos",
       "pageDesc": "Turn any photo into a pixelated version in seconds. Adjust the pixel block size with a slider and download the result as PNG. Free and private.",
       "intro": "Upload an image and use the slider to control the pixel block size, then download the pixelated preview."
     },
@@ -1059,6 +1109,7 @@
       "name": "Vigenère Cipher",
       "desc": "Encrypt or decrypt text with the Vigenère cipher using a keyword.",
       "title": "Vigenère Cipher - Encrypt & Decrypt Text Online",
+      "seoTitle": "Free Vigenère Cipher | Encrypt & Decrypt Text Online",
       "pageDesc": "Encrypt and decrypt text with the Vigenère cipher using a key phrase. Supports the Turkish alphabet. Runs entirely in your browser with no data sent. Free.",
       "intro": "Type a message and a keyword, choose encrypt or decrypt, and read the result instantly."
     },
@@ -1066,6 +1117,7 @@
       "name": "Punctuation Remover",
       "desc": "Remove punctuation marks from text while keeping apostrophes or hyphens if needed.",
       "title": "Punctuation Remover - Clean Text Without Punctuation",
+      "seoTitle": "Free Punctuation Remover | Remove Punctuation from Text",
       "pageDesc": "Strip punctuation from any text instantly. Optionally keep apostrophes and hyphens, and see how many characters were removed. Free and private.",
       "intro": "Paste your text and instantly get a version with all punctuation removed."
     },
@@ -1073,6 +1125,7 @@
       "name": "Anagram Solver",
       "desc": "Generate every possible arrangement of your letters, from two-letter words up.",
       "title": "Anagram Solver - Find All Letter Combinations Online",
+      "seoTitle": "Free Anagram Solver | Find Words from Letters",
       "pageDesc": "Enter letters and generate every possible anagram and combination in one click. Great for word games like Scrabble. Free and instant.",
       "intro": "Type your letters and the tool lists every unique arrangement of them."
     },
@@ -1080,6 +1133,7 @@
       "name": "Keyword Combiner",
       "desc": "Cross two keyword lists to generate every possible combination at once.",
       "title": "Keyword Combiner - Generate Keyword Combinations Online",
+      "seoTitle": "Free Keyword Combiner | Merge Two Keyword Lists",
       "pageDesc": "Paste two keyword lists and instantly generate every product and combination. Essential for SEO research, PPC and content planning. Free.",
       "intro": "Add two lists of keywords and the combiner creates every left × right pairing."
     },
@@ -1087,6 +1141,7 @@
       "name": "Title Length Checker",
       "desc": "Check how many characters and pixels your title and description use.",
       "title": "Title Length Checker - SEO Title & Meta Description Checker",
+      "seoTitle": "Free Title Length Checker | SEO Title & Meta Length",
       "pageDesc": "Measure the character count and estimated pixel width of your title and meta description against Google's SERP limits. Free, fast and private.",
       "intro": "Paste a title and description to see character counts, pixel widths and whether they stay inside SERP limits."
     },
@@ -1094,6 +1149,7 @@
       "name": "Magic 8 Ball",
       "desc": "Ask a question and shake the virtual magic 8 ball for a classic answer.",
       "title": "Magic 8 Ball - Ask a Question and Get an Answer Online",
+      "seoTitle": "Free Magic 8 Ball Online | Ask a Question & Shake",
       "pageDesc": "Shake the classic magic 8 ball for a random answer to yes or no questions. Free, fun and works on any device.",
       "intro": "Think of a question, tap Shake, and read the ball's classic answer."
     },
@@ -1101,6 +1157,7 @@
       "name": "Fuel Cost Calculator",
       "desc": "Calculate the total cost of a trip from distance, average consumption and fuel price.",
       "title": "Fuel Cost Calculator - Calculate Trip Cost by Distance and Consumption",
+      "seoTitle": "Free Fuel Cost Calculator | Trip Fuel Cost Estimate",
       "pageDesc": "Enter distance, average fuel consumption and fuel price per liter to get the total cost of your trip. The calculation runs in your browser — no signup, no data upload.",
       "intro": "Enter distance, consumption and fuel price to see the total cost instantly."
     },
@@ -1108,6 +1165,7 @@
       "name": "Plagiarism Checker",
       "desc": "Compare two texts and measure the similarity between them as a percentage.",
       "title": "Plagiarism Checker - Compare Two Texts for Similarity",
+      "seoTitle": "Free Plagiarism Checker | Compare Two Texts Similarity",
       "pageDesc": "Paste two texts and get an instant similarity score. The comparison happens entirely in your browser, so your content never leaves your device.",
       "intro": "Paste two texts and the similarity percentage updates as you type."
     },
@@ -1123,6 +1181,7 @@
       "name": "Image Rotator & Flipper",
       "desc": "Rotate an image by 90 or 180 degrees, or flip it horizontally and vertically.",
       "title": "Image Rotator and Flipper - Rotate or Flip Photos Online",
+      "seoTitle": "Free Image Rotator & Flipper | Rotate Photos Online",
       "pageDesc": "Upload an image, rotate it by 90 or 180 degrees or flip it horizontally and vertically, preview the result and download the edited file. Everything happens in your browser.",
       "intro": "Upload an image, apply a rotation or flip and download the result."
     },
@@ -1130,6 +1189,7 @@
       "name": "XML Sitemap Generator",
       "desc": "Generate a clean sitemap.xml from a list of URLs for Google Search Console.",
       "title": "XML Sitemap Generator - Create a Sitemap for SEO",
+      "seoTitle": "Free XML Sitemap Generator | Create sitemap.xml",
       "pageDesc": "Paste your URLs, choose whether to include lastmod, and generate a valid sitemap.xml you can upload to your server or submit to Google Search Console. Works entirely in your browser.",
       "intro": "Enter one URL per line, adjust the options and generate your sitemap.xml."
     },
@@ -1145,6 +1205,7 @@
       "name": "Word Scrambler",
       "desc": "Scramble the letters of words, keeping first and last letters fixed or fully random.",
       "title": "Word Scrambler - Shuffle Letters in Text Online",
+      "seoTitle": "Free Word Scrambler | Scramble Letters & Words",
       "pageDesc": "Paste any text and scramble the letters of each word. Keep first and last letters fixed for recognizable words or fully randomize everything. This tool runs entirely in your browser.",
       "intro": "Type or paste your text, pick a mode and scramble instantly."
     },
@@ -1152,6 +1213,7 @@
       "name": "Hashtag Generator",
       "desc": "Turn a phrase into ready-to-post hashtags without spaces, in your browser.",
       "title": "Hashtag Generator - Create Hashtags from Text Online",
+      "seoTitle": "Free Hashtag Generator | Create Hashtags from Text",
       "pageDesc": "Type a phrase and get clean, space-free hashtags in one click. Filter out short or common words with optional toggles and copy the full list. Everything stays on your device.",
       "intro": "Enter a phrase, adjust the options and copy your hashtags."
     },
@@ -1159,6 +1221,7 @@
       "name": "Acronym Generator",
       "desc": "Create uppercase acronyms from any phrase, with an optional dotted style.",
       "title": "Acronym Generator - Make an Acronym from a Name or Phrase Online",
+      "seoTitle": "Free Acronym Generator | Create Acronyms from Phrases",
       "pageDesc": "Give the tool any sequence of words and it extracts the first letter of each one into a single acronym. Use the dots option for styles like W.W.W. These initials are ready to copy. All processing stays in your browser.",
       "intro": "Write a phrase and copy the acronym it creates."
     },
@@ -1166,6 +1229,7 @@
       "name": "Palindrome Checker",
       "desc": "Check if a word or sentence reads the same forwards and backwards.",
       "title": "Palindrome Checker - Test Words and Sentences Online",
+      "seoTitle": "Free Palindrome Checker | Check Words & Sentences",
       "pageDesc": "Type any text and find out instantly whether it is a palindrome. Toggle the ignore option to skip spaces, punctuation and letter case, just like real palindromes do. Fully private and client-side.",
       "intro": "Enter some text and see the result right away."
     },
@@ -1173,6 +1237,7 @@
       "name": "HTTP Status Codes",
       "desc": "Browse common HTTP status codes and their meanings, grouped by class.",
       "title": "HTTP Status Codes - Meanings of 1xx to 5xx Explained",
+      "seoTitle": "HTTP Status Codes List | Meanings & Reference",
       "pageDesc": "A quick reference for the most common HTTP status codes from 100 to 511. Search by number or name, or browse by class: informational, success, redirect, client error and server error.",
       "intro": "Search a number or browse the classes below."
     },
@@ -1180,6 +1245,7 @@
       "name": "CSV Formatter",
       "desc": "Parse messy CSV, preview it as a table and copy it as TSV.",
       "title": "CSV Formatter - Pretty Print and Preview CSV Data",
+      "seoTitle": "Free CSV Formatter Online | Preview & Convert to TSV",
       "pageDesc": "Paste raw CSV, choose the delimiter and see the data as a clean table. The tool handles quoted fields correctly and lets you copy the result as tab-separated values for any spreadsheet.",
       "intro": "Paste your CSV and preview it as a table."
     },
@@ -1187,6 +1253,7 @@
       "name": "Days Until Calculator",
       "desc": "Count the days, weeks and months between two calendar dates.",
       "title": "Days Until Calculator - Count Days Between Dates Online",
+      "seoTitle": "Free Days Until Calculator | Count Days Between Dates",
       "pageDesc": "Pick a start date and a target date to see exactly how many days, weeks and days are left, or how long ago the date was. Useful for countdowns, deadlines, trips and project planning.",
       "intro": "Choose the two dates and read the result."
     },
@@ -1194,6 +1261,7 @@
       "name": "Running Pace Converter",
       "desc": "Convert pace per kilometer into speed and projected race times.",
       "title": "Running Pace Converter - Pace to Speed and Race Times",
+      "seoTitle": "Free Running Pace Converter | Pace, Speed & Race Times",
       "pageDesc": "Enter your pace in minutes and seconds per kilometer and see the average speed plus projected finish times for 5K, 10K, half marathon and full marathon. Simple numbers, instant results.",
       "intro": "Type your per-kilometer pace and get everything else."
     },
@@ -1201,6 +1269,7 @@
       "name": "Savings Goal Calculator",
       "desc": "Find how long it takes to reach a savings target, or the monthly amount needed.",
       "title": "Savings Goal Calculator - Plan Your Savings Online",
+      "seoTitle": "Free Savings Goal Calculator | Reach Your Target",
       "pageDesc": "Enter your goal, what you already have and what you save each month. The calculator shows the remaining amount, how many months are needed, and how much monthly saving a target deadline requires.",
       "intro": "Fill in your goal and current savings to plan ahead."
     },
@@ -1208,6 +1277,7 @@
       "name": "Rock Paper Scissors",
       "desc": "Play the classic game against the computer with a running score.",
       "title": "Rock Paper Scissors - Play Against the Computer Online",
+      "seoTitle": "Free Rock Paper Scissors Online | Play vs Computer",
       "pageDesc": "Play rock, paper, scissors against a random computer opponent. Every round updates your wins, ties and losses, and you can reset the score anytime. No setup, no downloads.",
       "intro": "Pick rock, paper or scissors and start playing."
     },
@@ -1215,6 +1285,7 @@
       "name": "Horoscope Sign Finder",
       "desc": "Find your zodiac sign, element and traits from your birth date.",
       "title": "Zodiac Sign Finder - Find Your Horoscope Sign Online",
+      "seoTitle": "Free Horoscope Sign Finder | Zodiac Sign by Birthday",
       "pageDesc": "Enter a birth date and instantly get the matching zodiac sign, its element, date range and a short character description. A fun reference for names, dates and birthday comparisons.",
       "intro": "Pick a date and discover the sign."
     },
@@ -1222,6 +1293,7 @@
       "name": "Text Escape / Unescape",
       "desc": "Escape text as a JSON or JavaScript string, or decode escaped values.",
       "title": "Text Escape and Unescape Tool - JSON String Symbols",
+      "seoTitle": "Free Text Escape / Unescape | JSON & JS Strings",
       "pageDesc": "Type plain text and escape quotes, backslashes and special characters for use in JSON and JavaScript strings. Or paste escaped text and decode it back to a readable string. All local.",
       "intro": "Paste text, choose escape or unescape and copy the result."
     },
@@ -1229,6 +1301,7 @@
       "name": "Emoji Remover",
       "desc": "Strip every emoji and decorative symbol out of your text in the browser.",
       "title": "Emoji Remover - Clean Emojis from Text Online",
+      "seoTitle": "Free Emoji Remover | Remove Emojis from Text",
       "pageDesc": "Paste any text and this tool deletes emojis, symbols and variation selectors so only plain text remains. Great for cleaning up copy before publishing or for preparing text for scripts and editors that choke on emoji. Everything runs locally in your browser.",
       "intro": "Paste your text and get a clean, emoji-free version instantly."
     },
@@ -1252,6 +1325,7 @@
       "name": "URL Parser",
       "desc": "Break any URL into protocol, host, path, query, hash and more.",
       "title": "URL Parser - Break a URL into Its Parts Online",
+      "seoTitle": "Free URL Parser Online | Break Down URL Components",
       "pageDesc": "Paste a URL and instantly see every component: protocol, host, port, pathname, query string, hash, credentials and origin. Follows the WHATWG URL standard, so odd but valid URLs are handled correctly. Perfect for debugging links and understanding how URLs are structured. Runs entirely in your browser.",
       "intro": "Type a URL and view each of its parts in a table."
     },
@@ -1259,6 +1333,7 @@
       "name": "JS Minifier",
       "desc": "Remove blank lines, indentation and whole-line comments from JavaScript.",
       "title": "JS Minifier - Clean Up JavaScript Code Online",
+      "seoTitle": "Free JavaScript Minifier | Minify JS Code Online",
       "pageDesc": "Paste a JavaScript file and this tool strips leading whitespace, empty lines and whole-line comments to shrink the size without touching string literals or template strings. Handy for a quick size cut before pasting code into chat messages or email. Processing is done locally in your browser.",
       "intro": "Paste your code and copy the cleaned-up version."
     },
@@ -1266,6 +1341,7 @@
       "name": "MIME Type Finder",
       "desc": "Look up the MIME type for common file extensions or search by type.",
       "title": "MIME Type Finder - Look Up File Types Online",
+      "seoTitle": "Free MIME Type Finder | File Extension Lookup",
       "pageDesc": "Type a file extension like png or svg and get its MIME type instantly, or search the other way around by typing a type such as image or application to list matching extensions. Handy for server configuration, upload validation and API work. The lookup table is bundled right in your browser.",
       "intro": "Enter an extension or search by MIME type and copy the result."
     },
@@ -1273,6 +1349,7 @@
       "name": "Percentage Change Calculator",
       "desc": "Work out the percentage increase or decrease between two values.",
       "title": "Percentage Change Calculator - Rise and Fall Between Values",
+      "seoTitle": "Free Percentage Change Calculator | Increase & Decrease",
       "pageDesc": "Enter the old and the new value and the calculator shows the percentage change plus the absolute difference. Works for prices, scores, metrics and more. The formula covers both increases and decreases, so you always get the sign right. Calculation runs instantly in your browser.",
       "intro": "Enter the two values and read the percentage change."
     },
@@ -1280,6 +1357,7 @@
       "name": "Fuel Economy Converter",
       "desc": "Convert between L/100 km, MPG (US) and km/L instantly.",
       "title": "Fuel Economy Converter - L/100km, MPG, km/L Online",
+      "seoTitle": "Free Fuel Economy Converter | MPG, L/100km & km/L",
       "pageDesc": "Enter a fuel consumption value in litres per 100 km, miles per US gallon or kilometres per litre and see all three measures at once. Perfect when comparing cars from different regions or specs written in different units. Conversion happens locally in your browser.",
       "intro": "Type one value and read all three fuel economy units."
     },
@@ -1287,6 +1365,7 @@
       "name": "Electricity Cost Calculator",
       "desc": "Estimate monthly and yearly power usage and cost for any appliance.",
       "title": "Electricity Cost Calculator - Power Bill Estimate Online",
+      "seoTitle": "Free Electricity Cost Calculator | Appliance Power Cost",
       "pageDesc": "Enter a device's wattage, the hours used per day, days per month and your kWh price. The tool estimates monthly and yearly kilowatt-hours plus the expected cost in both periods. Handy for budgeting and for finding the biggest energy consumers at home.",
       "intro": "Fill in the four fields and read your usage and cost estimate."
     },
@@ -1294,6 +1373,7 @@
       "name": "Calories Burned Calculator",
       "desc": "Estimate how many calories an activity burns based on MET values.",
       "title": "Calories Burned Calculator - kcal per Activity Online",
+      "seoTitle": "Free Calories Burned Calculator | Activity MET Values",
       "pageDesc": "Choose an activity from walking and running to the gym or jumping rope, enter your weight and the duration, and get an estimate of calories burned. The calculation uses standard MET values, so results are comparable across activities. Ideal for planning workouts and tracking effort.",
       "intro": "Pick an activity, enter your weight and duration, and read the result."
     },
@@ -1301,6 +1381,7 @@
       "name": "Image Combiner",
       "desc": "Join two images side by side into a single PNG, right in your browser.",
       "title": "Image Combiner - Join Two Images Side by Side Online",
+      "seoTitle": "Free Image Combiner | Merge Two Images Side by Side",
       "pageDesc": "Pick two images and combine them into one wider PNG with a single click. Great for before-and-after comparisons, collages or simply stitching screenshots together. Both images are drawn onto one canvas and the file downloads automatically. Nothing is uploaded anywhere.",
       "intro": "Pick two images, then combine and download as one PNG."
     },
@@ -1308,6 +1389,7 @@
       "name": "Image Flipper",
       "desc": "Mirror any image horizontally or vertically and download it as PNG.",
       "title": "Image Flipper - Mirror Images Horizontally or Vertically Online",
+      "seoTitle": "Free Image Flipper | Mirror Photos Horizontally",
       "pageDesc": "Upload an image, choose horizontal or vertical flip and download the mirrored version as a PNG. Mirrors the image exactly like a physical mirror, which is different from rotating it. Useful for design mockups, thumbnails and quick previews. All processing stays on your device.",
       "intro": "Pick an image, choose an axis and download the flipped version."
     },
@@ -1323,6 +1405,7 @@
       "name": "Sitemap URL Extractor",
       "desc": "Pull every URL out of an XML sitemap, count them and copy all at once.",
       "title": "Sitemap URL Extractor - Pull URLs from XML Sitemaps Online",
+      "seoTitle": "Free Sitemap URL Extractor | Get URLs from XML Sitemap",
       "pageDesc": "Paste the XML of any sitemap and the tool lists every loc entry as a plain URL. See the total count and copy the whole list with one click. Great for checking how many pages a site has indexed or for building URL lists for audits. Parsing happens entirely in your browser.",
       "intro": "Paste sitemap XML and copy every extracted URL."
     },
@@ -1330,6 +1413,7 @@
       "name": "Joke Generator",
       "desc": "Get a random programming joke in one click. No setup, no logins.",
       "title": "Joke Generator - Random Programming Jokes Online",
+      "seoTitle": "Free Joke Generator | Random Programming Jokes",
       "pageDesc": "Press the button and the tool picks a random programmer joke for you. A small hand-picked collection lives directly in the page, so it works offline and nothing is sent anywhere. Perfect for a quick laugh between coding sessions.",
       "intro": "Tap the button for a random programmer joke."
     },
@@ -1337,6 +1421,7 @@
       "name": "Random Quote Generator",
       "desc": "Display a random quote about code, work and life in one click.",
       "title": "Random Quote Generator - Inspirational Quotes Online",
+      "seoTitle": "Free Random Quote Generator | Inspirational Quotes",
       "pageDesc": "Press the button and be presented with a thoughtful quote selected from a bundled collection. Every tap fights repetition by skipping the previous one. Works fully offline and never sends your data anywhere.",
       "intro": "Tap the button for a random quote."
     },
@@ -1344,6 +1429,7 @@
       "name": "Guess the Number",
       "desc": "Find a secret number between 1 and 100 in as few guesses as possible.",
       "title": "Guess the Number - Classic Number Guessing Game Online",
+      "seoTitle": "Free Guess the Number Game | Online Number Guessing",
       "pageDesc": "A classic logic game: the page picks a secret number between 1 and 100 and you guess, receiving higher or lower hints after every try. Track how many attempts it takes and either sharpen your strategy or just play for fun. The whole game runs instantly in your browser.",
       "intro": "Beat the secret number using only higher and lower hints."
     }
