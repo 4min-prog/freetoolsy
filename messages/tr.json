@@ -173,6 +173,7 @@
       "name": "MD5 Hash",
       "desc": "Metninizin MD5 hex özetini anında hesaplar ve tek tıkla kopyalar.",
       "title": "MD5 Hash — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz MD5 Hash Üretici | Metni MD5 Şifrele",
       "pageDesc": "Metninizin MD5 özetini 32 haneli hex olarak anında oluşturun. Tarayıcınızda çalışır; veri gönderilmez, tamamen gizli.",
       "intro": "Metninizi yazın veya yapıştırın; küçük harfli 32 haneli MD5 hex özetini saniyeler içinde alın."
     },
@@ -180,6 +181,7 @@
       "name": "XML Biçimlendirici",
       "desc": "XML kodunu tarayıcınızda tek tıkla biçimlendirir ve küçültür.",
       "title": "XML Biçimlendirici — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz XML Biçimlendirici | XML Düzenle",
       "pageDesc": "XML kodunu anında biçimlendirin, küçültün ve geçerliliğini kontrol edin. Ücretsiz ve gizli; XML'iniz tarayıcınızdan asla çıkmaz.",
       "intro": "XML'inizi yapıştırın, Düzenle ile girintileyin veya Küçült ile sıkıştırın ve sonucu anında kopyalayın."
     },
@@ -187,6 +189,7 @@
       "name": "CSS Küçültücü",
       "desc": "Yorumları ve gereksiz boşlukları kaldırarak CSS kodunu küçültür ve dosya boyutunu azaltır.",
       "title": "CSS Küçültücü — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz CSS Küçültücü | CSS Sıkıştırma",
       "pageDesc": "Yorumları kaldırıp boşlukları sadeleştirerek CSS'i küçültün ve önce/sonra boyutlarını karşılaştırın. Ücretsiz ve gizli; her şey tarayıcınızda çalışır.",
       "intro": "Yorumları ve fazla boşlukları kaldırarak CSS'inizi küçültün ve daha küçük çıktıyı anında kopyalayın."
     },
@@ -194,6 +197,7 @@
       "name": "HTML Küçültücü",
       "desc": "Yorumları kaldırıp etiketler arasındaki boşlukları sadeleştirerek HTML'i küçültür, içeriği korur.",
       "title": "HTML Küçültücü — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz HTML Küçültücü | HTML Sıkıştırma",
       "pageDesc": "Yorumları kaldırıp etiketler arası boşlukları sadeleştirerek HTML'i küçültün; metin içeriği ve özel etiketler aynen korunur. Ücretsiz ve tamamen tarayıcı tarafında.",
       "intro": "Sayfa içeriğine dokunmadan yorumları ve boşlukları temizleyerek HTML'inizi sıkıştırın."
     },
@@ -320,6 +324,7 @@
       "name": "Şifre Gücü Testi",
       "desc": "Şifrenizin ne kadar güçlü olduğunu bir entropi tahminiyle ölçer ve iyileştirme önerileri sunar.",
       "title": "Şifre Gücü Testi — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz Şifre Gücü Testi | Şifre Güvenliğini Ölçün",
       "pageDesc": "Şifrenizin gerçekte ne kadar güçlü olduğunu bir entropi tahmini ve eksik karakter türleri listesiyle kontrol edin. %100 tarayıcı tarafında ve gizli.",
       "intro": "Şifrenizin ne kadar güçlü olduğunu ölçün, eksik karakter türlerini ve tahmini entropiyi görün."
     },
@@ -358,6 +363,7 @@
       "name": "JSON ↔ CSV Dönüştürücü",
       "desc": "JSON'u CSV'ye, CSV'yi JSON'a çevirir; iki yönde de doğru tırnaklama yapar.",
       "title": "JSON ↔ CSV Dönüştürücü — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz JSON CSV Dönüştürücü | JSON'dan CSV",
       "pageDesc": "JSON'u CSV'ye veya CSV'yi JSON'a anında dönüştürün; virgül, tırnak ve yeni satır içeren alanlar doğru işlenir. Tarayıcınızda çalışır; veri gönderilmez.",
       "intro": "Bir yön seçin, verilerinizi yapıştırın ve saniyeler içinde JSON ↔ CSV dönüşümü yapın."
     },
@@ -432,6 +438,7 @@
       "name": "PX REM Dönüştürücü",
       "desc": "Seçtiğiniz temel yazı boyutuyla pikselleri rem'e ve rem'i piksellere canlı olarak çevirir.",
       "title": "PX REM Dönüştürücü — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz PX REM Dönüştürücü | CSS Birim Çevirici",
       "pageDesc": "Özel bir temel yazı boyutuyla pikselleri rem'e ve rem'i piksellere, yazarken canlı olarak çevirin. Ücretsiz ve tamamen tarayıcı tarafında; hiçbir şey gönderilmez veya saklanmaz.",
       "intro": "Temel bir yazı boyutu (varsayılan 16 px) kullanarak piksel ve rem arasında anında dönüşüm yapın."
     },
@@ -476,6 +483,7 @@
       "name": "YAML ↔ JSON Dönüştürücü",
       "desc": "YAML verisini JSON'a ve JSON'u geri YAML'a her iki yönde dönüştürür.",
       "title": "YAML ↔ JSON Dönüştürücü — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz YAML JSON Dönüştürücü | YAML'dan JSON",
       "pageDesc": "Yapılandırma verilerini iki yönde de YAML ve JSON arasında, net hata mesajlarıyla dönüştürün. Ücretsiz ve gizli; verileriniz tarayıcınızdan asla çıkmaz.",
       "intro": "Yapılandırma verileriniz için YAML ve JSON arasında geçiş yapın ve dönüştürülen çıktıyı kopyalayın."
     },
@@ -529,6 +537,7 @@
       "name": "Slug Üretici",
       "desc": "Herhangi bir başlığı özel ayraçlarla temiz, URL uyumlu bir slug'a dönüştürün ve anında kopyalayın.",
       "title": "Slug Üretici — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Slug Üretici | URL Uyumlu Slug Oluştur",
       "pageDesc": "Ücretsiz online slug üretici: başlığınızı tarayıcınızda temiz, küçük harfli ve arama dostu URL slug'ına dönüştürün; özel ayraçlar ve anında kopyalama ile.",
       "intro": "Herhangi bir başlıktan saniyeler içinde temiz, arama dostu URL slug'ları oluşturun."
     },
@@ -544,6 +553,7 @@
       "name": "Anahtar Kelime Yoğunluğu",
       "desc": "Herhangi bir metni analiz ederek en sık kelimeleri, toplam ve benzersiz kelime sayılarını ve yüzde yoğunluğu görün.",
       "title": "Anahtar Kelime Yoğunluğu — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Anahtar Kelime Yoğunluğu | Metin Analizi",
       "pageDesc": "Ücretsiz online anahtar kelime yoğunluğu aracı: metni tarayıcıya yapıştırın, toplam ve benzersiz kelimelerle her terimin yüzde yoğunluğunu anında görün.",
       "intro": "Anahtar kelimelerinizin bir metinde ne sıklıkla geçtiğini ölçün ve aşırı kullanılan terimleri anında fark edin."
     },
@@ -551,6 +561,7 @@
       "name": "SERP Önizleme",
       "desc": "Sayfa başlığınızın ve meta açıklamanızın Google arama sonuçlarında nasıl görüneceğini önceden görün.",
       "title": "SERP Önizleme — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz SERP Önizleme | Google Başlık ve Açıklama",
       "pageDesc": "Ücretsiz online SERP önizleme: başlık ve meta açıklama yazarak karakter sayaçları ve uzunluk önerileriyle canlı Google sonucu önizlemesi görün.",
       "intro": "Yayınlamadan önce arama sonucu metninizi görün ve her karakteri inceltin."
     },
@@ -558,6 +569,7 @@
       "name": "Okunabilirlik Skoru",
       "desc": "Herhangi bir metni Flesch Reading Ease formülüyle puanlayın ve yaklaşık sınıf seviyesini anında alın.",
       "title": "Okunabilirlik Skoru — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Okunabilirlik Skoru | Flesch Puanı",
       "pageDesc": "Ücretsiz online okunabilirlik aracı: metninizi tarayıcıya yapıştırın, saniyeler içinde Flesch skoru, sınıf seviyesi ve kelime-cümle istatistikleri alın.",
       "intro": "Metninizin ne kadar kolay okunduğunu ölçün ve faydalı istatistiklerle anında Flesch skoru alın."
     },
@@ -565,6 +577,7 @@
       "name": "Metin Karşılaştırıcı",
       "desc": "İki metni satır satır karşılaştırır; eklenen, kaldırılan ve değişmeyen satırları yan yana gösterir.",
       "title": "Metin Karşılaştırıcı — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Metin Karşılaştırıcı | İki Metni Karşılaştır",
       "pageDesc": "İki metni satır satır ücretsiz ve çevrimiçi olarak karşılaştırın; eklenen ve kaldırılan satırlar tarayıcınızda vurgulanır; veriler dışarı gönderilmez.",
       "intro": "İki metin sürümünü yapıştırın; hangi satırların eklendiğini veya kaldırıldığını anında görün."
     },
@@ -572,6 +585,7 @@
       "name": "HTML Entity Çevirici",
       "desc": "Metni HTML entity'lerine çevirir ve entity'leri okunabilir karakterlere geri çözer.",
       "title": "HTML Entity Çevirici — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz HTML Entity Dönüştürücü | HTML Kaçış",
       "pageDesc": "Metni ücretsiz olarak HTML entity'lere çevirin veya entity'leri karakterlere geri çözün. Ayrılmış semboller ve Türkçe harfler tarayıcınızda anında işlenir.",
       "intro": "Metninizi yapıştırın ve tek tıkla HTML entity kodlama ile çözme arasında geçiş yapın."
     },
@@ -586,6 +600,7 @@
       "name": "Metin Ters Çevirici",
       "desc": "Metninizi harf harf, kelime sırasıyla veya kelime kelime ters çevirir.",
       "title": "Metin Ters Çevirici — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Metin Ters Çevirici | Metni Ters Çevir",
       "pageDesc": "Herhangi bir metni ücretsiz ters çevirin: tüm karakterleri, kelime sırasını veya her kelimeyi çevirin. Modu seçin ve sonucu tarayıcınızdan kopyalayın.",
       "intro": "Bir mod seçin, metninizi yapıştırın ve ters çevrilmiş sürümü tek tıkla anında alın."
     },
@@ -607,6 +622,7 @@
       "name": "Not Ortalaması Hesaplayıcı",
       "desc": "Ders kredileri ve harf notlarıyla ağırlıklı 4.0 GPA'nızı hesaplayın.",
       "title": "Not Ortalaması Hesaplayıcı — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz GPA Hesaplayıcı | Not Ortalaması",
       "pageDesc": "Ücretsiz not ortalaması hesaplayıcı: ders kredisi ve harf notlarını girip ağırlıklı 4.0 GPA, toplam kredi ve 100'lük ortalamayı tarayıcıda anında görün.",
       "intro": "Harf notlarını puana çevirin ve ağırlıklı GPA'nızı saniyeler içinde öğrenin."
     },
@@ -650,6 +666,7 @@
       "name": "Cron İfade Testi",
       "desc": "Her cron alanını doğrulayın, neyi eşleştirdiğini sade dille okuyun ve sonraki beş çalışma zamanını görün.",
       "title": "Cron İfade Testi — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Cron İfade Testi | Cron Doğrula",
       "pageDesc": "Cron ifadelerinizi tarayıcınızda ücretsiz test edin: dakika, saat, gün, ay ve hafta günü alanlarını doğrulayın, sade dille açıklamaları okuyun ve sonraki beş çalışma zamanını görün.",
       "intro": "Cron işlerinizi alan alan doğrulayarak ve sonraki çalışma zamanlarını anında görerek tahmin edin."
     },
@@ -664,6 +681,7 @@
       "name": "Rastgele String Üretici",
       "desc": "Seçtiğiniz karakter setleri ve uzunlukla, kriptografik kalitede rastgelelik kullanarak güvenli rastgele string'ler üretir.",
       "title": "Rastgele String Üretici — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Rastgele String Üretici | Güvenli Token",
       "pageDesc": "Tarayıcınızda ücretsiz güvenli rastgele string üretin: büyük harf, küçük harf, rakam ve sembol seçin, 128'e kadar uzunluk belirleyin, sonucu anında kopyalayın.",
       "intro": "İhtiyacınız olan karakterler ve uzunlukla saniyeler içinde güçlü rastgele string'ler oluşturun."
     },
@@ -686,6 +704,7 @@
       "name": "Bileşik Faiz Hesaplayıcı",
       "desc": "Düzenli katkılar ve yıllık dökümle bileşik faiz büyümesini hesaplar.",
       "title": "Bileşik Faiz Hesaplayıcı — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Bileşik Faiz Hesaplayıcı | Yatırım Getirisi",
       "pageDesc": "Yıllık faiz oranı, bileşiklendirme sıklığı ve aylık katkılarla bileşik faizi, yıllık büyüme tablosuyla birlikte hesaplayın. Ücretsiz ve tamamen tarayıcıda.",
       "intro": "Birikiminizin bileşik faiz, ek katkılar ve zamanla nasıl büyüdüğünü görün."
     },
@@ -693,6 +712,7 @@
       "name": "Net Maaş Hesaplayıcı",
       "desc": "Brüt maaştan SGK, işsizlik ve gelir vergisi kesintisi sonrası net maaşı tahmin eder.",
       "title": "Net Maaş Hesaplayıcı — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Net Maaş Hesaplayıcı | Brütten Nete",
       "pageDesc": "SGK, işsizlik sigortası ve gelir vergisi kesintilerini anında hesaplayarak brüt maaştan net maaş tahmini yapın. Ücretsiz ve tamamen tarayıcıda.",
       "intro": "Brüt maaşınızı girin, kesintileri ve net aylık-yıllık maaşınızı görün."
     },
@@ -700,6 +720,7 @@
       "name": "SQL Biçimlendirici",
       "desc": "Anahtar kelime ve girinti tercihinizle SQL sorgularını düzenler veya küçültür.",
       "title": "SQL Biçimlendirici — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz SQL Biçimlendirici | SQL Düzenle",
       "pageDesc": "SQL sorgularını çevrimiçi biçimlendirin veya küçültün: anahtar kelime büyük/küçük harf, 2 veya 4 boşluk girinti. Tamamen tarayıcınızda çalışır.",
       "intro": "Karışık veya sıkıştırılmış SQL'i okunaklı, tutarlı biçimlendirilmiş sorgulara dönüştürün."
     },
@@ -714,6 +735,7 @@
       "name": "Markdown ↔ HTML Dönüştürücü",
       "desc": "Markdown'ı HTML'e, HTML'i Markdown'a canlı önizlemeyle çevirir.",
       "title": "Markdown ↔ HTML Dönüştürücü — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Markdown HTML Dönüştürücü | MD ve HTML",
       "pageDesc": "Markdown ve HTML arasında çevrimiçi ücretsiz dönüşüm. Başlıklar, listeler, tablolar, kod ve bağlantılar desteklenir; canlı önizleme sunulur. Tarayıcınızda çalışır.",
       "intro": "Markdown yazın ve HTML'i görün veya HTML yapıştırın, Markdown olarak geri okuyun."
     },
@@ -836,6 +858,7 @@
       "name": "Metin Okuyucu",
       "desc": "Yazdığınız metni tarayıcınızda yapay sesle okutur; ses, hız ve perde ayarlanabilir.",
       "title": "Metin Okuyucu - Metni Online Sese Çevirme Aracı",
+      "seoTitle": "Ücretsiz Metin Okuyucu | Metni Sesli Okut",
       "pageDesc": "Yazdığınız metni tarayıcınızda sese çevirin. Ses seçin, hız ve perdeyi ayarlayın, anında dinleyin. Ücretsiz, dosya yüklenmez, kayıt gerekmez.",
       "intro": "Metni yazın ya da yapıştırın, bir ses ve hız seçin, Konuş'a basarak anında dinleyin. Her şey cihazınızda çalışır."
     },
@@ -888,6 +911,7 @@
       "name": "HTML'den Metne Dönüştürücü",
       "desc": "HTML etiketlerini temizleyip işaretlemeden okunaklı düz metin çıkarır.",
       "title": "HTML'den Metne Dönüştürücü - Etiketleri Temizleyip Düz Metin Çıkarın",
+      "seoTitle": "Ücretsiz HTML'den Metne Dönüştürücü | Etiketleri Sil",
       "pageDesc": "HTML yapıştırın ve temiz düz metin elde edin. Etiketler kaldırılır, script ve style blokları atlanır, boş satırlar sadeleştirilir. Ücretsiz ve gizli.",
       "intro": "Bir HTML bloğu yapıştırın, Dönüştür'e basın ve tüm işaretlemelerden arındırılmış metni okuyun."
     },
@@ -953,6 +977,7 @@
       "name": "Konut Kredisi Hesaplayıcı",
       "desc": "Konut kredisi aylık taksidini, toplam faizi ve amortisman tablosunu hesaplar.",
       "title": "Konut Kredisi Hesaplayıcı - Ücretsiz Kredi Taksiti Hesabı",
+      "seoTitle": "Ücretsiz Konut Kredisi Hesaplayıcı | Aylık Taksit",
       "pageDesc": "Konut kredisi aylık taksidinizi, toplam faizi ve tam amortisman tablosunu hesaplayın. Konut fiyatı, peşinat, faiz ve vade girin. Ücretsiz, tamamen tarayıcıda çalışır.",
       "intro": "Konut fiyatı, peşinat, faiz oranı ve vadeyi girin; aylık taksidinizi ve tam amortisman tablosunu görün."
     },
@@ -975,6 +1000,7 @@
       "name": "Enflasyon Hesaplayıcı",
       "desc": "ABD TÜFE verisiyle bir tutarın herhangi bir yılda ne kadar ettiğini hesaplar.",
       "title": "Enflasyon Hesaplayıcı - ABD TÜFE Enflasyon Hesaplama",
+      "seoTitle": "Ücretsiz Enflasyon Hesaplayıcı | Paranın Değeri",
       "pageDesc": "1970'ten bugüne ABD TÜFE'siyle bir tutarı iki yıl arasında çevirin. Satın alma gücünün zamanla nasıl değiştiğini görün. Ücretsiz ve gizli.",
       "intro": "Bir tutar ve iki yıl girin; araç enflasyona göre düzeltilmiş eşdeğer değeri gösterir."
     },
@@ -1089,6 +1115,7 @@
       "name": "Sayıyı Yazıya Çevirme",
       "desc": "Bir sayıyı anında İngilizce ve Türkçe yazıya çevirir.",
       "title": "Sayıyı Yazıya Çevirici - Sayı Okunuşu (Türkçe ve İngilizce)",
+      "seoTitle": "Ücretsiz Sayıyı Yazıya Çevirici | Sayıları Yaz",
       "pageDesc": "Bir sayı yazın; hem Türkçe hem İngilizce okunuşunu anında görün. Faturalarda, çeklerde ve tutar yazarken işinize yarar. Tarayıcınızda, internet bağlantısı olmadan çalışır.",
       "intro": "Bir sayı yazın; İngilizce ve Türkçe okunuşunu anında görün."
     },
@@ -1110,6 +1137,7 @@
       "name": "E-posta Doğrulayıcı",
       "desc": "E-posta adreslerinin formatını ve üst düzey alan adlarını toplu olarak, tarayıcınızda kontrol eder.",
       "title": "E-posta Doğrulayıcı - Adres Formatı Kontrolü",
+      "seoTitle": "Ücretsiz E-posta Doğrulayıcı | Adres Kontrolü",
       "pageDesc": "Bir ya da birden çok e-posta adresini yapıştırın; formatını, üst düzey alan adını ve rol bazlı öneklerini tek geçişte denetleyin. Doğrulama tamamen yerel ve gizlidir.",
       "intro": "E-posta adreslerini yapıştırın ve hepsini tek seferde kontrol edin."
     },
@@ -1208,6 +1236,7 @@
       "name": "Okuma Süresi Hesaplayıcı",
       "desc": "Bir metnin okunmasının ne kadar sürdüğünü okuma hızına göre tahmin eder.",
       "title": "Okuma Süresi Hesaplayıcı - Tahmini Okuma Süresi Hesaplama",
+      "seoTitle": "Ücretsiz Okuma Süresi Hesaplayıcı | Okuma Süresi",
       "pageDesc": "Bir makale, yazı veya bölüm yapıştırın; kelime sayısını ve seçtiğiniz dakikada kelime (dk) hızına göre tahmini okuma süresini görün. Blog yazarları, editörler ve öğrenciler için yayından önce hızlı uzunluk tahmini yapmak idealdir. Tüm sayım tarayıcınızda gerçekleşir.",
       "intro": "Metninizi girin, okuma hızını seçin ve tahmini süreyi kopyalayın."
     },
@@ -1215,6 +1244,7 @@
       "name": "TOTP Kod Üretici",
       "desc": "Base32 gizli anahtarından güncel 6 haneli 2FA kodunu yerel olarak üretir.",
       "title": "TOTP Kod Üretici - Gizli Anahtardan 2FA Kodu",
+      "seoTitle": "Ücretsiz TOTP Kod Üretici | 2FA Doğrulama Kodu",
       "pageDesc": "Bir doğrulama uygulamasının Base32 gizli anahtarını girin ve zaman tabanlı tek kullanımlık şifreyi (RFC 6238) görün. Kendi anahtarlarınızı test etmek veya eksiksiz bir doğrulayıcı kuramayan uygulamalar için kullanışlıdır. Kod, Web Crypto API ile tarayıcınızda hesaplanır.",
       "intro": "Base32 gizli anahtarınızı yapıştırın ve canlı kodu okuyun."
     },

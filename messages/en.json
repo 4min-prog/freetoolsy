@@ -173,6 +173,7 @@
       "name": "MD5 Hash Generator",
       "desc": "Computes the MD5 hex digest of your text instantly and copies it in one click.",
       "title": "MD5 Hash Generator — Free Online Tool",
+      "seoTitle": "Free MD5 Hash Generator Online | MD5 Encrypt Text",
       "pageDesc": "Generate the MD5 hash of any text instantly as a 32-character hex digest. Runs in your browser; your data never leaves it.",
       "intro": "Type or paste your text and get its lowercase 32-character MD5 hex digest in seconds."
     },
@@ -180,6 +181,7 @@
       "name": "XML Formatter",
       "desc": "Formats and minifies XML code in your browser with one click.",
       "title": "XML Formatter — Free Online Tool",
+      "seoTitle": "Free XML Formatter Online | Beautify & Minify XML",
       "pageDesc": "Format and minify XML code instantly and check it for validity. Free and private; your XML never leaves your browser.",
       "intro": "Paste XML, press Format to indent it or Minify to compress it, and copy the result instantly."
     },
@@ -187,6 +189,7 @@
       "name": "CSS Minifier",
       "desc": "Minifies CSS code by stripping comments and redundant whitespace to shrink file size.",
       "title": "CSS Minifier — Free Online Tool",
+      "seoTitle": "Free CSS Minifier Online | Minify & Compress CSS",
       "pageDesc": "Minify CSS by removing comments and collapsing whitespace, and compare size before and after. Free and private; everything runs in your browser.",
       "intro": "Shrink your CSS by removing comments and extra whitespace, then copy the smaller output instantly."
     },
@@ -194,6 +197,7 @@
       "name": "HTML Minifier",
       "desc": "Minifies HTML by removing comments and collapsing whitespace between tags while preserving its content.",
       "title": "HTML Minifier — Free Online Tool",
+      "seoTitle": "Free HTML Minifier Online | Minify & Compress HTML",
       "pageDesc": "Minify HTML by removing comments and collapsing whitespace between tags, while text content and special tags stay intact. Free and fully client-side.",
       "intro": "Compress your HTML by cleaning comments and blank space without touching the page content."
     },
@@ -320,6 +324,7 @@
       "name": "Password Strength Checker",
       "desc": "Measures how strong your password is with an entropy estimate and suggests improvements.",
       "title": "Password Strength Test — Free Online Tool",
+      "seoTitle": "Free Password Strength Checker | Test Password Security",
       "pageDesc": "Check how strong your password really is with an entropy estimate and a checklist of missing character types. 100% client-side and private.",
       "intro": "Measure how strong your password is, see missing character types and estimated entropy."
     },
@@ -358,6 +363,7 @@
       "name": "JSON ↔ CSV Converter",
       "desc": "Converts JSON to CSV and CSV to JSON with correct quoting in both directions.",
       "title": "JSON ↔ CSV Converter — Free Online Tool",
+      "seoTitle": "Free JSON to CSV Converter | Convert CSV to JSON",
       "pageDesc": "Convert JSON to CSV or CSV to JSON instantly with correct quoting for commas, quotes and newlines. Runs in your browser; data never leaves it.",
       "intro": "Choose a direction, paste your data and convert JSON to CSV or CSV to JSON in seconds."
     },
@@ -432,6 +438,7 @@
       "name": "PX to REM Converter",
       "desc": "Converts pixels to rem and rem to pixels live with a base font size you choose.",
       "title": "PX to REM Converter — Free Online Tool",
+      "seoTitle": "Free PX to REM Converter | CSS Unit Converter Online",
       "pageDesc": "Convert pixels to rem and rem to pixels with a custom base font size, updated live as you type. Free and fully client-side; nothing is sent or stored.",
       "intro": "Convert between pixels and rem instantly using a base font size, defaulting to 16 px."
     },
@@ -476,6 +483,7 @@
       "name": "YAML ↔ JSON Converter",
       "desc": "Converts YAML data to JSON and JSON back to YAML in both directions.",
       "title": "YAML ↔ JSON Converter — Free Online Tool",
+      "seoTitle": "Free YAML to JSON Converter | Convert JSON to YAML",
       "pageDesc": "Convert configuration data between YAML and JSON in either direction, with clear error messages. Free and private; your data never leaves your browser.",
       "intro": "Switch between YAML and JSON for your configuration data and copy the converted output."
     },
@@ -529,6 +537,7 @@
       "name": "Slug Generator",
       "desc": "Turn any title into a clean, URL-ready slug with custom separators and instant copy.",
       "title": "Slug Generator — Free Online Tool",
+      "seoTitle": "Free Slug Generator Online | Create URL-Friendly Slugs",
       "pageDesc": "Free online slug generator: turn any title into a clean, lowercase, SEO-friendly URL slug right in your browser, with custom separators and instant copy.",
       "intro": "Create clean, search-friendly URL slugs from any title in seconds."
     },
@@ -544,6 +553,7 @@
       "name": "Keyword Density Checker",
       "desc": "Analyze any text to see its most frequent words, total and unique word counts, and percentage density.",
       "title": "Keyword Density Checker — Free Online Tool",
+      "seoTitle": "Free Keyword Density Checker | Analyze Text Keywords",
       "pageDesc": "Free online keyword density checker: paste text in your browser to instantly see total and unique words plus each keyword's percentage density.",
       "intro": "Check how often your keywords appear in any text and spot overused terms instantly."
     },
@@ -551,6 +561,7 @@
       "name": "SERP Preview Checker",
       "desc": "Preview exactly how your page title and meta description will appear in Google search results.",
       "title": "SERP Preview Checker — Free Online Tool",
+      "seoTitle": "Free SERP Preview Tool | Google Title & Description Preview",
       "pageDesc": "Free online SERP preview checker: type a title and meta description to see a live Google result preview with character counters and length recommendations.",
       "intro": "See your search result snippet before you publish and fine-tune every character."
     },
@@ -558,6 +569,7 @@
       "name": "Readability Score",
       "desc": "Score any text with the Flesch Reading Ease formula and get an approximate grade level instantly.",
       "title": "Readability Score — Free Online Tool",
+      "seoTitle": "Free Readability Score Checker | Flesch Reading Ease",
       "pageDesc": "Free online readability checker: paste text in your browser for a Flesch Reading Ease score, grade level and word and sentence stats in seconds.",
       "intro": "Measure how easy your text is to read and get an instant Flesch score with helpful stats."
     },
@@ -565,6 +577,7 @@
       "name": "Text Diff Checker",
       "desc": "Compares two texts line by line and highlights added, removed and unchanged lines side by side.",
       "title": "Text Diff Checker — Free Online Tool",
+      "seoTitle": "Free Text Diff Checker | Compare Two Texts Online",
       "pageDesc": "Compare two texts line by line with our free online text diff checker. Added, removed and unchanged lines are shown side by side in your browser.",
       "intro": "Paste two versions of a text to see exactly which lines were added or removed."
     },
@@ -572,6 +585,7 @@
       "name": "HTML Entity Converter",
       "desc": "Encodes text into HTML entities and decodes entities back to readable characters.",
       "title": "HTML Entity Converter — Free Online Tool",
+      "seoTitle": "Free HTML Entity Encoder & Decoder | Escape HTML",
       "pageDesc": "Convert text to HTML entities or decode entities back to characters free online. Reserved symbols and Turkish accents are handled right in your browser.",
       "intro": "Paste your text and switch between encoding and decoding HTML entities in one click."
     },
@@ -586,6 +600,7 @@
       "name": "Reverse Text",
       "desc": "Reverses your text by characters, by word order or word by word in one click.",
       "title": "Reverse Text — Free Online Tool",
+      "seoTitle": "Free Reverse Text Generator | Flip Text & Words",
       "pageDesc": "Reverse any text for free online: flip all characters, the word order, or each word. Pick a mode and copy the result instantly in your browser.",
       "intro": "Pick a mode, paste your text and get the reversed version immediately with one click."
     },
@@ -607,6 +622,7 @@
       "name": "GPA Calculator",
       "desc": "Calculate your weighted 4.0 GPA from course credits and letter grades.",
       "title": "GPA Calculator — Free Online Tool",
+      "seoTitle": "Free GPA Calculator | Calculate Weighted 4.0 GPA",
       "pageDesc": "Free GPA calculator: enter course credits and letter grades to see your weighted 4.0 GPA, total credits and 100-scale average instantly in your browser.",
       "intro": "Convert letter grades to points and get your weighted GPA in seconds."
     },
@@ -650,6 +666,7 @@
       "name": "Cron Expression Tester",
       "desc": "Validate each cron field, read what it matches in plain language, and get the next five run times.",
       "title": "Cron Expression Tester — Free Online Tool",
+      "seoTitle": "Free Cron Expression Tester | Explain & Validate Cron",
       "pageDesc": "Test cron expressions free in your browser: validate each of the five fields, read plain-language descriptions and see the next five run times.",
       "intro": "Understand and predict your cron jobs with field-by-field validation and live next-run times."
     },
@@ -664,6 +681,7 @@
       "name": "Random String Generator",
       "desc": "Generate secure random strings with the character sets and length you choose, powered by crypto-grade randomness.",
       "title": "Random String Generator — Free Online Tool",
+      "seoTitle": "Free Random String Generator | Secure Random Tokens",
       "pageDesc": "Generate secure random strings for free in your browser: choose uppercase, lowercase, digits, symbols and a length up to 128 characters, then copy it.",
       "intro": "Create strong random strings in seconds with exactly the characters and length you need."
     },
@@ -686,6 +704,7 @@
       "name": "Compound Interest Calculator",
       "desc": "Calculates compound interest growth with regular contributions and a full yearly breakdown.",
       "title": "Compound Interest Calculator — Free Online Tool",
+      "seoTitle": "Free Compound Interest Calculator | Investment Growth",
       "pageDesc": "Calculate compound interest online with annual rate, compound frequency and monthly contributions, plus a yearly growth table. Free and fully client-side.",
       "intro": "See how your savings grow with compound interest, extra contributions and the power of time."
     },
@@ -693,6 +712,7 @@
       "name": "Net Salary Calculator",
       "desc": "Estimates net salary from your gross wage after SGK, unemployment and income tax deductions.",
       "title": "Net Salary Calculator — Free Online Tool",
+      "seoTitle": "Free Net Salary Calculator | Gross to Net Pay",
       "pageDesc": "Estimate your net salary from a gross wage with SGK, unemployment insurance and income tax deductions computed instantly. Free and fully client-side.",
       "intro": "Enter your gross wage to see the deductions and your net monthly and yearly salary."
     },
@@ -700,6 +720,7 @@
       "name": "SQL Formatter",
       "desc": "Beautifies or minifies SQL queries with your choice of keyword casing and indentation.",
       "title": "SQL Formatter — Free Online Tool",
+      "seoTitle": "Free SQL Formatter Online | Beautify & Format SQL",
       "pageDesc": "Format or minify SQL queries online free: pick keyword casing, 2 or 4 space indentation and copy the result instantly. Runs entirely in your browser.",
       "intro": "Turn messy or minified SQL into readable, consistently formatted statements."
     },
@@ -714,6 +735,7 @@
       "name": "Markdown ↔ HTML Converter",
       "desc": "Converts Markdown to HTML and HTML back to Markdown with a live preview.",
       "title": "Markdown ↔ HTML Converter — Free Online Tool",
+      "seoTitle": "Free Markdown to HTML Converter | MD to HTML Online",
       "pageDesc": "Convert Markdown to HTML or HTML to Markdown online free. Headings, lists, tables, code and links are supported, with a live preview. Runs in your browser.",
       "intro": "Write Markdown and see the HTML, or paste HTML and read it back as Markdown."
     },
@@ -836,6 +858,7 @@
       "name": "Text to Speech",
       "desc": "Turn typed text into natural speech in your browser with selectable voice and speed.",
       "title": "Text to Speech - Convert Text Into Audio Online For Free",
+      "seoTitle": "Free Text to Speech Online | Read Text Aloud",
       "pageDesc": "Convert text into spoken audio right in your browser. Pick a voice, adjust the speed and pitch, press Play and listen instantly. Free, no uploads, no sign-up.",
       "intro": "Type or paste any text, choose a voice and rate, then press Speak to hear it instantly. Everything runs locally on your device."
     },
@@ -888,6 +911,7 @@
       "name": "HTML to Text Converter",
       "desc": "Strip HTML tags and extract clean readable text from any markup.",
       "title": "HTML to Text Converter - Strip Tags and Extract Plain Text",
+      "seoTitle": "Free HTML to Text Converter | Strip HTML Tags",
       "pageDesc": "Paste HTML and get clean plain text. Tags are removed, script and style blocks are skipped, and blank lines are collapsed. Free and private.",
       "intro": "Paste a block of HTML, press Convert, and read the text with all markup removed. Script and style content can be skipped automatically."
     },
@@ -953,6 +977,7 @@
       "name": "Mortgage Calculator",
       "desc": "Calculate monthly mortgage payments, total interest and the full amortization schedule.",
       "title": "Mortgage Calculator - Free Mortgage Payment Calculator",
+      "seoTitle": "Free Mortgage Calculator | Monthly Payment & Interest",
       "pageDesc": "Calculate your monthly mortgage payment, total interest and full amortization schedule. Enter home price, down payment, rate and term. Free and works entirely in your browser.",
       "intro": "Enter the home price, down payment, interest rate and term to see your monthly payment plus a complete amortization table."
     },
@@ -975,6 +1000,7 @@
       "name": "Inflation Calculator",
       "desc": "See how much a dollar amount was worth in any year using US CPI data.",
       "title": "Inflation Calculator - US CPI Inflation Rate Calculator",
+      "seoTitle": "Free Inflation Calculator | Value of Money Over Time",
       "pageDesc": "Convert an amount between any two years from 1970 to today using the U.S. CPI. See how purchasing power changes over time. Free and private.",
       "intro": "Enter an amount and two years, and the tool shows the equivalent value adjusted for inflation."
     },
@@ -1089,6 +1115,7 @@
       "name": "Number to Words",
       "desc": "Convert a number into English and Turkish words instantly.",
       "title": "Number to Words - Number to Text Converter (English & Turkish)",
+      "seoTitle": "Free Number to Words Converter | Spell Out Numbers",
       "pageDesc": "Type a number and see it written out in both English and Turkish. Handy for invoices, checks and spelling out amounts. It runs in your browser, even offline.",
       "intro": "Type a number to see it written out in English and Turkish."
     },
@@ -1110,6 +1137,7 @@
       "name": "Email Validator",
       "desc": "Check email address format and top-level domains in bulk, in your browser.",
       "title": "Email Validator - Check Address Format Online",
+      "seoTitle": "Free Email Validator Online | Check Email Addresses",
       "pageDesc": "Paste one or many email addresses and check their format, top-level domain and role-based prefixes in one pass. The validation is fully client-side and private.",
       "intro": "Paste email addresses and check them all at once."
     },
@@ -1208,6 +1236,7 @@
       "name": "Reading Time Calculator",
       "desc": "Estimate how long any text takes to read, based on your reading speed.",
       "title": "Reading Time Calculator - Estimate Read Time Online",
+      "seoTitle": "Free Reading Time Calculator | Estimate Read Duration",
       "pageDesc": "Paste an article, post or chapter and see its word count plus the estimated reading time at any words-per-minute speed. Useful for bloggers, editors and students who need quick length estimates before publishing or submitting. All counting happens in your browser.",
       "intro": "Paste your text, set a reading speed and copy the estimate."
     },
@@ -1215,6 +1244,7 @@
       "name": "TOTP Generator",
       "desc": "Generate the current 6-digit 2FA code from a Base32 secret key, locally.",
       "title": "TOTP Generator - 2FA Code from Secret Online",
+      "seoTitle": "Free TOTP Generator Online | 2FA Authenticator Codes",
       "pageDesc": "Enter the Base32 secret of an authenticator app and get the current 6-digit time-based one-time password (RFC 6238). Useful for testing your own keys or apps that cannot install a full authenticator. The code is computed in your browser with the Web Crypto API.",
       "intro": "Paste your Base32 secret and read the live code."
     },
