@@ -4925,6 +4925,16 @@
       {
         "h": "Ne zaman işe yarar?",
         "p": "Arkadaşlarınız için anagram oyunları oluşturun, yeni bir dilde okuma pratiği yapın veya kısa metinlerdeki isimleri gizleyin. Sevdikleriniz için yaratıcı kullanıcı adları ve etiketler üretmenin de hızlı bir yoludur."
+      },
+            {
+        "h": "Kelime bulmak için harfler nasıl karıştırılır?",
+        "p": "Bilinen bir uzunlukla başlayın: çoğumuzun bildiği harf bulmacaları 4–8 harf uzunluğundadır, bu yüzden sıralamadan önce süzün. Bulmacanın sabitlediği harfleri — sık olarak ilk ve son harf — yerinde bırakın, sonra serbest pozisyonlara geçin. Karışık bir harf kümesinin içindeki tek bir shuffle yerine tüm gerçek kelimeleri istiyorsanız anagram çözümleyici hepsini tek seferde bulur.",
+        "list": [
+          "Önce harfleri sayın ve o uzunluk içinde çalışın.",
+          "Yerinde kalması gereken harfleri sabitleyin.",
+          "Nadir ikililerden önce yaygın ikilileri (th, er, ing) deneyin.",
+          "Yukarıdaki araçla anında karıştırıp kopyalayın."
+        ]
       }
     ],
     "hashtag-generator": [
@@ -4945,6 +4955,16 @@
       {
         "h": "Nerelerde kullanılır?",
         "p": "Bir şirket, ürün serisi veya ders adı belirlerken, uzun resmi başlıkları kısaltırken veya formül ve bölüm adları gibi çalışma kısaltmaları üretirken kullanılır. Ayrıca çok kelimeli arama terimlerini akılda kalıcı kodlara çevirir."
+      },
+            {
+        "h": "İsimden acronym nasıl yapılır?",
+        "p": "Önce görünmesi gereken harfleri sabitleyin — genellikle isim ya da cümlenin her kelimesinin baş harfi. Ardından boş kalan her pozisyona anlamlı bir kelime seçin, sonucu üç ya da beş harfte tutun ve sesli okuyun. Duyduğunuz bir kelime gibi geliyorsa ve gereken harfleri de taşıyorsa uygundur. Adı yukarıdaki üreticiye yazın, araç her pozisyon için eşleşen kelimeleri otomatik önerir.",
+        "list": [
+          "Önce isimden veya cümleden gereken harfleri sabitleyin.",
+          "Boş kalan her yere temanıza uyan bir kelime seçin.",
+          "3–5 harfte tutun ki okunması kolay olsun.",
+          "Uygunsuz eşleşmeleri yakalamak için sesli okuyun."
+        ]
       }
     ],
     "palindrome-checker": [

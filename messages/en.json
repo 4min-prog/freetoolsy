@@ -4925,6 +4925,16 @@
       {
         "h": "When is it useful?",
         "p": "Create anagram challenges for friends, practice reading in a new language, or briefly anonymize names inside short texts. It is also a quick way to produce playful usernames and captions."
+      },
+            {
+        "h": "How do you shuffle letters to find words?",
+        "p": "Start from a known length: most letter puzzles are 4 to 8 letters long, so filter before you arrange. Keep any letters the puzzle fixes in place — often the first and last — then work through the free positions. When you want every real word hidden inside a jumbled set instead of a single shuffle, an anagram solver finds all of them at once.",
+        "list": [
+          "Count the letters first and work within that length.",
+          "Fix the letters that must stay where they are.",
+          "Try common pairs such as th, er and ing before rare ones.",
+          "Shuffle instantly with the tool above and copy the result."
+        ]
       }
     ],
     "hashtag-generator": [
@@ -4945,6 +4955,16 @@
       {
         "h": "Where can you use it?",
         "p": "Naming a company, a product line or a course, shortening long official titles, or building study abbreviations like formula and chapter names. It also helps turn multi-word search terms into memorable codes."
+      },
+            {
+        "h": "How do you make an acronym from a name?",
+        "p": "First lock the letters that must appear — usually the first letter of each word in the name or phrase. Then choose one meaningful word for every free position, keep the result to three or five letters, and read it out loud. If it sounds like a word and still carries the letters you need, it works. Type the name into the generator above and it proposes matching words for every position automatically.",
+        "list": [
+          "Fix the required letters from the name or phrase first.",
+          "Pick a word for each free position that matches your theme.",
+          "Aim for 3–5 letters so the result stays easy to read.",
+          "Say it aloud to catch awkward or unfortunate combinations."
+        ]
       }
     ],
     "palindrome-checker": [

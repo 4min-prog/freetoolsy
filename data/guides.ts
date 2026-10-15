@@ -55,6 +55,8 @@ export const GUIDE_ORDER: string[] = [
   "url-encoding-explained",
   "how-to-calculate-loan-emi",
   "how-to-create-a-favicon",
+  "how-to-make-an-acronym-from-a-name",
+  "how-to-write-cron-expressions",
 ];
 
 const GUIDE_LIST: Guide[] = [
@@ -2760,6 +2762,180 @@ const GUIDE_LIST: Guide[] = [
             paragraphs: [
               "Simgeyi her sayfanın head'inde bir link etiketiyle referanslayın ve dosyayı sitenin kök dizininde tutun ki tarayıcılar ve tarayıcı botları varsayılan bir favicon.ico bulabilsin. Eksik favicon'lar sunucu günlüklerini dolduran 404 isteklere yol açar.",
               "Metin yerine mevcut bir logo görselinden başlıyorsanız, Görsel Yeniden Boyutlandırıcı ile kare hâle getirip Görsel Dönüştürücü ile PNG'ye çevirin. Markanızla uyumlu renkleri Renk Dönüştürücü ile seçin.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "how-to-make-an-acronym-from-a-name",
+    relatedTools: ["acronym-generator", "anagram-solver", "word-scrambler"],
+    content: {
+      en: {
+        title: "How to make an acronym from a name or phrase",
+        desc: "Learn how to build acronyms from names, words and phrases: the rules, three common methods and a step-by-step approach you can apply in seconds.",
+        intro:
+          "An acronym is a word formed from the first letters of a phrase, like NASA from National Aeronautics and Space Administration. People make acronyms for companies, teams, pets and project codenames — and the good ones are always a balance of meaning and pronounceability.",
+        blocks: [
+          {
+            h2: "What makes a good acronym?",
+            paragraphs: [
+              "A strong acronym is short, pronounceable and easy to spell. NASA works because it sounds like a word; a string like CXCR4 only works as an identifier. If people have to read your acronym letter by letter, it has failed as an acronym.",
+              "Acronyms also get read out loud far more often than their creators expect. Say it aloud, use it in a sentence, and ask someone else to spell it back. Combinations that look harmless on paper often turn awkward the moment they are spoken.",
+            ],
+          },
+          {
+            h2: "Three common ways to build one",
+            paragraphs: [
+              "An initialism takes only the first letters of each word, such as FBI. An acrostic keeps those letters in order but shapes them into a readable word, which is how most memorable project names are built. A backronym runs the other way: you already like a word and invent words to fit each of its letters.",
+              "When certain letters are fixed — the initials of a name, or letters you must spell out such as B.A.R.K. — lock them first. Then fill the free positions with words that carry the meaning you want.",
+            ],
+            bullets: [
+              "Decide the length: three to five letters reads best.",
+              "Lock the letters that must appear from the name or phrase.",
+              "Fill each free slot with a word that matches your theme.",
+              "Read the result aloud before you commit to it.",
+            ],
+          },
+          {
+            h2: "Making one in seconds with FreetoolsY",
+            paragraphs: [
+              "Open the Acronym Generator, type the name or phrase, and the tool proposes matching words for every position of the acronym. Try a few combinations, switch to the dotted style if you need a format like B.A.R.K., and copy the one that sounds right.",
+              "If you are starting from a jumbled set of letters rather than a phrase — for example working out which words you can make from a given sequence — the Anagram Solver lists every arrangement of those letters, and the Word Scrambler shuffles them into a new order instantly.",
+            ],
+            bullets: [
+              "Enter the name, phrase or the letters you must keep.",
+              "Choose the style: plain, upper case or dotted.",
+              "Copy the best combination and use it anywhere.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "İsimden veya cümleden acronym (kısaltma) nasıl yapılır",
+        desc: "İsimlerden, kelimelerden ve cümlelerden kısaltma üretmeyi öğrenin: kurallar, üç yaygın yöntem ve saniyeler içinde uygulayabileceğiniz adım adım yaklaşım.",
+        intro:
+          "Acronym, bir cümlenin baş harflerinden oluşan kelimedir; örneğin NASA, National Aeronautics and Space Administration'dan gelir. İnsanlar şirketler, takımlar, evcil hayvanlar ve proje kod adları için kısaltma üretir — iyileri her zaman anlam ile okunabilirlik arasındaki dengeyi korur.",
+        blocks: [
+          {
+            h2: "İyi bir acronym'i ne yapar?",
+            paragraphs: [
+              "Güçlü bir acronym kısa, sesli okunabilir ve yazması kolaydır. NASA iyi çalışır çünkü bir kelime gibi duyulur; CXCR4 gibi bir dize yalnızca bir tanımlayıcı olarak işe yarar. İnsanlar kısaltmanızı harf harf okumak zorunda kalıyorsa görevini yapmamıştır.",
+              "Kısaltmalar ayrıca yaratıcılarının beklediğinden çok daha sık sesli okunur. Sesli okuyun, bir cümlede kullanın ve bir başkasına yazdırın. Kağıtta zararsız görünen kombinasyonlar konuşulduğu anda tuhaflaşabilir.",
+            ],
+          },
+          {
+            h2: "Birini oluşturmanın üç yaygın yolu",
+            paragraphs: [
+              "Initialism yalnızca her kelimenin ilk harflerini alır (FBI gibi). Acrostic bu harfleri sırayı koruyarak okunabilir bir kelime hâline getirir; akılda kalıcı proje adlarının çoğu böyle yapılır. Tersine çalışan bir yaklaşım ise backronym'dur: kelimeyi önceden seversiniz ve harflerine uyan kelimeleri siz üretirsiniz.",
+              "Bazı harfler sabitse — bir ismin baş harfleri ya da yazmak zorunda olduğunuz B.A.R.K. gibi harfler — önce onları kilitleyin. Ardından boş kalan pozisyonları istediğiniz anlamı taşıyan kelimelerle doldurun.",
+            ],
+            bullets: [
+              "Uzunluğu belirleyin: üç ile beş harf en iyi okunur.",
+              "İsimden veya cümleden görünmesi gereken harfleri sabitleyin.",
+              "Her boş yere temanıza uyan bir kelime yerleştirin.",
+              "Sonucu kesinleştirmeden önce sesli okuyun.",
+            ],
+          },
+          {
+            h2: "FreetoolsY ile saniyeler içinde üretme",
+            paragraphs: [
+              "Acronym Üretici'yi açın, adı veya cümleyi yazın; araç kısaltmanın her pozisyonu için eşleşen kelimeler önerir. Birkaç kombinasyon deneyin, B.A.R.K. gibi noktalı biçim gerekiyorsa stili değiştirin ve duyduğunuz gibi duranı kopyalayın.",
+              "Cümle yerine karışık bir harf kümesinden başlıyorsanız — örneğin verilen bir diziden hangi kelimelerin çıkarılacağını bulmak istiyorsanız — Anagram Çözücü o harflerin tüm dizilişlerini listeler, Kelime Karıştırıcı ise onları anında yeni bir sıraya koyar.",
+            ],
+            bullets: [
+              "Adı, cümleyi veya korunması gereken harfleri girin.",
+              "Biçimi seçin: düz, büyük harf veya noktalı.",
+              "En iyi kombinasyonu kopyalayın ve her yerde kullanın.",
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    slug: "how-to-write-cron-expressions",
+    relatedTools: ["cron-tester"],
+    content: {
+      en: {
+        title: "How to write cron expressions: fields, examples and testing",
+        desc: "Learn what a cron expression is, what each of the five fields means, common schedule patterns, and how to test a cron job before you trust it.",
+        intro:
+          "A cron expression is a five-field string that tells a Unix-like system when to run a job: every night at 3am, every 15 minutes, or on the first day of each month. Servers use it to schedule backups, reports, clean-ups and data syncs.",
+        blocks: [
+          {
+            h2: "The five fields of a cron expression",
+            paragraphs: [
+              "From left to right the fields are: minute (0–59), hour (0–23), day of month (1–31), month (1–12) and day of week (0–7, where both 0 and 7 mean Sunday). Each field accepts a number, a list such as 1,3,5, a range such as 1–5, a step such as */15, or a combination of them. A bare asterisk means any value.",
+              "So 0 3 * * * means minute 0 of hour 3, any day, any month, any weekday — in other words, every day at 3:00. The fields combine with AND logic: a value must match every non-wildcard field to trigger.",
+            ],
+            bullets: [
+              "`0 3 * * *` — every day at 3:00 am.",
+              "`*/15 * * * *` — every 15 minutes.",
+              "`0 9 * * 1–5` — 9:00 am on weekdays only.",
+              "`30 2 1 * *` — 2:30 am on the 1st of every month.",
+            ],
+          },
+          {
+            h2: "Common cron patterns",
+            paragraphs: [
+              "Most schedules people need are covered by a handful of patterns. Run hourly on the hour: 0 * * * *. Every Sunday at midnight: 0 0 * * 0. Every six hours: 0 */6 * * *. At 8:15 am every Monday: 15 8 * * 1.",
+              "Two details catch almost everyone. Some implementations treat day-of-week as 0–6 with Sunday as 7 instead of 0, and many systems run a job only when both day-of-month and day-of-week match rather than either one — so combining both fields rarely does what you expect.",
+            ],
+          },
+          {
+            h2: "Test before you schedule it",
+            paragraphs: [
+              "A cron expression is easy to type and easy to get subtly wrong: one character changes a nightly job into an hourly one, and nothing warns you until the load spike. Put the expression into the Cron Expression Tester before you deploy it.",
+              "The tester validates each field separately, explains in plain language what the schedule actually means, and prints the next five run times. Those five timestamps are the real test — read them out and confirm they are exactly the moments you intended, then save the expression with confidence.",
+            ],
+            bullets: [
+              "Validate the expression field by field.",
+              "Read the plain-language description of the schedule.",
+              "Check the next five run times against your intention.",
+              "Watch the timezone: cron uses server time, not your browser time.",
+            ],
+          },
+        ],
+      },
+      tr: {
+        title: "Cron ifadesi nasıl yazılır: alanlar, örnekler ve test",
+        desc: "Cron ifadesinin ne olduğunu, beş alanın ne anlama geldiğini, yaygın zamanlama kalıplarını ve cron görevine güvenmeden önce nasıl test edeceğinizi öğrenin.",
+        intro:
+          "Cron ifadesi, benzeri Unix sistemlerine bir işin ne zaman çalışacağını söyleyen beş alanlı bir dizedir: her gece 3'te, her 15 dakikada bir ya da her ayın ilk gününde. Sunucular yedekleri, raporları, temizlikleri ve veri eşitlemelerini böyle planlar.",
+        blocks: [
+          {
+            h2: "Cron ifadesinin beş alanı",
+            paragraphs: [
+              "Soldan sağa alanlar: dakika (0–59), saat (0–23), ayın günü (1–31), ay (1–12) ve haftanın günü (0–7; burada hem 0 hem 7 Pazar'dır). Her alan bir sayı, 1,3,5 gibi bir liste, 1–5 gibi bir aralık, */15 gibi bir adım veya bunların karışımını kabul eder. Yalnızca yıldız işareti herhangi bir değer demektir.",
+              "Yani 0 3 * * * ifadesi; her gün, her ay, her haftanın gününde saat 3'ün 0. dakikası — başka bir deyişle her gün 03:00 demektir. Alanlar VE mantığıyla birleşir: bir değer tetiklenmesi için tüm yıldız olmayan alanlarla eşleşmelidir.",
+            ],
+            bullets: [
+              "`0 3 * * *` — her gün 03:00'da.",
+              "`*/15 * * * *` — her 15 dakikada bir.",
+              "`0 9 * * 1–5` — yalnızca hafta içi 09:00'da.",
+              "`30 2 1 * *` — her ayın 1'inde 02:30'da.",
+            ],
+          },
+          {
+            h2: "Yaygın cron kalıpları",
+            paragraphs: [
+              "Çoğu zamanlama birkaç kalıpla karşılanır. Saat başı her saat: 0 * * * *. Her Pazar gece yarısı: 0 0 * * 0. Altı saatte bir: 0 */6 * * *. Her Pazartesi 08:15'te: 15 8 * * 1.",
+              "Neredeyse herkesi yakalayan iki detay vardır. Bazı uygulamalar haftanın gününü Pazar 7 olacak şekilde 0–6 olarak ele alır ve birçok sistem hem ayın günü hem haftanın günü eşleştiğinde çalışır; yani iki alanı birlikte kullanmak çoğu zaman beklentiyi karşılamaz.",
+            ],
+          },
+          {
+            h2: "Zamanlamadan önce test edin",
+            paragraphs: [
+              "Cron ifadesi yazması kolay, yanlış yazması kolaydır: tek bir karakter gecelik görevi saatlik yapar ve uyarı gelene kadar yük artışını görürsünüz. İfadeyi yayına almadan önce Cron İfade Testi'ne koyun.",
+              "Araç her alanı ayrı ayrı doğrulular, zamanlamanın gerçekte ne anlama geldiğini sade dille açıklar ve sonraki beş çalışma zamanını basar. Beş zaman damgası gerçek testtir — okuyun ve tam da kastettiğiniz anlar olduğunu onaylayın, sonra ifadeyi güvenle kaydedin.",
+            ],
+            bullets: [
+              "İfadeyi alan alan doğrulayın.",
+              "Zamanlamanın sade dildeki açıklamasını okuyun.",
+              "Sonraki beş çalışma zamanını niyetinizle karşılaştırın.",
+              "Saat dilimine dikkat edin: cron tarayıcı saatinizle değil sunucu saatiyle çalışır.",
             ],
           },
         ],
