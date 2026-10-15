@@ -25,6 +25,8 @@ const root = resolve(here, "..");
 
 const META_KEYS = ["name", "desc", "title", "pageDesc", "intro"] as const;
 const LOCALES = ["en", "tr"] as const;
+// Tool'a bagli olmayan, sayfalar arasi paylasilan comp.* ad alanlari.
+const SHARED_COMP_NAMESPACES = new Set(["contactForm"]);
 const errors: string[] = [];
 const warnings: string[] = [];
 
@@ -170,7 +172,7 @@ for (const locale of LOCALES) {
     if (!seen.has(slug)) errors.push(`ToolContent.${slug}: messages/${locale}.json icinde var ama data/tools.ts'te yok`);
   }
   for (const [namespace, value] of Object.entries(messages[locale].comp ?? {})) {
-    if (!namespaceOwners.has(namespace)) {
+    if (!namespaceOwners.has(namespace) && !SHARED_COMP_NAMESPACES.has(namespace)) {
       warnings.push(`comp.${namespace}: messages/${locale}.json icinde var ama toolCompNamespaces.ts'te yok`);
     }
     if (value && typeof value === "object" && Object.keys(value).length === 0) {
