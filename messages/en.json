@@ -327,6 +327,7 @@
       "name": "Number Base Converter",
       "desc": "Converts numbers between binary, octal, decimal and hexadecimal instantly in your browser.",
       "title": "Number Base Converter — Free Online Tool",
+      "seoTitle": "Free Number Base Converter | Binary, Decimal & Hex",
       "pageDesc": "Convert numbers between binary, octal, decimal and hexadecimal with exact precision. Big-number safe, free and fully client-side.",
       "intro": "Type a number, choose its base, and see binary, octal, decimal and hexadecimal side by side."
     },
@@ -334,6 +335,7 @@
       "name": "Regex Tester",
       "desc": "Tests a regular expression against your text live and highlights every match.",
       "title": "Regex Tester — Free Online Tool",
+      "seoTitle": "Free Regex Tester Online | Test Regular Expressions Live",
       "pageDesc": "Test regular expressions against any text with live highlighting and a match counter. Supports the g, i, m, s and u flags; 100% client-side.",
       "intro": "Write a pattern, pick flags, and see every match highlighted as you type."
     },
@@ -348,6 +350,7 @@
       "name": "JWT Decoder",
       "desc": "Decodes a JWT into its header, payload and signature, shown as readable JSON.",
       "title": "JWT Decoder — Free Online Tool",
+      "seoTitle": "Free JWT Decoder Online | Decode JSON Web Tokens",
       "pageDesc": "Decode a JWT token into its header, payload and signature as readable JSON. Fully client-side; your token never leaves your browser.",
       "intro": "Paste a JWT token and view its base64url-decoded header, payload and signature instantly."
     },
@@ -362,6 +365,7 @@
       "name": "Unix Timestamp Converter",
       "desc": "Converts Unix timestamps to readable dates and dates back to Unix timestamps.",
       "title": "Unix Timestamp Converter — Free Online Tool",
+      "seoTitle": "Free Unix Timestamp Converter | Epoch to Date",
       "pageDesc": "Convert a Unix timestamp to a readable date and time, or a date back to an epoch timestamp. Free, instant and fully client-side.",
       "intro": "Convert a Unix timestamp to a locale date or a selected date back to its epoch value."
     },
@@ -383,6 +387,7 @@
       "name": "Lorem Ipsum Generator",
       "desc": "Generates placeholder Lorem Ipsum text in the number of paragraphs and sentences you request.",
       "title": "Lorem Ipsum Generator — Free Online Tool",
+      "seoTitle": "Free Lorem Ipsum Generator | Placeholder Text Online",
       "pageDesc": "Generate free Lorem Ipsum placeholder text with your choice of paragraph and sentence counts. Private by design; the text is produced entirely in your browser.",
       "intro": "Generate Lorem Ipsum placeholder text with your choice of paragraphs and sentences per paragraph."
     },
@@ -441,6 +446,7 @@
       "name": "Color Palette Generator",
       "desc": "Creates analogous or monochrome color palettes from a base color and copies any HEX at a click.",
       "title": "Color Palette Generator — Free Online Tool",
+      "seoTitle": "Free Color Palette Generator | Create HEX Color Schemes",
       "pageDesc": "Generate harmonious analogous or monochrome palettes from any base color in three sizes, and copy each HEX value instantly. Free and private.",
       "intro": "Pick a base color to build an analogous or monochrome palette and copy any HEX swatch with one click."
     },
@@ -508,6 +514,7 @@
       "name": "Image to Base64",
       "desc": "Turn any image into a Base64 data URL online — free, instant, no upload.",
       "title": "Image to Base64 — Free Online Tool",
+      "seoTitle": "Free Image to Base64 Converter | Data URL Encoder",
       "pageDesc": "Convert images to Base64 free online. Get a ready-to-paste data URL with a copy button, file size and length — it all runs privately in your browser.",
       "intro": "Get a copy-ready data URL from any image in one click."
     },
@@ -529,6 +536,7 @@
       "name": "Meta Tag Generator",
       "desc": "Generate title, meta description, Open Graph and Twitter card tags with a live Google-style preview.",
       "title": "Meta Tag Generator — Free Online Tool",
+      "seoTitle": "Free Meta Tag Generator | SEO Title & Description Tags",
       "pageDesc": "Free online meta tag generator: build title, description, Open Graph and Twitter tags in your browser and preview them like a Google result.",
       "intro": "Craft perfectly structured meta tags and see exactly how they will look in search results."
     },
@@ -606,6 +614,7 @@
       "name": "Loan EMI Calculator",
       "desc": "Compute monthly loan payments with interest in a few seconds.",
       "title": "Loan EMI Calculator — Free Online Tool",
+      "seoTitle": "Free Loan EMI Calculator | Monthly Payment & Interest",
       "pageDesc": "Free loan EMI calculator: enter the amount, annual interest and term in months to see the monthly payment, total payment and amortization plan instantly.",
       "intro": "See your monthly payment, total interest and full amortization in seconds."
     },
@@ -726,6 +735,7 @@
       "name": "Favicon Generator",
       "desc": "Draws a favicon from your text and colors and downloads it as PNG or ICO.",
       "title": "Favicon Generator — Free Online Tool",
+      "seoTitle": "Free Favicon Generator Online | Create PNG & ICO Icons",
       "pageDesc": "Generate a favicon online free from your text, colors and size, then download it as PNG or ICO. Transparent backgrounds are supported; everything runs in your browser.",
       "intro": "Create a small brand icon from your initials or text and export it as PNG or ICO."
     },
@@ -768,6 +778,7 @@
       "name": "Wheel of Names",
       "desc": "Spin a wheel of names to pick a random winner for contests and raffles.",
       "title": "Wheel of Names — Free Online Tool",
+      "seoTitle": "Free Wheel of Names | Random Name Picker & Spinner",
       "pageDesc": "Spin a wheel of names online free to pick a random winner. Add the participants, press spin and watch the wheel decide — entirely in your browser.",
       "intro": "Put names on the wheel, spin it and let luck choose the winner."
     },
@@ -775,6 +786,7 @@
       "name": "Random Number Generator",
       "desc": "Generates lists of random numbers within any range, with or without repeats.",
       "title": "Random Number Generator — Free Online Tool",
+      "seoTitle": "Free Random Number Generator | Pick Numbers in a Range",
       "pageDesc": "Generate random numbers online free: set the range and count, choose to avoid repeats and copy the result. Perfect for draws and picks — runs in your browser.",
       "intro": "Pick a range and count, and get random numbers you can use instantly."
     },
@@ -831,6 +843,7 @@
       "name": "Pomodoro Timer",
       "desc": "Stay focused with a work/break countdown timer and track completed sessions.",
       "title": "Pomodoro Timer - Online Focus Timer With Work-Break Cycles",
+      "seoTitle": "Free Pomodoro Timer Online | Focus 25-Minute Timer",
       "pageDesc": "Use the Pomodoro technique with a customizable focus timer. Set work and break durations, run cycles automatically and track how many sessions you finish. Free and works offline.",
       "intro": "Set your work and break minutes, press Start, and switch automatically through focus sessions with a beep between cycles."
     },
@@ -852,6 +865,7 @@
       "name": "Roman Numeral Converter",
       "desc": "Convert numbers to Roman numerals and Roman numerals back, up to 3999.",
       "title": "Roman Numeral Converter - Numbers to Roman Numerals Online",
+      "seoTitle": "Free Roman Numeral Converter | Numbers to Roman Numerals",
       "pageDesc": "Convert Arabic numbers (1 to 3999) into Roman numerals and translate Roman numerals back into numbers. Instant, two-way conversion. Free, no sign-up.",
       "intro": "Type a number to see its Roman form, or enter a Roman numeral like XVII to get the number. Both directions update instantly."
     },
@@ -859,6 +873,7 @@
       "name": "Temperature Converter",
       "desc": "Convert between Celsius, Fahrenheit and Kelvin instantly and accurately.",
       "title": "Temperature Converter - Celsius, Fahrenheit and Kelvin",
+      "seoTitle": "Free Temperature Converter | Celsius, Fahrenheit & Kelvin",
       "pageDesc": "Convert temperatures between Celsius, Fahrenheit and Kelvin in real time. Type in any unit and the other two update instantly. Free and works in your browser.",
       "intro": "Type a value in Celsius, Fahrenheit or Kelvin and watch the other two units update instantly and accurately."
     },
@@ -887,6 +902,7 @@
       "name": "Dice Roller",
       "desc": "Roll one or more dice with custom sides and see totals and history.",
       "title": "Dice Roller - Roll Virtual Dice Online For Free",
+      "seoTitle": "Free Dice Roller Online | Roll D6, D20 & Custom Dice",
       "pageDesc": "Roll up to 12 dice with 2 to 100 sides. See every result, the total and the full roll history. Perfect for board games and tabletop RPGs. Free.",
       "intro": "Choose how many dice and how many sides, then press Roll. Results, totals and past throws are shown instantly."
     },
@@ -894,6 +910,7 @@
       "name": "Coin Flipper",
       "desc": "Flip heads or tails, track counts and see your longest streak.",
       "title": "Coin Flipper - Heads or Tails Online",
+      "seoTitle": "Free Coin Flip Online | Heads or Tails Generator",
       "pageDesc": "Flip a virtual coin anywhere. Track heads and tails counts, see your longest streak and browse the last throws. Free and instant.",
       "intro": "Press Flip and watch heads or tails land. Counts, streaks and the recent history update with every throw."
     },
@@ -950,6 +967,7 @@
       "name": "Income Tax Calculator",
       "desc": "Estimate US federal income tax using marginal tax brackets and the standard deduction.",
       "title": "Income Tax Calculator - Federal Tax Estimator Online",
+      "seoTitle": "Free Income Tax Calculator | Estimate Federal Tax",
       "pageDesc": "Estimate your US federal income tax with the 2025 marginal brackets and standard deduction. See taxable income, taxes owed, effective and marginal rate. Free.",
       "intro": "Enter your annual income and read your estimated federal tax, effective rate and the bracket you fall into."
     },
@@ -964,6 +982,7 @@
       "name": "Typing Speed Test",
       "desc": "Measure your typing speed in WPM with accuracy, correct keys and error count.",
       "title": "Typing Speed Test - Test Your Words Per Minute Online",
+      "seoTitle": "Free Typing Speed Test | Measure Your WPM Online",
       "pageDesc": "Test your typing speed in 15, 30 or 60 seconds. Get real-time feedback, letter-by-letter highlighting, WPM and accuracy results. Works in English and Turkish. Free.",
       "intro": "Start the test and type the shown text. After the timer ends you get your WPM, accuracy and error count."
     },
@@ -985,6 +1004,7 @@
       "name": "Countdown Timer",
       "desc": "Set hours, minutes and seconds and watch the countdown run to zero.",
       "title": "Countdown Timer - Free Online Timer",
+      "seoTitle": "Free Countdown Timer Online | Set Hours, Minutes, Seconds",
       "pageDesc": "Start a countdown for any duration from seconds to hours. Pause, reset or restart at any time. Works offline in your browser. Free.",
       "intro": "Set the hours, minutes and seconds, press Start and watch the big display count down."
     },

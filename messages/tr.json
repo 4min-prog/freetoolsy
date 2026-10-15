@@ -327,6 +327,7 @@
       "name": "Sayı Tabanı Dönüştürücü",
       "desc": "Sayıları ikili, sekizli, onlu ve onaltılı sistemler arasında tarayıcınızda anında dönüştürür.",
       "title": "Sayı Tabanı Dönüştürücü — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz Sayı Tabanı Dönüştürücü | İkili, Onaltılı",
       "pageDesc": "Sayıları tam hassasiyetle ikili, sekizli, onlu ve onaltılı sistemler arasında dönüştürün. Büyük sayılar için güvenli, ücretsiz ve tamamen tarayıcı tarafında.",
       "intro": "Bir sayı yazın, tabanını seçin ve ikili, sekizli, onlu ve onaltılı karşılıklarını yan yana görün."
     },
@@ -334,6 +335,7 @@
       "name": "Regex Testi",
       "desc": "Metninizdeki düzenli ifadeyi canlı olarak test eder ve her eşleşmeyi vurgular.",
       "title": "Regex Testi — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz Regex Testi | Düzenli İfadeleri Canlı Test Edin",
       "pageDesc": "Canlı vurgulama ve eşleşme sayacıyla metinlerde düzenli ifadeleri test edin. g, i, m, s ve u bayraklarını destekler; %100 tarayıcı tarafında.",
       "intro": "Bir kalıp yazın, bayrakları seçin ve yazdıkça her eşleşmenin vurgulandığını görün."
     },
@@ -348,6 +350,7 @@
       "name": "JWT Çözücü",
       "desc": "Bir JWT'yi header, payload ve imza olarak çözer ve okunabilir JSON biçiminde gösterir.",
       "title": "JWT Çözücü — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz JWT Çözücü | JSON Web Token Çözümleyin",
       "pageDesc": "Bir JWT token'ini header, payload ve imza bölümlerine ayırın ve okunabilir JSON olarak görün. Tamamen tarayıcı tarafında; token'iniz tarayıcınızdan çıkmaz.",
       "intro": "Bir JWT token yapıştırın; base64url ile çözülmüş header, payload ve imzayı anında görün."
     },
@@ -362,6 +365,7 @@
       "name": "Unix Zaman Damgası Çevirici",
       "desc": "Unix zaman damgalarını okunabilir tarihlere, tarihleri de Unix zaman damgasına çevirir.",
       "title": "Unix Zaman Damgası Çevirici — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz Unix Zaman Damgası Çevirici | Epoch ve Tarih",
       "pageDesc": "Bir Unix zaman damgasını okunabilir tarih ve saate ya da bir tarihi epoch zaman damgasına çevirin. Ücretsiz, anında ve tamamen tarayıcı tarafında.",
       "intro": "Bir Unix zaman damgasını yerel tarihe ya da seçtiğiniz bir tarihi epoch değerine çevirin."
     },
@@ -383,6 +387,7 @@
       "name": "Lorem Ipsum Üretici",
       "desc": "İstediğiniz paragraf ve cümle sayısında yer tutucu Lorem Ipsum metni üretir.",
       "title": "Lorem Ipsum Üretici — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz Lorem Ipsum Üretici | Yer Tutucu Metin",
       "pageDesc": "Paragraf ve cümle sayısı seçiminizle ücretsiz Lorem Ipsum yer tutucu metni üretin. Tasarım gereği gizli; metin tamamen tarayıcınızda oluşturulur.",
       "intro": "Paragraf sayısı ve paragraf başına cümle seçiminizle Lorem Ipsum yer tutucu metni üretin."
     },
@@ -441,6 +446,7 @@
       "name": "Renk Paleti Üretici",
       "desc": "Bir ana renkten analog veya tek renk tonlarında paletler oluşturur ve HEX değerlerini tek tıkla kopyalar.",
       "title": "Renk Paleti Üretici — Ücretsiz Çevrimiçi Araç",
+      "seoTitle": "Ücretsiz Renk Paleti Üretici | HEX Renk Şemaları",
       "pageDesc": "Herhangi bir ana renkten üç farklı boyutta uyumlu analog veya tek renk tonu paletleri üretin ve her HEX değerini anında kopyalayın. Ücretsiz ve gizli.",
       "intro": "Bir ana renk seçerek analog veya tek renk tonu paleti oluşturun ve her HEX rengini tek tıkla kopyalayın."
     },
@@ -508,6 +514,7 @@
       "name": "Resimden Base64",
       "desc": "Herhangi bir görseli ücretsiz, anında ve yükleme yapmadan Base64 data URL'ye dönüştürün.",
       "title": "Resimden Base64 — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Resimden Base64 Dönüştürücü | Data URL",
       "pageDesc": "Görselleri ücretsiz online Base64'e dönüştürün. Kopyalamaya hazır data URL, dosya boyutu ve uzunluğu görün — her şey tarayıcınızda anında çalışır.",
       "intro": "Herhangi bir görselden tek tıkla kopyalamaya hazır bir data URL alın."
     },
@@ -529,6 +536,7 @@
       "name": "Meta Tag Üretici",
       "desc": "Başlık, meta açıklama, Open Graph ve Twitter kart etiketlerini canlı Google stili önizlemeyle oluşturun.",
       "title": "Meta Tag Üretici — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Meta Tag Üretici | SEO Başlık ve Açıklama",
       "pageDesc": "Ücretsiz online meta tag üretici: başlık, açıklama, Open Graph ve Twitter etiketlerini tarayıcınızda oluşturun, Google sonucu gibi önizleyin.",
       "intro": "Kusursuz yapılandırılmış meta etiketler oluşturun ve arama sonuçlarında tam olarak nasıl görüneceklerini görün."
     },
@@ -606,6 +614,7 @@
       "name": "Kredi Taksit Hesaplayıcı",
       "desc": "Kredi tutarı ve faize göre aylık taksitleri saniyeler içinde hesaplayın.",
       "title": "Kredi Taksit Hesaplayıcı — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Kredi Taksit Hesaplayıcı | Aylık Ödeme",
       "pageDesc": "Ücretsiz kredi taksit hesaplayıcı: tutar, yıllık faiz ve ay cinsinden vadeyi girin; aylık taksit, toplam ödeme ve ödeme planını anında görün.",
       "intro": "Aylık taksitinizi, toplam faizi ve ödeme planını saniyeler içinde görün."
     },
@@ -726,6 +735,7 @@
       "name": "Favicon Üretici",
       "desc": "Metin ve renklerden favicon çizer; PNG veya ICO olarak indirir.",
       "title": "Favicon Üretici — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Favicon Üretici | PNG ve ICO İkon Oluşturun",
       "pageDesc": "Metin, renk ve boyuttan çevrimiçi favicon oluşturun, PNG veya ICO olarak indirin. Şeffaf arka plan desteklenir; her şey tarayıcınızda çalışır.",
       "intro": "Baş harflerinizden veya metinden küçük bir marka ikonu oluşturun, PNG veya ICO olarak dışa aktarın."
     },
@@ -768,6 +778,7 @@
       "name": "İsim Çarkı",
       "desc": "Çekiliş ve kura için rastgele kazanan seçmek üzere isim çarkını çevirin.",
       "title": "İsim Çarkı — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz İsim Çarkı | Rastgele İsim Seçici",
       "pageDesc": "Çevrimiçi isim çarkını çevirerek rastgele kazanan seçin. Katılımcıları ekleyin, çevir tuşuna basın ve çarkın kararını izleyin — tamamen tarayıcınızda.",
       "intro": "İsimleri çarka yazın, çevirin ve kazananı şansa bırakın."
     },
@@ -775,6 +786,7 @@
       "name": "Rastgele Sayı Üretici",
       "desc": "Herhangi bir aralıkta, tekrarlı veya tekrarsız rastgele sayı listeleri üretir.",
       "title": "Rastgele Sayı Üretici — Ücretsiz Online Araç",
+      "seoTitle": "Ücretsiz Rastgele Sayı Üretici | Aralıkta Sayı Seçin",
       "pageDesc": "Çevrimiçi rastgele sayı üretin: aralığı ve adedi ayarlayın, tekrarı önleyin, sonucu kopyalayın. Çekiliş ve seçimler için ideal — tarayıcınızda çalışır.",
       "intro": "Aralık ve adet seçin, kullanmaya hazır rastgele sayılar elde edin."
     },
@@ -831,6 +843,7 @@
       "name": "Pomodoro Zamanlayıcı",
       "desc": "Çalışma ve mola döngülerini sayarak odaklanmanızı sağlar.",
       "title": "Pomodoro Zamanlayıcı - Çalışma Molalı Online Odak Sayacı",
+      "seoTitle": "Ücretsiz Pomodoro Zamanlayıcı | 25 Dakika Odaklanma",
       "pageDesc": "Pomodoro tekniğiyle odaklanın. Çalışma ve mola sürelerini ayarlayın, döngüleri otomatik çalıştırın, biten bölümleri sayın. Ücretsiz, internet gerektirmez.",
       "intro": "Çalışma ve mola dakikalarını ayarlayın, Başlat'a basın; odak bölümleri arasında otomatik geçiş yapın, her döngüde zil çalar."
     },
@@ -852,6 +865,7 @@
       "name": "Roma Rakamı Dönüştürücü",
       "desc": "Sayıları Roma rakamlarına ve Roma rakamlarını sayıya çevirir.",
       "title": "Roma Rakamı Dönüştürücü - Sayıları Roma Rakamına Çevirme",
+      "seoTitle": "Ücretsiz Roma Rakamı Dönüştürücü | Sayı ve Roma Rakamı",
       "pageDesc": "Sayıları (1-3999) Roma rakamlarına ve Roma rakamlarını sayılara çevirin. Anlık, çift yönlü dönüşüm. Ücretsiz, kayıt gerekmez.",
       "intro": "Bir sayı yazın Roma biçimini görün ya da XVII gibi bir Roma rakamı girin sayıyı bulun. Her iki yön de anlık güncellenir."
     },
@@ -859,6 +873,7 @@
       "name": "Sıcaklık Dönüştürücü",
       "desc": "Celsius, Fahrenheit ve Kelvin arasında anında dönüşüm yapar.",
       "title": "Sıcaklık Dönüştürücü - Celsius, Fahrenheit ve Kelvin",
+      "seoTitle": "Ücretsiz Sıcaklık Dönüştürücü | Celsius, Fahrenheit, Kelvin",
       "pageDesc": "Sıcaklıkları Celsius, Fahrenheit ve Kelvin arasında gerçek zamanlı çevirin. Bir birime değer yazın, diğer ikisi anında güncellensin. Ücretsiz, tarayıcıda çalışır.",
       "intro": "Celsius, Fahrenheit ya da Kelvin alanına bir değer yazın; diğer iki birim anında ve doğru şekilde güncellensin."
     },
@@ -887,6 +902,7 @@
       "name": "Zar Atma",
       "desc": "İstediğiniz sayıda ve yüzde zar atar; sonuçları ve geçmişi gösterir.",
       "title": "Zar Atma - Online Sanal Zar Atma Aracı",
+      "seoTitle": "Ücretsiz Zar Atma | D6, D20 ve Özel Zar",
       "pageDesc": "2 ile 100 yüzlü, en fazla 12 zar atın. Her sonucu, toplamı ve tüm atış geçmişini görün. Masa oyunları ve rol yapma oyunları için ideal. Ücretsiz.",
       "intro": "Zar sayısını ve yüz sayısını seçin, Zar At'a basın. Sonuçlar, toplam ve geçmiş anında gösterilir."
     },
@@ -894,6 +910,7 @@
       "name": "Para Atma",
       "desc": "Yazı veya tura atar; sayımları ve en uzun seriyi takip eder.",
       "title": "Para Atma - Online Yazı Tura",
+      "seoTitle": "Ücretsiz Para Atma | Yazı Tura At",
       "pageDesc": "Sanal parayı her yerde atın. Yazı-tura sayısını, en uzun serinizi ve son atışları görün. Ücretsiz ve anlık.",
       "intro": "At'a basın ve yazı ya da turanın gelişini izleyin. Sayımlar, seriler ve son atışlar her seferinde güncellenir."
     },
@@ -950,6 +967,7 @@
       "name": "Gelir Vergisi Hesaplayıcı",
       "desc": "Marjinal vergi dilimlerine ve standart kesintiye göre ABD federal gelir vergisini tahmin eder.",
       "title": "Gelir Vergisi Hesaplayıcı - Federal Vergi Tahmini",
+      "seoTitle": "Ücretsiz Gelir Vergisi Hesaplayıcı | Vergi Tahmini",
       "pageDesc": "2025 marjinal dilimleri ve standart kesintiyle ABD federal gelir verginizi tahmin edin. Vergiye tabi gelir, ödenecek vergi, etkin ve marjinal oranı görün. Ücretsiz.",
       "intro": "Yıllık gelirinizi girin; tahmini federal verginizi, etkin oranınızı ve içinde bulunduğunuz dilimi okuyun."
     },
@@ -964,6 +982,7 @@
       "name": "Yazma Hızı Testi",
       "desc": "Klavye hızınızı doğruluk, doğru karakter ve hata sayısıyla birlikte WPM olarak ölçer.",
       "title": "Yazma Hızı Testi - Dakikadaki Kelime Sayınızı Ölçün",
+      "seoTitle": "Ücretsiz Yazma Hızı Testi | WPM Ölçün",
       "pageDesc": "15, 30 veya 60 saniyede yazma hızınızı test edin. Harf harf vurgulama, WPM ve doğruluk sonuçları. İngilizce ve Türkçe destekli. Ücretsiz.",
       "intro": "Testi başlatın ve gösterilen metni yazın. Süre bitince WPM, doğruluk ve hata sayınızı alırsınız."
     },
@@ -985,6 +1004,7 @@
       "name": "Geri Sayım Zamanlayıcı",
       "desc": "Saat, dakika ve saniye ayarlayın; geri sayımı sıfıra kadar izleyin.",
       "title": "Geri Sayım Zamanlayıcı - Ücretsiz Çevrimiçi Sayaç",
+      "seoTitle": "Ücretsiz Geri Sayım Zamanlayıcı | Saat, Dakika, Saniye",
       "pageDesc": "Saniyelerden saatlere her süre için geri sayım başlatın. İstediğiniz an durdurun, sıfırlayın veya yeniden başlatın. Tarayıcınızda çalışır. Ücretsiz.",
       "intro": "Saat, dakika ve saniyeyi ayarlayın, Başlat'a basın ve büyük ekrandaki geri sayımı izleyin."
     },
