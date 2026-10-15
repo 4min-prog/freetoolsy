@@ -88,15 +88,14 @@
     "popular": "Popular Tools",
     "sitemap": "Sitemap",
     "partner": "Partner",
-    "linklyLabel": "Shorten links with",
+    "linklyLabel": "All your links in one page with",
       "linkly": "LinklyHub",
     "tools": "Tools",
     "viewAll": "View all",
     "rights": "© 2026 FreetoolsY."
   },
   "PartnerBar": {
-    "text": "Shorten links: LinklyHub",
-    "dismiss": "Dismiss"
+    "text": "All your links in one page: LinklyHub"
   },
   "ThemeToggle": {
     "toLight": "Switch to light mode",
@@ -5263,8 +5262,8 @@
     "home": "Home"
   },
   "ToolPage": {
-    "linklyPre": "Want to share what you created? Try",
-    "linklyPost": "for a short, clean link.",
+    "linklyPre": "Want to share what you created? Collect all your links with",
+    "linklyPost": "in one page.",
     "breadcrumbAria": "Breadcrumb",
     "home": "Home",
     "viewAll": "{count} tools",
@@ -5779,7 +5778,7 @@
       "placeholderOutput": "Result will appear here…",
       "copy": "Copy",
       "copied": "Copied",
-      "linklyNote": "For short, clean URLs try LinklyhHub →"
+      "linklyNote": "Share all your links in one page with LinklyHub →"
     },
     "bmiCalculator": {
       "height": "Height (cm)",

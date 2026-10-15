@@ -88,15 +88,14 @@
     "popular": "Popüler Araçlar",
     "sitemap": "Site Haritası",
     "partner": "İş Ortaklığı",
-    "linklyLabel": "Linkleri kısaltın",
+    "linklyLabel": "Tüm linklerin tek sayfada",
       "linkly": "LinklyHub",
     "tools": "Araçlar",
     "viewAll": "Tümünü gör",
     "rights": "© 2026 FreetoolsY."
   },
   "PartnerBar": {
-    "text": "Linkleri kısalt: LinklyHub",
-    "dismiss": "Kapat"
+    "text": "Tüm linklerin tek sayfada: LinklyHub"
   },
   "ThemeToggle": {
     "toLight": "Açık moda geç",
@@ -5263,8 +5262,8 @@
     "home": "Ana Sayfa"
   },
   "ToolPage": {
-    "linklyPre": "Oluşturduklarını paylaşmak mı istiyorsun?",
-    "linklyPost": "ile kısa ve temiz bir bağlantı al.",
+    "linklyPre": "Oluşturduklarını paylaşmak mı istiyorsun? Tüm linklerini",
+    "linklyPost": "ile tek bir sayfada topla.",
     "breadcrumbAria": "Bağlantı izi",
     "home": "Ana Sayfa",
     "viewAll": "{count} araç",
@@ -5779,7 +5778,7 @@
       "placeholderOutput": "Sonuç burada görünecek…",
       "copy": "Kopyala",
       "copied": "Kopyalandı",
-      "linklyNote": "Kısa ve temiz URL'ler için LinklyhHub'u deneyin →"
+      "linklyNote": "Tüm linklerini tek sayfada LinklyHub ile topla →"
     },
     "bmiCalculator": {
       "height": "Boy (cm)",
