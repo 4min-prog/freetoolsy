@@ -13,7 +13,6 @@ import PartnerBar from "./PartnerBar";
 import { categoryTheme } from "./categoryTheme";
 import { categories, displayToolCount, getToolsByCategory, tools } from "@/data/tools";
 import { categoryPath, toolPath } from "@/lib/paths";
-import { dismissPartnerBar, isPartnerBarDismissed } from "@/lib/partnerBar";
 import type { Locale } from "@/i18n/routing";
 
 type ToolMetaNs = { name?: string };
@@ -41,7 +40,6 @@ export default function Header() {
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
-  const [partnerBar, setPartnerBar] = useState(true);
   const [menuTop, setMenuTop] = useState(0);
   const headerRef = useRef<HTMLElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -116,10 +114,6 @@ export default function Header() {
     };
   }, [mobileOpen]);
 
-  useEffect(() => {
-    setPartnerBar(!isPartnerBarDismissed());
-  }, []);
-
   function clearTimers() {
     if (openTimerRef.current) {
       clearTimeout(openTimerRef.current);
@@ -188,14 +182,7 @@ export default function Header() {
 
   return (
     <>
-      {partnerBar && (
-        <PartnerBar
-          onDismiss={() => {
-            dismissPartnerBar();
-            setPartnerBar(false);
-          }}
-        />
-      )}
+      <PartnerBar />
 
       <header
         ref={headerRef}
