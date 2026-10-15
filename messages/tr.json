@@ -94,6 +94,10 @@
     "viewAll": "Tümünü gör",
     "rights": "© 2026 FreetoolsY."
   },
+  "PartnerBar": {
+    "text": "Linkleri kısalt: LinklyHub",
+    "dismiss": "Kapat"
+  },
   "ThemeToggle": {
     "toLight": "Açık moda geç",
     "toDark": "Koyu moda geç"

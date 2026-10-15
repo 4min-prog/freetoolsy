@@ -9,9 +9,11 @@ import Logo from "./Logo";
 import CategoryIcon from "./CategoryIcon";
 import ToolIcon from "./ToolIcon";
 import SearchOverlay from "./SearchOverlay";
+import PartnerBar from "./PartnerBar";
 import { categoryTheme } from "./categoryTheme";
 import { categories, displayToolCount, getToolsByCategory, tools } from "@/data/tools";
 import { categoryPath, toolPath } from "@/lib/paths";
+import { dismissPartnerBar, isPartnerBarDismissed } from "@/lib/partnerBar";
 import type { Locale } from "@/i18n/routing";
 
 type ToolMetaNs = { name?: string };
@@ -39,6 +41,8 @@ export default function Header() {
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [partnerBar, setPartnerBar] = useState(true);
+  const [menuTop, setMenuTop] = useState(0);
   const headerRef = useRef<HTMLElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
   const openTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -112,6 +116,10 @@ export default function Header() {
     };
   }, [mobileOpen]);
 
+  useEffect(() => {
+    setPartnerBar(!isPartnerBarDismissed());
+  }, []);
+
   function clearTimers() {
     if (openTimerRef.current) {
       clearTimeout(openTimerRef.current);
@@ -180,6 +188,15 @@ export default function Header() {
 
   return (
     <>
+      {partnerBar && (
+        <PartnerBar
+          onDismiss={() => {
+            dismissPartnerBar();
+            setPartnerBar(false);
+          }}
+        />
+      )}
+
       <header
         ref={headerRef}
         className="sticky top-0 z-50 border-b border-border bg-bg/95 backdrop-blur-sm"
@@ -297,7 +314,15 @@ export default function Header() {
 
             <button
               type="button"
-              onClick={() => setMobileOpen((value) => !value)}
+              onClick={() => {
+                const next = !mobileOpen;
+                if (next) {
+                  const bottom =
+                    headerRef.current?.getBoundingClientRect().bottom ?? 0;
+                  setMenuTop(Math.max(0, bottom));
+                }
+                setMobileOpen(next);
+              }}
               aria-expanded={mobileOpen}
               aria-label={t("categories")}
               className="grid h-12 w-12 place-items-center rounded-lg border border-border bg-surface text-muted transition-colors hover:border-strong hover:text-text lg:hidden"
@@ -326,7 +351,8 @@ export default function Header() {
       {mobileOpen && (
         <div
           ref={menuRef}
-          className="fixed inset-x-0 bottom-0 top-14 z-50 border-t border-border bg-bg shadow-card sm:top-16 lg:hidden"
+          style={{ top: menuTop }}
+          className="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-bg shadow-card lg:hidden"
         >
           <div className="h-full overflow-y-auto overscroll-contain pb-8">
             <Link
