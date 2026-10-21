@@ -137,6 +137,24 @@ export default async function Footer() {
           </ul>
           <div className="mt-3 grid grid-cols-2 gap-2">
             <a
+              href="https://startupfa.me/s/freetoolsy?utm_source=www.freetoolsy.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Featured on Startup Fame"
+              className="col-span-2 flex"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="https://startupfa.me/badges/featured-badge-small.webp"
+                alt="FreeToolsy - Featured on Startup Fame"
+                width="224"
+                height="36"
+                loading="lazy"
+                decoding="async"
+                className="h-9 w-auto max-w-full rounded-md transition-opacity hover:opacity-80"
+              />
+            </a>
+            <a
               href="https://launchnest.io/p/freetoolsy"
               rel="dofollow noopener noreferrer"
               title="freetoolsy.com — Domain Rating by LaunchNest"
