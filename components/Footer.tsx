@@ -6,6 +6,7 @@ import CategoryIcon from "@/components/CategoryIcon";
 import { categoryTheme } from "@/components/categoryTheme";
 import Image from "next/image";
 import Logo from "@/components/Logo";
+import StartupFameBadge from "@/components/StartupFameBadge";
 import { categories, getToolsByCategory, tools, type Tool } from "@/data/tools";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faChevronRight } from "@fortawesome/free-solid-svg-icons";
@@ -136,22 +137,7 @@ export default async function Footer() {
             </li>
           </ul>
           <div className="mt-3 grid grid-cols-2 gap-2">
-            <a
-              href="https://startupfa.me/s/freetoolsy?utm_source=www.freetoolsy.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Featured on Startup Fame"
-              className="col-span-2"
-            >
-              <Image
-                src="/startupfa-featured-badge.webp"
-                alt="FreeToolsy - Featured on Startup Fame"
-                width={224}
-                height={36}
-                loading="lazy"
-                className="h-auto w-full rounded-md border border-border bg-bg transition-opacity hover:opacity-80"
-              />
-            </a>
+            <StartupFameBadge />
             <a
               href="https://launchnest.io/p/freetoolsy"
               rel="dofollow noopener noreferrer"
