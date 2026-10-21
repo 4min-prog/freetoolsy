@@ -143,14 +143,12 @@ export default async function Footer() {
               title="Featured on Startup Fame"
               className="col-span-2 flex"
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="https://startupfa.me/badges/featured-badge-small.webp"
+              <Image
+                src="/startupfa-featured-badge.webp"
                 alt="FreeToolsy - Featured on Startup Fame"
-                width="224"
-                height="36"
+                width={224}
+                height={36}
                 loading="lazy"
-                decoding="async"
                 className="h-9 w-auto max-w-full rounded-md transition-opacity hover:opacity-80"
               />
             </a>
