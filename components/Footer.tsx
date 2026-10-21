@@ -141,7 +141,7 @@ export default async function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               title="Featured on Startup Fame"
-              className="col-span-2 flex"
+              className="col-span-2"
             >
               <Image
                 src="/startupfa-featured-badge.webp"
@@ -149,7 +149,7 @@ export default async function Footer() {
                 width={224}
                 height={36}
                 loading="lazy"
-                className="h-9 w-auto max-w-full rounded-md transition-opacity hover:opacity-80"
+                className="h-auto w-full rounded-md border border-border bg-bg transition-opacity hover:opacity-80"
               />
             </a>
             <a
