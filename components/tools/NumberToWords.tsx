@@ -3,7 +3,7 @@
 import { showToast } from "@/lib/toast";
 
 import { useMemo, useState } from "react";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
 const TR_DIGITS = [
