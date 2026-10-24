@@ -14,6 +14,7 @@ export const POPULAR_SLUGS: string[] = [
   "sha-hash-generator",
   "text-sorter",
   "remove-bg",
+  "roman-numeral-converter",
 ];
 
 export function getPopularTools(): Tool[] {
