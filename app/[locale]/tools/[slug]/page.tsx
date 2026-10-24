@@ -226,6 +226,33 @@ export default async function ToolPage({
       </section>
     ) : null;
 
+  const isNumberRelated =
+    tool.slug === "number-base-converter" ||
+    tool.slug === "number-to-words" ||
+    tool.slug === "roman-numeral-converter";
+
+  const crossLinkNote = isNumberRelated
+    ? tool.slug === "roman-numeral-converter"
+      ? null
+      : locale === "tr"
+        ? (
+            <p className="mt-3 text-xs text-muted">
+              Sayıları Roma rakamlarına çevirmek mi istiyorsunuz?{" "}
+              <Link href="/tools/roman-numeral-converter" className="text-accent hover:opacity-80">
+                Roma Rakamı Dönüştürücü →
+              </Link>
+            </p>
+          )
+        : (
+            <p className="mt-3 text-xs text-muted">
+              Need Roman numerals?{" "}
+              <Link href="/tools/roman-numeral-converter" className="text-accent hover:opacity-80">
+                Try the Roman Numeral Converter →
+              </Link>
+            </p>
+          )
+    : null;
+
   const linklyNote = (
     <p className="mt-10 text-center text-sm text-muted">
       {tPage("linklyPre")}{" "}
@@ -356,6 +383,7 @@ export default async function ToolPage({
             {guidesSection}
             {similarSection}
             {popularSection}
+            {crossLinkNote}
             {linklyNote}
           </div>
         </>
@@ -426,6 +454,7 @@ export default async function ToolPage({
 
             <ToolSeoContent slug={tool.slug} />
             <ToolFaq slug={tool.slug} />
+            {crossLinkNote}
             {linklyNote}
           </div>
 

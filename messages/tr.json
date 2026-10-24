@@ -932,11 +932,11 @@
     },
     "roman-numeral-converter": {
       "name": "Roma Rakamı Dönüştürücü",
-      "desc": "Sayıları Roma rakamlarına ve Roma rakamlarını sayıya çevirir.",
-      "title": "Roma Rakamı Dönüştürücü - Sayıları Roma Rakamına Çevirme",
-      "seoTitle": "Ücretsiz Roma Rakamı Dönüştürücü | Sayı ve Roma Rakamı",
-      "pageDesc": "Sayıları (1-3999) Roma rakamlarına ve Roma rakamlarını sayılara çevirin. Anlık, çift yönlü dönüşüm. Ücretsiz, kayıt gerekmez.",
-      "intro": "Bir sayı yazın Roma biçimini görün ya da XVII gibi bir Roma rakamı girin sayıyı bulun. Her iki yön de anlık güncellenir."
+      "desc": "Sayıları Roma rakamlarına ve Roma rakamlarını sayılara çevirin (1-3999).",
+      "title": "Roma Rakamı Dönüştürücü - Sayı ↔ Roma Rakamı",
+      "seoTitle": "Roma Rakamı Dönüştürücü | Sayı Roma Rakamı Çevirme - İki Yönlü",
+      "pageDesc": "Sayıları Roma rakamlarına ve Roma rakamlarını sayılara anında çevirin. 1-3999 arası iki yönlü ücretsiz dönüştürücü, örneklerle.",
+      "intro": "Sayıları Roma rakamlarına ve Roma rakamlarını sayılara anında çevirin. 1-3999 arası iki yönlü dönüşüm, pratik örnekler."
     },
     "temperature-converter": {
       "name": "Sıcaklık Dönüştürücü",
@@ -4215,18 +4215,40 @@
       },
       {
         "h": "Roma rakamları bugün nerelerde kullanılır?",
-        "list": [
-          "Kitaplarda ve belgelerde bölüm ile cilt numaraları.",
-          "Binalarda, saat kadranlarında ve film jeneriklerinde yıllar.",
-          "VIII. Henry ya da XIV. Louis gibi yönetici, papa ve krallar.",
-          "Makalelerde ve resmi yazılarda maddeli sıralama."
-        ]
-      },
-      {
-        "h": "Dönüştürücüyü nasıl kullanırım?",
-        "p": "1 ile 3999 arasında bir tam sayı yazın, Roma biçimi anında görünsün. Bir Roma rakamı yazın, sayı olarak çevrilsin. Her iki alan da iki yönde anlık güncellenir."
-      }
-    ],
+      "list": [
+        "Bölüm ve cilt numaraları kitap ve belgelerde kullanılır.",
+        "Binalar, saat kadranları ve film jeneriklerinde yıllar yazılır.",
+        "Kral ve papalar: VIII. Henry, XIV. Louis gibi.",
+        "Denemeler ve resmi yazılarda ana hat numaralandırmasında kullanılır."
+      ]
+    },
+    {
+      "h": "Dönüştürücüyü nasıl kullanırım?",
+      "p": "1 ile 3999 arasında bir sayı girin, Roma rakamı anında görünecektir. Veya bir Roma rakamı yazın, sayı karşılığı anında hesaplanır. İki yönlü çevrim çalışır."
+    },
+    {
+      "h": "Roma rakamı örnekleri",
+      "list": [
+        "1 = I, 4 = IV, 5 = V, 9 = IX",
+        "10 = X, 40 = XL, 50 = L, 90 = XC",
+        "100 = C, 400 = CD, 500 = D, 900 = CM",
+        "2026 = MMXXVI, 2025 = MMXXV, 1999 = MCMXCIX"
+      ]
+    },
+    {
+      "h": "Sık sorulan sorular",
+      "list": [
+        "4 Roma rakamı ile nasıl yazılır? IV",
+        "9 Roma rakamı ile nasıl yazılır? IX",
+        "14 Roma rakamı ile nasıl yazılır? XIV",
+        "40 Roma rakamı ile nasıl yazılır? XL",
+        "49 Roma rakamı ile nasıl yazılır? XLIX",
+        "99 Roma rakamı ile nasıl yazılır? XCIX",
+        "2026 Roma rakamı ile nasıl yazılır? MMXXVI",
+        "Sıfır Roma rakamı var mı? Klasik Roma rakamlarında sıfır için bir sembol yoktur."
+      ]
+    }
+  ],
     "temperature-converter": [
       {
         "h": "Birimler birbiriyle nasıl ilişkilidir?",
@@ -7248,8 +7270,9 @@
     "coinFlipper": {
       "heads": "Yazı",
       "tails": "Tura",
-      "empty": "At?",
+      "empty": "Parayı çevir",
       "flip": "At",
+      "flipping": "Atılıyor...",
       "headsCount": "Yazı",
       "tailsCount": "Tura",
       "streak": "En uzun seri",

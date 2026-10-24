@@ -3,7 +3,8 @@
 import { showToast } from "@/lib/toast";
 
 import { useMemo, useState } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 const TR_DIGITS = [
   "sıfır",
@@ -244,6 +245,12 @@ export default function NumberToWords() {
       )}
 
       <p className="mt-4 text-xs leading-relaxed text-muted">{t("tip")}</p>
+      <p className="mt-2 text-xs text-muted">
+        Working with Roman numerals?{" "}
+        <Link href="/tools/roman-numeral-converter" className="text-accent hover:opacity-80">
+          Convert numbers to Roman numerals →
+        </Link>
+      </p>
     </div>
   );
 }

@@ -1,7 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 const BASES = [
   { id: "bin", radix: 2 },
@@ -115,6 +116,12 @@ export default function NumberBaseConverter() {
           ))}
         </div>
       )}
+      <p className="mt-4 text-xs text-muted">
+        Need Roman numerals?{" "}
+        <Link href="/tools/roman-numeral-converter" className="text-accent hover:opacity-80">
+          Try the Roman Numeral Converter →
+        </Link>
+      </p>
     </div>
   );
 }

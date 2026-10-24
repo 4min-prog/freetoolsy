@@ -19,6 +19,7 @@ const POPULAR_TOOLS = [
   "image-compressor",
   "color-converter",
   "remove-bg",
+  "roman-numeral-converter",
 ];
 
 function Label({ children }: { children: React.ReactNode }) {

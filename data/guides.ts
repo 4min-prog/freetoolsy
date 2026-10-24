@@ -2295,6 +2295,7 @@ const GUIDE_LIST: Guide[] = [
             paragraphs: [
               "The same percentage skills come up constantly: sale discounts, sales tax, and price increases. The Discount Calculator finds the final price after a percentage reduction, and the Percentage Calculator handles increases, decreases and 'what is X% of Y' questions.",
               "When you are eating out abroad, remember that tipping customs differ — 15–20% is standard in the US, while in many European countries a service charge is already included and 5–10% is a polite extra.",
+              "If you're working with numbers in a historical context, like years on plaques or outlines, the Roman Numeral Converter helps you switch between Arabic numbers and Roman numerals quickly.",
             ],
           },
         ],
